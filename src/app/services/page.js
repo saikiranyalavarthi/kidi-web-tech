@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const metadata = {
   title: "Services - KIDIWEBTECH",
   description:
@@ -55,9 +57,11 @@ export default function ServicesPage() {
               key={i}
               className={`bg-white rounded-2xl shadow-lg ${service.hoverShadow} transition p-4 text-center`}
             >
-              <img
+              <Image
                 src={service.img}
                 alt={service.title}
+                width={400}
+                height={300}
                 className="w-full h-48 object-cover rounded-xl mb-4"
               />
               <h3 className={`text-xl font-semibold ${service.color} mb-2`}>
@@ -77,10 +81,10 @@ export default function ServicesPage() {
         <div className="max-w-4xl mx-auto space-y-6 text-base leading-relaxed">
           <p>
             At KIDIWEBTECH, we believe in crafting solutions that go beyond
-            aesthetics — we build tools that perform. Whether you're a startup
-            aiming to build a digital presence or an established enterprise
-            seeking growth, our strategic digital services are designed to meet
-            your goals efficiently and affordably.
+            aesthetics — we build tools that perform. Whether you&apos;re a
+            startup aiming to build a digital presence or an established
+            enterprise seeking growth, our strategic digital services are
+            designed to meet your goals efficiently and affordably.
           </p>
           <p>
             Our team of seasoned developers, marketers, and designers work in

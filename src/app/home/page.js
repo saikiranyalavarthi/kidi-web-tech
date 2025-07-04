@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -31,9 +32,11 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Card 1: Digital Marketing */}
           <div className="bg-white rounded-2xl shadow-lg hover:shadow-indigo-300 transition-shadow duration-300 p-4 text-center">
-            <img
+            <Image
               src="/assets/image1.jpg"
               alt="Digital Marketing"
+              width={400}
+              height={300}
               className="w-full h-48 object-cover rounded-xl mb-4"
             />
             <h3 className="text-xl font-semibold text-indigo-700 mb-2">
@@ -47,9 +50,11 @@ export default function Home() {
 
           {/* Card 2: App Development */}
           <div className="bg-white rounded-2xl shadow-lg hover:shadow-purple-300 transition-shadow duration-300 p-4 text-center">
-            <img
+            <Image
               src="/assets/image2.jpg"
               alt="App Development"
+              width={400}
+              height={300}
               className="w-full h-48 object-cover rounded-xl mb-4"
             />
             <h3 className="text-xl font-semibold text-purple-700 mb-2">
@@ -63,9 +68,11 @@ export default function Home() {
 
           {/* Card 3: Website Development */}
           <div className="bg-white rounded-2xl shadow-lg hover:shadow-blue-300 transition-shadow duration-300 p-4 text-center">
-            <img
+            <Image
               src="/assets/image3.jpg"
               alt="Website Development"
+              width={400}
+              height={300}
               className="w-full h-48 object-cover rounded-xl mb-4"
             />
             <h3 className="text-xl font-semibold text-blue-700 mb-2">
@@ -79,9 +86,11 @@ export default function Home() {
 
           {/* Card 4: WordPress Development */}
           <div className="bg-white rounded-2xl shadow-lg hover:shadow-indigo-300 transition-shadow duration-300 p-4 text-center">
-            <img
+            <Image
               src="/assets/image4.jpg"
               alt="WordPress Development"
+              width={400}
+              height={300}
               className="w-full h-48 object-cover rounded-xl mb-4"
             />
             <h3 className="text-xl font-semibold text-indigo-700 mb-2">
@@ -102,9 +111,10 @@ export default function Home() {
             Email
           </a>
           <a
-            href="https://wa.me/919999999999"
+            href="https://wa.me/919390627367"
             className="underline"
             target="_blank"
+            rel="noopener noreferrer"
           >
             WhatsApp
           </a>

@@ -1,5 +1,5 @@
-// pages/index.jsx
-import React from "react";
+// pages/index.jsx or app/projects/page.jsx
+import Image from "next/image";
 import Head from "next/head";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
         "A fast-loading eCommerce site for pet food, accessories, and medicine using WooCommerce and custom WordPress themes.",
     },
     {
-      title: "News Website ",
+      title: "News Website",
       image: "/assets/image10.jpg",
       description:
         "A dynamic Telugu-language news website built with ReactJS and WordPress REST API, featuring category navigation, sliders, and ticker components.",
@@ -38,7 +38,7 @@ export default function Home() {
       title: "Portfolio Website",
       image: "/assets/image11.jpg",
       description:
-        "A personal portfolio showcasing a developer's skills, past projects, blog, and contact information. Built with Next.js, Tailwind CSS, and Framer Motion animations.",
+        "A personal portfolio showcasing a developer&apos;s skills, past projects, blog, and contact information. Built with Next.js, Tailwind CSS, and Framer Motion animations.",
     },
   ];
 
@@ -65,9 +65,11 @@ export default function Home() {
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-20 pb-20">
         {projects.map((proj, index) => (
           <div key={index} className="bg-white p-6 rounded-xl shadow-md">
-            <img
+            <Image
               src={proj.image}
               alt={proj.title}
+              width={400}
+              height={250}
               className="w-full h-48 object-cover rounded-md mb-4"
             />
             <h3 className="text-lg font-semibold text-indigo-700 mb-2">
