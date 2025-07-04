@@ -5,6 +5,37 @@ export const metadata = {
 };
 
 export default function ServicesPage() {
+  const services = [
+    {
+      title: "Digital Marketing",
+      color: "text-indigo-700",
+      hoverShadow: "hover:shadow-indigo-300",
+      img: "/assets/image1.jpg",
+      desc: "SEO, Google Ads, social media strategies that drive visibility and results.",
+    },
+    {
+      title: "App Development",
+      color: "text-purple-700",
+      hoverShadow: "hover:shadow-purple-300",
+      img: "/assets/image2.jpg",
+      desc: "Scalable, high-performance Android & iOS apps using modern frameworks.",
+    },
+    {
+      title: "Website Development",
+      color: "text-blue-700",
+      hoverShadow: "hover:shadow-blue-300",
+      img: "/assets/image3.jpg",
+      desc: "Fast, SEO-friendly websites built with Next.js, React, and Tailwind CSS.",
+    },
+    {
+      title: "WordPress Development",
+      color: "text-indigo-700",
+      hoverShadow: "hover:shadow-indigo-300",
+      img: "/assets/image4.jpg",
+      desc: "Flexible themes, plugin development, and easy CMS solutions for all businesses.",
+    },
+  ];
+
   return (
     <div className="font-sans">
       {/* Hero Section */}
@@ -19,45 +50,17 @@ export default function ServicesPage() {
       {/* Services Grid */}
       <section className="py-16 px-6 md:px-20 bg-gray-50">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Service Cards */}
-          {[
-            {
-              title: "Digital Marketing",
-              color: "indigo",
-              img: "/assets/image1.jpg",
-              desc: "SEO, Google Ads, social media strategies that drive visibility and results.",
-            },
-            {
-              title: "App Development",
-              color: "purple",
-              img: "/assets/image2.jpg",
-              desc: "Scalable, high-performance Android & iOS apps using modern frameworks.",
-            },
-            {
-              title: "Website Development",
-              color: "blue",
-              img: "/assets/image3.jpg",
-              desc: "Fast, SEO-friendly websites built with Next.js, React, and Tailwind CSS.",
-            },
-            {
-              title: "WordPress Development",
-              color: "indigo",
-              img: "/assets/image4.jpg",
-              desc: "Flexible themes, plugin development, and easy CMS solutions for all businesses.",
-            },
-          ].map((service, i) => (
+          {services.map((service, i) => (
             <div
               key={i}
-              className={`bg-white rounded-2xl shadow-lg hover:shadow-${service.color}-300 transition p-4 text-center`}
+              className={`bg-white rounded-2xl shadow-lg ${service.hoverShadow} transition p-4 text-center`}
             >
               <img
                 src={service.img}
                 alt={service.title}
                 className="w-full h-48 object-cover rounded-xl mb-4"
               />
-              <h3
-                className={`text-xl font-semibold text-${service.color}-700 mb-2`}
-              >
+              <h3 className={`text-xl font-semibold ${service.color} mb-2`}>
                 {service.title}
               </h3>
               <p className="text-gray-700 text-sm">{service.desc}</p>
@@ -94,8 +97,8 @@ export default function ServicesPage() {
             marketing to keep you ahead of competitors.
           </p>
           <p>
-            Most importantly, we treat every client’s business as our own. Our
-            mission is not just to deliver a project but to become your
+            Most importantly, we treat every client&apos;s business as our own.
+            Our mission is not just to deliver a project but to become your
             long-term digital growth partner — supporting you with innovation,
             strategy, and results-driven execution at every stage.
           </p>

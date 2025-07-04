@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 
-export default function about() {
+export default function About() {
   return (
     <div className="font-sans">
       <Head>
@@ -19,10 +19,11 @@ export default function about() {
           At KIDIWEBTECH, we create powerful digital solutions that help
           businesses grow and compete with confidence. From SEO to web, app, and
           WordPress development, we turn ideas into high-performing platforms.
-          Whether you're a startup or a scaling brand, our strategies are
+          Whether you&apos;re a startup or a scaling brand, our strategies are
           tailored to meet your unique goals.
         </p>
       </section>
+
       <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 items-center gap-12 bg-white">
         <div>
           <h2 className="text-3xl font-semibold text-indigo-700 mb-4">About</h2>
@@ -110,6 +111,7 @@ export default function about() {
               and attracts organic traffic.
             </p>
           </div>
+
           <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-pink-300 transition">
             <h3 className="text-xl font-bold text-pink-600 mb-2">
               Reliable Delivery
@@ -142,7 +144,7 @@ export default function about() {
               24/7 Support
             </h3>
             <p className="text-gray-700 text-sm mb-2">
-              We’re always here for you — before, during, and after your
+              We&apos;re always here for you — before, during, and after your
               project.
             </p>
             <p className="text-gray-700 text-sm">

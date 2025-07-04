@@ -1,9 +1,42 @@
+"use client";
+
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { CheckCircle } from "lucide-react";
 
 export default function Home() {
+  const services = [
+    {
+      title: "Digital Marketing",
+      textClass: "text-indigo-700",
+      shadowClass: "hover:shadow-indigo-300",
+      img: "/assets/image1.jpg",
+      desc: "Boost your visibility with SEO, Google Ads, and social media strategies to reach the right audience.",
+    },
+    {
+      title: "App Development",
+      textClass: "text-purple-700",
+      shadowClass: "hover:shadow-purple-300",
+      img: "/assets/image2.jpg",
+      desc: "We build fast, secure iOS and Android apps using modern technologies.",
+    },
+    {
+      title: "Website Development",
+      textClass: "text-blue-700",
+      shadowClass: "hover:shadow-blue-300",
+      img: "/assets/image3.jpg",
+      desc: "SEO-optimized websites built with Next.js and Tailwind CSS for speed and UX.",
+    },
+    {
+      title: "WordPress Development",
+      textClass: "text-indigo-700",
+      shadowClass: "hover:shadow-indigo-300",
+      img: "/assets/image4.jpg",
+      desc: "Custom themes and plugins for powerful, manageable WordPress websites.",
+    },
+  ];
+
   const projects = [
     {
       title: "Vet & Meet Pet Consultation App",
@@ -18,7 +51,7 @@ export default function Home() {
         "A fast-loading eCommerce site for pet food, accessories, and medicine using WooCommerce and custom WordPress themes.",
     },
     {
-      title: "News Website ",
+      title: "News Website",
       image: "/assets/image10.jpg",
       description:
         "A dynamic Telugu-language news website built with ReactJS and WordPress REST API, featuring category navigation, sliders, and ticker components.",
@@ -39,7 +72,7 @@ export default function Home() {
       title: "Portfolio Website",
       image: "/assets/image11.jpg",
       description:
-        "A personal portfolio showcasing a developer's skills, past projects, blog, and contact information. Built with Next.js, Tailwind CSS, and Framer Motion animations.",
+        "A personal portfolio showcasing a developer&apos;s skills, past projects, blog, and contact information. Built with Next.js, Tailwind CSS, and Framer Motion animations.",
     },
   ];
 
@@ -54,9 +87,8 @@ export default function Home() {
       </Head>
 
       {/* Hero Section */}
-      <header className=" text-blue-600 py-20 px-6 md:px-20 mt-2">
+      <header className="text-blue-600 py-20 px-6 md:px-20 mt-2">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-          {/* Text Section */}
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-4xl sm:text-5xl font-bold mb-4 animate-pulse">
               Your Partner in Digital Success
@@ -81,16 +113,19 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Image Section */}
           <div className="flex-1 relative w-full max-w-sm md:max-w-md lg:max-w-lg">
-            <img
+            <Image
               src="/assets/side1.jpg"
               alt="Image 1"
+              width={500}
+              height={400}
               className="rounded-xl w-full shadow-lg relative z-10"
             />
-            <img
+            <Image
               src="/assets/side2.jpg"
               alt="Image 2"
+              width={500}
+              height={400}
               className="rounded-xl w-4/5 absolute top-10 left-10 z-0 opacity-80 shadow-2xl"
             />
           </div>
@@ -103,45 +138,19 @@ export default function Home() {
           Our Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Service Cards */}
-          {[
-            {
-              title: "Digital Marketing",
-              color: "indigo",
-              img: "/assets/image1.jpg",
-              desc: "Boost your visibility with SEO, Google Ads, and social media strategies to reach the right audience.",
-            },
-            {
-              title: "App Development",
-              color: "purple",
-              img: "/assets/image2.jpg",
-              desc: "We build fast, secure iOS and Android apps using modern technologies.",
-            },
-            {
-              title: "Website Development",
-              color: "blue",
-              img: "/assets/image3.jpg",
-              desc: "SEO-optimized websites built with Next.js and Tailwind CSS for speed and UX.",
-            },
-            {
-              title: "WordPress Development",
-              color: "indigo",
-              img: "/assets/image4.jpg",
-              desc: "Custom themes and plugins for powerful, manageable WordPress websites.",
-            },
-          ].map((item, i) => (
+          {services.map((item, i) => (
             <div
               key={i}
-              className={`bg-white rounded-2xl shadow-lg hover:shadow-${item.color}-300 transition-shadow duration-300 p-4 text-center`}
+              className={`bg-white rounded-2xl shadow-lg ${item.shadowClass} transition-shadow duration-300 p-4 text-center`}
             >
-              <img
+              <Image
                 src={item.img}
                 alt={item.title}
+                width={400}
+                height={300}
                 className="w-full h-48 object-cover rounded-xl mb-4"
               />
-              <h3
-                className={`text-xl font-semibold text-${item.color}-700 mb-2`}
-              >
+              <h3 className={`text-xl font-semibold ${item.textClass} mb-2`}>
                 {item.title}
               </h3>
               <p className="text-gray-700 text-sm">{item.desc}</p>
@@ -176,7 +185,7 @@ export default function Home() {
         />
       </section>
 
-      {/* Mission Section */}
+      {/* Projects */}
       <section className="py-20 px-6 md:px-20 bg-gray-50 text-center">
         <h1 className="text-4xl font-bold text-indigo-700 mb-4">
           Our Work & Projects
@@ -190,9 +199,11 @@ export default function Home() {
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-20 pb-20">
         {projects.map((proj, index) => (
           <div key={index} className="bg-white p-6 rounded-xl shadow-md">
-            <img
+            <Image
               src={proj.image}
               alt={proj.title}
+              width={400}
+              height={300}
               className="w-full h-48 object-cover rounded-md mb-4"
             />
             <h3 className="text-lg font-semibold text-indigo-700 mb-2">
@@ -203,8 +214,8 @@ export default function Home() {
         ))}
       </section>
 
+      {/* Success Section */}
       <section className="bg-[#f7f5ff] py-16 px-6 md:px-20 flex flex-col lg:flex-row items-center justify-between gap-10">
-        {/* Left Content */}
         <div className="lg:w-1/2">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
             Success with <span className="text-purple-600">passion-driven</span>{" "}
@@ -214,10 +225,10 @@ export default function Home() {
             </span>
           </h2>
           <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-            At KIDIWEBTECH, we live and breathe our clients’ success. We craft
-            strategies that drive traffic and attract new clients. Whether
-            you're a startup or an established brand, we’re here to help you
-            grow.
+            At KIDIWEBTECH, we live and breathe our clients&apos; success. We
+            craft strategies that drive traffic and attract new clients. Whether
+            you&apos;re a startup or an established brand, we&apos;re here to
+            help you grow.
           </p>
 
           <ul className="space-y-3 mb-10">
@@ -253,10 +264,9 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Right Image */}
         <div className="lg:w-1/2">
           <Image
-            src="/assets/image3.jpg" // Replace with your real image in /public/assets/
+            src="/assets/image3.jpg"
             alt="Digital Growth Dashboard"
             width={600}
             height={400}
@@ -271,9 +281,10 @@ export default function Home() {
           Get in Touch
         </h2>
         <p className="text-gray-700 max-w-2xl mx-auto mb-8">
-          We'd love to hear from you! Whether you're starting a new project,
-          looking to improve your current website, or just want to explore ideas
-          — let's connect and build something amazing together.
+          We&apos;d love to hear from you! Whether you&apos;re starting a new
+          project, looking to improve your current website, or just want to
+          explore ideas — let&apos;s connect and build something amazing
+          together.
         </p>
         <a
           href="/contact"
