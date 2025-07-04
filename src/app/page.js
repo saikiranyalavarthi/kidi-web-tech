@@ -79,11 +79,32 @@ export default function Home() {
   return (
     <div className="font-sans">
       <Head>
-        <title>KIDIWEBTECH - Digital Growth Partner</title>
+        <title>
+          KIDIWEBTECH | Digital Marketing & Web Development Company India
+        </title>
         <meta
           name="description"
-          content="Digital Marketing, App & Web Development Agency"
+          content="KIDIWEBTECH offers expert digital marketing, app & web development, and WordPress solutions. Grow your business online with a trusted technology partner."
         />
+        <meta
+          name="keywords"
+          content="Digital Marketing, SEO, Web Development, App Development, WordPress Development, India, KIDIWEBTECH"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://kidiwebtech.com/" />
+        <meta
+          property="og:title"
+          content="KIDIWEBTECH | Digital Growth Partner"
+        />
+        <meta
+          property="og:description"
+          content="We provide high-quality digital marketing and web solutions including SEO, app development, and website design."
+        />
+        <meta property="og:image" content="/assets/image1.jpg" />
+        <meta property="og:url" content="https://kidiwebtech.com/" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
       {/* Hero Section */}

@@ -7,12 +7,53 @@ export default function About() {
   return (
     <div className="font-sans">
       <Head>
-        <title>About Us - KIDIWEBTECH</title>
+        <title>
+          About KIDIWEBTECH | Digital Marketing & Web Development Experts
+        </title>
         <meta
           name="description"
-          content="Learn more about KIDIWEBTECH - your digital partner in SEO, marketing, and development services."
+          content="KIDIWEBTECH is a results-driven digital agency in India offering SEO, marketing, app, and web development. Learn more about our team, mission, and values."
+        />
+        <meta
+          name="keywords"
+          content="About KIDIWEBTECH, Digital Agency India, SEO Experts, Web Development Team, App Development Company"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://kidiwebtech.com/about" />
+
+        {/* Open Graph / Social Sharing Tags */}
+        <meta
+          property="og:title"
+          content="About KIDIWEBTECH | Digital Experts"
+        />
+        <meta
+          property="og:description"
+          content="Get to know KIDIWEBTECH — your trusted partner in SEO, digital marketing, web development, and more."
+        />
+        <meta
+          property="og:image"
+          content="https://kidiwebtech.com/assets/image5.jpg"
+        />
+        <meta property="og:url" content="https://kidiwebtech.com/about" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="About KIDIWEBTECH | SEO & Web Dev Agency"
+        />
+        <meta
+          name="twitter:description"
+          content="We help startups and brands grow online with SEO, websites, apps, and digital strategies."
+        />
+        <meta
+          name="twitter:image"
+          content="https://kidiwebtech.com/assets/image5.jpg"
         />
       </Head>
+
       <section className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-28 text-center px-4">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">About Us</h1>
         <p className="text-lg sm:text-xl max-w-3xl mx-auto">

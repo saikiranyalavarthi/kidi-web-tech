@@ -1,9 +1,46 @@
 import Image from "next/image";
 
+// ✅ SEO Metadata for App Router
 export const metadata = {
-  title: "Services - KIDIWEBTECH",
+  title: "Services | KIDIWEBTECH - SEO, Web & App Development Agency",
   description:
-    "Explore our digital marketing, app development, website development, and WordPress solutions at KIDIWEBTECH.",
+    "Discover tailored digital services from KIDIWEBTECH including SEO, digital marketing, app development, website design, and WordPress solutions to grow your business.",
+  keywords: [
+    "Digital Marketing Services",
+    "SEO Company India",
+    "App Development Agency",
+    "Web Development Company",
+    "WordPress Services",
+    "Next.js Development",
+    "React Development",
+  ],
+  openGraph: {
+    title: "KIDIWEBTECH Services",
+    description:
+      "Explore our digital marketing, app, web, and WordPress development services. Let us help you grow online.",
+    url: "https://kidiwebtech.com/services",
+    siteName: "KIDIWEBTECH",
+    images: [
+      {
+        url: "https://kidiwebtech.com/assets/image1.jpg",
+        width: 800,
+        height: 600,
+        alt: "KIDIWEBTECH Services",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "KIDIWEBTECH Services",
+    description:
+      "Custom SEO, Web, and App Development Services for Businesses.",
+    images: ["https://kidiwebtech.com/assets/image1.jpg"],
+  },
+  alternates: {
+    canonical: "https://kidiwebtech.com/services",
+  },
 };
 
 export default function ServicesPage() {
@@ -80,34 +117,54 @@ export default function ServicesPage() {
         </h2>
         <div className="max-w-4xl mx-auto space-y-6 text-base leading-relaxed">
           <p>
-            At KIDIWEBTECH, we believe in crafting solutions that go beyond
-            aesthetics — we build tools that perform. Whether you&apos;re a
-            startup aiming to build a digital presence or an established
-            enterprise seeking growth, our strategic digital services are
-            designed to meet your goals efficiently and affordably.
+            At <strong>KIDIWEBTECH</strong>, we build tools that go beyond just
+            aesthetics — they’re designed to perform. Whether you're a startup
+            building your first digital footprint or an enterprise scaling
+            globally, our strategies are customized for growth.
           </p>
           <p>
-            Our team of seasoned developers, marketers, and designers work in
-            sync to create seamless user experiences, engaging content, and
-            high-converting interfaces. We leverage industry-best frameworks
-            like Next.js, React Native, and WordPress to develop robust,
-            scalable products that perform well across devices and markets.
+            Our developers, marketers, and designers collaborate to craft
+            seamless user experiences using Next.js, WordPress, React Native,
+            and other modern frameworks. Everything we build is responsive,
+            fast-loading, and optimized for SEO.
           </p>
           <p>
-            With a strong focus on SEO, we ensure that your website and digital
-            campaigns are not only beautiful but also visible to the right
-            audience. From keyword research and analytics integration to
-            technical optimizations, we cover all aspects of search engine
-            marketing to keep you ahead of competitors.
+            We integrate technical SEO from the beginning — structured data,
+            keywords, page speed, and accessibility — to ensure your brand gets
+            discovered on Google.
           </p>
           <p>
-            Most importantly, we treat every client&apos;s business as our own.
-            Our mission is not just to deliver a project but to become your
-            long-term digital growth partner — supporting you with innovation,
-            strategy, and results-driven execution at every stage.
+            Most importantly, we don’t just deliver a project — we become your
+            long-term growth partner. Innovation, transparency, and performance
+            drive every project we take on.
           </p>
         </div>
       </section>
+
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "KIDIWEBTECH Digital Services",
+            provider: {
+              "@type": "Organization",
+              name: "KIDIWEBTECH",
+              url: "https://kidiwebtech.com",
+            },
+            serviceType:
+              "Digital Marketing, App Development, Web Development, WordPress Development",
+            areaServed: {
+              "@type": "Country",
+              name: "India",
+            },
+            description:
+              "We offer expert digital services including SEO, app & website development, and WordPress customization to grow your online presence.",
+          }),
+        }}
+      />
     </div>
   );
 }

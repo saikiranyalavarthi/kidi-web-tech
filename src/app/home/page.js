@@ -8,13 +8,52 @@ export default function Home() {
   return (
     <div className="font-sans">
       <Head>
-        <title>KIDIWEBTECH - Digital Growth Partner</title>
+        <title>
+          KIDIWEBTECH | Digital Marketing & Web & App Development Company India
+        </title>
         <meta
           name="description"
-          content="Digital Marketing, App & Web Development Agency"
+          content="KIDIWEBTECH is your trusted partner for digital marketing, app development, and website solutions in India. Boost your business growth with SEO, ads, and modern tech."
+        />
+        <meta
+          name="keywords"
+          content="Digital Marketing, SEO Services, Web Development, App Development, WordPress Development, India"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://kidiwebtech.com/" />
+
+        {/* Open Graph Meta Tags for Social Sharing */}
+        <meta
+          property="og:title"
+          content="KIDIWEBTECH - Digital Growth Partner"
+        />
+        <meta
+          property="og:description"
+          content="Grow your business with SEO, Web, App & WordPress development services by KIDIWEBTECH."
+        />
+        <meta
+          property="og:image"
+          content="https://kidiwebtech.com/assets/image1.jpg"
+        />
+        <meta property="og:url" content="https://kidiwebtech.com/" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="KIDIWEBTECH - Digital Growth Partner"
+        />
+        <meta
+          name="twitter:description"
+          content="India's leading digital marketing and development agency. Contact us for SEO, ads, websites, and apps."
+        />
+        <meta
+          name="twitter:image"
+          content="https://kidiwebtech.com/assets/image1.jpg"
         />
       </Head>
-
       <header className="bg-gradient-to-r from-indigo-500 to-purple-700 text-white text-center py-60 px-4 mt-2">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4 animate-pulse">
           Your Partner in Digital Success
