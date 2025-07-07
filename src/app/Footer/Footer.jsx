@@ -9,7 +9,8 @@ export default function Footer() {
           <h2 className="text-2xl font-bold mb-3">KIDIWEBTECH</h2>
           <p className="text-sm leading-relaxed">
             Digital Marketing & Development Agency. We help your business grow
-            with SEO, ads, web, and mobile apps.
+            with SEO, ads, websites, and mobile applications tailored for scale
+            and visibility.
           </p>
         </div>
 
@@ -62,12 +63,9 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Divider */}
-      <div className="border-t border-indigo-400 mt-10 mb-4"></div>
-
-      {/* Contact and Copyright */}
+      {/* Contact and Address */}
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between text-sm text-gray-200 gap-4">
-        <div>
+        <div className="space-y-1">
           <p>
             Email:{" "}
             <a
@@ -87,6 +85,14 @@ export default function Footer() {
             >
               +91 93906 27367
             </a>
+          </p>
+          <p>
+            Address:{" "}
+            <span className="block">
+              SATTAVA MAGNUS 301, Sabza Colony, Brindavan Colony,
+              <br />
+              Toli Chowki, Hyderabad, Telangana
+            </span>
           </p>
         </div>
         <div className="text-center md:text-right">

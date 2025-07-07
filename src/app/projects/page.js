@@ -1,4 +1,3 @@
-// pages/index.jsx or app/projects/page.jsx
 import Image from "next/image";
 import Head from "next/head";
 
@@ -48,8 +47,13 @@ export default function Home() {
         <title>KIDIWEBTECH - Projects</title>
         <meta
           name="description"
-          content="Explore our recent projects from pet apps to IT company websites."
+          content="Explore our recent projects including mobile apps, IT company websites, WordPress development, and SEO-friendly solutions for businesses."
         />
+        <meta
+          name="keywords"
+          content="Web Development Projects, App Development Portfolio, SEO Case Studies, ReactJS Developers India, WordPress Website Experts, eCommerce Website Projects"
+        />
+        <link rel="canonical" href="https://kidiwebtech.com/projects" />
       </Head>
 
       <section className="py-20 px-6 md:px-20 bg-gray-50 text-center">
@@ -78,6 +82,123 @@ export default function Home() {
             <p className="text-gray-700 text-sm">{proj.description}</p>
           </div>
         ))}
+      </section>
+
+      {/* SEO-rich Paragraphs */}
+      <section className="px-6 md:px-20 pb-20 space-y-10 text-gray-800">
+        <div>
+          <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
+            App Development Projects
+          </h2>
+          <p>
+            Our team at <strong>KIDIWEBTECH</strong> specializes in full-cycle{" "}
+            <em>mobile app development in India</em>. We’ve built medical,
+            educational, and business apps that include booking flows, real-time
+            notifications, payment integration, and chat. Whether you need a{" "}
+            <strong>React Native app</strong> or a cross-platform Flutter app,
+            we deliver performance and scale.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
+            News Platforms & Content Sites
+          </h2>
+          <p>
+            Our news apps are built with SEO and speed in mind. We use
+            <strong> React.js + WordPress REST API </strong> to deliver smooth
+            category browsing, sliders, breaking news tickers, and fast loading.
+            Perfect for publishers seeking <em>custom CMS integration</em> and
+            real-time updates.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
+            Coworking Space Systems
+          </h2>
+          <p>
+            Built for freelancers and flexible workspaces, our{" "}
+            <strong>coworking booking apps</strong> offer slot selection, Google
+            Maps view, reviews, and testimonials. Great for commercial rental
+            businesses and tech parks across India.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
+            SEO & Digital Marketing Projects
+          </h2>
+          <p>
+            Our <strong>SEO campaigns</strong> are results-oriented and tailored
+            to your niche. From technical SEO to local business SEO and Google
+            Ads, we help brands increase traffic, leads, and conversions. If
+            you're searching for a <em>trusted SEO company in India</em>, we’ve
+            got the case studies to prove it.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
+            Real Estate Websites & Lead Funnels
+          </h2>
+          <p>
+            Real estate agents and builders use our solutions for lead
+            generation, showcasing properties with filters, videos, WhatsApp
+            inquiry buttons, and multilingual landing pages. Ideal for
+            international markets like{" "}
+            <strong>Marbella, Dubai, and Hyderabad</strong>.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
+            Industrial & Mechanical Sites
+          </h2>
+          <p>
+            Our B2B web platforms for mechanical and hardware industries help
+            companies display their catalog, download brochures, and capture
+            vendor/supplier inquiries. Optimized for performance and
+            conversion-focused design.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
+            IT Consulting & SAP Services Websites
+          </h2>
+          <p>
+            We work with <strong>IT companies</strong> to build service-oriented
+            websites for SAP, staffing, immigration support, and infrastructure
+            management. Built using <em>Next.js and Tailwind CSS</em> with
+            fast-loading and responsive layouts for enterprises.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
+            Personal Portfolio Sites
+          </h2>
+          <p>
+            Developers, designers, and freelancers love our portfolio templates
+            built using <strong>Framer Motion</strong>, Tailwind, and Next.js.
+            Includes animation, responsive layout, project showcase, contact
+            form, and blog.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
+            Digital Growth India for Local Businesses
+          </h2>
+          <p>
+            Under our “<strong>Digital Growth India</strong>” program, we help
+            small shops, doctors, freelancers, and consultants go online in 7
+            days. Includes{" "}
+            <em>WhatsApp automation, SEO landing pages, local maps listing</em>,
+            and mobile-ready design.
+          </p>
+        </div>
       </section>
     </div>
   );

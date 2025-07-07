@@ -13,6 +13,11 @@ export const metadata = {
     "WordPress Services",
     "Next.js Development",
     "React Development",
+    "best digital marketing agency",
+    "seo services in india",
+    "wordpress customization agency",
+    "website design company in hyderabad",
+    "app developers near me",
   ],
   openGraph: {
     title: "KIDIWEBTECH Services",
@@ -110,38 +115,51 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Related Content Section */}
+      {/* SEO Content Section */}
       <section className="py-16 px-6 md:px-20 bg-white text-gray-800">
         <h2 className="text-3xl font-semibold text-indigo-700 mb-6 text-center">
           Why Choose KIDIWEBTECH for Your Digital Journey?
         </h2>
         <div className="max-w-4xl mx-auto space-y-6 text-base leading-relaxed">
           <p>
-            At <strong>KIDIWEBTECH</strong>, we build tools that go beyond just
-            aesthetics — they’re designed to perform. Whether you're a startup
-            building your first digital footprint or an enterprise scaling
-            globally, our strategies are customized for growth.
+            <strong>KIDIWEBTECH</strong> is a trusted{" "}
+            <em>digital marketing agency in India</em> offering end-to-end
+            services to elevate your online brand. Our expertise includes SEO
+            optimization, pay-per-click advertising, website design, and mobile
+            app development tailored for startups and established businesses.
           </p>
           <p>
-            Our developers, marketers, and designers collaborate to craft
-            seamless user experiences using Next.js, WordPress, React Native,
-            and other modern frameworks. Everything we build is responsive,
-            fast-loading, and optimized for SEO.
+            We use modern tools like Next.js, WordPress, React, and Tailwind CSS
+            to build <strong>high-performance websites</strong> and
+            applications. Whether you're searching for the{" "}
+            <em>best digital marketing company near you</em> or a{" "}
+            <strong>custom web development firm</strong>, our team is equipped
+            to deliver top-notch results.
           </p>
           <p>
-            We integrate technical SEO from the beginning — structured data,
-            keywords, page speed, and accessibility — to ensure your brand gets
-            discovered on Google.
+            If you're a small business looking to rank on Google, we provide{" "}
+            <strong>local SEO services</strong> that target your region and
+            audience. For larger organizations, we deliver scalable enterprise
+            solutions backed by analytics, user behavior tracking, and
+            automation.
           </p>
           <p>
-            Most importantly, we don’t just deliver a project — we become your
-            long-term growth partner. Innovation, transparency, and performance
-            drive every project we take on.
+            Our <strong>SEO services in India</strong> include keyword research,
+            content marketing, backlink building, and technical audits —
+            everything needed to outrank your competitors and gain organic
+            traffic. We also specialize in{" "}
+            <strong>WordPress customization</strong> with secure hosting and
+            on-page SEO integrations.
+          </p>
+          <p>
+            From lead generation to sales conversion, our digital services are
+            built to deliver ROI. We're not just developers or marketers — we're
+            long-term partners in your business growth journey.
           </p>
         </div>
       </section>
 
-      {/* JSON-LD Structured Data */}
+      {/* Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

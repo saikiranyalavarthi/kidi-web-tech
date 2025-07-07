@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Head from "next/head";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -26,11 +27,43 @@ export default function ContactPage() {
 
   return (
     <div className="font-sans">
+      <Head>
+        <title>Contact KIDIWEBTECH | SEO, Web & App Development in India</title>
+        <meta
+          name="description"
+          content="Reach out to KIDIWEBTECH for expert digital solutions in SEO, app development, web design, and WordPress services. We’re here to help your business grow online."
+        />
+        <meta
+          name="keywords"
+          content="Contact KIDIWEBTECH, SEO Company India, App Development Company, Web Development Services, WordPress Experts, WhatsApp Contact Digital Marketing"
+        />
+        <link rel="canonical" href="https://kidiwebtech.com/contact" />
+      </Head>
+
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-24 text-center px-4">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">Contact Us</h1>
         <p className="text-lg sm:text-xl max-w-3xl mx-auto">
-          We’re here to help your business grow. Reach out to us today!
+          We’re here to help your business grow with expert digital solutions.
+          Get in touch with our team for SEO, website & app development,
+          WordPress customization, or marketing support.
+        </p>
+      </section>
+
+      {/* Intro Content for SEO */}
+      <section className="px-6 md:px-20 py-10 bg-white text-gray-700 max-w-4xl mx-auto text-center">
+        <p className="mb-6">
+          Whether you're looking for a trusted{" "}
+          <strong>SEO company in India</strong>, need help with{" "}
+          <strong>website development</strong>, or want to launch a custom{" "}
+          <strong>mobile app</strong>, KIDIWEBTECH is here to support your
+          digital journey. Our <strong>WordPress developers</strong> and{" "}
+          <strong>digital marketing team</strong> are ready to assist you with
+          personalized strategies and 24/7 service.
+        </p>
+        <p>
+          Contact us via the form below or send us a message directly on{" "}
+          <strong>WhatsApp</strong> — fast, easy, and effective.
         </p>
       </section>
 
@@ -107,12 +140,24 @@ export default function ContactPage() {
             {/* WhatsApp Button */}
             <button
               type="submit"
-              className="w-full bg-blue-700 text-white py-2 rounded hover:bg-green-700 transition"
+              className="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700 transition"
             >
               Send via WhatsApp Message
             </button>
           </form>
         </div>
+      </section>
+
+      {/* SEO Note Section */}
+      <section className="py-10 px-6 md:px-20 text-center text-gray-600 text-sm">
+        <p>
+          Looking to grow online? KIDIWEBTECH provides expert-level solutions in{" "}
+          <strong>SEO optimization</strong>,{" "}
+          <strong>mobile app development</strong>,{" "}
+          <strong>responsive web design</strong>, and{" "}
+          <strong>WordPress maintenance</strong>. We're your one-stop solution
+          for digital growth in India.
+        </p>
       </section>
     </div>
   );

@@ -16,7 +16,7 @@ export default function About() {
         />
         <meta
           name="keywords"
-          content="About KIDIWEBTECH, Digital Agency India, SEO Experts, Web Development Team, App Development Company"
+          content="About KIDIWEBTECH, Digital Agency India, SEO Experts, Web Development Team, App Development Company, Digital Marketing, Digital Marketing Agency, Digital Marketing Experts in India, Online Marketing Solutions, SEO Services Near Me, App Developers India, Web Design Company, Best Digital Agency in Hyderabad"
         />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -82,6 +82,13 @@ export default function About() {
             With a client-first approach, we craft experiences that resonate
             with users and convert traffic into revenue. Your success is our
             priority.
+          </p>
+          <p className="text-gray-700 mt-6">
+            We specialize in keyword-rich content strategies, Google search
+            optimization, targeted ads, responsive websites, and scalable apps.
+            Whether you're looking for a digital marketing agency in Hyderabad
+            or a complete web and SEO solution in India — we’re your trusted
+            partner.
           </p>
         </div>
         <Image
