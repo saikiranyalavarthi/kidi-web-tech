@@ -81,85 +81,88 @@ export default function ServicesPage() {
   ];
 
   return (
-    <div className="font-sans">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-28 text-center px-4">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-4">Our Services</h1>
-        <p className="text-lg sm:text-xl max-w-3xl mx-auto">
-          Digital solutions tailored to your business needs — SEO, marketing,
-          development, and more.
-        </p>
-      </section>
+    <>
+      <div className="font-sans">
+        {/* Hero Section */}
+        <section className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-28 text-center px-4">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4">Our Services</h1>
+          <p className="text-lg sm:text-xl max-w-3xl mx-auto">
+            Digital solutions tailored to your business needs — SEO, marketing,
+            development, and more.
+          </p>
+        </section>
 
-      {/* Services Grid */}
-      <section className="py-16 px-6 md:px-20 bg-gray-50">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, i) => (
-            <div
-              key={i}
-              className={`bg-white rounded-2xl shadow-lg ${service.hoverShadow} transition p-4 text-center`}
-            >
-              <Image
-                src={service.img}
-                alt={service.title}
-                width={400}
-                height={300}
-                className="w-full h-48 object-cover rounded-xl mb-4"
-              />
-              <h3 className={`text-xl font-semibold ${service.color} mb-2`}>
-                {service.title}
-              </h3>
-              <p className="text-gray-700 text-sm">{service.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+        {/* Services Grid */}
+        <section className="py-16 px-6 md:px-20 bg-gray-50">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {services.map((service, i) => (
+              <div
+                key={i}
+                className={`bg-white rounded-2xl shadow-lg ${service.hoverShadow} transition p-4 text-center`}
+              >
+                <Image
+                  src={service.img}
+                  alt={service.title}
+                  width={400}
+                  height={300}
+                  className="w-full h-48 object-cover rounded-xl mb-4"
+                />
+                <h3 className={`text-xl font-semibold ${service.color} mb-2`}>
+                  {service.title}
+                </h3>
+                <p className="text-gray-700 text-sm">{service.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
 
-      {/* SEO Content Section */}
-      <section className="py-16 px-6 md:px-20 bg-white text-gray-800">
-        <h2 className="text-3xl font-semibold text-indigo-700 mb-6 text-center">
-          Why Choose KIDIWEBTECH for Your Digital Journey?
-        </h2>
-        <div className="max-w-4xl mx-auto space-y-6 text-base leading-relaxed">
-          <p>
-            <strong>KIDIWEBTECH</strong> is a trusted{" "}
-            <em>digital marketing agency in India</em> offering end-to-end
-            services to elevate your online brand. Our expertise includes SEO
-            optimization, pay-per-click advertising, website design, and mobile
-            app development tailored for startups and established businesses.
-          </p>
-          <p>
-            We use modern tools like Next.js, WordPress, React, and Tailwind CSS
-            to build <strong>high-performance websites</strong> and
-            applications. Whether you're searching for the{" "}
-            <em>best digital marketing company near you</em> or a{" "}
-            <strong>custom web development firm</strong>, our team is equipped
-            to deliver top-notch results.
-          </p>
-          <p>
-            If you're a small business looking to rank on Google, we provide{" "}
-            <strong>local SEO services</strong> that target your region and
-            audience. For larger organizations, we deliver scalable enterprise
-            solutions backed by analytics, user behavior tracking, and
-            automation.
-          </p>
-          <p>
-            Our <strong>SEO services in India</strong> include keyword research,
-            content marketing, backlink building, and technical audits —
-            everything needed to outrank your competitors and gain organic
-            traffic. We also specialize in{" "}
-            <strong>WordPress customization</strong> with secure hosting and
-            on-page SEO integrations.
-          </p>
-          <p>
-            From lead generation to sales conversion, our digital services are
-            built to deliver ROI. We're not just developers or marketers — we're
-            long-term partners in your business growth journey.
-          </p>
-        </div>
-      </section>
+        {/* SEO Content Section */}
+        <section className="py-16 px-6 md:px-20 bg-white text-gray-800">
+          <h2 className="text-3xl font-semibold text-indigo-700 mb-6 text-center">
+            Why Choose KIDIWEBTECH for Your Digital Journey?
+          </h2>
+          <div className="max-w-4xl mx-auto space-y-6 text-base leading-relaxed">
+            <p>
+              <strong>KIDIWEBTECH</strong> is a trusted{" "}
+              <em>digital marketing agency in India</em> offering end-to-end
+              services to elevate your online brand. Our expertise includes SEO
+              optimization, pay-per-click advertising, website design, and
+              mobile app development tailored for startups and established
+              businesses.
+            </p>
+            <p>
+              We use modern tools like Next.js, WordPress, React, and Tailwind
+              CSS to build <strong>high-performance websites</strong> and
+              applications. Whether you&apos;re searching for the{" "}
+              <em>best digital marketing company near you</em> or a{" "}
+              <strong>custom web development firm</strong>, our team is equipped
+              to deliver top-notch results.
+            </p>
+            <p>
+              If you&apos;re a small business looking to rank on Google, we
+              provide <strong>local SEO services</strong> that target your
+              region and audience. For larger organizations, we deliver scalable
+              enterprise solutions backed by analytics, user behavior tracking,
+              and automation.
+            </p>
+            <p>
+              Our <strong>SEO services in India</strong> include keyword
+              research, content marketing, backlink building, and technical
+              audits — everything needed to outrank your competitors and gain
+              organic traffic. We also specialize in{" "}
+              <strong>WordPress customization</strong> with secure hosting and
+              on-page SEO integrations.
+            </p>
+            <p>
+              From lead generation to sales conversion, our digital services are
+              built to deliver ROI. We&apos;re not just developers or marketers
+              — we&apos;re long-term partners in your business growth journey.
+            </p>
+          </div>
+        </section>
+      </div>
 
-      {/* Structured Data (JSON-LD) */}
+      {/* Structured Data (JSON-LD) outside of main DOM */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -183,6 +186,6 @@ export default function ServicesPage() {
           }),
         }}
       />
-    </div>
+    </>
   );
 }
