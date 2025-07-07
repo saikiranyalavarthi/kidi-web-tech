@@ -314,6 +314,7 @@ export default function Home() {
           Contact Us
         </a>
       </section>
+
       <section className="py-20 px-6 md:px-20 bg-white">
         <div className="max-w-5xl mx-auto space-y-6 text-gray-700 text-[16px] leading-relaxed">
           <h2 className="text-3xl font-bold text-indigo-700 mb-6 text-center">
@@ -323,11 +324,11 @@ export default function Home() {
           <p>
             At <strong>KIDIWEBTECH</strong>, we are a top-rated digital
             marketing agency based in Hyderabad, delivering powerful online
-            marketing strategies to clients across India. Whether you're a small
-            business, e-commerce brand, doctor, or real estate agent, we provide
-            tailored solutions to help you rank higher on Google, generate
-            qualified leads, and grow revenue with the best digital marketing
-            services near you.
+            marketing strategies to clients across India. Whether you&apos;re a
+            small business, e-commerce brand, doctor, or real estate agent, we
+            provide tailored solutions to help you rank higher on Google,
+            generate qualified leads, and grow revenue with the best digital
+            marketing services near you.
           </p>
 
           <p>
@@ -336,15 +337,15 @@ export default function Home() {
             social media marketing, PPC advertising, and content marketing. As
             one of the <em>best digital marketing companies in Hyderabad</em>,
             we use performance-driven strategies backed by data to bring you
-            real results. If you're searching for a reliable{" "}
+            real results. If you&apos;re searching for a reliable{" "}
             <strong>digital marketing agency near me</strong>, KIDIWEBTECH is
             your trusted partner.
           </p>
 
           <p>
-            We’ve successfully delivered 250+ digital marketing projects for
-            industries like healthcare, technology, real estate, and eCommerce.
-            Whether it's a full-fledged{" "}
+            We&apos;ve successfully delivered 250+ digital marketing projects
+            for industries like healthcare, technology, real estate, and
+            eCommerce. Whether it&apos;s a full-fledged{" "}
             <strong>digital advertising campaign</strong>,{" "}
             <strong>lead generation strategy</strong>, or{" "}
             <strong>local SEO</strong> services, we ensure that every marketing
@@ -415,14 +416,15 @@ export default function Home() {
             Looking for <em>freelance digital marketing experts</em>,{" "}
             <em>marketing agencies near me</em>, or a{" "}
             <strong>creative digital marketing company</strong> to scale your
-            brand online? You've come to the right place.
+            brand online? You&apos;ve come to the right place.
           </p>
 
           <h3 className="text-2xl font-semibold text-purple-700 mt-8">
             Industries We Serve
           </h3>
           <p>
-            From B2B startups to D2C brands, we’ve helped businesses across:
+            From B2B startups to D2C brands, we&apos;ve helped businesses
+            across:
           </p>
 
           <ul className="list-disc pl-6 space-y-3">
@@ -435,14 +437,14 @@ export default function Home() {
           </ul>
 
           <h3 className="text-2xl font-semibold text-purple-700 mt-8">
-            Let’s Build Your Digital Future
+            Let&apos;s Build Your Digital Future
           </h3>
           <p>
             At KIDIWEBTECH, we go beyond just ranking on Google. We create
             end-to-end <strong>digital marketing strategies</strong> that
-            convert visitors into loyal customers. If you're looking for a{" "}
+            convert visitors into loyal customers. If you&apos;re looking for a{" "}
             <strong>digital marketing consultant</strong> or a full-service{" "}
-            <strong>digital agency in Hyderabad</strong>, let's talk!
+            <strong>digital agency in Hyderabad</strong>, let&apos;s talk!
           </p>
 
           <p className="mt-6 text-center">

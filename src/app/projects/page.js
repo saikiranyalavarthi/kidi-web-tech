@@ -37,7 +37,7 @@ export default function Home() {
       title: "Portfolio Website",
       image: "/assets/image11.jpg",
       description:
-        "A personal portfolio showcasing a developer&apos;s skills, past projects, blog, and contact information. Built with Next.js, Tailwind CSS, and Framer Motion animations.",
+        "A personal portfolio showcasing a developer&#39;s skills, past projects, blog, and contact information. Built with Next.js, Tailwind CSS, and Framer Motion animations.",
     },
   ];
 
@@ -56,9 +56,10 @@ export default function Home() {
         <link rel="canonical" href="https://kidiwebtech.com/projects" />
       </Head>
 
+      {/* Hero Section */}
       <section className="py-20 px-6 md:px-20 bg-gray-50 text-center">
         <h1 className="text-4xl font-bold text-indigo-700 mb-4">
-          Our Work & Projects
+          Our Work &amp; Projects
         </h1>
         <p className="text-gray-600 max-w-3xl mx-auto">
           We craft digital experiences across industries. From React apps to
@@ -66,6 +67,7 @@ export default function Home() {
         </p>
       </section>
 
+      {/* Projects Grid */}
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-20 pb-20">
         {projects.map((proj, index) => (
           <div key={index} className="bg-white p-6 rounded-xl shadow-md">
@@ -92,7 +94,7 @@ export default function Home() {
           </h2>
           <p>
             Our team at <strong>KIDIWEBTECH</strong> specializes in full-cycle{" "}
-            <em>mobile app development in India</em>. We’ve built medical,
+            <em>mobile app development in India</em>. We&#39;ve built medical,
             educational, and business apps that include booking flows, real-time
             notifications, payment integration, and chat. Whether you need a{" "}
             <strong>React Native app</strong> or a cross-platform Flutter app,
@@ -102,11 +104,11 @@ export default function Home() {
 
         <div>
           <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
-            News Platforms & Content Sites
+            News Platforms &amp; Content Sites
           </h2>
           <p>
-            Our news apps are built with SEO and speed in mind. We use
-            <strong> React.js + WordPress REST API </strong> to deliver smooth
+            Our news apps are built with SEO and speed in mind. We use{" "}
+            <strong>React.js + WordPress REST API</strong> to deliver smooth
             category browsing, sliders, breaking news tickers, and fast loading.
             Perfect for publishers seeking <em>custom CMS integration</em> and
             real-time updates.
@@ -127,20 +129,20 @@ export default function Home() {
 
         <div>
           <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
-            SEO & Digital Marketing Projects
+            SEO &amp; Digital Marketing Projects
           </h2>
           <p>
             Our <strong>SEO campaigns</strong> are results-oriented and tailored
             to your niche. From technical SEO to local business SEO and Google
             Ads, we help brands increase traffic, leads, and conversions. If
-            you're searching for a <em>trusted SEO company in India</em>, we’ve
-            got the case studies to prove it.
+            you&#39;re searching for a <em>trusted SEO company in India</em>,
+            we&#39;ve got the case studies to prove it.
           </p>
         </div>
 
         <div>
           <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
-            Real Estate Websites & Lead Funnels
+            Real Estate Websites &amp; Lead Funnels
           </h2>
           <p>
             Real estate agents and builders use our solutions for lead
@@ -153,7 +155,7 @@ export default function Home() {
 
         <div>
           <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
-            Industrial & Mechanical Sites
+            Industrial &amp; Mechanical Sites
           </h2>
           <p>
             Our B2B web platforms for mechanical and hardware industries help
@@ -165,7 +167,7 @@ export default function Home() {
 
         <div>
           <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
-            IT Consulting & SAP Services Websites
+            IT Consulting &amp; SAP Services Websites
           </h2>
           <p>
             We work with <strong>IT companies</strong> to build service-oriented

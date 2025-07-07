@@ -159,7 +159,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Structured Data */}
+      {/* Structured Data (JSON-LD) */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

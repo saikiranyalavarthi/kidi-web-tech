@@ -60,7 +60,7 @@ export default function About() {
           At KIDIWEBTECH, we create powerful digital solutions that help
           businesses grow and compete with confidence. From SEO to web, app, and
           WordPress development, we turn ideas into high-performing platforms.
-          Whether you&apos;re a startup or a scaling brand, our strategies are
+          Whether you&#39;re a startup or a scaling brand, our strategies are
           tailored to meet your unique goals.
         </p>
       </section>
@@ -86,9 +86,9 @@ export default function About() {
           <p className="text-gray-700 mt-6">
             We specialize in keyword-rich content strategies, Google search
             optimization, targeted ads, responsive websites, and scalable apps.
-            Whether you're looking for a digital marketing agency in Hyderabad
-            or a complete web and SEO solution in India — we’re your trusted
-            partner.
+            Whether you&#39;re looking for a digital marketing agency in
+            Hyderabad or a complete web and SEO solution in India — we&#39;re
+            your trusted partner.
           </p>
         </div>
         <Image
@@ -192,7 +192,7 @@ export default function About() {
               24/7 Support
             </h3>
             <p className="text-gray-700 text-sm mb-2">
-              We&apos;re always here for you — before, during, and after your
+              We&#39;re always here for you — before, during, and after your
               project.
             </p>
             <p className="text-gray-700 text-sm">

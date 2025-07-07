@@ -28,10 +28,12 @@ export default function ContactPage() {
   return (
     <div className="font-sans">
       <Head>
-        <title>Contact KIDIWEBTECH | SEO, Web & App Development in India</title>
+        <title>
+          Contact KIDIWEBTECH | SEO, Web &amp; App Development in India
+        </title>
         <meta
           name="description"
-          content="Reach out to KIDIWEBTECH for expert digital solutions in SEO, app development, web design, and WordPress services. We’re here to help your business grow online."
+          content="Reach out to KIDIWEBTECH for expert digital solutions in SEO, app development, web design, and WordPress services. We&#39;re here to help your business grow online."
         />
         <meta
           name="keywords"
@@ -44,16 +46,16 @@ export default function ContactPage() {
       <section className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-24 text-center px-4">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">Contact Us</h1>
         <p className="text-lg sm:text-xl max-w-3xl mx-auto">
-          We’re here to help your business grow with expert digital solutions.
-          Get in touch with our team for SEO, website & app development,
-          WordPress customization, or marketing support.
+          We&#39;re here to help your business grow with expert digital
+          solutions. Get in touch with our team for SEO, website &amp; app
+          development, WordPress customization, or marketing support.
         </p>
       </section>
 
       {/* Intro Content for SEO */}
       <section className="px-6 md:px-20 py-10 bg-white text-gray-700 max-w-4xl mx-auto text-center">
         <p className="mb-6">
-          Whether you're looking for a trusted{" "}
+          Whether you&#39;re looking for a trusted{" "}
           <strong>SEO company in India</strong>, need help with{" "}
           <strong>website development</strong>, or want to launch a custom{" "}
           <strong>mobile app</strong>, KIDIWEBTECH is here to support your
@@ -155,8 +157,8 @@ export default function ContactPage() {
           <strong>SEO optimization</strong>,{" "}
           <strong>mobile app development</strong>,{" "}
           <strong>responsive web design</strong>, and{" "}
-          <strong>WordPress maintenance</strong>. We're your one-stop solution
-          for digital growth in India.
+          <strong>WordPress maintenance</strong>. We&#39;re your one-stop
+          solution for digital growth in India.
         </p>
       </section>
     </div>
