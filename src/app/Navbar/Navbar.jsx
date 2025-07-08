@@ -39,6 +39,9 @@ const Navbar = () => {
             <Link href="/projects" className="hover:underline">
               Projects
             </Link>
+            <Link href="/blogs" className="hover:underline">
+              Blogs
+            </Link>
             <Link
               href="/contact"
               className="bg-white text-indigo-700 font-medium px-4 py-2 rounded-md hover:bg-gray-100 transition"
@@ -74,6 +77,13 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Projects
+            </Link>
+            <Link
+              href="/blogs"
+              className="hover:underline"
+              onClick={toggleMenu}
+            >
+              Blogs
             </Link>
             <Link
               href="/contact"

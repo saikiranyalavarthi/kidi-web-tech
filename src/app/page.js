@@ -4,6 +4,7 @@ import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { CheckCircle } from "lucide-react";
+import AnimatedServices from "./Components/AnimatedServices";
 
 export default function Home() {
   const services = [
@@ -314,6 +315,8 @@ export default function Home() {
           Contact Us
         </a>
       </section>
+
+      {/* <AnimatedServices /> */}
 
       <section className="py-20 px-6 md:px-20 bg-white">
         <div className="max-w-5xl mx-auto space-y-6 text-gray-700 text-[16px] leading-relaxed">
