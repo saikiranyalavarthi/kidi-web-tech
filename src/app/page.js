@@ -6,6 +6,7 @@ import Image from "next/image";
 import { CheckCircle } from "lucide-react";
 import AnimatedServices from "./Components/AnimatedServices";
 import ServicesSection from "./Components/ServicesSection";
+import ExperienceSection from "./Components/ExperienceSection";
 
 export default function Home() {
   const services = [
@@ -128,7 +129,7 @@ export default function Home() {
                 Contact Us
               </a>
               <a
-                href="/services"
+                href="/services/KIDIWEBTECH"
                 className="bg-blue-500 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg font-semibold transition"
               >
                 Our Services
@@ -207,7 +208,9 @@ export default function Home() {
           className="rounded-2xl shadow-lg"
         />
       </section>
-
+      <main>
+        <ExperienceSection />
+      </main>
       {/* Projects */}
       <section className="py-20 px-6 md:px-20 bg-gray-50 text-center">
         <h1 className="text-4xl font-bold text-indigo-700 mb-4">

@@ -2,6 +2,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
+import ExperienceSection from "../Components/ExperienceSection";
 
 export default function About() {
   return (
@@ -99,7 +100,7 @@ export default function About() {
           className="rounded-2xl shadow-lg ml-30"
         />
       </section>
-
+      <ExperienceSection />
       <section className="py-16 px-6 md:px-20 bg-gray-100 text-center">
         <h2 className="text-3xl font-semibold text-purple-700 mb-6">
           Our Mission

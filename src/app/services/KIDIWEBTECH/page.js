@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ServicesSection from "../Components/ServicesSection";
+import ServicesSection from "../../Components/ServicesSection";
 
 // ✅ SEO Metadata for App Router
 export const metadata = {
