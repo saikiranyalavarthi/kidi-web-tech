@@ -32,9 +32,9 @@ export default function WebHostingPage() {
           Web Hosting Services
         </h1>
         <nav className="text-sm font-semibold text-white/90">
-          <a href="/" className="hover:underline">
+          <Link href="/" className="hover:underline">
             Home
-          </a>{" "}
+          </Link>{" "}
           <span className="mx-1">›</span> Web Hosting Services
         </nav>
       </div>
@@ -44,8 +44,8 @@ export default function WebHostingPage() {
         When you create a website and want the world to access it, you need web
         hosting. Web hosting is an internet service that allows individuals and
         organizations to publish their website and make it globally accessible
-        via the World Wide Web. Whether you're launching a personal blog or a
-        full-fledged e-commerce site, reliable hosting is the foundation.
+        via the World Wide Web. Whether you&apos;re launching a personal blog or
+        a full-fledged e-commerce site, reliable hosting is the foundation.
       </p>
 
       {/* Service Details */}
@@ -56,16 +56,20 @@ export default function WebHostingPage() {
       <div className="flex flex-col md:flex-row items-center gap-8 mb-10">
         <div className="md:w-1/2">
           <p className="mb-4 text-gray-700">
-            At <strong>KIDIWEBTECH</strong>, we pride ourselves on offering
-            performance-driven hosting solutions. As one of the best digital
-            marketing and SEO agencies in Hyderabad, we also provide hosting and
-            domain registration services, ensuring your entire web
-            infrastructure is reliable, fast, and secure.
+            At{" "}
+            <strong className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-rose-500">
+              KIDIWEBTECH
+            </strong>
+            , we pride ourselves on offering performance-driven hosting
+            solutions. As one of the best digital marketing and SEO agencies in
+            Hyderabad, we also provide hosting and domain registration services,
+            ensuring your entire web infrastructure is reliable, fast, and
+            secure.
           </p>
           <p className="mb-4 text-gray-700">
             From selecting the perfect domain name to linking it with the right
-            hosting plan, we guide you end-to-end. Whether you're launching your
-            first site or migrating a high-traffic one, we offer unmatched
+            hosting plan, we guide you end-to-end. Whether you&apos;re launching
+            your first site or migrating a high-traffic one, we offer unmatched
             uptime, security, and support.
           </p>
           <p className="text-gray-700">
@@ -76,7 +80,7 @@ export default function WebHostingPage() {
         </div>
         <div className="md:w-1/2">
           <Image
-            src="/assets/image17.jpg" // Replace with your actual image
+            src="/assets/image17.jpg"
             alt="Web Hosting Services"
             width={600}
             height={400}
@@ -95,30 +99,34 @@ export default function WebHostingPage() {
         <li>Shared Web Hosting</li>
         <li>Cloud Hosting</li>
         <li>Website Builder + Hosting Bundles</li>
-        <li>Domain Registration & Management</li>
+        <li>Domain Registration &amp; Management</li>
       </ul>
 
       {/* Themed Paragraph */}
       <div className="text-gray-700 text-lg leading-relaxed mb-10">
         <p>
           Our proven hosting solutions come with enterprise-grade security,
-          99.99% uptime, and 24x7 expert support. Whether you're looking for
-          blazing fast load times, seamless WordPress hosting, or robust cloud
-          infrastructure, <strong>KIDIWEBTECH</strong> has the tools and talent
-          to support your digital goals. We also provide custom hosting plans
-          tailored to your business model. No hidden charges — just transparent,
-          efficient, and powerful hosting services you can trust.
+          99.99% uptime, and 24x7 expert support. Whether you&apos;re looking
+          for blazing fast load times, seamless WordPress hosting, or robust
+          cloud infrastructure,{" "}
+          <strong className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-rose-500">
+            KIDIWEBTECH
+          </strong>{" "}
+          has the tools and talent to support your digital goals. We also
+          provide custom hosting plans tailored to your business model. No
+          hidden charges — just transparent, efficient, and powerful hosting
+          services you can trust.
         </p>
       </div>
 
       {/* CTA Section */}
       <div className="text-center">
-        <a
+        <Link
           href="/contact"
           className="inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded hover:bg-indigo-700 transition"
         >
           Get a Hosting Plan for Your Website
-        </a>
+        </Link>
       </div>
     </main>
   );

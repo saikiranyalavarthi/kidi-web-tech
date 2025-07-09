@@ -31,9 +31,9 @@ export default function WebDesigningPage() {
           Web Designing Services
         </h1>
         <nav className="text-sm font-semibold text-white/90">
-          <a href="/" className="hover:underline">
+          <Link href="/" className="hover:underline">
             Home
-          </a>{" "}
+          </Link>{" "}
           <span className="mx-1">›</span> Web Designing Services
         </nav>
       </div>
@@ -48,7 +48,7 @@ export default function WebDesigningPage() {
           you need a website that establishes interactions with the viewer. Your
           website is the first impression for all the reputation you wish to
           hold for your brand. If your website cannot hold your viewer for more
-          than 4 seconds, then you have failed to convince that your products
+          than 4 seconds, then you&apos;ve failed to convince that your products
           are best in class.
         </p>
 
@@ -68,14 +68,19 @@ export default function WebDesigningPage() {
           </div>
           <div className="md:w-1/2">
             <p className="mb-4 text-gray-700">
-              <strong>KIDIWEBTECH</strong>, being one of the best web design and
-              SEO service providers in Hyderabad, understands the core vision of
-              your business and ensures your website speaks to your users in
-              both design and message.
+              <strong>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-rose-500">
+                  KIDIWEBTECH
+                </span>
+              </strong>
+              , being one of the best web design and SEO service providers in
+              Hyderabad, understands the core vision of your business and
+              ensures your website speaks to your users in both design and
+              message.
             </p>
             <p className="mb-4 text-gray-700">
               Your brand needs a holistic output — from hosting to lead
-              generation. That’s where we bring stunning, fast, and secure
+              generation. That&apos;s where we bring stunning, fast, and secure
               websites that are tailored for performance, trust, and modern
               business standards.
             </p>
@@ -84,20 +89,31 @@ export default function WebDesigningPage() {
 
         <p className="text-gray-700 mb-4">
           Users enjoy visiting websites that are visually appealing and
-          intuitive to navigate. At <strong>KIDIWEBTECH</strong>, our creative
-          developers deliver clean layouts and smart structure, helping your
-          visitors engage, explore, and act.
+          intuitive to navigate. At{" "}
+          <strong>
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-rose-500">
+              KIDIWEBTECH
+            </span>
+          </strong>
+          , our creative developers deliver clean layouts and smart structure,
+          helping your visitors engage, explore, and act.
         </p>
         <p className="text-gray-700 mb-4">
-          Because it’s not always about technical edge — it’s about emotional
-          touch, visual storytelling, and experience that make your brand
-          unforgettable in the digital crowd.
+          Because it&apos;s not always about technical edge — it&apos;s about
+          emotional touch, visual storytelling, and experience that make your
+          brand unforgettable in the digital crowd.
         </p>
         <p className="text-gray-700 mb-6">
-          The secret to <strong>KIDIWEBTECH</strong>'s success is our ability to
-          deliver agile, scalable, and responsive web design that gives your
-          business a competitive advantage. We help your site leave a lasting
-          first impression — with speed, performance, and accessibility in mind.
+          The secret to{" "}
+          <strong>
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-rose-500">
+              KIDIWEBTECH
+            </span>
+          </strong>
+          &apos;s success is our ability to deliver agile, scalable, and
+          responsive web design that gives your business a competitive
+          advantage. We help your site leave a lasting first impression — with
+          speed, performance, and accessibility in mind.
         </p>
 
         {/* CTA Section */}

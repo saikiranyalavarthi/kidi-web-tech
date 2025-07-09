@@ -32,9 +32,9 @@ export default function WebDevelopmentPage() {
           Web Development Services
         </h1>
         <nav className="text-sm font-semibold text-white/90">
-          <a href="/" className="hover:underline">
+          <Link href="/" className="hover:underline">
             Home
-          </a>{" "}
+          </Link>{" "}
           <span className="mx-1">›</span> Web Development Services
         </nav>
       </div>
@@ -47,7 +47,7 @@ export default function WebDevelopmentPage() {
       <p className="text-lg mb-6 leading-relaxed">
         Web development, also known as website development, refers to the
         creation and maintenance of websites. It usually focuses on coding and
-        functionality rather than design. Whether you're launching a simple
+        functionality rather than design. Whether you&apos;re launching a simple
         static website or a full-scale web application, web development ensures
         everything works smoothly under the hood.
       </p>
@@ -67,22 +67,26 @@ export default function WebDevelopmentPage() {
       </p>
 
       <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-6">
-        <li>Project definition & scope</li>
-        <li>Visual design & UI planning</li>
-        <li>Frontend & backend development</li>
+        <li>Project definition &amp; scope</li>
+        <li>Visual design &amp; UI planning</li>
+        <li>Frontend &amp; backend development</li>
         <li>Testing and QA</li>
-        <li>Deployment & security configuration</li>
-        <li>Ongoing maintenance & optimization</li>
+        <li>Deployment &amp; security configuration</li>
+        <li>Ongoing maintenance &amp; optimization</li>
       </ul>
 
       <div className="flex flex-col-reverse md:flex-row items-center gap-10 mb-10">
         <div className="md:w-1/2">
           <p className="mb-4 text-gray-700">
-            <strong>KIDIWEBTECH</strong>, one of the best digital marketing and
-            development agencies in Hyderabad, builds everything from e-commerce
-            stores and CMS platforms to SaaS tools and custom portals. Whether
-            you need a dynamic business site or a complex web app, we deliver
-            it.
+            <strong>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-rose-500">
+                KIDIWEBTECH
+              </span>
+            </strong>{" "}
+            — one of the best digital marketing and development agencies in
+            Hyderabad — builds everything from e-commerce stores and CMS
+            platforms to SaaS tools and custom portals. Whether you need a
+            dynamic business site or a complex web app, we deliver it.
           </p>
           <p className="text-gray-700">
             Our team of skilled developers integrates cutting-edge technologies,
@@ -101,19 +105,23 @@ export default function WebDevelopmentPage() {
         </div>
       </div>
 
-      {/* Themed Paragraph - 6–8 lines */}
+      {/* Themed Paragraph */}
       <div className="mb-10 text-gray-700 text-lg leading-relaxed">
         <p>
-          A good website isn't just code — it's a business asset. At{" "}
-          <strong>KIDIWEBTECH</strong>, we combine strategy, design, and
-          development to create web experiences that not only look good but
-          perform exceptionally. From optimizing site speed and SEO to ensuring
-          user-friendly interfaces and backend efficiency, we cover it all.
-          Whether you're a startup or an enterprise, we offer end-to-end
-          solutions tailored to your goals. We prioritize responsiveness,
-          clean-code architecture, and cross-browser compatibility to help your
-          brand scale fast. Our solutions are future-proof and built with your
-          growth in mind.
+          A good website isn&apos;t just code — it&apos;s a business asset. At{" "}
+          <strong>
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-rose-500">
+              KIDIWEBTECH
+            </span>
+          </strong>
+          , we combine strategy, design, and development to create web
+          experiences that not only look good but perform exceptionally. From
+          optimizing site speed and SEO to ensuring user-friendly interfaces and
+          backend efficiency, we cover it all. Whether you&apos;re a startup or
+          an enterprise, we offer end-to-end solutions tailored to your goals.
+          We prioritize responsiveness, clean-code architecture, and
+          cross-browser compatibility to help your brand scale fast. Our
+          solutions are future-proof and built with your growth in mind.
         </p>
       </div>
 
