@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
         {children}
         <AnimatedServices />
         <Goals />
-        <AnimatedCompanies />
+        {/* <AnimatedCompanies /> */}
         <Footer />
       </body>
     </html>
