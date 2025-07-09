@@ -15,7 +15,15 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold">
-            KIDIWEBTECH
+            {/* <img
+              src="/assets/logo.png" // make sure the image is inside /public/assets/
+              alt="KIDIWEBTECH Logo"
+              width={50}
+              height={50}
+            /> */}
+            <span className="text-white font-semibold text-lg">
+              KIDIWEBTECH
+            </span>
           </Link>
 
           {/* Hamburger Icon */}

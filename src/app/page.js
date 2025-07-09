@@ -5,6 +5,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { CheckCircle } from "lucide-react";
 import AnimatedServices from "./Components/AnimatedServices";
+import ServicesSection from "./Components/ServicesSection";
 
 export default function Home() {
   const services = [
@@ -296,9 +297,11 @@ export default function Home() {
           />
         </div>
       </section>
-
+      <main className=" bg-white text-black">
+        <ServicesSection />
+      </main>
       {/* Contact CTA */}
-      <section className="py-16 px-6 md:px-20 bg-gray-50 text-center">
+      <section className="py-4 px-6 md:px-20 bg-gray-50 text-center">
         <h2 className="text-3xl font-semibold text-indigo-700 mb-6">
           Get in Touch
         </h2>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ServicesSection from "../Components/ServicesSection";
 
 // ✅ SEO Metadata for App Router
 export const metadata = {
@@ -161,7 +162,9 @@ export default function ServicesPage() {
           </div>
         </section>
       </div>
-
+      <main className=" bg-white text-black">
+        <ServicesSection />
+      </main>
       {/* Structured Data (JSON-LD) outside of main DOM */}
       <script
         type="application/ld+json"
