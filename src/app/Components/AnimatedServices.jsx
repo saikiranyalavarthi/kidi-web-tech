@@ -28,7 +28,7 @@ export default function AnimatedServices() {
           animate={{ x: ["-100%", "0%"] }}
           transition={{
             repeat: Infinity,
-            duration: 60,
+            duration: 70,
             ease: "linear",
           }}
         >

@@ -10,6 +10,7 @@ import ExperienceSection from "./Components/ExperienceSection";
 import ServiceCategories from "./Components/ServiceCategories";
 import WeDiffer from "./Components/WeDiffer";
 import StatsSection from "./Components/StatsSection";
+import ScrollingText from "./Components/ScrollingText";
 
 export default function Home() {
   const services = [
@@ -186,6 +187,7 @@ export default function Home() {
         </div>
       </section>
       <ServiceCategories />
+
       {/* About Section */}
       <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 items-center gap-12 bg-white">
         <div>
@@ -307,6 +309,7 @@ export default function Home() {
         <ServicesSection />
       </main>
       <StatsSection />
+      <ScrollingText />
       {/* Contact CTA */}
       <section className="py-4 px-6 md:px-20 bg-gray-50 text-center">
         <h2 className="text-3xl font-semibold text-indigo-700 mb-6">
