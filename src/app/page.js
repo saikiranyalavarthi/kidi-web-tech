@@ -7,6 +7,9 @@ import { CheckCircle } from "lucide-react";
 import AnimatedServices from "./Components/AnimatedServices";
 import ServicesSection from "./Components/ServicesSection";
 import ExperienceSection from "./Components/ExperienceSection";
+import ServiceCategories from "./Components/ServiceCategories";
+import WeDiffer from "./Components/WeDiffer";
+import StatsSection from "./Components/StatsSection";
 
 export default function Home() {
   const services = [
@@ -182,7 +185,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-
+      <ServiceCategories />
       {/* About Section */}
       <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 items-center gap-12 bg-white">
         <div>
@@ -239,7 +242,7 @@ export default function Home() {
           </div>
         ))}
       </section>
-
+      <WeDiffer />
       {/* Success Section */}
       <section className="bg-[#f7f5ff] py-16 px-6 md:px-20 flex flex-col lg:flex-row items-center justify-between gap-10">
         <div className="lg:w-1/2">
@@ -303,6 +306,7 @@ export default function Home() {
       <main className=" bg-white text-black">
         <ServicesSection />
       </main>
+      <StatsSection />
       {/* Contact CTA */}
       <section className="py-4 px-6 md:px-20 bg-gray-50 text-center">
         <h2 className="text-3xl font-semibold text-indigo-700 mb-6">

@@ -16,7 +16,6 @@ const serviceLinks = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [showServices, setShowServices] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -46,32 +45,22 @@ const Navbar = () => {
             About
           </Link>
 
-          {/* Services Dropdown (Fixed) */}
-          <div className="relative">
-            <button
-              onClick={() => setShowServices((prev) => !prev)}
-              className="flex items-center hover:underline"
-            >
+          {/* Services Dropdown (Hover + Transition) */}
+          <div className="relative group">
+            <button className="flex items-center hover:underline">
               Services <ChevronDown size={16} className="ml-1" />
             </button>
-
-            {showServices && (
-              <div
-                className="absolute top-8 left-0 w-64 bg-white text-gray-900 rounded-md shadow-lg z-40"
-                onMouseLeave={() => setShowServices(false)}
-              >
-                {serviceLinks.map((link, i) => (
-                  <Link
-                    key={i}
-                    href={link.href}
-                    className="block px-4 py-2 hover:bg-gray-300"
-                    onClick={() => setShowServices(false)} // close dropdown on click
-                  >
-                    {link.name}
-                  </Link>
-                ))}
-              </div>
-            )}
+            <div className="absolute top-full left-0 mt-2 w-64 bg-white text-gray-900 rounded-md shadow-lg opacity-0 scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 transform origin-top transition-all duration-300 z-40">
+              {serviceLinks.map((link, i) => (
+                <Link
+                  key={i}
+                  href={link.href}
+                  className="block px-4 py-2 hover:bg-gray-200 transition"
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
           </div>
 
           <Link href="/projects" className="hover:underline">
