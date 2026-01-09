@@ -5,6 +5,7 @@ import Footer from "./Footer/Footer";
 import Goals from "./goals/Goals";
 import AnimatedServices from "./Components/AnimatedServices";
 import AnimatedCompanies from "./Components/AnimatedCompanies";
+import FloatingSocialButtons from "./Components/FloatingSocialButtons";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +31,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
     
-       
+        <FloatingSocialButtons />
         {/* <AnimatedCompanies /> */}
         <Footer />
       </body>

@@ -1,142 +1,148 @@
 "use client";
 
-import Head from "next/head";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function SocialMediaMarketingPage() {
-  const title = "Social Media Marketing Company in Hyderabad | KIDIWEBTECH";
-  const description =
-    "KIDIWEBTECH offers expert Social Media Marketing services in Hyderabad to boost brand visibility, drive engagement, and increase your business growth on Facebook, Instagram, LinkedIn, and more.";
-  const keywords = [
-    "Social Media Marketing Hyderabad",
-    "SMM Company in Hyderabad",
-    "Digital Marketing Services",
-    "Facebook Marketing",
-    "Instagram Marketing",
-    "KIDIWEBTECH SMM",
-    "LinkedIn Advertising",
-    "Social Ads Agency Hyderabad",
-  ];
-
   return (
-    <main className="bg-white text-gray-800 px-4 md:px-16 py-10 max-w-7xl mx-auto">
-      <Head>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <meta name="keywords" content={keywords.join(", ")} />
-      </Head>
+    <div className="bg-black text-white overflow-hidden">
 
-      {/* 🔥 Gradient Heading Section */}
-      <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-rose-500 text-white text-center py-12 px-4">
-        <h1 className="text-3xl md:text-4xl font-bold mb-2">
-          Social Media Marketing Services
+      {/* ================= HERO ================= */}
+      <section className="py-28 px-6 text-center border-b border-white/10">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+          Social Media Marketing{" "}
+          <span className="gradient-text">(SMM)</span>
         </h1>
-        <nav className="text-sm font-semibold text-white/90">
-          <a href="/" className="hover:underline">
-            Home
-          </a>{" "}
-          <span className="mx-1">›</span> Social Media Marketing Services
-        </nav>
-      </div>
 
-      {/* Hero Section */}
-      <div className="flex flex-col md:flex-row items-center gap-10 mt-12">
-        <div className="flex-1">
-          <h2 className="text-3xl md:text-4xl font-bold text-indigo-700 mb-4">
-            Social Media Marketing Company in Hyderabad
-          </h2>
-          <p className="text-lg mb-4">
-            In today’s vibrant Internet era, Social Media has become a vital
-            part of everyone’s life. Social Media Marketing is the strategic use
-            of platforms like Facebook, Instagram, LinkedIn, and YouTube to
-            drive traffic and boost brand awareness. It’s reliable, affordable,
-            and essential for businesses aiming for online growth.
-          </p>
+        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+          Build brand authority, drive engagement, and generate leads through
+          powerful social media strategies.
+        </p>
+
+        <nav className="mt-6 text-sm text-gray-500">
+          <Link href="/" className="hover:text-yellow-400 transition">
+            Home
+          </Link>
+          <span className="mx-2">›</span>
+          <span className="text-gray-400">Social Media Marketing</span>
+        </nav>
+      </section>
+
+      {/* ================= INTRO ================= */}
+      <section className="py-24 px-6 md:px-20 max-w-7xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="grid md:grid-cols-2 gap-16 items-center"
+        >
+          {/* IMAGE */}
+          <div className="relative">
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-yellow-400 to-orange-500 opacity-80" />
+            <div className="relative bg-black rounded-3xl m-[1.5px] overflow-hidden">
+              <Image
+                src="/assets/image15.jpg"
+                alt="Social Media Marketing Services"
+                width={600}
+                height={420}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* CONTENT */}
+          <div>
+            <h2 className="text-3xl font-extrabold mb-6">
+              Best <span className="gradient-text">Social Media Marketing</span>{" "}
+              Company in Hyderabad
+            </h2>
+
+            <p className="text-gray-400 mb-5 leading-relaxed">
+              <strong className="gradient-text">KIDIWEBTECH</strong> helps
+              businesses grow on platforms like Instagram, Facebook, LinkedIn,
+              and YouTube using data-driven and creative strategies.
+            </p>
+
+            <p className="text-gray-400 leading-relaxed">
+              We don’t just post content — we build communities, spark
+              conversations, and convert followers into loyal customers.
+            </p>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* ================= SERVICES ================= */}
+      <section className="py-20 px-6 md:px-20 max-w-7xl mx-auto">
+        <h3 className="text-3xl font-extrabold text-center mb-14">
+          Our <span className="gradient-text">SMM Services</span>
+        </h3>
+
+        <div className="grid md:grid-cols-3 gap-10">
+          {[
+            "Social Media Account Setup & Branding",
+            "Content Strategy & Creative Campaigns",
+            "Post Scheduling & Optimization",
+            "Audience Engagement & Community Management",
+            "Paid Ads (Meta, Instagram, LinkedIn)",
+            "Analytics, Reports & Strategy Improvement",
+          ].map((item, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="border border-white/10 rounded-2xl p-6 hover:border-yellow-400 transition"
+            >
+              <h4 className="text-xl font-semibold mb-2">{item}</h4>
+              <p className="text-gray-400 text-sm">
+                Performance-focused execution designed to grow reach and
+                conversions.
+              </p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* ================= CTA ================= */}
+      <section className="py-24 px-6 text-center border-t border-white/10">
+        <h2 className="text-3xl font-extrabold mb-6">
+          Ready to <span className="gradient-text">Grow on Social Media?</span>
+        </h2>
+
+        <p className="text-gray-400 max-w-2xl mx-auto mb-10 text-lg">
+          Partner with KIDIWEBTECH and turn your social presence into a
+          revenue-generating asset.
+        </p>
+
+        <div className="flex justify-center gap-6 flex-wrap">
           <Link
             href="/contact"
-            className="bg-indigo-600 text-white font-semibold px-6 py-3 rounded hover:bg-indigo-700 transition"
+            className="
+              inline-block px-10 py-4 rounded-full
+              bg-gradient-to-r from-yellow-400 to-orange-500
+              text-black font-semibold text-lg
+              hover:opacity-90 transition
+            "
           >
-            Get Free Consultation
+            Get Free Consultation →
+          </Link>
+
+          <Link
+            href="https://wa.me/919390627367"
+            className="
+              inline-block px-10 py-4 rounded-full
+              border border-yellow-400 text-yellow-400
+              hover:bg-yellow-400 hover:text-black
+              transition
+            "
+          >
+            WhatsApp Us
           </Link>
         </div>
-
-        <div className="flex-1">
-          <Image
-            src="/assets/image15.jpg"
-            alt="Social Media Marketing Illustration"
-            width={600}
-            height={400}
-            className="w-full h-auto object-contain rounded-md shadow"
-          />
-        </div>
-      </div>
-
-      {/* About Our SMM Services */}
-      <section className="mt-16 space-y-5 text-lg leading-relaxed">
-        <h2 className="text-2xl font-semibold text-gray-800">
-          Why Choose Us for Social Media Marketing?
-        </h2>
-        <p>
-          <strong>KIDIWEBTECH</strong>, a widely trusted digital marketing
-          agency in Hyderabad, provides expert-level Social Media Marketing
-          services. We integrate proven strategies, creative storytelling, and
-          cutting-edge tools to amplify your brand voice across platforms.
-        </p>
-        <p>
-          As a forward-thinking company, we help clients establish a powerful
-          digital identity through innovative content, modern approaches, and
-          engaging campaigns. Our services span content curation, post design,
-          page moderation, influencer outreach, and detailed analytics — all
-          tailored to your business audience.
-        </p>
-        <p>
-          Whether you want to improve customer engagement, increase brand
-          visibility, or drive targeted leads, our social media strategies are
-          designed to perform. We specialize in building communities and
-          conversations that connect emotionally with your audience and
-          reinforce your brand trust. At <strong>KIDIWEBTECH</strong>, we don’t
-          just schedule posts — we tell compelling stories, spark real
-          interactions, and track every performance metric for ROI-focused
-          campaigns. With a deep understanding of platform algorithms, we help
-          you rise above the digital noise and grow authentically.
-        </p>
       </section>
-
-      {/* What We Offer */}
-      <section className="mt-12">
-        <h2 className="text-2xl font-semibold mb-4">
-          Our Social Media Services Include:
-        </h2>
-        <ul className="list-disc pl-6 space-y-2 text-lg">
-          <li>Social Media Channel Setup & Branding</li>
-          <li>Content Planning & Creative Campaigns</li>
-          <li>Post Scheduling and Performance Optimization</li>
-          <li>Audience Engagement & Community Moderation</li>
-          <li>Paid Ads & Promotions (Meta, LinkedIn, Twitter)</li>
-          <li>Influencer Marketing and Outreach</li>
-          <li>Brand Awareness & Lead Generation Campaigns</li>
-          <li>Weekly Analytics and Strategy Revisions</li>
-        </ul>
-      </section>
-
-      {/* CTA Section */}
-      <section className="mt-16 text-center">
-        <h2 className="text-2xl font-bold text-indigo-700 mb-4">
-          Ready to Elevate Your Social Presence?
-        </h2>
-        <p className="text-lg mb-6">
-          Partner with <strong>KIDIWEBTECH</strong> — the best Social Media
-          Marketing company in Hyderabad. Let us transform your brand with
-          audience-first strategy and meaningful engagement.
-        </p>
-        <Link
-          href="/contact"
-          className="inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded hover:bg-indigo-700 transition"
-        >
-          Get in Touch Today
-        </Link>
-      </section>
-    </main>
+    </div>
   );
 }

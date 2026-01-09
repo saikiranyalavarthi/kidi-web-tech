@@ -1,131 +1,157 @@
-"use client";
-
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function WebDesigningPage() {
-  const title = "Web Designing Company in Hyderabad | KIDIWEBTECH";
-  const description =
-    "KIDIWEBTECH offers modern, responsive, and interactive web design services in Hyderabad to make your brand stand out. Get stunning websites designed with UX and SEO in mind.";
-  const keywords = [
+export const metadata = {
+  title: "Web Designing Company in Hyderabad | KIDIWEBTECH",
+  description:
+    "KIDIWEBTECH offers modern, responsive, and conversion-focused web design services in Hyderabad. Build fast, SEO-optimized, and stunning websites.",
+  keywords: [
     "Web Designing Hyderabad",
     "Website Design Company Hyderabad",
     "Responsive Web Design",
     "UI UX Designers Hyderabad",
     "KIDIWEBTECH Website Design",
     "Custom Web Design Services",
-  ];
+  ],
+  alternates: {
+    canonical: "https://kidiwebtech.com/services/web-design",
+  },
+};
 
+export default function WebDesigningPage() {
   return (
-    <main className="bg-white text-gray-800 px-4 md:px-16 lg:px-24 py-10 max-w-7xl mx-auto">
-      <Head>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <meta name="keywords" content={keywords.join(", ")} />
-      </Head>
+    <div className="bg-black text-white overflow-hidden">
 
-      {/* 🔥 Gradient Heading */}
-      <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-rose-500 text-white text-center py-12 px-4">
-        <h1 className="text-3xl md:text-4xl font-bold mb-2">
-          Web Designing Services
+      {/* ================= HERO ================= */}
+      <section className="py-28 px-6 text-center border-b border-white/10">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+          Web Designing{" "}
+          <span className="gradient-text">Services</span>
         </h1>
-        <nav className="text-sm font-semibold text-white/90">
-          <Link href="/" className="hover:underline">
-            Home
-          </Link>{" "}
-          <span className="mx-1">›</span> Web Designing Services
-        </nav>
-      </div>
 
-      {/* Main Content */}
-      <section className="mt-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-indigo-700">
-          Web Designing
-        </h2>
-        <p className="text-lg mb-6 leading-relaxed">
-          What you need is not just a beautiful website with commendable design,
-          you need a website that establishes interactions with the viewer. Your
-          website is the first impression for all the reputation you wish to
-          hold for your brand. If your website cannot hold your viewer for more
-          than 4 seconds, then you&apos;ve failed to convince that your products
-          are best in class.
+        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+          High-converting, fast, and visually stunning websites built for growth.
         </p>
 
-        <h3 className="text-2xl font-semibold mb-4 text-indigo-600">
-          Web Designing Company in Hyderabad
-        </h3>
+        <nav className="mt-6 text-sm text-gray-500">
+          <Link href="/" className="hover:text-yellow-400 transition">
+            Home
+          </Link>
+          <span className="mx-2">›</span>
+          <span className="text-gray-400">Web Designing</span>
+        </nav>
+      </section>
 
-        <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
-          <div className="md:w-1/2">
-            <Image
-              src="/assets/image16.jpg"
-              alt="Web Designing"
-              width={600}
-              height={400}
-              className="rounded-lg shadow-lg"
-            />
+      {/* ================= INTRO ================= */}
+      <section className="py-24 px-6 md:px-20 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+
+          {/* IMAGE */}
+          <div className="relative">
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-purple-500 to-rose-500 opacity-80" />
+            <div className="relative bg-black rounded-3xl m-[1.5px] overflow-hidden">
+              <Image
+                src="/assets/image16.jpg"
+                alt="Web Designing Company in Hyderabad"
+                width={600}
+                height={420}
+                priority
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
-          <div className="md:w-1/2">
-            <p className="mb-4 text-gray-700">
-              <strong>
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-rose-500">
-                  KIDIWEBTECH
-                </span>
-              </strong>
-              , being one of the best web design and SEO service providers in
-              Hyderabad, understands the core vision of your business and
-              ensures your website speaks to your users in both design and
-              message.
+
+          {/* CONTENT */}
+          <div>
+            <h2 className="text-3xl font-extrabold mb-6">
+              Web Designing Company in{" "}
+              <span className="gradient-text">Hyderabad</span>
+            </h2>
+
+            <p className="text-gray-400 mb-5 leading-relaxed">
+              Your website is your brand’s first impression. If it doesn’t
+              engage users in seconds, you lose customers.
             </p>
-            <p className="mb-4 text-gray-700">
-              Your brand needs a holistic output — from hosting to lead
-              generation. That&apos;s where we bring stunning, fast, and secure
-              websites that are tailored for performance, trust, and modern
-              business standards.
+
+            <p className="text-gray-400 mb-5 leading-relaxed">
+              <strong className="gradient-text">KIDIWEBTECH</strong> designs
+              websites that are visually appealing, user-friendly, fast-loading,
+              and optimized for search engines.
+            </p>
+
+            <p className="text-gray-400 leading-relaxed">
+              From landing pages to full-scale business websites, we focus on
+              performance, clarity, and conversions.
             </p>
           </div>
         </div>
+      </section>
 
-        <p className="text-gray-700 mb-4">
-          Users enjoy visiting websites that are visually appealing and
-          intuitive to navigate. At{" "}
-          <strong>
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-rose-500">
-              KIDIWEBTECH
-            </span>
-          </strong>
-          , our creative developers deliver clean layouts and smart structure,
-          helping your visitors engage, explore, and act.
-        </p>
-        <p className="text-gray-700 mb-4">
-          Because it&apos;s not always about technical edge — it&apos;s about
-          emotional touch, visual storytelling, and experience that make your
-          brand unforgettable in the digital crowd.
-        </p>
-        <p className="text-gray-700 mb-6">
-          The secret to{" "}
-          <strong>
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-rose-500">
-              KIDIWEBTECH
-            </span>
-          </strong>
-          &apos;s success is our ability to deliver agile, scalable, and
-          responsive web design that gives your business a competitive
-          advantage. We help your site leave a lasting first impression — with
-          speed, performance, and accessibility in mind.
+      {/* ================= SERVICES ================= */}
+      <section className="py-20 px-6 md:px-20 max-w-7xl mx-auto">
+        <h3 className="text-3xl font-extrabold text-center mb-14">
+          What We <span className="gradient-text">Offer</span>
+        </h3>
+
+        <div className="grid md:grid-cols-3 gap-10">
+          {[
+            "Custom Website Design",
+            "Responsive & Mobile-Friendly Layouts",
+            "UI/UX Focused Design",
+            "SEO-Friendly Structure",
+            "Fast Loading Performance",
+            "Landing Pages & Business Websites",
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="border border-white/10 rounded-2xl p-6 hover:border-rose-400 transition"
+            >
+              <h4 className="text-xl font-semibold mb-2">{item}</h4>
+              <p className="text-gray-400 text-sm">
+                Designed to improve engagement, trust, and conversions.
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ================= CTA ================= */}
+      <section className="py-24 px-6 text-center border-t border-white/10">
+        <h2 className="text-3xl font-extrabold mb-6">
+          Need a <span className="gradient-text">High-Impact Website?</span>
+        </h2>
+
+        <p className="text-gray-400 max-w-2xl mx-auto mb-10 text-lg">
+          Let’s design a website that represents your brand and drives real
+          business results.
         </p>
 
-        {/* CTA Section */}
-        <div className="mt-8 text-center">
+        <div className="flex justify-center gap-6 flex-wrap">
           <Link
             href="/contact"
-            className="inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded hover:bg-indigo-700 transition"
+            className="
+              inline-block px-10 py-4 rounded-full
+              bg-gradient-to-r from-purple-500 to-rose-500
+              text-white font-semibold text-lg
+              hover:opacity-90 transition
+            "
           >
-            Get a Free Website Design Quote
+            Get a Free Website Quote →
+          </Link>
+
+          <Link
+            href="https://wa.me/919390627367"
+            className="
+              inline-block px-10 py-4 rounded-full
+              border border-rose-400 text-rose-400
+              hover:bg-rose-400 hover:text-black
+              transition
+            "
+          >
+            WhatsApp Us
           </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

@@ -6,7 +6,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 
 const serviceLinks = [
   { name: "Pay Per Click Advertising", href: "/services/ppc" },
-  { name: "Search Engine Optimization", href: "/services/seo" },
+  { name: "Search Engine Optimization", href: "/services/SEOPage" },
   { name: "Social Media Marketing", href: "/services/social-media" },
   { name: "Web Designing", href: "/services/web-design" },
   { name: "Web Development", href: "/services/web-development" },

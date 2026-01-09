@@ -1,131 +1,95 @@
 "use client";
 
-import Head from "next/head";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function SEOPage() {
-  const title = "Best SEO Services in Hyderabad | KIDIWEBTECH";
-  const description =
-    "Rank higher on Google with KIDIWEBTECH, Hyderabad's top SEO agency. We offer on-page, off-page, local SEO, technical audits, and white-hat strategies for business growth.";
-  const keywords = [
-    "SEO Services Hyderabad",
-    "Best SEO Company in Hyderabad",
-    "KIDIWEBTECH SEO Agency",
-    "Digital Marketing Hyderabad",
-    "On-Page SEO Services",
-    "Local SEO Experts Hyderabad",
-    "Top SEO Company India",
-    "SEO Optimization Services",
-  ];
-
+export default function SEOClient() {
   return (
-    <>
-      <Head>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <meta name="keywords" content={keywords.join(", ")} />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+    <div className="bg-black text-white overflow-hidden">
 
-      {/* 🔥 Gradient Header Section */}
-      <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-rose-500 text-white text-center py-12 px-4">
-        <h1 className="text-3xl md:text-4xl font-bold mb-2">
-          Search Engine Optimization (SEO) Services
+      {/* HERO */}
+      <section className="py-28 px-6 text-center border-b border-white/10">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+          Search Engine Optimization{" "}
+          <span className="gradient-text">(SEO)</span>
         </h1>
-        <nav className="text-sm font-semibold text-white/90">
-          <Link href="/" className="hover:underline">
-            Home
-          </Link>{" "}
-          <span className="mx-1">›</span> SEO Services
-        </nav>
-      </div>
 
-      {/* ✅ Main SEO Content */}
-      <main className="bg-gradient-to-b from-white via-slate-50 to-white text-gray-800 px-4 md:px-16 py-10 max-w-7xl mx-auto">
-        {/* Hero Section */}
+        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+          Ethical, data-driven SEO strategies that increase rankings, traffic,
+          and revenue.
+        </p>
+
+        <nav className="mt-6 text-sm text-gray-500">
+          <Link href="/" className="hover:text-yellow-400 transition">
+            Home
+          </Link>
+          <span className="mx-2">›</span>
+          <span className="text-gray-400">SEO Services</span>
+        </nav>
+      </section>
+
+      {/* INTRO */}
+      <section className="py-24 px-6 md:px-20 max-w-7xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex flex-col-reverse md:flex-row gap-10 items-center"
+          className="grid md:grid-cols-2 gap-16 items-center"
         >
-          <div className="flex-1">
-            <h2 className="text-3xl md:text-4xl font-bold text-indigo-700 mb-4">
-              Best SEO Services in Hyderabad
-            </h2>
-            <p className="text-lg mb-4">
-              At <strong>KIDIWEBTECH</strong>, we elevate your digital presence
-              through our SEO strategies tailored to drive traffic, increase
-              visibility, and boost your revenue. Our transparent, white-hat
-              approach delivers long-term results across on-page, off-page, and
-              local SEO.
-            </p>
-            <Link
-              href="/contact"
-              className="bg-indigo-600 text-white font-semibold px-6 py-3 rounded hover:bg-indigo-700 transition"
-            >
-              Get SEO Consultation
-            </Link>
+          <div className="relative">
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-yellow-400 to-orange-500 opacity-80" />
+            <div className="relative bg-black rounded-3xl m-[1.5px] overflow-hidden">
+              <Image
+                src="/assets/image14.jpg"
+                alt="SEO Services"
+                width={600}
+                height={420}
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
-          <div className="flex-1">
-            <Image
-              src="/assets/image14.jpg"
-              alt="SEO Services Illustration"
-              width={600}
-              height={400}
-              className="w-full h-auto object-contain rounded-lg shadow-md"
-            />
+          <div>
+            <h2 className="text-3xl font-extrabold mb-6">
+              Best <span className="gradient-text">SEO Services</span> in Hyderabad
+            </h2>
+
+            <p className="text-gray-400 mb-5 leading-relaxed">
+              <strong className="gradient-text">KIDIWEBTECH</strong> helps
+              businesses rank higher on Google using white-hat, conversion-focused SEO.
+            </p>
+
+            <p className="text-gray-400 leading-relaxed">
+              From technical audits to local SEO, we build long-term growth engines —
+              not short-term tricks.
+            </p>
           </div>
         </motion.div>
+      </section>
 
-        {/* SEO Services List */}
-        <section className="mt-12 space-y-5 text-lg leading-relaxed">
-          <h2 className="text-2xl font-semibold text-gray-800">
-            Our SEO Services Include
-          </h2>
-          <ul className="list-disc pl-6">
-            <li>Comprehensive Keyword Research & Competitor Analysis</li>
-            <li>On-Page Optimization & Content Structuring</li>
-            <li>Technical SEO and Site Audit</li>
-            <li>Link Building and Authority Growth</li>
-            <li>Local SEO with Google My Business Optimization</li>
-            <li>Monthly Analytics & Reporting</li>
-          </ul>
+      {/* CTA */}
+      <section className="py-24 px-6 text-center border-t border-white/10">
+        <h2 className="text-3xl font-extrabold mb-6">
+          Want to <span className="gradient-text">Rank Higher?</span>
+        </h2>
 
-          <p>
-            As a leading <strong>SEO company in Hyderabad</strong>, we craft
-            search strategies that align with your business goals and help you
-            dominate Google rankings ethically and effectively. With
-            KIDIWEBTECH's advanced SEO techniques, your website doesn't just get
-            traffic — it gets the right audience at the right time.
-          </p>
+        <p className="text-gray-400 max-w-2xl mx-auto mb-10 text-lg">
+          Get a free SEO audit tailored to your business.
+        </p>
 
-          <p>
-            At <strong>KIDIWEBTECH</strong>, we don't just boost your rankings —
-            we deliver measurable results through conversion-focused SEO. Our
-            strategy blends keyword science, performance audits, and content
-            excellence to ensure your business stands out. From technical health
-            to link authority, we handle every SEO factor with precision. As
-            Hyderabad’s trusted digital growth partner, we help you gain
-            visibility, attract qualified traffic, and turn visitors into loyal
-            customers. We follow only ethical, white-hat practices backed by
-            data and Google guidelines.
-          </p>
-        </section>
-
-        {/* Call to Action */}
-        <div className="mt-10 text-center">
-          <Link
-            href="/contact"
-            className="inline-block bg-indigo-600 text-white font-semibold px-8 py-4 rounded hover:bg-indigo-700 transition"
-          >
-            Request a Free SEO Audit
-          </Link>
-        </div>
-      </main>
-    </>
+        <Link
+          href="/contact"
+          className="
+            inline-block px-10 py-4 rounded-full
+            bg-gradient-to-r from-yellow-400 to-orange-500
+            text-black font-semibold text-lg
+            hover:opacity-90 transition
+          "
+        >
+          Request Free SEO Audit →
+        </Link>
+      </section>
+    </div>
   );
 }
