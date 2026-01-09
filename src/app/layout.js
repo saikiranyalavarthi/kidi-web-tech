@@ -2,9 +2,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Footer/Footer";
-import Goals from "./goals/Goals";
-import AnimatedServices from "./Components/AnimatedServices";
-import AnimatedCompanies from "./Components/AnimatedCompanies";
 import FloatingSocialButtons from "./Components/FloatingSocialButtons";
 
 const geistSans = Geist({
@@ -20,6 +17,11 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "KIDIWEBTECH - Digital Growth Partner",
   description: "Digital Growth Partner",
+
+  // ✅ GOOGLE SEARCH CONSOLE VERIFICATION
+  verification: {
+    google: "oRuxF-tkLeI9a3b51z2Ic1GkLtcyQdErTtqTYVpjkl0",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -30,9 +32,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
-    
         <FloatingSocialButtons />
-        {/* <AnimatedCompanies /> */}
         <Footer />
       </body>
     </html>
