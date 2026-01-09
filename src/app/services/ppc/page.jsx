@@ -1,137 +1,156 @@
+"use client";
+
 import Head from "next/head";
 import Image from "next/image";
 
-export const metadata = {
-  title: "Pay Per Click (PPC) Advertising Services | KIDIWEBTECH Hyderabad",
-  description:
-    "Boost your brand with Google Ads & PPC Campaigns from KIDIWEBTECH, the best PPC company in Hyderabad. Certified Google AdWords experts. Contact now!",
-  keywords: [
-    "PPC Company Hyderabad",
-    "Google Ads Services Hyderabad",
-    "Pay Per Click Advertising",
-    "Best Digital Marketing Agency in Hyderabad",
-    "PPC Campaign Experts India",
-    "KIDIWEBTECH SEO PPC",
-    "Digital Advertising Hyderabad",
-    "Google Ads Agency Hyderabad",
-  ],
-};
-
 export default function PPCPage() {
   return (
-    <>
+    <div className="bg-black text-white font-sans overflow-hidden">
+
       <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <meta name="keywords" content={metadata.keywords.join(", ")} />
+        <title>Pay Per Click (PPC) Advertising Services | KIDIWEBTECH Hyderabad</title>
+        <meta
+          name="description"
+          content="Boost your brand with Google Ads & PPC Campaigns from KIDIWEBTECH, a trusted PPC company in Hyderabad delivering measurable ROI."
+        />
+        <meta
+          name="keywords"
+          content="PPC Company Hyderabad, Google Ads Services, Pay Per Click Advertising, Digital Marketing Agency Hyderabad"
+        />
+        <link rel="canonical" href="https://kidiwebtech.com/services/ppc" />
       </Head>
 
-      {/* 💡 Gradient Page Title Section */}
-      <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-rose-500 text-white text-center py-12 px-4">
-        <h1 className="text-3xl md:text-4xl font-bold mb-2">
-          Pay Per Click Advertising
+      {/* HERO */}
+      <section className="py-28 px-6 text-center border-b border-white/10">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+          Pay Per Click <span className="gradient-text">Advertising</span>
         </h1>
-        <nav className="text-sm font-semibold text-white/90">
-          <a href="/" className="hover:underline">
-            Home
-          </a>{" "}
-          <span className="mx-1">›</span> Pay Per Click Advertising
-        </nav>
-      </div>
+        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+          High-performance Google Ads & PPC campaigns designed to generate
+          traffic, leads, and measurable growth.
+        </p>
 
-      {/* Main Content */}
-      <main className="bg-white text-gray-800 px-4 md:px-16 py-10 max-w-6xl mx-auto">
-        {/* Image + Description */}
-        <div className="flex flex-col md:flex-row items-center gap-10 mb-10">
-          <div className="md:w-1/2">
-            <Image
-              src="/assets/image13.jpg"
-              alt="PPC Marketing Services"
-              width={600}
-              height={400}
-              className="rounded-lg shadow-md"
-            />
+        <nav className="mt-6 text-sm text-gray-500">
+          <a href="/" className="hover:text-yellow-400 transition">Home</a>
+          <span className="mx-2">›</span>
+          <span className="text-gray-400">PPC Advertising</span>
+        </nav>
+      </section>
+
+      {/* INTRO */}
+      <section className="py-24 px-6 md:px-20 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+
+          {/* IMAGE */}
+          <div className="relative">
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-yellow-400 to-orange-500 opacity-80" />
+            <div className="relative bg-black rounded-3xl m-[1.5px] overflow-hidden">
+              <Image
+                src="/assets/image13.jpg"
+                alt="PPC Marketing Services"
+                width={600}
+                height={400}
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
-          <div className="md:w-1/2 space-y-4">
-            <h2 className="text-2xl font-semibold text-gray-800">
-              PPC Service
+
+          {/* CONTENT */}
+          <div>
+            <h2 className="text-3xl font-extrabold mb-6">
+              PPC <span className="gradient-text">Services</span>
             </h2>
-            <p>
-              PPC (Pay-Per-Click) is a fast and powerful digital marketing
-              strategy that puts your brand in front of the right audience at
-              the right time. Advertisers pay only when users click on their
-              ads, making it one of the most measurable and budget-friendly
-              methods for lead generation.
+
+            <p className="text-gray-400 mb-5 leading-relaxed">
+              Pay-Per-Click (PPC) advertising is one of the fastest ways to put
+              your business in front of the right audience. You only pay when
+              someone clicks — making PPC one of the most measurable and
+              ROI-focused digital marketing strategies.
             </p>
-            <p>
-              As a <strong>Google-certified PPC Company in Hyderabad</strong>,{" "}
-              <strong>KIDIWEBTECH</strong> builds custom ad campaigns that focus
-              on results — more traffic, leads, and conversions. From Google
-              Search to YouTube and social platforms, we help businesses
-              dominate search rankings with targeted ads.
+
+            <p className="text-gray-400 leading-relaxed">
+              As a <strong className="gradient-text">Google-certified PPC company in Hyderabad</strong>,
+              KIDIWEBTECH builds data-driven ad campaigns focused on conversions,
+              not just clicks. From Google Search to YouTube and display ads,
+              we help brands dominate paid search results.
             </p>
           </div>
         </div>
+      </section>
 
-        <section className="space-y-5 text-lg leading-relaxed">
-          <h2 className="text-2xl font-semibold text-gray-800">
+      {/* CONTENT */}
+      <section className="px-6 md:px-20 max-w-6xl mx-auto pb-28 space-y-10 text-gray-400">
+
+        <div>
+          <h2 className="text-2xl font-extrabold gradient-text mb-4">
             Why Choose KIDIWEBTECH for PPC?
           </h2>
           <p>
-            At <strong>KIDIWEBTECH</strong>, we understand that every click
-            counts. Our expert marketers conduct deep keyword research, design
-            persuasive ads, and fine-tune landing pages to increase ROI. Whether
-            you’re a local business in Hyderabad or serving global customers,
-            our PPC strategies are tailored to deliver performance.
+            At KIDIWEBTECH, every click matters. Our experts perform deep keyword
+            research, write high-converting ad copy, and continuously optimize
+            campaigns to maximize ROI. Whether you're targeting local customers
+            in Hyderabad or a global audience, our strategies are precision-built
+            for results.
           </p>
-          <p>
-            As a <strong>leading Digital Marketing Agency in Hyderabad</strong>,
-            we go beyond clicks — we generate real business. With full
-            transparency, weekly performance reporting, and continuous
-            optimization, you get the most value from every rupee you spend.
-          </p>
+        </div>
 
-          <h2 className="text-2xl font-semibold text-gray-800">
-            Our PPC Process Includes:
+        <div>
+          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+            Our PPC Process Includes
           </h2>
-          <ul className="list-disc pl-6">
-            <li>Keyword Research & Analysis</li>
-            <li>Ad Design & Copywriting</li>
-            <li>Compelling Call-To-Action (CTA) Creation</li>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Keyword Research & Competitor Analysis</li>
+            <li>Ad Copywriting & Creative Design</li>
             <li>Audience Targeting & Segmentation</li>
             <li>Landing Page Optimization</li>
             <li>Conversion Tracking & Analytics</li>
+            <li>Ongoing Campaign Optimization</li>
           </ul>
-
-          <h3 className="text-xl font-semibold text-gray-800 mt-6">
-            Our Core Pay Per Click Services:
-          </h3>
-          <ul className="list-disc pl-6">
-            <li>Google Ads Campaigns</li>
-            <li>Video Advertising (YouTube)</li>
-            <li>Display Ads</li>
-            <li>Social Media Paid Advertising</li>
-          </ul>
-
-          <p className="mt-6">
-            Whether you’re launching a new product or scaling your business
-            digitally, <strong>KIDIWEBTECH</strong> helps you achieve your
-            marketing goals through our high-converting PPC services. Let's
-            build powerful ad strategies together and grow your business with
-            confidence.
-          </p>
-        </section>
-
-        {/* CTA */}
-        <div className="mt-10">
-          <a
-            href="/contact"
-            className="inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded hover:bg-indigo-700 transition"
-          >
-            Get a Free PPC Consultation
-          </a>
         </div>
-      </main>
-    </>
+
+        <div>
+          <h3 className="text-xl font-extrabold gradient-text mb-4">
+            Our Core PPC Services
+          </h3>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Google Ads Campaign Management</li>
+            <li>YouTube Video Advertising</li>
+            <li>Display Advertising</li>
+            <li>Social Media Paid Campaigns</li>
+          </ul>
+        </div>
+
+        <p className="pt-4">
+          Whether you’re launching a new product or scaling your digital
+          presence, <strong className="gradient-text">KIDIWEBTECH</strong> delivers
+          high-converting PPC campaigns that turn ad spend into real business
+          growth.
+        </p>
+      </section>
+
+      {/* CTA */}
+      <section className="py-24 px-6 text-center border-t border-white/10">
+        <h2 className="text-3xl font-extrabold mb-6">
+          Ready to <span className="gradient-text">Scale with PPC?</span>
+        </h2>
+
+        <p className="text-gray-400 max-w-2xl mx-auto mb-10 text-lg">
+          Get a customized PPC strategy designed to drive leads, sales, and ROI.
+        </p>
+
+        <a
+          href="/contact"
+          className="
+            inline-block px-10 py-4 rounded-full
+            bg-gradient-to-r from-yellow-400 to-orange-500
+            text-black font-semibold text-lg
+            hover:opacity-90 transition
+          "
+        >
+          Get a Free PPC Consultation →
+        </a>
+      </section>
+
+    </div>
   );
 }
