@@ -44,7 +44,7 @@ export const metadata = {
   
         <h2 className="text-xl font-semibold mt-6 mb-2">Contact</h2>
         <p>
-          Email: <strong>svupvcindustries@gmail.com</strong>
+          Email: <strong>kidiwebtech3482@gmail.com</strong>
         </p>
       </main>
     );
