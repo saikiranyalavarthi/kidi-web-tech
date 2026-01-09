@@ -29,8 +29,8 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
-        <AnimatedServices />
-        <Goals />
+    
+       
         {/* <AnimatedCompanies /> */}
         <Footer />
       </body>

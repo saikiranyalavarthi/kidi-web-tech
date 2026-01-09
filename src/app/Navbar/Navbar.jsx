@@ -6,121 +6,135 @@ import { Menu, X, ChevronDown } from "lucide-react";
 
 const serviceLinks = [
   { name: "Pay Per Click Advertising", href: "/services/ppc" },
-  { name: "Search Engine Optimization", href: "/services/SEOPage" },
+  { name: "Search Engine Optimization", href: "/services/seo" },
   { name: "Social Media Marketing", href: "/services/social-media" },
   { name: "Web Designing", href: "/services/web-design" },
   { name: "Web Development", href: "/services/web-development" },
   { name: "Web Hosting", href: "/services/web-hosting" },
-  { name: "KIDIWEBTECH", href: "/services/KIDIWEBTECH" },
 ];
 
-const Navbar = () => {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
-
   return (
-    <nav className="bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600 shadow-lg px-6 py-4 text-white z-50 relative">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        {/* Logo */}
-        <Link href="/" className="text-2xl font-bold">
-          <span className="bg-gradient-to-r from-white via-purple-400 to-pink-400 bg-clip-text text-transparent font-semibold text-2xl">
-            KIDIWEBTECH
-          </span>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black border-b border-white/10">
+      <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+        {/* LOGO */}
+        <Link href="/" className="text-2xl md:text-3xl font-extrabold gradient-text">
+          KIDIWEBTECH
         </Link>
 
-        {/* Hamburger Icon */}
-        <div className="md:hidden">
-          <button onClick={toggleMenu}>
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
-        </div>
+        {/* MOBILE BUTTON */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden text-white"
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-6 text-base relative">
-          <Link href="/" className="hover:underline">
-            Home
-          </Link>
-          <Link href="/about" className="hover:underline">
-            About
-          </Link>
+        {/* DESKTOP MENU */}
+        <ul className="hidden md:flex items-center gap-10 text-sm font-medium">
 
-          {/* Services Dropdown (Hover + Transition) */}
-          <div className="relative group">
-            <button className="flex items-center hover:underline">
-              Services <ChevronDown size={16} className="ml-1" />
+          {["Home", "About", "Projects", "Blogs"].map((item) => (
+            <li key={item}>
+              <Link
+                href={`/${item === "Home" ? "" : item.toLowerCase()}`}
+                className="gradient-text hover:opacity-80 transition"
+              >
+                {item}
+              </Link>
+            </li>
+          ))}
+
+          {/* SERVICES */}
+          <li className="relative group">
+            <button className="flex items-center gap-1 gradient-text">
+              Services <ChevronDown size={16} />
             </button>
-            <div className="absolute top-full left-0 mt-2 w-64 bg-white text-gray-900 rounded-md shadow-lg opacity-0 scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 transform origin-top transition-all duration-300 z-40">
-              {serviceLinks.map((link, i) => (
+
+            <div className="
+              absolute left-0 top-full mt-3 w-64
+              bg-black border border-white/10
+              shadow-xl
+              opacity-0 invisible
+              group-hover:opacity-100 group-hover:visible
+              transition
+            ">
+              {serviceLinks.map((item) => (
                 <Link
-                  key={i}
-                  href={link.href}
-                  className="block px-4 py-2 hover:bg-gray-200 transition"
+                  key={item.href}
+                  href={item.href}
+                  className="block px-5 py-3 text-sm gradient-text hover:bg-white/5 transition"
                 >
-                  {link.name}
+                  {item.name}
                 </Link>
               ))}
             </div>
-          </div>
+          </li>
 
-          <Link href="/projects" className="hover:underline">
-            Projects
-          </Link>
-          <Link href="/blogs" className="hover:underline">
-            Blogs
-          </Link>
-          <Link
-            href="/contact"
-            className="bg-white text-indigo-700 font-medium px-4 py-2 rounded-md hover:bg-gray-100 transition"
-          >
-            Get in Touch
-          </Link>
-        </div>
-      </div>
+          {/* CTA */}
+          <li>
+            <Link
+              href="/contact"
+              className="
+                px-6 py-2 rounded-full
+                bg-gradient-to-r from-yellow-400 to-orange-500
+                text-black font-semibold
+                hover:opacity-90 transition
+              "
+            >
+              Get in Touch
+            </Link>
+          </li>
+        </ul>
+      </nav>
 
-      {/* Mobile Menu */}
+      {/* MOBILE MENU */}
       {isOpen && (
-        <div className="md:hidden mt-4 flex flex-col space-y-4 px-2">
-          <Link href="/" onClick={toggleMenu}>
-            Home
-          </Link>
-          <Link href="/about" onClick={toggleMenu}>
-            About
-          </Link>
+        <div className="md:hidden bg-black border-t border-white/10 px-6 py-6 space-y-4">
+          {["Home", "About", "Projects", "Blogs"].map((item) => (
+            <Link
+              key={item}
+              href={`/${item === "Home" ? "" : item.toLowerCase()}`}
+              onClick={() => setIsOpen(false)}
+              className="block gradient-text"
+            >
+              {item}
+            </Link>
+          ))}
 
-          {/* Mobile Services Dropdown using <details> */}
-          <div>
-            <details className="group">
-              <summary className="cursor-pointer list-none flex items-center">
-                Services <ChevronDown size={16} className="ml-1" />
-              </summary>
-              <div className="pl-4 mt-2 flex flex-col space-y-2">
-                {serviceLinks.map((link, i) => (
-                  <Link key={i} href={link.href} onClick={toggleMenu}>
-                    {link.name}
-                  </Link>
-                ))}
-              </div>
-            </details>
-          </div>
+          <details>
+            <summary className="flex items-center gap-1 cursor-pointer gradient-text">
+              Services <ChevronDown size={16} />
+            </summary>
+            <div className="mt-2 pl-4 space-y-2">
+              {serviceLinks.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setIsOpen(false)}
+                  className="block gradient-text"
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+          </details>
 
-          <Link href="/projects" onClick={toggleMenu}>
-            Projects
-          </Link>
-          <Link href="/blogs" onClick={toggleMenu}>
-            Blogs
-          </Link>
           <Link
             href="/contact"
-            onClick={toggleMenu}
-            className="bg-white text-indigo-700 font-medium px-4 py-2 rounded-md hover:bg-gray-100 transition text-center"
+            onClick={() => setIsOpen(false)}
+            className="
+              inline-block mt-4 px-6 py-2 rounded-full
+              bg-gradient-to-r from-yellow-400 to-orange-500
+              text-black font-semibold
+            "
           >
             Get in Touch
           </Link>
         </div>
       )}
-    </nav>
+    </header>
   );
-};
-
-export default Navbar;
+}

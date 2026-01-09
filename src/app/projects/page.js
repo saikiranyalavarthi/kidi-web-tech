@@ -1,7 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Head from "next/head";
 
-export default function Home() {
+export default function Projects() {
   const projects = [
     {
       title: "Vet & Meet Pet Consultation App",
@@ -31,177 +33,138 @@ export default function Home() {
       title: "Coworking Space Booking App",
       image: "/assets/image9.jpg",
       description:
-        "Mobile-first app and website for hourly/daily coworking space booking. Includes seat selection, map view, and testimonials.",
+        "Mobile-first app and website for hourly/daily coworking space booking with seat selection, map view, and testimonials.",
     },
     {
       title: "Portfolio Website",
       image: "/assets/image11.jpg",
       description:
-        "A personal portfolio showcasing a developer&#39;s skills, past projects, blog, and contact information. Built with Next.js, Tailwind CSS, and Framer Motion animations.",
+        "A personal portfolio showcasing skills, projects, blog, and contact information built with Next.js, Tailwind CSS, and Framer Motion.",
     },
   ];
 
   return (
-    <div className="font-sans">
+    <div className="bg-black text-white font-sans overflow-hidden">
+
       <Head>
-        <title>KIDIWEBTECH - Projects</title>
+        <title>KIDIWEBTECH | Projects & Case Studies</title>
         <meta
           name="description"
-          content="Explore our recent projects including mobile apps, IT company websites, WordPress development, and SEO-friendly solutions for businesses."
+          content="Explore KIDIWEBTECH projects including web development, mobile apps, SEO solutions, and digital platforms built for performance and growth."
         />
         <meta
           name="keywords"
-          content="Web Development Projects, App Development Portfolio, SEO Case Studies, ReactJS Developers India, WordPress Website Experts, eCommerce Website Projects"
+          content="Web Development Projects, App Development Portfolio, SEO Case Studies, ReactJS Developers India, WordPress Experts"
         />
         <link rel="canonical" href="https://kidiwebtech.com/projects" />
       </Head>
 
-      {/* Hero Section */}
-      <section className="py-20 px-6 md:px-20 bg-gray-50 text-center">
-        <h1 className="text-4xl font-bold text-indigo-700 mb-4">
-          Our Work &amp; Projects
+      {/* HERO */}
+      <section className="py-28 px-6 text-center border-b border-white/10">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-6">
+          Our <span className="gradient-text">Work & Projects</span>
         </h1>
-        <p className="text-gray-600 max-w-3xl mx-auto">
-          We craft digital experiences across industries. From React apps to
-          WordPress-powered platforms, check out our highlights.
+        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+          We craft scalable digital products across industries — from apps and
+          platforms to SEO-driven business websites.
         </p>
       </section>
 
-      {/* Projects Grid */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-20 pb-20">
-        {projects.map((proj, index) => (
-          <div key={index} className="bg-white p-6 rounded-xl shadow-md">
-            <Image
-              src={proj.image}
-              alt={proj.title}
-              width={400}
-              height={250}
-              className="w-full h-48 object-cover rounded-md mb-4"
-            />
-            <h3 className="text-lg font-semibold text-indigo-700 mb-2">
-              {proj.title}
-            </h3>
-            <p className="text-gray-700 text-sm">{proj.description}</p>
+      {/* PROJECTS GRID */}
+      <section className="py-24 px-6 md:px-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
+          {projects.map((proj, index) => (
+            <div key={index} className="relative group">
+
+              {/* GRADIENT BORDER */}
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-yellow-400 to-orange-500 opacity-60 group-hover:opacity-90 transition" />
+
+              {/* CARD */}
+              <div className="relative bg-black rounded-2xl m-[1.5px] overflow-hidden transition-transform duration-300 group-hover:-translate-y-2">
+
+                <Image
+                  src={proj.image}
+                  alt={proj.title}
+                  width={400}
+                  height={250}
+                  className="w-full h-52 object-cover"
+                />
+
+                <div className="p-6">
+                  <h3 className="text-lg font-bold gradient-text mb-3">
+                    {proj.title}
+                  </h3>
+                  <p className="text-gray-400 text-sm leading-relaxed">
+                    {proj.description}
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* SEO CONTENT */}
+      <section className="px-6 md:px-20 pb-28 space-y-12 text-gray-400 max-w-6xl mx-auto">
+
+        {[
+          {
+            title: "App Development Projects",
+            text:
+              "Our mobile app development projects include healthcare, business, and booking apps with real-time notifications, payments, and chat integrations. We specialize in scalable cross-platform solutions built for performance.",
+          },
+          {
+            title: "News Platforms & Content Sites",
+            text:
+              "We build high-performance news platforms using React.js and WordPress REST API with category navigation, sliders, breaking news tickers, and SEO optimization.",
+          },
+          {
+            title: "Coworking Space Systems",
+            text:
+              "Our coworking booking platforms include seat selection, map views, reviews, and flexible pricing — ideal for shared workspaces and commercial rentals.",
+          },
+          {
+            title: "SEO & Digital Marketing Projects",
+            text:
+              "Our SEO campaigns focus on measurable growth, technical optimization, local SEO, and Google Ads to increase traffic and conversions.",
+          },
+          {
+            title: "Real Estate Websites & Funnels",
+            text:
+              "We create conversion-focused real estate websites with property filters, WhatsApp integration, multilingual pages, and lead funnels.",
+          },
+          {
+            title: "Industrial & Mechanical Platforms",
+            text:
+              "B2B platforms designed for manufacturing and mechanical industries with product catalogs, brochure downloads, and inquiry capture.",
+          },
+          {
+            title: "IT Consulting & SAP Services Websites",
+            text:
+              "Enterprise websites built for IT consulting, SAP services, staffing, and infrastructure companies using Next.js and Tailwind CSS.",
+          },
+          {
+            title: "Personal Portfolio Websites",
+            text:
+              "High-quality portfolio websites for developers and creatives featuring animations, project showcases, blogs, and contact forms.",
+          },
+          {
+            title: "Digital Growth India Program",
+            text:
+              "Our Digital Growth India initiative helps local businesses go online quickly with SEO landing pages, WhatsApp automation, and maps listings.",
+          },
+        ].map((item, i) => (
+          <div key={i}>
+            <h2 className="text-2xl font-bold gradient-text mb-3">
+              {item.title}
+            </h2>
+            <p className="leading-relaxed">{item.text}</p>
           </div>
         ))}
+
       </section>
 
-      {/* SEO-rich Paragraphs */}
-      <section className="px-6 md:px-20 pb-20 space-y-10 text-gray-800">
-        <div>
-          <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
-            App Development Projects
-          </h2>
-          <p>
-            Our team at <strong>KIDIWEBTECH</strong> specializes in full-cycle{" "}
-            <em>mobile app development in India</em>. We&#39;ve built medical,
-            educational, and business apps that include booking flows, real-time
-            notifications, payment integration, and chat. Whether you need a{" "}
-            <strong>React Native app</strong> or a cross-platform Flutter app,
-            we deliver performance and scale.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
-            News Platforms &amp; Content Sites
-          </h2>
-          <p>
-            Our news apps are built with SEO and speed in mind. We use{" "}
-            <strong>React.js + WordPress REST API</strong> to deliver smooth
-            category browsing, sliders, breaking news tickers, and fast loading.
-            Perfect for publishers seeking <em>custom CMS integration</em> and
-            real-time updates.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
-            Coworking Space Systems
-          </h2>
-          <p>
-            Built for freelancers and flexible workspaces, our{" "}
-            <strong>coworking booking apps</strong> offer slot selection, Google
-            Maps view, reviews, and testimonials. Great for commercial rental
-            businesses and tech parks across India.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
-            SEO &amp; Digital Marketing Projects
-          </h2>
-          <p>
-            Our <strong>SEO campaigns</strong> are results-oriented and tailored
-            to your niche. From technical SEO to local business SEO and Google
-            Ads, we help brands increase traffic, leads, and conversions. If
-            you&#39;re searching for a <em>trusted SEO company in India</em>,
-            we&#39;ve got the case studies to prove it.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
-            Real Estate Websites &amp; Lead Funnels
-          </h2>
-          <p>
-            Real estate agents and builders use our solutions for lead
-            generation, showcasing properties with filters, videos, WhatsApp
-            inquiry buttons, and multilingual landing pages. Ideal for
-            international markets like{" "}
-            <strong>Marbella, Dubai, and Hyderabad</strong>.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
-            Industrial &amp; Mechanical Sites
-          </h2>
-          <p>
-            Our B2B web platforms for mechanical and hardware industries help
-            companies display their catalog, download brochures, and capture
-            vendor/supplier inquiries. Optimized for performance and
-            conversion-focused design.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
-            IT Consulting &amp; SAP Services Websites
-          </h2>
-          <p>
-            We work with <strong>IT companies</strong> to build service-oriented
-            websites for SAP, staffing, immigration support, and infrastructure
-            management. Built using <em>Next.js and Tailwind CSS</em> with
-            fast-loading and responsive layouts for enterprises.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
-            Personal Portfolio Sites
-          </h2>
-          <p>
-            Developers, designers, and freelancers love our portfolio templates
-            built using <strong>Framer Motion</strong>, Tailwind, and Next.js.
-            Includes animation, responsive layout, project showcase, contact
-            form, and blog.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-2xl font-semibold text-indigo-700 mb-2">
-            Digital Growth India for Local Businesses
-          </h2>
-          <p>
-            Under our “<strong>Digital Growth India</strong>” program, we help
-            small shops, doctors, freelancers, and consultants go online in 7
-            days. Includes{" "}
-            <em>WhatsApp automation, SEO landing pages, local maps listing</em>,
-            and mobile-ready design.
-          </p>
-        </div>
-      </section>
     </div>
   );
 }

@@ -2,203 +2,163 @@
 
 import Head from "next/head";
 import Image from "next/image";
-import React from "react";
 import ExperienceSection from "../Components/ExperienceSection";
 
 export default function About() {
   return (
-    <div className="font-sans">
+    <div className="bg-black text-white font-sans overflow-hidden">
+
       <Head>
-        <title>
-          About KIDIWEBTECH | Digital Marketing & Web Development Experts
-        </title>
+        <title>About KIDIWEBTECH | Digital Marketing & Web Development Experts</title>
         <meta
           name="description"
-          content="KIDIWEBTECH is a leading digital marketing company in Hyderabad, India. We offer expert SEO, PPC, Web Development, App Development, and Marketing solutions customized to your business goals."
+          content="KIDIWEBTECH is a digital marketing and web development agency in India helping businesses grow with SEO, Google Ads, websites, and scalable digital strategies."
         />
         <meta
           name="keywords"
-          content="About KIDIWEBTECH, Digital Marketing Agency, SEO Company Hyderabad, Web Design India, App Developers Hyderabad, Best SEO Experts, WordPress Development, Digital Agency Hyderabad, PPC Advertising, Google Marketing Experts"
+          content="About KIDIWEBTECH, Digital Marketing Agency India, SEO Company, Web Development, App Development"
         />
-        <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://kidiwebtech.com/about" />
-
-        {/* Open Graph / Social Sharing */}
-        <meta
-          property="og:title"
-          content="About KIDIWEBTECH | Digital Experts"
-        />
-        <meta
-          property="og:description"
-          content="Discover KIDIWEBTECH – India's trusted SEO & digital marketing agency, specializing in web design, app development, and ROI-driven digital solutions."
-        />
-        <meta
-          property="og:image"
-          content="https://kidiwebtech.com/assets/image5.jpg"
-        />
-        <meta property="og:url" content="https://kidiwebtech.com/about" />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="About KIDIWEBTECH | SEO & Web Dev Agency"
-        />
-        <meta
-          name="twitter:description"
-          content="We help startups and brands grow online with SEO, websites, apps, and digital strategies."
-        />
-        <meta
-          name="twitter:image"
-          content="https://kidiwebtech.com/assets/image5.jpg"
-        />
       </Head>
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-28 text-center px-4">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-4">About Us</h1>
-        <p className="text-lg sm:text-xl max-w-3xl mx-auto">
-          At KIDIWEBTECH, we create powerful digital solutions that help
-          businesses grow and compete with confidence. From SEO to Web & App
-          Development, our strategies are tailored to your growth.
+      {/* HERO */}
+      <section className="py-28 px-6 text-center border-b border-white/10">
+        <h1 className="text-4xl sm:text-5xl font-extrabold mb-6">
+          About <span className="gradient-text">KIDIWEBTECH</span>
+        </h1>
+        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+          We build high-performance digital experiences that help brands grow,
+          compete, and win in the online world.
         </p>
       </section>
 
-      {/* About Section */}
-      <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 items-center gap-12 bg-white">
-        <div>
-          <h2 className="text-3xl font-semibold text-indigo-700 mb-4">About</h2>
-          <p className="text-gray-700 mb-4">
-            KIDIWEBTECH is a full-service digital marketing company in India,
-            committed to helping businesses thrive in the online world. From SEO
-            and PPC to website development and branding — we build digital
-            ecosystems that drive measurable results.
-          </p>
+      {/* ABOUT CONTENT */}
+      <section className="py-24 px-6 md:px-20">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
-          <p className="text-gray-700 mb-4">
-            We understand that the digital landscape is constantly evolving, and
-            what worked yesterday may not work today. That’s why we stay ahead
-            of the curve by adapting our strategies to the latest trends and
-            technologies.
-          </p>
+          {/* TEXT */}
+          <div>
+            <h2 className="text-3xl font-extrabold mb-6">
+              Who <span className="gradient-text">We Are</span>
+            </h2>
 
-          <p className="text-gray-700 mb-4">
-            In the digital world, data is king. We use advanced analytics and
-            real-time insights to optimize every campaign, ensuring alignment
-            with your business objectives. Our strategies are rooted in
-            creativity, innovation, and deep market understanding.
-          </p>
+            <p className="text-gray-400 mb-5 leading-relaxed">
+              <span className="gradient-text font-semibold">KIDIWEBTECH</span> is a
+              full-service digital marketing and development agency focused on
+              delivering measurable growth. From SEO and paid ads to websites and
+              apps, we help businesses build a strong digital foundation.
+            </p>
 
-          <p className="text-gray-700 mb-4">
-            We know one-size-fits-all solutions don’t work in marketing. We
-            craft customized digital strategies based on your industry, target
-            audience, and business goals — delivering maximum ROI.
-          </p>
+            <p className="text-gray-400 mb-5 leading-relaxed">
+              The digital landscape evolves fast — and so do we. Our team stays
+              ahead of trends, algorithms, and technology shifts to ensure your
+              brand always remains competitive.
+            </p>
 
-          <p className="text-gray-700">
-            Whether it’s increasing brand awareness, driving traffic, or
-            generating leads, our ultimate goal is to deliver results that move
-            your business forward.
-          </p>
+            <p className="text-gray-400 mb-5 leading-relaxed">
+              Data drives every decision we make. From user behavior to
+              conversion metrics, our strategies are powered by insights that
+              turn traffic into revenue.
+            </p>
+
+            <p className="text-gray-400 leading-relaxed">
+              We don’t believe in one-size-fits-all marketing. Every solution is
+              customized to your industry, audience, and growth goals.
+            </p>
+          </div>
+
+          {/* IMAGE */}
+          <div className="relative">
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-yellow-400 to-orange-500 opacity-80" />
+            <div className="relative bg-black rounded-3xl m-[1.5px] overflow-hidden">
+              <Image
+                src="/assets/image5.jpg"
+                alt="About KIDIWEBTECH"
+                width={600}
+                height={700}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
         </div>
-
-        <Image
-          src="/assets/image5.jpg"
-          alt="About KIDIWEBTECH"
-          width={600}
-          height={700}
-          className="rounded-2xl shadow-lg ml-30"
-        />
       </section>
 
-      {/* Stats + Experience */}
+      {/* EXPERIENCE */}
       <ExperienceSection />
 
-      {/* Mission */}
-      <section className="py-16 px-6 md:px-20 bg-gray-100 text-center">
-        <h2 className="text-3xl font-semibold text-purple-700 mb-6">
-          Our Mission
+      {/* MISSION */}
+      <section className="py-24 px-6 text-center border-t border-white/10">
+        <h2 className="text-3xl font-extrabold mb-6">
+          Our <span className="gradient-text">Mission</span>
         </h2>
-        <p className="text-gray-700 max-w-3xl mx-auto mb-4">
-          To empower businesses of all sizes with tailored digital solutions
-          that drive growth and visibility.
-        </p>
-        <p className="text-gray-700 max-w-3xl mx-auto">
-          At KIDIWEBTECH, we believe technology should unlock opportunities. Our
-          mission is to simplify digital transformation through strategy,
-          creativity, and results-driven execution.
+
+        <p className="text-gray-400 max-w-3xl mx-auto text-lg leading-relaxed">
+          To empower businesses of all sizes with scalable digital solutions that
+          increase visibility, generate leads, and drive long-term growth through
+          technology, strategy, and creativity.
         </p>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-16 px-6 md:px-20 text-center">
-        <h2 className="text-3xl font-semibold text-blue-700 mb-6">
-          Why Choose Us?
+      {/* WHY CHOOSE US */}
+      <section className="py-24 px-6 md:px-20 text-center border-t border-white/10">
+        <h2 className="text-3xl font-extrabold mb-16">
+          Why <span className="gradient-text">Choose Us</span>
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+
+        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
           {[
             {
               title: "Expert Team",
-              desc1:
-                "Experienced professionals in SEO, development, and marketing.",
-              desc2:
-                "We stay up to date with the latest tools to give your brand a competitive edge.",
-              color: "indigo",
+              desc:
+                "SEO specialists, developers, and marketers focused on results.",
             },
             {
               title: "Client-Centric",
-              desc1: "We focus on your business goals and long-term success.",
-              desc2:
-                "Every project is personalized. We listen, plan, and execute precisely.",
-              color: "purple",
+              desc:
+                "Your goals drive every decision we make and execute.",
             },
             {
-              title: "SEO-Optimized",
-              desc1:
-                "Every solution we build is optimized for search visibility.",
-              desc2:
-                "From keyword research to technical SEO, we ensure your brand ranks.",
-              color: "blue",
+              title: "SEO-First Approach",
+              desc:
+                "Everything we build is optimized for visibility and ranking.",
             },
             {
               title: "Reliable Delivery",
-              desc1:
-                "We adhere to deadlines and deliver quality work — no surprises.",
-              desc2:
-                "Our process is transparent and timely to keep your project on track.",
-              color: "pink",
+              desc:
+                "On-time execution with transparent communication.",
             },
             {
               title: "Innovation Driven",
-              desc1:
-                "We push boundaries with creative and functional solutions.",
-              desc2:
-                "Your digital presence is powered by design, tech, and usability.",
-              color: "green",
+              desc:
+                "We blend creativity, tech, and usability for impact.",
             },
             {
               title: "24/7 Support",
-              desc1:
-                "We're here for you — before, during, and after your project.",
-              desc2: "Get fast support and improvements whenever needed.",
-              color: "yellow",
+              desc:
+                "We support you before, during, and after launch.",
             },
           ].map((item, i) => (
-            <div
-              key={i}
-              className={`bg-white p-6 rounded-xl shadow-md hover:shadow-${item.color}-300 transition`}
-            >
-              <h3 className={`text-xl font-bold text-${item.color}-600 mb-2`}>
-                {item.title}
-              </h3>
-              <p className="text-gray-700 text-sm mb-2">{item.desc1}</p>
-              <p className="text-gray-700 text-sm">{item.desc2}</p>
+            <div key={i} className="relative group">
+
+              {/* BORDER */}
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-yellow-400 to-orange-500 opacity-60" />
+
+              {/* CARD */}
+              <div className="relative bg-black rounded-2xl m-[1.5px] p-8">
+                <h3 className="text-xl font-bold gradient-text mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+
             </div>
           ))}
         </div>
       </section>
+
     </div>
   );
 }
