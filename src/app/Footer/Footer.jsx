@@ -73,7 +73,7 @@ export default function Footer() {
             <li><Link href="/about" className="hover:text-yellow-400 transition">About Us</Link></li>
             <li><Link href="/services/web-design" className="hover:text-yellow-400 transition">Web Design</Link></li>
             <li><Link href="/services/web-development" className="hover:text-yellow-400 transition">Web Development</Link></li>
-            <li><Link href="/services/seo" className="hover:text-yellow-400 transition">SEO Services</Link></li>
+            <li><Link href="/services//SEOPage" className="hover:text-yellow-400 transition">SEO Services</Link></li>
             <li><Link href="/contact" className="hover:text-yellow-400 transition">Contact</Link></li>
           </ul>
         </div>
