@@ -4,6 +4,8 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Footer/Footer";
 import FloatingSocialButtons from "./Components/FloatingSocialButtons";
 import Script from "next/script";
+import OrganizationSchema from "./Components/OrganizationSchema";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,12 +21,10 @@ export const metadata = {
   title: "KIDIWEBTECH - Digital Growth Partner",
   description: "Digital Growth Partner",
 
-  // ✅ GOOGLE SEARCH CONSOLE
   verification: {
     google: "oRuxF-tkLeI9a3b51z2Ic1GkLtcyQdErTtqTYVpjkl0",
   },
 
-  // ✅ GOOGLE ADSENSE
   other: {
     "google-adsense-account": "ca-pub-1031612318519089",
   },
@@ -34,6 +34,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* ✅ ORGANIZATION SCHEMA */}
+        <OrganizationSchema />
+
         {/* ✅ GOOGLE ANALYTICS (GA4) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-BG2NCCWS17"
