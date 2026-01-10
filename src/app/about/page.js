@@ -22,7 +22,7 @@ export default function About() {
       </Head>
 
       {/* HERO */}
-      <section className="py-28 px-6 text-center border-b border-white/10">
+      <section className="py-12 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-6">
           About <span className="gradient-text">KIDIWEBTECH</span>
         </h1>
@@ -33,7 +33,7 @@ export default function About() {
       </section>
 
       {/* ABOUT CONTENT */}
-      <section className="py-24 px-6 md:px-20">
+      <section className="py-12 px-6 md:px-20">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
           {/* TEXT */}
@@ -88,7 +88,7 @@ export default function About() {
       <ExperienceSection />
 
       {/* MISSION */}
-      <section className="py-24 px-6 text-center border-t border-white/10">
+      <section className="py-12 px-6 text-center border-t border-white/10">
         <h2 className="text-3xl font-extrabold mb-6">
           Our <span className="gradient-text">Mission</span>
         </h2>
@@ -101,7 +101,7 @@ export default function About() {
       </section>
 
       {/* WHY CHOOSE US */}
-      <section className="py-24 px-6 md:px-20 text-center border-t border-white/10">
+      <section className="py-12 px-6 md:px-20 text-center border-t border-white/10">
         <h2 className="text-3xl font-extrabold mb-16">
           Why <span className="gradient-text">Choose Us</span>
         </h2>

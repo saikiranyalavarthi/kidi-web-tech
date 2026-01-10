@@ -60,7 +60,7 @@ export default function Projects() {
       </Head>
 
       {/* HERO */}
-      <section className="py-28 px-6 text-center border-b border-white/10">
+      <section className="py-12 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-6">
           Our <span className="gradient-text">Work & Projects</span>
         </h1>
@@ -71,7 +71,7 @@ export default function Projects() {
       </section>
 
       {/* PROJECTS GRID */}
-      <section className="py-24 px-6 md:px-20">
+      <section className="py-12 px-6 md:px-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
           {projects.map((proj, index) => (
             <div key={index} className="relative group">

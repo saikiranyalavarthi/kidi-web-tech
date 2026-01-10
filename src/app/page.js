@@ -50,7 +50,7 @@ export default function Home() {
 
 
       {/* FINAL CTA */}
-      <section className="py-28 px-6 text-center bg-black border-t border-white/10">
+      <section className="py-12 px-6 text-center bg-black border-t border-white/10">
         <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-white">
           Ready to <span className="gradient-text">Grow Your Business?</span>
         </h2>

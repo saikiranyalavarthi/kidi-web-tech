@@ -5,12 +5,12 @@ import Link from "next/link";
 import { Menu, X, ChevronDown } from "lucide-react";
 
 const serviceLinks = [
-  { name: "Pay Per Click Advertising", href: "/services/ppc" },
-  { name: "Search Engine Optimization", href: "/services/SEOPage" },
-  { name: "Social Media Marketing", href: "/services/social-media" },
-  { name: "Web Designing", href: "/services/web-design" },
-  { name: "Web Development", href: "/services/web-development" },
-  { name: "Web Hosting", href: "/services/web-hosting" },
+  { name: "Pay Per Click Advertising", href: "/services/digital-marketing-company-hyderabad" },
+  { name: "Search Engine Optimization", href: "/services/seo-services-hyderabad" },
+  { name: "Social Media Marketing", href: "/services/social-media-company-hyderabad" },
+  { name: "Web Designing", href: "/services/web-design-company-hyderabad" },
+  { name: "Web Development", href: "/services/web-development-company-hyderabad" },
+  { name: "Web Hosting", href: "/services/web-hosting-company-hyderabad" },
 ];
 
 export default function Navbar() {

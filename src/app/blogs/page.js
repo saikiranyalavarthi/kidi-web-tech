@@ -61,7 +61,7 @@ const blogPosts = [
 
 export default function BlogPage() {
   return (
-    <div className="min-h-screen bg-black py-24 px-6">
+    <div className="min-h-screen bg-black py-12 px-6">
 
       {/* HEADER */}
       <div className="text-center max-w-4xl mx-auto mb-20">

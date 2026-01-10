@@ -5,7 +5,7 @@ import { CheckCircle } from "lucide-react";
 
 export default function PassionSection() {
   return (
-    <section className="bg-black py-28 px-6 md:px-20">
+    <section className="bg-black py-8 px-6 md:px-20">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
 
         {/* LEFT CONTENT */}

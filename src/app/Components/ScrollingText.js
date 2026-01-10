@@ -6,7 +6,7 @@ export default function AnimatedKidiwebtech() {
   const repeatedText = Array(20).fill("KIDIWEBTECH");
 
   return (
-    <section className="w-full overflow-hidden py-14 bg-black border-t border-white/10 border-b border-white/10">
+    <section className="w-full overflow-hidden py-6 bg-black border-t border-white/10 border-b border-white/10">
       <div className="relative w-full">
 
         <motion.div

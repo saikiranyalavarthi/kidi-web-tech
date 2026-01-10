@@ -43,7 +43,7 @@ export default function StatsSection() {
   }, []);
 
   return (
-    <section className="bg-black py-28 px-6 md:px-20">
+    <section className="bg-black py-8 px-6 md:px-20">
 
       {/* HEADER */}
       <div className="max-w-5xl mx-auto text-center mb-20">

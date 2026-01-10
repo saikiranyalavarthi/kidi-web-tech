@@ -9,7 +9,7 @@ export default function SEOClient() {
     <div className="bg-black text-white overflow-hidden">
 
       {/* HERO */}
-      <section className="py-28 px-6 text-center border-b border-white/10">
+      <section className="py-18 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           Search Engine Optimization{" "}
           <span className="gradient-text">(SEO)</span>
@@ -30,7 +30,7 @@ export default function SEOClient() {
       </section>
 
       {/* INTRO */}
-      <section className="py-24 px-6 md:px-20 max-w-7xl mx-auto">
+      <section className="py-12 px-6 md:px-20 max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -69,7 +69,7 @@ export default function SEOClient() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 px-6 text-center border-t border-white/10">
+      <section className="py-12 px-6 text-center border-t border-white/10">
         <h2 className="text-3xl font-extrabold mb-6">
           Want to <span className="gradient-text">Rank Higher?</span>
         </h2>

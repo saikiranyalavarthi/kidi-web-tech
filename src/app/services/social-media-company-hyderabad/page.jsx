@@ -9,7 +9,7 @@ export default function SocialMediaMarketingPage() {
     <div className="bg-black text-white overflow-hidden">
 
       {/* ================= HERO ================= */}
-      <section className="py-28 px-6 text-center border-b border-white/10">
+      <section className="py-12 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           Social Media Marketing{" "}
           <span className="gradient-text">(SMM)</span>
@@ -30,7 +30,7 @@ export default function SocialMediaMarketingPage() {
       </section>
 
       {/* ================= INTRO ================= */}
-      <section className="py-24 px-6 md:px-20 max-w-7xl mx-auto">
+      <section className="py-12 px-6 md:px-20 max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -74,7 +74,7 @@ export default function SocialMediaMarketingPage() {
       </section>
 
       {/* ================= SERVICES ================= */}
-      <section className="py-20 px-6 md:px-20 max-w-7xl mx-auto">
+      <section className="py-12 px-6 md:px-20 max-w-7xl mx-auto">
         <h3 className="text-3xl font-extrabold text-center mb-14">
           Our <span className="gradient-text">SMM Services</span>
         </h3>
@@ -107,7 +107,7 @@ export default function SocialMediaMarketingPage() {
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="py-24 px-6 text-center border-t border-white/10">
+      <section className="py-18 px-6 text-center border-t border-white/10">
         <h2 className="text-3xl font-extrabold mb-6">
           Ready to <span className="gradient-text">Grow on Social Media?</span>
         </h2>

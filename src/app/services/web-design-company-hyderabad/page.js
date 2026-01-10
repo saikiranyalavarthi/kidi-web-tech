@@ -23,7 +23,7 @@ export default function WebDesigningPage() {
     <div className="bg-black text-white overflow-hidden">
 
       {/* ================= HERO ================= */}
-      <section className="py-28 px-6 text-center border-b border-white/10">
+      <section className="py-18 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           Web Designing{" "}
           <span className="gradient-text">Services</span>
@@ -43,7 +43,7 @@ export default function WebDesigningPage() {
       </section>
 
       {/* ================= INTRO ================= */}
-      <section className="py-24 px-6 md:px-20 max-w-7xl mx-auto">
+      <section className="py-12 px-6 md:px-20 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-center">
 
           {/* IMAGE */}
@@ -88,7 +88,7 @@ export default function WebDesigningPage() {
       </section>
 
       {/* ================= SERVICES ================= */}
-      <section className="py-20 px-6 md:px-20 max-w-7xl mx-auto">
+      <section className="py-12 px-6 md:px-20 max-w-7xl mx-auto">
         <h3 className="text-3xl font-extrabold text-center mb-14">
           What We <span className="gradient-text">Offer</span>
         </h3>
@@ -116,7 +116,7 @@ export default function WebDesigningPage() {
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="py-24 px-6 text-center border-t border-white/10">
+      <section className="py-12 px-6 text-center border-t border-white/10">
         <h2 className="text-3xl font-extrabold mb-6">
           Need a <span className="gradient-text">High-Impact Website?</span>
         </h2>

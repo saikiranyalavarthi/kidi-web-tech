@@ -32,7 +32,7 @@ const features = [
 
 export default function WeDiffer() {
   return (
-    <section className="bg-black py-28 px-6 md:px-20">
+    <section className="bg-black py-10 px-6 md:px-20">
 
       {/* HEADER */}
       <div className="text-center max-w-5xl mx-auto mb-20">
