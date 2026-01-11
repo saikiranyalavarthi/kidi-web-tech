@@ -24,7 +24,7 @@ export default function ExperienceSection() {
         <div className="md:w-1/2 space-y-8">
 
           <h2 className="text-3xl md:text-4xl font-extrabold leading-tight text-white">
-            With <span className="gradient-text">5+ years</span> of experience,
+            With <span className="gradient-text">10+ years</span> of experience,
             <br />
             we deliver services at an{" "}
             <span className="gradient-text">advanced level</span>.

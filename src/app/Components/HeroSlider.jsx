@@ -47,7 +47,7 @@ export default function HeroSlider() {
           </a>
 
           <a
-            href="services/ppc"
+            href="services/seo-services-hyderabad"
             className="
               px-8 py-3 rounded-full
               border border-white/20
