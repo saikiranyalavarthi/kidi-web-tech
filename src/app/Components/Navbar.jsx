@@ -87,7 +87,7 @@ export default function Navbar() {
               "
             >
               <MessageCircle size={18} />
-              939067367
+              9390627367
             </a>
           </li>
 
