@@ -2,167 +2,189 @@
 
 import Image from "next/image";
 import Head from "next/head";
+import { motion } from "framer-motion";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0 },
+};
 
 export default function Projects() {
   const projects = [
     {
-      title: "Vet & Meet Pet Consultation App",
-      image: "/assets/image6.jpg",
+      title: "HipHip – Video Consultation Platform",
+      image: "/projects/hiphipwebsite.jpg",
+      tag: "Healthcare / App",
       description:
-        "A modern pet consultation app where pet owners can book online vet consultations via WhatsApp, integrated with a booking calendar and payment gateway.",
+        "A WhatsApp-integrated pet consultation platform enabling instant vet bookings, calendar scheduling, and secure online payments with a mobile-first experience.",
     },
     {
-      title: "Pet Shop Ecommerce Website",
-      image: "/assets/image7.jpg",
+      title: "MatsyaAqatech – Aquaculture Website",
+      image: "/projects/crabwebsite.jpg",
+      tag: "eCommerce / Industry",
       description:
-        "A fast-loading eCommerce site for pet food, accessories, and medicine using WooCommerce and custom WordPress themes.",
+        "A fast-loading aquaculture business website showcasing seafood solutions, export services, and product catalogs with SEO-focused architecture.",
     },
     {
-      title: "News Website",
-      image: "/assets/image10.jpg",
+      title: "D4 Interactive – Digital Marketing Website",
+      image: "/projects/d4.jpg",
+      tag: "Marketing / Agency",
       description:
-        "A dynamic Telugu-language news website built with ReactJS and WordPress REST API, featuring category navigation, sliders, and ticker components.",
+        "A conversion-driven digital marketing website designed to generate high-quality leads with service funnels, landing pages, and performance tracking.",
     },
     {
-      title: "IT Solutions Company Site",
-      image: "/assets/image8.jpg",
+      title: "Gurudeep – Educational Company",
+      image: "/projects/Guredeepwebsite.jpg",
+      tag: "Education / Corporate",
       description:
-        "A sleek website for a tech company showcasing IT Infrastructure, SAP Services, Staffing, and Immigration Solutions using Next.js and Tailwind CSS.",
+        "A professional education and training platform highlighting courses, corporate programs, admissions workflow, and lead capture integrations.",
     },
     {
-      title: "Coworking Space Booking App",
-      image: "/assets/image9.jpg",
+      title: "Shiva Hotel Residency",
+      image: "/projects/hotel.jpg",
+      tag: "Hospitality",
       description:
-        "Mobile-first app and website for hourly/daily coworking space booking with seat selection, map view, and testimonials.",
+        "A premium hotel website with room showcases, booking CTA, Google Maps integration, WhatsApp support, and mobile-first UX.",
     },
     {
-      title: "Portfolio Website",
-      image: "/assets/image11.jpg",
+      title: "VFX Coach – Training Institute",
+      image: "/projects/vfxcoachwebsite.jpg",
+      tag: "Creative / Training",
       description:
-        "A personal portfolio showcasing skills, projects, blog, and contact information built with Next.js, Tailwind CSS, and Framer Motion.",
+        "A modern institute website for VFX & animation coaching with course modules, student showcases, and inquiry funnels.",
+    },
+    {
+      title: "DoorstepHub – Service Platform",
+      image: "/projects/dhub.jpg",
+      tag: "Local Services",
+      description:
+        "A service marketplace platform connecting users with doorstep services using location-based listings and WhatsApp automation.",
+    },
+    {
+      title: "Mechanical Auto Parts Platform",
+      image: "/projects/autoparts.jpg",
+      tag: "Manufacturing / B2B",
+      description:
+        "An industrial auto-parts catalog website featuring categorized products, inquiry forms, and downloadable brochures for B2B clients.",
+    },
+    {
+      title: "Academic Journals Website",
+      image: "/projects/journels.jpg",
+      tag: "Research / Publishing",
+      description:
+        "A scholarly journal publishing platform with submission guidelines, article listings, indexing support, and SEO optimization.",
     },
   ];
 
   return (
-    <div className="bg-black text-white font-sans overflow-hidden">
+    <div className="bg-black text-white overflow-hidden">
 
       <Head>
         <title>KIDIWEBTECH | Projects & Case Studies</title>
         <meta
           name="description"
-          content="Explore KIDIWEBTECH projects including web development, mobile apps, SEO solutions, and digital platforms built for performance and growth."
-        />
-        <meta
-          name="keywords"
-          content="Web Development Projects, App Development Portfolio, SEO Case Studies, ReactJS Developers India, WordPress Experts"
+          content="Explore KIDIWEBTECH projects across web development, mobile apps, SEO, and business platforms built for scale and growth."
         />
         <link rel="canonical" href="https://kidiwebtech.com/projects" />
       </Head>
 
       {/* HERO */}
-      <section className="py-12 px-6 text-center border-b border-white/10">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-6">
-          Our <span className="gradient-text">Work & Projects</span>
-        </h1>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
-          We craft scalable digital products across industries — from apps and
-          platforms to SEO-driven business websites.
-        </p>
+      <section className="py-24 px-6 text-center border-b border-white/10">
+        <motion.h1
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          transition={{ duration: 0.6 }}
+          className="text-4xl md:text-5xl font-extrabold mb-6"
+        >
+          Our <span className="gradient-text">Projects & Case Studies</span>
+        </motion.h1>
+
+        <motion.p
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          transition={{ delay: 0.2 }}
+          className="text-gray-400 max-w-3xl mx-auto text-lg"
+        >
+          We design and develop high-impact digital products that help businesses
+          grow, convert users, and scale confidently.
+        </motion.p>
       </section>
 
-      {/* PROJECTS GRID */}
-      <section className="py-12 px-6 md:px-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
+      {/* PROJECT GRID */}
+      <section className="py-16 px-6 md:px-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 max-w-7xl mx-auto">
           {projects.map((proj, index) => (
-            <div key={index} className="relative group">
+            <motion.div
+              key={index}
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              whileHover={{ y: -10 }}
+              className="relative group"
+            >
 
-              {/* GRADIENT BORDER */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-yellow-400 to-orange-500 opacity-60 group-hover:opacity-90 transition" />
+              {/* GLOW BORDER */}
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-yellow-400 to-orange-500 opacity-30 blur-xl group-hover:opacity-70 transition" />
 
               {/* CARD */}
-              <div className="relative bg-black rounded-2xl m-[1.5px] overflow-hidden transition-transform duration-300 group-hover:-translate-y-2">
+              <div className="relative bg-black rounded-2xl overflow-hidden border border-white/10">
 
-                <Image
-                  src={proj.image}
-                  alt={proj.title}
-                  width={400}
-                  height={250}
-                  className="w-full h-52 object-cover"
-                />
+                {/* IMAGE */}
+                <div className="overflow-hidden">
+                  <Image
+                    src={proj.image}
+                    alt={proj.title}
+                    width={400}
+                    height={260}
+                    className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
 
-                <div className="p-6">
-                  <h3 className="text-lg font-bold gradient-text mb-3">
+                {/* CONTENT */}
+                <div className="p-6 space-y-3">
+                  <span className="inline-block text-xs px-3 py-1 rounded-full bg-white/10 text-yellow-400">
+                    {proj.tag}
+                  </span>
+
+                  <h3 className="text-lg font-bold gradient-text">
                     {proj.title}
                   </h3>
+
                   <p className="text-gray-400 text-sm leading-relaxed">
                     {proj.description}
                   </p>
                 </div>
 
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>
 
-      {/* SEO CONTENT */}
-      <section className="px-6 md:px-20 pb-28 space-y-12 text-gray-400 max-w-6xl mx-auto">
+      {/* CTA */}
+      <section className="pb-24 text-center px-6">
+        <motion.h3
+          initial="hidden"
+          whileInView="visible"
+          variants={fadeUp}
+          className="text-3xl font-bold mb-6"
+        >
+          Want a project like this?
+        </motion.h3>
 
-        {[
-          {
-            title: "App Development Projects",
-            text:
-              "Our mobile app development projects include healthcare, business, and booking apps with real-time notifications, payments, and chat integrations. We specialize in scalable cross-platform solutions built for performance.",
-          },
-          {
-            title: "News Platforms & Content Sites",
-            text:
-              "We build high-performance news platforms using React.js and WordPress REST API with category navigation, sliders, breaking news tickers, and SEO optimization.",
-          },
-          {
-            title: "Coworking Space Systems",
-            text:
-              "Our coworking booking platforms include seat selection, map views, reviews, and flexible pricing — ideal for shared workspaces and commercial rentals.",
-          },
-          {
-            title: "SEO & Digital Marketing Projects",
-            text:
-              "Our SEO campaigns focus on measurable growth, technical optimization, local SEO, and Google Ads to increase traffic and conversions.",
-          },
-          {
-            title: "Real Estate Websites & Funnels",
-            text:
-              "We create conversion-focused real estate websites with property filters, WhatsApp integration, multilingual pages, and lead funnels.",
-          },
-          {
-            title: "Industrial & Mechanical Platforms",
-            text:
-              "B2B platforms designed for manufacturing and mechanical industries with product catalogs, brochure downloads, and inquiry capture.",
-          },
-          {
-            title: "IT Consulting & SAP Services Websites",
-            text:
-              "Enterprise websites built for IT consulting, SAP services, staffing, and infrastructure companies using Next.js and Tailwind CSS.",
-          },
-          {
-            title: "Personal Portfolio Websites",
-            text:
-              "High-quality portfolio websites for developers and creatives featuring animations, project showcases, blogs, and contact forms.",
-          },
-          {
-            title: "Digital Growth India Program",
-            text:
-              "Our Digital Growth India initiative helps local businesses go online quickly with SEO landing pages, WhatsApp automation, and maps listings.",
-          },
-        ].map((item, i) => (
-          <div key={i}>
-            <h2 className="text-2xl font-bold gradient-text mb-3">
-              {item.title}
-            </h2>
-            <p className="leading-relaxed">{item.text}</p>
-          </div>
-        ))}
-
+        <motion.a
+          href="/contact"
+          whileHover={{ scale: 1.08 }}
+          className="inline-block px-8 py-4 rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-semibold shadow-lg"
+        >
+          Start Your Project
+        </motion.a>
       </section>
 
     </div>

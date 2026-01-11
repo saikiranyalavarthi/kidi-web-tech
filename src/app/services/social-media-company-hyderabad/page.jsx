@@ -8,8 +8,8 @@ export default function SocialMediaMarketingPage() {
   return (
     <div className="bg-black text-white overflow-hidden">
 
-      {/* ================= HERO ================= */}
-      <section className="py-12 px-6 text-center border-b border-white/10">
+      {/* ================= HERO ================ */}
+      <section className="py-18 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           Social Media Marketing{" "}
           <span className="gradient-text">(SMM)</span>

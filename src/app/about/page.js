@@ -22,7 +22,7 @@ export default function About() {
       </Head>
 
       {/* HERO */}
-      <section className="py-12 px-6 text-center border-b border-white/10">
+      <section className="py-18 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-6">
           About <span className="gradient-text">KIDIWEBTECH</span>
         </h1>

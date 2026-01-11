@@ -6,6 +6,7 @@ export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    mobile: "",
     service: "Website Development",
     message: "",
   });
@@ -17,7 +18,7 @@ export default function ContactPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const { name, email, service, message } = formData;
+    const { name, email, mobile, service, message } = formData;
 
     // ✅ GA4 EVENT: FORM SUBMIT
     if (typeof window !== "undefined" && window.gtag) {
@@ -38,6 +39,7 @@ export default function ContactPage() {
 Hi KIDIWEBTECH,
 Name: ${name}
 Email: ${email}
+Mobile: ${mobile}
 Service: ${service}
 Message: ${message}
     `;
@@ -52,6 +54,7 @@ Message: ${message}
     setFormData({
       name: "",
       email: "",
+      mobile: "",
       service: "Website Development",
       message: "",
     });
@@ -61,7 +64,7 @@ Message: ${message}
     <div className="bg-black text-white overflow-hidden min-h-screen">
 
       {/* HERO */}
-      <section className="py-28 px-6 text-center border-b border-white/10">
+      <section className="py-18 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           Contact <span className="text-green-400">KIDIWEBTECH</span>
         </h1>
@@ -107,6 +110,21 @@ Message: ${message}
                 name="email"
                 required
                 value={formData.email}
+                onChange={handleChange}
+                className="w-full px-4 py-2 rounded bg-black border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-green-500"
+              />
+            </div>
+
+            {/* Mobile Number */}
+            <div>
+              <label className="block mb-1 text-sm text-gray-400">
+                Mobile Number
+              </label>
+              <input
+                type="tel"
+                name="mobile"
+                required
+                value={formData.mobile}
                 onChange={handleChange}
                 className="w-full px-4 py-2 rounded bg-black border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-green-500"
               />
