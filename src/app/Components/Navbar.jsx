@@ -76,7 +76,7 @@ export default function Navbar() {
           {/* WHATSAPP BUTTON */}
           <li>
             <a
-              href="https://wa.me/91939067367"
+              href="https://wa.me/919390627367"
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -142,7 +142,7 @@ export default function Navbar() {
 
           {/* MOBILE WHATSAPP */}
           <a
-            href="https://wa.me/91939067367"
+            href="https://wa.me/919390627367"
             target="_blank"
             rel="noopener noreferrer"
             className="
@@ -152,7 +152,7 @@ export default function Navbar() {
             "
           >
             <MessageCircle size={18} />
-            WhatsApp: 939067367
+            WhatsApp: 9390627367
           </a>
 
           <Link
