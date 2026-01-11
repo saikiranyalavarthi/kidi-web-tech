@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, MessageCircle } from "lucide-react";
 
 const serviceLinks = [
   { name: "Pay Per Click Advertising", href: "/services/digital-marketing-company-hyderabad" },
@@ -34,7 +34,7 @@ export default function Navbar() {
         </button>
 
         {/* DESKTOP MENU */}
-        <ul className="hidden md:flex items-center gap-10 text-sm font-medium">
+        <ul className="hidden md:flex items-center gap-8 text-sm font-medium">
 
           {["Home", "About", "Projects", "Blogs"].map((item) => (
             <li key={item}>
@@ -71,6 +71,24 @@ export default function Navbar() {
                 </Link>
               ))}
             </div>
+          </li>
+
+          {/* WHATSAPP BUTTON */}
+          <li>
+            <a
+              href="https://wa.me/91939067367"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                flex items-center gap-2
+                px-4 py-2 rounded-full
+                bg-green-500 text-black font-semibold
+                hover:bg-green-400 transition
+              "
+            >
+              <MessageCircle size={18} />
+              939067367
+            </a>
           </li>
 
           {/* CTA */}
@@ -121,6 +139,21 @@ export default function Navbar() {
               ))}
             </div>
           </details>
+
+          {/* MOBILE WHATSAPP */}
+          <a
+            href="https://wa.me/91939067367"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              flex items-center gap-2
+              mt-4 px-4 py-2 rounded-full
+              bg-green-500 text-black font-semibold
+            "
+          >
+            <MessageCircle size={18} />
+            WhatsApp: 939067367
+          </a>
 
           <Link
             href="/contact"
