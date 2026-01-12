@@ -6,25 +6,24 @@ import FloatingSocialButtons from "./Components/FloatingSocialButtons";
 import Script from "next/script";
 import OrganizationSchema from "./Components/OrganizationSchema";
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata = {
   title: "KIDIWEBTECH - Digital Growth Partner",
   description: "Digital Growth Partner",
-
   verification: {
     google: "oRuxF-tkLeI9a3b51z2Ic1GkLtcyQdErTtqTYVpjkl0",
   },
-
   other: {
     "google-adsense-account": "ca-pub-1031612318519089",
   },
@@ -33,11 +32,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        {/* ✅ ORGANIZATION SCHEMA */}
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {/* ✅ ORGANIZATION SCHEMA (NON-BLOCKING) */}
         <OrganizationSchema />
 
-        {/* ✅ GOOGLE ANALYTICS (GA4) */}
+        {/* ✅ GOOGLE ANALYTICS – NON BLOCKING */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-BG2NCCWS17"
           strategy="afterInteractive"
@@ -51,9 +52,7 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-BG2NCCWS17');
           `}
         </Script>
-      </head>
 
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar />
         {children}
         <FloatingSocialButtons />
