@@ -9,6 +9,7 @@ import PassionSection from "./Components/PassionSection";
 import StatsSection from "./Components/StatsSection";
 import ScrollingText from "./Components/ScrollingText";
 import HeroSlider from "./Components/HeroSlider";
+import ServicesTestimonials from "./Components/ServicesTestimonials";
 
 
 export default function Home() {
@@ -82,7 +83,7 @@ export default function Home() {
       {/* STATS */}
       <StatsSection />
       <ScrollingText />
-
+<ServicesTestimonials/>
 
       {/* FINAL CTA */}
       <section className="py-12 px-6 text-center bg-black border-t border-white/10">
