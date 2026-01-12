@@ -5,7 +5,10 @@ export const metadata = {
   title: "Digital Marketing & Web Development Blogs | KidiWebTech",
   description:
     "Read expert blogs on SEO, digital marketing, web development, PPC, social media, and mobile apps to grow your business online.",
-};
+};<a href="https://medium.com/@kidiwebtech3482/b02f2652a77a" target="_blank">
+Read our Medium article on SEO & Next.js
+</a>
+
 
 const blogPosts = [
   {
@@ -87,7 +90,16 @@ export default function BlogPage() {
           and online growth strategies.
         </p>
       </header>
-
+      <div className="text-center mb-20">
+        <Link
+          href="https://medium.com/@kidiwebtech3482/how-seo-optimized-websites-built-with-next-js-improve-business-growth-d5e8a73ce9ab"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block text-yellow-300 font-semibold hover:underline"
+        >
+          👉 Read our featured Medium article on SEO & Next.js
+        </Link>
+      </div>
       {/* BLOG LIST */}
       <section className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
         {blogPosts.map((post) => (
