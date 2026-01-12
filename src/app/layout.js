@@ -35,10 +35,18 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* ✅ ORGANIZATION SCHEMA (NON-BLOCKING) */}
+        {/* ✅ ORGANIZATION SCHEMA */}
         <OrganizationSchema />
 
-        {/* ✅ GOOGLE ANALYTICS – NON BLOCKING */}
+        {/* ✅ GOOGLE ADSENSE (GLOBAL – LOAD ONCE) */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1031612318519089"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+
+        {/* ✅ GOOGLE ANALYTICS */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-BG2NCCWS17"
           strategy="afterInteractive"
