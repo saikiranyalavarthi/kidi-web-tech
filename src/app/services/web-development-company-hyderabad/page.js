@@ -4,33 +4,25 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function WebDevelopmentPage() {
+export default function WebDevelopmentClient() {
   return (
     <div className="bg-black text-white overflow-hidden">
 
       {/* ================= HERO ================= */}
-      <section className="py-18 px-6 text-center border-b border-white/10">
+      <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-          Web Development{" "}
-          <span className="gradient-text">Services</span>
+          Web Development Company in{" "}
+          <span className="gradient-text">Hyderabad</span>
         </h1>
 
         <p className="text-gray-400 max-w-3xl mx-auto text-lg">
-          Scalable, secure, and high-performance websites & web applications
-          built for growth.
+          We build fast, secure, and scalable websites and web applications
+          designed to grow your business online.
         </p>
-
-        <nav className="mt-6 text-sm text-gray-500">
-          <Link href="/" className="hover:text-yellow-400 transition">
-            Home
-          </Link>
-          <span className="mx-2">›</span>
-          <span className="text-gray-400">Web Development</span>
-        </nav>
       </section>
 
       {/* ================= INTRO ================= */}
-      <section className="py-12 px-6 md:px-20 max-w-7xl mx-auto">
+      <section className="py-16 px-6 md:px-20 max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -38,127 +30,149 @@ export default function WebDevelopmentPage() {
           transition={{ duration: 0.8 }}
           className="grid md:grid-cols-2 gap-16 items-center"
         >
-          {/* IMAGE */}
           <div className="relative">
-            <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-indigo-500 to-purple-500 opacity-80" />
-            <div className="relative bg-black rounded-3xl m-[1.5px] overflow-hidden">
-              <Image
-                src="/assets/image18.jpg"
-                alt="Web Development Company in Hyderabad"
-                width={600}
-                height={420}
-                className="w-full h-full object-cover"
-              />
-            </div>
+            <Image
+              src="/assets/image18.jpg"
+              alt="Web development company and website developers in Hyderabad"
+              width={600}
+              height={420}
+              className="rounded-3xl object-cover"
+              priority
+            />
           </div>
 
-          {/* CONTENT */}
           <div>
             <h2 className="text-3xl font-extrabold mb-6">
-              Web Development Company in{" "}
-              <span className="gradient-text">Hyderabad</span>
+              Professional <span className="gradient-text">Web Development Services</span>
             </h2>
 
             <p className="text-gray-400 mb-5 leading-relaxed">
-              Web development focuses on functionality, performance, and
-              scalability — ensuring your website works flawlessly across all
-              devices.
-            </p>
-
-            <p className="text-gray-400 mb-5 leading-relaxed">
-              <strong className="gradient-text">KIDIWEBTECH</strong> builds
-              everything from fast static websites to complex web applications
-              using modern, secure technologies.
+              <strong className="gradient-text">KIDIWEBTECH</strong> is a leading
+              website development company in Hyderabad delivering custom web
+              solutions for startups, small businesses, and enterprises.
             </p>
 
             <p className="text-gray-400 leading-relaxed">
-              Whether you’re launching a startup or scaling an enterprise
-              product, we deliver clean code and future-ready solutions.
+              From business websites to advanced web applications, our web
+              development services focus on performance, security, SEO readiness,
+              and long-term scalability.
             </p>
           </div>
         </motion.div>
       </section>
 
-      {/* ================= PROCESS ================= */}
-      <section className="py-12 px-6 md:px-20 max-w-7xl mx-auto">
-        <h3 className="text-3xl font-extrabold text-center mb-14">
-          Our <span className="gradient-text">Development Process</span>
-        </h3>
+      {/* ================= SEO CONTENT ================= */}
+      <section className="px-6 md:px-20 max-w-6xl mx-auto py-20 space-y-12 text-gray-400">
 
-        <div className="grid md:grid-cols-3 gap-10">
-          {[
-            "Project Planning & Scope Definition",
-            "UI/UX & Architecture Design",
-            "Frontend & Backend Development",
-            "Testing & Quality Assurance",
-            "Deployment & Security Setup",
-            "Maintenance & Performance Optimization",
-          ].map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="border border-white/10 rounded-2xl p-6 hover:border-indigo-400 transition"
-            >
-              <h4 className="text-xl font-semibold mb-2">{item}</h4>
-              <p className="text-gray-400 text-sm">
-                Structured workflows that ensure quality, speed, and scalability.
-              </p>
-            </motion.div>
-          ))}
+        {/* WHAT IS WEB DEVELOPMENT */}
+        <div>
+          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+            What Is Web Development?
+          </h2>
+          <p>
+            Web development is the process of building and maintaining websites
+            and web applications that function smoothly across all devices.
+            Professional web development ensures your website loads fast, ranks
+            well on search engines, and converts visitors into customers.
+          </p>
         </div>
-      </section>
 
-      {/* ================= DETAILS ================= */}
-      <section className="py-12 px-6 md:px-20 max-w-7xl mx-auto">
-        <p className="text-gray-400 text-lg leading-relaxed max-w-5xl mx-auto">
-          A good website isn’t just code — it’s a business asset. At{" "}
-          <strong className="gradient-text">KIDIWEBTECH</strong>, we combine
-          strategy, design, and development to create web solutions that perform
-          exceptionally. From SEO optimization and fast load speeds to secure
-          backend architecture and responsive layouts, we build websites that
-          scale with your business.
-        </p>
+        {/* SERVICES */}
+        <div>
+          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+            Our Web Development Services
+          </h2>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Custom Website Development</li>
+            <li>Business & Corporate Website Development</li>
+            <li>Web Application Development</li>
+            <li>Frontend & Backend Development</li>
+            <li>API Integration & Database Management</li>
+            <li>Website Maintenance & Performance Optimization</li>
+          </ul>
+        </div>
+
+        {/* LOCAL SEO */}
+        <div>
+          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+            Web Development Services in Hyderabad
+          </h2>
+          <p>
+            As a Hyderabad-based web development company, we understand local
+            business needs and search intent. Our websites are optimized to rank
+            for keywords like <strong>“web development company near me”</strong>{" "}
+            and <strong>“website developers in Hyderabad”</strong>.
+          </p>
+        </div>
+
+        {/* PROCESS */}
+        <div>
+          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+            Our Web Development Process
+          </h2>
+          <p>
+            We follow a structured development process including planning,
+            UI/UX design, development, testing, deployment, and ongoing support.
+            This ensures high-quality, scalable, and secure web solutions.
+          </p>
+        </div>
+
+        {/* FAQ */}
+        <div>
+          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+            Web Development – Frequently Asked Questions
+          </h2>
+
+          <p>
+            <strong>How much does web development cost?</strong><br />
+            Website development cost depends on features, design complexity, and
+            functionality. We offer flexible pricing for startups and businesses.
+          </p>
+
+          <p className="mt-4">
+            <strong>How long does it take to build a website?</strong><br />
+            A standard business website usually takes 3–6 weeks.
+          </p>
+
+          <p className="mt-4">
+            <strong>Will my website be SEO-friendly?</strong><br />
+            Yes. All our websites are built with SEO-friendly structure, fast
+            loading speed, and clean code.
+          </p>
+        </div>
+
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="py-24 px-6 text-center border-t border-white/10">
+      <section className="py-20 px-6 text-center border-t border-white/10">
         <h2 className="text-3xl font-extrabold mb-6">
-          Need a <span className="gradient-text">Powerful Web Solution?</span>
+          Need a <span className="gradient-text">Web Development Partner?</span>
         </h2>
 
         <p className="text-gray-400 max-w-2xl mx-auto mb-10 text-lg">
-          Let’s build a fast, secure, and scalable website tailored to your goals.
+          Let’s build a powerful, secure, and scalable website for your business.
         </p>
 
         <div className="flex justify-center gap-6 flex-wrap">
           <Link
             href="/contact"
-            className="
-              inline-block px-10 py-4 rounded-full
+            className="inline-block px-10 py-4 rounded-full
               bg-gradient-to-r from-indigo-500 to-purple-500
-              text-white font-semibold text-lg
-              hover:opacity-90 transition
-            "
+              text-white font-semibold text-lg"
           >
-            Request a Web Development Proposal →
+            Get Free Consultation →
           </Link>
 
           <Link
             href="https://wa.me/919390627367"
-            className="
-              inline-block px-10 py-4 rounded-full
-              border border-indigo-400 text-indigo-400
-              hover:bg-indigo-400 hover:text-black
-              transition
-            "
+            className="inline-block px-10 py-4 rounded-full
+              border border-indigo-400 text-indigo-400"
           >
             WhatsApp Us
           </Link>
         </div>
       </section>
+
     </div>
   );
 }

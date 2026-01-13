@@ -1,22 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
 
+/* ================= SEO METADATA ================= */
+
 export const metadata = {
   title: "Web Designing Company in Hyderabad | KIDIWEBTECH",
   description:
-    "KIDIWEBTECH offers modern, responsive, and conversion-focused web design services in Hyderabad. Build fast, SEO-optimized, and stunning websites.",
+    "KIDIWEBTECH is a professional web designing company in Hyderabad offering responsive, SEO-friendly, and high-converting website design services for businesses.",
   keywords: [
-    "Web Designing Hyderabad",
-    "Website Design Company Hyderabad",
-    "Responsive Web Design",
-    "UI UX Designers Hyderabad",
-    "KIDIWEBTECH Website Design",
-    "Custom Web Design Services",
+    "web designing company in hyderabad",
+    "website design company hyderabad",
+    "responsive web design",
+    "ui ux designers hyderabad",
+    "custom web design services",
+    "business website design",
   ],
   alternates: {
     canonical: "https://kidiwebtech.com/services/web-design",
   },
 };
+
+/* ================= PAGE ================= */
 
 export default function WebDesigningPage() {
   return (
@@ -25,20 +29,19 @@ export default function WebDesigningPage() {
       {/* ================= HERO ================= */}
       <section className="py-18 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-          Web Designing{" "}
-          <span className="gradient-text">Services</span>
+          Web Designing Company in{" "}
+          <span className="gradient-text">Hyderabad</span>
         </h1>
 
         <p className="text-gray-400 max-w-3xl mx-auto text-lg">
-          High-converting, fast, and visually stunning websites built for growth.
+          High-converting, responsive, and SEO-friendly website designs that
+          help businesses grow online.
         </p>
 
         <nav className="mt-6 text-sm text-gray-500">
-          <Link href="/" className="hover:text-yellow-400 transition">
-            Home
-          </Link>
+          <Link href="/" className="hover:text-yellow-400 transition">Home</Link>
           <span className="mx-2">›</span>
-          <span className="text-gray-400">Web Designing</span>
+          <span>Web Designing</span>
         </nav>
       </section>
 
@@ -52,7 +55,7 @@ export default function WebDesigningPage() {
             <div className="relative bg-black rounded-3xl m-[1.5px] overflow-hidden">
               <Image
                 src="/assets/image16.jpg"
-                alt="Web Designing Company in Hyderabad"
+                alt="Web designing services and website design company in Hyderabad"
                 width={600}
                 height={420}
                 priority
@@ -64,55 +67,112 @@ export default function WebDesigningPage() {
           {/* CONTENT */}
           <div>
             <h2 className="text-3xl font-extrabold mb-6">
-              Web Designing Company in{" "}
-              <span className="gradient-text">Hyderabad</span>
+              Professional <span className="gradient-text">Website Design Services</span>
             </h2>
 
             <p className="text-gray-400 mb-5 leading-relaxed">
-              Your website is your brand’s first impression. If it doesn’t
-              engage users in seconds, you lose customers.
+              Your website is the foundation of your digital presence. If it
+              doesn’t load fast, look professional, and guide users clearly,
+              you lose potential customers.
             </p>
 
             <p className="text-gray-400 mb-5 leading-relaxed">
-              <strong className="gradient-text">KIDIWEBTECH</strong> designs
-              websites that are visually appealing, user-friendly, fast-loading,
-              and optimized for search engines.
+              <strong className="gradient-text">KIDIWEBTECH</strong> is a trusted
+              web designing company in Hyderabad delivering visually stunning,
+              user-friendly, and conversion-focused websites for businesses.
             </p>
 
             <p className="text-gray-400 leading-relaxed">
-              From landing pages to full-scale business websites, we focus on
-              performance, clarity, and conversions.
+              We design websites that are responsive, SEO-optimized, and built
+              to convert visitors into leads and customers.
             </p>
           </div>
         </div>
       </section>
 
-      {/* ================= SERVICES ================= */}
-      <section className="py-12 px-6 md:px-20 max-w-7xl mx-auto">
-        <h3 className="text-3xl font-extrabold text-center mb-14">
-          What We <span className="gradient-text">Offer</span>
-        </h3>
+      {/* ================= SEO CONTENT ================= */}
+      <section className="px-6 md:px-20 max-w-6xl mx-auto py-20 space-y-12 text-gray-400">
 
-        <div className="grid md:grid-cols-3 gap-10">
-          {[
-            "Custom Website Design",
-            "Responsive & Mobile-Friendly Layouts",
-            "UI/UX Focused Design",
-            "SEO-Friendly Structure",
-            "Fast Loading Performance",
-            "Landing Pages & Business Websites",
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="border border-white/10 rounded-2xl p-6 hover:border-rose-400 transition"
-            >
-              <h4 className="text-xl font-semibold mb-2">{item}</h4>
-              <p className="text-gray-400 text-sm">
-                Designed to improve engagement, trust, and conversions.
-              </p>
-            </div>
-          ))}
+        {/* WHAT IS WEB DESIGN */}
+        <div>
+          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+            What Is Web Designing and Why It Matters?
+          </h2>
+          <p>
+            Web designing is the process of creating visually appealing,
+            user-friendly, and functional websites. A professionally designed
+            website builds trust, improves user experience, supports SEO, and
+            increases conversion rates.
+          </p>
         </div>
+
+        {/* SERVICES */}
+        <div>
+          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+            Our Web Designing Services Include
+          </h2>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Custom Website Design</li>
+            <li>Responsive & Mobile-Friendly Layouts</li>
+            <li>UI/UX Focused Website Design</li>
+            <li>SEO-Friendly Website Structure</li>
+            <li>Fast Loading & Performance Optimization</li>
+            <li>Landing Pages & Business Websites</li>
+          </ul>
+        </div>
+
+        {/* LOCAL SEO */}
+        <div>
+          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+            Website Design Services for Businesses in Hyderabad
+          </h2>
+          <p>
+            Our local web designing services help Hyderabad-based businesses
+            establish a strong online presence. We design websites that rank
+            well on Google and attract local customers searching for your
+            services.
+          </p>
+        </div>
+
+        {/* DESIGN VS TEMPLATE */}
+        <div>
+          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+            Custom Web Design vs Template-Based Websites
+          </h2>
+          <p>
+            Custom website design offers better branding, flexibility, and
+            performance compared to generic templates. Businesses that invest
+            in custom web design stand out from competitors and achieve better
+            long-term results.
+          </p>
+        </div>
+
+        {/* FAQ */}
+        <div>
+          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+            Web Designing – Frequently Asked Questions
+          </h2>
+
+          <p>
+            <strong>How much does website design cost?</strong><br />
+            Website design cost depends on features, design complexity, and
+            business requirements. We offer flexible pricing for startups and
+            businesses.
+          </p>
+
+          <p className="mt-4">
+            <strong>How long does it take to design a website?</strong><br />
+            A standard business website usually takes 2–4 weeks, depending on
+            scope and content.
+          </p>
+
+          <p className="mt-4">
+            <strong>Will my website be SEO-friendly?</strong><br />
+            Yes. All our websites are designed with SEO best practices,
+            responsive layouts, and fast performance.
+          </p>
+        </div>
+
       </section>
 
       {/* ================= CTA ================= */}
@@ -122,36 +182,32 @@ export default function WebDesigningPage() {
         </h2>
 
         <p className="text-gray-400 max-w-2xl mx-auto mb-10 text-lg">
-          Let’s design a website that represents your brand and drives real
-          business results.
+          Let’s design a professional website that represents your brand and
+          drives real business growth.
         </p>
 
         <div className="flex justify-center gap-6 flex-wrap">
           <Link
             href="/contact"
-            className="
-              inline-block px-10 py-4 rounded-full
+            className="inline-block px-10 py-4 rounded-full
               bg-gradient-to-r from-purple-500 to-rose-500
               text-white font-semibold text-lg
-              hover:opacity-90 transition
-            "
+              hover:opacity-90 transition"
           >
             Get a Free Website Quote →
           </Link>
 
           <Link
             href="https://wa.me/919390627367"
-            className="
-              inline-block px-10 py-4 rounded-full
+            className="inline-block px-10 py-4 rounded-full
               border border-rose-400 text-rose-400
-              hover:bg-rose-400 hover:text-black
-              transition
-            "
+              hover:bg-rose-400 hover:text-black transition"
           >
             WhatsApp Us
           </Link>
         </div>
       </section>
+
     </div>
   );
 }
