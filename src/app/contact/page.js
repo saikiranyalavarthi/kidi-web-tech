@@ -173,14 +173,14 @@ Message: ${message}
             {/* Buttons */}
             <button
               onClick={handleWhatsApp}
-              className="w-full py-3 rounded-full bg-green-500 text-black font-semibold"
+              className="w-full py-3 rounded-full bg-green-500 text-black font-semibold  hover:cursor-pointer"
             >
               Send via WhatsApp →
             </button>
 
             <button
               onClick={handleEmailSubmit}
-              className="w-full py-3 rounded-full bg-yellow-400 text-black font-semibold"
+              className="w-full py-3 rounded-full bg-yellow-400 text-black font-semibold hover:cursor-pointer"
             >
               Submit via Email →
             </button>
