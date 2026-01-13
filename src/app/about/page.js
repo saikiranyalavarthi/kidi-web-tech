@@ -1,34 +1,46 @@
 // pages/about.jsx
 
 import Head from "next/head";
-import Image from "next/image";
 import ExperienceSection from "../Components/ExperienceSection";
 
 export default function About() {
   return (
     <div className="bg-black text-white font-sans overflow-hidden">
 
+      {/* SEO HEAD */}
       <Head>
-        <title>About KIDIWEBTECH | Digital Marketing & Web Development Experts</title>
+        <title>About KidiWebTech | Digital Marketing & Web Development Agency India</title>
+
         <meta
           name="description"
-          content="KIDIWEBTECH is a digital marketing and web development agency in India helping businesses grow with SEO, Google Ads, websites, and scalable digital strategies."
+          content="KidiWebTech is a results-driven digital marketing and web development agency in India helping businesses grow with SEO, Google Ads, social media marketing, and lead generation strategies."
         />
+
         <meta
           name="keywords"
-          content="About KIDIWEBTECH, Digital Marketing Agency India, SEO Company, Web Development, App Development"
+          content="About KidiWebTech, Digital Marketing Agency India, SEO Company, Web Development Company, Google Ads Agency, Lead Generation Services"
         />
-        <link rel="canonical" href="https://kidiwebtech.com/about" />
+
+        <link rel="canonical" href="https://www.kidiwebtech.com/about" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="About KidiWebTech – Digital Growth Experts" />
+        <meta
+          property="og:description"
+          content="Learn how KidiWebTech helps businesses generate leads and grow online using SEO, Google Ads, and high-converting websites."
+        />
+        <meta property="og:url" content="https://www.kidiwebtech.com/about" />
+        <meta property="og:type" content="website" />
       </Head>
 
       {/* HERO */}
       <section className="py-18 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-6">
-          About <span className="gradient-text">KIDIWEBTECH</span>
+          About <span className="gradient-text">KidiWebTech</span>
         </h1>
         <p className="text-gray-400 max-w-3xl mx-auto text-lg">
-          We build high-performance digital experiences that help brands grow,
-          compete, and win in the online world.
+          We help businesses grow online with result-driven digital marketing,
+          SEO, Google Ads, and high-converting websites.
         </p>
       </section>
 
@@ -43,48 +55,50 @@ export default function About() {
             </h2>
 
             <p className="text-gray-400 mb-5 leading-relaxed">
-              <span className="gradient-text font-semibold">KIDIWEBTECH</span> is a
-              full-service digital marketing and development agency focused on
-              delivering measurable growth. From SEO and paid ads to websites and
-              apps, we help businesses build a strong digital foundation.
+              <span className="gradient-text font-semibold">KidiWebTech</span> is a
+              results-focused digital marketing and web development agency in
+              India helping businesses generate leads, increase online
+              visibility, and scale revenue through SEO, Google Ads, social
+              media marketing, and high-performance websites.
             </p>
 
             <p className="text-gray-400 mb-5 leading-relaxed">
-              The digital landscape evolves fast — and so do we. Our team stays
-              ahead of trends, algorithms, and technology shifts to ensure your
-              brand always remains competitive.
-            </p>
-
-            <p className="text-gray-400 mb-5 leading-relaxed">
-              Data drives every decision we make. From user behavior to
-              conversion metrics, our strategies are powered by insights that
-              turn traffic into revenue.
+              We work with startups, local businesses, and growing companies to
+              build strong digital foundations that convert visitors into real
+              customers.
             </p>
 
             <p className="text-gray-400 leading-relaxed">
-              We don’t believe in one-size-fits-all marketing. Every solution is
-              customized to your industry, audience, and growth goals.
+              Our strategies are powered by data, creativity, and technology —
+              ensuring measurable growth, better ROI, and long-term success.
             </p>
           </div>
 
-          {/* IMAGE */}
+          {/* YOUTUBE VIDEO (REPLACED IMAGE) */}
           <div className="relative">
+
+            {/* GRADIENT BORDER */}
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-yellow-400 to-orange-500 opacity-80" />
-            <div className="relative bg-black rounded-3xl m-[1.5px] overflow-hidden">
-              <Image
-                src="/assets/image5.jpg"
-                alt="About KIDIWEBTECH"
-                width={600}
-                height={700}
-                className="w-full h-full object-cover"
-              />
+
+            {/* VIDEO CARD */}
+            <div className="relative bg-black rounded-3xl m-[1.5px] overflow-hidden aspect-video">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/KdV0x72Ay5U"
+                title="About KidiWebTech - Digital Marketing & Web Development Agency"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                loading="lazy"
+              ></iframe>
             </div>
+
           </div>
 
         </div>
       </section>
 
-      {/* EXPERIENCE */}
+      {/* EXPERIENCE SECTION */}
       <ExperienceSection />
 
       {/* MISSION */}
@@ -96,7 +110,7 @@ export default function About() {
         <p className="text-gray-400 max-w-3xl mx-auto text-lg leading-relaxed">
           To empower businesses of all sizes with scalable digital solutions that
           increase visibility, generate leads, and drive long-term growth through
-          technology, strategy, and creativity.
+          strategy, technology, and creativity.
         </p>
       </section>
 
@@ -110,36 +124,30 @@ export default function About() {
           {[
             {
               title: "Expert Team",
-              desc:
-                "SEO specialists, developers, and marketers focused on results.",
+              desc: "Experienced SEO specialists, developers, and marketers focused on results.",
             },
             {
-              title: "Client-Centric",
-              desc:
-                "Your goals drive every decision we make and execute.",
+              title: "Client-Centric Approach",
+              desc: "Your business goals drive every strategy we create.",
             },
             {
-              title: "SEO-First Approach",
-              desc:
-                "Everything we build is optimized for visibility and ranking.",
+              title: "SEO-First Strategy",
+              desc: "Everything we build is optimized for search visibility and conversions.",
             },
             {
               title: "Reliable Delivery",
-              desc:
-                "On-time execution with transparent communication.",
+              desc: "On-time execution with transparent communication.",
             },
             {
               title: "Innovation Driven",
-              desc:
-                "We blend creativity, tech, and usability for impact.",
+              desc: "We blend creativity, technology, and data for real impact.",
             },
             {
-              title: "24/7 Support",
-              desc:
-                "We support you before, during, and after launch.",
+              title: "Ongoing Support",
+              desc: "We support your business before, during, and after launch.",
             },
           ].map((item, i) => (
-            <div key={i} className="relative group">
+            <div key={i} className="relative">
 
               {/* BORDER */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-yellow-400 to-orange-500 opacity-60" />
