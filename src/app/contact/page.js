@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -15,19 +16,13 @@ export default function ContactPage() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  // 🔹 WHATSAPP SUBMIT
+  const handleWhatsApp = (e) => {
     e.preventDefault();
 
     const { name, email, mobile, service, message } = formData;
 
-    // ✅ GA4 EVENT: FORM SUBMIT
     if (typeof window !== "undefined" && window.gtag) {
-      window.gtag("event", "form_submit", {
-        event_category: "contact",
-        event_label: service,
-      });
-
-      // ✅ GA4 EVENT: WHATSAPP CLICK (LEAD)
       window.gtag("event", "whatsapp_click", {
         event_category: "contact",
         event_label: service,
@@ -49,143 +44,153 @@ Message: ${message}
     )}`;
 
     window.open(whatsappLink, "_blank");
+  };
 
-    // Optional: reset form
-    setFormData({
-      name: "",
-      email: "",
-      mobile: "",
-      service: "Website Development",
-      message: "",
-    });
+  // 🔹 EMAIL SUBMIT
+  const handleEmailSubmit = (e) => {
+    e.preventDefault();
+
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "form_submit", {
+        event_category: "contact",
+        event_label: formData.service,
+      });
+    }
+
+    emailjs
+      .send(
+        "service_34id8vu",      // 🔁 replace
+        "template_kxkmb1l",     // 🔁 replace
+        formData,
+        "O2InmkBfQvNlqeo2j"       // 🔁 replace
+      )
+      .then(
+        () => {
+          alert("✅ Message sent successfully!");
+
+          setFormData({
+            name: "",
+            email: "",
+            mobile: "",
+            service: "Website Development",
+            message: "",
+          });
+        },
+        (error) => {
+          alert("❌ Failed to send message. Try again!");
+          console.error(error);
+        }
+      );
   };
 
   return (
-    <div className="bg-black text-white overflow-hidden min-h-screen">
+    <div className="bg-black text-white min-h-screen">
 
       {/* HERO */}
-      <section className="py-26 px-6 text-center border-b border-white/10">
+      <section className="py-24 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           Contact <span className="text-green-400">KIDIWEBTECH</span>
         </h1>
         <p className="text-gray-400 max-w-3xl mx-auto text-lg">
-          Get fast support for Website Development, SEO, Apps & Digital Marketing.
-        </p>
-      </section>
-
-      {/* INTRO */}
-      <section className="px-6 md:px-20 py-2 max-w-4xl mx-auto text-center">
-        <p className="text-gray-400 mb-2 text-lg">
-          Fill the form or message us directly on WhatsApp for a faster response.
+          Website Development, App Development, SEO & Digital Marketing Services
         </p>
       </section>
 
       {/* FORM */}
-      <section className="py-6 px-6 md:px-20">
+      <section className="py-10 px-6 md:px-20">
         <div className="max-w-2xl mx-auto bg-[#0b0b0b] p-8 rounded-2xl border border-white/10 shadow-xl">
-          <form onSubmit={handleSubmit} className="grid gap-6">
 
+          <form className="grid gap-6">
             {/* Name */}
             <div>
-              <label className="block mb-1 text-sm text-gray-400">
-                Your Name
-              </label>
+              <label className="text-gray-400 text-sm">Your Name</label>
               <input
                 type="text"
                 name="name"
                 required
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full px-4 py-2 rounded bg-black border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="w-full px-4 py-2 bg-black border border-white/10 rounded"
               />
             </div>
 
             {/* Email */}
             <div>
-              <label className="block mb-1 text-sm text-gray-400">
-                Email Address
-              </label>
+              <label className="text-gray-400 text-sm">Email</label>
               <input
                 type="email"
                 name="email"
                 required
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-2 rounded bg-black border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="w-full px-4 py-2 bg-black border border-white/10 rounded"
               />
             </div>
 
-            {/* Mobile Number */}
+            {/* Mobile */}
             <div>
-              <label className="block mb-1 text-sm text-gray-400">
-                Mobile Number
-              </label>
+              <label className="text-gray-400 text-sm">Mobile</label>
               <input
                 type="tel"
                 name="mobile"
                 required
                 value={formData.mobile}
                 onChange={handleChange}
-                className="w-full px-4 py-2 rounded bg-black border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="w-full px-4 py-2 bg-black border border-white/10 rounded"
               />
             </div>
 
             {/* Service */}
             <div>
-              <label className="block mb-1 text-sm text-gray-400">
-                Required Service
-              </label>
+              <label className="text-gray-400 text-sm">Service</label>
               <select
                 name="service"
                 value={formData.service}
                 onChange={handleChange}
-                className="w-full px-4 py-2 rounded bg-black border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="w-full px-4 py-2 bg-black border border-white/10 rounded"
               >
                 <option>Website Development</option>
                 <option>App Development</option>
                 <option>SEO Services</option>
                 <option>Digital Marketing</option>
                 <option>WordPress Development</option>
-                <option>Other</option>
               </select>
             </div>
 
             {/* Message */}
             <div>
-              <label className="block mb-1 text-sm text-gray-400">
-                Message
-              </label>
+              <label className="text-gray-400 text-sm">Message</label>
               <textarea
                 name="message"
                 rows="4"
                 required
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full px-4 py-2 rounded bg-black border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="w-full px-4 py-2 bg-black border border-white/10 rounded"
               />
             </div>
 
-            {/* Submit */}
+            {/* Buttons */}
             <button
-              type="submit"
-              className="w-full py-3 rounded-full font-semibold text-lg
-              bg-gradient-to-r from-green-400 to-green-600
-              text-black hover:opacity-90 transition"
+              onClick={handleWhatsApp}
+              className="w-full py-3 rounded-full bg-green-500 text-black font-semibold"
             >
-              Send Message via WhatsApp →
+              Send via WhatsApp →
             </button>
 
+            <button
+              onClick={handleEmailSubmit}
+              className="w-full py-3 rounded-full bg-yellow-400 text-black font-semibold"
+            >
+              Submit via Email →
+            </button>
           </form>
         </div>
       </section>
 
-      {/* FOOTER NOTE */}
-      <section className="py-10 px-6 text-center border-t border-white/10">
-        <p className="text-gray-400 text-sm max-w-4xl mx-auto">
-          KIDIWEBTECH – Professional Website Development, SEO & Digital Marketing Services.
-        </p>
-      </section>
-
+      <footer className="py-6 text-center text-gray-500 text-sm">
+        © KIDIWEBTECH – Digital Solutions Company
+      </footer>
     </div>
   );
 }
