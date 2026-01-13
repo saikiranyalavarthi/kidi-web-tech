@@ -10,6 +10,7 @@ import StatsSection from "./Components/StatsSection";
 import ScrollingText from "./Components/ScrollingText";
 import HeroSlider from "./Components/HeroSlider";
 import ServicesTestimonials from "./Components/ServicesTestimonials";
+import ContactPage from "./contact/page";
 
 
 export default function Home() {
@@ -86,7 +87,7 @@ export default function Home() {
 <ServicesTestimonials/>
 
       {/* FINAL CTA */}
-      <section className="py-12 px-6 text-center bg-black border-t border-white/10">
+      {/* <section className="py-12 px-6 text-center bg-black border-t border-white/10">
         <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-white">
           Ready to <span className="gradient-text">Grow Your Business?</span>
         </h2>
@@ -107,7 +108,8 @@ export default function Home() {
         >
           Get Free Consultation →
         </a>
-      </section>
+      </section> */}
+<ContactPage/>
 
     </div>
   );
