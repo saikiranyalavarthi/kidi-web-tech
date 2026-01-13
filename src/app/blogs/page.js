@@ -133,9 +133,9 @@ export default function BlogPage() {
                 </p>
 
                 {/* INTERNAL BACKLINK (SEO BOOST) */}
-                <span className="text-yellow-300 text-sm font-semibold">
+                {/* <span className="text-yellow-300 text-sm font-semibold">
                   Read more →
-                </span>
+                </span> */}
               </div>
             </Link>
 
