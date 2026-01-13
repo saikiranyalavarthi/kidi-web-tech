@@ -97,8 +97,8 @@ Message: ${message}
       </section>
 
       {/* FORM */}
-      <section className="py-10 px-6 md:px-20">
-        <div className="max-w-2xl mx-auto bg-[#0b0b0b] p-8 rounded-2xl border border-white/10 shadow-xl">
+      <section className="py-2 px-6 md:px-20">
+        <div className="max-w-2xl mx-auto bg-[#0b0b0b] p-2 rounded-2xl border border-white/10 shadow-xl">
 
           <form className="grid gap-6">
             {/* Name */}
