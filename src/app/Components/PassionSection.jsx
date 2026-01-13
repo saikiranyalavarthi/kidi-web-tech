@@ -10,7 +10,6 @@ export default function PassionSection() {
 
         {/* LEFT CONTENT */}
         <div className="lg:w-1/2">
-
           <h2 className="text-4xl sm:text-5xl font-extrabold text-white mb-6 leading-tight">
             Success with{" "}
             <span className="gradient-text">passion-driven</span> service{" "}
@@ -25,7 +24,7 @@ export default function PassionSection() {
           </p>
 
           {/* BULLET POINTS */}
-          <ul className="space-y-4 mb-12">
+          <ul className="space-y-4 mb-10">
             {[
               "Get the results you crave and boost your ROI",
               "Turn your website into a sales machine that never sleeps",
@@ -40,11 +39,11 @@ export default function PassionSection() {
           </ul>
 
           {/* STATS */}
-         
+     
+        </div>
 
         {/* RIGHT IMAGE */}
         <div className="lg:w-1/2 relative">
-
           {/* GRADIENT BORDER */}
           <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-yellow-400 to-orange-500 opacity-80" />
 
@@ -56,6 +55,7 @@ export default function PassionSection() {
               width={600}
               height={400}
               className="w-full h-full object-cover"
+              priority
             />
           </div>
         </div>
