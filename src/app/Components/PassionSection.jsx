@@ -40,21 +40,7 @@ export default function PassionSection() {
           </ul>
 
           {/* STATS */}
-          <div className="grid grid-cols-3 gap-6 text-center">
-            {[
-              { value: "250+", label: "Projects" },
-              { value: "125+", label: "Clients" },
-              { value: "25", label: "Experts" },
-            ].map((stat, i) => (
-              <div key={i}>
-                <h3 className="text-3xl font-extrabold gradient-text">
-                  {stat.value}
-                </h3>
-                <p className="text-gray-400 text-sm mt-1">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+         
 
         {/* RIGHT IMAGE */}
         <div className="lg:w-1/2 relative">
