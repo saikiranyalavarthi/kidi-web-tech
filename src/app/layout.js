@@ -32,22 +32,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {/* ✅ ORGANIZATION SCHEMA */}
-        <OrganizationSchema />
-
-        {/* ✅ GOOGLE ADSENSE (GLOBAL – LOAD ONCE) */}
+      <head>
+        {/* ✅ GOOGLE ADSENSE (LOAD ONCE – SAFE) */}
         <Script
-  async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1031612318519089"
-  crossOrigin="anonymous"
-  strategy="beforeInteractive"
-/>
+          async
+          strategy="afterInteractive"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1031612318519089"
+          crossOrigin="anonymous"
+        />
 
-
-        {/* ✅ GOOGLE ANALYTICS */}
+        {/* ✅ GOOGLE ANALYTICS (GA4) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-BG2NCCWS17"
           strategy="afterInteractive"
@@ -58,9 +52,18 @@ export default function RootLayout({ children }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-BG2NCCWS17');
+            gtag('config', 'G-BG2NCCWS17', {
+              page_path: window.location.pathname,
+            });
           `}
         </Script>
+      </head>
+
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {/* ✅ ORGANIZATION SCHEMA */}
+        <OrganizationSchema />
 
         <Navbar />
         {children}
