@@ -16,17 +16,20 @@ export default function ContactPage() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // 🔹 WHATSAPP SUBMIT
+  // =============================
+  // WHATSAPP LEAD (GA4 CORRECT)
+  // =============================
   const handleWhatsApp = (e) => {
     e.preventDefault();
 
     const { name, email, mobile, service, message } = formData;
 
+    // GA4 Lead Event
     if (typeof window !== "undefined" && window.gtag) {
-      window.gtag("event", "whatsapp_click", {
-        event_category: "contact",
-        event_label: service,
-        value: 1,
+      window.gtag("event", "generate_lead", {
+        lead_type: "whatsapp",
+        service: service,
+        page_location: window.location.href,
       });
     }
 
@@ -46,26 +49,30 @@ Message: ${message}
     window.open(whatsappLink, "_blank");
   };
 
-  // 🔹 EMAIL SUBMIT
+  // =============================
+  // EMAIL LEAD (TRACK ON SUCCESS)
+  // =============================
   const handleEmailSubmit = (e) => {
     e.preventDefault();
 
-    if (typeof window !== "undefined" && window.gtag) {
-      window.gtag("event", "form_submit", {
-        event_category: "contact",
-        event_label: formData.service,
-      });
-    }
-
     emailjs
       .send(
-        "service_34id8vu",      // 🔁 replace
-        "template_kxkmb1l",     // 🔁 replace
+        "service_34id8vu",      // 🔁 Your EmailJS Service ID
+        "template_kxkmb1l",     // 🔁 Your EmailJS Template ID
         formData,
-        "O2InmkBfQvNlqeo2j"       // 🔁 replace
+        "O2InmkBfQvNlqeo2j"     // 🔁 Your EmailJS Public Key
       )
       .then(
         () => {
+          // GA4 Lead Event ONLY after success
+          if (typeof window !== "undefined" && window.gtag) {
+            window.gtag("event", "generate_lead", {
+              lead_type: "email",
+              service: formData.service,
+              page_location: window.location.href,
+            });
+          }
+
           alert("✅ Message sent successfully!");
 
           setFormData({
@@ -97,10 +104,11 @@ Message: ${message}
       </section>
 
       {/* FORM */}
-      <section className="py-2 px-6 md:px-20">
-        <div className="max-w-2xl mx-auto bg-[#0b0b0b] p-2 rounded-2xl border border-white/10 shadow-xl">
+      <section className="py-10 px-6 md:px-20">
+        <div className="max-w-2xl mx-auto bg-[#0b0b0b] p-8 rounded-2xl border border-white/10 shadow-xl">
 
           <form className="grid gap-6">
+
             {/* Name */}
             <div>
               <label className="text-gray-400 text-sm">Your Name</label>
@@ -173,17 +181,18 @@ Message: ${message}
             {/* Buttons */}
             <button
               onClick={handleWhatsApp}
-              className="w-full py-3 rounded-full bg-green-500 text-black font-semibold  hover:cursor-pointer"
+              className="w-full py-3 rounded-full bg-green-500 text-black font-semibold hover:opacity-90"
             >
               Send via WhatsApp →
             </button>
 
             <button
               onClick={handleEmailSubmit}
-              className="w-full py-3 rounded-full bg-yellow-400 text-black font-semibold hover:cursor-pointer"
+              className="w-full py-3 rounded-full bg-yellow-400 text-black font-semibold hover:opacity-90"
             >
               Submit via Email →
             </button>
+
           </form>
         </div>
       </section>
@@ -191,6 +200,7 @@ Message: ${message}
       <footer className="py-6 text-center text-gray-500 text-sm">
         © KIDIWEBTECH – Digital Solutions Company
       </footer>
+
     </div>
   );
 }
