@@ -33,30 +33,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* ✅ GOOGLE ADSENSE (LOAD ONCE – SAFE) */}
-        <Script
+        {/* ✅ REQUIRED FOR ADSENSE VERIFICATION (RAW HTML) */}
+        <script
           async
-          strategy="afterInteractive"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1031612318519089"
           crossOrigin="anonymous"
         />
-
-        {/* ✅ GOOGLE ANALYTICS (GA4) */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-BG2NCCWS17"
-          strategy="afterInteractive"
-        />
-
-        <Script id="ga4-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-BG2NCCWS17', {
-              page_path: window.location.pathname,
-            });
-          `}
-        </Script>
       </head>
 
       <body
@@ -64,6 +46,20 @@ export default function RootLayout({ children }) {
       >
         {/* ✅ ORGANIZATION SCHEMA */}
         <OrganizationSchema />
+
+        {/* ✅ GOOGLE ANALYTICS (SAFE TO USE Script) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-BG2NCCWS17"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-BG2NCCWS17');
+          `}
+        </Script>
 
         <Navbar />
         {children}
