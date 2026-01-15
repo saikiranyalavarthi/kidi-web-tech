@@ -1,8 +1,7 @@
 "use client";
 
+import Image from "next/image";
 import { CheckCircle } from "lucide-react";
-import Lottie from "lottie-react";
-
 
 export default function PassionSection() {
   return (
@@ -38,25 +37,30 @@ export default function PassionSection() {
               </li>
             ))}
           </ul>
+
+          {/* STATS */}
+     
         </div>
 
-        {/* RIGHT LOTTIE ANIMATION */}
+        {/* RIGHT IMAGE */}
         <div className="lg:w-1/2 relative">
           {/* GRADIENT BORDER */}
           <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-yellow-400 to-orange-500 opacity-80" />
 
-          {/* LOTTIE CARD */}
-          <div className="relative bg-black rounded-3xl m-[1.5px] overflow-hidden p-6">
-          <Lottie
-  path="/assets/mobiledigitalmarketing.json"
-  loop
-  autoplay
-  className="w-full h-[400px]"
-/>
+          {/* IMAGE CARD */}
+          <div className="relative bg-black rounded-3xl m-[1.5px] overflow-hidden">
+            <Image
+              src="/assets/image3.jpg"
+              alt="Digital Growth Dashboard"
+              width={600}
+              height={400}
+              className="w-full h-full object-cover"
+              priority
+            />
           </div>
         </div>
 
       </div>
     </section>
   );
-}
+} 
