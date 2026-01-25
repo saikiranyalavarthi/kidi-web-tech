@@ -20,49 +20,103 @@ const blogs = {
   "content-marketing-strategies": {
     title: "Content Marketing Strategies That Drive Engagement",
     image: "/assets/blog1.webp",
-    summary: "Proven content marketing strategies to boost engagement and trust.",
+    summary:
+      "This blog explains powerful content marketing strategies that help businesses attract the right audience, build trust, improve SEO rankings, and increase long-term customer engagement through valuable and consistent content.",
+    purpose:
+      "To educate businesses on how content marketing helps generate leads, build authority, and support SEO growth.",
+    seoIntent:
+      "Ranks for content marketing strategies, content marketing for business growth, SEO content tips.",
   },
+
   "branding-design-trends": {
     title: "Branding & Design Trends for Modern Businesses",
     image: "/assets/blog2.webp",
-    summary: "Latest branding and UI/UX design trends for modern brands.",
+    summary:
+      "Explore the latest branding and UI/UX design trends that modern businesses use to create strong brand identity, improve user experience, and increase customer trust in digital platforms.",
+    purpose:
+      "To help businesses understand the importance of branding and design in building credibility and standing out online.",
+    seoIntent:
+      "Ranks for branding trends, UI UX design trends, brand identity for businesses.",
   },
+
   "email-marketing-conversion": {
     title: "Mastering Email Marketing for Higher Conversion",
     image: "/assets/blog3.webp",
-    summary: "Email marketing strategies that increase conversions.",
+    summary:
+      "This blog covers proven email marketing techniques including personalization, automation, and segmentation that help businesses increase open rates, improve conversions, and build long-term customer relationships.",
+    purpose:
+      "To guide businesses in using email marketing as a high-ROI digital marketing channel.",
+    seoIntent:
+      "Ranks for email marketing strategies, email marketing conversion tips, email automation.",
   },
+
   "marketing-performance-tracking": {
     title: "Performance Tracking: Measuring What Matters",
     image: "/assets/blog4.webp",
-    summary: "How to track KPIs and marketing performance effectively.",
+    summary:
+      "Learn how to track the right marketing KPIs, analyze campaign performance, and use data-driven insights to improve ROI and make smarter digital marketing decisions.",
+    purpose:
+      "To help businesses understand analytics, performance tracking, and data-driven marketing strategies.",
+    seoIntent:
+      "Ranks for marketing KPIs, performance tracking, digital marketing analytics.",
   },
+
   "seo-traffic-growth": {
     title: "Boosting Traffic with Search Engine Optimization (SEO)",
     image: "/assets/blog5.webp",
-    summary: "SEO strategies to grow organic traffic.",
+    summary:
+      "A complete guide to SEO strategies including on-page SEO, technical SEO, and content optimization to help businesses increase organic traffic and rank higher on Google.",
+    purpose:
+      "To educate businesses on how SEO drives long-term traffic and sustainable online growth.",
+    seoIntent:
+      "Ranks for SEO strategies, increase website traffic, SEO for business growth.",
   },
+
   "ppc-advertising-strategy": {
     title: "Pay-Per-Click Advertising: Maximize Your Budget",
     image: "/assets/blog6.webp",
-    summary: "PPC strategies to improve ROI and reduce CPC.",
+    summary:
+      "This blog explains how to plan and optimize PPC advertising campaigns to reduce cost per click, improve ad quality score, and maximize return on investment.",
+    purpose:
+      "To help businesses run profitable Google Ads and paid advertising campaigns.",
+    seoIntent:
+      "Ranks for PPC advertising strategies, Google Ads optimization, paid marketing tips.",
   },
+
   "social-media-brand-growth": {
     title: "Social Media Management for Brand Growth",
     image: "/assets/blog7.webp",
-    summary: "Grow your brand using social media marketing.",
+    summary:
+      "Discover effective social media strategies that help businesses grow brand awareness, increase engagement, and build loyal online communities across platforms.",
+    purpose:
+      "To guide businesses in using social media marketing for brand visibility and customer engagement.",
+    seoIntent:
+      "Ranks for social media marketing strategies, brand growth on social media.",
   },
+
   "web-development-trends-2025": {
     title: "Web Development Trends to Watch in 2025",
     image: "/assets/blog8.webp",
-    summary: "Modern frameworks and performance trends in web development.",
+    summary:
+      "An overview of modern web development trends including performance optimization, security, responsive design, and modern frameworks shaping websites in 2025.",
+    purpose:
+      "To help businesses understand how modern web technologies improve performance and user experience.",
+    seoIntent:
+      "Ranks for web development trends 2025, modern website development, web performance.",
   },
+
   "business-mobile-app-benefits": {
     title: "Why Your Business Needs a Mobile App Today",
     image: "/assets/blog9.webp",
-    summary: "Benefits of having a mobile app for your business.",
+    summary:
+      "This blog explains how mobile apps help businesses improve customer engagement, increase retention, enable direct communication, and support long-term digital growth.",
+    purpose:
+      "To educate businesses on the benefits of having a mobile app in today’s digital world.",
+    seoIntent:
+      "Ranks for mobile app benefits for business, business mobile app development.",
   },
 };
+
 
 /* =========================
    PAGE COMPONENT
