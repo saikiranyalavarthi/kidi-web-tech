@@ -297,9 +297,9 @@ Message: ${message}
 
       {/* HERO */}
       <section className="py-24 px-6 text-center border-b border-white/10">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
           Contact <span className="text-green-400">KIDIWEBTECH</span>
-        </h1>
+        </h2>
         <p className="text-gray-400 max-w-3xl mx-auto text-lg">
           Website Development, App Development, SEO & Digital Marketing Services
         </p>
