@@ -29,10 +29,19 @@ export const metadata = {
     default: "KidiWebTech – Digital Marketing & SEO Agency in Hyderabad",
     template: "%s | KidiWebTech",
   },
+
   description:
     "KidiWebTech is a digital marketing & SEO agency in Hyderabad offering SEO services, website development, Google Ads, and social media marketing to grow businesses online.",
+
   applicationName: "KidiWebTech",
+
+  /* ✅ MAIN DOMAIN */
   metadataBase: new URL("https://www.kidiwebtech.com"),
+
+  /* ✅ CANONICAL URL (OPTION 2 FIX) */
+  alternates: {
+    canonical: "/",
+  },
 
   keywords: [
     "digital marketing agency Hyderabad",
