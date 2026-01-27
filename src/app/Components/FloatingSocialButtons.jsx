@@ -7,6 +7,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaTwitter,
+  FaPhoneAlt,
 } from "react-icons/fa";
 
 export default function FloatingSocialButtons() {
@@ -77,6 +78,15 @@ export default function FloatingSocialButtons() {
         className="bg-[#25D366] p-3 rounded-full hover:scale-110 transition"
       >
         <FaWhatsapp className="text-white text-lg" />
+      </a>
+
+      {/* Call Button */}
+      <a
+        href="tel:+919390627367"
+        aria-label="Call KIDIWEBTECH"
+        className="bg-[#0f172a] p-3 rounded-full hover:scale-110 transition border border-white/20"
+      >
+        <FaPhoneAlt className="text-white text-lg" />
       </a>
 
     </div>
