@@ -4,7 +4,6 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Footer/Footer";
 import FloatingSocialButtons from "./Components/FloatingSocialButtons";
 import Script from "next/script";
-import OrganizationSchema from "./Components/OrganizationSchema";
 
 /* =========================
    FONTS
@@ -31,67 +30,40 @@ export const metadata = {
   },
 
   description:
-    "KidiWebTech is a digital marketing & SEO agency in Hyderabad offering SEO services, website development, Google Ads, and social media marketing to grow businesses online.",
+    "KidiWebTech is a digital marketing & SEO agency in Hyderabad offering SEO services, website development, Google Ads, and social media marketing.",
 
-  applicationName: "KidiWebTech",
-
-  /* ✅ MAIN DOMAIN */
   metadataBase: new URL("https://www.kidiwebtech.com"),
 
-  /* ✅ CANONICAL URL (OPTION 2 FIX) */
   alternates: {
     canonical: "/",
   },
-
   keywords: [
     "digital marketing agency Hyderabad",
     "SEO company Hyderabad",
-    "website development company India",
-    "Google Ads services",
-    "KidiWebTech",
+    "website development company Hyderabad",
+    "Google Ads agency Hyderabad",
+    "social media marketing Hyderabad",
+    "best SEO services in Hyderabad",
+    "KidiWebTech"
   ],
 
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    },
   },
 
   verification: {
     google: "oRuxF-tkLeI9a3b51z2Ic1GkLtcyQdErTtqTYVpjkl0",
   },
 
-  other: {
-    "google-adsense-account": "ca-pub-1031612318519089",
-  },
-
   openGraph: {
     title: "KidiWebTech – Digital Growth Partner",
     description:
-      "SEO, web development, Google Ads & digital marketing services for businesses in India.",
+      "SEO, web development, Google Ads & digital marketing services in India.",
     url: "https://www.kidiwebtech.com",
     siteName: "KidiWebTech",
     locale: "en_IN",
     type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "KidiWebTech – Digital Growth Partner",
-    description:
-      "Grow your business online with SEO, websites, and performance marketing.",
-  },
-
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
   },
 };
 
@@ -99,15 +71,100 @@ export const metadata = {
    ROOT LAYOUT
 ========================= */
 export default function RootLayout({ children }) {
+
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://www.kidiwebtech.com/#localbusiness",
+    name: "KidiWebTech",
+    image: "https://www.kidiwebtech.com/logo.png",
+    url: "https://www.kidiwebtech.com",
+    telephone: "+91-9390627367",
+    priceRange: "₹₹",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Hyderabad",
+      addressRegion: "Telangana",
+      addressCountry: "IN"
+    },
+    areaServed: {
+      "@type": "City",
+      name: "Hyderabad"
+    },
+    sameAs: [
+      "https://www.instagram.com/kidi.webtech/",
+      "https://www.linkedin.com/in/kidi-webtech-a86b8b3a2/",
+      "https://www.facebook.com/profile.php?id=61585391203839"
+    ]
+  };
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: "Digital Marketing Services",
+    provider: {
+      "@type": "Organization",
+      name: "KidiWebTech",
+      url: "https://www.kidiwebtech.com"
+    },
+    areaServed: {
+      "@type": "Country",
+      name: "India"
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Digital Services",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "SEO Services"
+          }
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Website Development"
+          }
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Google Ads Management"
+          }
+        }
+      ]
+    }
+  };
+
   return (
     <html lang="en-IN">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
-      >
-        {/* ✅ ORGANIZATION STRUCTURED DATA */}
-        <OrganizationSchema />
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}>
 
-        {/* ✅ GOOGLE ADSENSE */}
+        {/* STRUCTURED DATA - LOCAL BUSINESS */}
+        <Script
+          id="local-business-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema),
+          }}
+        />
+
+        {/* STRUCTURED DATA - SERVICES */}
+        <Script
+          id="service-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(serviceSchema),
+          }}
+        />
+
+        {/* GOOGLE ADSENSE */}
         <Script
           async
           strategy="afterInteractive"
@@ -115,7 +172,7 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
         />
 
-        {/* ✅ GOOGLE ANALYTICS (GA4) */}
+        {/* GOOGLE ANALYTICS */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-BG2NCCWS17"
           strategy="afterInteractive"
@@ -125,17 +182,16 @@ export default function RootLayout({ children }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-BG2NCCWS17', {
-              page_path: window.location.pathname,
-            });
+            gtag('config', 'G-BG2NCCWS17');
           `}
         </Script>
 
-        {/* ✅ SITE LAYOUT */}
+        {/* SITE LAYOUT */}
         <Navbar />
         <main>{children}</main>
         <FloatingSocialButtons />
         <Footer />
+
       </body>
     </html>
   );
