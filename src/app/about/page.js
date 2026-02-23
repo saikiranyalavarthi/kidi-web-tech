@@ -1,51 +1,79 @@
 // pages/about.jsx
 
 import Head from "next/head";
+import Link from "next/link";
+import Script from "next/script";
 import ExperienceSection from "../Components/ExperienceSection";
 
 export default function About() {
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: "About KidiWebTech",
+    url: "https://www.kidiwebtech.com/about",
+    description:
+      "KidiWebTech is a digital marketing and web development agency in Hyderabad helping businesses grow with SEO, Google Ads, social media marketing and high-converting websites.",
+  };
+
   return (
     <div className="bg-black text-white font-sans overflow-hidden">
 
-      {/* SEO HEAD */}
+      {/* ================= SEO HEAD ================= */}
       <Head>
-        <title>About KidiWebTech | Digital Marketing & Web Development Agency India</title>
+        <title>
+          About KidiWebTech | Digital Marketing & Web Development Agency in Hyderabad
+        </title>
 
         <meta
           name="description"
-          content="KidiWebTech is a results-driven digital marketing and web development agency in India helping businesses grow with SEO, Google Ads, social media marketing, and lead generation strategies."
+          content="Learn about KidiWebTech – a results-driven digital marketing agency in Hyderabad offering SEO, website development, Google Ads management, and social media marketing services."
         />
 
         <meta
           name="keywords"
-          content="About KidiWebTech, Digital Marketing Agency India, SEO Company, Web Development Company, Google Ads Agency, Lead Generation Services"
+          content="About KidiWebTech, Digital Marketing Agency Hyderabad, SEO Company in Hyderabad, Web Development Company India, Google Ads Agency Hyderabad"
         />
 
         <link rel="canonical" href="https://www.kidiwebtech.com/about" />
 
         {/* Open Graph */}
-        <meta property="og:title" content="About KidiWebTech – Digital Growth Experts" />
+        <meta
+          property="og:title"
+          content="About KidiWebTech – Digital Growth Experts in Hyderabad"
+        />
         <meta
           property="og:description"
-          content="Learn how KidiWebTech helps businesses generate leads and grow online using SEO, Google Ads, and high-converting websites."
+          content="Discover how KidiWebTech helps businesses grow through SEO, web development, Google Ads and performance marketing."
         />
-        <meta property="og:url" content="https://www.kidiwebtech.com/about" />
+        <meta
+          property="og:url"
+          content="https://www.kidiwebtech.com/about"
+        />
         <meta property="og:type" content="website" />
       </Head>
 
-      {/* HERO */}
-      <section className="py-18 px-6 text-center border-b border-white/10">
+      {/* ABOUT PAGE SCHEMA */}
+      <Script
+        id="about-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(aboutSchema),
+        }}
+      />
+
+      {/* ================= HERO ================= */}
+      <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-6">
           About <span className="gradient-text">KidiWebTech</span>
         </h1>
         <p className="text-gray-400 max-w-3xl mx-auto text-lg">
-          We help businesses grow online with result-driven digital marketing,
-          SEO, Google Ads, and high-converting websites.
+          Your trusted digital marketing and web development partner in Hyderabad.
         </p>
       </section>
 
-      {/* ABOUT CONTENT */}
-      <section className="py-12 px-6 md:px-20">
+      {/* ================= ABOUT CONTENT ================= */}
+      <section className="py-16 px-6 md:px-20">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
           {/* TEXT */}
@@ -56,43 +84,46 @@ export default function About() {
 
             <p className="text-gray-400 mb-5 leading-relaxed">
               <span className="gradient-text font-semibold">KidiWebTech</span> is a
-              results-focused digital marketing and web development agency in
-              India helping businesses generate leads, increase online
-              visibility, and scale revenue through SEO, Google Ads, social
-              media marketing, and high-performance websites.
+              Hyderabad-based digital marketing agency specializing in
+              <Link href="/services/seo" className="underline ml-1">
+                SEO services
+              </Link>,
+              <Link href="/services/web-development" className="underline ml-1">
+                website development
+              </Link>,
+              <Link href="/services/ppc" className="underline ml-1">
+                Google Ads management
+              </Link>, and
+              <Link href="/services/social-media-marketing" className="underline ml-1">
+                social media marketing
+              </Link>.
             </p>
 
             <p className="text-gray-400 mb-5 leading-relaxed">
-              We work with startups, local businesses, and growing companies to
-              build strong digital foundations that convert visitors into real
-              customers.
+              We help startups, local businesses, and enterprises build strong
+              digital foundations that increase search visibility, generate
+              qualified leads, and drive measurable revenue growth.
             </p>
 
             <p className="text-gray-400 leading-relaxed">
-              Our strategies are powered by data, creativity, and technology —
-              ensuring measurable growth, better ROI, and long-term success.
+              Our team combines technical expertise, creative strategy, and
+              performance-driven marketing to deliver long-term business success.
             </p>
           </div>
 
-          {/* YOUTUBE VIDEO (REPLACED IMAGE) */}
+          {/* VIDEO */}
           <div className="relative">
-
-            {/* GRADIENT BORDER */}
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-yellow-400 to-orange-500 opacity-80" />
-
-            {/* VIDEO CARD */}
             <div className="relative bg-black rounded-3xl m-[1.5px] overflow-hidden aspect-video">
               <iframe
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/KdV0x72Ay5U"
-                title="About KidiWebTech - Digital Marketing & Web Development Agency"
+                title="About KidiWebTech - Digital Marketing Agency"
                 frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 loading="lazy"
               ></iframe>
             </div>
-
           </div>
 
         </div>
@@ -101,58 +132,53 @@ export default function About() {
       {/* EXPERIENCE SECTION */}
       <ExperienceSection />
 
-      {/* MISSION */}
-      <section className="py-12 px-6 text-center border-t border-white/10">
+      {/* ================= MISSION ================= */}
+      <section className="py-16 px-6 text-center border-t border-white/10">
         <h2 className="text-3xl font-extrabold mb-6">
           Our <span className="gradient-text">Mission</span>
         </h2>
 
         <p className="text-gray-400 max-w-3xl mx-auto text-lg leading-relaxed">
-          To empower businesses of all sizes with scalable digital solutions that
-          increase visibility, generate leads, and drive long-term growth through
-          strategy, technology, and creativity.
+          To empower businesses with scalable digital solutions that increase
+          search rankings, drive traffic, generate leads, and build sustainable growth.
         </p>
       </section>
 
-      {/* WHY CHOOSE US */}
-      <section className="py-12 px-6 md:px-20 text-center border-t border-white/10">
+      {/* ================= WHY CHOOSE US ================= */}
+      <section className="py-16 px-6 md:px-20 text-center border-t border-white/10">
         <h2 className="text-3xl font-extrabold mb-16">
-          Why <span className="gradient-text">Choose Us</span>
+          Why <span className="gradient-text">Choose KidiWebTech</span>
         </h2>
 
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
           {[
             {
-              title: "Expert Team",
-              desc: "Experienced SEO specialists, developers, and marketers focused on results.",
+              title: "Performance-Driven Strategy",
+              desc: "Every campaign is built to deliver measurable ROI and business growth.",
             },
             {
-              title: "Client-Centric Approach",
-              desc: "Your business goals drive every strategy we create.",
+              title: "SEO-First Approach",
+              desc: "All websites and marketing campaigns are optimized for search visibility.",
             },
             {
-              title: "SEO-First Strategy",
-              desc: "Everything we build is optimized for search visibility and conversions.",
+              title: "Transparent Communication",
+              desc: "We provide clear reporting and honest strategy recommendations.",
             },
             {
-              title: "Reliable Delivery",
-              desc: "On-time execution with transparent communication.",
+              title: "Full-Service Expertise",
+              desc: "From SEO to web development, we manage your entire digital presence.",
             },
             {
-              title: "Innovation Driven",
-              desc: "We blend creativity, technology, and data for real impact.",
+              title: "Local & National Reach",
+              desc: "Helping businesses rank in Hyderabad and across India.",
             },
             {
-              title: "Ongoing Support",
-              desc: "We support your business before, during, and after launch.",
+              title: "Long-Term Partnerships",
+              desc: "We focus on building relationships, not just delivering projects.",
             },
           ].map((item, i) => (
             <div key={i} className="relative">
-
-              {/* BORDER */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-yellow-400 to-orange-500 opacity-60" />
-
-              {/* CARD */}
               <div className="relative bg-black rounded-2xl m-[1.5px] p-8">
                 <h3 className="text-xl font-bold gradient-text mb-3">
                   {item.title}
@@ -161,7 +187,6 @@ export default function About() {
                   {item.desc}
                 </p>
               </div>
-
             </div>
           ))}
         </div>

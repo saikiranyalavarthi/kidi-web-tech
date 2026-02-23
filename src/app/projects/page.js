@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import Head from "next/head";
+import Script from "next/script";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const fadeUp = {
@@ -16,79 +18,98 @@ export default function Projects() {
       image: "/projects/hiphipwebsite.jpg",
       tag: "Healthcare / App",
       description:
-        "A WhatsApp-integrated pet consultation platform enabling instant vet bookings, calendar scheduling, and secure online payments with a mobile-first experience.",
+        "A WhatsApp-integrated pet consultation platform enabling instant vet bookings, secure payments, and mobile-first UX.",
     },
     {
       title: "MatsyaAqatech – Aquaculture Website",
       image: "/projects/crabwebsite.jpg",
       tag: "eCommerce / Industry",
       description:
-        "A fast-loading aquaculture business website showcasing seafood solutions, export services, and product catalogs with SEO-focused architecture.",
+        "SEO-optimized aquaculture website with export-focused architecture and product catalog management.",
     },
     {
       title: "D4 Interactive – Digital Marketing Website",
       image: "/projects/d4.jpg",
       tag: "Marketing / Agency",
       description:
-        "A conversion-driven digital marketing website designed to generate high-quality leads with service funnels, landing pages, and performance tracking.",
+        "Conversion-focused agency website with service funnels, landing pages, and analytics integration.",
     },
     {
       title: "Gurudeep – Educational Company",
       image: "/projects/Guredeepwebsite.jpg",
       tag: "Education / Corporate",
       description:
-        "A professional education and training platform highlighting courses, corporate programs, admissions workflow, and lead capture integrations.",
+        "Education platform with structured course modules and inquiry-driven lead funnels.",
     },
     {
       title: "Shiva Hotel Residency",
       image: "/projects/hotel.jpg",
       tag: "Hospitality",
       description:
-        "A premium hotel website with room showcases, booking CTA, Google Maps integration, WhatsApp support, and mobile-first UX.",
+        "Premium hotel website with booking CTAs, WhatsApp integration, and mobile-first design.",
     },
     {
       title: "VFX Coach – Training Institute",
       image: "/projects/vfxcoachwebsite.jpg",
       tag: "Creative / Training",
       description:
-        "A modern institute website for VFX & animation coaching with course modules, student showcases, and inquiry funnels.",
-    },
-    {
-      title: "DoorstepHub – Service Platform",
-      image: "/projects/dhub.jpg",
-      tag: "Local Services",
-      description:
-        "A service marketplace platform connecting users with doorstep services using location-based listings and WhatsApp automation.",
-    },
-    {
-      title: "Mechanical Auto Parts Platform",
-      image: "/projects/autoparts.jpg",
-      tag: "Manufacturing / B2B",
-      description:
-        "An industrial auto-parts catalog website featuring categorized products, inquiry forms, and downloadable brochures for B2B clients.",
-    },
-    {
-      title: "Academic Journals Website",
-      image: "/projects/journels.jpg",
-      tag: "Research / Publishing",
-      description:
-        "A scholarly journal publishing platform with submission guidelines, article listings, indexing support, and SEO optimization.",
+        "Modern institute website featuring course showcases and SEO-optimized landing pages.",
     },
   ];
+
+  const caseStudySchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "KidiWebTech Projects & Case Studies",
+    url: "https://kidiwebtech.com/projects",
+    description:
+      "Portfolio of web development, SEO, and digital marketing projects delivered by KidiWebTech in Hyderabad and across India.",
+  };
 
   return (
     <div className="bg-black text-white overflow-hidden">
 
+      {/* ================= SEO ================= */}
       <Head>
-        <title>KIDIWEBTECH | Projects & Case Studies</title>
+        <title>
+          KidiWebTech Projects | Web Development & SEO Case Studies in Hyderabad
+        </title>
+
         <meta
           name="description"
-          content="Explore KIDIWEBTECH projects across web development, mobile apps, SEO, and business platforms built for scale and growth."
+          content="Explore KidiWebTech projects including website development, SEO campaigns, eCommerce platforms, and digital marketing case studies delivered in Hyderabad and across India."
         />
+
+        <meta
+          name="keywords"
+          content="KidiWebTech projects, web development case studies Hyderabad, SEO portfolio, digital marketing projects India, website design portfolio"
+        />
+
         <link rel="canonical" href="https://kidiwebtech.com/projects" />
+
+        <meta
+          property="og:title"
+          content="KidiWebTech Portfolio – Projects & Case Studies"
+        />
+        <meta
+          property="og:description"
+          content="Discover high-performance websites, SEO campaigns, and digital marketing projects built for growth."
+        />
+        <meta property="og:url" content="https://kidiwebtech.com/projects" />
+        <meta property="og:type" content="website" />
       </Head>
 
-      {/* HERO */}
+      {/* STRUCTURED DATA */}
+      <Script
+        id="case-study-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(caseStudySchema),
+        }}
+      />
+
+      {/* ================= HERO ================= */}
       <section className="py-24 px-6 text-center border-b border-white/10">
         <motion.h1
           initial="hidden"
@@ -109,12 +130,12 @@ export default function Projects() {
           transition={{ delay: 0.2 }}
           className="text-gray-400 max-w-3xl mx-auto text-lg"
         >
-          We design and develop high-impact digital products that help businesses
-          grow, convert users, and scale confidently.
+          We build SEO-friendly websites, scalable web applications, and
+          performance-driven digital marketing campaigns that deliver measurable results.
         </motion.p>
       </section>
 
-      {/* PROJECT GRID */}
+      {/* ================= PROJECT GRID ================= */}
       <section className="py-16 px-6 md:px-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 max-w-7xl mx-auto">
           {projects.map((proj, index) => (
@@ -128,14 +149,9 @@ export default function Projects() {
               whileHover={{ y: -10 }}
               className="relative group"
             >
-
-              {/* GLOW BORDER */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-yellow-400 to-orange-500 opacity-30 blur-xl group-hover:opacity-70 transition" />
 
-              {/* CARD */}
               <div className="relative bg-black rounded-2xl overflow-hidden border border-white/10">
-
-                {/* IMAGE */}
                 <div className="overflow-hidden">
                   <Image
                     src={proj.image}
@@ -146,7 +162,6 @@ export default function Projects() {
                   />
                 </div>
 
-                {/* CONTENT */}
                 <div className="p-6 space-y-3">
                   <span className="inline-block text-xs px-3 py-1 rounded-full bg-white/10 text-yellow-400">
                     {proj.tag}
@@ -160,14 +175,43 @@ export default function Projects() {
                     {proj.description}
                   </p>
                 </div>
-
               </div>
             </motion.div>
           ))}
         </div>
       </section>
 
-      {/* CTA */}
+      {/* ================= SEO CONTENT SECTION ================= */}
+      <section className="py-16 px-6 md:px-20 border-t border-white/10">
+        <div className="max-w-5xl mx-auto space-y-6 text-gray-400 text-lg leading-relaxed">
+          <h2 className="text-3xl font-extrabold text-white">
+            Web Development & Digital Marketing Portfolio in Hyderabad
+          </h2>
+
+          <p>
+            At KidiWebTech, we specialize in building high-performance websites
+            and executing data-driven SEO and digital marketing campaigns.
+            Our portfolio reflects expertise in 
+            <Link href="/services/web-development" className="underline ml-1">
+              web development
+            </Link>,
+            <Link href="/services/seo" className="underline ml-1">
+              SEO services
+            </Link>, and
+            <Link href="/services/ppc" className="underline ml-1">
+              Google Ads management
+            </Link>.
+          </p>
+
+          <p>
+            Each project is designed with search engine optimization,
+            conversion strategy, mobile responsiveness, and performance
+            optimization at its core.
+          </p>
+        </div>
+      </section>
+
+      {/* ================= CTA ================= */}
       <section className="pb-24 text-center px-6">
         <motion.h3
           initial="hidden"
@@ -175,7 +219,7 @@ export default function Projects() {
           variants={fadeUp}
           className="text-3xl font-bold mb-6"
         >
-          Want a project like this?
+          Want a high-performing website or SEO campaign?
         </motion.h3>
 
         <motion.a
@@ -183,7 +227,7 @@ export default function Projects() {
           whileHover={{ scale: 1.08 }}
           className="inline-block px-8 py-4 rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-semibold shadow-lg"
         >
-          Start Your Project
+          Start Your Project →
         </motion.a>
       </section>
 

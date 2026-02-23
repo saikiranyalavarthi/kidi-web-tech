@@ -9,15 +9,15 @@ export default function SocialMediaMarketingPage() {
     <div className="bg-black text-white overflow-hidden">
 
       {/* ================= HERO ================= */}
-      <section className="py-18 px-6 text-center border-b border-white/10">
+      <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-          Social Media Marketing Services in{" "}
+          Best Social Media Marketing Services in{" "}
           <span className="gradient-text">Hyderabad</span>
         </h1>
 
         <p className="text-gray-400 max-w-3xl mx-auto text-lg">
-          Data-driven social media marketing strategies that build brand
-          authority, increase engagement, and generate high-quality leads.
+          ROI-focused Social Media Marketing (SMM) strategies that increase brand
+          awareness, engagement, and high-quality lead generation.
         </p>
 
         <nav className="mt-6 text-sm text-gray-500">
@@ -28,7 +28,7 @@ export default function SocialMediaMarketingPage() {
       </section>
 
       {/* ================= INTRO ================= */}
-      <section className="py-12 px-6 md:px-20 max-w-7xl mx-auto">
+      <section className="py-16 px-6 md:px-20 max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -42,7 +42,7 @@ export default function SocialMediaMarketingPage() {
             <div className="relative bg-black rounded-3xl m-[1.5px] overflow-hidden">
               <Image
                 src="/assets/image15.jpg"
-                alt="Social media marketing services and SMM company in Hyderabad"
+                alt="Social media marketing agency in Hyderabad providing SMM services"
                 width={600}
                 height={420}
                 className="w-full h-full object-cover"
@@ -53,27 +53,26 @@ export default function SocialMediaMarketingPage() {
           {/* CONTENT */}
           <div>
             <h2 className="text-3xl font-extrabold mb-6">
-              Best <span className="gradient-text">Social Media Marketing Company</span>
+              Leading <span className="gradient-text">SMM Agency in Hyderabad</span>
             </h2>
 
             <p className="text-gray-400 mb-5 leading-relaxed">
               <strong className="gradient-text">KIDIWEBTECH</strong> is a trusted
-              social media marketing agency in Hyderabad helping businesses grow
-              on Instagram, Facebook, LinkedIn, and YouTube through creative and
-              performance-driven strategies.
+              social media marketing company helping businesses grow on
+              Instagram, Facebook, LinkedIn, and YouTube through creative,
+              strategic, and performance-driven campaigns.
             </p>
 
             <p className="text-gray-400 leading-relaxed">
-              We focus on content creation, audience engagement, paid social
-              advertising, and analytics to convert followers into loyal
-              customers.
+              We combine organic social media growth with paid advertising to
+              convert followers into loyal customers and measurable revenue.
             </p>
           </div>
         </motion.div>
       </section>
 
-      {/* ================= SEO CONTENT ================= */}
-      <section className="px-6 md:px-20 max-w-6xl mx-auto py-20 space-y-12 text-gray-400">
+      {/* ================= MAIN CONTENT ================= */}
+      <section className="px-6 md:px-20 max-w-6xl mx-auto py-20 space-y-14 text-gray-400">
 
         {/* WHAT IS SMM */}
         <div>
@@ -81,52 +80,103 @@ export default function SocialMediaMarketingPage() {
             What Is Social Media Marketing (SMM)?
           </h2>
           <p>
-            Social Media Marketing (SMM) is the use of social media platforms to
-            promote brands, engage audiences, and drive business growth. A
-            professional SMM strategy increases brand visibility, builds trust,
-            and generates consistent leads through organic and paid campaigns.
+            Social Media Marketing (SMM) is the process of promoting your
+            business using platforms like Instagram, Facebook, LinkedIn,
+            YouTube, and Twitter. A professional SMM strategy increases brand
+            visibility, builds audience trust, and drives consistent inquiries
+            through both organic engagement and paid social advertising.
           </p>
         </div>
 
-        {/* SERVICES */}
+        {/* OUR SERVICES */}
         <div>
           <h2 className="text-2xl font-extrabold gradient-text mb-4">
             Our Social Media Marketing Services
           </h2>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Social Media Account Setup & Branding</li>
-            <li>Content Strategy & Creative Post Design</li>
-            <li>Instagram, Facebook & LinkedIn Management</li>
-            <li>Paid Social Media Advertising (Meta & LinkedIn Ads)</li>
-            <li>Community Management & Engagement</li>
-            <li>Analytics, Reporting & Strategy Optimization</li>
+            <li>Social Media Account Setup & Optimization</li>
+            <li>Content Calendar Planning & Creative Design</li>
+            <li>Instagram & Facebook Management</li>
+            <li>LinkedIn Marketing for B2B Businesses</li>
+            <li>YouTube Marketing & Video Promotion</li>
+            <li>Paid Social Media Advertising (Meta Ads, LinkedIn Ads)</li>
+            <li>Influencer Collaboration & Brand Campaigns</li>
+            <li>Analytics Tracking & Performance Reporting</li>
           </ul>
         </div>
 
-        {/* LOCAL SEO */}
+        {/* LOCAL TARGETING */}
         <div>
           <h2 className="text-2xl font-extrabold gradient-text mb-4">
-            Social Media Marketing for Local Businesses in Hyderabad
+            Social Media Marketing for Hyderabad Businesses
           </h2>
           <p>
-            Our local social media marketing services help businesses reach
-            nearby customers, improve brand recognition, and generate inquiries.
-            We create geo-targeted content and ads designed specifically for
-            Hyderabad-based audiences.
+            Our Hyderabad-focused SMM strategies help local businesses reach
+            nearby customers, increase brand recognition, and generate direct
+            inquiries. We create geo-targeted ad campaigns and localized content
+            that connects with your regional audience effectively.
           </p>
         </div>
 
-        {/* SMM VS ADS */}
+        {/* INDUSTRIES */}
         <div>
           <h2 className="text-2xl font-extrabold gradient-text mb-4">
-            Social Media Marketing vs Paid Advertising
+            SMM for Different Industries
+          </h2>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Real Estate Social Media Marketing</li>
+            <li>Healthcare & Clinic Social Media Promotion</li>
+            <li>E-commerce & Product-Based Businesses</li>
+            <li>Education & Training Institutes</li>
+            <li>Restaurants & Local Service Providers</li>
+            <li>Startups & IT Companies</li>
+          </ul>
+        </div>
+
+        {/* ORGANIC VS PAID */}
+        <div>
+          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+            Organic Social Media vs Paid Advertising
           </h2>
           <p>
-            Organic social media marketing builds long-term brand trust and
-            engagement, while paid social ads deliver faster reach and lead
-            generation. A combined strategy ensures sustainable growth and
-            better ROI.
+            Organic social media builds long-term brand credibility and audience
+            loyalty, while paid social ads provide instant reach and faster lead
+            generation. A combined strategy delivers sustainable growth and
+            improved return on investment (ROI).
           </p>
+        </div>
+
+        {/* INTERNAL LINKING */}
+        <div>
+          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+            Integrating SMM with SEO & PPC
+          </h2>
+          <p>
+            Social media marketing works best when integrated with{" "}
+            <Link href="/services/seo" className="underline">
+              SEO services
+            </Link>{" "}
+            and{" "}
+            <Link href="/services/ppc" className="underline">
+              PPC advertising
+            </Link>
+            . Together, these strategies maximize visibility, traffic,
+            engagement, and conversions.
+          </p>
+        </div>
+
+        {/* WHY CHOOSE US */}
+        <div>
+          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+            Why Choose KIDIWEBTECH for Social Media Marketing?
+          </h2>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Creative & Trend-Based Content Strategy</li>
+            <li>Data-Driven Campaign Optimization</li>
+            <li>Transparent Reporting & ROI Tracking</li>
+            <li>Industry-Specific Marketing Plans</li>
+            <li>Dedicated Social Media Experts</li>
+          </ul>
         </div>
 
         {/* FAQ */}
@@ -136,35 +186,36 @@ export default function SocialMediaMarketingPage() {
           </h2>
 
           <p>
-            <strong>Which social media platforms are best for business?</strong><br />
-            Instagram, Facebook, LinkedIn, and YouTube are the most effective
-            platforms depending on your business goals and audience.
+            <strong>Which social media platform is best for my business?</strong><br />
+            It depends on your industry and target audience. B2B companies
+            benefit from LinkedIn, while B2C brands often perform well on
+            Instagram and Facebook.
           </p>
 
           <p className="mt-4">
-            <strong>How long does social media marketing take to work?</strong><br />
-            Organic growth typically takes 2–3 months, while paid campaigns can
-            deliver faster results.
+            <strong>How long does SMM take to show results?</strong><br />
+            Organic growth typically takes 2–3 months, while paid campaigns
+            can generate results within weeks.
           </p>
 
           <p className="mt-4">
-            <strong>Is social media marketing suitable for small businesses?</strong><br />
-            Yes. Social media marketing is highly cost-effective and ideal for
-            small and local businesses.
+            <strong>Do you provide monthly performance reports?</strong><br />
+            Yes. We provide detailed analytics reports covering engagement,
+            reach, conversions, and ROI.
           </p>
         </div>
 
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="py-18 px-6 text-center border-t border-white/10">
+      <section className="py-20 px-6 text-center border-t border-white/10">
         <h2 className="text-3xl font-extrabold mb-6">
-          Ready to <span className="gradient-text">Grow on Social Media?</span>
+          Ready to <span className="gradient-text">Grow Your Brand Online?</span>
         </h2>
 
         <p className="text-gray-400 max-w-2xl mx-auto mb-10 text-lg">
-          Partner with KIDIWEBTECH and turn your social media presence into a
-          powerful revenue-generating channel.
+          Let KIDIWEBTECH turn your social media presence into a powerful
+          revenue-generating marketing channel.
         </p>
 
         <div className="flex justify-center gap-6 flex-wrap">

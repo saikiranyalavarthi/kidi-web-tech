@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Footer/Footer";
 import FloatingSocialButtons from "./Components/FloatingSocialButtons";
 import Script from "next/script";
+import type { Metadata } from "next";
 
 /* =========================
    FONTS
@@ -23,33 +24,43 @@ const geistMono = Geist_Mono({
 /* =========================
    GLOBAL SEO METADATA
 ========================= */
-export const metadata = {
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.kidiwebtech.com"),
+
   title: {
     default: "KidiWebTech – Digital Marketing & SEO Agency in Hyderabad",
     template: "%s | KidiWebTech",
   },
 
   description:
-    "KidiWebTech is a digital marketing & SEO agency in Hyderabad offering SEO services, website development, Google Ads, and social media marketing.",
+    "KidiWebTech is a leading digital marketing agency in Hyderabad offering SEO services, website development, Google Ads management, social media marketing, and web hosting solutions.",
 
-  metadataBase: new URL("https://www.kidiwebtech.com"),
+  keywords: [
+    "digital marketing agency Hyderabad",
+    "SEO company in Hyderabad",
+    "website development company Hyderabad",
+    "Google Ads agency Hyderabad",
+    "social media marketing Hyderabad",
+    "web designing company Hyderabad",
+    "web hosting services Hyderabad",
+    "best SEO services in Hyderabad",
+    "KidiWebTech",
+  ],
 
   alternates: {
     canonical: "/",
   },
-  keywords: [
-    "digital marketing agency Hyderabad",
-    "SEO company Hyderabad",
-    "website development company Hyderabad",
-    "Google Ads agency Hyderabad",
-    "social media marketing Hyderabad",
-    "best SEO services in Hyderabad",
-    "KidiWebTech"
-  ],
 
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 
   verification: {
@@ -57,20 +68,48 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "KidiWebTech – Digital Growth Partner",
+    title: "KidiWebTech – Digital Growth Partner in Hyderabad",
     description:
-      "SEO, web development, Google Ads & digital marketing services in India.",
+      "SEO, web development, Google Ads, social media marketing & hosting services in Hyderabad.",
     url: "https://www.kidiwebtech.com",
     siteName: "KidiWebTech",
     locale: "en_IN",
     type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "KidiWebTech – Digital Marketing Agency",
+    description:
+      "Grow your business with SEO, web development & performance marketing services.",
   },
 };
 
 /* =========================
    ROOT LAYOUT
 ========================= */
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  /* =========================
+     STRUCTURED DATA
+  ========================= */
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.kidiwebtech.com/#organization",
+    name: "KidiWebTech",
+    url: "https://www.kidiwebtech.com",
+    logo: "https://www.kidiwebtech.com/logo.png",
+    sameAs: [
+      "https://www.instagram.com/kidi.webtech/",
+      "https://www.linkedin.com/in/kidi-webtech-a86b8b3a2/",
+      "https://www.facebook.com/profile.php?id=61585391203839",
+    ],
+  };
 
   const localBusinessSchema = {
     "@context": "https://schema.org",
@@ -85,66 +124,43 @@ export default function RootLayout({ children }) {
       "@type": "PostalAddress",
       addressLocality: "Hyderabad",
       addressRegion: "Telangana",
-      addressCountry: "IN"
+      addressCountry: "IN",
     },
     areaServed: {
       "@type": "City",
-      name: "Hyderabad"
+      name: "Hyderabad",
     },
-    sameAs: [
-      "https://www.instagram.com/kidi.webtech/",
-      "https://www.linkedin.com/in/kidi-webtech-a86b8b3a2/",
-      "https://www.facebook.com/profile.php?id=61585391203839"
-    ]
   };
 
-  const serviceSchema = {
+  const websiteSchema = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    serviceType: "Digital Marketing Services",
-    provider: {
-      "@type": "Organization",
-      name: "KidiWebTech",
-      url: "https://www.kidiwebtech.com"
+    "@type": "WebSite",
+    "@id": "https://www.kidiwebtech.com/#website",
+    url: "https://www.kidiwebtech.com",
+    name: "KidiWebTech",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://www.kidiwebtech.com/?s={search_term_string}",
+      "query-input": "required name=search_term_string",
     },
-    areaServed: {
-      "@type": "Country",
-      name: "India"
-    },
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: "Digital Services",
-      itemListElement: [
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "SEO Services"
-          }
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Website Development"
-          }
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Google Ads Management"
-          }
-        }
-      ]
-    }
   };
 
   return (
     <html lang="en-IN">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
+      >
+        {/* ORGANIZATION SCHEMA */}
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
 
-        {/* STRUCTURED DATA - LOCAL BUSINESS */}
+        {/* LOCAL BUSINESS SCHEMA */}
         <Script
           id="local-business-schema"
           type="application/ld+json"
@@ -154,25 +170,17 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        {/* STRUCTURED DATA - SERVICES */}
+        {/* WEBSITE SCHEMA */}
         <Script
-          id="service-schema"
+          id="website-schema"
           type="application/ld+json"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(serviceSchema),
+            __html: JSON.stringify(websiteSchema),
           }}
         />
 
-        {/* GOOGLE ADSENSE */}
-        <Script
-          async
-          strategy="afterInteractive"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1031612318519089"
-          crossOrigin="anonymous"
-        />
-
-        {/* GOOGLE ANALYTICS */}
+        {/* GOOGLE ANALYTICS 4 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-BG2NCCWS17"
           strategy="afterInteractive"
@@ -186,12 +194,19 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
+        {/* GOOGLE ADSENSE */}
+        <Script
+          async
+          strategy="afterInteractive"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1031612318519089"
+          crossOrigin="anonymous"
+        />
+
         {/* SITE LAYOUT */}
         <Navbar />
         <main>{children}</main>
         <FloatingSocialButtons />
         <Footer />
-
       </body>
     </html>
   );

@@ -11,13 +11,13 @@ export default function WebDevelopmentClient() {
       {/* ================= HERO ================= */}
       <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-          Web Development Company in{" "}
+          Best Web Development Company in{" "}
           <span className="gradient-text">Hyderabad</span>
         </h1>
 
         <p className="text-gray-400 max-w-3xl mx-auto text-lg">
-          We build fast, secure, and scalable websites and web applications
-          designed to grow your business online.
+          Custom, scalable, and high-performance web development solutions
+          designed to accelerate your digital growth.
         </p>
       </section>
 
@@ -33,7 +33,7 @@ export default function WebDevelopmentClient() {
           <div className="relative">
             <Image
               src="/assets/image18.jpg"
-              alt="Web development company and website developers in Hyderabad"
+              alt="Professional web development company in Hyderabad"
               width={600}
               height={420}
               className="rounded-3xl object-cover"
@@ -43,41 +43,40 @@ export default function WebDevelopmentClient() {
 
           <div>
             <h2 className="text-3xl font-extrabold mb-6">
-              Professional <span className="gradient-text">Web Development Services</span>
+              Leading <span className="gradient-text">Website Development Experts</span>
             </h2>
 
             <p className="text-gray-400 mb-5 leading-relaxed">
-              <strong className="gradient-text">KIDIWEBTECH</strong> is a leading
-              website development company in Hyderabad delivering custom web
-              solutions for startups, small businesses, and enterprises.
+              <strong className="gradient-text">KIDIWEBTECH</strong> is a trusted
+              web development company in Hyderabad delivering custom websites
+              and web applications tailored to your business goals.
             </p>
 
             <p className="text-gray-400 leading-relaxed">
-              From business websites to advanced web applications, our web
-              development services focus on performance, security, SEO readiness,
-              and long-term scalability.
+              Our development approach focuses on speed, security, scalability,
+              and SEO-friendly architecture to ensure long-term digital success.
             </p>
           </div>
         </motion.div>
       </section>
 
-      {/* ================= SEO CONTENT ================= */}
-      <section className="px-6 md:px-20 max-w-6xl mx-auto py-20 space-y-12 text-gray-400">
+      {/* ================= MAIN CONTENT ================= */}
+      <section className="px-6 md:px-20 max-w-6xl mx-auto py-20 space-y-14 text-gray-400">
 
         {/* WHAT IS WEB DEVELOPMENT */}
         <div>
           <h2 className="text-2xl font-extrabold gradient-text mb-4">
-            What Is Web Development?
+            What Is Web Development and Why It Matters?
           </h2>
           <p>
-            Web development is the process of building and maintaining websites
-            and web applications that function smoothly across all devices.
-            Professional web development ensures your website loads fast, ranks
-            well on search engines, and converts visitors into customers.
+            Web development is the process of building dynamic, interactive,
+            and functional websites or web applications. A professionally
+            developed website ensures fast performance, secure data handling,
+            mobile responsiveness, and higher search engine rankings.
           </p>
         </div>
 
-        {/* SERVICES */}
+        {/* OUR SERVICES */}
         <div>
           <h2 className="text-2xl font-extrabold gradient-text mb-4">
             Our Web Development Services
@@ -85,35 +84,74 @@ export default function WebDevelopmentClient() {
           <ul className="list-disc pl-6 space-y-2">
             <li>Custom Website Development</li>
             <li>Business & Corporate Website Development</li>
+            <li>E-commerce Website Development</li>
             <li>Web Application Development</li>
             <li>Frontend & Backend Development</li>
-            <li>API Integration & Database Management</li>
-            <li>Website Maintenance & Performance Optimization</li>
+            <li>API Integration & Database Solutions</li>
+            <li>CMS Development (WordPress & Custom CMS)</li>
+            <li>Website Maintenance & Technical Support</li>
           </ul>
         </div>
 
-        {/* LOCAL SEO */}
+        {/* INDUSTRIES */}
         <div>
           <h2 className="text-2xl font-extrabold gradient-text mb-4">
-            Web Development Services in Hyderabad
+            Web Development for Different Industries
+          </h2>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Real Estate & Property Websites</li>
+            <li>Healthcare & Clinic Web Applications</li>
+            <li>E-commerce & Online Stores</li>
+            <li>Education & Training Platforms</li>
+            <li>IT & SaaS Company Websites</li>
+            <li>Startup & Enterprise Solutions</li>
+          </ul>
+        </div>
+
+        {/* LOCAL SEO TARGETING */}
+        <div>
+          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+            Website Developers in Hyderabad
           </h2>
           <p>
             As a Hyderabad-based web development company, we understand local
-            business needs and search intent. Our websites are optimized to rank
-            for keywords like <strong>“web development company near me”</strong>{" "}
-            and <strong>“website developers in Hyderabad”</strong>.
+            business requirements and search trends. Our websites are optimized
+            to rank for keywords like <strong>"web development company in Hyderabad"</strong>,
+            <strong> "website developers near me"</strong>, and 
+            <strong> "custom web development services"</strong>.
           </p>
         </div>
 
-        {/* PROCESS */}
+        {/* DEVELOPMENT PROCESS */}
         <div>
           <h2 className="text-2xl font-extrabold gradient-text mb-4">
             Our Web Development Process
           </h2>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Requirement Analysis & Planning</li>
+            <li>UI/UX Design & Wireframing</li>
+            <li>Frontend & Backend Development</li>
+            <li>Testing & Quality Assurance</li>
+            <li>Deployment & Optimization</li>
+            <li>Ongoing Support & Maintenance</li>
+          </ul>
+        </div>
+
+        {/* INTERNAL LINKING */}
+        <div>
+          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+            Integrated with SEO & Web Designing
+          </h2>
           <p>
-            We follow a structured development process including planning,
-            UI/UX design, development, testing, deployment, and ongoing support.
-            This ensures high-quality, scalable, and secure web solutions.
+            Our web development services are aligned with{" "}
+            <Link href="/services/seo" className="underline">
+              SEO strategies
+            </Link>{" "}
+            and{" "}
+            <Link href="/services/web-design" className="underline">
+              professional web designing
+            </Link>{" "}
+            to ensure your website ranks higher and converts better.
           </p>
         </div>
 
@@ -124,20 +162,21 @@ export default function WebDevelopmentClient() {
           </h2>
 
           <p>
-            <strong>How much does web development cost?</strong><br />
-            Website development cost depends on features, design complexity, and
-            functionality. We offer flexible pricing for startups and businesses.
+            <strong>How much does web development cost in Hyderabad?</strong><br />
+            The cost depends on features, integrations, and complexity. We offer
+            affordable solutions for startups, SMEs, and enterprises.
           </p>
 
           <p className="mt-4">
-            <strong>How long does it take to build a website?</strong><br />
-            A standard business website usually takes 3–6 weeks.
+            <strong>How long does it take to develop a website?</strong><br />
+            A standard business website takes 3–6 weeks, while complex web
+            applications may take longer.
           </p>
 
           <p className="mt-4">
-            <strong>Will my website be SEO-friendly?</strong><br />
-            Yes. All our websites are built with SEO-friendly structure, fast
-            loading speed, and clean code.
+            <strong>Will my website be SEO-friendly and mobile responsive?</strong><br />
+            Yes. All our websites are built with clean code, fast loading speed,
+            and fully responsive layouts.
           </p>
         </div>
 
@@ -146,11 +185,11 @@ export default function WebDevelopmentClient() {
       {/* ================= CTA ================= */}
       <section className="py-20 px-6 text-center border-t border-white/10">
         <h2 className="text-3xl font-extrabold mb-6">
-          Need a <span className="gradient-text">Web Development Partner?</span>
+          Need a <span className="gradient-text">Reliable Web Development Partner?</span>
         </h2>
 
         <p className="text-gray-400 max-w-2xl mx-auto mb-10 text-lg">
-          Let’s build a powerful, secure, and scalable website for your business.
+          Let’s build a powerful, scalable, and future-ready website for your business.
         </p>
 
         <div className="flex justify-center gap-6 flex-wrap">
@@ -158,7 +197,7 @@ export default function WebDevelopmentClient() {
             href="/contact"
             className="inline-block px-10 py-4 rounded-full
               bg-gradient-to-r from-indigo-500 to-purple-500
-              text-white font-semibold text-lg"
+              text-white font-semibold text-lg hover:opacity-90 transition"
           >
             Get Free Consultation →
           </Link>
@@ -166,7 +205,8 @@ export default function WebDevelopmentClient() {
           <Link
             href="https://wa.me/919390627367"
             className="inline-block px-10 py-4 rounded-full
-              border border-indigo-400 text-indigo-400"
+              border border-indigo-400 text-indigo-400
+              hover:bg-indigo-400 hover:text-black transition"
           >
             WhatsApp Us
           </Link>
