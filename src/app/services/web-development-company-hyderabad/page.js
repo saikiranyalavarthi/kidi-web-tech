@@ -7,7 +7,6 @@ import Link from "next/link";
 export default function WebDevelopmentClient() {
   return (
     <div className="bg-black text-white overflow-hidden">
-
       {/* ================= HERO ================= */}
       <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
@@ -43,13 +42,14 @@ export default function WebDevelopmentClient() {
 
           <div>
             <h2 className="text-3xl font-extrabold mb-6">
-              Leading <span className="gradient-text">Website Development Experts</span>
+              Leading{" "}
+              <span className="gradient-text">Website Development Experts</span>
             </h2>
 
             <p className="text-gray-400 mb-5 leading-relaxed">
-              <strong className="gradient-text">KIDIWEBTECH</strong> is a trusted
-              web development company in Hyderabad delivering custom websites
-              and web applications tailored to your business goals.
+              <strong className="gradient-text">KIDIWEBTECH</strong> is a
+              trusted web development company in Hyderabad delivering custom
+              websites and web applications tailored to your business goals.
             </p>
 
             <p className="text-gray-400 leading-relaxed">
@@ -62,17 +62,16 @@ export default function WebDevelopmentClient() {
 
       {/* ================= MAIN CONTENT ================= */}
       <section className="px-6 md:px-20 max-w-6xl mx-auto py-20 space-y-14 text-gray-400">
-
         {/* WHAT IS WEB DEVELOPMENT */}
         <div>
           <h2 className="text-2xl font-extrabold gradient-text mb-4">
             What Is Web Development and Why It Matters?
           </h2>
           <p>
-            Web development is the process of building dynamic, interactive,
-            and functional websites or web applications. A professionally
-            developed website ensures fast performance, secure data handling,
-            mobile responsiveness, and higher search engine rankings.
+            Web development is the process of building dynamic, interactive, and
+            functional websites or web applications. A professionally developed
+            website ensures fast performance, secure data handling, mobile
+            responsiveness, and higher search engine rankings.
           </p>
         </div>
 
@@ -116,8 +115,9 @@ export default function WebDevelopmentClient() {
           <p>
             As a Hyderabad-based web development company, we understand local
             business requirements and search trends. Our websites are optimized
-            to rank for keywords like <strong>"web development company in Hyderabad"</strong>,
-            <strong> "website developers near me"</strong>, and 
+            to rank for keywords like{" "}
+            <strong>"web development company in Hyderabad"</strong>,
+            <strong> "website developers near me"</strong>, and
             <strong> "custom web development services"</strong>.
           </p>
         </div>
@@ -162,34 +162,41 @@ export default function WebDevelopmentClient() {
           </h2>
 
           <p>
-            <strong>How much does web development cost in Hyderabad?</strong><br />
+            <strong>How much does web development cost in Hyderabad?</strong>
+            <br />
             The cost depends on features, integrations, and complexity. We offer
             affordable solutions for startups, SMEs, and enterprises.
           </p>
 
           <p className="mt-4">
-            <strong>How long does it take to develop a website?</strong><br />
-            A standard business website takes 3–6 weeks, while complex web
+            <strong>How long does it take to develop a website?</strong>
+            <br />A standard business website takes 3–6 weeks, while complex web
             applications may take longer.
           </p>
 
           <p className="mt-4">
-            <strong>Will my website be SEO-friendly and mobile responsive?</strong><br />
+            <strong>
+              Will my website be SEO-friendly and mobile responsive?
+            </strong>
+            <br />
             Yes. All our websites are built with clean code, fast loading speed,
             and fully responsive layouts.
           </p>
         </div>
-
       </section>
 
       {/* ================= CTA ================= */}
       <section className="py-20 px-6 text-center border-t border-white/10">
         <h2 className="text-3xl font-extrabold mb-6">
-          Need a <span className="gradient-text">Reliable Web Development Partner?</span>
+          Need a{" "}
+          <span className="gradient-text">
+            Reliable Web Development Partner?
+          </span>
         </h2>
 
         <p className="text-gray-400 max-w-2xl mx-auto mb-10 text-lg">
-          Let’s build a powerful, scalable, and future-ready website for your business.
+          Let’s build a powerful, scalable, and future-ready website for your
+          business.
         </p>
 
         <div className="flex justify-center gap-6 flex-wrap">
@@ -212,7 +219,6 @@ export default function WebDevelopmentClient() {
           </Link>
         </div>
       </section>
-
     </div>
   );
 }
