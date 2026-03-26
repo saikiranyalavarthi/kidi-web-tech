@@ -256,15 +256,19 @@ import Link from "next/link";
 /* ================= SEO METADATA ================= */
 
 export const metadata = {
-  title: "PPC Advertising Services in Hyderabad | Google Ads Agency for Leads",
+  title:
+    "Best PPC Services in Hyderabad | Google Ads Agency for High Quality Leads",
   description:
-    "Best PPC advertising company in Hyderabad offering Google Ads management, paid campaigns, and performance marketing to generate high-quality leads and ROI.",
+    "Looking for the best PPC services in Hyderabad? KidiWebTech offers expert Google Ads management, lead generation campaigns, and ROI-driven paid marketing solutions.",
   keywords: [
-    "PPC services Hyderabad",
-    "Google Ads agency Hyderabad",
-    "Pay Per Click marketing India",
-    "lead generation PPC",
-    "performance marketing company",
+    "PPC services in Hyderabad",
+    "Google Ads agency in Hyderabad",
+    "best PPC company in Hyderabad",
+    "Google Ads expert Hyderabad",
+    "lead generation services Hyderabad",
+    "performance marketing agency Hyderabad",
+    "paid ads agency India",
+    "digital marketing agency Hyderabad PPC",
   ],
   alternates: {
     canonical: "https://kidiwebtech.com/services/ppc",
@@ -312,7 +316,7 @@ export default function PPCPage() {
                   name: "How much does PPC cost in Hyderabad?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "PPC costs depend on your industry and competition.",
+                    text: "PPC advertising cost in Hyderabad depends on competition, keywords, and campaign goals.",
                   },
                 },
                 {
@@ -320,10 +324,37 @@ export default function PPCPage() {
                   name: "How fast can PPC generate leads?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "PPC campaigns can generate leads within hours.",
+                    text: "PPC campaigns can generate leads within hours, making Google Ads a fast marketing strategy.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Is PPC better than SEO?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "PPC provides instant results, while SEO offers long-term growth. Combining both gives the best results.",
                   },
                 },
               ],
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "KIDIWEBTECH",
+              url: "https://kidiwebtech.com",
+              logo: "https://kidiwebtech.com/logo.png",
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "KIDIWEBTECH",
+              image: "https://kidiwebtech.com/logo.png",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Hyderabad",
+                addressCountry: "India",
+              },
+              areaServed: "Hyderabad",
             },
           ]),
         }}
@@ -340,43 +371,39 @@ export default function PPCPage() {
           Get instant traffic and high-quality leads with our Google Ads
           campaigns.
         </p>
-
-        <div className="mt-6 text-sm text-gray-500">
-          <Link href="/services/seo" className="underline mr-4">
-            SEO Services
-          </Link>
-          <Link href="/services/social-media-marketing" className="underline">
-            Social Media Marketing
-          </Link>
-        </div>
       </section>
 
       {/* ================= INTRO ================= */}
       <section className="py-20 px-6 md:px-20 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div className="relative">
-            <Image
-              src="/assets/image13.jpg"
-              alt="Google Ads services in Hyderabad"
-              width={600}
-              height={400}
-              priority
-              className="rounded-3xl"
-            />
-          </div>
+          <Image
+            src="/assets/image13.jpg"
+            alt="Best PPC services in Hyderabad Google Ads agency for lead generation"
+            width={600}
+            height={400}
+            className="rounded-3xl"
+            priority
+          />
 
           <div>
             <h2 className="text-3xl font-extrabold mb-6">
-              Best PPC & Google Ads Agency in Hyderabad
+              Best PPC Services in Hyderabad – Google Ads Experts
             </h2>
 
             <p className="text-gray-400 mb-5">
-              We help businesses generate leads using high-performance PPC
-              campaigns.
+              KidiWebTech is a leading PPC agency in Hyderabad offering
+              result-driven Google Ads campaigns that generate leads and
+              maximize ROI.
+            </p>
+
+            <p className="text-gray-400 mb-5">
+              We specialize in search ads, display ads, YouTube advertising, and
+              remarketing campaigns targeting the right audience.
             </p>
 
             <p className="text-gray-400">
-              Our strategies focus on ROI, conversions, and growth.
+              Our PPC services help businesses achieve fast visibility, increase
+              conversions, and grow revenue.
             </p>
           </div>
         </div>
@@ -384,16 +411,43 @@ export default function PPCPage() {
 
       {/* ================= SERVICES ================= */}
       <section className="px-6 md:px-20 max-w-6xl mx-auto pb-24 space-y-10">
-        <h2 className="text-2xl font-extrabold gradient-text">
-          Our PPC Services
+        <h2 className="text-2xl font-extrabold">
+          PPC Services in Hyderabad – Google Ads Solutions
         </h2>
 
         <ul className="list-disc pl-6 text-gray-400 space-y-2">
-          <li>Google Search Ads</li>
-          <li>Display Ads</li>
-          <li>YouTube Ads</li>
-          <li>Remarketing Campaigns</li>
+          <li>Google Search Ads for lead generation in Hyderabad</li>
+          <li>Display advertising campaigns for brand awareness</li>
+          <li>YouTube ads for video marketing</li>
+          <li>Remarketing campaigns to boost conversions</li>
         </ul>
+      </section>
+
+      {/* ================= FAQ ================= */}
+      <section className="px-6 md:px-20 max-w-5xl mx-auto pb-20">
+        <h2 className="text-2xl font-bold mb-6">
+          Frequently Asked Questions About PPC Services in Hyderabad
+        </h2>
+
+        <div className="space-y-4 text-gray-400">
+          <p>
+            <strong>How much does PPC cost in Hyderabad?</strong>
+            <br />
+            PPC advertising cost depends on industry competition and keywords.
+          </p>
+
+          <p>
+            <strong>How fast can PPC generate leads?</strong>
+            <br />
+            PPC campaigns can start generating leads within hours.
+          </p>
+
+          <p>
+            <strong>Is PPC better than SEO?</strong>
+            <br />
+            PPC gives instant results, while SEO provides long-term growth.
+          </p>
+        </div>
       </section>
 
       {/* ================= CTA ================= */}
@@ -412,4 +466,3 @@ export default function PPCPage() {
     </div>
   );
 }
- 
