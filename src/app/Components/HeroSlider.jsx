@@ -167,27 +167,35 @@ export default function HeroSlider() {
         </div>
 
         {/* INTERNAL SEO LINKS */}
-        <div className="mt-10 text-sm text-gray-300">
+       <div className="mt-10 flex flex-col sm:flex-row flex-wrap justify-center gap-3 text-sm">
+  
   <a
     href="/services/seo-services-hyderabad"
-    className="text-yellow-400 hover:text-yellow-300 underline font-medium mr-4"
+    className="inline-flex items-center justify-center px-5 py-3 min-h-[48px]
+    text-yellow-400 hover:text-yellow-300 border border-white/10 rounded-lg
+    hover:border-yellow-400 transition font-medium"
   >
     SEO Services in Hyderabad
   </a>
 
   <a
     href="/services/digital-marketing-company-hyderabad"
-    className="text-yellow-400 hover:text-yellow-300 underline font-medium mr-4"
+    className="inline-flex items-center justify-center px-5 py-3 min-h-[48px]
+    text-yellow-400 hover:text-yellow-300 border border-white/10 rounded-lg
+    hover:border-yellow-400 transition font-medium"
   >
     Google Ads Management
   </a>
 
   <a
     href="/services/social-media-company-hyderabad"
-    className="text-yellow-400 hover:text-yellow-300 underline font-medium"
+    className="inline-flex items-center justify-center px-5 py-3 min-h-[48px]
+    text-yellow-400 hover:text-yellow-300 border border-white/10 rounded-lg
+    hover:border-yellow-400 transition font-medium"
   >
     Social Media Marketing Services
   </a>
+
 </div>
       </div>
     </section>
