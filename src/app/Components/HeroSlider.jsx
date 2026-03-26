@@ -169,21 +169,21 @@ export default function HeroSlider() {
         {/* INTERNAL SEO LINKS */}
         <div className="mt-10 text-sm text-gray-300">
   <a
-    href="/services/seo"
+    href="/services/seo-services-hyderabad"
     className="text-yellow-400 hover:text-yellow-300 underline font-medium mr-4"
   >
     SEO Services in Hyderabad
   </a>
 
   <a
-    href="/services/google-ads"
+    href="/services/digital-marketing-company-hyderabad"
     className="text-yellow-400 hover:text-yellow-300 underline font-medium mr-4"
   >
     Google Ads Management
   </a>
 
   <a
-    href="/services/social-media-marketing"
+    href="/services/social-media-company-hyderabad"
     className="text-yellow-400 hover:text-yellow-300 underline font-medium"
   >
     Social Media Marketing Services
