@@ -159,29 +159,29 @@ export default function Footer() {
           </ul>
 
           {/* SEO INTERNAL LINKS */}
-         <div className="mt-6 text-sm text-gray-300">
-  <Link
-    href="/services/seo-services-hyderabad"
-    className="text-yellow-400 hover:text-yellow-300 underline font-medium mr-3"
-  >
-    SEO Services in Hyderabad
-  </Link>
+          <div className="mt-6 text-sm text-gray-300">
+            <Link
+              href="/services/seo-services-hyderabad"
+              className="text-yellow-400 hover:text-yellow-300 underline font-medium mr-3 inline-block py-2 px-2"
+            >
+              SEO Services in Hyderabad
+            </Link>
 
-  <Link
-    href="/services/google-ads"
-    className="text-yellow-400 hover:text-yellow-300 underline font-medium mr-3"
-  >
-    Google Ads Management
-  </Link>
+            <Link
+              href="/services/google-ads"
+              className="text-yellow-400 hover:text-yellow-300 underline font-medium mr-3 inline-block py-2 px-2"
+            >
+              Google Ads Management
+            </Link>
 
-  <Link
-    href="/services/social-media-company-hyderabad"
-    className="text-yellow-400 hover:text-yellow-300 underline font-medium"
-  >
-    Social Media Marketing
-  </Link>
-</div>
-</div>
+            <Link
+              href="/services/social-media-company-hyderabad"
+              className="text-yellow-400 hover:text-yellow-300 underline font-medium inline-block py-2 px-2"
+            >
+              Social Media Marketing
+            </Link>
+          </div>
+        </div>
         {/* CONTACT */}
         <div>
           <h3 className="text-lg font-semibold mb-4 gradient-text">
@@ -233,7 +233,7 @@ export default function Footer() {
 
       {/* BOTTOM BAR */}
       <div className="mt-16 pt-6 border-t border-white/20">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-300">
           <p>
             © {year}{" "}
             <span className="gradient-text font-semibold">KIDIWEBTECH</span>.
