@@ -61,7 +61,7 @@ export default function Footer() {
             businesses grow online and generate high-quality leads.
           </p>
 
-          <div className="flex gap-5 text-lg text-gray-400">
+          <div className="flex gap-5 text-lg text-gray-300">
             <a
               href="https://www.facebook.com/profile.php?id=61585391203839"
               target="_blank"

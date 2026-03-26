@@ -5,11 +5,23 @@ import Link from "next/link";
 import { Menu, X, ChevronDown, MessageCircle } from "lucide-react";
 
 const serviceLinks = [
-  { name: "Pay Per Click Advertising", href: "/services/digital-marketing-company-hyderabad" },
-  { name: "Search Engine Optimization", href: "/services/seo-services-hyderabad" },
-  { name: "Social Media Marketing", href: "/services/social-media-company-hyderabad" },
+  {
+    name: "Pay Per Click Advertising",
+    href: "/services/digital-marketing-company-hyderabad",
+  },
+  {
+    name: "Search Engine Optimization",
+    href: "/services/seo-services-hyderabad",
+  },
+  {
+    name: "Social Media Marketing",
+    href: "/services/social-media-company-hyderabad",
+  },
   { name: "Web Designing", href: "/services/web-design-company-hyderabad" },
-  { name: "Web Development", href: "/services/web-development-company-hyderabad" },
+  {
+    name: "Web Development",
+    href: "/services/web-development-company-hyderabad",
+  },
   { name: "Web Hosting", href: "/services/web-hosting-company-hyderabad" },
 ];
 
@@ -19,23 +31,28 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black border-b border-white/10">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-
         {/* LOGO */}
-        <Link href="/" className="text-2xl md:text-3xl font-extrabold gradient-text">
+        <Link
+          href="/"
+          className="text-2xl md:text-3xl font-extrabold gradient-text"
+        >
           KIDIWEBTECH
         </Link>
 
         {/* MOBILE BUTTON */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-white"
+          className="md:hidden text-white p-3 min-h-[48px]"
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
+          aria-controls="mobile-menu"
         >
+          <span className="sr-only">{isOpen ? "Close menu" : "Open menu"}</span>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
         {/* DESKTOP MENU */}
         <ul className="hidden md:flex items-center gap-8 text-sm font-medium">
-
           {["Home", "About", "Projects", "Blogs"].map((item) => (
             <li key={item}>
               <Link
@@ -53,14 +70,16 @@ export default function Navbar() {
               Services <ChevronDown size={16} />
             </button>
 
-            <div className="
+            <div
+              className="
               absolute left-0 top-full mt-3 w-64
               bg-black border border-white/10
               shadow-xl
               opacity-0 invisible
               group-hover:opacity-100 group-hover:visible
               transition
-            ">
+            "
+            >
               {serviceLinks.map((item) => (
                 <Link
                   key={item.href}
