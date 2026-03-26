@@ -4,7 +4,7 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Footer/Footer";
 import FloatingSocialButtons from "./Components/FloatingSocialButtons";
 import Script from "next/script";
-
+import type { Metadata } from "next";
 
 /* =========================
    FONTS
@@ -36,16 +36,16 @@ export const metadata: Metadata = {
     "KidiWebTech is a leading digital marketing agency in Hyderabad offering SEO services, website development, Google Ads management, social media marketing, and web hosting solutions.",
 
   keywords: [
-    "digital marketing agency Hyderabad",
-    "SEO company in Hyderabad",
-    "website development company Hyderabad",
-    "Google Ads agency Hyderabad",
-    "social media marketing Hyderabad",
-    "web designing company Hyderabad",
-    "web hosting services Hyderabad",
-    "best SEO services in Hyderabad",
-    "KidiWebTech",
-  ],
+  "digital marketing agency Hyderabad",
+  "SEO services Hyderabad",
+  "website development Hyderabad",
+  "Google Ads expert Hyderabad",
+  "social media marketing agency Hyderabad",
+  "best SEO company in Hyderabad",
+  "web design company Hyderabad",
+  "online marketing services India",
+  "KidiWebTech digital agency",
+],
 
   alternates: {
     canonical: "/",
@@ -68,23 +68,31 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "KidiWebTech – Digital Growth Partner in Hyderabad",
-    description:
-      "SEO, web development, Google Ads, social media marketing & hosting services in Hyderabad.",
-    url: "https://www.kidiwebtech.com",
-    siteName: "KidiWebTech",
-    locale: "en_IN",
-    type: "website",
-  },
+  title: "KidiWebTech – Digital Growth Partner in Hyderabad",
+  description:
+    "SEO, web development, Google Ads, social media marketing & hosting services in Hyderabad.",
+  url: "https://www.kidiwebtech.com",
+  siteName: "KidiWebTech",
+  locale: "en_IN",
+  type: "website",
+  images: [
+    {
+      url: "https://www.kidiwebtech.com/og-image.jpg",
+      width: 1200,
+      height: 630,
+      alt: "KidiWebTech Digital Marketing Agency",
+    },
+  ],
+},
 
   twitter: {
-    card: "summary_large_image",
-    title: "KidiWebTech – Digital Marketing Agency",
-    description:
-      "Grow your business with SEO, web development & performance marketing services.",
-  },
+  card: "summary_large_image",
+  title: "KidiWebTech – Digital Marketing Agency",
+  description:
+    "Grow your business with SEO, web development & performance marketing services.",
+  images: ["https://www.kidiwebtech.com/og-image.jpg"],
+},
 };
-
 /* =========================
    ROOT LAYOUT
 ========================= */
