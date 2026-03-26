@@ -4,7 +4,7 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Footer/Footer";
 import FloatingSocialButtons from "./Components/FloatingSocialButtons";
 import Script from "next/script";
-import type { Metadata } from "next";
+
 
 /* =========================
    FONTS

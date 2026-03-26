@@ -205,7 +205,6 @@
 //   );
 // }
 
-
 "use client";
 
 import { useState } from "react";
@@ -248,7 +247,7 @@ Message: ${message}
     `;
 
     const whatsappLink = `https://wa.me/919390627367?text=${encodeURIComponent(
-      whatsappMessage
+      whatsappMessage,
     )}`;
 
     window.open(whatsappLink, "_blank");
@@ -262,10 +261,10 @@ Message: ${message}
 
     emailjs
       .send(
-        "service_34id8vu",     // EmailJS Service ID
-        "template_kxkmb1l",    // EmailJS Template ID
+        "service_34id8vu", // EmailJS Service ID
+        "template_kxkmb1l", // EmailJS Template ID
         formData,
-        "O2InmkBfQvNlqeo2j"    // EmailJS Public Key
+        "O2InmkBfQvNlqeo2j", // EmailJS Public Key
       )
       .then(() => {
         // GA4 Event AFTER success
@@ -294,7 +293,6 @@ Message: ${message}
 
   return (
     <div className="bg-black text-white min-h-screen">
-
       {/* HERO */}
       <section className="py-24 px-6 text-center border-b border-white/10">
         <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
@@ -308,52 +306,66 @@ Message: ${message}
       {/* FORM */}
       <section className="py-10 px-6 md:px-20">
         <div className="max-w-2xl mx-auto bg-[#0b0b0b] p-8 rounded-2xl border border-white/10 shadow-xl">
-
           <form onSubmit={handleEmailSubmit} className="grid gap-6">
-
             {/* Name */}
             <div>
-              <label className="text-gray-400 text-sm">Your Name</label>
+              <label htmlFor="name" className="text-gray-400 text-sm">
+                Your Name
+              </label>
               <input
+                id="name"
                 type="text"
                 name="name"
                 required
                 value={formData.name}
                 onChange={handleChange}
+                placeholder="Enter your name"
                 className="w-full px-4 py-2 bg-black border border-white/10 rounded"
               />
             </div>
 
             {/* Email */}
+            {/* Email */}
             <div>
-              <label className="text-gray-400 text-sm">Email</label>
+              <label htmlFor="email" className="text-gray-400 text-sm">
+                Email
+              </label>
               <input
+                id="email"
                 type="email"
                 name="email"
                 required
                 value={formData.email}
                 onChange={handleChange}
+                placeholder="Enter your email"
                 className="w-full px-4 py-2 bg-black border border-white/10 rounded"
               />
             </div>
 
             {/* Mobile */}
             <div>
-              <label className="text-gray-400 text-sm">Mobile</label>
+              <label htmlFor="mobile" className="text-gray-400 text-sm">
+                Mobile
+              </label>
               <input
+                id="mobile"
                 type="tel"
                 name="mobile"
                 required
                 value={formData.mobile}
                 onChange={handleChange}
+                placeholder="Enter your mobile number"
                 className="w-full px-4 py-2 bg-black border border-white/10 rounded"
               />
             </div>
 
             {/* Service */}
             <div>
-              <label className="text-gray-400 text-sm">Service</label>
+              <label htmlFor="service" className="text-gray-400 text-sm">
+                Service
+              </label>
               <select
+                id="service"
                 name="service"
                 value={formData.service}
                 onChange={handleChange}
@@ -369,13 +381,17 @@ Message: ${message}
 
             {/* Message */}
             <div>
-              <label className="text-gray-400 text-sm">Message</label>
+              <label htmlFor="message" className="text-gray-400 text-sm">
+                Message
+              </label>
               <textarea
+                id="message"
                 name="message"
                 rows="4"
                 required
                 value={formData.message}
                 onChange={handleChange}
+                placeholder="Enter your message"
                 className="w-full px-4 py-2 bg-black border border-white/10 rounded"
               />
             </div>
@@ -396,7 +412,6 @@ Message: ${message}
             >
               Submit via Email →
             </button>
-
           </form>
         </div>
       </section>
@@ -404,7 +419,6 @@ Message: ${message}
       <footer className="py-6 text-center text-gray-500 text-sm">
         © KIDIWEBTECH – Digital Solutions Company
       </footer>
-
     </div>
   );
 }
