@@ -123,7 +123,7 @@ export default function HeroSlider() {
         </h2>
 
         {/* DESCRIPTION */}
-        <p className="text-lg md:text-xl text-gray-400 mb-6 max-w-3xl mx-auto">
+        <p className="text-lg md:text-xl text-gray-300 mb-6 max-w-3xl mx-auto">
           We help startups and businesses in Hyderabad and across India grow
           online with data-driven SEO strategies, high-performance websites,
           Google Ads, and social media marketing that generate real leads and
@@ -159,7 +159,7 @@ export default function HeroSlider() {
         </div>
 
         {/* TRUST SIGNALS */}
-        <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
+        <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-300">
           <span>✔ 100+ Successful Projects</span>
           <span>✔ SEO & PPC Experts</span>
           <span>✔ ROI-Focused Marketing</span>
@@ -167,23 +167,28 @@ export default function HeroSlider() {
         </div>
 
         {/* INTERNAL SEO LINKS */}
-        <div className="mt-10 text-sm text-gray-500">
-          <a href="/services/seo" className="hover:text-white underline mr-4">
-            SEO Services in Hyderabad
-          </a>
-          <a
-            href="/services/google-ads"
-            className="hover:text-white underline mr-4"
-          >
-            Google Ads Management
-          </a>
-          <a
-            href="/services/social-media-marketing"
-            className="hover:text-white underline"
-          >
-            Social Media Marketing Services
-          </a>
-        </div>
+        <div className="mt-10 text-sm text-gray-300">
+  <a
+    href="/services/seo"
+    className="text-yellow-400 hover:text-yellow-300 underline font-medium mr-4"
+  >
+    SEO Services in Hyderabad
+  </a>
+
+  <a
+    href="/services/google-ads"
+    className="text-yellow-400 hover:text-yellow-300 underline font-medium mr-4"
+  >
+    Google Ads Management
+  </a>
+
+  <a
+    href="/services/social-media-marketing"
+    className="text-yellow-400 hover:text-yellow-300 underline font-medium"
+  >
+    Social Media Marketing Services
+  </a>
+</div>
       </div>
     </section>
   );
