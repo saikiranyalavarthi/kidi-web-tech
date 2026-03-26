@@ -54,7 +54,7 @@ export default function Footer() {
             KIDIWEBTECH
           </h3>
 
-          <p className="text-gray-400 text-sm leading-relaxed mb-5">
+          <p className="text-gray-300 text-sm leading-relaxed mb-5">
             KidiWebTech is a leading digital marketing agency in Hyderabad
             offering SEO services, Google Ads management, social media
             marketing, website development, and web hosting solutions to help
@@ -145,7 +145,7 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-4 gradient-text">Services</h3>
 
-          <ul className="space-y-3 text-sm text-gray-400">
+          <ul className="space-y-3 text-sm text-gray-300">
             {serviceLinks.map((service) => (
               <li key={service.href}>
                 <Link
@@ -159,32 +159,36 @@ export default function Footer() {
           </ul>
 
           {/* SEO INTERNAL LINKS */}
-          <div className="mt-6 text-sm text-gray-500">
-            <Link
-              href="/services/seo-services-hyderabad"
-              className="underline mr-3"
-            >
-              SEO Services in Hyderabad
-            </Link>
-            <Link href="/services/google-ads" className="underline mr-3">
-              Google Ads Management
-            </Link>
-            <Link
-              href="/services/social-media-company-hyderabad"
-              className="underline"
-            >
-              Social Media Marketing
-            </Link>
-          </div>
-        </div>
+         <div className="mt-6 text-sm text-gray-300">
+  <Link
+    href="/services/seo-services-hyderabad"
+    className="text-yellow-400 hover:text-yellow-300 underline font-medium mr-3"
+  >
+    SEO Services in Hyderabad
+  </Link>
 
+  <Link
+    href="/services/google-ads"
+    className="text-yellow-400 hover:text-yellow-300 underline font-medium mr-3"
+  >
+    Google Ads Management
+  </Link>
+
+  <Link
+    href="/services/social-media-company-hyderabad"
+    className="text-yellow-400 hover:text-yellow-300 underline font-medium"
+  >
+    Social Media Marketing
+  </Link>
+</div>
+</div>
         {/* CONTACT */}
         <div>
           <h3 className="text-lg font-semibold mb-4 gradient-text">
             Get in Touch
           </h3>
 
-          <ul className="space-y-4 text-sm text-gray-400">
+          <ul className="space-y-4 text-sm text-gray-300">
             <li className="flex gap-3">
               <FaEnvelope className="mt-1 text-yellow-400" />
               <a
@@ -228,7 +232,7 @@ export default function Footer() {
       </div>
 
       {/* BOTTOM BAR */}
-      <div className="mt-16 pt-6 border-t border-white/10">
+      <div className="mt-16 pt-6 border-t border-white/20">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
           <p>
             © {year}{" "}
