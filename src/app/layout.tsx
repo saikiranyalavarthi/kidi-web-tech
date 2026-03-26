@@ -162,7 +162,7 @@ export default function RootLayout({
         <Script
           id="organization-schema"
           type="application/ld+json"
-          strategy="afterInteractive"
+     strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(organizationSchema),
           }}
@@ -172,7 +172,7 @@ export default function RootLayout({
         <Script
           id="local-business-schema"
           type="application/ld+json"
-          strategy="afterInteractive"
+     strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(localBusinessSchema),
           }}
@@ -182,7 +182,7 @@ export default function RootLayout({
         <Script
           id="website-schema"
           type="application/ld+json"
-          strategy="afterInteractive"
+       strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(websiteSchema),
           }}
@@ -191,9 +191,9 @@ export default function RootLayout({
         {/* GOOGLE ANALYTICS 4 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-BG2NCCWS17"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="ga4-init" strategy="afterInteractive">
+        <Script id="ga4-init" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -205,7 +205,7 @@ export default function RootLayout({
         {/* GOOGLE ADSENSE */}
         <Script
           async
-          strategy="afterInteractive"
+         strategy="lazyOnload"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1031612318519089"
           crossOrigin="anonymous"
         />
