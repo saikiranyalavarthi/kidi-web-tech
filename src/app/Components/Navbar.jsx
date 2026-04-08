@@ -591,15 +591,18 @@ export default function Navbar() {
       </div>
 
       {/* MOBILE MENU */}
-     {mobileOpen && (
+    const [openMenu, setOpenMenu] = useState(null);
+
+{mobileOpen && (
   <div className="md:hidden bg-black px-6 pb-6 space-y-4">
-    {navItems.map((item) => (
+
+    {navItems.map((item, index) => (
       <div key={item.name} className="border-b border-white/10 pb-2">
 
         {/* MAIN ITEM */}
         <div className="flex justify-between items-center py-2">
-          
-          {/* 👉 CLICK = GO TO PAGE */}
+
+          {/* 👉 CLICK GO PAGE */}
           <Link
             href={item.href}
             className="text-sm font-semibold hover:text-yellow-400"
@@ -608,23 +611,26 @@ export default function Navbar() {
             {item.name}
           </Link>
 
-          {/* 👉 TOGGLE SUBMENU */}
+          {/* 👉 TOGGLE */}
           {item.sub && (
             <button
-              onClick={(e) => {
-                e.preventDefault();
-                const el = document.getElementById(item.name);
-                el.classList.toggle("hidden");
-              }}
+              onClick={() =>
+                setOpenMenu(openMenu === index ? null : index)
+              }
             >
-              <ChevronDown size={16} />
+              <ChevronDown
+                size={16}
+                className={`transition ${
+                  openMenu === index ? "rotate-180" : ""
+                }`}
+              />
             </button>
           )}
         </div>
 
         {/* SUB MENU */}
-        {item.sub && (
-          <div id={item.name} className="hidden pl-4 mt-2 space-y-2">
+        {item.sub && openMenu === index && (
+          <div className="pl-4 mt-2 space-y-2">
             {item.sub.map((sub) => (
               <Link
                 key={sub.href}
