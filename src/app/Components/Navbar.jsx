@@ -308,28 +308,28 @@ const navItems = [
       { name: "Google Ads Services", href: "/google-ads-agency" },
       { name: "PPC Management Services", href: "/ppc-management-services" },
       { name: "Search Ads", href: "/search-ads-services" },
-      { name: "Display Advertising", href: "/display-advertising-services" },
-      { name: "YouTube Ads", href: "/youtube-ads-services" },
+      // { name: "Display Advertising", href: "/display-advertising-services" },
+      // { name: "YouTube Ads", href: "/youtube-ads-services" },
 
       // 📱 SOCIAL MEDIA
-      {
-        name: "Social Media Marketing",
-        href: "/social-media-marketing-services",
-      },
-      { name: "Instagram Marketing", href: "/instagram-marketing-services" },
-      { name: "Facebook Marketing", href: "/facebook-marketing-services" },
-      { name: "LinkedIn Marketing", href: "/linkedin-marketing-services" },
+    //   {
+    //     name: "Social Media Marketing",
+    //     href: "/social-media-marketing-services",
+    //   },
+    //   { name: "Instagram Marketing", href: "/instagram-marketing-services" },
+    //   { name: "Facebook Marketing", href: "/facebook-marketing-services" },
+    //   { name: "LinkedIn Marketing", href: "/linkedin-marketing-services" },
 
-      // 📈 GROWTH
-      { name: "Lead Generation Services", href: "/lead-generation-services" },
-      {
-        name: "Conversion Rate Optimization",
-        href: "/conversion-rate-optimization-services",
-      },
+    //   // 📈 GROWTH
+    //   { name: "Lead Generation Services", href: "/lead-generation-services" },
+    //   {
+    //     name: "Conversion Rate Optimization",
+    //     href: "/conversion-rate-optimization-services",
+    //   },
 
-      // ✍️ CONTENT
-      { name: "Content Marketing", href: "/content-marketing-services" },
-    ],
+    //   // ✍️ CONTENT
+    //   { name: "Content Marketing", href: "/content-marketing-services" },
+     ],
   },
 
   {
@@ -386,21 +386,21 @@ const navItems = [
       },
 
       // 🎨 UI/UX DESIGN
-      { name: "UI UX Design Services", href: "/ui-ux-design-services" },
-      { name: "Website Redesign Services", href: "/website-redesign-services" },
-      {
-        name: "Mobile App UI UX Design",
-        href: "/mobile-app-ui-ux-design-services",
-      },
-      { name: "Figma UI UX Design", href: "/figma-ui-ux-design-services" },
+      // { name: "UI UX Design Services", href: "/ui-ux-design-services" },
+      // { name: "Website Redesign Services", href: "/website-redesign-services" },
+      // {
+      //   name: "Mobile App UI UX Design",
+      //   href: "/mobile-app-ui-ux-design-services",
+      // },
+      // { name: "Figma UI UX Design", href: "/figma-ui-ux-design-services" },
 
-      // ☁️ HOSTING & INFRA
-      { name: "Web Hosting Services", href: "/web-hosting-services" },
-      { name: "Cloud Hosting Services", href: "/cloud-hosting-services" },
-      {
-        name: "Domain Registration & SSL",
-        href: "/domain-registration-ssl-services",
-      },
+      // // ☁️ HOSTING & INFRA
+      // { name: "Web Hosting Services", href: "/web-hosting-services" },
+      // { name: "Cloud Hosting Services", href: "/cloud-hosting-services" },
+      // {
+      //   name: "Domain Registration & SSL",
+      //   href: "/domain-registration-ssl-services",
+      // },
     ],
   },
   // 🔹 ADVANCED SERVICES
