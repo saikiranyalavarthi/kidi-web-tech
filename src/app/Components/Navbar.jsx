@@ -591,71 +591,44 @@ export default function Navbar() {
       </div>
 
       {/* MOBILE MENU */}
-    const [openMenu, setOpenMenu] = useState(null);
+      {mobileOpen && (
+        <div className="md:hidden bg-black px-6 pb-6 space-y-4">
+          {navItems.map((item) => (
+            <div key={item.name}>
+              {item.sub ? (
+                <details>
+                  <summary className="cursor-pointer py-2">{item.name}</summary>
 
-{mobileOpen && (
-  <div className="md:hidden bg-black px-6 pb-6 space-y-4">
+                  <div className="ml-4 mt-2 space-y-2">
+                    {item.sub.map((sub) => (
+                      <Link
+                        key={sub.href}
+                        href={sub.href}
+                        className="block text-sm"
+                      >
+                        {sub.name}
+                      </Link>
+                    ))}
+                  </div>
+                </details>
+              ) : (
+                <Link href={item.href} className="block py-2">
+                  {item.name}
+                </Link>
+              )}
+            </div>
+          ))}
 
-    {navItems.map((item, index) => (
-      <div key={item.name} className="border-b border-white/10 pb-2">
-
-        {/* MAIN ITEM */}
-        <div className="flex justify-between items-center py-2">
-
-          {/* 👉 CLICK GO PAGE */}
-          <Link
-            href={item.href}
-            className="text-sm font-semibold hover:text-yellow-400"
-            onClick={() => setMobileOpen(false)}
+          {/* ✅ MOBILE WHATSAPP */}
+          <a
+            href="https://wa.me/919390627367"
+            target="_blank"
+            className="block mt-4 bg-green-500 text-black px-4 py-2 rounded-full text-center font-semibold"
           >
-            {item.name}
-          </Link>
-
-          {/* 👉 TOGGLE */}
-          {item.sub && (
-            <button
-              onClick={() =>
-                setOpenMenu(openMenu === index ? null : index)
-              }
-            >
-              <ChevronDown
-                size={16}
-                className={`transition ${
-                  openMenu === index ? "rotate-180" : ""
-                }`}
-              />
-            </button>
-          )}
+            WhatsApp Chat
+          </a>
         </div>
-
-        {/* SUB MENU */}
-        {item.sub && openMenu === index && (
-          <div className="pl-4 mt-2 space-y-2">
-            {item.sub.map((sub) => (
-              <Link
-                key={sub.href}
-                href={sub.href}
-                onClick={() => setMobileOpen(false)}
-                className="block text-sm text-gray-400 hover:text-yellow-400"
-              >
-                {sub.name}
-              </Link>
-            ))}
-          </div>
-        )}
-      </div>
-    ))}
-
-    {/* WHATSAPP */}
-    <a
-      href="https://wa.me/919390627367"
-      target="_blank"
-      className="block mt-4 bg-green-500 text-black px-4 py-2 rounded-full text-center font-semibold"
-    >
-      WhatsApp Chat
-    </a>
-  </div>
-)}
+      )}
     </header>
   );
 }
