@@ -59,7 +59,7 @@ export default function LandingPageDevelopmentServicesPage() {
             </p>
           </div>
           <Image
-            src="/assets/landing-page-development-services.jpg"
+            src="/SEO/websiteimage7.jpg"
             alt="Landing Page Development Services Hyderabad"
             width={600}
             height={400}

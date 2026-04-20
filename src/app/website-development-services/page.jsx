@@ -58,7 +58,7 @@ export default function WebDevelopmentPage() {
             </p>
           </div>
           <Image
-            src="/assets/image14.jpg"
+            src="/SEO/websiteimage5.jpg"
             alt="Website Development Services Hyderabad"
             width={600}
             height={400}

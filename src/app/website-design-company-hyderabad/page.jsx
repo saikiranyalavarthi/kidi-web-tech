@@ -60,7 +60,7 @@ export default function WebsiteDesignCompanyHyderabadPage() {
             </p>
           </div>
           <Image
-            src="/assets/website-design-company-hyderabad.jpg"
+       src="/SEO/websiteimage2.jpg"
             alt="Website Design Company Hyderabad"
             width={600}
             height={400}

@@ -61,7 +61,7 @@ export default function EcommerceDevelopmentServicesPage() {
             </p>
           </div>
           <Image
-            src="/assets/ecommerce-development-services.jpg"
+            src="/SEO/websiteimage8.jpg"
             alt="Ecommerce Development Services Hyderabad"
             width={600}
             height={400}

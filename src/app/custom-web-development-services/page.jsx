@@ -60,7 +60,7 @@ export default function CustomWebDevelopmentPage() {
             </p>
           </div>
           <Image
-            src="/assets/custom-web-development.jpg"
+            src="/SEO/websiteimage5.jpg"
             alt="Custom Web Development Services Hyderabad"
             width={600}
             height={400}

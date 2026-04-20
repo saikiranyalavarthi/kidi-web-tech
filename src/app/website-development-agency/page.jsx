@@ -62,7 +62,7 @@ export default function WebsiteDevelopmentAgencyPage() {
             </p>
           </div>
           <Image
-            src="/assets/website-development-agency.jpg"
+     src="/SEO/websiteimage4.jpg"
             alt="Website Development Agency"
             width={600}
             height={400}

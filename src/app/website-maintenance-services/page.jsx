@@ -62,7 +62,7 @@ export default function WebsiteMaintenanceServicesPage() {
             </p>
           </div>
           <Image
-            src="/assets/website-maintenance-services.jpg"
+            src="/SEO/websiteimage6.jpg"
             alt="Website Maintenance Services Hyderabad"
             width={600}
             height={400}

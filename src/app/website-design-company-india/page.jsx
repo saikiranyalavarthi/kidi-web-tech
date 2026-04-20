@@ -59,7 +59,7 @@ export default function WebsiteDesignCompanyIndiaPage() {
             </p>
           </div>
           <Image
-            src="/assets/website-design-company-india.jpg"
+       src="/SEO/websiteimage3.jpg"
             alt="Website Design Company India"
             width={600}
             height={400}

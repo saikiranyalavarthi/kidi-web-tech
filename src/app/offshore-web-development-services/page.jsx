@@ -64,7 +64,7 @@ export default function OffshoreWebDevelopmentServicesPage() {
             </p>
           </div>
           <Image
-            src="/assets/offshore-web-development-services.jpg"
+            src="/SEO/websiteimage8.jpg"
             alt="Offshore Web Development Services"
             width={600}
             height={400}
