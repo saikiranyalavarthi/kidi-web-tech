@@ -58,7 +58,7 @@ export default function SEOServicesIndiaPage() {
             </p>
           </div>
           <Image
-            src="/assets/seo-services-india.jpg"
+       src="/SEO/kidiwebtechimage3.jpg"
             alt="SEO Services India"
             width={600}
             height={400}

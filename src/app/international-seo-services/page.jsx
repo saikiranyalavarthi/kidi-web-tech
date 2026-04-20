@@ -69,7 +69,7 @@ export default function InternationalSEOServicesPage() {
             </p>
           </div>
           <Image
-            src="/assets/international-seo-services.jpg"
+          src="/SEO/kidiwebtechimage6.jpg"
             alt="International SEO Services"
             width={600}
             height={400}
