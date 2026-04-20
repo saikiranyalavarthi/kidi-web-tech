@@ -57,7 +57,7 @@ export default function EcommerceSEOPage() {
             </p>
           </div>
           <Image
-            src="/assets/image14.jpg"
+            src="/SEO/kidiwebtechimage2.jpg"
             alt="Ecommerce SEO Services Hyderabad"
             width={600}
             height={400}

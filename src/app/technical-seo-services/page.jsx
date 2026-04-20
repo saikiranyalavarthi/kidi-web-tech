@@ -58,7 +58,7 @@ export default function TechnicalSEOPage() {
             </p>
           </div>
           <Image
-            src="/assets/technical-seo.jpg"
+           src="/SEO/kidiwebtechimage1.jpg"
             alt="Technical SEO Services Hyderabad"
             width={600}
             height={400}

@@ -67,7 +67,7 @@ export default function GlobalDigitalMarketingAgencyPage() {
             </p>
           </div>
           <Image
-            src="/assets/global-digital-marketing-agency.jpg"
+            src="/SEO/kidiwebtechimage7.jpg"
             alt="Global Digital Marketing Agency"
             width={600}
             height={400}

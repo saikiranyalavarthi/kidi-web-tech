@@ -62,7 +62,7 @@ export default function GMBOptimizationServicesPage() {
             </p>
           </div>
           <Image
-            src="/assets/gmb-optimization-services.jpg"
+           src="/SEO/kidiwebtechimage5.jpg"
             alt="GMB Optimization Services"
             width={600}
             height={400}

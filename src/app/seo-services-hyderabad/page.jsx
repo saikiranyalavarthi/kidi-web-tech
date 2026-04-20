@@ -60,7 +60,7 @@ export default function SEOServicesHyderabadPage() {
             </p>
           </div>
           <Image
-            src="/assets/seo-services-hyderabad.jpg"
+       src="/SEO/kidiwebtechimage6.jpg"
             alt="SEO Services in Hyderabad"
             width={600}
             height={400}

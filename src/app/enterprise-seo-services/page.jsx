@@ -64,7 +64,7 @@ export default function EnterpriseSEOPage() {
             </p>
           </div>
           <Image
-            src="/assets/enterprise-seo.jpg"
+           src="/SEO/kidiwebtechimage3.jpg"
             alt="Enterprise SEO Services Hyderabad"
             width={600}
             height={400}

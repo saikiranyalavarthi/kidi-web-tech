@@ -65,7 +65,7 @@ export default function PPCManagementServicesPage() {
             </p>
           </div>
           <Image
-            src="/assets/ppc-management-services.jpg"
+        src="/SEO/kidiwebtechimage9.jpg"
             alt="PPC Management Services"
             width={600}
             height={400}

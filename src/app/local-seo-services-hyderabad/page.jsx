@@ -62,7 +62,7 @@ export default function LocalSEOServicesHyderabadPage() {
             </p>
           </div>
           <Image
-            src="/assets/local-seo-services-hyderabad.jpg"
+            src="/SEO/kidiwebtechimage3.jpg"
             alt="Local SEO Services in Hyderabad"
             width={600}
             height={400}

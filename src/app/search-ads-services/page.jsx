@@ -62,7 +62,7 @@ export default function SearchAdsServicesPage() {
             </p>
           </div>
           <Image
-            src="/assets/search-ads-services.jpg"
+            src="/SEO/kidiwebtechimage10.jpg"
             alt="Search Ads Services"
             width={600}
             height={400}

@@ -66,7 +66,7 @@ export default function GoogleAdsAgencyPage() {
             </p>
           </div>
           <Image
-            src="/assets/google-ads-agency.jpg"
+         src="/SEO/kidiwebtechimage4.jpg"
             alt="Google Ads Agency"
             width={600}
             height={400}
