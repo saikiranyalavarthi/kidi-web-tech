@@ -460,44 +460,44 @@ const navItems = [
   //   ],
   // },
 
-  // // 🔹 INDUSTRIES (HIGH SEO TRAFFIC PAGES 💰)
-  // {
-  //   name: "Industries",
-  //   href: "/industries",
-  //   sub: [
-  //     {
-  //       name: "Real Estate Digital Marketing",
-  //       href: "/real-estate-digital-marketing-services",
-  //     },
-  //     {
-  //       name: "Healthcare Digital Marketing",
-  //       href: "/healthcare-digital-marketing-services",
-  //     },
-  //     {
-  //       name: "Ecommerce Marketing Services",
-  //       href: "/ecommerce-marketing-services",
-  //     },
-  //     {
-  //       name: "Education Marketing Services",
-  //       href: "/education-marketing-services",
-  //     },
-  //     {
-  //       name: "Startup Digital Marketing",
-  //       href: "/startup-digital-marketing-services",
-  //     },
+  // 🔹 INDUSTRIES (HIGH SEO TRAFFIC PAGES 💰)
+  {
+    name: "Industries",
+    href: "/industries",
+    sub: [
+      {
+        name: "Real Estate Digital Marketing",
+        href: "/real-estate-digital-marketing-services",
+      },
+      {
+        name: "Healthcare Digital Marketing",
+        href: "/healthcare-digital-marketing-services",
+      },
+      {
+        name: "Ecommerce Marketing Services",
+        href: "/ecommerce-marketing-services",
+      },
+      {
+        name: "Education Marketing Services",
+        href: "/education-marketing-services",
+      },
+      {
+        name: "Startup Digital Marketing",
+        href: "/startup-digital-marketing-services",
+      },
 
-  //     // 🔥 EXTRA HIGH-SEARCH INDUSTRIES
-  //     {
-  //       name: "Hospitality Marketing",
-  //       href: "/hospitality-digital-marketing-services",
-  //     },
-  //     {
-  //       name: "Finance & Fintech Marketing",
-  //       href: "/fintech-digital-marketing-services",
-  //     },
-  //     { name: "SaaS Marketing", href: "/saas-marketing-services" },
-  //   ],
-  // },
+      // 🔥 EXTRA HIGH-SEARCH INDUSTRIES
+      {
+        name: "Hospitality Marketing",
+        href: "/hospitality-digital-marketing-services",
+      },
+      {
+        name: "Finance & Fintech Marketing",
+        href: "/fintech-digital-marketing-services",
+      },
+      { name: "SaaS Marketing", href: "/saas-marketing-services" },
+    ],
+  },
 
   // // 🔹 RESOURCES (CONVERSION + TRUST BUILDING)
   // {
