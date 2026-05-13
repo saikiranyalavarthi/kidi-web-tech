@@ -7,9 +7,9 @@ export default function TrustedBySection() {
     "/Clients/logo1.png",
      "/Clients/logo2.png",
  "/Clients/logo3.png",
-    "/clients/logo4.png",
-  "/clients/logo5.jpg",
-    "/clients/logo6.jpg",
+    "/Clients/logo4.png",
+  "/Clients/logo5.jpg",
+    "/Clients/logo6.jpg",
   ];
 
   return (
