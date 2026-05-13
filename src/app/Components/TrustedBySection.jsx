@@ -4,12 +4,12 @@ import Image from "next/image";
 
 export default function TrustedBySection() {
   const brands = [
-    "/clients/client1.png",
-    "/clients/client2.png",
-    "/clients/client3.png",
-    "/clients/client4.png",
-    "/clients/client5.png",
-    "/clients/client6.png",
+    "/Clients/logo1.png",
+     "/Clients/logo2.png",
+ "/Clients/logo3.png",
+    "/clients/logo4.png",
+  "/clients/logo5.jpg",
+    "/clients/logo6.jpg",
   ];
 
   return (
