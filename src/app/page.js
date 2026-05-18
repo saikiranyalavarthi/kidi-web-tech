@@ -22,6 +22,11 @@ import PortfolioSection from "./Components/Portfoliosection";
 import IndustriesSection from "./Components/IndustriesSection";
 import TestimonialsSection from "./Components/TestimonialsSection";
 import FAQSection from "./Components/FAQSection";
+import AIHeroSection from "./Components/AIHeroSection";
+import AIServicesSection from "./Components/AIServicesSection";
+import DeliveredWebsites from "./Components/DeliveredWebsites";
+import AiIndustriesSection from "./Components/AiIndustriesSection";
+import AiDeliverySection from "./Components/AiDeliverySection";
 
 export default function Home() {
   return (
@@ -79,18 +84,23 @@ export default function Home() {
 
       {/* HERO */}
       {/* <HeroSlider /> */}
-      <Herosection />
+      {/* <Herosection /> */}
+      <AIHeroSection/>
+      <AIServicesSection/>
+      <DeliveredWebsites/>
+      <AiIndustriesSection/>
+      <AiDeliverySection/>
       <TrustedBySection/>
       <AboutSection />
-          <ServicesSection />
-             < SEOContentSection/>
-      <WhyChooseUsSection />
+          {/* <ServicesSection /> */}
+             {/* < SEOContentSection/> */}
+      {/* <WhyChooseUsSection /> */}
  <ProcessSection/>
   
-<StatsSection />
+{/* <StatsSection /> */}
 
-<PortfolioSection/>
-<IndustriesSection/>
+{/* <PortfolioSection/> */}
+{/* <IndustriesSection/> */}
 
 <TestimonialsSection/>
       {/* EXPERIENCE */}
