@@ -1,244 +1,365 @@
 "use client";
 
 import Link from "next/link";
+
 import {
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
+  FaTwitter,  
+  FaYoutube,
+  FaWhatsapp,
   FaEnvelope,
   FaPhoneAlt,
   FaMapMarkerAlt,
-  FaWhatsapp,
 } from "react-icons/fa";
 
-/* =========================
-   SEO OPTIMIZED SERVICES
-========================= */
-const serviceLinks = [
-  {
-    name: "Digital Marketing Company Hyderabad",
-    href: "/services/digital-marketing-company-hyderabad",
-  },
-  {
-    name: "SEO Services in Hyderabad",
-    href: "/services/seo-services-hyderabad",
-  },
-  {
-    name: "Social Media Marketing Hyderabad",
-    href: "/services/social-media-company-hyderabad",
-  },
-  {
-    name: "Web Design Company Hyderabad",
-    href: "/services/web-design-company-hyderabad",
-  },
-  {
-    name: "Website Development Company Hyderabad",
-    href: "/services/web-development-company-hyderabad",
-  },
-  {
-    name: "Web Hosting Services Hyderabad",
-    href: "/services/web-hosting-company-hyderabad",
-  },
+const services = [
+  "SEO Services",
+  "Website Development",
+  "Google Ads",
+  "Social Media Marketing",
+  "App Development",
+  "Branding",
 ];
 
 export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-black border-t border-white/10 pt-20 pb-8">
-      {/* TOP SECTION */}
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
-        {/* BRAND */}
-        <div>
-          <h3 className="text-2xl font-extrabold mb-4 gradient-text">
-            KIDIWEBTECH
-          </h3>
+    <footer className="relative overflow-hidden bg-gradient-to-b from-[#f8fbff] to-white border-t border-gray-100">
+      {/* BACKGROUND */}
 
-          <p className="text-gray-300 text-sm leading-relaxed mb-5">
-            KidiWebTech is a leading digital marketing agency in Hyderabad
-            offering SEO services, Google Ads management, social media
-            marketing, website development, and web hosting solutions to help
-            businesses grow online and generate high-quality leads.
-          </p>
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-[-120px] left-[-120px] w-[350px] h-[350px] bg-blue-100/40 blur-[120px] rounded-full"></div>
 
-          <div className="flex gap-5 text-lg text-gray-300">
-            <a
-              href="https://www.facebook.com/profile.php?id=61585391203839"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit KidiWebTech Facebook page"
-              className="hover:text-yellow-400 transition"
-            >
-              <FaFacebookF />
-              <span className="sr-only">Facebook</span>
-            </a>
+        <div className="absolute bottom-[-120px] right-[-120px] w-[350px] h-[350px] bg-cyan-100/40 blur-[120px] rounded-full"></div>
+      </div>
 
-            <a
-              href="https://www.instagram.com/kidi.webtech/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit KidiWebTech Instagram profile"
-              className="hover:text-yellow-400 transition"
-            >
-              <FaInstagram />
-              <span className="sr-only">Instagram</span>
-            </a>
+      <div className="relative max-w-7xl mx-auto px-6 pt-20 pb-10">
+        {/* TOP CTA */}
 
-            <a
-              href="https://www.linkedin.com/in/kidi-webtech-a86b8b3a2/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit KidiWebTech LinkedIn profile"
-              className="hover:text-yellow-400 transition"
-            >
-              <FaLinkedinIn />
-              <span className="sr-only">LinkedIn</span>
-            </a>
-          </div>
-        </div>
+        <div
+          className="
+            mb-20
+            bg-gradient-to-r
+            from-[#2563EB]
+            to-[#06B6D4]
+            rounded-[40px]
+            p-10 md:p-14
+            text-white
+            shadow-[0_30px_80px_rgba(37,99,235,0.18)]
+            relative overflow-hidden
+          "
+        >
+          <div className="absolute top-0 right-0 w-[320px] h-[320px] bg-white/10 blur-[120px] rounded-full"></div>
 
-        {/* QUICK LINKS */}
-        <div>
-          <h3 className="text-lg font-semibold mb-4 gradient-text">
-            Quick Links
-          </h3>
+          <div className="relative z-10 grid lg:grid-cols-2 gap-14 items-center">
+            {/* LEFT */}
 
-          <ul className="space-y-3 text-sm text-gray-400">
-            <li>
-              <Link href="/" className="hover:text-yellow-400 transition">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className="hover:text-yellow-400 transition">
-                About Us
-              </Link>
-            </li>
-            <li>
+            <div>
+              <p className="uppercase tracking-[4px] text-white/70 text-sm">
+                DIGITAL GROWTH
+              </p>
+
+              <h2
+                className="
+                  mt-5
+                  text-4xl md:text-5xl
+                  font-black
+                  leading-tight
+                "
+              >
+                Ready To Grow Your Business Online?
+              </h2>
+
+              <p
+                className="
+                  mt-6
+                  text-lg
+                  leading-8
+                  text-white/90
+                  max-w-2xl
+                "
+              >
+                Let’s build SEO, websites, branding, and digital marketing
+                strategies that generate real business growth.
+              </p>
+            </div>
+
+            {/* RIGHT */}
+
+            <div className="flex flex-wrap gap-4">
               <Link
                 href="/contact"
-                className="hover:text-yellow-400 transition"
+                className="
+                  px-7 py-4
+                  rounded-full
+                  bg-white
+                  text-[#2563EB]
+                  font-bold
+                  hover:scale-105
+                  transition duration-300
+                  shadow-xl
+                "
               >
-                Contact
+                Get Free Consultation
               </Link>
-            </li>
-            <li>
-              <Link
-                href="/privacy-policy"
-                className="hover:text-yellow-400 transition"
-              >
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/terms-and-conditions"
-                className="hover:text-yellow-400 transition"
-              >
-                Terms & Conditions
-              </Link>
-            </li>
-          </ul>
-        </div>
 
-        {/* SERVICES */}
-        <div>
-          <h3 className="text-lg font-semibold mb-4 gradient-text">Services</h3>
-
-          <ul className="space-y-3 text-sm text-gray-300">
-            {serviceLinks.map((service) => (
-              <li key={service.href}>
-                <Link
-                  href={service.href}
-                  className="hover:text-yellow-400 transition"
-                >
-                  {service.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-
-          {/* SEO INTERNAL LINKS */}
-          <div className="mt-6 text-sm text-gray-300">
-            <Link
-              href="/services/seo-services-hyderabad"
-              className="text-yellow-400 hover:text-yellow-300 underline font-medium mr-3 inline-block py-2 px-2"
-            >
-              SEO Services in Hyderabad
-            </Link>
-
-            <Link
-              href="/services/google-ads"
-              className="text-yellow-400 hover:text-yellow-300 underline font-medium mr-3 inline-block py-2 px-2"
-            >
-              Google Ads Management
-            </Link>
-
-            <Link
-              href="/services/social-media-company-hyderabad"
-              className="text-yellow-400 hover:text-yellow-300 underline font-medium inline-block py-2 px-2"
-            >
-              Social Media Marketing
-            </Link>
-          </div>
-        </div>
-        {/* CONTACT */}
-        <div>
-          <h3 className="text-lg font-semibold mb-4 gradient-text">
-            Get in Touch
-          </h3>
-
-          <ul className="space-y-4 text-sm text-gray-300">
-            <li className="flex gap-3">
-              <FaEnvelope className="mt-1 text-yellow-400" />
-              <a
-                href="mailto:info@kidiwebtech.com"
-                className="hover:text-yellow-400 transition"
-              >
-                info@kidiwebtech.com
-              </a>
-            </li>
-
-            <li className="flex gap-3">
-              <FaPhoneAlt className="mt-1 text-yellow-400" />
-              <a
-                href="tel:+919390627367"
-                className="hover:text-yellow-400 transition"
-              >
-                +91 93906 27367
-              </a>
-            </li>
-
-            <li className="flex gap-3">
-              <FaWhatsapp className="mt-1 text-yellow-400" />
               <a
                 href="https://wa.me/919390627367"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-yellow-400 transition"
+                className="
+                  px-7 py-4
+                  rounded-full
+                  bg-[#25D366]
+                  text-black
+                  font-bold
+                  hover:scale-105
+                  transition duration-300
+                "
               >
-                Chat on WhatsApp
+                WhatsApp Chat
               </a>
-            </li>
-
-            <li className="flex gap-3">
-              <FaMapMarkerAlt className="mt-1 text-yellow-400" />
-              <span>
-                Hyderabad, Telangana, India – Digital Marketing Agency
-              </span>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
-      </div>
 
-      {/* BOTTOM BAR */}
-      <div className="mt-16 pt-6 border-t border-white/20">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-300">
-          <p>
-            © {year}{" "}
-            <span className="gradient-text font-semibold">KIDIWEBTECH</span>.
-            All rights reserved.
+        {/* MAIN GRID */}
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14">
+          {/* BRAND */}
+
+          <div>
+            <h3
+              className="
+                text-3xl
+                font-black
+                tracking-tight
+              "
+            >
+              <span className="bg-gradient-to-r from-[#2563EB] to-[#06B6D4] bg-clip-text text-transparent">
+                KIDIWEBTECH
+              </span>
+            </h3>
+
+            <p
+              className="
+                mt-6
+                text-gray-600
+                leading-8
+              "
+            >
+              KIDIWEBTECH helps businesses grow online through SEO, website
+              development, Google Ads, branding, and digital marketing
+              strategies.
+            </p>
+
+            {/* SOCIALS */}
+
+            <div className="flex gap-4 mt-8">
+              {[
+                {
+                  icon: <FaFacebookF />,
+                  link: "https://www.facebook.com/profile.php?id=61585391203839",
+                  
+                },
+
+                {
+                  icon: <FaInstagram />,
+                  link:  "https://www.instagram.com/kidi.webtech/",
+                 
+                },
+
+                {
+                  icon: <FaLinkedinIn />,
+                  link: "https://www.linkedin.com/in/kidi-webtech-a86b8b3a2/",
+                },
+
+               
+                {
+                  icon: <FaTwitter />,
+                  link: "https://x.com/kidiwebtech",
+                },
+                {
+                  icon: <FaYoutube />,
+                  link: "https://www.youtube.com/@KIDIWEBTECH",
+                }
+              ].map((item, index) => (
+                <a
+                  key={index}
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
+                    w-12 h-12
+                    rounded-2xl
+                    bg-white
+                    border border-gray-100
+                    flex items-center justify-center
+                    text-[#2563EB]
+                    shadow-sm
+                    hover:bg-[#2563EB]
+                    hover:text-white
+                    hover:-translate-y-1
+                    transition duration-300
+                  "
+                >
+                  {item.icon}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* QUICK LINKS */}
+
+          <div>
+            <h3 className="text-2xl font-black text-[#0F172A]">Quick Links</h3>
+
+            <ul className="space-y-4 mt-8">
+              {["Home", "About", "Services", "Contact", "Privacy Policy"].map(
+                (item, index) => (
+                  <li key={index}>
+                    <Link
+                      href="/"
+                      className="
+                      text-gray-600
+                      hover:text-[#2563EB]
+                      transition duration-300
+                    "
+                    >
+                      {item}
+                    </Link>
+                  </li>
+                ),
+              )}
+            </ul>
+          </div>
+
+          {/* SERVICES */}
+
+          <div>
+            <h3 className="text-2xl font-black text-[#0F172A]">Services</h3>
+
+            <ul className="space-y-4 mt-8">
+              {services.map((service, index) => (
+                <li key={index}>
+                  <Link
+                    href="/services"
+                    className="
+                      text-gray-600
+                      hover:text-[#2563EB]
+                      transition duration-300
+                    "
+                  >
+                    {service}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* CONTACT */}
+
+          <div>
+            <h3 className="text-2xl font-black text-[#0F172A]">Contact</h3>
+
+            <div className="space-y-6 mt-8">
+              <div className="flex gap-4">
+                <div
+                  className="
+                    w-12 h-12
+                    rounded-2xl
+                    bg-blue-50
+                    flex items-center justify-center
+                    text-[#2563EB]
+                  "
+                >
+                  <FaEnvelope />
+                </div>
+
+                <div>
+                  <p className="text-sm text-gray-400">Email</p>
+
+                  <a
+                    href="mailto:info@kidiwebtech.com"
+                    className="text-gray-700 hover:text-[#2563EB]"
+                  >
+                    info@kidiwebtech.com
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div
+                  className="
+                    w-12 h-12
+                    rounded-2xl
+                    bg-blue-50
+                    flex items-center justify-center
+                    text-[#2563EB]
+                  "
+                >
+                  <FaPhoneAlt />
+                </div>
+
+                <div>
+                  <p className="text-sm text-gray-400">Phone</p>
+
+                  <a
+                    href="tel:+919390627367"
+                    className="text-gray-700 hover:text-[#2563EB]"
+                  >
+                    +91 93906 27367
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div
+                  className="
+                    w-12 h-12
+                    rounded-2xl
+                    bg-blue-50
+                    flex items-center justify-center
+                    text-[#2563EB]
+                  "
+                >
+                  <FaMapMarkerAlt />
+                </div>
+
+                <div>
+                  <p className="text-sm text-gray-400">Location</p>
+
+                  <p className="text-gray-700">Hyderabad, Telangana, India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* BOTTOM */}
+
+        <div
+          className="
+            mt-16
+            pt-8
+            border-t border-gray-100
+            flex flex-col md:flex-row
+            justify-between items-center
+            gap-4
+          "
+        >
+          <p className="text-gray-500 text-sm">
+            © {year} KIDIWEBTECH. All rights reserved.
           </p>
+
+          <div className="flex gap-6 text-sm text-gray-500">
+            <Link href="/privacy-policy">Privacy Policy</Link>
+
+            <Link href="/terms-and-conditions">Terms & Conditions</Link>
+          </div>
         </div>
       </div>
     </footer>
