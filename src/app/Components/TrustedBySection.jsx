@@ -1,22 +1,23 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TrustedBySection() {
   const brands = [
     "/Clients/logo1.png",
-     "/Clients/logo2.png",
- "/Clients/logo3.png",
+    "/Clients/logo2.png",
+    "/Clients/logo3.png",
     "/Clients/logo4.png",
-  "/Clients/logo5.jpg",
+    "/Clients/logo5.jpg",
     "/Clients/logo6.jpg",
   ];
 
   return (
-    <section className="relative py-24 md:py-28 px-6 overflow-hidden bg-white">
+    <section className="relative py-20 md:py-24 px-6 overflow-hidden bg-white">
       {/* BACKGROUND EFFECTS */}
 
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-100px] left-[-100px] w-[350px] h-[350px] bg-blue-100/40 blur-[120px] rounded-full"></div>
 
         <div className="absolute bottom-[-100px] right-[-100px] w-[350px] h-[350px] bg-cyan-100/40 blur-[120px] rounded-full"></div>
@@ -26,50 +27,56 @@ export default function TrustedBySection() {
         {/* TOP CONTENT */}
 
         <div className="text-center max-w-4xl mx-auto">
+          {/* BADGE */}
+
           <div
             className="
               inline-flex items-center gap-2
               px-5 py-2 rounded-full
-              bg-blue-100
+              bg-blue-50
+              border border-blue-100
               text-[#2563EB]
               font-semibold
+              shadow-sm
             "
           >
             ⭐ Trusted By Businesses Across India
           </div>
+
+          {/* HEADING */}
 
           <h2
             className="
               mt-8
               text-4xl sm:text-5xl md:text-6xl
               font-black
-              leading-tight
+              leading-[1.05]
               tracking-tight
               text-[#0F172A]
             "
           >
-            Trusted Digital Marketing & Website Development Company
+            Trusted SEO & Web Development Company
           </h2>
+
+          {/* DESCRIPTION */}
 
           <p
             className="
-              mt-8
+              mt-6
               text-lg md:text-xl
-              leading-9
+              leading-8
               text-gray-600
               max-w-3xl
               mx-auto
             "
           >
-            KIDIWEBTECH is a trusted digital marketing agency in Hyderabad
-            helping startups, businesses, and enterprises grow online with SEO
-            services, website development, mobile app development, Google Ads
-            management, branding, and social media marketing solutions across
-            India.
+            KIDIWEBTECH helps startups and businesses grow online through SEO,
+            website development, Google Ads, branding, and digital marketing
+            solutions designed to increase traffic, leads, and sales.
           </p>
         </div>
 
-        {/* BRAND LOGOS */}
+        {/* CLIENT LOGOS */}
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-20">
           {brands.map((logo, index) => (
@@ -77,23 +84,22 @@ export default function TrustedBySection() {
               key={index}
               className="
                 group
-                bg-gradient-to-b
-                from-[#f8fbff]
-                to-white
+                bg-white
                 border border-gray-100
                 rounded-[28px]
-                h-32
+                h-28
                 flex items-center justify-center
                 shadow-sm
-                hover:shadow-[0_20px_50px_rgba(37,99,235,0.12)]
+                hover:shadow-[0_20px_50px_rgba(37,99,235,0.10)]
                 hover:-translate-y-2
+                hover:border-blue-100
                 transition duration-500
               "
             >
               <Image
                 src={logo}
                 alt={`Trusted Client ${index + 1}`}
-                width={130}
+                width={120}
                 height={60}
                 className="
                   object-contain
@@ -108,71 +114,11 @@ export default function TrustedBySection() {
           ))}
         </div>
 
-        {/* STATS SECTION */}
+        {/* STATS */}
 
-        <div className="grid md:grid-cols-4 gap-8 mt-24">
-          {[
-            {
-              value: "150+",
-              label: "Projects Delivered",
-            },
+      
 
-            {
-              value: "100+",
-              label: "Happy Clients",
-            },
-
-            {
-              value: "10X",
-              label: "Business Growth",
-            },
-
-            {
-              value: "24/7",
-              label: "Support Available",
-            },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="
-                bg-gradient-to-b
-                from-[#f8fbff]
-                to-white
-                border border-gray-100
-                rounded-[32px]
-                p-8
-                text-center
-                shadow-sm
-                hover:shadow-[0_20px_50px_rgba(37,99,235,0.10)]
-                hover:-translate-y-2
-                transition duration-500
-              "
-            >
-              <h3
-                className="
-                  text-5xl
-                  md:text-6xl
-                  font-black
-                  text-[#2563EB]
-                "
-              >
-                {item.value}
-              </h3>
-
-              <p
-                className="
-                  mt-4
-                  text-gray-600
-                  text-lg
-                "
-              >
-                {item.label}
-              </p>
-            </div>
-          ))}
-        </div>
-
-        {/* BOTTOM CONTENT */}
+        {/* CTA SECTION */}
 
         <div
           className="
@@ -183,36 +129,66 @@ export default function TrustedBySection() {
             rounded-[40px]
             p-10 md:p-14
             text-white
-            shadow-[0_30px_80px_rgba(37,99,235,0.20)]
+            shadow-[0_30px_80px_rgba(37,99,235,0.18)]
+            overflow-hidden
+            relative
           "
         >
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* INNER GLOW */}
+
+          <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-white/10 blur-[120px] rounded-full"></div>
+
+          <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
             {/* LEFT */}
 
             <div>
+              <p className="uppercase tracking-[4px] text-white/70 text-sm">
+                DIGITAL GROWTH PARTNER
+              </p>
+
               <h3
                 className="
+                  mt-5
                   text-4xl md:text-5xl
                   font-black
                   leading-tight
                 "
               >
-                Helping Businesses Build Powerful Digital Presence
+                Helping Businesses Build Powerful Online Presence
               </h3>
 
               <p
                 className="
-                  mt-8
+                  mt-6
                   text-lg
                   leading-8
                   text-white/90
+                  max-w-2xl
                 "
               >
-                We provide SEO services, website development, app development,
-                social media marketing, branding, and performance marketing
-                solutions to help businesses increase visibility, traffic, and
-                online growth.
+                We help businesses generate more traffic, leads, and sales
+                through SEO, website development, Google Ads, branding, and
+                digital marketing strategies.
               </p>
+
+              {/* BUTTON */}
+
+              <Link
+                href="/contact"
+                className="
+                  inline-flex items-center justify-center
+                  mt-8
+                  px-8 py-4 rounded-full
+                  bg-white
+                  text-[#2563EB]
+                  font-bold
+                  hover:scale-105
+                  transition duration-300
+                  shadow-xl
+                "
+              >
+                Get Free Consultation
+              </Link>
             </div>
 
             {/* RIGHT */}
@@ -237,7 +213,8 @@ export default function TrustedBySection() {
                     text-center
                     font-semibold
                     hover:bg-white/20
-                    transition
+                    hover:-translate-y-1
+                    transition duration-300
                   "
                 >
                   {item}

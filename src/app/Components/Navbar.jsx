@@ -312,24 +312,24 @@ const navItems = [
       // { name: "YouTube Ads", href: "/youtube-ads-services" },
 
       // 📱 SOCIAL MEDIA
-    //   {
-    //     name: "Social Media Marketing",
-    //     href: "/social-media-marketing-services",
-    //   },
-    //   { name: "Instagram Marketing", href: "/instagram-marketing-services" },
-    //   { name: "Facebook Marketing", href: "/facebook-marketing-services" },
-    //   { name: "LinkedIn Marketing", href: "/linkedin-marketing-services" },
+      //   {
+      //     name: "Social Media Marketing",
+      //     href: "/social-media-marketing-services",
+      //   },
+      //   { name: "Instagram Marketing", href: "/instagram-marketing-services" },
+      //   { name: "Facebook Marketing", href: "/facebook-marketing-services" },
+      //   { name: "LinkedIn Marketing", href: "/linkedin-marketing-services" },
 
-    //   // 📈 GROWTH
-    //   { name: "Lead Generation Services", href: "/lead-generation-services" },
-    //   {
-    //     name: "Conversion Rate Optimization",
-    //     href: "/conversion-rate-optimization-services",
-    //   },
+      //   // 📈 GROWTH
+      //   { name: "Lead Generation Services", href: "/lead-generation-services" },
+      //   {
+      //     name: "Conversion Rate Optimization",
+      //     href: "/conversion-rate-optimization-services",
+      //   },
 
-    //   // ✍️ CONTENT
-    //   { name: "Content Marketing", href: "/content-marketing-services" },
-     ],
+      //   // ✍️ CONTENT
+      //   { name: "Content Marketing", href: "/content-marketing-services" },
+    ],
   },
 
   {
@@ -462,45 +462,45 @@ const navItems = [
 
   // 🔹 INDUSTRIES (HIGH SEO TRAFFIC PAGES 💰)
   {
-  name: "Industries",
-  href: "/industries",
-  sub: [
-    {
-      name: "Real Estate Digital Marketing",
-      href: "/industries/real-estate-digital-marketing-services",
-    },
-    {
-      name: "Healthcare Digital Marketing",
-      href: "/industries/healthcare-digital-marketing-services",
-    },
-    {
-      name: "Ecommerce Marketing Services",
-      href: "/industries/ecommerce-marketing-services",
-    },
-    {
-      name: "Education Marketing Services",
-      href: "/industries/education-marketing-services",
-    },
-    {
-      name: "Startup Digital Marketing",
-      href: "/industries/startup-digital-marketing-services",
-    },
+    name: "Industries",
+    href: "/industries",
+    sub: [
+      {
+        name: "Real Estate Digital Marketing",
+        href: "/industries/real-estate-digital-marketing-services",
+      },
+      {
+        name: "Healthcare Digital Marketing",
+        href: "/industries/healthcare-digital-marketing-services",
+      },
+      {
+        name: "Ecommerce Marketing Services",
+        href: "/industries/ecommerce-marketing-services",
+      },
+      {
+        name: "Education Marketing Services",
+        href: "/industries/education-marketing-services",
+      },
+      {
+        name: "Startup Digital Marketing",
+        href: "/industries/startup-digital-marketing-services",
+      },
 
-    // 🔥 EXTRA HIGH-SEARCH INDUSTRIES
-    {
-      name: "Hospitality Marketing",
-      href: "/industries/hospitality-digital-marketing-services",
-    },
-    {
-      name: "Finance & Fintech Marketing",
-      href: "/industries/fintech-digital-marketing-services",
-    },
-    {
-      name: "SaaS Marketing",
-      href: "/industries/saas-marketing-services",
-    },
-  ],
-},
+      // 🔥 EXTRA HIGH-SEARCH INDUSTRIES
+      {
+        name: "Hospitality Marketing",
+        href: "/industries/hospitality-digital-marketing-services",
+      },
+      {
+        name: "Finance & Fintech Marketing",
+        href: "/industries/fintech-digital-marketing-services",
+      },
+      {
+        name: "SaaS Marketing",
+        href: "/industries/saas-marketing-services",
+      },
+    ],
+  },
 
   // // 🔹 RESOURCES (CONVERSION + TRUST BUILDING)
   // {
@@ -523,55 +523,127 @@ const navItems = [
   { name: "Blogs", href: "/blogs" },
   { name: "Contact", href: "/contact" },
 ];
-
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="bg-black text-white fixed w-full z-50">
-      <div className="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+    <header
+      className="
+        fixed top-0 left-0 right-0 z-50
+        bg-white/90
+        backdrop-blur-xl
+        border-b border-gray-100
+      "
+    >
+      <div
+        className="
+          max-w-7xl mx-auto
+          px-6 py-4
+          flex justify-between items-center
+        "
+      >
         {/* LOGO */}
-        <Link href="/" className="text-2xl font-bold text-yellow-400">
-          KIDIWEBTECH
+
+        <Link
+          href="/"
+          className="
+            text-1xl md:text-1xl
+            font-black
+            tracking-tight
+          "
+        >
+          <span className="bg-gradient-to-r from-[#2563EB] to-[#06B6D4] bg-clip-text text-transparent">
+            KIDIWEBTECH
+          </span>
         </Link>
 
-        {/* MOBILE BTN */}
+        {/* MOBILE BUTTON */}
+
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden"
+          className="
+            md:hidden
+            w-12 h-12
+            rounded-2xl
+            bg-[#f8fbff]
+            border border-gray-100
+            flex items-center justify-center
+            text-[#0F172A]
+          "
         >
-          {mobileOpen ? <X size={28} /> : <Menu size={28} />}
+          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
         {/* DESKTOP MENU */}
+
         <div className="hidden md:flex items-center gap-8">
           <ul className="flex gap-8 items-center text-sm font-semibold">
             {navItems.map((item) => (
               <li key={item.name} className="relative group">
                 {item.sub ? (
                   <>
-                    <button className="flex items-center gap-1 hover:text-yellow-400">
+                    {/* MENU BUTTON */}
+
+                    <button
+                      className="
+                        flex items-center gap-1
+                        text-[#0F172A]
+                        hover:text-[#2563EB]
+                        transition duration-300
+                      "
+                    >
                       {item.name}
-                      <ChevronDown size={14} />
+
+                      <ChevronDown size={16} />
                     </button>
 
                     {/* DROPDOWN */}
-                    <div className="absolute left-0 top-full mt-3 bg-black border border-white/10 min-w-[220px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
-                      {item.sub.map((sub) => (
-                        <Link
-                          key={sub.href}
-                          href={sub.href}
-                          className="block px-5 py-3 text-sm hover:bg-white/5 hover:text-yellow-400"
-                        >
-                          {sub.name}
-                        </Link>
-                      ))}
+
+                    <div
+                      className="
+                        absolute left-0 top-full mt-4
+                        w-[320px]
+                        bg-white
+                        border border-gray-100
+                        rounded-3xl
+                        shadow-[0_20px_60px_rgba(15,23,42,0.12)]
+                        opacity-0 invisible
+                        group-hover:opacity-100
+                        group-hover:visible
+                        transition-all duration-300
+                        overflow-hidden
+                        z-50
+                      "
+                    >
+                      <div className="max-h-[420px] overflow-y-auto">
+                        {item.sub.map((sub) => (
+                          <Link
+                            key={sub.href}
+                            href={sub.href}
+                            className="
+                              block px-6 py-4
+                              text-sm
+                              text-gray-700
+                              hover:bg-[#f8fbff]
+                              hover:text-[#2563EB]
+                              transition duration-300
+                              border-b border-gray-50 last:border-none
+                            "
+                          >
+                            {sub.name}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   </>
                 ) : (
                   <Link
                     href={item.href}
-                    className="hover:text-yellow-400 transition"
+                    className="
+                      text-[#0F172A]
+                      hover:text-[#2563EB]
+                      transition duration-300
+                    "
                   >
                     {item.name}
                   </Link>
@@ -580,34 +652,79 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* ✅ WHATSAPP BUTTON */}
-          {/* <a
-            href="https://wa.me/919390627367"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ml-4 bg-green-500 hover:bg-green-400 text-black px-4 py-2 rounded-full flex items-center gap-2 text-sm font-semibold transition"
+          {/* CTA BUTTON */}
+
+          <Link
+            href="/contact"
+            className="
+              ml-2
+              px-6 py-3
+              rounded-full
+              bg-gradient-to-r
+              from-[#2563EB]
+              to-[#06B6D4]
+              text-white
+              font-bold
+              shadow-[0_15px_40px_rgba(37,99,235,0.20)]
+              hover:scale-105
+              transition duration-300
+            "
           >
-            <MessageCircle size={18} />
-            WhatsApp
-          </a> */}
+            Get Free Audit
+          </Link>
         </div>
       </div>
 
       {/* MOBILE MENU */}
+
       {mobileOpen && (
-        <div className="md:hidden bg-black px-6 pb-6 space-y-4">
+        <div
+          className="
+            md:hidden
+            bg-white
+            border-t border-gray-100
+            px-6 py-6
+            space-y-5
+            max-h-screen
+            overflow-y-auto
+          "
+        >
           {navItems.map((item) => (
             <div key={item.name}>
               {item.sub ? (
-                <details>
-                  <summary className="cursor-pointer py-2">{item.name}</summary>
+                <details
+                  className="
+                    bg-[#f8fbff]
+                    border border-gray-100
+                    rounded-2xl
+                    overflow-hidden
+                  "
+                >
+                  <summary
+                    className="
+                      cursor-pointer
+                      px-5 py-4
+                      font-semibold
+                      text-[#0F172A]
+                      flex items-center justify-between
+                    "
+                  >
+                    {item.name}
+                  </summary>
 
-                  <div className="ml-4 mt-2 space-y-2">
+                  <div className="px-5 pb-4 space-y-3">
                     {item.sub.map((sub) => (
                       <Link
                         key={sub.href}
                         href={sub.href}
-                        className="block text-sm"
+                        onClick={() => setMobileOpen(false)}
+                        className="
+                          block
+                          text-sm
+                          text-gray-600
+                          hover:text-[#2563EB]
+                          transition
+                        "
                       >
                         {sub.name}
                       </Link>
@@ -615,19 +732,64 @@ export default function Navbar() {
                   </div>
                 </details>
               ) : (
-                <Link href={item.href} className="block py-2">
+                <Link
+                  href={item.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="
+                    block
+                    px-5 py-4
+                    rounded-2xl
+                    bg-[#f8fbff]
+                    border border-gray-100
+                    text-[#0F172A]
+                    font-semibold
+                    hover:text-[#2563EB]
+                    transition
+                  "
+                >
                   {item.name}
                 </Link>
               )}
             </div>
           ))}
 
-          {/* ✅ MOBILE WHATSAPP */}
+          {/* MOBILE CTA */}
+
+          <Link
+            href="/contact"
+            onClick={() => setMobileOpen(false)}
+            className="
+              flex items-center justify-center
+              mt-6
+              w-full h-14
+              rounded-2xl
+              bg-gradient-to-r
+              from-[#2563EB]
+              to-[#06B6D4]
+              text-white
+              font-bold
+              shadow-xl
+            "
+          >
+            Get Free Consultation
+          </Link>
+
+          {/* MOBILE WHATSAPP */}
+
           <a
             href="https://wa.me/919390627367"
             target="_blank"
-            className="block mt-4 bg-green-500 text-black px-4 py-2 rounded-full text-center font-semibold"
+            rel="noopener noreferrer"
+            className="
+              flex items-center justify-center gap-2
+              w-full h-14
+              rounded-2xl
+              bg-green-500
+              text-black
+              font-bold
+            "
           >
+            <MessageCircle size={20} />
             WhatsApp Chat
           </a>
         </div>

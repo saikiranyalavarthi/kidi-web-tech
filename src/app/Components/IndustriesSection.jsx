@@ -2,26 +2,28 @@
 
 export default function IndustriesSection() {
   return (
-    <section className="relative py-24 md:py-32 px-6 overflow-hidden bg-gradient-to-b from-[#f8fbff] to-white">
-      {/* BACKGROUND EFFECTS */}
+    <section className="relative py-20 md:py-24 px-6 overflow-hidden bg-gradient-to-b from-[#f8fbff] to-white">
+      {/* BACKGROUND */}
 
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-120px] left-[-120px] w-[380px] h-[380px] bg-blue-200/30 blur-[120px] rounded-full"></div>
 
         <div className="absolute bottom-[-120px] right-[-120px] w-[380px] h-[380px] bg-cyan-200/30 blur-[120px] rounded-full"></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto">
-        {/* TOP CONTENT */}
+        {/* TOP */}
 
         <div className="text-center max-w-4xl mx-auto">
           <div
             className="
               inline-flex items-center gap-2
               px-5 py-2 rounded-full
-              bg-blue-100
+              bg-blue-50
+              border border-blue-100
               text-[#2563EB]
               font-semibold
+              shadow-sm
             "
           >
             🏢 Industries We Serve
@@ -32,70 +34,68 @@ export default function IndustriesSection() {
               mt-8
               text-4xl sm:text-5xl md:text-6xl
               font-black
-              leading-tight
+              leading-[1.05]
               tracking-tight
               text-[#0F172A]
             "
           >
-            Digital Marketing & Development Solutions For Every Industry
+            Industries We Help Grow Online
           </h2>
 
           <p
             className="
-              mt-8
+              mt-6
               text-lg md:text-xl
-              leading-9
+              leading-8
               text-gray-600
               max-w-3xl
               mx-auto
             "
           >
-            KIDIWEBTECH is a trusted digital marketing agency in Hyderabad
-            delivering SEO services, website development, app development,
-            ecommerce solutions, branding, Google Ads management, and social
-            media marketing services for businesses across multiple industries
-            in India.
+            We provide SEO, website development, branding, Google Ads,
+            ecommerce, and digital marketing solutions for businesses across
+            multiple industries.
           </p>
         </div>
 
-        {/* INDUSTRIES GRID */}
+        {/* GRID */}
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-24">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
           {[
             {
               icon: "🏥",
-              title: "Healthcare Industry",
-              desc: "Healthcare website development, hospital management systems, SEO services, and digital marketing solutions for clinics and hospitals.",
+              title: "Healthcare",
+              desc: "SEO, hospital websites, and digital solutions for clinics and healthcare businesses.",
             },
 
             {
               icon: "🏢",
-              title: "Real Estate Industry",
-              desc: "Real estate website development, lead generation campaigns, branding, and social media marketing solutions.",
+              title: "Real Estate",
+              desc: "Lead generation, real estate websites, and branding solutions for property businesses.",
             },
 
             {
               icon: "🛒",
-              title: "Ecommerce Businesses",
-              desc: "Ecommerce website development, online store optimization, Google Ads, and conversion-focused digital marketing.",
+              title: "Ecommerce",
+              desc: "High-converting ecommerce websites and marketing strategies to boost online sales.",
             },
 
             {
               icon: "🎓",
-              title: "Education Industry",
-              desc: "Educational website development, online learning platforms, SEO optimization, and digital branding services.",
+              title: "Education",
+              desc: "SEO and digital platforms for schools, colleges, and online learning businesses.",
             },
 
             {
               icon: "🍴",
-              title: "Restaurants & Cafes",
-              desc: "Restaurant website design, food delivery apps, local SEO services, and social media marketing campaigns.",
+              title: "Restaurants",
+              desc: "Restaurant websites, local SEO, and social media marketing to increase visibility.",
             },
 
             {
               icon: "🚀",
-              title: "Startups & Enterprises",
-              desc: "Custom web applications, mobile app development, branding, SEO services, and business growth strategies.",
+              title: "Startups",
+              desc: "Modern web solutions, branding, and growth-focused digital marketing strategies.",
             },
           ].map((industry, index) => (
             <div
@@ -103,14 +103,14 @@ export default function IndustriesSection() {
               className="
                 group
                 relative
-                bg-white/80
-                backdrop-blur-xl
+                bg-white
                 border border-gray-100
                 rounded-[36px]
                 p-8
                 shadow-sm
-                hover:shadow-[0_25px_70px_rgba(37,99,235,0.12)]
+                hover:shadow-[0_25px_70px_rgba(37,99,235,0.10)]
                 hover:-translate-y-2
+                hover:border-blue-100
                 transition duration-500
               "
             >
@@ -135,11 +135,10 @@ export default function IndustriesSection() {
 
               <h3
                 className="
-                  mt-8
+                  mt-7
                   text-2xl
                   font-black
                   text-[#0F172A]
-                  leading-snug
                 "
               >
                 {industry.title}
@@ -149,10 +148,9 @@ export default function IndustriesSection() {
 
               <p
                 className="
-                  mt-5
+                  mt-4
                   text-gray-600
                   leading-8
-                  text-base
                 "
               >
                 {industry.desc}
@@ -176,7 +174,7 @@ export default function IndustriesSection() {
           ))}
         </div>
 
-        {/* BOTTOM SECTION */}
+        {/* CTA SECTION */}
 
         <div
           className="
@@ -185,37 +183,40 @@ export default function IndustriesSection() {
             from-[#2563EB]
             to-[#06B6D4]
             rounded-[40px]
-            p-10 md:p-16
+            p-10 md:p-14
             text-white
-            shadow-[0_30px_80px_rgba(37,99,235,0.20)]
+            shadow-[0_30px_80px_rgba(37,99,235,0.18)]
           "
         >
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             {/* LEFT */}
 
             <div>
+              <p className="uppercase tracking-[4px] text-white/70 text-sm">
+                INDUSTRY SOLUTIONS
+              </p>
+
               <h3
                 className="
+                  mt-5
                   text-4xl md:text-5xl
                   font-black
                   leading-tight
                 "
               >
-                Helping Industries Build Strong Digital Presence Online
+                Helping Businesses Generate More Leads & Sales
               </h3>
 
               <p
                 className="
-                  mt-8
+                  mt-6
                   text-lg
                   leading-8
                   text-white/90
                 "
               >
-                KIDIWEBTECH provides SEO services, website development, app
-                development, ecommerce solutions, branding, and digital
-                marketing strategies tailored for different industries across
-                Hyderabad and India.
+                We build SEO, websites, branding, and digital marketing
+                strategies tailored for different industries and business goals.
               </p>
             </div>
 
@@ -241,7 +242,8 @@ export default function IndustriesSection() {
                     text-center
                     font-semibold
                     hover:bg-white/20
-                    transition
+                    hover:-translate-y-1
+                    transition duration-300
                   "
                 >
                   {item}

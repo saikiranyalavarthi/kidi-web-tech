@@ -4,26 +4,28 @@ import Link from "next/link";
 
 export default function ServicesSection() {
   return (
-    <section className="relative py-24 md:py-32 px-6 overflow-hidden bg-gradient-to-b from-white to-[#f5f9ff]">
+    <section className="relative py-20 md:py-24 px-6 overflow-hidden bg-gradient-to-b from-white to-[#f5f9ff]">
       {/* BACKGROUND */}
 
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-100px] left-[-100px] w-[350px] h-[350px] bg-blue-200/30 blur-[120px] rounded-full"></div>
 
         <div className="absolute bottom-[-100px] right-[-100px] w-[350px] h-[350px] bg-cyan-200/30 blur-[120px] rounded-full"></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto">
-        {/* TOP CONTENT */}
+        {/* TOP */}
 
         <div className="text-center max-w-4xl mx-auto">
           <div
             className="
               inline-flex items-center gap-2
               px-5 py-2 rounded-full
-              bg-blue-100
+              bg-blue-50
+              border border-blue-100
               text-[#2563EB]
               font-semibold
+              shadow-sm
             "
           >
             🚀 Our Services
@@ -34,73 +36,72 @@ export default function ServicesSection() {
               mt-8
               text-4xl sm:text-5xl md:text-6xl
               font-black
-              leading-tight
+              leading-[1.05]
               tracking-tight
               text-[#0F172A]
             "
           >
-            Digital Marketing, Website Development & App Development Services
+            Digital Solutions That Grow Businesses
           </h2>
 
           <p
             className="
-              mt-8
+              mt-6
               text-lg md:text-xl
               leading-8
               text-gray-600
+              max-w-3xl
+              mx-auto
             "
           >
-            KIDIWEBTECH is a leading digital marketing agency in Hyderabad
-            providing SEO services, website development, app development, social
-            media marketing, Google Ads management, ecommerce solutions, and
-            branding services for startups, businesses, and enterprises across
-            India.
+            We help businesses grow through SEO, website development, Google
+            Ads, branding, app development, and performance marketing solutions.
           </p>
         </div>
 
-        {/* SERVICES GRID */}
+        {/* SERVICES */}
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
           {[
             {
               icon: "🚀",
-              title: "SEO Services Hyderabad",
-              desc: "Improve Google rankings, organic traffic, and lead generation with advanced SEO optimization strategies.",
+              title: "SEO Services",
+              desc: "Improve rankings, traffic, and lead generation with advanced SEO strategies.",
               link: "/seo-services-hyderabad",
             },
 
             {
               icon: "💻",
-              title: "Website Development Company",
-              desc: "Responsive business websites, ecommerce websites, landing pages, and custom web applications.",
+              title: "Website Development",
+              desc: "Modern business websites and custom web applications built for growth.",
               link: "/website-development-company-hyderabad",
             },
 
             {
               icon: "📱",
-              title: "Mobile App Development",
-              desc: "Android, iOS, and Flutter mobile app development services for startups and enterprises.",
+              title: "App Development",
+              desc: "Android, iOS, and Flutter mobile app development for startups and businesses.",
               link: "/app-development-company-india",
             },
 
             {
               icon: "📈",
               title: "Performance Marketing",
-              desc: "Google Ads management and social media advertising focused on ROI and business growth.",
+              desc: "ROI-focused Google Ads and paid campaigns to generate leads and sales.",
               link: "/performance-marketing",
             },
 
             {
               icon: "🎯",
               title: "Social Media Marketing",
-              desc: "Social media marketing agency services to grow your brand visibility and customer engagement.",
+              desc: "Build your brand visibility and customer engagement across social platforms.",
               link: "/social-media-marketing",
             },
 
             {
               icon: "🛒",
               title: "Ecommerce Development",
-              desc: "Modern ecommerce website and app development solutions with high-converting user experiences.",
+              desc: "High-converting ecommerce websites with modern shopping experiences.",
               link: "/ecommerce-development",
             },
           ].map((service, index) => (
@@ -109,19 +110,17 @@ export default function ServicesSection() {
               className="
                 group
                 relative
-                bg-white/80
-                backdrop-blur-xl
+                bg-white
                 border border-gray-100
                 rounded-[32px]
                 p-8
                 shadow-sm
-                hover:shadow-[0_25px_70px_rgba(37,99,235,0.12)]
+                hover:shadow-[0_25px_70px_rgba(37,99,235,0.10)]
                 hover:-translate-y-2
+                hover:border-blue-100
                 transition duration-500
               "
             >
-              {/* ICON */}
-
               <div
                 className="
                   w-16 h-16
@@ -137,50 +136,40 @@ export default function ServicesSection() {
                 {service.icon}
               </div>
 
-              {/* TITLE */}
-
               <h3
                 className="
-                  mt-8
+                  mt-7
                   text-2xl
                   font-black
-                  leading-snug
                   text-[#0F172A]
                 "
               >
                 {service.title}
               </h3>
 
-              {/* DESC */}
-
               <p
                 className="
-                  mt-5
+                  mt-4
                   text-gray-600
                   leading-8
-                  text-base
                 "
               >
                 {service.desc}
               </p>
 
-              {/* LINK */}
-
               <Link
                 href={service.link}
                 className="
                   inline-flex items-center
-                  mt-8
+                  mt-7
                   text-[#2563EB]
                   font-bold
                   hover:gap-3
-                  transition-all
+                  transition-all duration-300
                 "
               >
                 Explore Service →
               </Link>
-
-              {/* HOVER BORDER */}
 
               <div
                 className="
@@ -198,7 +187,7 @@ export default function ServicesSection() {
           ))}
         </div>
 
-        {/* BOTTOM CONTENT */}
+        {/* CTA */}
 
         <div
           className="
@@ -207,41 +196,40 @@ export default function ServicesSection() {
             from-[#2563EB]
             to-[#06B6D4]
             rounded-[40px]
-            p-10 md:p-16
+            p-10 md:p-14
             text-white
-            shadow-[0_30px_80px_rgba(37,99,235,0.25)]
+            shadow-[0_30px_80px_rgba(37,99,235,0.20)]
           "
         >
           <div className="grid lg:grid-cols-2 gap-14 items-center">
-            {/* LEFT */}
-
             <div>
+              <p className="uppercase tracking-[4px] text-white/70 text-sm">
+                BUSINESS GROWTH
+              </p>
+
               <h3
                 className="
+                  mt-5
                   text-4xl md:text-5xl
                   font-black
                   leading-tight
                 "
               >
-                Looking For The Best Digital Marketing Agency In Hyderabad?
+                Ready To Grow Your Business Online?
               </h3>
 
               <p
                 className="
-                  mt-8
+                  mt-6
                   text-lg
                   leading-8
                   text-white/90
                 "
               >
-                We help businesses grow online with SEO services, website
-                development, mobile app development, social media marketing,
-                Google Ads management, and performance marketing solutions
-                across India.
+                Let’s build powerful SEO, websites, and marketing strategies
+                that generate real business growth.
               </p>
             </div>
-
-            {/* RIGHT */}
 
             <div className="grid grid-cols-2 gap-5">
               {[
@@ -263,7 +251,8 @@ export default function ServicesSection() {
                     text-center
                     font-semibold
                     hover:bg-white/20
-                    transition
+                    hover:-translate-y-1
+                    transition duration-300
                   "
                 >
                   {item}

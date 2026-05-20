@@ -2,10 +2,10 @@
 
 export default function TestimonialsSection() {
   return (
-    <section className="relative py-24 md:py-32 px-6 overflow-hidden bg-white">
+    <section className="relative py-20 md:py-24 px-6 overflow-hidden bg-white">
       {/* BACKGROUND EFFECTS */}
 
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-120px] left-[-120px] w-[380px] h-[380px] bg-blue-100/40 blur-[120px] rounded-full"></div>
 
         <div className="absolute bottom-[-120px] right-[-120px] w-[380px] h-[380px] bg-cyan-100/40 blur-[120px] rounded-full"></div>
@@ -15,92 +15,99 @@ export default function TestimonialsSection() {
         {/* TOP CONTENT */}
 
         <div className="text-center max-w-4xl mx-auto">
+          {/* BADGE */}
+
           <div
             className="
               inline-flex items-center gap-2
               px-5 py-2 rounded-full
-              bg-blue-100
+              bg-blue-50
+              border border-blue-100
               text-[#2563EB]
               font-semibold
+              shadow-sm
             "
           >
             ⭐ Client Testimonials
           </div>
+
+          {/* HEADING */}
 
           <h2
             className="
               mt-8
               text-4xl sm:text-5xl md:text-6xl
               font-black
-              leading-tight
+              leading-[1.05]
               tracking-tight
               text-[#0F172A]
             "
           >
-            Trusted By Businesses Across Hyderabad & India
+            Businesses Trust KIDIWEBTECH
           </h2>
+
+          {/* DESCRIPTION */}
 
           <p
             className="
-              mt-8
+              mt-6
               text-lg md:text-xl
-              leading-9
+              leading-8
               text-gray-600
               max-w-3xl
               mx-auto
             "
           >
-            KIDIWEBTECH is a trusted digital marketing agency in Hyderabad
-            helping startups, businesses, and enterprises grow online with SEO
-            services, website development, app development, Google Ads
-            management, branding, and social media marketing solutions.
+            We help businesses grow online through SEO, websites, Google Ads,
+            branding, app development, and digital marketing strategies that
+            generate real business results.
           </p>
         </div>
 
         {/* TESTIMONIAL GRID */}
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-24">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
           {[
             {
               name: "Rahul Sharma",
               role: "Startup Founder",
               review:
-                "KIDIWEBTECH transformed our online presence with professional website development and SEO services. Our Google rankings and leads improved significantly.",
+                "KIDIWEBTECH helped us improve our Google rankings and generate more business leads through SEO and website development.",
             },
 
             {
               name: "Priya Reddy",
               role: "Business Owner",
               review:
-                "Best digital marketing agency in Hyderabad. Their Google Ads and social media marketing strategies helped us generate quality customers.",
+                "Professional digital marketing team with strong Google Ads and branding strategies that helped our business grow faster.",
             },
 
             {
               name: "Arjun Verma",
               role: "Ecommerce Brand",
               review:
-                "Their ecommerce website development and branding solutions gave our business a modern premium look and increased conversions.",
+                "Their ecommerce website development and SEO services improved our online sales and customer engagement.",
             },
 
             {
               name: "Sneha Kapoor",
               role: "Healthcare Company",
               review:
-                "Professional SEO services and responsive website development. Highly recommended for businesses looking to grow online.",
+                "Modern website design and SEO optimization helped our healthcare business increase online visibility.",
             },
 
             {
               name: "Karthik Rao",
               role: "Restaurant Owner",
               review:
-                "Their local SEO and social media marketing services helped our restaurant gain more visibility and online orders.",
+                "Excellent local SEO and social media marketing services that increased our restaurant visibility and orders.",
             },
 
             {
               name: "Amit Singh",
               role: "Tech Startup",
               review:
-                "Amazing mobile app development services with modern UI/UX design and scalable performance. Great support team.",
+                "Amazing app development and branding services with excellent support and modern UI/UX design.",
             },
           ].map((item, index) => (
             <div
@@ -108,21 +115,20 @@ export default function TestimonialsSection() {
               className="
                 group
                 relative
-                bg-gradient-to-b
-                from-[#f8fbff]
-                to-white
+                bg-white
                 border border-gray-100
                 rounded-[36px]
                 p-8
                 shadow-sm
-                hover:shadow-[0_25px_70px_rgba(37,99,235,0.12)]
+                hover:shadow-[0_25px_70px_rgba(37,99,235,0.10)]
                 hover:-translate-y-2
+                hover:border-blue-100
                 transition duration-500
               "
             >
               {/* STARS */}
 
-              <div className="flex items-center gap-1 text-2xl">
+              <div className="flex items-center gap-1 text-xl">
                 ⭐ ⭐ ⭐ ⭐ ⭐
               </div>
 
@@ -130,7 +136,7 @@ export default function TestimonialsSection() {
 
               <p
                 className="
-                  mt-8
+                  mt-7
                   text-gray-600
                   leading-8
                   text-base
@@ -142,6 +148,8 @@ export default function TestimonialsSection() {
               {/* USER */}
 
               <div className="flex items-center gap-4 mt-10">
+                {/* AVATAR */}
+
                 <div
                   className="
                     w-16 h-16
@@ -158,6 +166,8 @@ export default function TestimonialsSection() {
                 >
                   {item.name.charAt(0)}
                 </div>
+
+                {/* INFO */}
 
                 <div>
                   <h4
@@ -194,7 +204,7 @@ export default function TestimonialsSection() {
 
         {/* STATS */}
 
-        <div className="grid md:grid-cols-3 gap-8 mt-24">
+        <div className="grid md:grid-cols-3 gap-8 mt-20">
           {[
             {
               value: "100+",
@@ -203,7 +213,7 @@ export default function TestimonialsSection() {
 
             {
               value: "150+",
-              label: "Projects Completed",
+              label: "Projects Delivered",
             },
 
             {
@@ -222,8 +232,9 @@ export default function TestimonialsSection() {
                 p-10
                 text-center
                 shadow-sm
-                hover:shadow-[0_25px_70px_rgba(37,99,235,0.10)]
+                hover:shadow-[0_25px_70px_rgba(37,99,235,0.08)]
                 hover:-translate-y-2
+                hover:border-blue-100
                 transition duration-500
               "
             >
@@ -240,7 +251,7 @@ export default function TestimonialsSection() {
               <p
                 className="
                   mt-4
-                  text-xl
+                  text-lg
                   text-gray-600
                 "
               >
@@ -250,7 +261,7 @@ export default function TestimonialsSection() {
           ))}
         </div>
 
-        {/* BOTTOM CTA */}
+        {/* CTA SECTION */}
 
         <div
           className="
@@ -259,36 +270,46 @@ export default function TestimonialsSection() {
             from-[#2563EB]
             to-[#06B6D4]
             rounded-[40px]
-            p-10 md:p-16
+            p-10 md:p-14
             text-white
-            shadow-[0_30px_80px_rgba(37,99,235,0.20)]
+            shadow-[0_30px_80px_rgba(37,99,235,0.18)]
+            relative overflow-hidden
           "
         >
-          <div className="grid lg:grid-cols-2 gap-14 items-center">
+          {/* GLOW */}
+
+          <div className="absolute top-0 right-0 w-[320px] h-[320px] bg-white/10 blur-[120px] rounded-full"></div>
+
+          <div className="relative z-10 grid lg:grid-cols-2 gap-14 items-center">
             {/* LEFT */}
 
             <div>
+              <p className="uppercase tracking-[4px] text-white/70 text-sm">
+                BUSINESS GROWTH
+              </p>
+
               <h3
                 className="
+                  mt-5
                   text-4xl md:text-5xl
                   font-black
                   leading-tight
                 "
               >
-                Grow Your Business With KIDIWEBTECH
+                Ready To Grow Your Business Online?
               </h3>
 
               <p
                 className="
-                  mt-8
+                  mt-6
                   text-lg
                   leading-8
                   text-white/90
+                  max-w-2xl
                 "
               >
-                We provide SEO services, website development, app development,
-                branding, Google Ads management, and social media marketing
-                solutions to help businesses grow online faster.
+                We create SEO, websites, Google Ads, and digital marketing
+                strategies designed to generate more traffic, leads, and sales.
               </p>
             </div>
 
@@ -314,7 +335,8 @@ export default function TestimonialsSection() {
                     text-center
                     font-semibold
                     hover:bg-white/20
-                    transition
+                    hover:-translate-y-1
+                    transition duration-300
                   "
                 >
                   {item}

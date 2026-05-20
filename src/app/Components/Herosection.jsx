@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 
-export default function Herosection() {
+export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#f8fbff] via-white to-[#f4f9ff] pt-32 pb-24 px-6">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#f8fbff] via-white to-[#f4f9ff] pt-28 pb-20 px-6">
       {/* BACKGROUND EFFECTS */}
 
       <div className="absolute inset-0 overflow-hidden">
@@ -16,7 +16,7 @@ export default function Herosection() {
       </div>
 
       <div className="relative max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* LEFT CONTENT */}
 
           <div>
@@ -35,7 +35,7 @@ export default function Herosection() {
               <span className="w-2 h-2 rounded-full bg-[#2563EB]"></span>
 
               <span className="text-sm font-semibold text-[#2563EB]">
-                #1 Digital Marketing Agency In Hyderabad
+                Trusted Digital Marketing Agency In Hyderabad
               </span>
             </div>
 
@@ -44,39 +44,52 @@ export default function Herosection() {
             <h1
               className="
                 mt-8
-                text-5xl sm:text-6xl md:text-7xl
+                text-4xl sm:text-5xl md:text-6xl
                 font-black
-                leading-[1]
+                leading-[1.05]
                 tracking-tight
                 text-[#0F172A]
                 max-w-4xl
               "
             >
-              Grow Your Business With Powerful Digital Marketing & Website
-              Development
+              SEO & Web Development That Drives Real Business Growth
             </h1>
 
-            {/* DESCRIPTION */}
+            {/* SUBTEXT */}
 
             <p
               className="
-                mt-8
+                mt-6
                 text-lg md:text-xl
-                leading-9
+                leading-8
                 text-gray-600
                 max-w-2xl
               "
             >
-              KIDIWEBTECH is a leading digital marketing agency in Hyderabad
-              offering SEO services, website development, mobile app
-              development, Google Ads management, branding, social media
-              marketing, and performance marketing solutions for startups and
-              businesses across India.
+              KIDIWEBTECH helps businesses grow with SEO, Google Ads, website
+              development, and digital marketing solutions that generate more
+              traffic, leads, and sales.
             </p>
+
+            {/* SOCIAL PROOF */}
+
+            <div className="flex flex-wrap gap-5 mt-8 text-sm font-medium text-gray-600">
+              <div className="flex items-center gap-2">
+                ⭐ <span>100+ Happy Clients</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                🚀 <span>SEO Experts</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                📍 <span>Hyderabad Based Agency</span>
+              </div>
+            </div>
 
             {/* BUTTONS */}
 
-            <div className="flex flex-wrap gap-5 mt-12">
+            <div className="flex flex-wrap gap-5 mt-10">
               <Link
                 href="/contact"
                 className="
@@ -89,10 +102,10 @@ export default function Herosection() {
                   font-bold
                   shadow-[0_20px_40px_rgba(37,99,235,0.25)]
                   hover:scale-105
-                  transition
+                  transition duration-300
                 "
               >
-                Get Free Consultation
+                Get Free SEO Audit
               </Link>
 
               <Link
@@ -105,11 +118,36 @@ export default function Herosection() {
                   text-[#0F172A]
                   font-semibold
                   hover:bg-gray-50
-                  transition
+                  hover:border-blue-200
+                  transition duration-300
                 "
               >
                 Explore Services
               </Link>
+            </div>
+
+            {/* TRUSTED TEXT */}
+
+            <div className="mt-12">
+              <p className="text-sm uppercase tracking-[3px] text-gray-400 mb-5">
+                Trusted By Businesses Across India
+              </p>
+
+              <div className="flex flex-wrap items-center gap-8 opacity-70">
+                <span className="text-lg font-bold text-gray-500">
+                  Security
+                </span>
+
+                <span className="text-lg font-bold text-gray-500">
+                  Healthcare
+                </span>
+
+                <span className="text-lg font-bold text-gray-500">Pharma</span>
+
+                <span className="text-lg font-bold text-gray-500">
+                  Real Estate
+                </span>
+              </div>
             </div>
 
             {/* STATS */}
@@ -139,7 +177,7 @@ export default function Herosection() {
                 <div key={index}>
                   <h3
                     className="
-                      text-4xl
+                      text-3xl md:text-4xl
                       font-black
                       text-[#2563EB]
                     "
@@ -169,7 +207,7 @@ export default function Herosection() {
                 shadow-[0_30px_80px_rgba(15,23,42,0.12)]
               "
             >
-              {/* TOP GRADIENT BOX */}
+              {/* TOP BOX */}
 
               <div
                 className="
@@ -187,7 +225,7 @@ export default function Herosection() {
 
                 <h2
                   className="
-                    mt-6
+                    mt-5
                     text-4xl md:text-5xl
                     font-black
                     leading-tight
@@ -196,10 +234,9 @@ export default function Herosection() {
                   Build. Rank. Grow.
                 </h2>
 
-                <p className="mt-6 text-white/90 leading-8">
-                  We help brands scale online with SEO services, website
-                  development, app development, and digital marketing
-                  strategies.
+                <p className="mt-5 text-white/90 leading-8">
+                  Helping businesses scale online through SEO, website
+                  development, Google Ads, and digital marketing strategies.
                 </p>
               </div>
 
@@ -225,7 +262,9 @@ export default function Herosection() {
                       font-semibold
                       text-[#0F172A]
                       hover:shadow-lg
-                      transition
+                      hover:-translate-y-1
+                      hover:border-blue-200
+                      transition duration-300
                     "
                   >
                     {item}
@@ -239,10 +278,10 @@ export default function Herosection() {
             <div
               className="
                 hidden md:flex
-                absolute -top-8 -left-8
+                absolute -top-6 -left-6
                 bg-white
                 rounded-2xl
-                px-6 py-4
+                px-5 py-3
                 shadow-2xl
                 items-center gap-4
               "
@@ -271,10 +310,10 @@ export default function Herosection() {
             <div
               className="
                 hidden md:flex
-                absolute -bottom-8 right-0
+                absolute -bottom-6 right-0
                 bg-white
                 rounded-2xl
-                px-6 py-4
+                px-5 py-3
                 shadow-2xl
                 items-center gap-4
               "
