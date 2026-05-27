@@ -556,7 +556,7 @@ export default function Navbar() {
             <img
               src="/kidiwebtech-logo.png"
               alt="KIDIWEBTECH Logo"
-              className="w-18 h-18 object-contain"
+              className="w-14 h-14 object-contain"
             />
           </div>
         </Link>

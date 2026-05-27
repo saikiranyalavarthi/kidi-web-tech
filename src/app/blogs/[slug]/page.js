@@ -88,7 +88,6 @@ const blogs = {
   },
 };
 
-
 /* =========================
    SEO METADATA (FIXED)
 ========================= */
@@ -138,13 +137,11 @@ export default async function BlogDetailPage({ params }) {
   if (!blog) return notFound();
 
   return (
-    <main className="min-h-screen bg-black py-20 px-6">
+    <main className="min-h-screen bg-blue-900 py-20 px-6">
       <article className="max-w-4xl mx-auto">
-
         {/* BREADCRUMB */}
         <nav className="text-sm text-gray-400 mb-6">
-          <Link href="/">Home</Link> ›{" "}
-          <Link href="/blogs">Blogs</Link> ›{" "}
+          <Link href="/">Home</Link> › <Link href="/blogs">Blogs</Link> ›{" "}
           <span className="text-gray-300">{blog.title}</span>
         </nav>
 
@@ -186,7 +183,6 @@ export default async function BlogDetailPage({ params }) {
             Get a Free SEO Consultation →
           </Link>
         </div>
-
       </article>
     </main>
   );
