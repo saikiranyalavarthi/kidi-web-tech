@@ -284,44 +284,88 @@ export default function About() {
         </div>
 
         {/* Services */}
-        <div>
-          <h2 className="text-2xl font-bold text-white mb-6">Our Services</h2>
-          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              {
-                title: "SEO Services",
-                href: "/services/seo",
-                desc: "Rank higher, drive organic traffic, and generate qualified leads.",
-              },
-              {
-                title: "Web Development",
-                href: "/services/web-development",
-                desc: "Fast, responsive, SEO-friendly websites built to convert.",
-              },
-              {
-                title: "Google Ads",
-                href: "/services/google-ads",
-                desc: "High-ROI paid search campaigns managed by certified experts.",
-              },
-              {
-                title: "Social Media",
-                href: "/services/social-media",
-                desc: "Build brand awareness and engage your audience on every platform.",
-              },
-            ].map(({ title, href, desc }) => (
-              <Link
-                key={title}
-                href={href}
-                className="group block border border-gray-800 hover:border-teal-600 rounded-xl p-5 transition-all duration-300 hover:bg-gray-900"
-              >
-                <h3 className="font-semibold text-white mb-2 group-hover:text-teal-400 transition-colors">
-                  {title}
-                </h3>
-                <p className="text-gray-500 text-sm">{desc}</p>
-              </Link>
-            ))}
+        {/* Services */}
+        <section className="py-24 bg-gradient-to-b from-gray-950 to-black">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="text-center mb-16">
+              <span className="text-teal-400 uppercase tracking-widest text-sm">
+                Our Services
+              </span>
+
+              <h2 className="text-4xl md:text-5xl font-bold text-white mt-4">
+                Digital Marketing & Web Development Services
+              </h2>
+
+              <p className="text-gray-400 mt-6 max-w-3xl mx-auto">
+                Helping businesses across Hyderabad improve rankings, generate
+                quality leads and increase online revenue.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                {
+                  title: "SEO Services Hyderabad",
+                  href: "/seo-services-hyderabad",
+                  desc: "Improve Google rankings and increase organic traffic.",
+                },
+                {
+                  title: "Local SEO Hyderabad",
+                  href: "/local-seo-services-hyderabad",
+                  desc: "Rank higher in local searches and Google Maps.",
+                },
+                {
+                  title: "Website Development",
+                  href: "/web-development-company-hyderabad",
+                  desc: "Professional websites designed for conversions.",
+                },
+                {
+                  title: "Google Ads Hyderabad",
+                  href: "/google-ads-agency-hyderabad",
+                  desc: "Generate leads using ROI-focused ad campaigns.",
+                },
+                {
+                  title: "Web Design Hitech City",
+                  href: "/web-design-company-hitech-city",
+                  desc: "Modern websites for startups and IT companies.",
+                },
+                {
+                  title: "Web Design Madhapur",
+                  href: "/web-design-company-madhapur",
+                  desc: "Custom website design services in Madhapur.",
+                },
+                {
+                  title: "Web Design Kukatpally",
+                  href: "/web-design-company-kukatpally",
+                  desc: "SEO-friendly websites for local businesses.",
+                },
+                {
+                  title: "Web Design Secunderabad",
+                  href: "/web-design-company-secunderabad",
+                  desc: "Responsive websites built for growth.",
+                },
+              ].map((service) => (
+                <Link
+                  key={service.title}
+                  href={service.href}
+                  className="group bg-gray-900 border border-gray-800 hover:border-teal-500 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2"
+                >
+                  <h3 className="text-white font-semibold text-xl mb-3 group-hover:text-teal-400">
+                    {service.title}
+                  </h3>
+
+                  <p className="text-gray-400 text-sm leading-7">
+                    {service.desc}
+                  </p>
+
+                  <span className="inline-block mt-4 text-teal-400 text-sm">
+                    Learn More →
+                  </span>
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
+        </section>
 
         {/* Why Choose */}
         <div>
@@ -343,7 +387,36 @@ export default function About() {
             ))}
           </ul>
         </div>
+<section className="py-20 bg-black">
+  <div className="max-w-7xl mx-auto px-6">
 
+    <h2 className="text-4xl font-bold text-center text-white mb-12">
+      Areas We Serve In Hyderabad
+    </h2>
+
+    <div className="grid md:grid-cols-3 gap-5">
+
+      {[
+        "/web-design-company-hitech-city",
+        "/web-design-company-madhapur",
+        "/web-design-company-kukatpally",
+        "/web-design-company-banjara-hills",
+        "/web-design-company-secunderabad",
+        "/seo-services-hyderabad"
+      ].map((link) => (
+        <Link
+          key={link}
+          href={link}
+          className="bg-gray-900 border border-gray-800 hover:border-teal-500 p-5 rounded-xl text-center"
+        >
+          {link.replaceAll("/", "").replaceAll("-", " ")}
+        </Link>
+      ))}
+
+    </div>
+
+  </div>
+</section>
         {/* FAQ */}
         <div>
           <h2 className="text-2xl font-bold text-white mb-6">
