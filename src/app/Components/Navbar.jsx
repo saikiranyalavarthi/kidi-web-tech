@@ -282,26 +282,7 @@ const navItems = [
       { name: "Ecommerce SEO", href: "/ecommerce-seo-services" },
       { name: "Enterprise SEO", href: "/enterprise-seo-services" },
 
-     {
-      name: "Web Design Company Hitech City",
-      href: "/web-design-company-hitech-city",
-    },
-    {
-      name: "Web Design Company Madhapur",
-      href: "/web-design-company-madhapur",
-    },
-    {
-      name: "Web Design Company Kukatpally",
-      href: "/web-design-company-kukatpally",
-    },
-    {
-      name: "Web Design Company Banjara Hills",
-      href: "/web-design-company-banjara-hills",
-    },
-    {
-      name: "Web Design Company Secunderabad",
-      href: "/web-design-company-secunderabad",
-    },
+    
 
       // 📍 LOCAL SEO (CITY TARGET)
       { name: "SEO Services Hyderabad", href: "/seo-services-hyderabad" },
@@ -375,7 +356,26 @@ const navItems = [
         name: "Website Maintenance Services",
         href: "/website-maintenance-services",
       },
-
+ {
+      name: "Web Design Company Hitech City",
+      href: "/web-design-company-hitech-city",
+    },
+    {
+      name: "Web Design Company Madhapur",
+      href: "/web-design-company-madhapur",
+    },
+    {
+      name: "Web Design Company Kukatpally",
+      href: "/web-design-company-kukatpally",
+    },
+    {
+      name: "Web Design Company Banjara Hills",
+      href: "/web-design-company-banjara-hills",
+    },
+    {
+      name: "Web Design Company Secunderabad",
+      href: "/web-design-company-secunderabad",
+    },
       // 📍 LOCAL (HYDERABAD TARGET)
       {
         name: "Web Development Company Hyderabad",
