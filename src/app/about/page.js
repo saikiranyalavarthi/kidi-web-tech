@@ -113,7 +113,7 @@ export default function About() {
   ];
 
   return (
-    <div className="bg-black text-white font-sans min-h-screen">
+    <div className="bg-white text-blue-700 font-sans min-h-screen">
       {/* ── SEO HEAD ─────────────────────────────────────────────── */}
       <Head>
         {/* Primary */}
@@ -218,205 +218,314 @@ export default function About() {
       </nav>
 
       {/* ── HERO ─────────────────────────────────────────────────── */}
-      <section className="py-20 px-6 text-center">
-        <p className="text-teal-400 text-sm font-medium tracking-widest uppercase mb-4">
-          Digital Marketing Agency · Hyderabad
-        </p>
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-          About KidiWebTech –{" "}
-          <span className="text-teal-400">Digital Marketing</span> Experts
-        </h1>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg leading-relaxed">
-          We help startups, small businesses, and enterprises in Hyderabad grow
-          online with SEO, web development, and data-driven digital marketing
-          strategies that deliver real, measurable results.
-        </p>
+      <section className="relative overflow-hidden py-24 md:py-32 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <span className="inline-block px-5 py-2 rounded-full bg-blue-100 text-blue-700 font-medium mb-6">
+            Hyderabad SEO & Web Development Experts
+          </span>
+
+          <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-8 leading-tight">
+            About
+            <span className="block text-blue-600">KidiWebTech</span>
+          </h1>
+
+          <p className="max-w-4xl mx-auto text-lg md:text-xl text-slate-600 leading-relaxed">
+            KidiWebTech is a leading SEO company, website development company
+            and digital marketing agency in Hyderabad helping businesses
+            increase visibility, generate leads and grow revenue online.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-4 mt-10">
+            <Link
+              href="/contact"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold"
+            >
+              Get Free Consultation
+            </Link>
+
+            <Link
+              href="/portfolio"
+              className="border border-blue-200 hover:border-blue-600 px-8 py-4 rounded-xl text-blue-700"
+            >
+              View Portfolio
+            </Link>
+          </div>
+        </div>
       </section>
 
       {/* ── STATS BAR ────────────────────────────────────────────── */}
-      <section className="border-y border-gray-800 py-10 px-6">
-        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {[
-            { label: "Clients Served", value: "150+" },
-            { label: "Years of Experience", value: "5+" },
-            { label: "Projects Delivered", value: "300+" },
-            { label: "Cities Across India", value: "10+" },
-          ].map(({ label, value }) => (
-            <div key={label}>
-              <p className="text-3xl font-bold text-teal-400">{value}</p>
-              <p className="text-gray-500 text-sm mt-1">{label}</p>
-            </div>
-          ))}
+      <section className="py-16 bg-gradient-to-r from-blue-600 to-cyan-600">
+        <div className="max-w-7xl mx-auto px-6">
+          ```
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            {[
+              {
+                value: "150+",
+                label: "Happy Clients",
+              },
+              {
+                value: "300+",
+                label: "Projects Completed",
+              },
+              {
+                value: "5+",
+                label: "Years Experience",
+              },
+              {
+                value: "100%",
+                label: "Client Satisfaction",
+              },
+            ].map((item) => (
+              <div
+                key={item.label}
+                className="bg-white rounded-2xl shadow-lg p-8 hover:scale-105 transition duration-300"
+              >
+                <h3 className="text-4xl font-bold text-blue-600 mb-2">
+                  {item.value}
+                </h3>
+
+                <p className="text-slate-600 font-medium">{item.label}</p>
+              </div>
+            ))}
+          </div>
+          ```
         </div>
       </section>
 
       {/* ── MAIN CONTENT ─────────────────────────────────────────── */}
-      <section className="py-16 px-6 md:px-20 max-w-6xl mx-auto space-y-12 text-gray-300 leading-relaxed">
-        <div className="grid md:grid-cols-2 gap-10 items-start">
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-4">Who We Are</h2>
-            <p className="mb-4">
-              KidiWebTech is a leading digital marketing agency in Hyderabad,
-              Telangana, specializing in SEO services, website development,
-              Google Ads, and social media marketing. We help businesses build a
-              strong online presence and achieve long-term growth.
+      <section className="py-20 px-6 md:px-20 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-10">
+          ```
+          {/* Who We Are */}
+          <div className="bg-white rounded-3xl shadow-xl p-8 border border-blue-100">
+            <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+              <span className="text-2xl">🚀</span>
+            </div>
+
+            <h2 className="text-3xl font-bold text-slate-900 mb-5">
+              Who We Are
+            </h2>
+
+            <p className="text-slate-600 leading-8 mb-4">
+              KidiWebTech is a leading SEO company and web development agency in
+              Hyderabad helping businesses improve their online visibility,
+              attract more customers and increase revenue.
             </p>
-            <p>
-              As a trusted web development company in India, we create fast,
-              responsive, and SEO-friendly websites that rank higher on Google
-              and convert visitors into customers.
+
+            <p className="text-slate-600 leading-8">
+              We specialize in Website Development, SEO Services, Google Ads
+              Management, Ecommerce Development, Local SEO and Digital Marketing
+              solutions tailored for startups, small businesses and enterprises.
             </p>
           </div>
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-4">Our Mission</h2>
-            <p className="mb-4">
-              Our mission is to help businesses in Hyderabad and across India
-              grow online using powerful digital marketing strategies. We aim to
-              build long-term partnerships and deliver consistent, measurable
-              results.
+          {/* Mission */}
+          <div className="bg-white rounded-3xl shadow-xl p-8 border border-cyan-100">
+            <div className="w-14 h-14 bg-cyan-100 rounded-xl flex items-center justify-center mb-6">
+              <span className="text-2xl">🎯</span>
+            </div>
+
+            <h2 className="text-3xl font-bold text-slate-900 mb-5">
+              Our Mission
+            </h2>
+
+            <p className="text-slate-600 leading-8 mb-4">
+              Our mission is to help businesses across Hyderabad establish a
+              strong digital presence through SEO-driven marketing and
+              conversion-focused websites.
             </p>
-            <p>
-              We don't just build websites — we create digital assets that
-              generate revenue through strategic SEO, paid ads, and conversion
-              optimization.
+
+            <p className="text-slate-600 leading-8">
+              We focus on delivering measurable growth through Local SEO, Search
+              Engine Optimization, Website Design, Google Ads Campaigns and
+              strategic digital marketing.
             </p>
+          </div>
+          ```
+        </div>
+
+        {/* Why Choose Us */}
+
+        <div className="mt-16 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-3xl p-10 text-white">
+          <h2 className="text-3xl font-bold mb-8 text-center">
+            Why Choose KidiWebTech?
+          </h2>
+
+          <div className="grid md:grid-cols-4 gap-6">
+            <div>
+              <h3 className="font-bold text-xl mb-2">SEO Experts</h3>
+              <p className="text-blue-100">
+                Proven SEO strategies that improve rankings.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-bold text-xl mb-2">Custom Websites</h3>
+              <p className="text-blue-100">
+                Fast, responsive and conversion-focused websites.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-bold text-xl mb-2">Google Ads</h3>
+              <p className="text-blue-100">
+                High-converting ad campaigns for business growth.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-bold text-xl mb-2">Local SEO</h3>
+              <p className="text-blue-100">
+                Dominate local search results in Hyderabad.
+              </p>
+            </div>
           </div>
         </div>
 
         {/* Services */}
         {/* Services */}
-        <section className="py-24 bg-gradient-to-b from-gray-950 to-black">
+        <section className="py-24 bg-gradient-to-b from-white to-blue-50">
           <div className="max-w-7xl mx-auto px-6">
+            ```
             <div className="text-center mb-16">
-              <span className="text-teal-400 uppercase tracking-widest text-sm">
+              <span className="text-blue-600 uppercase tracking-widest text-sm font-semibold">
                 Our Services
               </span>
 
-              <h2 className="text-4xl md:text-5xl font-bold text-white mt-4">
-                Digital Marketing & Web Development Services
+              <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-4">
+                SEO, Web Development & Digital Marketing Services
               </h2>
 
-              <p className="text-gray-400 mt-6 max-w-3xl mx-auto">
-                Helping businesses across Hyderabad improve rankings, generate
-                quality leads and increase online revenue.
+              <p className="text-slate-600 mt-6 max-w-3xl mx-auto">
+                Helping businesses across Hyderabad improve search rankings,
+                generate quality leads and increase revenue through strategic
+                digital marketing solutions.
               </p>
             </div>
-
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 {
                   title: "SEO Services Hyderabad",
                   href: "/seo-services-hyderabad",
-                  desc: "Improve Google rankings and increase organic traffic.",
+                  desc: "Improve Google rankings and organic visibility.",
                 },
                 {
                   title: "Local SEO Hyderabad",
                   href: "/local-seo-services-hyderabad",
-                  desc: "Rank higher in local searches and Google Maps.",
+                  desc: "Dominate local search results and Google Maps.",
                 },
                 {
                   title: "Website Development",
-                  href: "/web-development-company-hyderabad",
-                  desc: "Professional websites designed for conversions.",
+                  href: "/website-development-services",
+                  desc: "Fast, responsive and SEO-friendly websites.",
                 },
                 {
                   title: "Google Ads Hyderabad",
-                  href: "/google-ads-agency-hyderabad",
-                  desc: "Generate leads using ROI-focused ad campaigns.",
+                  href: "/google-ads-agency",
+                  desc: "Generate leads with high-converting campaigns.",
                 },
                 {
                   title: "Web Design Hitech City",
                   href: "/web-design-company-hitech-city",
-                  desc: "Modern websites for startups and IT companies.",
+                  desc: "Professional websites for startups and IT companies.",
                 },
                 {
                   title: "Web Design Madhapur",
                   href: "/web-design-company-madhapur",
-                  desc: "Custom website design services in Madhapur.",
+                  desc: "Custom website design for growing businesses.",
                 },
                 {
                   title: "Web Design Kukatpally",
                   href: "/web-design-company-kukatpally",
-                  desc: "SEO-friendly websites for local businesses.",
+                  desc: "Modern business websites that convert.",
                 },
                 {
                   title: "Web Design Secunderabad",
                   href: "/web-design-company-secunderabad",
-                  desc: "Responsive websites built for growth.",
+                  desc: "SEO-focused websites designed for growth.",
                 },
               ].map((service) => (
                 <Link
                   key={service.title}
                   href={service.href}
-                  className="group bg-gray-900 border border-gray-800 hover:border-teal-500 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2"
+                  className="group bg-white border border-blue-100 hover:border-blue-500 rounded-3xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
                 >
-                  <h3 className="text-white font-semibold text-xl mb-3 group-hover:text-teal-400">
+                  <h3 className="text-slate-900 font-bold text-xl mb-3 group-hover:text-blue-600">
                     {service.title}
                   </h3>
 
-                  <p className="text-gray-400 text-sm leading-7">
+                  <p className="text-slate-600 text-sm leading-7">
                     {service.desc}
                   </p>
 
-                  <span className="inline-block mt-4 text-teal-400 text-sm">
+                  <span className="inline-block mt-5 text-blue-600 font-medium">
                     Learn More →
                   </span>
                 </Link>
               ))}
             </div>
+            ```
           </div>
         </section>
 
-        {/* Why Choose */}
-        <div>
-          <h2 className="text-2xl font-bold text-white mb-4">
-            Why Choose KidiWebTech?
-          </h2>
-          <ul className="space-y-3">
-            {[
-              "Performance-driven approach focused on real business results",
-              "SEO-first strategy integrated into every website we build",
-              "Experienced team with 5+ years in digital marketing",
-              "Transparent reporting and regular performance updates",
-              "Custom solutions tailored to your industry and goals",
-            ].map((point) => (
-              <li key={point} className="flex gap-3 items-start">
-                <span className="text-teal-400 mt-1">✓</span>
-                <span>{point}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-<section className="py-20 bg-black">
-  <div className="max-w-7xl mx-auto px-6">
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-6">
+            ```
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-slate-900">
+                Why Choose KidiWebTech?
+              </h2>
 
-    <h2 className="text-4xl font-bold text-center text-white mb-12">
-      Areas We Serve In Hyderabad
-    </h2>
+              <p className="text-slate-600 mt-4">
+                Trusted SEO and Website Development Company in Hyderabad
+              </p>
+            </div>
+            <div className="grid md:grid-cols-5 gap-6">
+              {[
+                "SEO Experts",
+                "Custom Websites",
+                "Google Ads Specialists",
+                "Local SEO Experts",
+                "24/7 Support",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="bg-blue-50 rounded-2xl p-6 text-center"
+                >
+                  <h3 className="font-bold text-slate-900">{item}</h3>
+                </div>
+              ))}
+            </div>
+            
+          </div>
+        </section>
 
-    <div className="grid md:grid-cols-3 gap-5">
+        <section className="py-20 bg-slate-50">
+          <div className="max-w-7xl mx-auto px-6">
+            ```
+            <h2 className="text-4xl font-bold text-center text-slate-900 mb-12">
+              Areas We Serve In Hyderabad
+            </h2>
+            <div className="grid md:grid-cols-3 gap-5">
+              {[
+                "Hitech City",
+                "Madhapur",
+                "Kukatpally",
+                "Banjara Hills",
+                "Secunderabad",
+                "Hyderabad SEO Services",
+              ].map((area) => (
+                <div
+                  key={area}
+                  className="bg-white border border-blue-100 hover:border-blue-500 p-5 rounded-2xl text-center shadow-sm"
+                >
+                  {area}
+                </div>
+              ))}
+            </div>
+            ```
+          </div>
+      </section>
 
-      {[
-        "/web-design-company-hitech-city",
-        "/web-design-company-madhapur",
-        "/web-design-company-kukatpally",
-        "/web-design-company-banjara-hills",
-        "/web-design-company-secunderabad",
-        "/seo-services-hyderabad"
-      ].map((link) => (
-        <Link
-          key={link}
-          href={link}
-          className="bg-gray-900 border border-gray-800 hover:border-teal-500 p-5 rounded-xl text-center"
-        >
-          {link.replaceAll("/", "").replaceAll("-", " ")}
-        </Link>
-      ))}
-
-    </div>
-
-  </div>
-</section>
         {/* FAQ */}
         <div>
           <h2 className="text-2xl font-bold text-white mb-6">
