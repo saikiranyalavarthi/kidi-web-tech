@@ -35,7 +35,7 @@ export default function HeroSection() {
               <span className="w-2 h-2 rounded-full bg-[#2563EB]"></span>
 
               <span className="text-sm font-semibold text-[#2563EB]">
-                Trusted Digital Marketing Agency In Hyderabad
+                Trusted Website Design & Development Company In Hyderabad
               </span>
             </div>
 
@@ -52,7 +52,7 @@ export default function HeroSection() {
                 max-w-4xl
               "
             >
-              SEO & Web Development That Drives Real Business Growth
+              Website Design, Web Development & SEO Services In Hyderabad
             </h1>
 
             {/* SUBTEXT */}
@@ -66,24 +66,25 @@ export default function HeroSection() {
                 max-w-2xl
               "
             >
-              KIDIWEBTECH helps businesses grow with SEO, Google Ads, website
-              development, and digital marketing solutions that generate more
-              traffic, leads, and sales.
+              KIDIWEBTECH specializes in professional website design, custom web
+              development, and SEO services. We build fast, modern,
+              mobile-friendly, and SEO-optimized websites that help businesses
+              attract more customers, generate quality leads, and grow online.
             </p>
 
             {/* SOCIAL PROOF */}
 
             <div className="flex flex-wrap gap-5 mt-8 text-sm font-medium text-gray-600">
               <div className="flex items-center gap-2">
-                ⭐ <span>100+ Happy Clients</span>
+                ⭐ <span>100+ Successful Projects</span>
               </div>
 
               <div className="flex items-center gap-2">
-                🚀 <span>SEO Experts</span>
+                💻 <span>Web Development Experts</span>
               </div>
 
               <div className="flex items-center gap-2">
-                📍 <span>Hyderabad Based Agency</span>
+                📍 <span>Hyderabad Based Company</span>
               </div>
             </div>
 
@@ -105,11 +106,11 @@ export default function HeroSection() {
                   transition duration-300
                 "
               >
-                Get Free SEO Audit
+                Get Free Consultation
               </Link>
 
               <Link
-                href="/services"
+                href="/projects"
                 className="
                   inline-flex items-center justify-center
                   px-8 py-4 rounded-full
@@ -122,7 +123,7 @@ export default function HeroSection() {
                   transition duration-300
                 "
               >
-                Explore Services
+                Explore Projects
               </Link>
             </div>
 
@@ -130,7 +131,7 @@ export default function HeroSection() {
 
             <div className="mt-12">
               <p className="text-sm uppercase tracking-[3px] text-gray-400 mb-5">
-                Trusted By Businesses Across India
+                Trusted Website Design & Development Company In Hyderabad
               </p>
 
               <div className="flex flex-wrap items-center gap-8 opacity-70">
@@ -220,7 +221,7 @@ export default function HeroSection() {
                 "
               >
                 <p className="uppercase tracking-[4px] text-white/80 text-sm">
-                  Digital Growth Agency
+                  Website Development
                 </p>
 
                 <h2
@@ -231,12 +232,13 @@ export default function HeroSection() {
                     leading-tight
                   "
                 >
-                  Build. Rank. Grow.
+                  Design. Develop. Grow.
                 </h2>
 
                 <p className="mt-5 text-white/90 leading-8">
-                  Helping businesses scale online through SEO, website
-                  development, Google Ads, and digital marketing strategies.
+                  Helping businesses grow online through professional website
+                  design, custom web development, and SEO services that deliver
+                  measurable results.
                 </p>
               </div>
 
@@ -244,12 +246,12 @@ export default function HeroSection() {
 
               <div className="grid grid-cols-2 gap-5 mt-8">
                 {[
+                  "Website Design",
+                  "Web Development",
                   "SEO Services",
-                  "Website Development",
-                  "App Development",
-                  "Google Ads",
-                  "Branding",
-                  "Social Media",
+                  "React Development",
+                  "Next.js Development",
+                  "Website Redesign",
                 ].map((item, index) => (
                   <div
                     key={index}

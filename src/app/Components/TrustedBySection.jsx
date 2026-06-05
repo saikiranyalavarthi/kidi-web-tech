@@ -55,7 +55,7 @@ export default function TrustedBySection() {
               text-[#0F172A]
             "
           >
-            Trusted SEO & Web Development Company
+            Trusted Website Design, Web Development & SEO Company
           </h2>
 
           {/* DESCRIPTION */}
@@ -70,9 +70,9 @@ export default function TrustedBySection() {
               mx-auto
             "
           >
-            KIDIWEBTECH helps startups and businesses grow online through SEO,
-            website development, Google Ads, branding, and digital marketing
-            solutions designed to increase traffic, leads, and sales.
+            KIDIWEBTECH helps startups, local businesses, and enterprises build
+            professional websites, improve Google rankings, and grow online with
+            modern website design, custom web development, and SEO services.
           </p>
         </div>
 
@@ -116,8 +116,6 @@ export default function TrustedBySection() {
 
         {/* STATS */}
 
-      
-
         {/* CTA SECTION */}
 
         <div
@@ -143,7 +141,7 @@ export default function TrustedBySection() {
 
             <div>
               <p className="uppercase tracking-[4px] text-white/70 text-sm">
-                DIGITAL GROWTH PARTNER
+                WEBSITE DESIGN & SEO EXPERTS
               </p>
 
               <h3
@@ -154,7 +152,7 @@ export default function TrustedBySection() {
                   leading-tight
                 "
               >
-                Helping Businesses Build Powerful Online Presence
+                Build High-Converting Websites That Drive Business Growth
               </h3>
 
               <p
@@ -166,9 +164,9 @@ export default function TrustedBySection() {
                   max-w-2xl
                 "
               >
-                We help businesses generate more traffic, leads, and sales
-                through SEO, website development, Google Ads, branding, and
-                digital marketing strategies.
+                We create modern, responsive, and SEO-friendly websites that
+                help businesses attract more customers, improve online
+                visibility, and generate quality leads through organic search.
               </p>
 
               {/* BUTTON */}
@@ -195,12 +193,12 @@ export default function TrustedBySection() {
 
             <div className="grid grid-cols-2 gap-5">
               {[
+                "Website Design",
+                "Web Development",
                 "SEO Services",
-                "Website Development",
-                "App Development",
-                "Google Ads",
-                "Social Media",
-                "Branding",
+                "React Development",
+                "Next.js Development",
+                "Website Redesign",
               ].map((item, index) => (
                 <div
                   key={index}

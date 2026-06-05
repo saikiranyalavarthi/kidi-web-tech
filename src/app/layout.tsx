@@ -28,24 +28,31 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.kidiwebtech.com"),
 
   title: {
-    default: "KidiWebTech – Digital Marketing & SEO Agency in Hyderabad",
+    default:
+      "Website Design, Web Development & SEO Services Hyderabad | KidiWebTech",
     template: "%s | KidiWebTech",
   },
 
   description:
-    "KidiWebTech is a leading digital marketing agency in Hyderabad offering SEO services, website development, Google Ads management, social media marketing, and web hosting solutions.",
+    "KidiWebTech provides professional website design, web development, React.js development, Next.js development, website redesign, and SEO services in Hyderabad. Build fast, SEO-friendly websites that grow your business.",
 
   keywords: [
-  "digital marketing agency Hyderabad",
-  "SEO services Hyderabad",
-  "website development Hyderabad",
-  "Google Ads expert Hyderabad",
-  "social media marketing agency Hyderabad",
-  "best SEO company in Hyderabad",
-  "web design company Hyderabad",
-  "online marketing services India",
-  "KidiWebTech digital agency",
-],
+    "website design company Hyderabad",
+    "web development company Hyderabad",
+    "website development services Hyderabad",
+    "custom website development",
+    "website redesign services",
+    "responsive website design",
+    "React JS development services",
+    "Next.js development company",
+    "SEO services Hyderabad",
+    "SEO company Hyderabad",
+    "technical SEO services",
+    "local SEO services",
+    "web design agency Hyderabad",
+    "business website development",
+    "KidiWebTech",
+  ],
 
   alternates: {
     canonical: "/",
@@ -68,30 +75,33 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-  title: "KidiWebTech – Digital Growth Partner in Hyderabad",
-  description:
-    "SEO, web development, Google Ads, social media marketing & hosting services in Hyderabad.",
-  url: "https://www.kidiwebtech.com",
-  siteName: "KidiWebTech",
-  locale: "en_IN",
-  type: "website",
-  images: [
-    {
-      url: "https://www.kidiwebtech.com/og-image.jpg",
-      width: 1200,
-      height: 630,
-      alt: "KidiWebTech Digital Marketing Agency",
-    },
-  ],
-},
+    title:
+      "Website Design, Web Development & SEO Services Hyderabad | KidiWebTech",
+    description:
+      "Professional website design, web development, React.js, Next.js, and SEO services in Hyderabad.",
+    url: "https://www.kidiwebtech.com",
+    siteName: "KidiWebTech",
+    locale: "en_IN",
+    type: "website",
+    images: [
+      {
+        url: "https://www.kidiwebtech.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "KidiWebTech Website Development & SEO Services",
+      },
+    ],
+  },
 
   twitter: {
-  card: "summary_large_image",
-  title: "KidiWebTech – Digital Marketing Agency",
-  description:
-    "Grow your business with SEO, web development & performance marketing services.",
-  images: ["https://www.kidiwebtech.com/og-image.jpg"],
-},
+    card: "summary_large_image",
+    title:
+      "Website Design, Web Development & SEO Services Hyderabad | KidiWebTech",
+    description:
+      "Grow your business with professional website development and SEO services.",
+    images: ["https://www.kidiwebtech.com/og-image.jpg"],
+  },
+
 };
 /* =========================
    ROOT LAYOUT
