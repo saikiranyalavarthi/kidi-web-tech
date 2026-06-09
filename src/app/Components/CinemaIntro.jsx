@@ -377,7 +377,8 @@ export default function CinemaIntro() {
               }}
             >
               <Image
-  src="/logo.png"
+  src="/kidiwebtech-logo.png
+"
   alt="KidiWebTech"
   width={400}
   height={120}
