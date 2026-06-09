@@ -16,7 +16,7 @@ export default function Herotrain() {
   };
 
   return (
-    <section className="relative h-[40vh] md:h-screen w-full overflow-hidden bg-black  ">
+    <section className="relative h-[40vh] md:h-screen w-full overflow-hidden bg-black mt-16"> 
       <video
         key={currentVideo}
         ref={videoRef}
