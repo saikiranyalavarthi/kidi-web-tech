@@ -7,7 +7,6 @@ import Link from "next/link";
 export default function SEOPage() {
   return (
     <div className="bg-white text-white overflow-hidden">
-
       {/* ================= HERO ================= */}
       <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-black text-blue-600">
@@ -44,13 +43,13 @@ export default function SEOPage() {
             <p className="text-black mb-4">
               Whether you run a local retail store, a growing e-commerce brand,
               a real estate company, or a B2B SaaS product, our SEO services are
-              tailored to match your business goals and target audience. We don't
-              believe in one-size-fits-all packages — every strategy we build
-              is custom, competitive, and result-oriented.
+              tailored to match your business goals and target audience. We
+              don't believe in one-size-fits-all packages — every strategy we
+              build is custom, competitive, and result-oriented.
             </p>
             <p className="text-black">
-              Our SEO solutions are designed to deliver long-term organic growth,
-              increased brand visibility, and a consistent pipeline of
+              Our SEO solutions are designed to deliver long-term organic
+              growth, increased brand visibility, and a consistent pipeline of
               high-quality leads. We help you compete and win in even the most
               competitive niches in Hyderabad and across India.
             </p>
@@ -146,11 +145,11 @@ export default function SEOPage() {
             Technical SEO forms the foundation of all your SEO efforts. If your
             website has crawl errors, broken links, slow loading times, or poor
             mobile usability, no amount of content or backlinks will get you to
-            the top of Google. Our technical SEO specialists fix Core Web
-            Vitals issues, improve page speed, resolve indexing errors, set up
-            proper XML sitemaps and robots.txt files, implement structured data
-            (schema markup), and ensure your site is 100% crawlable and
-            indexable by Google.
+            the top of Google. Our technical SEO specialists fix Core Web Vitals
+            issues, improve page speed, resolve indexing errors, set up proper
+            XML sitemaps and robots.txt files, implement structured data (schema
+            markup), and ensure your site is 100% crawlable and indexable by
+            Google.
           </p>
 
           {/* Local SEO */}
@@ -375,8 +374,8 @@ export default function SEOPage() {
           <p className="text-black mb-4">
             You always know exactly what we're doing and why. Our monthly
             reports are detailed, plain-language summaries of every action
-            taken, every ranking gained, and every metric that matters. We
-            don't hide behind jargon or vague activity reports.
+            taken, every ranking gained, and every metric that matters. We don't
+            hide behind jargon or vague activity reports.
           </p>
 
           <h3 className="text-xl font-semibold mb-2 text-white">
@@ -451,18 +450,22 @@ export default function SEOPage() {
           </h2>
 
           <p className="text-black mt-4">
-            <strong className="text-white">How long does SEO take to show results?</strong>
+            <strong className="text-white">
+              How long does SEO take to show results?
+            </strong>
             <br />
             SEO typically takes 3–6 months to show noticeable improvements in
             rankings and traffic, though this depends on your current website
             authority, competition, and the keywords you're targeting. Highly
             competitive niches may take 9–12 months for significant first-page
-            rankings. The results, however, are durable and compound over time
-            — unlike paid ads that stop the moment you pause your budget.
+            rankings. The results, however, are durable and compound over time —
+            unlike paid ads that stop the moment you pause your budget.
           </p>
 
           <p className="text-black mt-4">
-            <strong className="text-white">Is SEO better than Google Ads?</strong>
+            <strong className="text-white">
+              Is SEO better than Google Ads?
+            </strong>
             <br />
             Both have their place. Google Ads deliver instant visibility and are
             great for promotions, product launches, and immediate lead
@@ -473,7 +476,9 @@ export default function SEOPage() {
           </p>
 
           <p className="text-black mt-4">
-            <strong className="text-white">How much do SEO services cost in Hyderabad?</strong>
+            <strong className="text-white">
+              How much do SEO services cost in Hyderabad?
+            </strong>
             <br />
             SEO pricing varies based on the scope of work, competition level,
             and your business goals. We offer flexible monthly packages for
@@ -483,27 +488,33 @@ export default function SEOPage() {
           </p>
 
           <p className="text-black mt-4">
-            <strong className="text-white">Do you guarantee first-page rankings?</strong>
+            <strong className="text-white">
+              Do you guarantee first-page rankings?
+            </strong>
             <br />
             No ethical SEO company can guarantee specific rankings because
-            Google's algorithm is outside anyone's control. What we do
-            guarantee is a data-driven strategy, full transparency, consistent
-            execution, and measurable improvements in your organic visibility
-            over time. Our track record of results speaks for itself.
+            Google's algorithm is outside anyone's control. What we do guarantee
+            is a data-driven strategy, full transparency, consistent execution,
+            and measurable improvements in your organic visibility over time.
+            Our track record of results speaks for itself.
           </p>
 
           <p className="text-black mt-4">
-            <strong className="text-white">Will SEO work for my local business in Hyderabad?</strong>
+            <strong className="text-white">
+              Will SEO work for my local business in Hyderabad?
+            </strong>
             <br />
-            Absolutely. Local SEO is one of the highest ROI strategies for
-            local businesses. Whether you're a clinic in Banjara Hills, a
-            restaurant in Jubilee Hills, or a law firm in Secunderabad — if
-            your customers are searching for your services in Hyderabad, we can
-            help you get in front of them.
+            Absolutely. Local SEO is one of the highest ROI strategies for local
+            businesses. Whether you're a clinic in Banjara Hills, a restaurant
+            in Jubilee Hills, or a law firm in Secunderabad — if your customers
+            are searching for your services in Hyderabad, we can help you get in
+            front of them.
           </p>
 
           <p className="text-black mt-4">
-            <strong className="text-white">What makes your SEO different from other agencies?</strong>
+            <strong className="text-white">
+              What makes your SEO different from other agencies?
+            </strong>
             <br />
             We focus on revenue and business outcomes, not just rankings and
             traffic metrics. Every strategy we build is tied to your actual
@@ -521,9 +532,9 @@ export default function SEOPage() {
         </h2>
         <p className="text-black mb-2 max-w-2xl mx-auto">
           Get a free, no-obligation SEO audit worth ₹5,000 — and discover
-          exactly what's holding your website back from the top of Google.
-          Our team will analyze your site, review your competition, and present
-          a clear roadmap to ranking success.
+          exactly what's holding your website back from the top of Google. Our
+          team will analyze your site, review your competition, and present a
+          clear roadmap to ranking success.
         </p>
         <p className="text-black mb-6">
           Let's grow your business with the power of organic search.
@@ -535,7 +546,6 @@ export default function SEOPage() {
           Get Free SEO Audit →
         </Link>
       </section>
-
     </div>
   );
 }

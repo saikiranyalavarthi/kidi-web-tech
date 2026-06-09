@@ -655,6 +655,7 @@ export default function TechnicalSEOPage() {
           Get Free Technical Audit →
         </Link>
       </section>
+      
     </div>
   );
 }

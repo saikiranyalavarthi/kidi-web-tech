@@ -643,6 +643,57 @@ export default function WebDevelopmentPage() {
           Get Free Consultation →
         </Link>
       </section>
+      <section className="py-12 bg-black">
+        <div className="container mx-auto px-4">
+          <h2 className="mb-8 text-center text-3xl font-bold text-white">
+            Website Development Services Across Hyderabad
+          </h2>
+
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
+            <a
+              href="/web-development-company-india"
+              className="rounded-lg border border-white bg-black p-4 text-center text-white transition hover:bg-white hover:text-black"
+            >
+              Web Development Company India
+            </a>
+
+            <a
+              href="/web-design-company-hitech-city"
+              className="rounded-lg border border-white bg-black p-4 text-center text-white transition hover:bg-white hover:text-black"
+            >
+              Website Development Services Hitech City
+            </a>
+
+            <a
+              href="/web-design-company-madhapur"
+              className="rounded-lg border border-white bg-black p-4 text-center text-white transition hover:bg-white hover:text-black"
+            >
+              Website Development Services Madhapur
+            </a>
+
+            <a
+              href="/web-design-company-secunderabad"
+              className="rounded-lg border border-white bg-black p-4 text-center text-white transition hover:bg-white hover:text-black"
+            >
+              Website Development Services Secunderabad
+            </a>
+
+            <a
+              href="/web-design-company-kukatpally"
+              className="rounded-lg border border-white bg-black p-4 text-center text-white transition hover:bg-white hover:text-black"
+            >
+              Website Development Services Kukatpally
+            </a>
+
+            <a
+              href="/web-design-company-banjara-hills"
+              className="rounded-lg border border-white bg-black p-4 text-center text-white transition hover:bg-white hover:text-black"
+            >
+              Website Development Services Banjara Hills
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
