@@ -292,7 +292,7 @@ export default function Footer() {
                     href="mailto:info@kidiwebtech.com"
                     className="text-gray-700 hover:text-[#2563EB]"
                   >
-                    info@kidiwebtech.com
+                    kidiwebtech3482@gmail.com
                   </a>
                 </div>
               </div>
