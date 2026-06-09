@@ -5,21 +5,24 @@ import Link from "next/link";
 
 export default function TechnicalSEOPage() {
   return (
-    <div className="bg-black text-white overflow-hidden">
+    <div
+      className="bg-white text-blue-700 overflow-hidden mt-6
+    "
+    >
       {/* ================= HERO ================= */}
       <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           Technical SEO Services in{" "}
           <span className="gradient-text">Hyderabad</span>
         </h1>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+        <p className="text-black max-w-3xl mx-auto text-lg">
           Fix the hidden technical issues holding your website back from
           Google's first page. Our expert technical SEO services in Hyderabad
           cover site speed, Core Web Vitals, crawlability, structured data, and
           everything in between — so search engines can find, index, and rank
           your website with confidence.
         </p>
-        <nav className="mt-6 text-sm text-gray-500">
+        <nav className="mt-6 text-sm text-black">
           <Link href="/">Home</Link>
           <span className="mx-2">›</span>
           <Link href="/seo-services">SEO Services</Link>
@@ -35,7 +38,7 @@ export default function TechnicalSEOPage() {
             <h2 className="text-3xl font-extrabold mb-6">
               What Is Technical SEO?
             </h2>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               Technical SEO refers to the process of optimizing the
               infrastructure of your website so that search engine crawlers like
               Googlebot can efficiently access, crawl, interpret, and index your
@@ -43,14 +46,14 @@ export default function TechnicalSEOPage() {
               off-page SEO focuses on backlinks, technical SEO is the foundation
               that supports all your other SEO efforts.
             </p>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               Without a technically sound website, even the best content and
               strongest backlinks won't get you to the top of Google. If your
               pages are slow, have crawl errors, duplicate content, broken
               links, or poor mobile usability, Google will struggle to properly
               rank your site — no matter how good the rest of your strategy is.
             </p>
-            <p className="text-gray-400">
+            <p className="text-black">
               Our technical SEO specialists in Hyderabad diagnose and fix every
               technical barrier standing between your website and higher
               rankings — turning your site into a high-performance,
@@ -58,7 +61,7 @@ export default function TechnicalSEOPage() {
             </p>
           </div>
           <Image
-           src="/SEO/kidiwebtechimage1.jpg"
+            src="/SEO/kidiwebtechimage1.jpg"
             alt="Technical SEO Services Hyderabad"
             width={600}
             height={400}
@@ -72,7 +75,7 @@ export default function TechnicalSEOPage() {
         <h2 className="text-2xl font-bold mb-4 gradient-text">
           Why Technical SEO Is the Foundation of Every Successful SEO Strategy
         </h2>
-        <p className="text-gray-400 mb-4">
+        <p className="text-black mb-4">
           Many businesses invest heavily in content creation and link building
           but see disappointing results — because they've skipped the most
           critical step: fixing their website's technical foundation. Google
@@ -81,7 +84,7 @@ export default function TechnicalSEOPage() {
           Googlebot to crawl and understand your pages, your content will never
           rank — no matter how good it is.
         </p>
-        <p className="text-gray-400 mb-4">
+        <p className="text-black mb-4">
           In 2024 and beyond, Google's ranking algorithm places enormous weight
           on user experience signals. Core Web Vitals — which measure loading
           speed, interactivity, and visual stability — are now confirmed Google
@@ -89,7 +92,7 @@ export default function TechnicalSEOPage() {
           loading, or takes too long to respond will rank lower than competitors
           who have invested in technical performance optimization.
         </p>
-        <p className="text-gray-400 mb-4">
+        <p className="text-black mb-4">
           Technical SEO is also what protects your rankings from sudden drops.
           Algorithm updates, accidental canonicalization errors, duplicate
           content issues, and broken structured data can all cause dramatic
@@ -97,7 +100,7 @@ export default function TechnicalSEOPage() {
           acts as insurance against these risks — and gives you a stable
           platform to grow from month after month.
         </p>
-        <p className="text-gray-400">
+        <p className="text-black">
           Our technical SEO audits and implementation services cover over 150
           individual checkpoints across site architecture, crawlability,
           indexability, page speed, structured data, mobile optimization, and
@@ -117,7 +120,7 @@ export default function TechnicalSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             1. Comprehensive Technical SEO Audit
           </h3>
-          <p className="text-gray-400 mb-3">
+          <p className="text-black mb-3">
             Our technical SEO audit is the starting point for all our
             engagements. We run an exhaustive analysis of your website using
             industry-leading tools including Screaming Frog, Google Search
@@ -125,7 +128,7 @@ export default function TechnicalSEOPage() {
             review — to identify every technical issue affecting your search
             performance.
           </p>
-          <p className="text-gray-400">
+          <p className="text-black">
             The audit covers crawl errors, indexation issues, redirect chains,
             broken internal and external links, duplicate content, thin content
             pages, cannibalization issues, page speed bottlenecks, Core Web
@@ -141,13 +144,13 @@ export default function TechnicalSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             2. Website Crawlability & Indexation Optimization
           </h3>
-          <p className="text-gray-400 mb-3">
+          <p className="text-black mb-3">
             If Google can't crawl or index your pages, they simply won't appear
             in search results. Crawlability and indexation problems are among
             the most serious technical SEO issues a website can have — and
             they're more common than most business owners realize.
           </p>
-          <p className="text-gray-400">
+          <p className="text-black">
             We audit and optimize your robots.txt file to ensure the right pages
             are accessible to search engine crawlers. We review and submit
             optimized XML sitemaps to Google Search Console. We identify and
@@ -164,7 +167,7 @@ export default function TechnicalSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             3. Core Web Vitals & Page Speed Optimization
           </h3>
-          <p className="text-gray-400 mb-3">
+          <p className="text-black mb-3">
             Google's Core Web Vitals — Largest Contentful Paint (LCP), First
             Input Delay (FID) / Interaction to Next Paint (INP), and Cumulative
             Layout Shift (CLS) — are official Google ranking factors that
@@ -172,7 +175,7 @@ export default function TechnicalSEOPage() {
             lower rankings and higher bounce rates as frustrated users leave
             your slow-loading pages.
           </p>
-          <p className="text-gray-400">
+          <p className="text-black">
             Our technical team implements comprehensive page speed optimizations
             including image compression and next-gen format conversion (WebP,
             AVIF), lazy loading implementation, JavaScript and CSS minification
@@ -189,13 +192,13 @@ export default function TechnicalSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             4. Mobile SEO & Responsive Optimization
           </h3>
-          <p className="text-gray-400 mb-3">
+          <p className="text-black mb-3">
             Google uses mobile-first indexing, meaning it primarily uses the
             mobile version of your website to determine your rankings — even for
             desktop searches. If your mobile experience is poor, your rankings
             will suffer across all devices.
           </p>
-          <p className="text-gray-400">
+          <p className="text-black">
             We audit your website's mobile performance including responsive
             design implementation, tap target sizing, font legibility on small
             screens, viewport configuration, mobile page speed, and the
@@ -211,7 +214,7 @@ export default function TechnicalSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             5. Structured Data & Schema Markup Implementation
           </h3>
-          <p className="text-gray-400 mb-3">
+          <p className="text-black mb-3">
             Structured data (schema markup) is code added to your website that
             helps Google understand the content and context of your pages more
             precisely. It also enables rich results — enhanced search listings
@@ -219,7 +222,7 @@ export default function TechnicalSEOPage() {
             information, and more directly in the search results — dramatically
             improving your click-through rates.
           </p>
-          <p className="text-gray-400">
+          <p className="text-black">
             We implement the full range of relevant schema types for your
             business including Organization, LocalBusiness, Product, FAQPage,
             HowTo, Article, BreadcrumbList, SiteLinks SearchBox, and Review
@@ -234,14 +237,14 @@ export default function TechnicalSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             6. Duplicate Content & Canonicalization
           </h3>
-          <p className="text-gray-400 mb-3">
+          <p className="text-black mb-3">
             Duplicate content — where the same or very similar content appears
             on multiple URLs — confuses Google and dilutes the ranking power of
             your pages. This is a surprisingly common issue caused by URL
             parameters, HTTP vs HTTPS versions, www vs non-www versions,
             trailing slash variations, and pagination.
           </p>
-          <p className="text-gray-400">
+          <p className="text-black">
             We identify all sources of duplicate content across your website and
             resolve them through proper canonical tag implementation, 301
             redirects, URL parameter handling in Google Search Console, and
@@ -256,14 +259,14 @@ export default function TechnicalSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             7. HTTPS & Website Security Optimization
           </h3>
-          <p className="text-gray-400 mb-3">
+          <p className="text-black mb-3">
             HTTPS is a confirmed Google ranking factor, and websites without
             valid SSL certificates are flagged as "Not Secure" in Chrome —
             destroying user trust and hurting conversions. Security is no longer
             optional for websites that want to rank well and convert visitors
             into customers.
           </p>
-          <p className="text-gray-400">
+          <p className="text-black">
             We ensure your website is properly secured with a valid SSL
             certificate, correctly configured to redirect all HTTP traffic to
             HTTPS, and free from mixed content errors (where HTTP resources are
@@ -279,14 +282,14 @@ export default function TechnicalSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             8. Site Architecture & Internal Linking Optimization
           </h3>
-          <p className="text-gray-400 mb-3">
+          <p className="text-black mb-3">
             A well-structured website with logical navigation and strong
             internal linking distributes PageRank (link equity) efficiently
             across your pages, helps users find what they need quickly, and
             makes it easy for search engines to discover and understand the
             relationships between your content.
           </p>
-          <p className="text-gray-400">
+          <p className="text-black">
             We audit and redesign your site architecture to ensure a flat,
             logical hierarchy where every important page can be reached within
             three clicks from the homepage. We build a strategic internal
@@ -303,14 +306,14 @@ export default function TechnicalSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             9. Redirect Audit & Management
           </h3>
-          <p className="text-gray-400 mb-3">
+          <p className="text-black mb-3">
             Redirect chains, redirect loops, and incorrectly implemented
             redirects are a silent killer of SEO performance. Every time a
             redirect occurs, a small amount of link equity is lost. Multiple
             redirects in a chain compound this loss and slow down page load
             times — both of which negatively impact your rankings.
           </p>
-          <p className="text-gray-400">
+          <p className="text-black">
             We audit all existing redirects on your website, eliminate
             unnecessary chains and loops, convert temporary (302) redirects to
             permanent (301) redirects where appropriate, and set up a clean
@@ -326,7 +329,7 @@ export default function TechnicalSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             10. Google Search Console & Analytics Setup
           </h3>
-          <p className="text-gray-400">
+          <p className="text-black">
             Accurate data is the foundation of every good SEO decision. We set
             up and configure Google Search Console, Google Analytics 4, and Bing
             Webmaster Tools for your website — ensuring you have complete
@@ -337,7 +340,7 @@ export default function TechnicalSEOPage() {
           </p>
         </div>
 
-        <ul className="list-disc pl-6 text-gray-400 space-y-2">
+        <ul className="list-disc pl-6 text-black space-y-2">
           <li>Technical SEO Audit (150+ checkpoints)</li>
           <li>Crawlability & Indexation Fixes</li>
           <li>Core Web Vitals & Page Speed Optimization</li>
@@ -356,12 +359,12 @@ export default function TechnicalSEOPage() {
         <h2 className="text-2xl font-bold mb-4 gradient-text">
           Who Needs Technical SEO Services?
         </h2>
-        <p className="text-gray-400 mb-4">
+        <p className="text-black mb-4">
           Technical SEO is essential for any business that relies on organic
           search traffic. However, it becomes especially critical in certain
           situations:
         </p>
-        <ul className="list-disc pl-6 text-gray-400 space-y-3">
+        <ul className="list-disc pl-6 text-black space-y-3">
           <li>
             <strong className="text-white">New websites launching:</strong>{" "}
             Start with a technically perfect foundation so you can rank faster
@@ -411,7 +414,7 @@ export default function TechnicalSEOPage() {
         <h3 className="text-xl font-semibold mb-2 text-white">
           Step 1 — Deep Technical Audit
         </h3>
-        <p className="text-gray-400 mb-5">
+        <p className="text-black mb-5">
           We begin with a comprehensive technical crawl of your entire website,
           analyzing over 150 individual technical factors. Every issue is
           documented, categorized by severity (critical, high, medium, low), and
@@ -422,7 +425,7 @@ export default function TechnicalSEOPage() {
         <h3 className="text-xl font-semibold mb-2 text-white">
           Step 2 — Prioritized Implementation Roadmap
         </h3>
-        <p className="text-gray-400 mb-5">
+        <p className="text-black mb-5">
           Not all technical issues carry equal weight. We prioritize fixes based
           on their potential ranking impact and implementation complexity, so
           the most impactful improvements are made first. You receive a clear
@@ -433,7 +436,7 @@ export default function TechnicalSEOPage() {
         <h3 className="text-xl font-semibold mb-2 text-white">
           Step 3 — Implementation & Developer Collaboration
         </h3>
-        <p className="text-gray-400 mb-5">
+        <p className="text-black mb-5">
           Our technical SEO team can implement fixes directly (for CMS-based
           sites like WordPress, Shopify, and Webflow) or work closely with your
           development team to provide precise technical specifications and
@@ -445,7 +448,7 @@ export default function TechnicalSEOPage() {
         <h3 className="text-xl font-semibold mb-2 text-white">
           Step 4 — Verification & Quality Assurance
         </h3>
-        <p className="text-gray-400 mb-5">
+        <p className="text-black mb-5">
           After every implementation, we re-crawl the affected pages, verify
           fixes in Google Search Console, re-test Core Web Vitals, and confirm
           that all issues have been fully resolved without introducing new
@@ -455,7 +458,7 @@ export default function TechnicalSEOPage() {
         <h3 className="text-xl font-semibold mb-2 text-white">
           Step 5 — Ongoing Monitoring & Maintenance
         </h3>
-        <p className="text-gray-400 mb-5">
+        <p className="text-black mb-5">
           Technical SEO is not a one-time project — it's an ongoing discipline.
           New pages get added, code gets updated, and Google's standards evolve.
           We continuously monitor your website's technical health through
@@ -466,7 +469,7 @@ export default function TechnicalSEOPage() {
         <h3 className="text-xl font-semibold mb-2 text-white">
           Step 6 — Monthly Technical SEO Reporting
         </h3>
-        <p className="text-gray-400">
+        <p className="text-black">
           Every month you receive a detailed technical SEO report covering
           issues found and resolved, Core Web Vitals scores, crawl health
           metrics from Google Search Console, indexation status, and the impact
@@ -484,7 +487,7 @@ export default function TechnicalSEOPage() {
         <h3 className="text-xl font-semibold mb-2 text-white">
           ✅ Deep Technical Expertise
         </h3>
-        <p className="text-gray-400 mb-5">
+        <p className="text-black mb-5">
           Our technical SEO specialists have hands-on experience with a wide
           range of CMS platforms (WordPress, Shopify, Magento, Webflow, custom
           builds), JavaScript frameworks (React, Next.js, Vue, Angular), and
@@ -496,7 +499,7 @@ export default function TechnicalSEOPage() {
         <h3 className="text-xl font-semibold mb-2 text-white">
           ✅ 150+ Point Audit Methodology
         </h3>
-        <p className="text-gray-400 mb-5">
+        <p className="text-black mb-5">
           Our proprietary audit framework covers every technical SEO factor
           known to influence Google rankings — from XML sitemaps and robots.txt
           to JavaScript rendering issues, hreflang implementation, log file
@@ -506,7 +509,7 @@ export default function TechnicalSEOPage() {
         <h3 className="text-xl font-semibold mb-2 text-white">
           ✅ Direct Implementation, Not Just Recommendations
         </h3>
-        <p className="text-gray-400 mb-5">
+        <p className="text-black mb-5">
           Many SEO agencies provide audit reports but leave implementation to
           your team. We go further — our technical team can implement fixes
           directly on most CMS platforms, or provide developer-ready
@@ -517,7 +520,7 @@ export default function TechnicalSEOPage() {
         <h3 className="text-xl font-semibold mb-2 text-white">
           ✅ Proven Results Across Diverse Industries
         </h3>
-        <p className="text-gray-400 mb-5">
+        <p className="text-black mb-5">
           We have resolved technical SEO issues and driven measurable ranking
           improvements for businesses across Hyderabad in real estate,
           healthcare, e-commerce, SaaS, education, and more. Our track record of
@@ -528,7 +531,7 @@ export default function TechnicalSEOPage() {
         <h3 className="text-xl font-semibold mb-2 text-white">
           ✅ Transparent, Jargon-Free Communication
         </h3>
-        <p className="text-gray-400">
+        <p className="text-black">
           Technical SEO can sound intimidating, but we make it easy to
           understand. Every issue we identify and every action we take is
           explained in plain, business-friendly language — so you always
@@ -536,7 +539,7 @@ export default function TechnicalSEOPage() {
           have on your rankings and traffic.
         </p>
 
-        <ul className="list-disc pl-6 text-gray-400 space-y-2 mt-6">
+        <ul className="list-disc pl-6 text-black space-y-2 mt-6">
           <li>Deep Technical & Development Expertise</li>
           <li>150+ Point Audit Framework</li>
           <li>Direct CMS Implementation</li>
@@ -552,7 +555,7 @@ export default function TechnicalSEOPage() {
           Technical SEO FAQs
         </h2>
 
-        <p className="text-gray-400 mt-4">
+        <p className="text-black mt-4">
           <strong className="text-white">
             What is the difference between technical SEO and on-page SEO?
           </strong>
@@ -565,7 +568,7 @@ export default function TechnicalSEOPage() {
           provides the foundation on which on-page SEO performs.
         </p>
 
-        <p className="text-gray-400 mt-6">
+        <p className="text-black mt-6">
           <strong className="text-white">
             How do I know if my website has technical SEO problems?
           </strong>
@@ -579,7 +582,7 @@ export default function TechnicalSEOPage() {
           stands.
         </p>
 
-        <p className="text-gray-400 mt-6">
+        <p className="text-black mt-6">
           <strong className="text-white">
             Does technical SEO help with Google rankings directly?
           </strong>
@@ -592,7 +595,7 @@ export default function TechnicalSEOPage() {
           additional content or link building work.
         </p>
 
-        <p className="text-gray-400 mt-6">
+        <p className="text-black mt-6">
           <strong className="text-white">
             How long does a technical SEO audit take?
           </strong>
@@ -604,7 +607,7 @@ export default function TechnicalSEOPage() {
           completion.
         </p>
 
-        <p className="text-gray-400 mt-6">
+        <p className="text-black mt-6">
           <strong className="text-white">
             Can you fix technical SEO issues on any CMS?
           </strong>
@@ -616,7 +619,7 @@ export default function TechnicalSEOPage() {
           specifications to ensure correct implementation.
         </p>
 
-        <p className="text-gray-400 mt-6">
+        <p className="text-black mt-6">
           <strong className="text-white">
             How much do technical SEO services cost in Hyderabad?
           </strong>
@@ -635,13 +638,13 @@ export default function TechnicalSEOPage() {
         <h2 className="text-3xl font-bold mb-4">
           Is Your Website Technically Holding You Back?
         </h2>
-        <p className="text-gray-400 mb-2 max-w-2xl mx-auto">
+        <p className="text-black mb-2 max-w-2xl mx-auto">
           Get a free technical SEO health check and find out exactly what's
           preventing your website from ranking on Google's first page. Our
           technical SEO team in Hyderabad will analyze your site and give you a
           clear, actionable diagnosis — no jargon, no fluff.
         </p>
-        <p className="text-gray-400 mb-6">
+        <p className="text-black mb-6">
           Stop leaving rankings on the table. Let's fix your technical SEO
           today.
         </p>

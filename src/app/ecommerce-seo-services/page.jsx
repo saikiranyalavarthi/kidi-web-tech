@@ -5,14 +5,14 @@ import Link from "next/link";
 
 export default function EcommerceSEOPage() {
   return (
-    <div className="bg-black text-white overflow-hidden">
+    <div className="bg-white text-black overflow-hidden mt-6">
       {/* ================= HERO ================= */}
       <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           Ecommerce SEO Services in{" "}
           <span className="gradient-text">Hyderabad</span>
         </h1>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+        <p className="text-black max-w-3xl mx-auto text-lg">
           Increase your online store's visibility on Google, rank product and
           category pages for high-intent buyer keywords, and drive consistent
           organic traffic that converts into sales — without relying on paid
@@ -34,14 +34,14 @@ export default function EcommerceSEOPage() {
             <h2 className="text-3xl font-extrabold mb-6">
               Best Ecommerce SEO Company for Online Stores in Hyderabad
             </h2>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               We are a results-driven ecommerce SEO company in Hyderabad,
               specializing in helping online stores rank higher on Google,
               attract more qualified shoppers, and increase revenue through
               organic search. Our ecommerce SEO strategies are built around one
               goal: growing your sales — not just your traffic numbers.
             </p>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               We have deep expertise in optimizing ecommerce websites on all
               major platforms including Shopify, WooCommerce, Magento, and
               custom-built stores. From product page optimization and category
@@ -49,7 +49,7 @@ export default function EcommerceSEOPage() {
               we handle every aspect of your ecommerce SEO so you can focus on
               running your business.
             </p>
-            <p className="text-gray-400">
+            <p className="text-black">
               Whether you are a new online store just launching in Hyderabad or
               an established ecommerce brand looking to scale organic revenue,
               our team has the expertise and proven processes to help you
@@ -67,7 +67,7 @@ export default function EcommerceSEOPage() {
       </section>
 
       {/* ================= CORE SEO CONTENT ================= */}
-      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-gray-400">
+      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-black">
         {/* WHAT IS ECOMMERCE SEO */}
         <div>
           <h2 className="text-2xl font-extrabold gradient-text mb-4">
@@ -590,14 +590,14 @@ export default function EcommerceSEOPage() {
           Ready to Grow Your{" "}
           <span className="gradient-text">Ecommerce Sales</span> with SEO?
         </h2>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-4 text-lg">
+        <p className="text-black max-w-2xl mx-auto mb-4 text-lg">
           Get a free ecommerce SEO audit worth ₹5,000 — and find out exactly why
           your products aren't ranking on Google and what it will take to get
           them there. Our ecommerce SEO experts in Hyderabad will review your
           store, analyze your competitors, and give you a clear roadmap to
           organic revenue growth.
         </p>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-10">
+        <p className="text-black max-w-2xl mx-auto mb-10">
           Stop paying for every click. Start owning your rankings.
         </p>
         <Link

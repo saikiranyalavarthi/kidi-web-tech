@@ -5,13 +5,13 @@ import Link from "next/link";
 
 export default function SEOServicesIndiaPage() {
   return (
-    <div className="bg-black text-white overflow-hidden">
+    <div className="bg-white text-black overflow-hidden mt-6">
       {/* ================= HERO ================= */}
       <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           SEO Services <span className="gradient-text">India</span>
         </h1>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+        <p className="text-black max-w-3xl mx-auto text-lg">
           Results-driven search engine optimisation services for Indian
           businesses — driving organic traffic, qualified leads, and sustainable
           revenue growth through proven on-page, off-page, and technical SEO
@@ -31,7 +31,7 @@ export default function SEOServicesIndiaPage() {
             <h2 className="text-3xl font-extrabold mb-6">
               Professional SEO Services for Indian Businesses
             </h2>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               India's digital economy is growing at a pace unlike anywhere else
               in the world — and the businesses that will win the next decade
               are the ones that own the first page of Google for the searches
@@ -40,7 +40,7 @@ export default function SEOServicesIndiaPage() {
               relying on paid advertising to buy traffic they should be earning
               organically.
             </p>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               Our SEO services in India are built for one purpose: to get your
               website ranking for the keywords that drive real business — and to
               keep it there. Whether you are a local business targeting
@@ -49,7 +49,7 @@ export default function SEOServicesIndiaPage() {
               deliver a strategy that is specific to your business, your market,
               and your goals.
             </p>
-            <p className="text-gray-400">
+            <p className="text-black">
               We do not offer cookie-cutter packages or generic deliverables.
               Every engagement begins with a deep analysis of your current
               visibility, your competitive landscape, and the search demand that
@@ -72,14 +72,14 @@ export default function SEOServicesIndiaPage() {
         <h2 className="text-2xl font-bold mb-4 gradient-text">
           Why SEO Matters for Indian Businesses Right Now
         </h2>
-        <p className="text-gray-400 mb-4">
+        <p className="text-black mb-4">
           India has over 700 million internet users — and that number is growing
           by tens of millions every year. Google processes over 8 billion
           searches in India every month. Your potential customers are searching
           for what you offer, right now, on Google. The question is whether they
           are finding you or your competitors.
         </p>
-        <p className="text-gray-400 mb-4">
+        <p className="text-black mb-4">
           Unlike paid advertising, which stops the moment you stop paying, SEO
           builds a durable, compounding asset — your organic search presence —
           that continues to deliver traffic and leads month after month, year
@@ -88,7 +88,7 @@ export default function SEOServicesIndiaPage() {
           leads themselves tend to convert at higher rates because the customer
           has actively searched for what you offer.
         </p>
-        <p className="text-gray-400">
+        <p className="text-black">
           The window to establish organic dominance in your category is not
           unlimited. Competitors who invest in SEO today will be significantly
           harder to displace in 12 months. The businesses that act now — and act
@@ -103,7 +103,7 @@ export default function SEOServicesIndiaPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Our SEO Services — What&apos;s Included
           </h2>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Our India SEO services cover every dimension of search optimisation
             — from deep technical audits through to content strategy, link
             acquisition, and ongoing performance management. Here is exactly
@@ -114,7 +114,7 @@ export default function SEOServicesIndiaPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             1. Technical SEO Audit &amp; Implementation
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             We conduct a comprehensive technical audit of your website —
             analysing site architecture, crawlability, indexation, page speed,
             Core Web Vitals, mobile usability, structured data, canonical tags,
@@ -129,7 +129,7 @@ export default function SEOServicesIndiaPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             2. Keyword Research &amp; Search Demand Mapping
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Effective SEO begins with understanding the precise language your
             customers use when they search. We conduct in-depth keyword research
             tailored to the Indian market — mapping search volume, competition,
@@ -144,7 +144,7 @@ export default function SEOServicesIndiaPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             3. On-Page SEO Optimisation
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             We optimise every on-page element that Google uses to understand the
             relevance and quality of your content — including title tags, meta
             descriptions, heading hierarchy, body copy, internal linking, image
@@ -159,7 +159,7 @@ export default function SEOServicesIndiaPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             4. Content Strategy &amp; SEO Content Creation
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Content is the fuel of organic search. We develop a comprehensive
             content strategy that identifies every topic cluster, informational
             query, and buyer-journey stage for which your website should be
@@ -174,7 +174,7 @@ export default function SEOServicesIndiaPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             5. Link Building &amp; Digital PR
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Backlinks from authoritative, relevant websites remain one of the
             most powerful ranking signals in Google's algorithm. We build
             high-quality, editorially earned links through a range of white-hat
@@ -189,7 +189,7 @@ export default function SEOServicesIndiaPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             6. Local SEO for Indian Cities
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             For businesses serving customers in specific Indian cities —
             Hyderabad, Bangalore, Mumbai, Delhi, Chennai, Pune, and beyond —
             local SEO is a distinct discipline requiring a dedicated strategy.
@@ -204,7 +204,7 @@ export default function SEOServicesIndiaPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             7. E-Commerce SEO
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             E-commerce SEO in India requires a specialist approach — managing
             thousands of product and category pages, structured data for product
             listings, faceted navigation and duplicate content issues, and the
@@ -219,7 +219,7 @@ export default function SEOServicesIndiaPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             8. SEO Reporting &amp; Performance Analytics
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             We deliver transparent, detailed monthly performance reports
             covering keyword ranking movements, organic traffic growth,
             conversion metrics, backlink acquisition, and a full audit of work
@@ -229,7 +229,7 @@ export default function SEOServicesIndiaPage() {
             approach based on real performance signals.
           </p>
 
-          <ul className="list-disc pl-6 text-gray-400 space-y-2 mt-2">
+          <ul className="list-disc pl-6 text-black space-y-2 mt-2">
             <li>Technical SEO Audit &amp; Implementation</li>
             <li>Keyword Research &amp; Search Demand Mapping</li>
             <li>On-Page SEO Optimisation</li>
@@ -246,7 +246,7 @@ export default function SEOServicesIndiaPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Our SEO Process — How We Work
           </h2>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Every SEO engagement follows a structured, transparent process
             designed to maximise results while keeping you fully informed at
             every stage.
@@ -255,7 +255,7 @@ export default function SEOServicesIndiaPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 1 — Discovery &amp; Audit
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We begin with a comprehensive audit of your current organic
             performance, technical health, backlink profile, and competitive
             landscape — establishing a clear baseline and identifying the
@@ -265,7 +265,7 @@ export default function SEOServicesIndiaPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 2 — Keyword Research &amp; Strategy
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We map the full universe of search demand relevant to your business
             and build a keyword strategy that informs every content and
             optimisation decision throughout the engagement.
@@ -274,7 +274,7 @@ export default function SEOServicesIndiaPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 3 — Technical Fixes &amp; On-Page Optimisation
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We implement all technical and on-page optimisations — ensuring your
             site is fully crawlable, correctly structured, and sending the
             strongest possible relevance signals to Google for your target
@@ -284,7 +284,7 @@ export default function SEOServicesIndiaPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 4 — Content Creation &amp; Publishing
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We create and publish high-quality SEO content on a consistent
             schedule — building topical authority and expanding your site's
             footprint across your target keyword landscape.
@@ -293,7 +293,7 @@ export default function SEOServicesIndiaPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 5 — Link Building &amp; Authority Growth
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We execute a sustained, white-hat link acquisition programme —
             building the backlink authority your site needs to outrank
             competitors for high-value keywords.
@@ -302,13 +302,13 @@ export default function SEOServicesIndiaPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 6 — Monthly Reporting &amp; Strategy Refinement
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We report on all key metrics monthly, hold regular strategy calls,
             and continuously refine the approach based on performance data and
             evolving search algorithm signals.
           </p>
 
-          <ul className="list-disc pl-6 text-gray-400 space-y-2 mt-2">
+          <ul className="list-disc pl-6 text-black space-y-2 mt-2">
             <li>Discovery &amp; Audit</li>
             <li>Keyword Research &amp; Strategy</li>
             <li>Technical Fixes &amp; On-Page Optimisation</li>
@@ -323,11 +323,11 @@ export default function SEOServicesIndiaPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Industries We Serve
           </h2>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We deliver SEO services across the full range of industries
             competing for organic visibility in India:
           </p>
-          <ul className="list-disc pl-6 text-gray-400 space-y-2">
+          <ul className="list-disc pl-6 text-black space-y-2">
             <li>
               <strong className="text-white">Healthcare &amp; Medical:</strong>{" "}
               Hospitals, clinics, diagnostic centres, dental practices, Ayurveda
@@ -385,7 +385,7 @@ export default function SEOServicesIndiaPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Why Choose Our SEO Services in India?
           </h2>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             There are hundreds of agencies claiming to offer SEO in India. Here
             is what genuinely sets our service apart:
           </p>
@@ -393,7 +393,7 @@ export default function SEOServicesIndiaPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ India-Specific Expertise
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We understand the Indian search landscape — regional language
             queries, local intent patterns, and the competitive dynamics of
             every major Indian metro and vertical. We do not apply a Western
@@ -403,7 +403,7 @@ export default function SEOServicesIndiaPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ No Black-Hat Shortcuts
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Every strategy we implement is 100% white-hat and Google-compliant.
             We build durable organic visibility — not short-term rankings that
             collapse with the next algorithm update or result in a manual
@@ -413,7 +413,7 @@ export default function SEOServicesIndiaPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ Full-Stack SEO Team
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Technical SEOs, content strategists, link builders, and developers —
             all under one roof. We do not outsource critical SEO work to
             freelancers or offshore vendors with no accountability for results.
@@ -422,7 +422,7 @@ export default function SEOServicesIndiaPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ Transparent Reporting
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Monthly reports covering rankings, traffic, conversions, and work
             completed. No vanity metrics. No hiding behind "SEO takes time" when
             results are not materialising.
@@ -431,14 +431,14 @@ export default function SEOServicesIndiaPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ Integrated Digital Strategy
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             SEO works best alongside GMB optimisation, local SEO, and content
             marketing. We offer all three — and integrate them into a single
             coherent strategy that maximises your total organic visibility
             across every surface where your customers are searching.
           </p>
 
-          <ul className="list-disc pl-6 text-gray-400 space-y-2 mt-2">
+          <ul className="list-disc pl-6 text-black space-y-2 mt-2">
             <li>India-Specific Market Expertise</li>
             <li>100% White-Hat, Google-Compliant Strategies</li>
             <li>In-House Full-Stack SEO Team</li>
@@ -452,12 +452,12 @@ export default function SEOServicesIndiaPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             What Results Can You Expect from SEO in India?
           </h2>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             SEO is a medium-to-long-term investment — but with a technically
             sound strategy and consistent execution, the trajectory is
             predictable:
           </p>
-          <ul className="list-disc pl-6 text-gray-400 space-y-2">
+          <ul className="list-disc pl-6 text-black space-y-2">
             <li>
               <strong className="text-white">Month 1–2:</strong> Technical audit
               complete, all critical fixes implemented, keyword strategy
@@ -492,7 +492,7 @@ export default function SEOServicesIndiaPage() {
             Frequently Asked Questions — SEO Services India
           </h2>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               How long does SEO take to show results in India?
             </strong>
@@ -507,7 +507,7 @@ export default function SEOServicesIndiaPage() {
             the consistency of content and link-building activity.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               Do you offer SEO services for regional Indian languages?
             </strong>
@@ -519,7 +519,7 @@ export default function SEOServicesIndiaPage() {
             configuration for multilingual sites.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               What is the difference between local SEO and national SEO?
             </strong>
@@ -535,7 +535,7 @@ export default function SEOServicesIndiaPage() {
             integrated strategies that cover both dimensions simultaneously.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               How much do SEO services in India cost?
             </strong>
@@ -549,7 +549,7 @@ export default function SEOServicesIndiaPage() {
             proposal.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               Can you guarantee first-page rankings on Google?
             </strong>
@@ -563,7 +563,7 @@ export default function SEOServicesIndiaPage() {
             organic growth for our clients in the Indian market.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               Do you work with startups and small businesses?
             </strong>
@@ -585,13 +585,13 @@ export default function SEOServicesIndiaPage() {
         <h2 className="text-3xl font-bold mb-4">
           Ready to Grow Your Organic Traffic?
         </h2>
-        <p className="text-gray-400 mb-2 max-w-2xl mx-auto">
+        <p className="text-black mb-2 max-w-2xl mx-auto">
           Get a free, no-obligation SEO audit for your website — and find out
           exactly what is holding your rankings back, what your competitors are
           doing that you are not, and what a realistic growth roadmap looks like
           for your business.
         </p>
-        <p className="text-gray-400 mb-6">
+        <p className="text-black mb-6">
           Let&apos;s get your business to the top of Google — and keep it there.
         </p>
         <Link

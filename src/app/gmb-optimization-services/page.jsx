@@ -5,13 +5,13 @@ import Link from "next/link";
 
 export default function GMBOptimizationServicesPage() {
   return (
-    <div className="bg-black text-white overflow-hidden">
+    <div className="bg-white text-black overflow-hidden mt-6">
       {/* ================= HERO ================= */}
       <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           GMB Optimization <span className="gradient-text">Services</span>
         </h1>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+        <p className="text-black max-w-3xl mx-auto text-lg">
           Expert Google My Business (GMB) optimization services that get your
           business ranking in the Google Local Pack, Google Maps, and local
           search results — driving more calls, website visits, direction
@@ -34,7 +34,7 @@ export default function GMBOptimizationServicesPage() {
             <h2 className="text-3xl font-extrabold mb-6">
               Professional Google My Business Optimization Services
             </h2>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               Your Google Business Profile (GBP) — formerly known as Google My
               Business — is the most powerful free tool available to any local
               business. It is the listing that appears when someone searches for
@@ -44,7 +44,7 @@ export default function GMBOptimizationServicesPage() {
               appears at the very top of local search results, above all organic
               website results.
             </p>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               Yet the vast majority of businesses treat their Google Business
               Profile as a set-and-forget listing — filling in the basics and
               never touching it again. The result is a profile that is
@@ -52,7 +52,7 @@ export default function GMBOptimizationServicesPage() {
               for the majority of relevant queries their potential customers are
               typing into Google every single day.
             </p>
-            <p className="text-gray-400">
+            <p className="text-black">
               Our GMB optimization services transform your Google Business
               Profile from a basic directory listing into a powerful, fully
               optimised local search asset — one that consistently appears in
@@ -76,7 +76,7 @@ export default function GMBOptimizationServicesPage() {
         <h2 className="text-2xl font-bold mb-4 gradient-text">
           What Is Google My Business (GMB) and Why Does It Matter?
         </h2>
-        <p className="text-gray-400 mb-4">
+        <p className="text-black mb-4">
           Google My Business — now officially called Google Business Profile —
           is a free platform provided by Google that allows businesses to manage
           how they appear across Google Search and Google Maps. Your GBP listing
@@ -84,7 +84,7 @@ export default function GMBOptimizationServicesPage() {
           photos, reviews, services, and more — directly in Google's search
           results, without the user ever needing to visit your website.
         </p>
-        <p className="text-gray-400 mb-4">
+        <p className="text-black mb-4">
           When someone searches for a local service — "plumber in Hyderabad",
           "best restaurant near me", "dentist in Banjara Hills" — Google
           displays a Local Pack at the top of the results page: a map with three
@@ -94,7 +94,7 @@ export default function GMBOptimizationServicesPage() {
           captures the majority of local search clicks, and reaches customers at
           the exact moment they are ready to make a decision.
         </p>
-        <p className="text-gray-400 mb-4">
+        <p className="text-black mb-4">
           Google determines which businesses appear in the Local Pack based on
           three core factors: Relevance (how well your profile matches what the
           customer is searching for), Distance (how close your business is to
@@ -104,7 +104,7 @@ export default function GMBOptimizationServicesPage() {
           all three factors — maximising your chances of appearing in the Local
           Pack for every relevant search in your target area.
         </p>
-        <p className="text-gray-400">
+        <p className="text-black">
           With over 5 billion searches happening on Google every day — and
           nearly half of all searches having local intent — a fully optimised
           Google Business Profile is not a luxury for local businesses. It is
@@ -120,7 +120,7 @@ export default function GMBOptimizationServicesPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Our GMB Optimization Services — What We Do
           </h2>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Our Google My Business optimization service covers every element of
             your profile — from initial setup and verification through to
             ongoing monthly management and performance monitoring. Here is
@@ -131,7 +131,7 @@ export default function GMBOptimizationServicesPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             1. GBP Audit & Competitor Benchmarking
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             We begin with a thorough audit of your existing Google Business
             Profile — assessing completeness, accuracy, category selection,
             keyword integration, photo quality and volume, review health,
@@ -148,7 +148,7 @@ export default function GMBOptimizationServicesPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             2. Profile Setup, Verification & Reinstatement
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             If your business does not yet have a Google Business Profile — or if
             your existing profile is unverified, suspended, or in need of
             reinstatement — we handle the complete setup, verification, and
@@ -165,13 +165,13 @@ export default function GMBOptimizationServicesPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             3. Core Profile Optimisation
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             The foundation of effective GMB optimization is ensuring that every
             field in your profile is complete, accurate, and strategically
             optimised for the keywords your customers are searching. We
             optimise:
           </p>
-          <ul className="list-disc pl-6 text-gray-400 space-y-2 mb-6">
+          <ul className="list-disc pl-6 text-black space-y-2 mb-6">
             <li>
               <strong className="text-white">Business Name:</strong> Correctly
               formatted per Google's guidelines — no keyword stuffing that could
@@ -229,7 +229,7 @@ export default function GMBOptimizationServicesPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             4. Services & Products Listings
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Google Business Profile allows businesses to list their specific
             services and products directly on their profile — with names,
             descriptions, and pricing. This is a significantly underutilised
@@ -246,7 +246,7 @@ export default function GMBOptimizationServicesPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             5. Photo & Video Optimisation
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Visual content on your Google Business Profile serves two critical
             functions: it signals to Google that your profile is active and
             complete (which supports rankings), and it directly influences
@@ -255,7 +255,7 @@ export default function GMBOptimizationServicesPage() {
             more clicks, calls, and direction requests than profiles with few or
             low-quality images.
           </p>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             We audit your existing photo library, provide clear guidance on the
             types of photos and videos that perform best for your business
             category, optimise image file names and metadata before upload, and
@@ -270,7 +270,7 @@ export default function GMBOptimizationServicesPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             6. Google Posts Management
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Google Posts are short updates — similar to social media posts —
             that appear directly on your Google Business Profile in search
             results. They can be used to share offers, announcements, events,
@@ -280,7 +280,7 @@ export default function GMBOptimizationServicesPage() {
             Regular posting activity also signals to Google that your profile is
             actively managed, which supports your local rankings.
           </p>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             We create and publish regular, high-quality Google Posts for your
             business — crafting each post with a clear message, a compelling
             call to action, an optimised image, and relevant keywords. Our
@@ -293,7 +293,7 @@ export default function GMBOptimizationServicesPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             7. Q&A Monitoring & Management
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             The Q&amp;A section of your Google Business Profile allows anyone —
             including your customers and members of the public — to ask and
             answer questions about your business. Left unmanaged, this section
@@ -311,7 +311,7 @@ export default function GMBOptimizationServicesPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             8. Review Generation & Response Management
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Google reviews are one of the most powerful local ranking signals
             and the most visible trust factor for customers deciding which
             business to choose from a Local Pack result. Review quantity,
@@ -320,7 +320,7 @@ export default function GMBOptimizationServicesPage() {
             Pack rankings and your click-through and conversion rates from local
             search.
           </p>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             We implement a systematic, Google-compliant review generation
             programme that encourages your satisfied customers to leave genuine
             reviews — using ethical outreach sequences, review request email and
@@ -335,7 +335,7 @@ export default function GMBOptimizationServicesPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             9. GBP Insights Tracking & Monthly Reporting
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Google Business Profile provides a range of performance insights —
             including how many times your profile appeared in search, how many
             people clicked through to your website, how many called your phone
@@ -346,7 +346,7 @@ export default function GMBOptimizationServicesPage() {
             performance is trending over time.
           </p>
 
-          <ul className="list-disc pl-6 text-gray-400 space-y-2 mt-2">
+          <ul className="list-disc pl-6 text-black space-y-2 mt-2">
             <li>GBP Audit & Competitor Benchmarking</li>
             <li>Profile Setup, Verification & Reinstatement</li>
             <li>Core Profile Optimisation (All Fields)</li>
@@ -364,14 +364,14 @@ export default function GMBOptimizationServicesPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             How Google Ranks Businesses in the Local Pack
           </h2>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Understanding how Google decides which businesses appear in the
             Local Pack is the foundation of effective GMB optimization. Google
             uses three primary factors to evaluate and rank local businesses:
           </p>
 
           <h3 className="text-xl font-semibold mb-2 text-white">Relevance</h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Relevance refers to how well your Google Business Profile matches
             what someone is searching for. A complete, well-optimised profile
             that clearly communicates what your business does — through your
@@ -382,7 +382,7 @@ export default function GMBOptimizationServicesPage() {
           </p>
 
           <h3 className="text-xl font-semibold mb-2 text-white">Distance</h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Distance refers to how far your business location is from the
             location of the person searching — or, for searches that specify a
             location ("dentist in Banjara Hills"), from the location mentioned
@@ -394,7 +394,7 @@ export default function GMBOptimizationServicesPage() {
           </p>
 
           <h3 className="text-xl font-semibold mb-2 text-white">Prominence</h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Prominence refers to how well-known and trusted your business is —
             both online and offline. It is determined by the volume and quality
             of your Google reviews, your overall star rating, your backlink
@@ -405,7 +405,7 @@ export default function GMBOptimizationServicesPage() {
             over time — and it is where our ongoing GMB optimization service
             delivers the most compounding value.
           </p>
-          <p className="text-gray-400">
+          <p className="text-black">
             Our GMB optimization programme is designed to systematically improve
             all three factors — with every action we take tied to improving your
             relevance signals, correctly configuring your distance and service
@@ -420,13 +420,13 @@ export default function GMBOptimizationServicesPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Industries We Serve with GMB Optimization
           </h2>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Our GMB optimization services are relevant to any business with a
             local customer base — and we bring proven expertise across the full
             range of industries that benefit from strong Google Business Profile
             visibility:
           </p>
-          <ul className="list-disc pl-6 text-gray-400 space-y-2">
+          <ul className="list-disc pl-6 text-black space-y-2">
             <li>
               <strong className="text-white">Healthcare & Medical:</strong>{" "}
               Hospitals, clinics, dental practices, physiotherapy centres,
@@ -499,7 +499,7 @@ export default function GMBOptimizationServicesPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Our GMB Optimization Process — How We Work
           </h2>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             We follow a structured, transparent process for every GMB
             optimization engagement — ensuring that every action is purposeful,
             measurable, and tied to improving your Local Pack visibility and the
@@ -509,7 +509,7 @@ export default function GMBOptimizationServicesPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 1 — GBP Audit & Discovery
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We begin with a comprehensive audit of your current Google Business
             Profile — assessing every field, every photo, your review profile,
             your posting history, your Q&amp;A section, your insights data, and
@@ -523,7 +523,7 @@ export default function GMBOptimizationServicesPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 2 — Keyword Research & Profile Strategy
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We research the specific keywords your local customers are using to
             find businesses like yours — including service terms, neighbourhood
             modifiers, "near me" variations, and intent signals — and build a
@@ -535,7 +535,7 @@ export default function GMBOptimizationServicesPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 3 — Full Profile Optimisation
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We implement comprehensive optimisations across every field and
             feature of your Google Business Profile — categories, description,
             services, products, attributes, hours, photos, and NAP information —
@@ -547,7 +547,7 @@ export default function GMBOptimizationServicesPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 4 — Review Generation Programme Launch
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We design and implement your customised review generation programme
             — creating the outreach templates, request sequences, and internal
             processes your team needs to consistently collect genuine reviews
@@ -558,7 +558,7 @@ export default function GMBOptimizationServicesPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 5 — Ongoing Monthly Management
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Every month we publish fresh Google Posts, upload new photos,
             monitor and respond to reviews, manage Q&amp;A, update any profile
             information that changes, and track your GBP performance metrics.
@@ -571,7 +571,7 @@ export default function GMBOptimizationServicesPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 6 — Monthly Reporting & Strategy Review
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Every month we deliver a clear performance report covering your GBP
             insights (search impressions, website clicks, calls, direction
             requests), your Local Pack ranking movements for target keywords,
@@ -581,7 +581,7 @@ export default function GMBOptimizationServicesPage() {
             remain.
           </p>
 
-          <ul className="list-disc pl-6 text-gray-400 space-y-2 mt-2">
+          <ul className="list-disc pl-6 text-black space-y-2 mt-2">
             <li>GBP Audit & Discovery</li>
             <li>Keyword Research & Profile Strategy</li>
             <li>Full Profile Optimisation</li>
@@ -596,7 +596,7 @@ export default function GMBOptimizationServicesPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Why Choose Our GMB Optimization Services?
           </h2>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             There are dozens of agencies offering Google My Business
             optimization. Here is what genuinely sets our service apart and why
             local businesses trust us with their most valuable local search
@@ -606,7 +606,7 @@ export default function GMBOptimizationServicesPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ Deep GBP Expertise
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Google Business Profile is a complex, frequently updated platform —
             with algorithm changes, new features, and policy updates happening
             regularly. Our team lives and breathes GBP optimisation. We stay
@@ -618,7 +618,7 @@ export default function GMBOptimizationServicesPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ 100% Google-Compliant Strategies
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We follow Google's guidelines strictly and exclusively. We never use
             fake reviews, review gating, keyword stuffing in business names,
             spam categories, or any other tactic that violates Google's policies
@@ -631,7 +631,7 @@ export default function GMBOptimizationServicesPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ Integrated Local SEO Approach
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             GBP optimisation alone is not the complete picture of local SEO. Our
             GMB optimization service is designed to work in concert with broader
             local SEO activities — on-page website optimisation, citation
@@ -643,7 +643,7 @@ export default function GMBOptimizationServicesPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ Transparent Reporting on What Matters
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We report on the metrics that directly reflect business outcomes —
             calls generated, website clicks, direction requests, and search
             impressions — not vanity numbers that look impressive but have no
@@ -654,7 +654,7 @@ export default function GMBOptimizationServicesPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ Multi-Location GMB Management
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             For businesses with multiple locations — whether two branches in
             Hyderabad or a franchise network across multiple cities — we manage
             GBP optimisation at scale. Every location gets a fully optimised,
@@ -664,7 +664,7 @@ export default function GMBOptimizationServicesPage() {
             local market.
           </p>
 
-          <ul className="list-disc pl-6 text-gray-400 space-y-2 mt-2">
+          <ul className="list-disc pl-6 text-black space-y-2 mt-2">
             <li>Deep, Current GBP Platform Expertise</li>
             <li>100% Google-Compliant Strategies Only</li>
             <li>Integrated with Broader Local SEO</li>
@@ -678,14 +678,14 @@ export default function GMBOptimizationServicesPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             What Results Can You Expect from GMB Optimization?
           </h2>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Google Business Profile optimisation often delivers some of the
             fastest visible results in all of local SEO — because many
             businesses are starting from a significantly under-optimised
             baseline. Here is what a realistic improvement trajectory looks
             like:
           </p>
-          <ul className="list-disc pl-6 text-gray-400 space-y-2">
+          <ul className="list-disc pl-6 text-black space-y-2">
             <li>
               <strong className="text-white">Weeks 1–4:</strong> Full profile
               audit complete. Core optimisations implemented across all profile
@@ -727,7 +727,7 @@ export default function GMBOptimizationServicesPage() {
             Frequently Asked Questions — GMB Optimization Services
           </h2>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               What is the difference between Google My Business and Google
               Business Profile?
@@ -742,7 +742,7 @@ export default function GMBOptimizationServicesPage() {
             Google Maps.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               How long does it take for GMB optimization to show results?
             </strong>
@@ -757,7 +757,7 @@ export default function GMBOptimizationServicesPage() {
             significant Local Pack movement much sooner.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               My Google Business Profile was suspended — can you help?
             </strong>
@@ -773,7 +773,7 @@ export default function GMBOptimizationServicesPage() {
             quickly.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               Do you manage GMB for businesses with multiple locations?
             </strong>
@@ -787,7 +787,7 @@ export default function GMBOptimizationServicesPage() {
             customer base.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               Is it against Google's rules to ask customers for reviews?
             </strong>
@@ -802,7 +802,7 @@ export default function GMBOptimizationServicesPage() {
             real customers through ethical, above-board outreach.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               Do I need a physical shopfront to have a Google Business Profile?
             </strong>
@@ -817,7 +817,7 @@ export default function GMBOptimizationServicesPage() {
             with the same rigour and expertise as location-based businesses.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               How much do GMB optimization services cost?
             </strong>
@@ -833,7 +833,7 @@ export default function GMBOptimizationServicesPage() {
             results.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               Can you guarantee that my business will appear in the Google Local
               Pack?
@@ -858,14 +858,14 @@ export default function GMBOptimizationServicesPage() {
         <h2 className="text-3xl font-bold mb-4">
           Ready to Dominate Google's Local Pack?
         </h2>
-        <p className="text-gray-400 mb-2 max-w-2xl mx-auto">
+        <p className="text-black mb-2 max-w-2xl mx-auto">
           Get a free, no-obligation Google Business Profile audit worth ₹3,000 —
           and find out exactly why your business isn't appearing in the Local
           Pack for your most valuable search terms. Our team will analyse every
           element of your profile, benchmark it against your top local
           competitors, and present a clear, actionable optimisation roadmap.
         </p>
-        <p className="text-gray-400 mb-6">
+        <p className="text-black mb-6">
           Let's get your business to the top of Google Maps — and keep it there.
         </p>
         <Link

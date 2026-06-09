@@ -5,13 +5,13 @@ import Link from "next/link";
 
 export default function SEOServicesHyderabadPage() {
   return (
-    <div className="bg-black text-white overflow-hidden">
+    <div className="bg-white text-black overflow-hidden mt-6">
       {/* ================= HERO ================= */}
       <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           SEO Services in <span className="gradient-text">Hyderabad</span>
         </h1>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+        <p className="text-black max-w-3xl mx-auto text-lg">
           Result-driven SEO services in Hyderabad crafted to grow your organic
           traffic, improve your Google rankings, and convert visitors into
           paying customers. We deliver end-to-end search engine optimisation —
@@ -33,7 +33,7 @@ export default function SEOServicesHyderabadPage() {
             <h2 className="text-3xl font-extrabold mb-6">
               Hyderabad's Trusted SEO Services Agency
             </h2>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               We are a specialist SEO agency serving businesses across Hyderabad
               — from startups in Hitech City and Gachibowli to established
               enterprises in Banjara Hills, Secunderabad, and beyond. Our team
@@ -41,7 +41,7 @@ export default function SEOServicesHyderabadPage() {
               expertise, and a data-first approach to deliver consistent,
               long-lasting organic growth for every client we work with.
             </p>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               Hyderabad's business landscape is one of the most competitive in
               India — spanning IT, pharma, real estate, healthcare, retail,
               education, and hospitality. With more consumers turning to Google
@@ -51,7 +51,7 @@ export default function SEOServicesHyderabadPage() {
               win that visibility and convert it into measurable business
               results.
             </p>
-            <p className="text-gray-400">
+            <p className="text-black">
               We don't believe in cookie-cutter packages or vanity metrics.
               Every SEO strategy we build is custom to your business, your
               market, and your goals — and every action we take is tied to
@@ -75,7 +75,7 @@ export default function SEOServicesHyderabadPage() {
           Why SEO Is the Most Valuable Digital Investment for Hyderabad
           Businesses
         </h2>
-        <p className="text-gray-400 mb-4">
+        <p className="text-black mb-4">
           Search Engine Optimisation is the process of improving your website's
           position on Google and other search engines so that potential
           customers find you when they search for the products or services you
@@ -84,7 +84,7 @@ export default function SEOServicesHyderabadPage() {
           intensifying — SEO has become one of the most powerful and
           cost-efficient growth channels available to businesses of all sizes.
         </p>
-        <p className="text-gray-400 mb-4">
+        <p className="text-black mb-4">
           Consider that over 90% of online experiences begin with a search
           engine, and that the top five organic results on Google capture more
           than 67% of all clicks on a given search query. If your business is
@@ -92,7 +92,7 @@ export default function SEOServicesHyderabadPage() {
           your customers are searching, you are handing that traffic — and those
           customers — directly to your competitors, every single day.
         </p>
-        <p className="text-gray-400">
+        <p className="text-black">
           Unlike paid advertising, where visibility stops the moment you pause
           your spend, SEO builds a permanent digital asset. A well-optimised
           website continues to attract qualified, high-intent visitors 24 hours
@@ -110,7 +110,7 @@ export default function SEOServicesHyderabadPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Our SEO Services in Hyderabad
           </h2>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             We offer a full-spectrum SEO service designed to address every
             factor that influences your visibility in Google search — from the
             technical foundation of your website to the quality of your content
@@ -122,7 +122,7 @@ export default function SEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             1. SEO Audit & Competitive Analysis
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Every successful SEO engagement begins with a thorough understanding
             of where you stand today. We conduct a comprehensive SEO audit
             covering your website's technical health, on-page optimisation,
@@ -139,7 +139,7 @@ export default function SEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             2. On-Page SEO Optimisation
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             On-page SEO is the process of optimising each individual page on
             your website to rank higher and attract more relevant organic
             traffic. Our on-page optimisation covers title tags, meta
@@ -156,7 +156,7 @@ export default function SEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             3. Technical SEO & Core Web Vitals Optimisation
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Technical SEO is the engine room of your entire search strategy. No
             matter how strong your content is or how many backlinks you earn, if
             Google cannot efficiently crawl and index your website, your
@@ -174,7 +174,7 @@ export default function SEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             4. Local SEO for Hyderabad Businesses
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             For businesses serving customers in Hyderabad — whether across the
             entire city or in specific localities like Kondapur, Madhapur,
             Kukatpally, Ameerpet, Dilsukhnagar, or LB Nagar — Local SEO is one
@@ -193,7 +193,7 @@ export default function SEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             5. Keyword Research & Content Strategy
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             The foundation of effective SEO is targeting the right keywords —
             the exact search terms that your potential customers in Hyderabad
             are using when they are looking for what you offer. We perform
@@ -211,7 +211,7 @@ export default function SEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             6. Link Building & Off-Page SEO
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Backlinks — links from other websites pointing to yours — remain one
             of Google's most significant ranking signals. The quality,
             relevance, and authority of the websites linking to you directly
@@ -225,7 +225,7 @@ export default function SEOServicesHyderabadPage() {
             sustainably and never puts your site at risk of a Google penalty.
           </p>
 
-          <ul className="list-disc pl-6 text-gray-400 space-y-2 mt-2">
+          <ul className="list-disc pl-6 text-black space-y-2 mt-2">
             <li>SEO Audit & Competitive Analysis</li>
             <li>On-Page SEO Optimisation</li>
             <li>Technical SEO & Core Web Vitals</li>
@@ -240,7 +240,7 @@ export default function SEOServicesHyderabadPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Local SEO Services Across Hyderabad
           </h2>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Hyderabad is a sprawling, fast-growing city with distinct commercial
             hubs, residential zones, and business districts — each with its own
             search behaviour and competitive landscape. Whether your customers
@@ -251,7 +251,7 @@ export default function SEOServicesHyderabadPage() {
             our Local SEO strategies are built to get you visible exactly where
             your customers are searching.
           </p>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We help you appear in Google's Local Pack — the prominent map
             listings that appear at the very top of local search results — as
             well as in the standard organic results for "near me" searches,
@@ -262,7 +262,7 @@ export default function SEOServicesHyderabadPage() {
             designers, salons, real estate offices, educational institutes, and
             any other business that serves a local customer base.
           </p>
-          <p className="text-gray-400">
+          <p className="text-black">
             Our local SEO service includes complete Google Business Profile
             management, local citation building across 50+ Indian and global
             directories, location-specific landing page creation, review
@@ -278,7 +278,7 @@ export default function SEOServicesHyderabadPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Industries We Serve in Hyderabad
           </h2>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Our SEO team brings hands-on experience across a wide range of
             industries that define Hyderabad's dynamic economy. We understand
             the unique search behaviour, competitive landscape, regulatory
@@ -287,7 +287,7 @@ export default function SEOServicesHyderabadPage() {
             than generic. We have delivered measurable SEO results for
             businesses in:
           </p>
-          <ul className="list-disc pl-6 text-gray-400 space-y-2">
+          <ul className="list-disc pl-6 text-black space-y-2">
             <li>IT Services, Software & SaaS Companies</li>
             <li>Real Estate Developers & Property Consultants</li>
             <li>Healthcare, Hospitals, Clinics & Diagnostics</li>
@@ -308,7 +308,7 @@ export default function SEOServicesHyderabadPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Our SEO Process — How We Deliver Results
           </h2>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             We follow a structured, transparent, and results-oriented SEO
             process that ensures every action we take is purposeful, measurable,
             and aligned with your business goals. Here is exactly how we work:
@@ -317,7 +317,7 @@ export default function SEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 1 — Business Discovery & Goal Setting
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We begin every engagement with a thorough discovery session to
             understand your business, your target audience, your revenue goals,
             your current digital presence, and the competitive landscape in your
@@ -330,7 +330,7 @@ export default function SEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 2 — Comprehensive SEO Audit
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We conduct a detailed audit of your website covering over 150 SEO
             factors — including technical health, on-page optimisation, content
             quality and gaps, backlink profile analysis, keyword ranking
@@ -343,7 +343,7 @@ export default function SEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 3 — Keyword Research & Content Mapping
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We identify the most valuable keywords for your business — balancing
             search volume, ranking difficulty, and commercial intent — and map
             them to the right pages on your website. Where gaps exist between
@@ -354,7 +354,7 @@ export default function SEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 4 — Technical & On-Page Implementation
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We implement all technical fixes and on-page optimisations
             identified in the audit — from site speed improvements and crawl
             error resolution to meta tag optimisation, internal linking
@@ -366,7 +366,7 @@ export default function SEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 5 — Content Creation & Optimisation
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Our specialist SEO content writers produce high-quality,
             search-intent-aligned content for your website — including optimised
             service pages, location landing pages, blog articles, FAQs, and
@@ -379,7 +379,7 @@ export default function SEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 6 — Link Building & Authority Development
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We execute a targeted, white-hat link building programme to earn
             high-quality backlinks from authoritative, relevant websites —
             growing your domain authority and signalling to Google that your
@@ -391,7 +391,7 @@ export default function SEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 7 — Reporting, Review & Continuous Improvement
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Every month, we deliver a clear, detailed SEO performance report
             covering keyword ranking movements, organic traffic growth, leads
             and conversions from organic search, backlinks earned, and technical
@@ -400,7 +400,7 @@ export default function SEOServicesHyderabadPage() {
             performance insights and any changes in the competitive landscape.
           </p>
 
-          <ul className="list-disc pl-6 text-gray-400 space-y-2 mt-2">
+          <ul className="list-disc pl-6 text-black space-y-2 mt-2">
             <li>Business Discovery & Goal Setting</li>
             <li>Comprehensive SEO Audit</li>
             <li>Keyword Research & Content Mapping</li>
@@ -416,7 +416,7 @@ export default function SEOServicesHyderabadPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Why Choose Our SEO Services in Hyderabad?
           </h2>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Hyderabad has hundreds of digital marketing agencies claiming to
             deliver SEO results. Here is what genuinely sets our SEO services
             apart from the rest — and why businesses across the city trust us
@@ -426,7 +426,7 @@ export default function SEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ Deep Local Market Knowledge
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We are based in Hyderabad and have spent years building expertise in
             the local search landscape across every major industry in the city.
             We understand how Hyderabad consumers search, what local competition
@@ -438,7 +438,7 @@ export default function SEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ 100% Ethical, White Hat SEO
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We follow Google's Webmaster Guidelines strictly and exclusively. We
             never use black-hat tactics like link spam, keyword stuffing, hidden
             text, cloaking, or private blog networks — shortcuts that might
@@ -451,7 +451,7 @@ export default function SEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ Dedicated, Experienced SEO Specialists
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             You work with a dedicated team of experienced SEO professionals — an
             SEO strategist, technical SEO specialist, content writer, and link
             building expert assigned specifically to your account. You are never
@@ -463,7 +463,7 @@ export default function SEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ Full Transparency — No Black Boxes
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We believe you should always know exactly what we are doing, why we
             are doing it, and what results it is producing. Our monthly reports
             are detailed, jargon-free, and honest — covering everything from
@@ -475,7 +475,7 @@ export default function SEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ Results Tied to Business Outcomes
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We measure success in business terms — organic leads, enquiries,
             sales, and revenue — not just rankings and traffic numbers. Every
             SEO strategy we build is tied to your actual business objectives,
@@ -484,7 +484,7 @@ export default function SEOServicesHyderabadPage() {
             leader.
           </p>
 
-          <ul className="list-disc pl-6 text-gray-400 space-y-2 mt-2">
+          <ul className="list-disc pl-6 text-black space-y-2 mt-2">
             <li>Deep Local Hyderabad Market Knowledge</li>
             <li>100% White Hat, Ethical SEO Only</li>
             <li>Dedicated Experienced SEO Team</li>
@@ -498,12 +498,12 @@ export default function SEOServicesHyderabadPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             What Results Can You Expect?
           </h2>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             SEO is a compounding, long-term investment — and the results reflect
             that. Here is a realistic timeline of what you can expect when you
             partner with us for SEO services in Hyderabad:
           </p>
-          <ul className="list-disc pl-6 text-gray-400 space-y-2">
+          <ul className="list-disc pl-6 text-black space-y-2">
             <li>
               <strong className="text-white">Month 1–2:</strong> Full SEO audit
               complete. Technical fixes deployed. On-page optimisation
@@ -541,7 +541,7 @@ export default function SEOServicesHyderabadPage() {
             Frequently Asked Questions — SEO Services in Hyderabad
           </h2>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               How long does SEO take to show results in Hyderabad?
             </strong>
@@ -557,7 +557,7 @@ export default function SEOServicesHyderabadPage() {
             compound long after the initial investment.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               Is SEO worth it for a small business in Hyderabad?
             </strong>
@@ -572,7 +572,7 @@ export default function SEOServicesHyderabadPage() {
             available to Hyderabad's small business community.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               How much do SEO services cost in Hyderabad?
             </strong>
@@ -586,7 +586,7 @@ export default function SEOServicesHyderabadPage() {
             what results you can realistically expect.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               Do you work with businesses outside of Hyderabad?
             </strong>
@@ -599,7 +599,7 @@ export default function SEOServicesHyderabadPage() {
             engagement regardless of geography.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               What is the difference between Local SEO and regular SEO?
             </strong>
@@ -616,7 +616,7 @@ export default function SEOServicesHyderabadPage() {
             nationally, or both.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               Can you guarantee first-page Google rankings?
             </strong>
@@ -638,14 +638,14 @@ export default function SEOServicesHyderabadPage() {
         <h2 className="text-3xl font-bold mb-4">
           Ready to Grow Your Business with SEO in Hyderabad?
         </h2>
-        <p className="text-gray-400 mb-2 max-w-2xl mx-auto">
+        <p className="text-black mb-2 max-w-2xl mx-auto">
           Get a free, no-obligation SEO audit worth ₹5,000 — and find out
           exactly what's stopping your website from ranking on the first page of
           Google. Our team will analyse your site, review your competition, and
           present a clear, actionable roadmap to organic growth in Hyderabad's
           search results.
         </p>
-        <p className="text-gray-400 mb-6">
+        <p className="text-black mb-6">
           Let's put your business at the top of Google — and keep it there.
         </p>
         <Link

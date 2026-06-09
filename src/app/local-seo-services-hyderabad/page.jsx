@@ -5,13 +5,13 @@ import Link from "next/link";
 
 export default function LocalSEOServicesHyderabadPage() {
   return (
-    <div className="bg-black text-white overflow-hidden">
+    <div className="bg-white text-black overflow-hidden mt-6">
       {/* ================= HERO ================= */}
       <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           Local SEO Services in <span className="gradient-text">Hyderabad</span>
         </h1>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+        <p className="text-black max-w-3xl mx-auto text-lg">
           Dominate local search results and attract high-intent customers from
           your target areas across Hyderabad. Our specialist local SEO services
           help businesses rank in Google's Local Pack, Maps results, and
@@ -34,7 +34,7 @@ export default function LocalSEOServicesHyderabadPage() {
             <h2 className="text-3xl font-extrabold mb-6">
               Hyderabad's Leading Local SEO Agency
             </h2>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               When a potential customer in Hyderabad searches for a business
               like yours — whether they type "dentist near me", "interior
               designer in Banjara Hills", or "best CA in Gachibowli" — do they
@@ -43,7 +43,7 @@ export default function LocalSEOServicesHyderabadPage() {
               measurable, and high-ROI growth levers available to any business
               that serves customers in a specific geographic area.
             </p>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               We are a specialist local SEO agency based in Hyderabad, with deep
               expertise in the city's diverse commercial landscape — from the IT
               corridors of Hitech City and Gachibowli to the retail hubs of
@@ -54,7 +54,7 @@ export default function LocalSEOServicesHyderabadPage() {
               to get your business prominently visible at the precise moment
               your customers are looking for you.
             </p>
-            <p className="text-gray-400">
+            <p className="text-black">
               Our local SEO services are built around one outcome: getting your
               business in front of more high-intent local customers — and
               converting that visibility into calls, enquiries, bookings, and
@@ -76,7 +76,7 @@ export default function LocalSEOServicesHyderabadPage() {
         <h2 className="text-2xl font-bold mb-4 gradient-text">
           What Is Local SEO and Why Does It Matter for Hyderabad Businesses?
         </h2>
-        <p className="text-gray-400 mb-4">
+        <p className="text-black mb-4">
           Local SEO (Local Search Engine Optimisation) is the process of
           optimising your business's online presence to appear prominently in
           geographically targeted search results — particularly in Google's
@@ -84,7 +84,7 @@ export default function LocalSEOServicesHyderabadPage() {
           results), Google Maps, and the organic results for location-specific
           queries like "service + city" or "service near me".
         </p>
-        <p className="text-gray-400 mb-4">
+        <p className="text-black mb-4">
           The numbers make the opportunity clear. According to Google, 46% of
           all searches have local intent, and 76% of people who search for
           something nearby on their smartphone visit a related business within
@@ -93,7 +93,7 @@ export default function LocalSEOServicesHyderabadPage() {
           consumer base — that represents an enormous volume of daily search
           activity that is directly tied to real-world purchasing decisions.
         </p>
-        <p className="text-gray-400 mb-4">
+        <p className="text-black mb-4">
           For businesses that serve local customers — clinics, restaurants, law
           firms, salons, real estate agents, retail shops, interior designers,
           coaching institutes, and hundreds of other categories — local SEO is
@@ -103,7 +103,7 @@ export default function LocalSEOServicesHyderabadPage() {
           durable, compounding, and continues to deliver results 24 hours a day
           without ongoing ad spend.
         </p>
-        <p className="text-gray-400">
+        <p className="text-black">
           Hyderabad's local search landscape is intensely competitive across
           almost every business category. In neighbourhoods like Hitech City,
           Banjara Hills, Jubilee Hills, and Ameerpet, dozens of businesses may
@@ -120,7 +120,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Our Local SEO Services in Hyderabad
           </h2>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Our local SEO service is a fully integrated programme covering every
             factor that influences how prominently your business appears in
             local search results across Hyderabad. Here is exactly what we
@@ -131,7 +131,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             1. Google Business Profile Optimisation & Management
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Your Google Business Profile (GBP) — formerly Google My Business —
             is the single most important asset in your local SEO ecosystem. It
             is what Google displays in the Local Pack, on Google Maps, and in
@@ -141,7 +141,7 @@ export default function LocalSEOServicesHyderabadPage() {
             to appear in local search results despite having a strong overall
             online presence.
           </p>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             We conduct a full audit and optimisation of your Google Business
             Profile — covering your business name, address, and phone number
             (NAP) accuracy, category selection (primary and secondary), business
@@ -159,7 +159,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             2. Local Citation Building & NAP Consistency
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Local citations — mentions of your business name, address, and phone
             number on external directories and websites — are a core local
             ranking signal for Google. The consistency, accuracy, and volume of
@@ -169,7 +169,7 @@ export default function LocalSEOServicesHyderabadPage() {
             or different phone number formats) can actively harm your local
             rankings.
           </p>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             We build and manage a comprehensive citation profile for your
             business across 50+ high-authority Indian and global directories —
             including Justdial, Sulekha, IndiaMART, IndiaBizDirectory, Google
@@ -183,7 +183,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             3. Review Generation & Reputation Management
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Google reviews are one of the most powerful local ranking signals —
             and one of the most influential trust factors for customers deciding
             which business to choose. A business with 50 four-star reviews will
@@ -191,7 +191,7 @@ export default function LocalSEOServicesHyderabadPage() {
             equal. Beyond rankings, reviews directly drive click-through rates
             and conversion rates from your Local Pack listing.
           </p>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             We implement a systematic review generation programme for your
             business — creating ethical, Google-compliant processes that
             encourage satisfied customers to leave genuine reviews on Google and
@@ -208,7 +208,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             4. Location-Specific Landing Page Creation
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             For businesses serving multiple areas across Hyderabad — or
             competing for suburb- and neighbourhood-specific search queries —
             dedicated location landing pages are a critical component of an
@@ -218,7 +218,7 @@ export default function LocalSEOServicesHyderabadPage() {
             — and gives potential customers in those areas a targeted,
             conversion-optimised landing experience.
           </p>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             We research, write, and optimise location-specific landing pages for
             every target service area and neighbourhood your business wants to
             rank in across Hyderabad — including Hitech City, Gachibowli,
@@ -233,7 +233,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             5. Local Link Building
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Backlinks from locally relevant, geographically proximate websites
             are a significant local ranking signal — telling Google that your
             business is a genuine, established presence in the Hyderabad
@@ -250,7 +250,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             6. Local Keyword Research & On-Page Optimisation
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Effective local SEO begins with understanding exactly how your
             customers in Hyderabad are searching for what you offer — the
             specific terms, neighbourhood names, "near me" variations, and
@@ -260,7 +260,7 @@ export default function LocalSEOServicesHyderabadPage() {
             customers for your business — and then ensure that every page of
             your website is precisely optimised to rank for those terms.
           </p>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             On-page optimisation for local SEO includes city- and
             neighbourhood-specific keyword integration into title tags, meta
             descriptions, heading structures, body content, image alt text,
@@ -273,7 +273,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             7. Local Schema Markup (Structured Data)
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Schema markup is a form of structured data code that helps Google
             better understand your business — including your name, address,
             phone number, business type, opening hours, service area, customer
@@ -285,7 +285,7 @@ export default function LocalSEOServicesHyderabadPage() {
             our local SEO service.
           </p>
 
-          <ul className="list-disc pl-6 text-gray-400 space-y-2 mt-2">
+          <ul className="list-disc pl-6 text-black space-y-2 mt-2">
             <li>Google Business Profile Optimisation & Management</li>
             <li>Local Citation Building & NAP Consistency</li>
             <li>Review Generation & Reputation Management</li>
@@ -301,7 +301,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Local SEO Across All Major Areas of Hyderabad
           </h2>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Hyderabad is a vast, multi-centred city where local search behaviour
             and competition varies significantly from one area to the next. Our
             local SEO strategies are built with this geographic nuance in mind —
@@ -309,12 +309,12 @@ export default function LocalSEOServicesHyderabadPage() {
             zones where your customers are searching, rather than applying a
             one-size-fits-all city-wide approach.
           </p>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We deliver local SEO results for businesses targeting customers
             across all major areas of Hyderabad and the Greater Hyderabad
             Municipal Corporation (GHMC) region, including:
           </p>
-          <ul className="list-disc pl-6 text-gray-400 space-y-2 mb-4">
+          <ul className="list-disc pl-6 text-black space-y-2 mb-4">
             <li>
               <strong className="text-white">IT Corridor:</strong> Hitech City,
               Gachibowli, Madhapur, Kondapur, Nanakramguda, Financial District
@@ -350,7 +350,7 @@ export default function LocalSEOServicesHyderabadPage() {
               Shamshabad, Mokila, Tellapur, Kokapet, Adibatla
             </li>
           </ul>
-          <p className="text-gray-400">
+          <p className="text-black">
             Whether you operate a single location in one neighbourhood or
             multiple branches across the city, we build a local SEO strategy
             that ensures maximum visibility in every target area — with
@@ -364,7 +364,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Industries We Serve with Local SEO in Hyderabad
           </h2>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Local SEO is relevant to any business that serves customers in a
             specific geographic area — and our team brings proven experience
             across the key industries that make up Hyderabad's dynamic local
@@ -372,7 +372,7 @@ export default function LocalSEOServicesHyderabadPage() {
             environment, and conversion triggers in each sector, enabling us to
             build strategies that are genuinely tailored rather than generic.
           </p>
-          <ul className="list-disc pl-6 text-gray-400 space-y-2">
+          <ul className="list-disc pl-6 text-black space-y-2">
             <li>
               <strong className="text-white">Healthcare & Medical:</strong>{" "}
               Hospitals, clinics, dental practices, physiotherapy centres,
@@ -443,7 +443,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Our Local SEO Process — How We Deliver Results
           </h2>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             We follow a structured, transparent, and outcome-focused process for
             every local SEO engagement — ensuring that every action we take is
             purposeful, measurable, and tied to the business outcomes that
@@ -453,7 +453,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 1 — Local SEO Audit & Competitor Analysis
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We begin with a comprehensive audit of your current local SEO
             presence — covering your Google Business Profile completeness and
             health, local citation accuracy and consistency, review volume and
@@ -468,7 +468,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 2 — Local Keyword Research & Strategy Development
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We identify every valuable local search query your potential
             customers in Hyderabad are using — mapping them by intent, location,
             and commercial value — and build a comprehensive local SEO strategy
@@ -479,7 +479,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 3 — Google Business Profile Optimisation
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We conduct a full optimisation of your Google Business Profile —
             addressing every element from category selection and business
             description to photos, services, attributes, and Q&amp;A. This alone
@@ -490,7 +490,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 4 — On-Page Local SEO & Location Page Creation
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We optimise your existing pages for local search intent and create
             new, high-quality location-specific landing pages for every target
             area in Hyderabad. We also implement LocalBusiness schema markup
@@ -501,7 +501,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 5 — Citation Building & Cleanup
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We systematically build your citation profile across 50+
             high-quality directories and platforms — and audit and correct any
             existing citation inconsistencies that may be suppressing your local
@@ -512,7 +512,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 6 — Review Generation Programme Implementation
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We set up and activate your review generation programme — creating
             the systems, templates, and processes your team needs to
             consistently collect genuine reviews from satisfied customers, and
@@ -523,7 +523,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 7 — Local Link Building
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We execute targeted outreach to earn high-quality backlinks from
             Hyderabad-based and locally relevant websites — strengthening your
             local authority signals and supporting your rankings for competitive
@@ -533,7 +533,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 8 — Monthly Reporting & Continuous Optimisation
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Every month, we deliver a detailed local SEO performance report
             covering local pack rankings, organic local rankings, GBP insights
             (views, clicks, calls, direction requests), review growth, citation
@@ -543,7 +543,7 @@ export default function LocalSEOServicesHyderabadPage() {
             competitive landscape.
           </p>
 
-          <ul className="list-disc pl-6 text-gray-400 space-y-2 mt-2">
+          <ul className="list-disc pl-6 text-black space-y-2 mt-2">
             <li>Local SEO Audit & Competitor Analysis</li>
             <li>Local Keyword Research & Strategy</li>
             <li>Google Business Profile Optimisation</li>
@@ -560,7 +560,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Why Choose Our Local SEO Services in Hyderabad?
           </h2>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Hyderabad has no shortage of agencies claiming to offer local SEO
             services. Here is what genuinely sets our work apart — and why
             businesses across the city trust us with their local search
@@ -570,7 +570,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ Born and Bred in Hyderabad
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We live and work in Hyderabad. We understand the city's geography,
             its commercial hubs, its consumer behaviour, and the specific
             competitive dynamics of local search across every major industry
@@ -584,7 +584,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ Multi-Location Expertise
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Whether you operate a single location in one neighbourhood of
             Hyderabad or manage a multi-branch business across the city, we have
             the expertise and systems to deliver effective local SEO at scale.
@@ -597,7 +597,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ White Hat, Sustainable Strategies Only
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Every local SEO tactic we employ is fully compliant with Google's
             guidelines. We never use fake reviews, review gating, keyword
             stuffing, spam citations, or any other black-hat local SEO technique
@@ -610,7 +610,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ Transparent, Business-Focused Reporting
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Our monthly reports tell you exactly what has been achieved, what
             your GBP performance looks like (views, calls, direction requests,
             website clicks), how your local rankings have moved, and what
@@ -622,7 +622,7 @@ export default function LocalSEOServicesHyderabadPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ Dedicated Local SEO Specialists
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             You get a dedicated team with specific local SEO expertise — not a
             generalist account manager who handles your SEO as one of dozens of
             services. Your team is focused on your local visibility, invested in
@@ -630,7 +630,7 @@ export default function LocalSEOServicesHyderabadPage() {
             in your local search presence across Hyderabad.
           </p>
 
-          <ul className="list-disc pl-6 text-gray-400 space-y-2 mt-2">
+          <ul className="list-disc pl-6 text-black space-y-2 mt-2">
             <li>Deep Hyderabad Local Market Knowledge</li>
             <li>Multi-Location Local SEO Expertise</li>
             <li>100% White Hat, Google-Compliant Strategies</li>
@@ -644,14 +644,14 @@ export default function LocalSEOServicesHyderabadPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             What Results Can You Expect from Local SEO in Hyderabad?
           </h2>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Local SEO delivers some of the fastest measurable results of any SEO
             discipline — particularly for businesses with an unoptimised or
             partially optimised Google Business Profile and inconsistent local
             citations. Here is a realistic timeline of what you can expect when
             you partner with us:
           </p>
-          <ul className="list-disc pl-6 text-gray-400 space-y-2">
+          <ul className="list-disc pl-6 text-black space-y-2">
             <li>
               <strong className="text-white">Weeks 1–4:</strong> Complete GBP
               audit and optimisation live. Citation audit complete.
@@ -693,7 +693,7 @@ export default function LocalSEOServicesHyderabadPage() {
             Frequently Asked Questions — Local SEO Services in Hyderabad
           </h2>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               What is the difference between Local SEO and regular SEO?
             </strong>
@@ -708,7 +708,7 @@ export default function LocalSEOServicesHyderabadPage() {
             nationally, or both.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               How long does Local SEO take to show results in Hyderabad?
             </strong>
@@ -723,7 +723,7 @@ export default function LocalSEOServicesHyderabadPage() {
             much faster.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               Do I need a physical address in Hyderabad to rank in local search?
             </strong>
@@ -736,7 +736,7 @@ export default function LocalSEOServicesHyderabadPage() {
             without a physical shopfront.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               How important are Google reviews for local SEO in Hyderabad?
             </strong>
@@ -751,7 +751,7 @@ export default function LocalSEOServicesHyderabadPage() {
             differentiator.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               Can you help businesses with multiple locations across Hyderabad?
             </strong>
@@ -765,7 +765,7 @@ export default function LocalSEOServicesHyderabadPage() {
             without cannibalising the others.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               How much do Local SEO services cost in Hyderabad?
             </strong>
@@ -780,7 +780,7 @@ export default function LocalSEOServicesHyderabadPage() {
             realistic expectations for results and investment.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               My Google Business Profile is already set up. Do I still need
               Local SEO services?
@@ -804,7 +804,7 @@ export default function LocalSEOServicesHyderabadPage() {
         <h2 className="text-3xl font-bold mb-4">
           Ready to Dominate Local Search in Hyderabad?
         </h2>
-        <p className="text-gray-400 mb-2 max-w-2xl mx-auto">
+        <p className="text-black mb-2 max-w-2xl mx-auto">
           Get a free, no-obligation Local SEO audit worth ₹5,000 — and find out
           exactly why your business isn't appearing in the Google Local Pack for
           your most valuable search terms. Our team will analyse your GBP,
@@ -812,7 +812,7 @@ export default function LocalSEOServicesHyderabadPage() {
           clear, actionable roadmap to local search dominance across your target
           areas in Hyderabad.
         </p>
-        <p className="text-gray-400 mb-6">
+        <p className="text-black mb-6">
           Let's put your business at the top of Google Maps — and keep it there.
         </p>
         <Link

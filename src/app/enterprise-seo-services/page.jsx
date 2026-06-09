@@ -5,14 +5,14 @@ import Link from "next/link";
 
 export default function EnterpriseSEOPage() {
   return (
-    <div className="bg-black text-white overflow-hidden">
+    <div className="bg-white text-black overflow-hidden mt-6">
       {/* ================= HERO ================= */}
       <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           Enterprise SEO Services in{" "}
           <span className="gradient-text">Hyderabad</span>
         </h1>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+        <p className="text-black max-w-3xl mx-auto text-lg">
           Scalable, data-driven enterprise SEO solutions built for large
           organisations, multi-location businesses, and high-authority websites
           looking to dominate search at scale. We combine deep technical
@@ -36,7 +36,7 @@ export default function EnterpriseSEOPage() {
             <h2 className="text-3xl font-extrabold mb-6">
               Leading Enterprise SEO Company in Hyderabad
             </h2>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               We are one of Hyderabad's most trusted enterprise SEO agencies,
               partnering with large corporations, national brands, e-commerce
               giants, and multi-location service businesses to drive scalable
@@ -45,7 +45,7 @@ export default function EnterpriseSEOPage() {
               content at scale, and high-authority link acquisition to deliver
               results that move the needle at the enterprise level.
             </p>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               Enterprise websites come with a unique set of challenges —
               thousands of pages to manage, complex site architectures, multiple
               stakeholders, legacy technical debt, and fierce competition from
@@ -54,7 +54,7 @@ export default function EnterpriseSEOPage() {
               programmes that align with your business objectives and integrate
               seamlessly with your existing marketing, IT, and content teams.
             </p>
-            <p className="text-gray-400">
+            <p className="text-black">
               Whether you operate a large e-commerce platform with hundreds of
               thousands of product pages, a national service brand with offices
               across multiple cities, a SaaS company targeting enterprise
@@ -78,7 +78,7 @@ export default function EnterpriseSEOPage() {
         <h2 className="text-2xl font-bold mb-4 gradient-text">
           What Is Enterprise SEO and Why Does Your Organisation Need It?
         </h2>
-        <p className="text-gray-400 mb-4">
+        <p className="text-black mb-4">
           Enterprise SEO is a specialised branch of search engine optimisation
           designed for large-scale websites and organisations that require
           sophisticated strategy, cross-functional coordination, and the
@@ -90,7 +90,7 @@ export default function EnterpriseSEOPage() {
           infrastructure, and the need to coordinate across multiple internal
           departments.
         </p>
-        <p className="text-gray-400 mb-4">
+        <p className="text-black mb-4">
           For large organisations, organic search is one of the most valuable
           and scalable customer acquisition channels available. A well-executed
           enterprise SEO strategy can drive millions of high-intent visitors to
@@ -99,7 +99,7 @@ export default function EnterpriseSEOPage() {
           effect of enterprise SEO means that your cost-per-acquisition
           continues to fall even as your traffic and revenue grows.
         </p>
-        <p className="text-gray-400">
+        <p className="text-black">
           At the enterprise level, even a one-position improvement on a
           high-volume commercial keyword can translate into thousands of
           additional monthly visitors and significant incremental revenue. The
@@ -116,7 +116,7 @@ export default function EnterpriseSEOPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Our Enterprise SEO Services
           </h2>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             We offer a comprehensive suite of enterprise SEO services designed
             to address every dimension of search visibility at scale — from deep
             technical audits and site architecture planning to large-scale
@@ -129,7 +129,7 @@ export default function EnterpriseSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             1. Enterprise Technical SEO & Site Architecture
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Technical health is the foundation of every enterprise SEO
             programme. Large sites are uniquely vulnerable to crawl budget
             waste, duplicate content at scale, canonicalisation errors, faceted
@@ -149,7 +149,7 @@ export default function EnterpriseSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             2. Programmatic & Large-Scale Content Strategy
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Content is the currency of enterprise SEO. For large organisations,
             the opportunity lies not just in creating individual high-quality
             pieces, but in building a systematic, scalable content machine that
@@ -168,7 +168,7 @@ export default function EnterpriseSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             3. Enterprise Link Building & Digital PR
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             At the enterprise level, link building requires a strategic,
             brand-aligned approach that goes far beyond basic outreach. We
             design and execute digital PR campaigns, thought leadership
@@ -186,7 +186,7 @@ export default function EnterpriseSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             4. International & Multi-Location SEO
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             For enterprises operating across multiple cities, states, or
             countries, international and multi-location SEO is critical to
             ensuring that the right content reaches the right audience in the
@@ -204,7 +204,7 @@ export default function EnterpriseSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             5. Enterprise E-commerce SEO
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Large e-commerce platforms face SEO challenges at a scale that
             standard agencies simply are not equipped to handle — from managing
             duplicate content across thousands of product variants and category
@@ -222,7 +222,7 @@ export default function EnterpriseSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             6. Enterprise SEO Reporting, Analytics & BI Integration
           </h3>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Enterprise stakeholders need more than a standard keyword ranking
             report. We build custom enterprise SEO dashboards integrated with
             Google Search Console, Google Analytics 4, SEMrush, Ahrefs, and your
@@ -235,7 +235,7 @@ export default function EnterpriseSEOPage() {
             objectives.
           </p>
 
-          <ul className="list-disc pl-6 text-gray-400 space-y-2 mt-2">
+          <ul className="list-disc pl-6 text-black space-y-2 mt-2">
             <li>Enterprise Technical SEO & Site Architecture</li>
             <li>Programmatic & Large-Scale Content Strategy</li>
             <li>Enterprise Link Building & Digital PR</li>
@@ -250,7 +250,7 @@ export default function EnterpriseSEOPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Industries We Serve with Enterprise SEO
           </h2>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Our enterprise SEO team brings deep vertical expertise across the
             industries that matter most in Hyderabad and across India. We
             understand the regulatory environments, competitive dynamics,
@@ -258,7 +258,7 @@ export default function EnterpriseSEOPage() {
             sector — allowing us to build strategies that are genuinely tailored
             rather than templated. We deliver enterprise SEO programmes for:
           </p>
-          <ul className="list-disc pl-6 text-gray-400 space-y-2">
+          <ul className="list-disc pl-6 text-black space-y-2">
             <li>Large E-commerce Platforms & Marketplaces</li>
             <li>BFSI — Banking, Financial Services & Insurance</li>
             <li>IT Services, SaaS & Technology Companies</li>
@@ -277,7 +277,7 @@ export default function EnterpriseSEOPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Our Enterprise SEO Process
           </h2>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Enterprise SEO demands a structured, rigorous, and collaborative
             process that integrates with your organisation's existing workflows
             and delivers consistent, measurable output month after month. Here
@@ -287,7 +287,7 @@ export default function EnterpriseSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 1 — Enterprise Discovery & Stakeholder Alignment
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Every enterprise SEO engagement begins with a deep discovery phase
             involving key stakeholders from marketing, IT, content, and
             leadership. We map your business objectives, revenue targets,
@@ -300,7 +300,7 @@ export default function EnterpriseSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 2 — Comprehensive Technical & Content Audit
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We run a full-scale technical audit covering crawlability,
             indexation, site speed, Core Web Vitals, JavaScript rendering,
             duplicate content, internal linking, XML sitemaps, robots.txt
@@ -314,7 +314,7 @@ export default function EnterpriseSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 3 — Strategic Keyword Research & Topical Mapping
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             At the enterprise level, keyword research goes far beyond a simple
             list of target terms. We build a comprehensive keyword universe
             covering thousands of search queries across the full funnel —
@@ -327,7 +327,7 @@ export default function EnterpriseSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 4 — Technical Implementation & On-Page Optimisation
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Working in close collaboration with your development team, we
             implement all critical technical fixes and on-page optimisations
             according to a prioritised roadmap. We provide detailed
@@ -341,7 +341,7 @@ export default function EnterpriseSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 5 — Content Production & Optimisation at Scale
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We design and execute a structured content programme aligned with
             your topical map and business priorities. This includes optimising
             high-potential existing pages, developing new pillar and cluster
@@ -354,7 +354,7 @@ export default function EnterpriseSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 6 — Authority Building & Digital PR
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Our link building and digital PR team executes targeted outreach,
             thought leadership placement, data-driven content campaigns, and
             strategic partnership programmes to earn authoritative backlinks at
@@ -366,7 +366,7 @@ export default function EnterpriseSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             Step 7 — Performance Reporting & Continuous Optimisation
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We deliver monthly enterprise SEO reports covering keyword ranking
             movements across your full target set, organic traffic and revenue
             attribution, content performance, link acquisition, technical health
@@ -376,7 +376,7 @@ export default function EnterpriseSEOPage() {
             us.
           </p>
 
-          <ul className="list-disc pl-6 text-gray-400 space-y-2 mt-2">
+          <ul className="list-disc pl-6 text-black space-y-2 mt-2">
             <li>Enterprise Discovery & Stakeholder Alignment</li>
             <li>Technical & Content Audit</li>
             <li>Keyword Research & Topical Mapping</li>
@@ -392,7 +392,7 @@ export default function EnterpriseSEOPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             Why Choose Us for Enterprise SEO in Hyderabad?
           </h2>
-          <p className="text-gray-400 mb-6">
+          <p className="text-black mb-6">
             Enterprise SEO is a long-term, high-stakes engagement. Choosing the
             right partner can mean the difference between compounding organic
             growth and wasted budget. Here's what separates our enterprise SEO
@@ -402,7 +402,7 @@ export default function EnterpriseSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ Dedicated Enterprise SEO Team
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             When you work with us, you get a dedicated, senior-level team — not
             a single account manager juggling 30 clients. Your enterprise
             account includes an SEO strategist, a technical SEO lead, a content
@@ -415,7 +415,7 @@ export default function EnterpriseSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ Enterprise-Grade Tools & Technology
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We invest in the best enterprise SEO tooling — Screaming Frog
             Enterprise, Ahrefs Enterprise, SEMrush Business, Sitebulb,
             BrightEdge data integrations, custom GA4 dashboards, and proprietary
@@ -427,7 +427,7 @@ export default function EnterpriseSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ Deep Integration with Your Internal Teams
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Enterprise SEO doesn't happen in isolation — it requires close
             collaboration with your development, content, marketing, and
             leadership teams. We operate as a true extension of your
@@ -440,7 +440,7 @@ export default function EnterpriseSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ Proven Results at Enterprise Scale
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We have delivered enterprise SEO results for large organisations
             across India — driving double-digit organic traffic growth,
             first-page rankings for thousands of competitive keywords, and
@@ -452,7 +452,7 @@ export default function EnterpriseSEOPage() {
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ Revenue-Focused, Not Vanity-Metric-Focused
           </h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             We don't just track rankings and traffic. We align every metric to
             business outcomes — organic revenue, qualified lead volume, customer
             acquisition cost from organic, and market share growth. Our
@@ -460,7 +460,7 @@ export default function EnterpriseSEOPage() {
             just your SEO team.
           </p>
 
-          <ul className="list-disc pl-6 text-gray-400 space-y-2 mt-2">
+          <ul className="list-disc pl-6 text-black space-y-2 mt-2">
             <li>Dedicated Senior Enterprise SEO Team</li>
             <li>Enterprise-Grade Tooling & Technology</li>
             <li>Deep Integration with Internal Teams</li>
@@ -474,14 +474,14 @@ export default function EnterpriseSEOPage() {
           <h2 className="text-2xl font-bold mb-4 gradient-text">
             What Results Can You Expect from Enterprise SEO?
           </h2>
-          <p className="text-gray-400 mb-4">
+          <p className="text-black mb-4">
             Enterprise SEO is a strategic, long-term investment with compounding
             returns. The scale of results achievable is significantly larger
             than standard SEO — but so is the time and effort required to reach
             them. Here is a realistic picture of what you can expect at each
             stage of an enterprise SEO engagement:
           </p>
-          <ul className="list-disc pl-6 text-gray-400 space-y-2">
+          <ul className="list-disc pl-6 text-black space-y-2">
             <li>
               <strong className="text-white">Month 1–2:</strong> Discovery, full
               technical and content audit complete. Prioritised implementation
@@ -528,7 +528,7 @@ export default function EnterpriseSEOPage() {
             Frequently Asked Questions — Enterprise SEO
           </h2>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               What makes enterprise SEO different from standard SEO?
             </strong>
@@ -545,7 +545,7 @@ export default function EnterpriseSEOPage() {
             operational demands are fundamentally different.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               How long does enterprise SEO take to show results?
             </strong>
@@ -561,7 +561,7 @@ export default function EnterpriseSEOPage() {
             consistent execution.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               How do you integrate with our internal development team?
             </strong>
@@ -576,7 +576,7 @@ export default function EnterpriseSEOPage() {
             workflow, not the other way around.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               Can you handle international SEO for our multi-country operations?
             </strong>
@@ -591,7 +591,7 @@ export default function EnterpriseSEOPage() {
             to support your international SEO requirements.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               How do you measure and report on enterprise SEO ROI?
             </strong>
@@ -607,7 +607,7 @@ export default function EnterpriseSEOPage() {
             strategic direction.
           </p>
 
-          <p className="text-gray-400 mt-4">
+          <p className="text-black mt-4">
             <strong className="text-white">
               What is the cost of enterprise SEO services in Hyderabad?
             </strong>
@@ -628,14 +628,14 @@ export default function EnterpriseSEOPage() {
         <h2 className="text-3xl font-bold mb-4">
           Ready to Scale Your Organic Growth at Enterprise Level?
         </h2>
-        <p className="text-gray-400 mb-2 max-w-2xl mx-auto">
+        <p className="text-black mb-2 max-w-2xl mx-auto">
           Get a free enterprise SEO assessment worth ₹15,000 — including a
           technical site review, competitive landscape analysis, and a
           high-level strategic roadmap tailored to your organisation's goals.
           Our senior team will walk you through exactly where your biggest
           organic opportunities lie and how we would approach capturing them.
         </p>
-        <p className="text-gray-400 mb-6">
+        <p className="text-black mb-6">
           Let's build the organic channel your business deserves.
         </p>
         <Link
