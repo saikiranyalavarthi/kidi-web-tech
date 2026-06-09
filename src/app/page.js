@@ -11,6 +11,7 @@ import TestimonialsSection from "./Components/TestimonialsSection";
 import FAQSection from "./Components/FAQSection";
 import ContactPage from "./contact/page";
 import CaseStudiesSection from "./Components/CaseStudiesSection";
+import Herotrain from "./Components/Herotrain";
 
 // COMPONENTS
 
@@ -116,6 +117,7 @@ export default function Home() {
         />
       </Head>
 
+<Herotrain/>
       {/* HERO SECTION */}
       <Herosection />
 
