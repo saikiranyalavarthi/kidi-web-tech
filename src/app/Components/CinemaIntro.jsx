@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 // --- Smoke particle system ---
 class Particle {
@@ -365,27 +366,16 @@ export default function CinemaIntro() {
             transition={{ duration: 1.2, ease: [0.34, 1.56, 0.64, 1] }}
             className="absolute inset-0 z-[20] flex flex-col items-center justify-center text-center pointer-events-none"
           >
-            <h1
-              style={{
-                fontFamily: "Georgia, serif",
-                fontSize: "clamp(2.4rem, 7vw, 5rem)",
-                fontWeight: 900,
-                letterSpacing: "0.12em",
-                color: "#fff",
-                textShadow:
-                  "0 0 40px rgba(255,220,80,0.9), 0 0 80px rgba(255,180,0,0.5), 0 2px 8px #000",
-              }}
-            >
-              <Image
-  src="/kidiwebtech-logo.png
-"
-  alt="KidiWebTech"
-  width={400}
-  height={120}
-  priority
-  className="drop-shadow-[0_0_40px_rgba(255,220,80,0.8)]"
-/>
-            </h1>
+           <div>
+  <Image
+    src="/kidiwebtech-logo.png"
+    alt="KidiWebTech"
+    width={400}
+    height={120}
+    priority
+    className="drop-shadow-[0_0_40px_rgba(255,220,80,0.8)]"
+  />
+</div>
             <motion.div
               initial={{ width: 0 }}
               animate={logoVisible ? { width: 260 } : {}}
