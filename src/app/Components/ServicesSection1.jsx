@@ -112,7 +112,7 @@ const services = [
   },
   {
     title: "Social Media Marketing",
-    slug: "/services/web-development-company-hyderabad",
+    slug: "/services/",
     img: "/assets/image4.jpg",
     desc: "Engage your audience with result-driven social media marketing strategies.",
   },

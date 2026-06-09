@@ -5,14 +5,14 @@ import Link from "next/link";
 
 export default function OffshoreWebDevelopmentServicesPage() {
   return (
-    <div className="bg-black text-white overflow-hidden">
+    <div className="bg-white text-black overflow-hidden mt-6">
       {/* ================= HERO ================= */}
       <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           Offshore Web Development{" "}
           <span className="gradient-text">Services</span>
         </h1>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+        <p className="text-black max-w-3xl mx-auto text-lg">
           Partner with a trusted offshore web development company in India to
           build high-performance websites, web applications, and digital
           platforms at a fraction of the cost — without compromising on quality,
@@ -34,7 +34,7 @@ export default function OffshoreWebDevelopmentServicesPage() {
             <h2 className="text-3xl font-extrabold mb-6">
               Trusted Offshore Web Development Company in India
             </h2>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               We are a results-driven offshore web development company based in
               India, delivering high-performance websites, web applications,
               SaaS products, and ecommerce platforms for clients in the US, UK,
@@ -44,7 +44,7 @@ export default function OffshoreWebDevelopmentServicesPage() {
               processes — giving international businesses a decisive cost and
               quality advantage over local agency alternatives.
             </p>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               Our offshore development team brings together expert UI/UX
               designers, frontend developers, backend engineers, QA specialists,
               and project managers who collaborate on every project to deliver
@@ -53,7 +53,7 @@ export default function OffshoreWebDevelopmentServicesPage() {
               communication standards and delivery accountability you would
               expect from a local agency.
             </p>
-            <p className="text-gray-400">
+            <p className="text-black">
               Whether you are a startup looking to build your first product
               cost-effectively, a growing business scaling your digital
               infrastructure, or an enterprise augmenting your in-house team
@@ -74,7 +74,7 @@ export default function OffshoreWebDevelopmentServicesPage() {
       </section>
 
       {/* ================= CORE CONTENT ================= */}
-      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-gray-400">
+      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-black">
         {/* WHAT IS OFFSHORE WEB DEVELOPMENT */}
         <div>
           <h2 className="text-2xl font-extrabold gradient-text mb-4">
@@ -729,13 +729,13 @@ export default function OffshoreWebDevelopmentServicesPage() {
             Offshore Web Development Project?
           </span>
         </h2>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-4 text-lg">
+        <p className="text-black max-w-2xl mx-auto mb-4 text-lg">
           Get a free consultation with our offshore web development team. We'll
           review your requirements, share relevant portfolio examples, and
           provide a clear proposal with timeline and pricing — at no cost and no
           obligation.
         </p>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-10">
+        <p className="text-black max-w-2xl mx-auto mb-10">
           Let's build your next web project together — world-class quality,
           India-competitive pricing, and the communication standards your
           business demands.

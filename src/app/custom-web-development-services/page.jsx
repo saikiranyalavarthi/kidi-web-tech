@@ -5,14 +5,14 @@ import Link from "next/link";
 
 export default function CustomWebDevelopmentPage() {
   return (
-    <div className="bg-black text-white overflow-hidden">
+    <div className="bg-white text-black overflow-hidden mt-6">
       {/* ================= HERO ================= */}
       <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           Custom Web Development Services in{" "}
           <span className="gradient-text">Hyderabad</span>
         </h1>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+        <p className="text-black max-w-3xl mx-auto text-lg">
           Build powerful, tailor-made web solutions designed specifically for
           your business — not recycled templates. Our custom web development
           services in Hyderabad deliver fast, scalable, and SEO-optimized
@@ -35,7 +35,7 @@ export default function CustomWebDevelopmentPage() {
             <h2 className="text-3xl font-extrabold mb-6">
               Best Custom Web Development Company in Hyderabad
             </h2>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               We are a results-driven custom web development company in
               Hyderabad, specializing in building bespoke websites and web
               applications that are engineered precisely around your business
@@ -44,14 +44,14 @@ export default function CustomWebDevelopmentPage() {
               coded from scratch, ensuring a unique, high-performance digital
               product that stands out from the competition.
             </p>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               Our custom web development team brings together expert UI/UX
               designers, frontend developers, backend engineers, and SEO
               specialists who collaborate on every project to deliver websites
               and web applications that look exceptional, load fast, rank on
               Google, and convert visitors into customers.
             </p>
-            <p className="text-gray-400">
+            <p className="text-black">
               Whether you need a custom corporate website, a complex web
               application, a multi-vendor marketplace, a SaaS platform, or a
               fully bespoke ecommerce solution, our team has the skills,
@@ -70,7 +70,7 @@ export default function CustomWebDevelopmentPage() {
       </section>
 
       {/* ================= CORE CONTENT ================= */}
-      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-gray-400">
+      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-black">
         {/* WHAT IS CUSTOM WEB DEVELOPMENT */}
         <div>
           <h2 className="text-2xl font-extrabold gradient-text mb-4">
@@ -640,13 +640,13 @@ export default function CustomWebDevelopmentPage() {
           <span className="gradient-text">Custom Web Solution</span> for Your
           Business?
         </h2>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-4 text-lg">
+        <p className="text-black max-w-2xl mx-auto mb-4 text-lg">
           Get a free consultation with our custom web development team in
           Hyderabad. We'll review your requirements, share relevant examples
           from our portfolio, and provide a clear proposal with timeline and
           pricing — at no cost and no obligation.
         </p>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-10">
+        <p className="text-black max-w-2xl mx-auto mb-10">
           Let's build something custom, fast, and built to grow your business.
         </p>
         <Link

@@ -5,13 +5,13 @@ import Link from "next/link";
 
 export default function WebsiteDesignCompanyIndiaPage() {
   return (
-    <div className="bg-black text-white overflow-hidden">
+    <div className="bg-white text-black overflow-hidden mt-6">
       {/* ================= HERO ================= */}
       <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           Website Design Company in <span className="gradient-text">India</span>
         </h1>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+        <p className="text-black max-w-3xl mx-auto text-lg">
           Partner with one of India's leading website design companies to build
           visually stunning, high-performance websites engineered to rank on
           Google, engage your audience, and convert visitors into customers —
@@ -33,7 +33,7 @@ export default function WebsiteDesignCompanyIndiaPage() {
             <h2 className="text-3xl font-extrabold mb-6">
               Best Website Design Company in India
             </h2>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               We are a results-driven website design company in India,
               specializing in crafting high-performance websites and digital
               experiences built precisely around your brand identity, target
@@ -42,14 +42,14 @@ export default function WebsiteDesignCompanyIndiaPage() {
               application — we deliver designs that make a lasting impression
               and drive real, measurable business outcomes.
             </p>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               Our website design team brings together expert UI/UX designers,
               frontend developers, backend engineers, and SEO specialists who
               collaborate on every project to deliver websites that look
               exceptional, load fast, rank on Google, and convert visitors into
               leads and customers — for businesses across India and globally.
             </p>
-            <p className="text-gray-400">
+            <p className="text-black">
               Whether you are a startup building your first online presence, an
               established enterprise refreshing an outdated website, or a
               growing business expanding your digital footprint across multiple
@@ -69,7 +69,7 @@ export default function WebsiteDesignCompanyIndiaPage() {
       </section>
 
       {/* ================= CORE CONTENT ================= */}
-      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-gray-400">
+      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-black">
         {/* WHAT IS WEBSITE DESIGN */}
         <div>
           <h2 className="text-2xl font-extrabold gradient-text mb-4">
@@ -678,13 +678,13 @@ export default function WebsiteDesignCompanyIndiaPage() {
             Best Website Design Company in India?
           </span>
         </h2>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-4 text-lg">
+        <p className="text-black max-w-2xl mx-auto mb-4 text-lg">
           Get a free consultation with our website design team. We'll review
           your requirements, share relevant examples from our portfolio, and
           provide a clear proposal with timeline and pricing — at no cost and no
           obligation.
         </p>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-10">
+        <p className="text-black max-w-2xl mx-auto mb-10">
           Let's design a website that ranks on Google, impresses your audience,
           and grows your business — anywhere in India and beyond.
         </p>

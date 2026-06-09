@@ -5,14 +5,14 @@ import Link from "next/link";
 
 export default function WebDevelopmentPage() {
   return (
-    <div className="bg-black text-white overflow-hidden">
+    <div className="bg-white text-black overflow-hidden mt-6  ">
       {/* ================= HERO ================= */}
       <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           Website Development Services in{" "}
           <span className="gradient-text">Hyderabad</span>
         </h1>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+        <p className="text-black max-w-3xl mx-auto text-lg">
           Build fast, responsive, and SEO-friendly websites that rank on Google,
           generate qualified leads, and grow your business online. We are
           Hyderabad's trusted website development company — delivering
@@ -34,7 +34,7 @@ export default function WebDevelopmentPage() {
               Best Website Development Company in Hyderabad for Modern
               Businesses
             </h2>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               We are one of Hyderabad's leading website development companies,
               building high-performance digital experiences for businesses of
               all sizes. From clean, professional corporate websites to complex
@@ -42,14 +42,14 @@ export default function WebDevelopmentPage() {
               delivers solutions that look exceptional, load fast, and convert
               visitors into customers.
             </p>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               Every website we build is designed with three priorities in mind:
               speed, search engine optimization, and user experience. We don't
               just build websites that look good — we build websites that rank
               on Google, generate leads, and deliver measurable business results
               from day one.
             </p>
-            <p className="text-gray-400">
+            <p className="text-black">
               Whether you are a startup launching your first website, an
               established business looking for a complete redesign, or an
               enterprise requiring a scalable web application, our team has the
@@ -68,7 +68,7 @@ export default function WebDevelopmentPage() {
       </section>
 
       {/* ================= CORE CONTENT ================= */}
-      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-gray-400">
+      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-black">
         {/* WHAT IS WEB DEVELOPMENT */}
         <div>
           <h2 className="text-2xl font-extrabold gradient-text mb-4">
@@ -625,13 +625,13 @@ export default function WebDevelopmentPage() {
           Ready to Build a Website That{" "}
           <span className="gradient-text">Grows Your Business?</span>
         </h2>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-4 text-lg">
+        <p className="text-black max-w-2xl mx-auto mb-4 text-lg">
           Get a free consultation and website strategy session with our
           Hyderabad development team. We'll review your requirements, share
           relevant examples from our portfolio, and give you a clear proposal
           with timeline and pricing — at no cost and no obligation.
         </p>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-10">
+        <p className="text-black max-w-2xl mx-auto mb-10">
           Let's build something that works as hard as you do.
         </p>
         <Link

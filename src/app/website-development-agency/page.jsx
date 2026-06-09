@@ -5,13 +5,13 @@ import Link from "next/link";
 
 export default function WebsiteDevelopmentAgencyPage() {
   return (
-    <div className="bg-black text-white overflow-hidden">
+    <div className="bg-white text-black overflow-hidden mt-6">
       {/* ================= HERO ================= */}
       <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           Website Development <span className="gradient-text">Agency</span>
         </h1>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+        <p className="text-black max-w-3xl mx-auto text-lg">
           Partner with a full-service website development agency that builds
           high-performance, SEO-optimized, and conversion-focused websites and
           web applications — engineered precisely around your brand, audience,
@@ -33,7 +33,7 @@ export default function WebsiteDevelopmentAgencyPage() {
             <h2 className="text-3xl font-extrabold mb-6">
               Full-Service Website Development Agency
             </h2>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               We are a full-service website development agency specializing in
               building high-performance websites, web applications, ecommerce
               platforms, and digital products engineered precisely around your
@@ -43,7 +43,7 @@ export default function WebsiteDevelopmentAgencyPage() {
               deliver end-to-end website development solutions that perform,
               convert, and grow with your business.
             </p>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               Our agency brings together expert UI/UX designers, frontend
               developers, backend engineers, QA specialists, and SEO
               professionals who collaborate on every project to deliver websites
@@ -51,7 +51,7 @@ export default function WebsiteDevelopmentAgencyPage() {
               measurable business results — from first click to final
               conversion.
             </p>
-            <p className="text-gray-400">
+            <p className="text-black">
               Whether you are a startup building your first online presence, a
               growing business redesigning an underperforming website, or an
               enterprise scaling your digital infrastructure across multiple
@@ -72,7 +72,7 @@ export default function WebsiteDevelopmentAgencyPage() {
       </section>
 
       {/* ================= CORE CONTENT ================= */}
-      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-gray-400">
+      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-black">
         {/* WHAT IS A WEBSITE DEVELOPMENT AGENCY */}
         <div>
           <h2 className="text-2xl font-extrabold gradient-text mb-4">
@@ -693,13 +693,13 @@ export default function WebsiteDevelopmentAgencyPage() {
             Full-Service Website Development Agency?
           </span>
         </h2>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-4 text-lg">
+        <p className="text-black max-w-2xl mx-auto mb-4 text-lg">
           Get a free consultation with our website development team. We'll
           review your requirements, share relevant portfolio examples, and
           provide a clear agency proposal with timeline and pricing — at no cost
           and no obligation.
         </p>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-10">
+        <p className="text-black max-w-2xl mx-auto mb-10">
           Let's build a website that ranks on Google, converts your audience,
           and grows your business — with an agency that stays invested in your
           success long after launch day.

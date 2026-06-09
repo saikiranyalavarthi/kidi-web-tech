@@ -5,14 +5,14 @@ import Link from "next/link";
 
 export default function EcommerceDevelopmentServicesPage() {
   return (
-    <div className="bg-black text-white overflow-hidden">
+    <div className="bg-white text-black overflow-hidden mt-6">
       {/* ================= HERO ================= */}
       <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           Ecommerce Development Services in{" "}
           <span className="gradient-text">Hyderabad</span>
         </h1>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+        <p className="text-black max-w-3xl mx-auto text-lg">
           Build high-converting, scalable ecommerce stores engineered
           specifically for your products, brand, and customers — not
           off-the-shelf themes. Our ecommerce development services in Hyderabad
@@ -35,7 +35,7 @@ export default function EcommerceDevelopmentServicesPage() {
             <h2 className="text-3xl font-extrabold mb-6">
               Best Ecommerce Development Company in Hyderabad
             </h2>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               We are a results-driven ecommerce development company in
               Hyderabad, specializing in building high-performance online stores
               and marketplaces that are engineered precisely around your
@@ -44,14 +44,14 @@ export default function EcommerceDevelopmentServicesPage() {
               platform built from scratch — we deliver digital commerce
               experiences that sell.
             </p>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               Our ecommerce development team brings together expert UI/UX
               designers, frontend developers, backend engineers, and ecommerce
               SEO specialists who collaborate on every project to deliver online
               stores that look exceptional, load fast, rank on Google, and
               convert browsers into buyers.
             </p>
-            <p className="text-gray-400">
+            <p className="text-black">
               Whether you are launching a new D2C brand, scaling an existing
               online store, building a multi-vendor marketplace, or migrating
               from an underperforming platform, our team has the skills,
@@ -71,7 +71,7 @@ export default function EcommerceDevelopmentServicesPage() {
       </section>
 
       {/* ================= CORE CONTENT ================= */}
-      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-gray-400">
+      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-black">
         {/* WHAT IS ECOMMERCE DEVELOPMENT */}
         <div>
           <h2 className="text-2xl font-extrabold gradient-text mb-4">
@@ -682,13 +682,13 @@ export default function EcommerceDevelopmentServicesPage() {
           <span className="gradient-text">High-Converting Ecommerce Store</span>{" "}
           for Your Business?
         </h2>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-4 text-lg">
+        <p className="text-black max-w-2xl mx-auto mb-4 text-lg">
           Get a free consultation with our ecommerce development team in
           Hyderabad. We'll review your requirements, share relevant examples
           from our portfolio, and provide a clear proposal with timeline and
           pricing — at no cost and no obligation.
         </p>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-10">
+        <p className="text-black max-w-2xl mx-auto mb-10">
           Let's build an ecommerce store that ranks on Google, converts
           visitors, and grows your revenue.
         </p>

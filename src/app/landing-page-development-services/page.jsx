@@ -5,14 +5,14 @@ import Link from "next/link";
 
 export default function LandingPageDevelopmentServicesPage() {
   return (
-    <div className="bg-black text-white overflow-hidden">
+    <div className="bg-white text-black overflow-hidden mt-6">
       {/* ================= HERO ================= */}
       <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           Landing Page Development Services in{" "}
           <span className="gradient-text">Hyderabad</span>
         </h1>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+        <p className="text-black max-w-3xl mx-auto text-lg">
           Build high-converting, custom-coded landing pages engineered to turn
           clicks into leads and leads into customers. Our landing page
           development services in Hyderabad deliver fast, SEO-optimized, and
@@ -35,7 +35,7 @@ export default function LandingPageDevelopmentServicesPage() {
             <h2 className="text-3xl font-extrabold mb-6">
               Best Landing Page Development Company in Hyderabad
             </h2>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               We are a results-driven landing page development company in
               Hyderabad, specializing in building high-performance,
               conversion-optimized landing pages for Google Ads, Meta Ads,
@@ -43,14 +43,14 @@ export default function LandingPageDevelopmentServicesPage() {
               registrations, and any other marketing objective where a single
               focused page needs to do serious work.
             </p>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               Our landing page development team brings together expert UI/UX
               designers, frontend developers, CRO specialists, and performance
               marketers who collaborate on every project to deliver pages that
               load instantly, look exceptional on every device, and convert
               visitors at the highest possible rate.
             </p>
-            <p className="text-gray-400">
+            <p className="text-black">
               Whether you need a single Google Ads landing page, a full suite of
               campaign-specific pages, a product launch page, or a high-stakes
               lead generation page for a premium service — our team has the
@@ -69,7 +69,7 @@ export default function LandingPageDevelopmentServicesPage() {
       </section>
 
       {/* ================= CORE CONTENT ================= */}
-      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-gray-400">
+      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-black">
         {/* WHAT IS LANDING PAGE DEVELOPMENT */}
         <div>
           <h2 className="text-2xl font-extrabold gradient-text mb-4">
@@ -652,13 +652,13 @@ export default function LandingPageDevelopmentServicesPage() {
           <span className="gradient-text">High-Converting Landing Page</span>{" "}
           for Your Next Campaign?
         </h2>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-4 text-lg">
+        <p className="text-black max-w-2xl mx-auto mb-4 text-lg">
           Get a free consultation with our landing page development team in
           Hyderabad. We'll review your campaign objectives, share relevant
           examples from our portfolio, and provide a clear proposal with
           timeline and pricing — at no cost and no obligation.
         </p>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-10">
+        <p className="text-black max-w-2xl mx-auto mb-10">
           Let's build a landing page that lowers your cost per lead and
           maximizes the return on every rupee you spend on advertising.
         </p>

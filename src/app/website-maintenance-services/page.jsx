@@ -5,14 +5,14 @@ import Link from "next/link";
 
 export default function WebsiteMaintenanceServicesPage() {
   return (
-    <div className="bg-black text-white overflow-hidden">
+    <div className="bg-white text-black overflow-hidden mt-6  ">
       {/* ================= HERO ================= */}
       <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           Website Maintenance Services in{" "}
           <span className="gradient-text">Hyderabad</span>
         </h1>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+        <p className="text-black max-w-3xl mx-auto text-lg">
           Keep your website fast, secure, up-to-date, and performing at its best
           — without lifting a finger. Our website maintenance services in
           Hyderabad give businesses a dedicated technical team to handle
@@ -36,7 +36,7 @@ export default function WebsiteMaintenanceServicesPage() {
             <h2 className="text-3xl font-extrabold mb-6">
               Best Website Maintenance Company in Hyderabad
             </h2>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               We are a reliable, proactive website maintenance company in
               Hyderabad, providing businesses with a dedicated technical team
               that keeps their websites secure, fast, updated, and fully
@@ -44,7 +44,7 @@ export default function WebsiteMaintenanceServicesPage() {
               complexity of running a website so you can focus entirely on
               running your business.
             </p>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               Our website maintenance team covers everything a live website
               needs to stay healthy — security patches and malware monitoring,
               CMS and plugin updates, performance optimization, uptime
@@ -52,7 +52,7 @@ export default function WebsiteMaintenanceServicesPage() {
               ongoing feature development. You get one reliable team handling
               all of it under a single, transparent monthly plan.
             </p>
-            <p className="text-gray-400">
+            <p className="text-black">
               Whether you have a WordPress site, a custom-built web application,
               a Shopify store, or any other web platform — our maintenance team
               has the technical expertise to keep it running at its best. No
@@ -72,7 +72,7 @@ export default function WebsiteMaintenanceServicesPage() {
       </section>
 
       {/* ================= CORE CONTENT ================= */}
-      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-gray-400">
+      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-black">
         {/* WHAT IS WEBSITE MAINTENANCE */}
         <div>
           <h2 className="text-2xl font-extrabold gradient-text mb-4">
@@ -664,13 +664,13 @@ export default function WebsiteMaintenanceServicesPage() {
           <span className="gradient-text">Website Maintenance</span> in Expert
           Hands?
         </h2>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-4 text-lg">
+        <p className="text-black max-w-2xl mx-auto mb-4 text-lg">
           Get a free website audit and maintenance consultation from our team in
           Hyderabad. We'll review your website's current technical health,
           identify any existing risks or issues, and recommend the right
           maintenance plan for your business — at no cost and no obligation.
         </p>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-10">
+        <p className="text-black max-w-2xl mx-auto mb-10">
           Let's keep your website fast, secure, and performing at its best —
           every single month.
         </p>
