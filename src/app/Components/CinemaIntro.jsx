@@ -402,7 +402,7 @@ export default function CinemaIntro() {
                 textShadow: "0 0 16px rgba(255,200,60,0.5)",
               }}
             >
-              Web Experiences That Move Businesses
+             Website Design, Web Development & SEO Services 
             </motion.p>
           </motion.div>
         </motion.div>
