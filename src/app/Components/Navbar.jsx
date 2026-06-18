@@ -282,8 +282,6 @@ const navItems = [
       { name: "Ecommerce SEO", href: "/ecommerce-seo-services" },
       { name: "Enterprise SEO", href: "/enterprise-seo-services" },
 
-    
-
       // 📍 LOCAL SEO (CITY TARGET)
       { name: "SEO Services Hyderabad", href: "/seo-services-hyderabad" },
       { name: "Local SEO Hyderabad", href: "/local-seo-services-hyderabad" },
@@ -356,26 +354,26 @@ const navItems = [
         name: "Website Maintenance Services",
         href: "/website-maintenance-services",
       },
- {
-      name: "Web Design Company Hitech City",
-      href: "/web-design-company-hitech-city",
-    },
-    {
-      name: "Web Design Company Madhapur",
-      href: "/web-design-company-madhapur",
-    },
-    {
-      name: "Web Design Company Kukatpally",
-      href: "/web-design-company-kukatpally",
-    },
-    {
-      name: "Web Design Company Banjara Hills",
-      href: "/web-design-company-banjara-hills",
-    },
-    {
-      name: "Web Design Company Secunderabad",
-      href: "/web-design-company-secunderabad",
-    },
+      {
+        name: "Web Design Company Hitech City",
+        href: "/web-design-company-hitech-city",
+      },
+      {
+        name: "Web Design Company Madhapur",
+        href: "/web-design-company-madhapur",
+      },
+      {
+        name: "Web Design Company Kukatpally",
+        href: "/web-design-company-kukatpally",
+      },
+      {
+        name: "Web Design Company Banjara Hills",
+        href: "/web-design-company-banjara-hills",
+      },
+      {
+        name: "Web Design Company Secunderabad",
+        href: "/web-design-company-secunderabad",
+      },
       // 📍 LOCAL (HYDERABAD TARGET)
       {
         name: "Web Development Company Hyderabad",
@@ -383,7 +381,33 @@ const navItems = [
       },
       {
         name: "Website Design Company Hyderabad",
-        href: "/website-design-company-hyderabad",
+        href: "/services/website-design-company-hyderabad",
+      },
+
+      {
+        name: "Web Development Company Hyderabad",
+        href: "/services/web-development-company-hyderabad",
+      },
+      {
+        name: "Website Design Company Hyderabad",
+        href: "/services//website-design-company-hyderabad",
+      },
+      {
+        name: "WordPress Development Company Hyderabad",
+        href: "/services/wordpress-development-company-hyderabad",
+      },
+
+      {
+        name: "React JS Development Services Hyderabad",
+        href: "/services/react-js-development-services-hyderabad",
+      },
+      {
+        name: "Next.js Development Services Hyderabad",
+        href: "/services/nextjs-development-services-hyderabad",
+      },
+      {
+        name: "Mobile App Development Hyderabad",
+        href: "/services/mobile-app-development-hyderabad",
       },
 
       // 🇮🇳 INDIA TARGETING
