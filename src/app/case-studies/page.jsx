@@ -1,8 +1,7 @@
 // app/case-studies/page.tsx
 
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Case Studies | Web Development & SEO Projects | KidiWebTech Hyderabad",
   description:
     "Explore KidiWebTech's real-world case studies — from pet consultation platforms and healthcare websites to news portals and agency sites. See how we help Hyderabad businesses grow online.",
