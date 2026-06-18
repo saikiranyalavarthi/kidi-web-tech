@@ -1,8 +1,8 @@
 // app/website-design-company-hyderabad/page.tsx
 
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
+
+export const metadata = {
   title: "Website Design Company in Hyderabad | KidiWebTech",
   description:
     "KidiWebTech is a top-rated Website Design Company in Hyderabad. We create stunning, SEO-friendly, mobile-responsive website designs for businesses in Hitech City, Gachibowli, Banjara Hills & across Hyderabad.",

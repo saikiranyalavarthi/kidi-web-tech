@@ -1,8 +1,8 @@
 // app/wordpress-development-company-hyderabad/page.tsx
 
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
+
+export const metadata = {
   title: "WordPress Development Company in Hyderabad | KidiWebTech",
   description:
     "KidiWebTech is a top-rated WordPress Development Company in Hyderabad. We build SEO-friendly, mobile-responsive, fast-loading custom WordPress websites for businesses in Hitech City, Gachibowli, Banjara Hills & across Hyderabad.",

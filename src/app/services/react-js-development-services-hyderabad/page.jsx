@@ -1,8 +1,8 @@
 // app/reactjs-development-company-hyderabad/page.tsx
 
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
+
+export const metadata = {
   title: "React JS Development Company in Hyderabad | KidiWebTech",
   description:
     "KidiWebTech is a top-rated React JS Development Company in Hyderabad. We build fast, scalable, and interactive React JS web applications for startups, SMBs & enterprises in Hitech City, Gachibowli, Banjara Hills & across Hyderabad.",
