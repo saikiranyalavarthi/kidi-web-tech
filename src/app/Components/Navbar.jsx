@@ -292,17 +292,7 @@ const navItems = [
 
       // 🇮🇳 INDIA TARGETING
       { name: "SEO Services India", href: "/seo-services-india" },
-      {
-        name: "Digital Marketing Company India",
-        href: "/digital-marketing-company-india",
-      },
-
-      // 🌍 GLOBAL TARGETING
-      { name: "International SEO", href: "/international-seo-services" },
-      {
-        name: "Global Digital Marketing",
-        href: "/global-digital-marketing-agency",
-      },
+    
 
       // 💰 PAID MARKETING
       { name: "Google Ads Services", href: "/google-ads-agency" },
@@ -375,14 +365,8 @@ const navItems = [
         href: "/web-design-company-secunderabad",
       },
       // 📍 LOCAL (HYDERABAD TARGET)
-      {
-        name: "Web Development Company Hyderabad",
-        href: "/services/web-development-company-hyderabad",
-      },
-      {
-        name: "Website Design Company Hyderabad",
-        href: "/services/website-design-company-hyderabad",
-      },
+     
+     
 
       {
         name: "Web Development Company Hyderabad",
@@ -565,6 +549,10 @@ const navItems = [
   //   ],
   // },
   { name: "Projects", href: "/projects" },
+  {
+  name: "Case Studies",
+  href: "/case-studies",
+},
   { name: "Blogs", href: "/blogs" },
   { name: "Contact", href: "/contact" },
 ];
