@@ -81,7 +81,7 @@ export default function ServicesSection() {
               icon: "📱",
               title: "App Development",
               desc: "Android, iOS, and Flutter mobile app development for startups and businesses.",
-              link: "/mobile-app-development-hyderabad",
+              link: "/services/mobile-app-development-hyderabad",
             },
 
             {

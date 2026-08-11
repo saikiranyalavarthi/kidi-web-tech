@@ -6,7 +6,7 @@ import {
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
-  FaTwitter,  
+  FaTwitter,
   FaYoutube,
   FaWhatsapp,
   FaEnvelope,
@@ -139,15 +139,13 @@ export default function Footer() {
                 tracking-tight
               "
             >
-            <div className="flex items-center gap-3">
-  <img
- src="/kidiwebtech-logo.png"
-    alt="KIDIWEBTECH"
-    className="w-18 h-18 object-contain"
-  />
-
-  
-</div>
+              <div className="flex items-center gap-3">
+                <img
+                  src="/kidiwebtech-logo.png"
+                  alt="KIDIWEBTECH"
+                  className="w-18 h-18 object-contain"
+                />
+              </div>
             </h3>
 
             <p
@@ -169,13 +167,11 @@ export default function Footer() {
                 {
                   icon: <FaFacebookF />,
                   link: "https://www.facebook.com/profile.php?id=61585391203839",
-                  
                 },
 
                 {
                   icon: <FaInstagram />,
-                  link:  "https://www.instagram.com/kidi.webtech/",
-                 
+                  link: "https://www.instagram.com/kidi.webtech/",
                 },
 
                 {
@@ -183,7 +179,6 @@ export default function Footer() {
                   link: "https://www.linkedin.com/in/kidi-webtech-a86b8b3a2/",
                 },
 
-               
                 {
                   icon: <FaTwitter />,
                   link: "https://x.com/kidiwebtech",
@@ -191,7 +186,7 @@ export default function Footer() {
                 {
                   icon: <FaYoutube />,
                   link: "https://www.youtube.com/@KIDIWEBTECH",
-                }
+                },
               ].map((item, index) => (
                 <a
                   key={index}
@@ -220,52 +215,73 @@ export default function Footer() {
 
           {/* QUICK LINKS */}
 
+          {/* QUICK LINKS */}
           <div>
             <h3 className="text-2xl font-black text-[#0F172A]">Quick Links</h3>
 
             <ul className="space-y-4 mt-8">
-              {["Home", "About", "Services", "Contact", "Privacy Policy"].map(
-                (item, index) => (
-                  <li key={index}>
-                    <Link
-                      href="/"
-                      className="
-                      text-gray-600
-                      hover:text-[#2563EB]
-                      transition duration-300
-                    "
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                ),
-              )}
-            </ul>
-          </div>
-
-          {/* SERVICES */}
-
-          <div>
-            <h3 className="text-2xl font-black text-[#0F172A]">Services</h3>
-
-            <ul className="space-y-4 mt-8">
-              {services.map((service, index) => (
-                <li key={index}>
+              {[
+                { name: "Home", href: "/" },
+                { name: "About", href: "/about" },
+                { name: "Services", href: "/seo-services" },
+                { name: "Contact", href: "/contact" },
+                { name: "Privacy Policy", href: "/privacy-policy" },
+              ].map((item) => (
+                <li key={item.name}>
                   <Link
-                    href="/services"
-                    className="
-                      text-gray-600
-                      hover:text-[#2563EB]
-                      transition duration-300
-                    "
+                    href={item.href}
+                    className="text-gray-600 hover:text-[#2563EB] transition duration-300"
                   >
-                    {service}
+                    {item.name}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
+          {/* SERVICES */}
 
+          {/* SERVICES */}
+          <div>
+            <h3 className="text-2xl font-black text-[#0F172A]">Services</h3>
+
+            <ul className="space-y-4 mt-8">
+              {[
+                {
+                  name: "SEO Services",
+                  href: "/technical-seo-services",
+                },
+                {
+                  name: "Website Development",
+                  href: "/website-development-services",
+                },
+                {
+                  name: "Google Ads",
+                  href: "/google-ads-agency",
+                },
+                {
+                  name: "GMB Optimization Services",
+                  href: "/gmb-optimization-services",
+                },
+                {
+                  name: "App Development",
+                  href: "/services/mobile-app-development-hyderabad",
+                },
+                {
+                  name: "Search Ads Services",
+                  href: "/search-ads-services",
+                },
+              ].map((service) => (
+                <li key={service.name}>
+                  <Link
+                    href={service.href}
+                    className="text-gray-600 hover:text-[#2563EB] transition duration-300"
+                  >
+                    {service.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
           {/* CONTACT */}
 
           <div>
@@ -289,7 +305,7 @@ export default function Footer() {
                   <p className="text-sm text-gray-400">Email</p>
 
                   <a
-                    href="mailto:info@kidiwebtech.com"
+                    href="mailto:kidiwebtech3482@gmail.com"
                     className="text-gray-700 hover:text-[#2563EB]"
                   >
                     kidiwebtech3482@gmail.com
