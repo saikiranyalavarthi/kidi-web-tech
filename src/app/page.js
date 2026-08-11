@@ -12,7 +12,7 @@ import FAQSection from "./Components/FAQSection";
 import ContactPage from "./contact/page";
 import CaseStudiesSection from "./Components/CaseStudiesSection";
 import Herotrain from "./Components/Herotrain";
-import CinemaIntro from "./Components/CinemaIntro";
+// import CinemaIntro from "./Components/CinemaIntro";
 
 // COMPONENTS
 
@@ -20,7 +20,7 @@ import CinemaIntro from "./Components/CinemaIntro";
 export default function Home() {
   return (
     <div className="bg-black text-white font-sans overflow-x-hidden">
-       <CinemaIntro />
+       {/* <CinemaIntro /> */}
       <Head>
         {/* PRIMARY SEO */}
         <title>
