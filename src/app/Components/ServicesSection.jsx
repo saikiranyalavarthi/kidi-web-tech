@@ -74,35 +74,35 @@ export default function ServicesSection() {
               icon: "💻",
               title: "Website Development",
               desc: "Modern business websites and custom web applications built for growth.",
-              link: "/website-development-company-hyderabad",
+              link: "/website-development-services",
             },
 
             {
               icon: "📱",
               title: "App Development",
               desc: "Android, iOS, and Flutter mobile app development for startups and businesses.",
-              link: "/app-development-company-india",
+              link: "/mobile-app-development-hyderabad",
             },
 
             {
               icon: "📈",
               title: "Performance Marketing",
               desc: "ROI-focused Google Ads and paid campaigns to generate leads and sales.",
-              link: "/performance-marketing",
+              link: "/ppc-management-services",
             },
 
             {
               icon: "🎯",
               title: "Social Media Marketing",
               desc: "Build your brand visibility and customer engagement across social platforms.",
-              link: "/social-media-marketing",
+              link: "/seo-services-india",
             },
 
             {
               icon: "🛒",
               title: "Ecommerce Development",
               desc: "High-converting ecommerce websites with modern shopping experiences.",
-              link: "/ecommerce-development",
+              link: "/ecommerce-development-services",
             },
           ].map((service, index) => (
             <div
