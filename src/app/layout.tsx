@@ -214,18 +214,19 @@ export default function RootLayout({
         </Script>
 
         {/* GOOGLE ADSENSE */}
-        <Script
-          async
-         strategy="lazyOnload"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1031612318519089"
-          crossOrigin="anonymous"
-        />
+       <Script
+  async
+  strategy="afterInteractive"
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-10316123185109089"
+  crossOrigin="anonymous"
+/>
 
         {/* SITE LAYOUT */}
         <Navbar />
         <main>{children}</main>
         <FloatingSocialButtons />
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
