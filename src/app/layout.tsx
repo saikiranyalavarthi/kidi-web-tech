@@ -226,6 +226,7 @@ export default function RootLayout({
         <main>{children}</main>
         <FloatingSocialButtons />
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
