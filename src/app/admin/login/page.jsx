@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { supabase } from "../../lib/supabase";
+import { createClient } from "../../lib/supabase-client";
 
 export default function AdminLoginPage() {
   const router = useRouter();
@@ -16,19 +16,35 @@ export default function AdminLoginPage() {
 
     setLoading(true);
 
-    const { error } = await supabase.auth.signInWithPassword({
-      email,
-      password,
-    });
+    try {
+      const supabase = createClient();
 
-    if (error) {
-      alert(error.message);
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email: email.trim(),
+        password,
+      });
+
+      console.log("LOGIN RESULT:", data);
+      console.log("LOGIN ERROR:", error);
+
+      if (error) {
+        alert(error.message);
+        return;
+      }
+
+      if (!data?.session) {
+        alert("Login succeeded but no session was created.");
+        return;
+      }
+
+      router.replace("/blogs");
+      router.refresh();
+    } catch (error) {
+      console.error("LOGIN ERROR:", error);
+      alert(error?.message || "Login failed.");
+    } finally {
       setLoading(false);
-      return;
     }
-
-    router.push("/blogs");
-    router.refresh();
   }
 
   return (
@@ -60,7 +76,7 @@ export default function AdminLoginPage() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full rounded-xl bg-black px-5 py-3 font-semibold text-white"
+            className="w-full rounded-xl bg-black px-5 py-3 font-semibold text-white disabled:opacity-50"
           >
             {loading ? "Logging in..." : "Login"}
           </button>
