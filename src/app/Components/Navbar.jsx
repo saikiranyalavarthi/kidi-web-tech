@@ -292,7 +292,6 @@ const navItems = [
 
       // 🇮🇳 INDIA TARGETING
       { name: "SEO Services India", href: "/seo-services-india" },
-    
 
       // 💰 PAID MARKETING
       { name: "Google Ads Services", href: "/google-ads-agency" },
@@ -365,8 +364,6 @@ const navItems = [
         href: "/web-design-company-secunderabad",
       },
       // 📍 LOCAL (HYDERABAD TARGET)
-     
-     
 
       {
         name: "Web Development Company Hyderabad",
@@ -549,11 +546,11 @@ const navItems = [
   //   ],
   // },
   { name: "Projects", href: "/projects" },
-//   {
-//   name: "Case Studies",
-//   href: "/case-studies",
-// },
-  { name: "Blogs", href: "/blogs" },
+  //   {
+  //   name: "Case Studies",
+  //   href: "/case-studies",
+  // },
+  { name: "Blogs", href: "/blog" },
   { name: "Contact", href: "/contact" },
 ];
 export default function Navbar() {
