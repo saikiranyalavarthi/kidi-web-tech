@@ -24,7 +24,7 @@ export default async function BlogPage() {
   const blogs = await getBlogs();
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white py-20">
       {/* HERO */}
 
       <section className="bg-black px-6 py-20 text-white">
