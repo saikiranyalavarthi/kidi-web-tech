@@ -1,17 +1,62 @@
 import { NextResponse } from "next/server";
-import { createClient } from "@supabase/supabase-js";
+import { createServerClient } from "@supabase/ssr";
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
+// Create Supabase server client using the logged-in user's cookies
+async function getSupabaseServerClient(request) {
+  const response = NextResponse.next();
 
-if (!supabaseUrl || !supabaseKey) {
-  throw new Error("Missing Supabase environment variables");
+  const supabase = createServerClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL,
+    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY,
+    {
+      cookies: {
+        getAll() {
+          return request.cookies.getAll();
+        },
+
+        setAll(cookiesToSet) {
+          cookiesToSet.forEach(({ name, value, options }) => {
+            response.cookies.set(name, value, options);
+          });
+        },
+      },
+    },
+  );
+
+  return { supabase, response };
 }
-const supabase = createClient(supabaseUrl, supabaseKey);
 
+// CHECK ADMIN LOGIN
+async function requireUser(request) {
+  const { supabase } = await getSupabaseServerClient(request);
+
+  const {
+    data: { user },
+    error,
+  } = await supabase.auth.getUser();
+
+  if (error || !user) {
+    return {
+      supabase,
+      user: null,
+    };
+  }
+
+  return {
+    supabase,
+    user,
+  };
+}
+
+// ==============================
 // GET BLOGS
-export async function GET() {
+// PUBLIC
+// ==============================
+
+export async function GET(request) {
   try {
+    const { supabase } = await getSupabaseServerClient(request);
+
     const { data, error } = await supabase
       .from("blogs")
       .select("*")
@@ -20,6 +65,8 @@ export async function GET() {
       });
 
     if (error) {
+      console.error("GET BLOGS ERROR:", error);
+
       return NextResponse.json(
         {
           success: false,
@@ -46,9 +93,25 @@ export async function GET() {
   }
 }
 
+// ==============================
 // CREATE BLOG
+// ADMIN ONLY
+// ==============================
+
 export async function POST(request) {
   try {
+    const { supabase, user } = await requireUser(request);
+
+    if (!user) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Unauthorized. Please login as admin.",
+        },
+        { status: 401 },
+      );
+    }
+
     const body = await request.json();
 
     const {
@@ -82,7 +145,7 @@ export async function POST(request) {
         slug,
         excerpt,
         content,
-        featured_image,
+        featured_image: featured_image || null,
         category,
         author,
         status: status || "draft",
@@ -123,9 +186,25 @@ export async function POST(request) {
   }
 }
 
+// ==============================
 // UPDATE BLOG
+// ADMIN ONLY
+// ==============================
+
 export async function PUT(request) {
   try {
+    const { supabase, user } = await requireUser(request);
+
+    if (!user) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Unauthorized. Please login as admin.",
+        },
+        { status: 401 },
+      );
+    }
+
     const body = await request.json();
 
     const {
@@ -158,7 +237,7 @@ export async function PUT(request) {
       slug,
       excerpt,
       content,
-      featured_image,
+      featured_image: featured_image || null,
       category,
       author,
       status,
@@ -205,9 +284,25 @@ export async function PUT(request) {
   }
 }
 
+// ==============================
 // DELETE BLOG
+// ADMIN ONLY
+// ==============================
+
 export async function DELETE(request) {
   try {
+    const { supabase, user } = await requireUser(request);
+
+    if (!user) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Unauthorized. Please login as admin.",
+        },
+        { status: 401 },
+      );
+    }
+
     const { id } = await request.json();
 
     if (!id) {
