@@ -42,9 +42,15 @@ export async function middleware(request) {
 
   const pathname = request.nextUrl.pathname;
 
-  const isAdminRoute = pathname === "/blogs" || pathname.startsWith("/blogs/");
+  // Protected admin pages
+  const isAdminRoute =
+    pathname.startsWith("/admin") && pathname !== "/admin/login";
 
-  if (isAdminRoute && !user) {
+  // Protect Blogs admin pages too
+  const isBlogAdminRoute =
+    pathname.startsWith("/blogs") && pathname !== "/blogs";
+
+  if ((isAdminRoute || isBlogAdminRoute) && !user) {
     return NextResponse.redirect(new URL("/admin/login", request.url));
   }
 
@@ -52,5 +58,5 @@ export async function middleware(request) {
 }
 
 export const config = {
-  matcher: ["/blogs/:path*"],
+  matcher: ["/admin/:path*", "/blogs/:path*", "/api/case-studies/:path*"],
 };
