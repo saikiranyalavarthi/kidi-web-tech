@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { createClient } from "../../../lib/supabase-client";
 
 export default function NewCaseStudyPage() {
   const router = useRouter();
@@ -24,6 +25,7 @@ export default function NewCaseStudyPage() {
   });
 
   const [loading, setLoading] = useState(false);
+  const [uploading, setUploading] = useState(false);
   const [message, setMessage] = useState("");
 
   function handleChange(e) {
@@ -54,8 +56,82 @@ export default function NewCaseStudyPage() {
     }));
   }
 
+  // ==============================
+  // IMAGE UPLOAD
+  // ==============================
+
+  async function handleImageUpload(e) {
+    const file = e.target.files?.[0];
+
+    if (!file) return;
+
+    // 5MB limit
+    if (file.size > 5 * 1024 * 1024) {
+      setMessage("Image must be less than 5MB.");
+      return;
+    }
+
+    // Image only
+    if (!file.type.startsWith("image/")) {
+      setMessage("Please select an image file.");
+      return;
+    }
+
+    try {
+      setUploading(true);
+      setMessage("Uploading image...");
+
+      const supabase = createClient();
+
+      const fileExtension = file.name.split(".").pop();
+
+      const fileName = `${Date.now()}-${Math.random()
+        .toString(36)
+        .substring(2, 10)}.${fileExtension}`;
+
+      const filePath = `case-studies/${fileName}`;
+
+      const { error: uploadError } = await supabase.storage
+        .from("case-studies")
+        .upload(filePath, file, {
+          cacheControl: "3600",
+          upsert: false,
+        });
+
+      if (uploadError) {
+        console.error("UPLOAD ERROR:", uploadError);
+        throw new Error(uploadError.message);
+      }
+
+      const { data } = supabase.storage
+        .from("case-studies")
+        .getPublicUrl(filePath);
+
+      setForm((prev) => ({
+        ...prev,
+        featured_image: data.publicUrl,
+      }));
+
+      setMessage("Image uploaded successfully!");
+    } catch (error) {
+      console.error("IMAGE UPLOAD ERROR:", error);
+      setMessage(error.message || "Image upload failed.");
+    } finally {
+      setUploading(false);
+    }
+  }
+
+  // ==============================
+  // SUBMIT CASE STUDY
+  // ==============================
+
   async function handleSubmit(e) {
     e.preventDefault();
+
+    if (uploading) {
+      setMessage("Please wait for the image upload to finish.");
+      return;
+    }
 
     setLoading(true);
     setMessage("");
@@ -63,6 +139,7 @@ export default function NewCaseStudyPage() {
     try {
       const response = await fetch("/api/case-studies", {
         method: "POST",
+        credentials: "include",
         headers: {
           "Content-Type": "application/json",
         },
@@ -72,7 +149,9 @@ export default function NewCaseStudyPage() {
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.error || "Failed to create case study");
+        throw new Error(
+          data.error || "Failed to create case study"
+        );
       }
 
       setMessage("Case study created successfully!");
@@ -82,7 +161,8 @@ export default function NewCaseStudyPage() {
         router.refresh();
       }, 1000);
     } catch (error) {
-      setMessage(error.message);
+      console.error("CREATE CASE STUDY ERROR:", error);
+      setMessage(error.message || "Failed to create case study.");
     } finally {
       setLoading(false);
     }
@@ -101,6 +181,8 @@ export default function NewCaseStudyPage() {
           className="space-y-6 rounded-2xl bg-white p-8 shadow"
         >
 
+          {/* TITLE */}
+
           <input
             name="title"
             value={form.title}
@@ -109,6 +191,8 @@ export default function NewCaseStudyPage() {
             required
             className="w-full rounded-lg border p-3"
           />
+
+          {/* SLUG */}
 
           <input
             name="slug"
@@ -119,6 +203,8 @@ export default function NewCaseStudyPage() {
             className="w-full rounded-lg border p-3"
           />
 
+          {/* EXCERPT */}
+
           <textarea
             name="excerpt"
             value={form.excerpt}
@@ -128,6 +214,8 @@ export default function NewCaseStudyPage() {
             className="w-full rounded-lg border p-3"
           />
 
+          {/* CLIENT */}
+
           <input
             name="client_name"
             value={form.client_name}
@@ -136,6 +224,8 @@ export default function NewCaseStudyPage() {
             className="w-full rounded-lg border p-3"
           />
 
+          {/* INDUSTRY */}
+
           <input
             name="industry"
             value={form.industry}
@@ -143,6 +233,8 @@ export default function NewCaseStudyPage() {
             placeholder="Industry"
             className="w-full rounded-lg border p-3"
           />
+
+          {/* CHALLENGE */}
 
           <textarea
             name="challenge"
@@ -153,6 +245,8 @@ export default function NewCaseStudyPage() {
             className="w-full rounded-lg border p-3"
           />
 
+          {/* SOLUTION */}
+
           <textarea
             name="solution"
             value={form.solution}
@@ -161,6 +255,8 @@ export default function NewCaseStudyPage() {
             rows={7}
             className="w-full rounded-lg border p-3"
           />
+
+          {/* RESULTS */}
 
           <textarea
             name="results"
@@ -171,6 +267,8 @@ export default function NewCaseStudyPage() {
             className="w-full rounded-lg border p-3"
           />
 
+          {/* TECHNOLOGIES */}
+
           <input
             name="technologies"
             value={form.technologies}
@@ -179,13 +277,54 @@ export default function NewCaseStudyPage() {
             className="w-full rounded-lg border p-3"
           />
 
-          <input
-            name="featured_image"
-            value={form.featured_image}
-            onChange={handleChange}
-            placeholder="Featured Image URL"
-            className="w-full rounded-lg border p-3"
-          />
+          {/* ==============================
+              FEATURED IMAGE UPLOAD
+          ============================== */}
+
+          <div>
+            <label className="mb-2 block font-semibold">
+              Featured Image
+            </label>
+
+            <label className="flex cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed border-gray-300 bg-gray-50 px-6 py-10 text-center transition hover:border-black hover:bg-gray-100">
+
+              <div className="text-4xl">
+                📷
+              </div>
+
+              <p className="mt-3 font-semibold">
+                {uploading
+                  ? "Uploading..."
+                  : "Click to upload image"}
+              </p>
+
+              <p className="mt-1 text-sm text-gray-500">
+                JPG, PNG or WebP · Maximum 5MB
+              </p>
+
+              <input
+                type="file"
+                accept="image/jpeg,image/png,image/webp"
+                onChange={handleImageUpload}
+                disabled={uploading}
+                className="hidden"
+              />
+            </label>
+
+            {/* IMAGE PREVIEW */}
+
+            {form.featured_image && (
+              <div className="mt-5 overflow-hidden rounded-xl border bg-gray-50">
+                <img
+                  src={form.featured_image}
+                  alt={form.title || "Case Study Featured Image"}
+                  className="h-auto max-h-[400px] w-full object-cover"
+                />
+              </div>
+            )}
+          </div>
+
+          {/* CONTENT */}
 
           <textarea
             name="content"
@@ -196,6 +335,8 @@ export default function NewCaseStudyPage() {
             className="w-full rounded-lg border p-3"
           />
 
+          {/* SEO TITLE */}
+
           <input
             name="seo_title"
             value={form.seo_title}
@@ -203,6 +344,8 @@ export default function NewCaseStudyPage() {
             placeholder="SEO Title"
             className="w-full rounded-lg border p-3"
           />
+
+          {/* SEO DESCRIPTION */}
 
           <textarea
             name="seo_description"
@@ -212,6 +355,8 @@ export default function NewCaseStudyPage() {
             rows={4}
             className="w-full rounded-lg border p-3"
           />
+
+          {/* PUBLISH */}
 
           <label className="flex items-center gap-3">
             <input
@@ -227,18 +372,26 @@ export default function NewCaseStudyPage() {
             </span>
           </label>
 
+          {/* MESSAGE */}
+
           {message && (
             <div className="rounded-lg bg-gray-100 p-4">
               {message}
             </div>
           )}
 
+          {/* BUTTON */}
+
           <button
             type="submit"
-            disabled={loading}
+            disabled={loading || uploading}
             className="rounded-lg bg-black px-6 py-3 font-semibold text-white hover:bg-yellow-500 hover:text-black disabled:opacity-50"
           >
-            {loading ? "Publishing..." : "Create Case Study"}
+            {uploading
+              ? "Uploading Image..."
+              : loading
+              ? "Publishing..."
+              : "Create Case Study"}
           </button>
 
         </form>
