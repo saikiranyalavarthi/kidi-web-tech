@@ -551,6 +551,7 @@ const navItems = [
   //   href: "/case-studies",
   // },
   { name: "Blogs", href: "/blog" },
+
   { name: "Contact", href: "/contact" },
 ];
 export default function Navbar() {
