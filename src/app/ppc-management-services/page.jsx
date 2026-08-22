@@ -5,13 +5,13 @@ import Link from "next/link";
 
 export default function PPCManagementServicesPage() {
   return (
-    <div className="bg-black text-white overflow-hidden">
+    <div className="bg-white text-black overflow-hidden">
       {/* ================= HERO ================= */}
-      <section className="py-20 px-6 text-center border-b border-white/10">
+      <section className="py-28 px-6 text-center border-b border-gray-200">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-          PPC Management <span className="gradient-text">Services</span>
+          PPC Management <span className="text-blue-500">Services</span>
         </h1>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+        <p className="text-black max-w-3xl mx-auto text-lg">
           Partner with a results-driven PPC management agency that builds
           high-performance, ROI-focused pay-per-click campaigns across Google,
           Microsoft, Meta, and beyond — engineered precisely around your
@@ -34,7 +34,7 @@ export default function PPCManagementServicesPage() {
             <h2 className="text-3xl font-extrabold mb-6">
               Full-Service PPC Management Agency
             </h2>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               We are a full-service PPC management agency specializing in
               building and managing high-performance pay-per-click advertising
               campaigns across Google Ads, Microsoft Advertising, Meta Ads,
@@ -46,7 +46,7 @@ export default function PPCManagementServicesPage() {
               advertising management that drives qualified traffic, reduces your
               cost per acquisition, and grows your business profitably at scale.
             </p>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               Our agency brings together expert PPC strategists, paid search
               specialists, paid social managers, ad copywriters, landing page
               conversion specialists, and analytics engineers who collaborate on
@@ -54,7 +54,7 @@ export default function PPCManagementServicesPage() {
               outperform industry benchmarks — from first impression to final
               conversion.
             </p>
-            <p className="text-gray-400">
+            <p className="text-black">
               Whether you are a startup launching your first paid advertising
               campaign, a growing business looking to scale PPC profitably, or
               an enterprise managing complex multi-platform and multi-market
@@ -65,7 +65,7 @@ export default function PPCManagementServicesPage() {
             </p>
           </div>
           <Image
-        src="/SEO/kidiwebtechimage9.jpg"
+            src="/SEO/kidiwebtechimage9.jpg"
             alt="PPC Management Services"
             width={600}
             height={400}
@@ -75,10 +75,10 @@ export default function PPCManagementServicesPage() {
       </section>
 
       {/* ================= CORE CONTENT ================= */}
-      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-gray-400">
+      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-black">
         {/* WHAT IS PPC MANAGEMENT */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
             What Is PPC Management?
           </h2>
           <p className="mb-4">
@@ -114,7 +114,7 @@ export default function PPCManagementServicesPage() {
 
         {/* WHY PROFESSIONAL PPC MANAGEMENT */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
             Why Does Your Business Need Professional PPC Management?
           </h2>
           <p className="mb-4">
@@ -148,7 +148,7 @@ export default function PPCManagementServicesPage() {
 
         {/* SERVICES */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
             Our PPC Management Services
           </h2>
           <p className="mb-6">
@@ -275,7 +275,7 @@ export default function PPCManagementServicesPage() {
 
         {/* PLATFORMS & TOOLS */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
             Platforms & Tools We Use for PPC Management
           </h2>
           <p className="mb-6">
@@ -376,7 +376,7 @@ export default function PPCManagementServicesPage() {
 
         {/* PROCESS */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
             Our PPC Management Process
           </h2>
           <p className="mb-6">
@@ -500,7 +500,7 @@ export default function PPCManagementServicesPage() {
 
         {/* INDUSTRIES */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
             Industries Our PPC Management Services Cover
           </h2>
           <p className="mb-4">
@@ -525,7 +525,7 @@ export default function PPCManagementServicesPage() {
 
         {/* WHY CHOOSE */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
             Why Choose Our PPC Management Services?
           </h2>
 
@@ -627,7 +627,7 @@ export default function PPCManagementServicesPage() {
 
         {/* FAQ */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
             PPC Management Services FAQs
           </h2>
 
@@ -748,15 +748,15 @@ export default function PPCManagementServicesPage() {
       <section className="py-16 px-6 text-center border-t border-white/10">
         <h2 className="text-3xl font-extrabold mb-6">
           Ready to Scale with{" "}
-          <span className="gradient-text">Expert PPC Management Services?</span>
+          <span className="text-blue-500">Expert PPC Management Services?</span>
         </h2>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-4 text-lg">
+        <p className="text-black max-w-2xl mx-auto mb-4 text-lg">
           Get a free PPC audit and consultation with our team. We'll review your
           existing ad accounts (or discuss a new campaign strategy from
           scratch), share actionable insights, and provide a clear agency
           proposal with scope and pricing — at no cost and no obligation.
         </p>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-10">
+        <p className="text-black max-w-2xl mx-auto mb-10">
           Let's build a PPC management programme that generates qualified leads,
           maximizes your return on ad spend, and scales your business profitably
           — with an agency that stays invested in your results long after
@@ -765,7 +765,7 @@ export default function PPCManagementServicesPage() {
         <Link
           href="/contact"
           className="inline-block px-10 py-4 rounded-full
-            bg-gradient-to-r from-yellow-400 to-orange-500
+            bg-blue-500 hover:bg-blue-600 transition duration-300
             text-black font-semibold text-lg"
         >
           Get Free Consultation →

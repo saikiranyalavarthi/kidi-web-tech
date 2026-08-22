@@ -5,14 +5,14 @@ import Link from "next/link";
 
 export default function GoogleAdsAgencyPage() {
   return (
-    <div className="bg-black text-white overflow-hidden">
+    <div className="bg-white text-black overflow-hidden">
       {/* ================= HERO ================= */}
-      <section className="py-20 px-6 text-center border-b border-white/10">
+      <section className="py-26 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           Google Ads{" "}
-          <span className="gradient-text">Agency</span>
+          <span className="text-blue-500">Agency</span>
         </h1>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+        <p className="text-black max-w-3xl mx-auto text-lg">
           Partner with a specialist Google Ads agency that builds
           high-performance, ROI-focused campaigns across Search, Shopping,
           Display, YouTube, and Performance Max — engineered precisely around
@@ -35,7 +35,7 @@ export default function GoogleAdsAgencyPage() {
             <h2 className="text-3xl font-extrabold mb-6">
               Full-Service Google Ads Agency
             </h2>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               We are a full-service Google Ads agency specializing in building
               and managing high-performance advertising campaigns across every
               Google Ads channel — Search, Shopping, Display, YouTube,
@@ -47,7 +47,7 @@ export default function GoogleAdsAgencyPage() {
               Ads management that drives qualified traffic, lowers your cost per
               acquisition, and scales your business profitably.
             </p>
-            <p className="text-gray-400 mb-4">
+            <p className="text-black mb-4">
               Our agency brings together expert Google Ads strategists, paid
               search specialists, Shopping and Performance Max engineers, ad
               copywriters, landing page conversion specialists, and analytics
@@ -55,7 +55,7 @@ export default function GoogleAdsAgencyPage() {
               Ads campaigns that consistently outperform industry benchmarks —
               from first impression to final conversion.
             </p>
-            <p className="text-gray-400">
+            <p className="text-black">
               Whether you are a startup launching your first Google Ads account,
               a growing business looking to scale paid search profitably, or an
               enterprise managing complex multi-campaign and multi-market Google
@@ -76,11 +76,11 @@ export default function GoogleAdsAgencyPage() {
       </section>
 
       {/* ================= CORE CONTENT ================= */}
-      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-gray-400">
+      <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-black">
 
         {/* WHAT IS A GOOGLE ADS AGENCY */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
             What Is a Google Ads Agency?
           </h2>
           <p className="mb-4">
@@ -117,7 +117,7 @@ export default function GoogleAdsAgencyPage() {
 
         {/* WHY AGENCY OVER IN-HOUSE */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
             Why Use a Google Ads Agency Instead of Managing In-House?
           </h2>
           <p className="mb-4">
@@ -155,7 +155,7 @@ export default function GoogleAdsAgencyPage() {
 
         {/* SERVICES */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
             Our Google Ads Agency Services
           </h2>
           <p className="mb-6">
@@ -284,7 +284,7 @@ export default function GoogleAdsAgencyPage() {
 
         {/* PLATFORMS & TOOLS */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
             Tools & Technology Our Google Ads Agency Uses
           </h2>
           <p className="mb-6">
@@ -391,7 +391,7 @@ export default function GoogleAdsAgencyPage() {
 
         {/* PROCESS */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
             Our Google Ads Agency Process
           </h2>
           <p className="mb-6">
@@ -520,7 +520,7 @@ export default function GoogleAdsAgencyPage() {
 
         {/* INDUSTRIES */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
             Industries Our Google Ads Agency Serves
           </h2>
           <p className="mb-4">
@@ -545,7 +545,7 @@ export default function GoogleAdsAgencyPage() {
 
         {/* WHY CHOOSE */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
             Why Choose Our Google Ads Agency?
           </h2>
 
@@ -652,7 +652,7 @@ export default function GoogleAdsAgencyPage() {
 
         {/* FAQ */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
             Google Ads Agency FAQs
           </h2>
 
@@ -776,17 +776,17 @@ export default function GoogleAdsAgencyPage() {
       <section className="py-16 px-6 text-center border-t border-white/10">
         <h2 className="text-3xl font-extrabold mb-6">
           Ready to Grow with a{" "}
-          <span className="gradient-text">
+          <span className="text-blue-500">
             Specialist Google Ads Agency?
           </span>
         </h2>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-4 text-lg">
+        <p className="text-black max-w-2xl mx-auto mb-4 text-lg">
           Get a free Google Ads audit and consultation with our team. We'll
           review your existing account (or design a new campaign strategy from
           scratch), share actionable insights, and provide a clear agency
           proposal with scope and pricing — at no cost and no obligation.
         </p>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-10">
+        <p className="text-black max-w-2xl mx-auto mb-10">
           Let's build a Google Ads programme that generates qualified leads,
           maximizes your ROAS, and scales your business profitably — with an
           agency that stays invested in your results long after campaign launch.
@@ -794,7 +794,7 @@ export default function GoogleAdsAgencyPage() {
         <Link
           href="/contact"
           className="inline-block px-10 py-4 rounded-full
-            bg-gradient-to-r from-yellow-400 to-orange-500
+            bg-blue-500 hover:bg-blue-600 transition duration-300
             text-black font-semibold text-lg"
         >
           Get Free Consultation →
