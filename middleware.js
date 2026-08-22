@@ -47,8 +47,7 @@ export async function middleware(request) {
     pathname.startsWith("/admin") && pathname !== "/admin/login";
 
   // Protect Blogs admin pages too
-  const isBlogAdminRoute =
-    pathname.startsWith("/blogs") && pathname !== "/blogs";
+  const isBlogAdminRoute = pathname.startsWith("/blogs");
 
   if ((isAdminRoute || isBlogAdminRoute) && !user) {
     return NextResponse.redirect(new URL("/admin/login", request.url));
