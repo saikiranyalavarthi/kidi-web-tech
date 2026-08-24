@@ -7,10 +7,10 @@ export default function Herotrain() {
   const [currentVideo, setCurrentVideo] = useState(0);
 
   const videos = [
-     "/videos/kidiwebtech-video.mp4",
+    "/videos/kidiwebtech-video2.mp4",
+    "/videos/kidiwebtech-video.mp4",
     "/videos/kidiwebtech-express1.mp4",
     "/videos/kidiwebtech-express.mp4",
-   
   ];
 
   const handleVideoEnd = () => {
@@ -18,7 +18,7 @@ export default function Herotrain() {
   };
 
   return (
-    <section className="relative h-[40vh] md:h-screen w-full overflow-hidden bg-black mt-16"> 
+    <section className="relative h-[40vh] md:h-screen w-full overflow-hidden bg-black mt-16">
       <video
         key={currentVideo}
         ref={videoRef}
