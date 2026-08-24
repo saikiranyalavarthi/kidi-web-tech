@@ -7,7 +7,7 @@ export default function Herotrain() {
   const [currentVideo, setCurrentVideo] = useState(0);
 
   const videos = [
-    "/videos/kidiwebtech-video2.mp4",
+    // "/videos/kidiwebtech-video2.mp4",
     "/videos/kidiwebtech-video.mp4",
     "/videos/kidiwebtech-express1.mp4",
     "/videos/kidiwebtech-express.mp4",
