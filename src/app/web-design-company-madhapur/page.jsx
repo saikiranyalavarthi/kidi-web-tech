@@ -1,7 +1,175 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata = {
+  title: "Web Design Company in Madhapur | KidiWebTech",
+
+  description:
+    "KidiWebTech provides professional web design and website development services in Madhapur, Hyderabad. We build responsive, fast, SEO-friendly business, ecommerce and custom websites.",
+
+  keywords: [
+    "web design company in Madhapur",
+    "web design company Madhapur",
+    "website development company Madhapur",
+    "web development company Madhapur",
+    "website designers Madhapur",
+    "website design Madhapur",
+    "ecommerce website development Madhapur",
+    "business website design Madhapur",
+    "custom website development Madhapur",
+    "SEO-friendly website development Madhapur",
+    "web design company Hyderabad",
+    "website development Hyderabad",
+    "KidiWebTech Madhapur",
+  ],
+
+  alternates: {
+    canonical: "https://www.kidiwebtech.com/web-design-company-madhapur",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+      "max-snippet": -1,
+    },
+  },
+
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://www.kidiwebtech.com/web-design-company-madhapur",
+    siteName: "KidiWebTech",
+    title: "Web Design Company in Madhapur | KidiWebTech",
+    description:
+      "Professional web design and website development services in Madhapur, Hyderabad for startups, IT companies, ecommerce businesses and local brands.",
+    images: [
+      {
+        url: "https://www.kidiwebtech.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Web Design Company in Madhapur Hyderabad - KidiWebTech",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Web Design Company in Madhapur | KidiWebTech",
+    description:
+      "Professional website design, web development and SEO-friendly websites in Madhapur, Hyderabad.",
+    images: ["https://www.kidiwebtech.com/og-image.jpg"],
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://www.kidiwebtech.com/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Web Design Company in Madhapur",
+      item: "https://www.kidiwebtech.com/web-design-company-madhapur",
+    },
+  ],
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+
+  name: "Web Design and Website Development Services in Madhapur",
+
+  serviceType: [
+    "Web Design",
+    "Website Development",
+    "Ecommerce Website Development",
+    "Corporate Website Design",
+    "Responsive Web Design",
+    "SEO-Friendly Website Development",
+  ],
+
+  description:
+    "Professional web design and website development services for businesses in Madhapur and Hyderabad.",
+
+  provider: {
+    "@type": "ProfessionalService",
+    name: "KidiWebTech",
+    url: "https://www.kidiwebtech.com/",
+    telephone: "+91-9390627367",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Hyderabad",
+      addressRegion: "Telangana",
+      addressCountry: "IN",
+    },
+  },
+
+  areaServed: {
+    "@type": "Place",
+    name: "Madhapur, Hyderabad, Telangana, India",
+  },
+
+  url: "https://www.kidiwebtech.com/web-design-company-madhapur",
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How much does professional web design cost in Madhapur?",
+
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Website design pricing depends on the number of pages, functionality, design requirements, integrations and overall project scope. KidiWebTech provides a project-specific proposal based on your requirements.",
+      },
+    },
+
+    {
+      "@type": "Question",
+      name: "How long does it take to develop a website in Madhapur?",
+
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A standard business website can take several weeks depending on the number of pages, content, design requirements and functionality. Ecommerce websites and custom web applications may require additional development time.",
+      },
+    },
+
+    {
+      "@type": "Question",
+      name: "Do you design websites for IT companies and startups in Madhapur?",
+
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. KidiWebTech provides website design and development services for IT companies, software businesses, SaaS companies, startups and professional service businesses in Madhapur and Hyderabad.",
+      },
+    },
+
+    {
+      "@type": "Question",
+      name: "Can you redesign an existing website?",
+
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. We can redesign existing websites to improve their user experience, responsive design, performance, content structure and conversion potential.",
+      },
+    },
+  ],
+};
 
 export default function WebDesignCompanyMadhapurPage() {
   return (

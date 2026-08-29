@@ -1,31 +1,215 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 
-export default function WebDesignCompanySecunderabadPage() {
+export const metadata = {
+  title: "Web Design Company in kukatapally | KidiWebTech",
+
+  description:
+    "KidiWebTech is a web design and website development company in kukatapally, Hyderabad. We build responsive, fast and SEO-friendly business, ecommerce and custom websites for businesses.",
+
+  keywords: [
+    "web design company in kukatapally",
+    "web design company kukatapally",
+    "website development company kukatapally",
+    "web development company kukatapally",
+    "website designers kukatapally",
+    "website design kukatapally",
+    "ecommerce website development kukatapally",
+    "business website design kukatapally",
+    "custom website development kukatapally",
+    "SEO friendly website development kukatapally",
+    "web design company Hyderabad",
+    "website development Hyderabad",
+    "KidiWebTech kukatapally",
+  ],
+
+  alternates: {
+    canonical: "https://www.kidiwebtech.com/web-design-company-kukatapally",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+      "max-snippet": -1,
+    },
+  },
+
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+
+    url: "https://www.kidiwebtech.com/web-design-company-kukatapally",
+
+    siteName: "KidiWebTech",
+
+    title: "Web Design Company in kukatapally | KidiWebTech",
+
+    description:
+      "Professional web design and website development services in kukatapally, Hyderabad. Build a responsive, fast and SEO-friendly website with KidiWebTech.",
+
+    images: [
+      {
+        url: "https://www.kidiwebtech.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "KidiWebTech Web Design Company in kukatapally",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Web Design Company in kukatapally | KidiWebTech",
+
+    description:
+      "Responsive website design, ecommerce development and SEO-friendly websites for businesses in kukatapally, Hyderabad.",
+
+    images: ["https://www.kidiwebtech.com/og-image.jpg"],
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://www.kidiwebtech.com/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Web Design Company in kukatapally",
+      item: "https://www.kidiwebtech.com/web-design-company-kukatapally",
+    },
+  ],
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+
+  "@id": "https://www.kidiwebtech.com/web-design-company-kukatapally#service",
+
+  name: "Web Design and Website Development Services in kukatapally",
+
+  serviceType: [
+    "Web Design",
+    "Website Development",
+    "Ecommerce Website Development",
+    "Corporate Website Design",
+    "Responsive Web Design",
+    "SEO-Friendly Website Development",
+  ],
+
+  description:
+    "Professional web design and website development services for businesses in kukatapally and Hyderabad.",
+
+  provider: {
+    "@type": "ProfessionalService",
+
+    name: "KidiWebTech",
+
+    url: "https://www.kidiwebtech.com/",
+
+    telephone: "+91-9390627367",
+
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Hyderabad",
+      addressRegion: "Telangana",
+      addressCountry: "IN",
+    },
+  },
+
+  areaServed: {
+    "@type": "Place",
+    name: "kukatapally, Hyderabad, Telangana, India",
+  },
+
+  url: "https://www.kidiwebtech.com/web-design-company-kukatapally",
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How much does a website cost in kukatapally?",
+
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Website pricing depends on the number of pages, design requirements, functionality, integrations and project scope. KidiWebTech provides project-specific proposals based on individual business requirements.",
+      },
+    },
+
+    {
+      "@type": "Question",
+      name: "How long does it take to build a website in kukatapally?",
+
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A standard business website can typically take several weeks depending on the website structure, content, design requirements and functionality. Larger ecommerce websites and custom applications may require additional development time.",
+      },
+    },
+
+    {
+      "@type": "Question",
+      name: "Do you provide SEO services with website development?",
+
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. KidiWebTech provides SEO services including technical SEO, on-page SEO and local SEO. Websites can also be developed with an SEO-friendly structure.",
+      },
+    },
+
+    {
+      "@type": "Question",
+      name: "Can you redesign an existing website?",
+
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. KidiWebTech can redesign existing websites to improve their user experience, responsive design, performance, content structure and conversion potential.",
+      },
+    },
+  ],
+};
+
+export default function WebDesignCompanykukatapallyPage() {
   return (
     <div className="bg-white text-black overflow-hidden mt-6">
       {/* ================= HERO ================= */}
       <section className="py-20 px-6 text-center border-b border-white/10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
           Web Design Company in{" "}
-          <span className="gradient-text">Secunderabad, Hyderabad</span>
+          <span className="text-blue-500">kukatapally, Hyderabad</span>
         </h1>
         <p className="text-black max-w-3xl mx-auto text-lg">
-          Partner with Secunderabad's trusted web design company for custom,
+          Partner with kukatapally's trusted web design company for custom,
           high-performance websites that grow your business. We design and
           develop conversion-focused websites for businesses, professionals, and
-          enterprises across Secunderabad — delivering stunning design,
-          technical excellence, and measurable results that set you apart from
-          every competitor in your market.
+          enterprises across kukatapally — delivering stunning design, technical
+          excellence, and measurable results that set you apart from every
+          competitor in your market.
         </p>
         <nav className="mt-6 text-sm text-gray-500">
           <Link href="/">Home</Link>
           <span className="mx-2">›</span>
           <Link href="/website-development">Website Development</Link>
           <span className="mx-2">›</span>
-          <span>Web Design Company in Secunderabad</span>
+          <span>Web Design Company in kukatapally</span>
         </nav>
       </section>
 
@@ -33,11 +217,9 @@ export default function WebDesignCompanySecunderabadPage() {
       <section className="py-16 px-6 md:px-20 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-3xl font-extrabold mb-6">
-              Best Web Design Company in Secunderabad
-            </h2>
+            <h2>Professional Web Design Services in kukatapally</h2>
             <p className="text-black mb-4">
-              We are a results-driven web design company in Secunderabad,
+              We are a results-driven web design company in kukatapally,
               specializing in custom website design and development for
               businesses across every sector — from trading companies, retail
               businesses, and professional service firms to educational
@@ -58,14 +240,14 @@ export default function WebDesignCompanySecunderabadPage() {
             <p className="text-black">
               Whether you need a brand-new business website, a complete redesign
               of your current site, a robust ecommerce store, or a
-              high-converting landing page — our Secunderabad web design team
+              high-converting landing page — our kukatapally web design team
               delivers websites that represent your business with authority and
               generate real, measurable results.
             </p>
           </div>
           <Image
             src="/SEO/websiteimage7.jpg"
-            alt="Web Design Company in Secunderabad Hyderabad"
+            alt="Web Design Company in kukatapally Hyderabad"
             width={600}
             height={400}
             className="rounded-2xl"
@@ -75,13 +257,13 @@ export default function WebDesignCompanySecunderabadPage() {
 
       {/* ================= CORE CONTENT ================= */}
       <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-black">
-        {/* WHY SECUNDERABAD BUSINESSES NEED PROFESSIONAL WEB DESIGN */}
+        {/* WHY kukatapally BUSINESSES NEED PROFESSIONAL WEB DESIGN */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
-            Why Secunderabad Businesses Need Professional Web Design
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
+            Why kukatapally Businesses Need Professional Web Design
           </h2>
           <p className="mb-4">
-            Secunderabad is one of Hyderabad's most established commercial
+            kukatapally is one of Hyderabad's most established commercial
             centres — a densely competitive market where businesses across
             trading, retail, education, healthcare, real estate, finance, and
             professional services compete daily for customers, clients, and
@@ -101,11 +283,11 @@ export default function WebDesignCompanySecunderabadPage() {
             before any conversation begins.
           </p>
           <p>
-            Professional web design from a specialist Secunderabad web design
+            Professional web design from a specialist kukatapally web design
             company ensures that your website makes a powerful first impression,
             communicates your value proposition with confidence, builds
             immediate trust with your target audience, and consistently converts
-            visitors into leads and customers. In Secunderabad's competitive
+            visitors into leads and customers. In kukatapally's competitive
             business environment, a professionally designed website is one of
             the highest-return investments your business can make.
           </p>
@@ -113,12 +295,12 @@ export default function WebDesignCompanySecunderabadPage() {
 
         {/* SERVICES */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
-            Our Web Design Services in Secunderabad
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
+            Our Web Design Services in kukatapally
           </h2>
           <p className="mb-6">
             We offer a comprehensive range of web design and development
-            services tailored to the diverse needs of Secunderabad businesses —
+            services tailored to the diverse needs of kukatapally businesses —
             from small professional service firms and retail businesses to large
             enterprises and established institutions.
           </p>
@@ -128,7 +310,7 @@ export default function WebDesignCompanySecunderabadPage() {
           </h3>
           <p className="mb-5">
             We design and develop fully custom business websites for companies
-            across Secunderabad. Every website is built from scratch — no
+            across kukatapally. Every website is built from scratch — no
             templates, no recycled layouts — designed specifically to reflect
             your brand identity, communicate your unique value proposition, and
             serve the precise goals of your business. Our business websites
@@ -156,7 +338,7 @@ export default function WebDesignCompanySecunderabadPage() {
             3. Ecommerce Website Design
           </h3>
           <p className="mb-5">
-            We build high-converting ecommerce websites for Secunderabad-based
+            We build high-converting ecommerce websites for kukatapally-based
             retailers, D2C brands, and product businesses — designed to maximize
             every stage of the customer journey from product discovery to
             completed purchase. Our ecommerce websites feature compelling
@@ -171,8 +353,8 @@ export default function WebDesignCompanySecunderabadPage() {
           </h3>
           <p className="mb-5">
             For lawyers, chartered accountants, doctors, architects,
-            consultants, and other professionals in Secunderabad, your website
-            is your digital credentials — the first place prospective clients
+            consultants, and other professionals in kukatapally, your website is
+            your digital credentials — the first place prospective clients
             evaluate your expertise, experience, and trustworthiness. We build
             professional service websites that establish authority, communicate
             your specialization clearly, showcase credentials and case studies
@@ -184,7 +366,7 @@ export default function WebDesignCompanySecunderabadPage() {
             5. Educational Institution Website Design
           </h3>
           <p className="mb-5">
-            Secunderabad has a rich educational landscape — from schools and
+            kukatapally has a rich educational landscape — from schools and
             colleges to coaching centres, training institutes, and skill
             development academies. We build educational institution websites
             that communicate academic excellence, showcase faculty and
@@ -199,7 +381,7 @@ export default function WebDesignCompanySecunderabadPage() {
           </h3>
           <p className="mb-5">
             For hospitals, clinics, diagnostic centres, and healthcare
-            professionals in Secunderabad, we build websites that establish
+            professionals in kukatapally, we build websites that establish
             clinical credibility, communicate specializations and services with
             clarity, and make it easy for patients to find information, book
             appointments, and contact your team. Our healthcare websites are
@@ -213,7 +395,7 @@ export default function WebDesignCompanySecunderabadPage() {
           </h3>
           <p className="mb-5">
             We build real estate websites for developers, brokers, and property
-            management companies in Secunderabad — featuring property listing
+            management companies in kukatapally — featuring property listing
             systems, advanced search and filter functionality, virtual tour
             integration, lead capture forms, and CRM integration. Our real
             estate websites are designed to generate qualified buyer and tenant
@@ -226,11 +408,11 @@ export default function WebDesignCompanySecunderabadPage() {
           </h3>
           <p className="mb-5">
             For businesses running Google Ads, Meta Ads, or other performance
-            marketing campaigns in Secunderabad, we build dedicated,
-            custom-coded landing pages engineered to maximize conversion rates
-            and improve Quality Scores. Our landing pages are laser-focused on a
-            single conversion goal — generating more leads and more customers
-            from every rupee you spend on advertising.
+            marketing campaigns in kukatapally, we build dedicated, custom-coded
+            landing pages engineered to maximize conversion rates and improve
+            Quality Scores. Our landing pages are laser-focused on a single
+            conversion goal — generating more leads and more customers from
+            every rupee you spend on advertising.
           </p>
 
           <ul className="list-disc pl-6 space-y-2 mt-2">
@@ -247,8 +429,8 @@ export default function WebDesignCompanySecunderabadPage() {
 
         {/* TECHNOLOGIES */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
-            Technologies We Use for Web Design in Secunderabad
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
+            Technologies We Use for Web Design in kukatapally
           </h2>
           <p className="mb-6">
             We select the right technology for every web design project based on
@@ -333,8 +515,8 @@ export default function WebDesignCompanySecunderabadPage() {
 
         {/* PROCESS */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
-            Our Web Design Process in Secunderabad
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
+            Our Web Design Process in kukatapally
           </h2>
           <p className="mb-6">
             We follow a structured, collaborative process that ensures every
@@ -444,12 +626,12 @@ export default function WebDesignCompanySecunderabadPage() {
 
         {/* INDUSTRIES */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
-            Industries We Serve in Secunderabad
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
+            Industries We Serve in kukatapally
           </h2>
           <p className="mb-4">
             We have delivered high-performance websites for businesses across a
-            wide range of industries in Secunderabad and across Hyderabad —
+            wide range of industries in kukatapally and across Hyderabad —
             bringing category-specific design expertise and conversion best
             practices to every project.
           </p>
@@ -471,15 +653,15 @@ export default function WebDesignCompanySecunderabadPage() {
 
         {/* WHY CHOOSE */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
-            Why Choose Us as Your Web Design Company in Secunderabad?
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
+            Why Choose Us as Your Web Design Company in kukatapally?
           </h2>
 
           <h3 className="text-xl font-semibold mb-2 text-white">
             ✅ 100% Custom Design — No Templates or Page Builders
           </h3>
           <p className="mb-5">
-            Every website we design in Secunderabad is built from scratch —
+            Every website we design in kukatapally is built from scratch —
             custom designed to your brand, your audience, and your specific
             goals. We never use off-the-shelf themes, template-based page
             builders, or recycled layouts. A custom-designed website looks more
@@ -497,8 +679,8 @@ export default function WebDesignCompanySecunderabadPage() {
             deliver a better user experience, reduce bounce rates, and convert
             more visitors into leads and customers. Our performance-obsessed
             development approach ensures your website loads instantly on every
-            device and every connection speed — in Secunderabad and anywhere
-            else in the world.
+            device and every connection speed — in kukatapally and anywhere else
+            in the world.
           </p>
 
           <h3 className="text-xl font-semibold mb-2 text-white">
@@ -526,10 +708,10 @@ export default function WebDesignCompanySecunderabadPage() {
           </p>
 
           <h3 className="text-xl font-semibold mb-2 text-white">
-            ✅ Deep Understanding of the Secunderabad Market
+            ✅ Deep Understanding of the kukatapally Market
           </h3>
           <p className="mb-5">
-            We understand Secunderabad's business ecosystem — its commercial
+            We understand kukatapally's business ecosystem — its commercial
             culture, its diverse industry mix, its competitive dynamics, and the
             expectations of its buyers and consumers. We bring this local market
             intelligence to every website project — ensuring your website speaks
@@ -553,24 +735,24 @@ export default function WebDesignCompanySecunderabadPage() {
             <li>90+ PageSpeed Score on Mobile & Desktop</li>
             <li>Technical SEO Included as Standard</li>
             <li>Conversion-Focused Design Architecture</li>
-            <li>Local Secunderabad Market Knowledge</li>
+            <li>Local kukatapally Market Knowledge</li>
             <li>Transparent Process & On-Time Delivery</li>
           </ul>
         </div>
 
         {/* LOCAL SEO CLUSTER */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
-            Web Design Services Across Secunderabad & Nearby Areas
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
+            Web Design Services Across kukatapally & Nearby Areas
           </h2>
           <p className="mb-4">
-            Our web design company serves businesses across Secunderabad and the
+            Our web design company serves businesses across kukatapally and the
             surrounding areas of twin-city Hyderabad — delivering the same
             high-quality, conversion-focused web design expertise to companies
             throughout the region.
           </p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Web Design Company in Secunderabad</li>
+            <li>Web Design Company in kukatapally</li>
             <li>Web Design Company in SD Road</li>
             <li>Web Design Company in Trimulgherry</li>
             <li>Web Design Company in Marredpally</li>
@@ -585,16 +767,16 @@ export default function WebDesignCompanySecunderabadPage() {
 
         {/* FAQ */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
-            Web Design FAQs — Secunderabad
+          <h2 className="text-2xl font-extrabold text-blue-500 mb-4">
+            Web Design FAQs — kukatapally
           </h2>
 
           <p>
             <strong className="text-white">
-              How much does professional web design cost in Secunderabad?
+              How much does professional web design cost in kukatapally?
             </strong>
             <br />
-            Web design pricing in Secunderabad depends on the type of website,
+            Web design pricing in kukatapally depends on the type of website,
             design complexity, number of pages, required functionality, and
             integration needs. A custom business website typically starts from
             ₹25,000–₹75,000. Ecommerce websites, institutional websites, or
@@ -606,7 +788,7 @@ export default function WebDesignCompanySecunderabadPage() {
 
           <p className="mt-6">
             <strong className="text-white">
-              How long does it take to build a website in Secunderabad?
+              How long does it take to build a website in kukatapally?
             </strong>
             <br />A standard custom business website typically takes 3–6 weeks
             from brief to launch — covering discovery, sitemap, wireframing,
@@ -633,10 +815,10 @@ export default function WebDesignCompanySecunderabadPage() {
 
           <p className="mt-6">
             <strong className="text-white">
-              Do you build websites for small businesses in Secunderabad?
+              Do you build websites for small businesses in kukatapally?
             </strong>
             <br />
-            Yes — we work with businesses of all sizes in Secunderabad, from
+            Yes — we work with businesses of all sizes in kukatapally, from
             individual professionals and small retailers to established
             enterprises. We have website design packages suited to different
             budgets and requirements — from streamlined brochure websites for
@@ -692,8 +874,8 @@ export default function WebDesignCompanySecunderabadPage() {
       <section className="py-16 px-6 text-center border-t border-white/10">
         <h2 className="text-3xl font-extrabold mb-6">
           Ready to Build a{" "}
-          <span className="gradient-text">High-Performance Website</span> for
-          Your Secunderabad Business?
+          <span className="text-blue-500">High-Performance Website</span> for
+          Your kukatapally Business?
         </h2>
         <p className="text-black max-w-2xl mx-auto mb-4 text-lg">
           Get a free consultation with our web design team. We'll review your
@@ -701,7 +883,7 @@ export default function WebDesignCompanySecunderabadPage() {
           proposal with timeline and pricing — at no cost and no obligation.
         </p>
         <p className="text-black max-w-2xl mx-auto mb-10">
-          Let's build a website that represents your Secunderabad business with
+          Let's build a website that represents your kukatapally business with
           authority, ranks on Google, and converts visitors into leads and
           customers every single day.
         </p>
