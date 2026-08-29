@@ -247,7 +247,7 @@ const faqSchema = {
 
 export default function EducationMarketingPage() {
   return (
-    <main className="bg-black text-white">
+    <main className="bg-white text-black">
       {/* =====================================================
           STRUCTURED DATA
       ===================================================== */}
@@ -279,7 +279,7 @@ export default function EducationMarketingPage() {
 
       <nav
         aria-label="Breadcrumb"
-        className="mx-auto max-w-6xl px-6 pt-6 text-sm text-gray-500"
+        className="mx-auto max-w-6xl px-6 pt-6 text-sm text-black"
       >
         <Link href="/" className="hover:text-teal-400">
           Home
@@ -296,7 +296,7 @@ export default function EducationMarketingPage() {
 
       <section className="px-6 py-24 text-center">
         <div className="mx-auto max-w-5xl">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-teal-400">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-blue-500">
             Education Digital Marketing Agency
           </p>
 
@@ -304,7 +304,7 @@ export default function EducationMarketingPage() {
             Education Marketing Services in India
           </h1>
 
-          <p className="mx-auto max-w-3xl text-lg leading-8 text-gray-300 md:text-xl">
+          <p className="mx-auto max-w-3xl text-lg leading-8 text-black md:text-xl">
             KidiWebTech provides digital marketing services for schools,
             colleges, universities, coaching institutes and edtech companies
             across India. We combine SEO, Google Ads, social media marketing,
@@ -316,7 +316,7 @@ export default function EducationMarketingPage() {
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
             <Link
               href="/contact"
-              className="rounded-full bg-teal-500 px-8 py-3 font-semibold text-black transition hover:bg-teal-400"
+              className="rounded-full bg-blue-500 px-8 py-3 font-semibold text-white transition hover:bg-blue-400"
             >
               Get Free Consultation
             </Link>
@@ -341,14 +341,14 @@ export default function EducationMarketingPage() {
             Digital Marketing for the Education Industry
           </h2>
 
-          <p className="leading-8 text-gray-300">
+          <p className="leading-8 text-black">
             Students and parents increasingly use search engines, social media,
             websites and online reviews when researching educational
             institutions and courses. This makes a strong digital presence an
             important part of an education marketing strategy.
           </p>
 
-          <p className="mt-5 leading-8 text-gray-300">
+          <p className="mt-5 leading-8 text-black">
             KidiWebTech helps education organizations develop digital marketing
             strategies around their target students, courses, locations and
             admission objectives. Our services can support awareness, website
@@ -361,13 +361,13 @@ export default function EducationMarketingPage() {
           EDUCATION INDUSTRIES
       ===================================================== */}
 
-      <section className="bg-gray-950 px-6 py-20">
+      <section className="bg-white px-6 py-20">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-5 text-center text-3xl font-bold md:text-4xl">
             Education Businesses We Support
           </h2>
 
-          <p className="mx-auto mb-12 max-w-3xl text-center leading-7 text-gray-400">
+          <p className="mx-auto mb-12 max-w-3xl text-center leading-7 text-black">
             Digital marketing strategies can be adapted to different education
             models, audiences and admission cycles.
           </p>
@@ -408,9 +408,9 @@ export default function EducationMarketingPage() {
                 key={item.title}
                 className="rounded-xl border border-gray-800 p-7"
               >
-                <h3 className="text-xl font-bold">{item.title}</h3>
+                <h3 className="text-xl text-black">{item.title}</h3>
 
-                <p className="mt-3 leading-7 text-gray-400">{item.text}</p>
+                <p className="mt-3 leading-7 text-black">{item.text}</p>
               </div>
             ))}
           </div>
@@ -427,7 +427,7 @@ export default function EducationMarketingPage() {
             SEO Services for Educational Institutions
           </h2>
 
-          <p className="leading-8 text-gray-300">
+          <p className="leading-8 text-black">
             Education SEO helps institutions build organic visibility for
             searches related to courses, institutions, admissions, locations and
             educational topics. A strong SEO strategy should focus on useful
@@ -439,7 +439,7 @@ export default function EducationMarketingPage() {
             Education Keyword Research
           </h3>
 
-          <p className="mt-4 leading-8 text-gray-300">
+          <p className="mt-4 leading-8 text-black">
             Keyword research can identify the searches used by prospective
             students and parents. Depending on the institution, this can include
             course names, degree programs, admissions, locations, fees,
@@ -450,7 +450,7 @@ export default function EducationMarketingPage() {
             Local SEO for Schools and Colleges
           </h3>
 
-          <p className="mt-4 leading-8 text-gray-300">
+          <p className="mt-4 leading-8 text-black">
             Educational institutions that depend on local admissions can benefit
             from location-focused SEO. Website content, local information and
             relevant business listings should provide accurate information about
@@ -480,19 +480,19 @@ export default function EducationMarketingPage() {
           GOOGLE ADS
       ===================================================== */}
 
-      <section className="bg-gray-950 px-6 py-20">
+      <section className="bg-white px-6 py-20">
         <div className="mx-auto max-w-5xl">
           <h2 className="mb-6 text-3xl font-bold md:text-4xl">
             Google Ads for Education and Student Lead Generation
           </h2>
 
-          <p className="leading-8 text-gray-300">
+          <p className="leading-8 text-black">
             Google Ads can help educational institutions reach prospective
             students when they are actively searching for courses, colleges,
             schools, coaching programs and other education services.
           </p>
 
-          <p className="mt-5 leading-8 text-gray-300">
+          <p className="mt-5 leading-8 text-black">
             Campaigns can be structured around relevant search intent, course
             categories, locations, admission periods and measurable lead
             actions. Landing pages and conversion tracking should be aligned
@@ -526,7 +526,7 @@ export default function EducationMarketingPage() {
             Social Media Marketing for Education
           </h2>
 
-          <p className="leading-8 text-gray-300">
+          <p className="leading-8 text-black">
             Social media can help educational institutions communicate their
             campus experience, programs, student activities, achievements,
             events and educational content.
@@ -555,7 +555,7 @@ export default function EducationMarketingPage() {
               >
                 <h3 className="text-xl font-bold">{item.title}</h3>
 
-                <p className="mt-3 leading-7 text-gray-400">{item.text}</p>
+                <p className="mt-3 leading-7 text-black">{item.text}</p>
               </div>
             ))}
           </div>
@@ -566,13 +566,13 @@ export default function EducationMarketingPage() {
           CONTENT MARKETING
       ===================================================== */}
 
-      <section className="bg-gray-950 px-6 py-20">
+      <section className="bg-white px-6 py-20">
         <div className="mx-auto max-w-5xl">
           <h2 className="mb-6 text-3xl font-bold md:text-4xl">
             Education Content Marketing
           </h2>
 
-          <p className="leading-8 text-gray-300">
+          <p className="leading-8 text-black">
             Educational content can answer questions students and parents have
             before they contact an institution. Useful content can also support
             organic search visibility when it matches genuine search intent.
@@ -589,7 +589,7 @@ export default function EducationMarketingPage() {
               "Exam preparation content",
               "Campus and program information",
             ].map((item) => (
-              <div key={item} className="rounded-lg bg-black p-5">
+              <div key={item} className="rounded-lg bg-blue-300 p-5 ">
                 {item}
               </div>
             ))}
@@ -607,7 +607,7 @@ export default function EducationMarketingPage() {
             Student Lead Generation and Admission Marketing
           </h2>
 
-          <p className="leading-8 text-gray-300">
+          <p className="leading-8 text-black">
             Generating enquiries is only one part of an education marketing
             strategy. Institutions also need clear landing pages, simple enquiry
             forms, useful course information and a process for following up with
@@ -637,13 +637,13 @@ export default function EducationMarketingPage() {
           WHY KIDIWEBTECH
       ===================================================== */}
 
-      <section className="bg-gray-950 px-6 py-20">
+      <section className="bg-white px-6 py-20">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-5 text-center text-3xl font-bold md:text-4xl">
             Why Choose KidiWebTech for Education Marketing?
           </h2>
 
-          <p className="mx-auto mb-12 max-w-3xl text-center leading-7 text-gray-400">
+          <p className="mx-auto mb-12 max-w-3xl text-center leading-7 text-black">
             We combine organic search, paid advertising, content, social media
             and conversion-focused website strategies to create a connected
             digital marketing approach.
@@ -687,7 +687,7 @@ export default function EducationMarketingPage() {
               >
                 <h3 className="text-xl font-bold">{item.title}</h3>
 
-                <p className="mt-3 leading-7 text-gray-400">{item.text}</p>
+                <p className="mt-3 leading-7 text-black">{item.text}</p>
               </div>
             ))}
           </div>
@@ -745,7 +745,7 @@ export default function EducationMarketingPage() {
               <div key={faq.q} className="border-b border-gray-800 pb-7">
                 <h3 className="text-xl font-semibold">{faq.q}</h3>
 
-                <p className="mt-3 leading-7 text-gray-400">{faq.a}</p>
+                <p className="mt-3 leading-7 text-black">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -756,7 +756,7 @@ export default function EducationMarketingPage() {
           INTERNAL LINKS
       ===================================================== */}
 
-      <section className="border-t border-gray-800 bg-gray-950 px-6 py-16">
+      <section className="border-t border-gray-800 bg-white px-6 py-16">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-6 text-2xl font-bold">
             Related Digital Marketing Services
@@ -812,7 +812,7 @@ export default function EducationMarketingPage() {
           FINAL CTA
       ===================================================== */}
 
-      <section className="bg-teal-500 px-6 py-20 text-center text-black">
+      <section className="bg-blue-300 px-6 py-20 text-center text-black">
         <div className="mx-auto max-w-4xl">
           <h2 className="text-3xl font-bold md:text-4xl">
             Ready to Grow Your Education Brand?
