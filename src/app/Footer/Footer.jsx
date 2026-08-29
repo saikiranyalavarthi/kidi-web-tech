@@ -171,7 +171,7 @@ export default function Footer() {
 
                 {
                   icon: <FaInstagram />,
-                  link: "https://www.instagram.com/kidi.webtech/",
+                  link: "https://www.instagram.com/kidiwebtech/",
                 },
 
                 {
