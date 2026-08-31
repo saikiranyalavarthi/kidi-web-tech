@@ -22,7 +22,7 @@ export default function EcommerceDevelopmentServicesPage() {
         <nav className="mt-6 text-sm text-gray-500">
           <Link href="/">Home</Link>
           <span className="mx-2">›</span>
-          <Link href="/website-development">Website Development</Link>
+          <Link href="/website-development">Website Development services</Link>
           <span className="mx-2">›</span>
           <span>Ecommerce Development Services</span>
         </nav>
