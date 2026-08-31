@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
+
 import {
   Phone,
   Globe,
@@ -58,35 +58,41 @@ ${message}
   // EMAIL SUBMIT
 
   const handleEmailSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    try {
-      setLoading(true);
+  try {
+    setLoading(true);
 
-      await emailjs.send(
-        "service_34id8vu",
-        "template_kxkmb1l",
-        formData,
-        "O2InmkBfQvNlqeo2j",
-      );
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
 
-      alert("✅ Message Sent Successfully!");
+    const result = await response.json();
 
-      setFormData({
-        name: "",
-        email: "",
-        mobile: "",
-        service: "Website Development",
-        message: "",
-      });
-    } catch (error) {
-      console.error(error);
-      alert("❌ Failed To Send Message");
-    } finally {
-      setLoading(false);
+    if (!response.ok) {
+      throw new Error(result.message);
     }
-  };
 
+    alert("✅ Message Sent Successfully!");
+
+    setFormData({
+      name: "",
+      email: "",
+      mobile: "",
+      service: "Website Development",
+      message: "",
+    });
+  } catch (error) {
+    console.error(error);
+    alert("❌ Failed To Send Message");
+  } finally {
+    setLoading(false);
+  }
+};
   return (
     <main className="relative bg-white overflow-hidden">
       {/* BACKGROUND */}

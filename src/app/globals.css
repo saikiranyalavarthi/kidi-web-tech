@@ -96,3 +96,34 @@ body {
 .blog-content strong {
   font-weight: 700;
 }
+
+@keyframes logoScroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-50% - 12px));
+  }
+}
+
+.logo-track {
+  animation: logoScroll 35s linear infinite;
+  will-change: transform;
+}
+
+.logo-track:hover {
+  animation-play-state: paused;
+}
+
+@media (max-width: 768px) {
+  .logo-track {
+    animation-duration: 25s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-track {
+    animation: none;
+  }
+}

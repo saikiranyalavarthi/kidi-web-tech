@@ -305,10 +305,10 @@ export default function Footer() {
                   <p className="text-sm text-gray-400">Email</p>
 
                   <a
-                    href="mailto:kidiwebtech3482@gmail.com"
+                    href="mailto:info@kidiwebtech.com"
                     className="text-gray-700 hover:text-[#2563EB]"
                   >
-                    kidiwebtech3482@gmail.com
+                info@kidiwebtech.com
                   </a>
                 </div>
               </div>

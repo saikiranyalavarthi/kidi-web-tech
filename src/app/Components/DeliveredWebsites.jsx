@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const categories = [
   "All",
@@ -73,7 +74,7 @@ export default function DeliveredWebsites() {
         >
           <h2 className="text-4xl font-black text-gray-900 md:text-5xl">
             Websites We Have{" "}
-            <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-blue-500 bg-clip-text text-transparent">
               Delivered
             </span>
           </h2>
@@ -92,7 +93,7 @@ export default function DeliveredWebsites() {
               onClick={() => setActiveCategory(category)}
               className={`rounded-full px-6 py-3 text-sm font-semibold transition-all duration-300 ${
                 activeCategory === category
-                  ? "bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg"
+                  ? "bg-blue-500 text-white shadow-lg"
                   : "bg-gray-100 text-gray-700 hover:bg-purple-100"
               }`}
             >
@@ -143,7 +144,6 @@ export default function DeliveredWebsites() {
                 </p>
 
                 {/* BUTTON */}
-              
               </div>
             </motion.div>
           ))}
@@ -155,7 +155,7 @@ export default function DeliveredWebsites() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="mt-20 rounded-[40px] bg-gradient-to-r from-[#0f172a] via-[#111827] to-[#1e1b4b] p-10 text-center text-white shadow-[0_20px_80px_rgba(76,29,149,0.3)]"
+          className="mt-20 rounded-[40px] bg-blue-500 p-10 text-center text-white shadow-[0_20px_80px_rgba(76,29,149,0.3)]"
         >
           <h2 className="text-3xl font-black md:text-4xl">
             Want A Premium Website Like This?
@@ -166,9 +166,12 @@ export default function DeliveredWebsites() {
             mobile responsiveness, and lightning-fast performance.
           </p>
 
-          <button className="mt-8 rounded-2xl bg-gradient-to-r from-pink-500 to-purple-600 px-8 py-4 font-semibold text-white shadow-[0_10px_40px_rgba(168,85,247,0.35)] transition-all duration-300 hover:scale-105">
+          <Link
+            href="/contact"
+            className="mt-8 inline-block rounded-2xl bg-white px-8 py-4 font-semibold text-black shadow-[0_10px_40px_rgba(168,85,247,0.35)] transition-all duration-300 hover:scale-105"
+          >
             Start Your Website
-          </button>
+          </Link>
         </motion.div>
       </div>
     </section>

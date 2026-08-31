@@ -41,7 +41,7 @@ export const metadata = {
   
         <h2 className="text-xl font-semibold mt-6 mb-2">Contact</h2>
         <p>
-          Email: <strong>kidiwebtech3482@gmail.com</strong>
+          Email: <strong>info@kidiwebtech.com</strong>
         </p>
       </main>
     );
