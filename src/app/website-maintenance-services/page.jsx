@@ -17,7 +17,7 @@ export default function WebsiteMaintenanceServicesPage() {
           — without lifting a finger. Our website maintenance services in
           Hyderabad give businesses a dedicated technical team to handle
           everything from security updates and performance monitoring to content
-          changes and feature additions, so your website never becomes a
+          changes and feature additions, so your website never becomes a new
           liability.
         </p>
         <nav className="mt-6 text-sm text-gray-500">
