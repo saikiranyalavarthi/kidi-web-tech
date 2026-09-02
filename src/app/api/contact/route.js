@@ -16,16 +16,14 @@ export async function POST(request) {
     }
 
     const transporter = nodemailer.createTransport({
-      host: "smtpout.secureserver.net",
-      port: 587,
-      secure: false,
-      requireTLS: true,
+      host: "smtp.titan.email",
+      port: 465,
+      secure: true,
       auth: {
         user: process.env.GODADDY_EMAIL,
         pass: process.env.GODADDY_EMAIL_PASSWORD,
       },
     });
-
     await transporter.verify();
 
     await transporter.sendMail({
