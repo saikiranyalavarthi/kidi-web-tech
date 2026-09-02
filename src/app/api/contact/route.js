@@ -19,11 +19,14 @@ export async function POST(request) {
       host: "smtpout.secureserver.net",
       port: 587,
       secure: false,
+      requireTLS: true,
       auth: {
         user: process.env.GODADDY_EMAIL,
         pass: process.env.GODADDY_EMAIL_PASSWORD,
       },
     });
+
+    await transporter.verify();
 
     await transporter.sendMail({
       from: `"KIDIWEBTECH Website" <${process.env.GODADDY_EMAIL}>`,
