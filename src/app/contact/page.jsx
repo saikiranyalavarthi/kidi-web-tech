@@ -93,6 +93,7 @@ ${message}
       setLoading(false);
     }
   };
+
   return (
     <main className="relative bg-white overflow-hidden">
       {/* BACKGROUND */}
@@ -326,7 +327,7 @@ ${message}
               className="
                 relative
                 bg-white
-                border border-gray-100
+                border border-gray-200
                 rounded-[40px]
                 p-8 md:p-10
                 shadow-[0_30px_80px_rgba(37,99,235,0.10)]
@@ -364,9 +365,12 @@ ${message}
                     className="
                       w-full h-14 px-5
                       rounded-2xl
-                      bg-[#f8fbff]
-                      border border-gray-100
+                      bg-white
+                      !text-[#0F172A]
+                      placeholder:!text-gray-400
+                      border border-gray-200
                       focus:border-[#2563EB]
+                      focus:ring-2 focus:ring-blue-100
                       outline-none
                     "
                   />
@@ -389,9 +393,12 @@ ${message}
                     className="
                       w-full h-14 px-5
                       rounded-2xl
-                      bg-[#f8fbff]
-                      border border-gray-100
+                      bg-white
+                      !text-[#0F172A]
+                      placeholder:!text-gray-400
+                      border border-gray-200
                       focus:border-[#2563EB]
+                      focus:ring-2 focus:ring-blue-100
                       outline-none
                     "
                   />
@@ -407,6 +414,8 @@ ${message}
                   <input
                     type="tel"
                     name="mobile"
+                    inputMode="tel"
+                    autoComplete="tel"
                     required
                     value={formData.mobile}
                     onChange={handleChange}
@@ -414,9 +423,12 @@ ${message}
                     className="
                       w-full h-14 px-5
                       rounded-2xl
-                      bg-[#f8fbff]
-                      border border-gray-100
+                      bg-white
+                      !text-[#0F172A]
+                      placeholder:!text-gray-400
+                      border border-gray-200
                       focus:border-[#2563EB]
+                      focus:ring-2 focus:ring-blue-100
                       outline-none
                     "
                   />
@@ -433,12 +445,15 @@ ${message}
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
+                    required
                     className="
                       w-full h-14 px-5
                       rounded-2xl
-                      bg-[#f8fbff]
-                      border border-gray-100
+                      bg-white
+                      !text-[#0F172A]
+                      border border-gray-200
                       focus:border-[#2563EB]
+                      focus:ring-2 focus:ring-blue-100
                       outline-none
                     "
                   >
@@ -468,9 +483,12 @@ ${message}
                     className="
                       w-full px-5 py-4
                       rounded-2xl
-                      bg-[#f8fbff]
-                      border border-gray-100
+                      bg-white
+                      !text-[#0F172A]
+                      placeholder:!text-gray-400
+                      border border-gray-200
                       focus:border-[#2563EB]
+                      focus:ring-2 focus:ring-blue-100
                       outline-none
                       resize-none
                     "
@@ -489,15 +507,14 @@ ${message}
                       group
                       w-full h-14
                       rounded-2xl
-                      bg-gradient-to-r
-                      from-[#2563EB]
-                      to-[#06B6D4]
+                      bg-green-500
+                    
                       text-white
                       font-black
                       flex items-center justify-center gap-3
                       hover:scale-[1.02]
                       transition duration-300
-                      shadow-xl
+                      shadow-xl cursor-pointer
                     "
                   >
                     <MessageCircle size={20} />
@@ -517,13 +534,15 @@ ${message}
                       group
                       w-full h-14
                       rounded-2xl
-                      bg-[#0F172A]
-                      hover:bg-black
+                     bg-gradient-to-r
+                      from-[#2563EB]
+                      to-[#06B6D4]
                       text-white
                       font-black
                       flex items-center justify-center gap-3
                       hover:scale-[1.02]
                       transition duration-300
+                      cursor-pointer
                     "
                   >
                     {loading ? "Sending..." : "Submit via Email"}
