@@ -180,7 +180,7 @@ export const metadata = {
     "website development company Hyderabad",
     "website design company Hyderabad",
     "SEO company in Hyderabad",
-    "SEO services Hyderabad",
+    "SEO services in Hyderabad",
     "digital marketing company Hyderabad",
     "Google Ads agency Hyderabad",
     "Next.js development company Hyderabad",
