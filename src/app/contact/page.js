@@ -58,41 +58,41 @@ ${message}
   // EMAIL SUBMIT
 
   const handleEmailSubmit = async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  try {
-    setLoading(true);
+    try {
+      setLoading(true);
 
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    const result = await response.json();
+      const result = await response.json();
 
-    if (!response.ok) {
-      throw new Error(result.message);
+      if (!response.ok) {
+        throw new Error(result.message);
+      }
+
+      alert("✅ Message Sent Successfully!");
+
+      setFormData({
+        name: "",
+        email: "",
+        mobile: "",
+        service: "Website Development",
+        message: "",
+      });
+    } catch (error) {
+      console.error(error);
+      alert("❌ Failed To Send Message");
+    } finally {
+      setLoading(false);
     }
-
-    alert("✅ Message Sent Successfully!");
-
-    setFormData({
-      name: "",
-      email: "",
-      mobile: "",
-      service: "Website Development",
-      message: "",
-    });
-  } catch (error) {
-    console.error(error);
-    alert("❌ Failed To Send Message");
-  } finally {
-    setLoading(false);
-  }
-};
+  };
   return (
     <main className="relative bg-white overflow-hidden">
       {/* BACKGROUND */}
