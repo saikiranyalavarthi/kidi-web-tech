@@ -24,7 +24,7 @@ export default function FestivalBanner() {
         .maybeSingle();
 
       if (error) {
-        console.error(error);
+        console.error("Festival banner error:", error);
         return;
       }
 
@@ -38,7 +38,7 @@ export default function FestivalBanner() {
 
   return (
     <section className="w-full overflow-hidden bg-white">
-      <div className="relative aspect-[24/7] w-full">
+      <div className="relative aspect-[19/5] w-full">
         <Image
           src={banner.image_url}
           alt={banner.title}
