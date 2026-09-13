@@ -10,6 +10,8 @@ export default function FestivalBanner() {
     const loadBanner = async () => {
       const today = new Date().toISOString().split("T")[0];
 
+      console.log("Festival today:", today);
+
       const { data, error } = await supabase
         .from("festival_banners")
         .select("*")
@@ -17,17 +19,19 @@ export default function FestivalBanner() {
         .lte("start_date", today)
         .gte("end_date", today)
         .order("created_at", { ascending: false })
-        .limit(1)
-        .maybeSingle();
+        .limit(1);
+
+      console.log("Festival data:", data);
+      console.log("Festival error:", error);
 
       if (error) {
         console.error("Festival banner error:", error);
         return;
       }
 
-      console.log("Festival banner loaded:", data);
-
-      setBanner(data);
+      if (data && data.length > 0) {
+        setBanner(data[0]);
+      }
     };
 
     loadBanner();
@@ -39,8 +43,8 @@ export default function FestivalBanner() {
     <section className="w-full overflow-hidden bg-white">
       <img
         src={banner.image_url}
-        alt={banner.title}
-        className="block h-auto w-full"
+        alt={banner.title || "Festival Banner"}
+        className="block w-full h-auto"
       />
     </section>
   );
