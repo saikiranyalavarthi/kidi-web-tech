@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { supabase } from "../lib/supabase";
 
 export default function FestivalBanner() {
@@ -17,9 +16,7 @@ export default function FestivalBanner() {
         .eq("is_active", true)
         .lte("start_date", today)
         .gte("end_date", today)
-        .order("created_at", {
-          ascending: false,
-        })
+        .order("created_at", { ascending: false })
         .limit(1)
         .maybeSingle();
 
@@ -27,6 +24,8 @@ export default function FestivalBanner() {
         console.error("Festival banner error:", error);
         return;
       }
+
+      console.log("Festival banner loaded:", data);
 
       setBanner(data);
     };
@@ -38,16 +37,11 @@ export default function FestivalBanner() {
 
   return (
     <section className="w-full overflow-hidden bg-white">
-      <div className="relative aspect-[19/5] w-full">
-        <Image
-          src={banner.image_url}
-          alt={banner.title}
-          fill
-          priority
-          sizes="100vw"
-          className="object-contain"
-        />
-      </div>
+      <img
+        src={banner.image_url}
+        alt={banner.title}
+        className="block h-auto w-full"
+      />
     </section>
   );
 }
