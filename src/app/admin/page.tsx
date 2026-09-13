@@ -5,6 +5,7 @@ export default function AdminDashboard() {
     <main className="min-h-screen bg-gray-100 px-6 py-12">
       <div className="mx-auto max-w-6xl">
 
+        {/* HEADER */}
         <div className="mb-10">
           <p className="text-sm font-semibold uppercase tracking-widest text-yellow-600">
             KIDIWEBTECH
@@ -19,6 +20,7 @@ export default function AdminDashboard() {
           </p>
         </div>
 
+        {/* CARDS */}
         <div className="grid gap-6 md:grid-cols-2">
 
           {/* BLOG */}
@@ -63,6 +65,32 @@ export default function AdminDashboard() {
 
             <div className="mt-6 font-semibold text-yellow-600">
               Create Case Study →
+            </div>
+          </Link>
+
+          {/* FESTIVAL BANNERS */}
+          <Link
+            href="/admin/festival-banners"
+            className="group rounded-2xl border border-gray-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl md:col-span-2"
+          >
+            <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-black text-2xl text-white">
+              🎉
+            </div>
+
+            <h2 className="text-2xl font-bold text-gray-900">
+              Festival Banners
+            </h2>
+
+            <p className="mt-3 text-gray-600">
+              Upload and manage festival banners displayed on your website.
+            </p>
+
+            <p className="mt-2 text-sm text-gray-500">
+              Vinayaka Chavithi • Dasara • Diwali • Sankranti • Ugadi
+            </p>
+
+            <div className="mt-6 font-semibold text-yellow-600">
+              Manage Festival Banners →
             </div>
           </Link>
 
