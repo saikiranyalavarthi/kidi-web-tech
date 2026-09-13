@@ -8,9 +8,15 @@ export default function FestivalBanner() {
 
   useEffect(() => {
     const loadBanner = async () => {
-      const today = new Date().toISOString().split("T")[0];
+      // Use LOCAL date, not UTC date
+      const now = new Date();
 
-      console.log("Festival today:", today);
+      const today =
+        `${now.getFullYear()}-` +
+        `${String(now.getMonth() + 1).padStart(2, "0")}-` +
+        `${String(now.getDate()).padStart(2, "0")}`;
+
+      console.log("Festival local date:", today);
 
       const { data, error } = await supabase
         .from("festival_banners")
@@ -21,8 +27,8 @@ export default function FestivalBanner() {
         .order("created_at", { ascending: false })
         .limit(1);
 
-      console.log("Festival data:", data);
-      console.log("Festival error:", error);
+      console.log("Festival banner data:", data);
+      console.log("Festival banner error:", error);
 
       if (error) {
         console.error("Festival banner error:", error);
