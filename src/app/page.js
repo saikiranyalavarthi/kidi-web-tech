@@ -12,7 +12,7 @@ import ContactPage from "./contact/page";
 import CaseStudiesSection from "./Components/CaseStudiesSection";
 import Herotrain from "./Components/Herotrain";
 import Banner from "./Components/Banner";
-import FestivalBanner from "./Components/FestivalBanner";
+// import FestivalBanner from "./Components/FestivalBanner";
 
 /* =========================================================
    SEO METADATA
@@ -149,7 +149,7 @@ export default function Home() {
       {/* =====================================================
           TRUSTED BRANDS
       ===================================================== */}
-      <FestivalBanner />
+      // <FestivalBanner />
       <TrustedBySection />
 
       {/* =====================================================
