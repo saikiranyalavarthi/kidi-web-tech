@@ -11,7 +11,7 @@ import FAQSection from "./Components/FAQSection";
 import ContactPage from "./contact/page";
 import CaseStudiesSection from "./Components/CaseStudiesSection";
 import Herotrain from "./Components/Herotrain";
-import Banner from "./Components/Banner";
+// import Banner from "./Components/Banner";
 
 
 /* =========================================================
@@ -105,7 +105,7 @@ export default function Home() {
       {/* =====================================================
           MAIN HERO
       ===================================================== */}
-      <Banner />
+      // <Banner />
 
       <Herosection />
 
