@@ -169,10 +169,7 @@
 
 
 
-
-import type { MetadataRoute } from "next";
-
-export default function sitemap(): MetadataRoute.Sitemap {
+export default function sitemap() {
   const baseUrl = "https://www.kidiwebtech.com";
 
   // =========================================================
@@ -194,7 +191,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const blogUrls = blogSlugs.map((slug) => ({
     url: `${baseUrl}/blogs/${slug}`,
     lastModified: new Date(),
-    changeFrequency: "monthly" as const,
+    changeFrequency: "monthly",
     priority: 0.8,
   }));
 
@@ -203,11 +200,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // =========================================================
 
   const newBlogSlugs = [
-    // Existing new blog posts
     "ca-domain-registration-eligibility-rules-you-need-to-know",
     "virtual-dedicated-server-explained-resources-control-and-cost",
 
-    // New 2026 blog posts
+    // New 2026 blogs
     "how-digital-marketing-helps-small-businesses-grow-in-2026",
     "how-ai-is-changing-website-development-for-modern-businesses",
     "how-a-professional-website-helps-small-businesses-grow-in-2026",
@@ -219,7 +215,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const newBlogUrls = newBlogSlugs.map((slug) => ({
     url: `${baseUrl}/blog/${slug}`,
     lastModified: new Date(),
-    changeFrequency: "monthly" as const,
+    changeFrequency: "monthly",
     priority: 0.8,
   }));
 
@@ -229,7 +225,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     // =======================================================
-    // MAIN / CORE PAGES
+    // CORE PAGES
     // =======================================================
 
     {
@@ -268,7 +264,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
 
     // =======================================================
-    // EXISTING SERVICE PAGES
+    // EXISTING SERVICES
     // =======================================================
 
     {
@@ -390,5 +386,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...newBlogUrls,
   ];
 }
-
-
