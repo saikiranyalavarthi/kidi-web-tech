@@ -354,7 +354,7 @@ export default function Footer() {
                 <div>
                   <p className="text-sm text-gray-400">Location</p>
 
-                  <p className="text-gray-700">  Sattva Magnus, Sabza Colony, Ambedkar Nagar, Shaikpet, Hyderabad, Telangana 500008</p>
+                  <p className="text-gray-700">  Kakatiya Hills, Guttala_Begumpet, Jayakesav Avenue, Madhapur, Hyderabad, Telangana 500081</p>
                 </div>
               </div>
             </div>
