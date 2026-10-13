@@ -244,7 +244,7 @@ export default function About() {
             </Link>
 
             <Link
-              href="/portfolio"
+              href="/projects"
               className="border border-blue-200 hover:border-blue-600 px-8 py-4 rounded-xl text-blue-700"
             >
               View Portfolio
