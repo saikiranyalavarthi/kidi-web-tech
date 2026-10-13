@@ -66,6 +66,6 @@
     "**/*.mts",
     "**/*.ts",
     "**/*.tsx"
-, "src/app/blog/[slug]/page.jsx", "src/app/admin/login/page.jsx", "src/app/blogs/page.jsx", "src/app/api/blogs/route.js"  ],
+, "src/app/blog/[slug]/page.jsx", "src/app/admin/login/page.jsx", "src/app/blogs/page.jsx", "src/app/api/blogs/route.js", "src/app/Components/KidiWebTechChatbot.jsx", "src/app/api/chat/route.js"  ],
   "exclude": ["node_modules"]
 }

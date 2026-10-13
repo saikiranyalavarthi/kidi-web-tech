@@ -243,6 +243,7 @@ import FloatingSocialButtons from "./Components/FloatingSocialButtons";
 import Script from "next/script";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import KidiWebTechChatbot from "./Components/KidiWebTechChatbot";
 
 /* =========================================================
    FONTS
@@ -676,7 +677,7 @@ export default function RootLayout({
         <Navbar />
 
         <main>{children}</main>
-
+<KidiWebTechChatbot />
         <FloatingSocialButtons />
 
         <Footer />

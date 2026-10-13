@@ -10,9 +10,12 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@google/genai": "^2.29.0",
     "@supabase/ssr": "^0.12.4",
     "@supabase/supabase-js": "^2.112.3",
     "@vercel/analytics": "^2.0.1",
+    "cheerio": "^1.2.0",
+    "fast-xml-parser": "^5.11.2",
     "framer-motion": "^12.23.0",
     "lottie-react": "^2.4.1",
     "lucide-react": "^0.525.0",
@@ -33,5 +36,12 @@
     "eslint-config-next": "15.3.4",
     "tailwindcss": "^4.1.11",
     "typescript": "6.0.2"
+  },
+  "allowScripts": {
+    "@google/genai@2.29.0": true,
+    "@tailwindcss/oxide@4.1.11": true,
+    "protobufjs@7.6.6": true,
+    "sharp@0.34.5": true,
+    "unrs-resolver@1.10.1": true
   }
 }

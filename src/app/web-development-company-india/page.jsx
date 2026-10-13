@@ -7,21 +7,24 @@ export default function WebDevelopmentCompanyIndiaPage() {
   return (
     <div className="bg-white text-black overflow-hidden mt-6">
       {/* ================= HERO ================= */}
-      <section className="py-20 px-6 text-center border-b border-white/10">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-          Web Development Company in{" "}
-          <span className="gradient-text">India</span>
+      <section className="py-20 px-6 text-center border-b border-gray-200">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-blue-700">
+          Web Development Company in India
         </h1>
         <p className="text-black max-w-3xl mx-auto text-lg">
-          Partner with one of India's leading web development companies to build
-          fast, scalable, and revenue-generating websites and web applications —
-          engineered precisely around your business goals, users, and growth
-          ambitions, not off-the-shelf templates.
+          Partner with one of India&apos;s leading web development companies to
+          build fast, scalable, and revenue-generating websites and web
+          applications — engineered precisely around your business goals, users,
+          and growth ambitions, not off-the-shelf templates.
         </p>
-        <nav className="mt-6 text-sm text-gray-500">
-          <Link href="/">Home</Link>
+        <nav className="mt-6 text-sm text-black">
+          <Link href="/" className="hover:text-blue-700">
+            Home
+          </Link>
           <span className="mx-2">›</span>
-          <Link href="/website-development">Website Development</Link>
+          <Link href="/website-development" className="hover:text-blue-700">
+            Website Development
+          </Link>
           <span className="mx-2">›</span>
           <span>Web Development Company in India</span>
         </nav>
@@ -31,7 +34,7 @@ export default function WebDevelopmentCompanyIndiaPage() {
       <section className="py-16 px-6 md:px-20 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-3xl font-extrabold mb-6">
+            <h2 className="text-3xl font-extrabold mb-6 text-blue-700">
               Best Web Development Company in India
             </h2>
             <p className="text-black mb-4">
@@ -75,7 +78,7 @@ export default function WebDevelopmentCompanyIndiaPage() {
       <section className="px-6 md:px-20 max-w-6xl mx-auto py-12 space-y-14 text-black">
         {/* WHAT IS WEB DEVELOPMENT */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-700 mb-4">
             What Is Web Development?
           </h2>
           <p className="mb-4">
@@ -101,7 +104,7 @@ export default function WebDevelopmentCompanyIndiaPage() {
             Web development is the right investment for any Indian business
             serious about competing in the digital economy — from early-stage
             startups building their first product to large enterprises
-            modernizing their digital infrastructure. In India's rapidly
+            modernizing their digital infrastructure. In India&apos;s rapidly
             evolving digital market, a professionally built web presence is one
             of the most powerful tools for sustainable business growth.
           </p>
@@ -109,7 +112,7 @@ export default function WebDevelopmentCompanyIndiaPage() {
 
         {/* WHY PROFESSIONAL WEB DEVELOPMENT */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-700 mb-4">
             Why Choose a Professional Web Development Company Over Freelancers
             or DIY Builders?
           </h2>
@@ -146,7 +149,7 @@ export default function WebDevelopmentCompanyIndiaPage() {
 
         {/* SERVICES */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-700 mb-4">
             Our Web Development Services in India
           </h2>
           <p className="mb-6">
@@ -156,7 +159,7 @@ export default function WebDevelopmentCompanyIndiaPage() {
             API-driven digital ecosystems.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
             1. Custom Website Development
           </h3>
           <p className="mb-5">
@@ -170,7 +173,7 @@ export default function WebDevelopmentCompanyIndiaPage() {
             organic traffic and enquiries.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
             2. Web Application Development
           </h3>
           <p className="mb-5">
@@ -184,7 +187,7 @@ export default function WebDevelopmentCompanyIndiaPage() {
             scalability.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
             3. SaaS Product Development
           </h3>
           <p className="mb-5">
@@ -199,7 +202,7 @@ export default function WebDevelopmentCompanyIndiaPage() {
             support rapid user growth.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
             4. WordPress Development
           </h3>
           <p className="mb-5">
@@ -213,7 +216,7 @@ export default function WebDevelopmentCompanyIndiaPage() {
             full content management flexibility.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
             5. API Development & Third-Party Integrations
           </h3>
           <p className="mb-5">
@@ -226,7 +229,7 @@ export default function WebDevelopmentCompanyIndiaPage() {
             and versioned APIs built to industry standards.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
             6. Website Redesign & Performance Optimization
           </h3>
           <p className="mb-5">
@@ -240,7 +243,7 @@ export default function WebDevelopmentCompanyIndiaPage() {
             SEO equity.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
             7. Ecommerce Development
           </h3>
           <p className="mb-5">
@@ -258,15 +261,15 @@ export default function WebDevelopmentCompanyIndiaPage() {
             <li>Web Application Development</li>
             <li>SaaS Product Development</li>
             <li>WordPress Development</li>
-            <li>API Development & Third-Party Integrations</li>
-            <li>Website Redesign & Performance Optimization</li>
+            <li>API Development &amp; Third-Party Integrations</li>
+            <li>Website Redesign &amp; Performance Optimization</li>
             <li>Ecommerce Development</li>
           </ul>
         </div>
 
         {/* TECHNOLOGIES */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-700 mb-4">
             Technologies We Use for Web Development
           </h2>
           <p className="mb-6">
@@ -275,8 +278,8 @@ export default function WebDevelopmentCompanyIndiaPage() {
             developer productivity, and long-term maintainability.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
-            Next.js & React.js
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
+            Next.js &amp; React.js
           </h3>
           <p className="mb-4">
             Next.js is our primary framework for custom website development and
@@ -289,8 +292,8 @@ export default function WebDevelopmentCompanyIndiaPage() {
             products.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
-            Node.js & Express
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
+            Node.js &amp; Express
           </h3>
           <p className="mb-4">
             For backend web development, Node.js and Express form the backbone
@@ -301,20 +304,20 @@ export default function WebDevelopmentCompanyIndiaPage() {
             demanding performance requirements.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
-            Python & Django / FastAPI
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
+            Python &amp; Django / FastAPI
           </h3>
           <p className="mb-4">
             For data-intensive web applications, machine learning integrations,
             and enterprise-grade backends, we use Python with Django or FastAPI.
-            Python's rich ecosystem and Django's mature, batteries-included
-            framework make it an excellent choice for complex web applications
-            with sophisticated data models, business logic, and third-party
-            system integrations.
+            Python&apos;s rich ecosystem and Django&apos;s mature,
+            batteries-included framework make it an excellent choice for complex
+            web applications with sophisticated data models, business logic, and
+            third-party system integrations.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
-            WordPress & Custom Themes
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
+            WordPress &amp; Custom Themes
           </h3>
           <p className="mb-4">
             For content-driven websites requiring flexible CMS management, we
@@ -325,8 +328,8 @@ export default function WebDevelopmentCompanyIndiaPage() {
             dependency.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
-            MongoDB & PostgreSQL
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
+            MongoDB &amp; PostgreSQL
           </h3>
           <p className="mb-4">
             We select the right database architecture for each project. MongoDB
@@ -337,8 +340,8 @@ export default function WebDevelopmentCompanyIndiaPage() {
             sophisticated reporting needs.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
-            AWS, Vercel & DigitalOcean
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
+            AWS, Vercel &amp; DigitalOcean
           </h3>
           <p className="mb-4">
             We deploy all web projects on enterprise-grade cloud infrastructure
@@ -350,20 +353,20 @@ export default function WebDevelopmentCompanyIndiaPage() {
           </p>
 
           <ul className="list-disc pl-6 space-y-2 mt-2">
-            <li>Next.js / React.js (Frontend & Full-Stack)</li>
-            <li>Node.js / Express (Backend & APIs)</li>
+            <li>Next.js / React.js (Frontend &amp; Full-Stack)</li>
+            <li>Node.js / Express (Backend &amp; APIs)</li>
             <li>Python / Django / FastAPI (Enterprise Backend)</li>
             <li>WordPress / Custom Themes (CMS Websites)</li>
             <li>MongoDB / PostgreSQL (Database)</li>
-            <li>Tailwind CSS / GSAP (Styling & Animation)</li>
-            <li>AWS / Vercel / DigitalOcean (Cloud & Hosting)</li>
+            <li>Tailwind CSS / GSAP (Styling &amp; Animation)</li>
+            <li>AWS / Vercel / DigitalOcean (Cloud &amp; Hosting)</li>
             <li>Docker / CI-CD Pipelines (DevOps)</li>
           </ul>
         </div>
 
         {/* PROCESS */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-700 mb-4">
             Our Web Development Process
           </h2>
           <p className="mb-6">
@@ -372,8 +375,8 @@ export default function WebDevelopmentCompanyIndiaPage() {
             initial discovery to launch and ongoing growth support.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
-            Step 1 — Discovery & Technical Strategy
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
+            Step 1 — Discovery &amp; Technical Strategy
           </h3>
           <p className="mb-4">
             We begin with a thorough discovery session to understand your
@@ -386,8 +389,8 @@ export default function WebDevelopmentCompanyIndiaPage() {
             investment is directed at the right solution from day one.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
-            Step 2 — UX Design & Wireframing
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
+            Step 2 — UX Design &amp; Wireframing
           </h3>
           <p className="mb-4">
             Our UX designers create detailed wireframes for every key page and
@@ -399,7 +402,7 @@ export default function WebDevelopmentCompanyIndiaPage() {
             and user journey is approved.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
             Step 3 — Visual Design
           </h3>
           <p className="mb-4">
@@ -412,8 +415,8 @@ export default function WebDevelopmentCompanyIndiaPage() {
             made with both brand impact and conversion performance in mind.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
-            Step 4 — Development & Engineering
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
+            Step 4 — Development &amp; Engineering
           </h3>
           <p className="mb-4">
             Our frontend and backend developers build your web solution with
@@ -425,8 +428,8 @@ export default function WebDevelopmentCompanyIndiaPage() {
             can provide feedback throughout the build, not just at the end.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
-            Step 5 — Testing & Quality Assurance
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
+            Step 5 — Testing &amp; Quality Assurance
           </h3>
           <p className="mb-4">
             Every web development project undergoes rigorous QA testing before
@@ -438,8 +441,8 @@ export default function WebDevelopmentCompanyIndiaPage() {
             before any code goes live.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
-            Step 6 — Launch & Deployment
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
+            Step 6 — Launch &amp; Deployment
           </h3>
           <p className="mb-4">
             We manage the complete deployment process — cloud server setup, SSL
@@ -450,8 +453,8 @@ export default function WebDevelopmentCompanyIndiaPage() {
             day one.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
-            Step 7 — Post-Launch Support & Growth
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
+            Step 7 — Post-Launch Support &amp; Growth
           </h3>
           <p>
             After launch, we provide ongoing technical support, security
@@ -462,19 +465,19 @@ export default function WebDevelopmentCompanyIndiaPage() {
           </p>
 
           <ul className="list-disc pl-6 space-y-2 mt-4">
-            <li>Discovery & Technical Strategy</li>
-            <li>UX Design & Wireframing</li>
+            <li>Discovery &amp; Technical Strategy</li>
+            <li>UX Design &amp; Wireframing</li>
             <li>Visual Design</li>
-            <li>Development & Engineering</li>
-            <li>Testing & Quality Assurance</li>
-            <li>Launch & Deployment</li>
-            <li>Post-Launch Support & Growth</li>
+            <li>Development &amp; Engineering</li>
+            <li>Testing &amp; Quality Assurance</li>
+            <li>Launch &amp; Deployment</li>
+            <li>Post-Launch Support &amp; Growth</li>
           </ul>
         </div>
 
         {/* INDUSTRIES */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-700 mb-4">
             Industries We Serve Across India
           </h2>
           <p className="mb-4">
@@ -485,26 +488,26 @@ export default function WebDevelopmentCompanyIndiaPage() {
             we bring to every project.
           </p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Technology & SaaS Startups</li>
-            <li>Healthcare & MedTech</li>
-            <li>Real Estate & PropTech</li>
-            <li>Finance, Banking & FinTech</li>
-            <li>Education & EdTech</li>
-            <li>Manufacturing & Industrial</li>
-            <li>Retail & Ecommerce</li>
-            <li>Logistics & Supply Chain</li>
-            <li>Legal & Professional Services</li>
-            <li>Media & Entertainment</li>
+            <li>Technology &amp; SaaS Startups</li>
+            <li>Healthcare &amp; MedTech</li>
+            <li>Real Estate &amp; PropTech</li>
+            <li>Finance, Banking &amp; FinTech</li>
+            <li>Education &amp; EdTech</li>
+            <li>Manufacturing &amp; Industrial</li>
+            <li>Retail &amp; Ecommerce</li>
+            <li>Logistics &amp; Supply Chain</li>
+            <li>Legal &amp; Professional Services</li>
+            <li>Media &amp; Entertainment</li>
           </ul>
         </div>
 
         {/* WHY CHOOSE */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-700 mb-4">
             Why Choose Us as Your Web Development Company in India?
           </h2>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
             ✅ Full-Stack Web Development Expertise Under One Roof
           </h3>
           <p className="mb-5">
@@ -517,8 +520,8 @@ export default function WebDevelopmentCompanyIndiaPage() {
             freelancers or agencies.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
-            ✅ SEO & Performance Built into Every Project as Standard
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
+            ✅ SEO &amp; Performance Built into Every Project as Standard
           </h3>
           <p className="mb-5">
             Technical SEO and performance optimization are built into our
@@ -530,7 +533,7 @@ export default function WebDevelopmentCompanyIndiaPage() {
             foundation for organic search visibility from launch day.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
             ✅ Scalable Architecture Built for Business Growth
           </h3>
           <p className="mb-5">
@@ -543,8 +546,8 @@ export default function WebDevelopmentCompanyIndiaPage() {
             accumulation.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
-            ✅ Transparent Agile Process & On-Time Delivery
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
+            ✅ Transparent Agile Process &amp; On-Time Delivery
           </h3>
           <p className="mb-5">
             We follow an agile development process with regular sprint reviews,
@@ -555,7 +558,7 @@ export default function WebDevelopmentCompanyIndiaPage() {
             communication throughout every engagement.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
             ✅ Security-First Engineering on Every Project
           </h3>
           <p className="mb-5">
@@ -568,7 +571,7 @@ export default function WebDevelopmentCompanyIndiaPage() {
             the safety of your web platform.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2 text-white">
+          <h3 className="text-xl font-semibold mb-2 text-blue-700">
             ✅ Competitive India-Based Pricing with Global Quality Standards
           </h3>
           <p className="mb-5">
@@ -576,16 +579,16 @@ export default function WebDevelopmentCompanyIndiaPage() {
             engineering quality at a fraction of the cost of equivalent agencies
             in the US, UK, or Australia — making us the preferred technology
             partner for Indian businesses of all sizes and international clients
-            looking to leverage India's exceptional engineering talent. You get
-            global-standard web development at India-competitive pricing,
+            looking to leverage India&apos;s exceptional engineering talent. You
+            get global-standard web development at India-competitive pricing,
             without compromising on quality, process, or communication.
           </p>
 
           <ul className="list-disc pl-6 space-y-2 mt-2">
             <li>Full-Stack Expertise Under One Roof</li>
-            <li>SEO & Performance Built in as Standard</li>
+            <li>SEO &amp; Performance Built in as Standard</li>
             <li>Scalable Architecture for Business Growth</li>
-            <li>Transparent Agile Process & On-Time Delivery</li>
+            <li>Transparent Agile Process &amp; On-Time Delivery</li>
             <li>Security-First Engineering</li>
             <li>Competitive India-Based Pricing, Global Quality</li>
           </ul>
@@ -593,12 +596,12 @@ export default function WebDevelopmentCompanyIndiaPage() {
 
         {/* FAQ */}
         <div>
-          <h2 className="text-2xl font-extrabold gradient-text mb-4">
+          <h2 className="text-2xl font-extrabold text-blue-700 mb-4">
             Web Development FAQs
           </h2>
 
           <p>
-            <strong className="text-white">
+            <strong className="text-blue-700">
               How much does web development cost in India?
             </strong>
             <br />
@@ -613,7 +616,7 @@ export default function WebDevelopmentCompanyIndiaPage() {
           </p>
 
           <p className="mt-6">
-            <strong className="text-white">
+            <strong className="text-blue-700">
               How long does web development take?
             </strong>
             <br />
@@ -626,7 +629,7 @@ export default function WebDevelopmentCompanyIndiaPage() {
           </p>
 
           <p className="mt-6">
-            <strong className="text-white">
+            <strong className="text-blue-700">
               Do you work with clients across India or only in Hyderabad?
             </strong>
             <br />
@@ -641,12 +644,12 @@ export default function WebDevelopmentCompanyIndiaPage() {
           </p>
 
           <p className="mt-6">
-            <strong className="text-white">
+            <strong className="text-blue-700">
               Which technology stack do you recommend for my web project?
             </strong>
             <br />
             The right technology stack depends on your project type, performance
-            requirements, team's long-term maintenance needs, budget, and
+            requirements, team&apos;s long-term maintenance needs, budget, and
             timeline. For most marketing websites and content-driven platforms,
             Next.js or WordPress are excellent choices. For SaaS products and
             web applications, React.js with Node.js or Python backends are
@@ -657,7 +660,7 @@ export default function WebDevelopmentCompanyIndiaPage() {
           </p>
 
           <p className="mt-6">
-            <strong className="text-white">
+            <strong className="text-blue-700">
               Will my website be optimized for SEO?
             </strong>
             <br />
@@ -672,7 +675,7 @@ export default function WebDevelopmentCompanyIndiaPage() {
           </p>
 
           <p className="mt-6">
-            <strong className="text-white">
+            <strong className="text-blue-700">
               Do you provide maintenance and support after the website or
               application launches?
             </strong>
@@ -690,28 +693,23 @@ export default function WebDevelopmentCompanyIndiaPage() {
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="py-16 px-6 text-center border-t border-white/10">
-        <h2 className="text-3xl font-extrabold mb-6">
-          Ready to Work with a{" "}
-          <span className="gradient-text">
-            Leading Web Development Company in India?
-          </span>
+      <section className="py-16 px-6 text-center border-t border-gray-200">
+        <h2 className="text-3xl font-extrabold mb-6 text-blue-700">
+          Ready to Work with a Leading Web Development Company in India?
         </h2>
         <p className="text-black max-w-2xl mx-auto mb-4 text-lg">
-          Get a free consultation with our web development team. We'll review
-          your requirements, share relevant examples from our portfolio, and
-          provide a clear proposal with timeline and pricing — at no cost and no
-          obligation.
+          Get a free consultation with our web development team. We&apos;ll
+          review your requirements, share relevant examples from our portfolio,
+          and provide a clear proposal with timeline and pricing — at no cost
+          and no obligation.
         </p>
         <p className="text-black max-w-2xl mx-auto mb-10">
-          Let's build a web solution that performs, ranks on Google, and grows
-          your business — anywhere in India and beyond.
+          Let&apos;s build a web solution that performs, ranks on Google, and
+          grows your business — anywhere in India and beyond.
         </p>
         <Link
           href="/contact"
-          className="inline-block px-10 py-4 rounded-full
-            bg-gradient-to-r from-yellow-400 to-orange-500
-            text-black font-semibold text-lg"
+          className="inline-block px-10 py-4 rounded-full bg-blue-700 text-white font-semibold text-lg hover:bg-blue-800 transition"
         >
           Get Free Consultation →
         </Link>

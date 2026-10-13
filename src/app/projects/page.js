@@ -35,6 +35,28 @@ export default function ProjectsPage() {
     },
 
     {
+      title: "Open Plots and Villas Website",
+      slug: "open-plots-and-villas-website",
+      image: "/image6.png",
+      link: "https://www.openplotsandvillas.com/",
+      category: "Real Estate Website",
+
+      tools: ["Next.js", "React JS", "Tailwind CSS", "Supabase"],
+
+      description:
+        "A modern real estate website showcasing open plots, villas, and property investment opportunities with a responsive interface, property listings, and an intuitive user experience.",
+
+      seoTitle:
+        "Open Plots and Villas Website Development | Real Estate Website",
+
+      seoDescription:
+        "KIDIWEBTECH developed a modern, responsive real estate website for Open Plots and Villas, featuring property listings, open plots, villas, and an intuitive user experience.",
+
+      keywords:
+        "Open Plots and Villas website, real estate website development, open plots website, villas website, property listing website, Next.js website development",
+    },
+
+    {
       title: "Arka Aqua Tech",
       slug: "arka-aqua-tech",
       image: "/image7.jpg",

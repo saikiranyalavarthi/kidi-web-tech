@@ -14,6 +14,7 @@ const categories = [
 ];
 
 const websites = [
+  // ================= BUSINESS (5) =================
   {
     title: "Business Website",
     category: "Business",
@@ -21,11 +22,63 @@ const websites = [
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
   },
   {
+    title: "Corporate Website",
+    category: "Business",
+    image:
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Startup Landing Page",
+    category: "Business",
+    image:
+      "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Consulting Firm Website",
+    category: "Business",
+    image:
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "IT Company Website",
+    category: "Business",
+    image:
+      "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop",
+  },
+
+  // ================= E-COMMERCE (5) =================
+  {
     title: "E-Commerce Website",
     category: "E-Commerce",
     image:
       "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=1200&auto=format&fit=crop",
   },
+  {
+    title: "Fashion Store",
+    category: "E-Commerce",
+    image:
+      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Electronics Shop",
+    category: "E-Commerce",
+    image:
+      "https://images.unsplash.com/photo-1498049794561-7780e7231661?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Grocery Store",
+    category: "E-Commerce",
+    image:
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Jewelry Store",
+    category: "E-Commerce",
+    image:
+      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=1200&auto=format&fit=crop",
+  },
+
+  // ================= EDUCATION (5) =================
   {
     title: "Education Website",
     category: "Education",
@@ -33,16 +86,92 @@ const websites = [
       "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop",
   },
   {
+    title: "Online Learning Platform",
+    category: "Education",
+    image:
+      "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Coaching Institute Website",
+    category: "Education",
+    image:
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "University Website",
+    category: "Education",
+    image:
+      "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Kids School Website",
+    category: "Education",
+    image:
+      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200&auto=format&fit=crop",
+  },
+
+  // ================= HEALTHCARE (5) =================
+  {
     title: "Healthcare Website",
     category: "Healthcare",
     image:
       "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1200&auto=format&fit=crop",
   },
   {
+    title: "Dental Clinic Website",
+    category: "Healthcare",
+    image:
+      "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Hospital Website",
+    category: "Healthcare",
+    image:
+      "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Medical Lab Website",
+    category: "Healthcare",
+    image:
+      "https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Physiotherapy Clinic Website",
+    category: "Healthcare",
+    image:
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1200&auto=format&fit=crop",
+  },
+
+  // ================= PORTFOLIO (5) =================
+  {
     title: "Portfolio Website",
     category: "Portfolio",
     image:
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Photographer Portfolio",
+    category: "Portfolio",
+    image:
+      "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Designer Portfolio",
+    category: "Portfolio",
+    image:
+      "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Developer Portfolio",
+    category: "Portfolio",
+    image:
+      "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    title: "Architect Portfolio",
+    category: "Portfolio",
+    image:
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop",
   },
 ];
 
