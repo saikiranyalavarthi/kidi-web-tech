@@ -49,7 +49,7 @@ export default function AboutSection() {
               "
             >
               We Build Powerful Digital Experiences That Grow Brands Online
-              Faster
+              Faster.
             </h2>
 
             <p
