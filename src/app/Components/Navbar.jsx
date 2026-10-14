@@ -586,7 +586,7 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             <img
               src="/kidiwebtech-logo.png"
-              alt="KIDIWEBTECH Logo"
+              alt="KIDIWEBTECH"
               className="w-14 h-14 object-contain"
             />
           </div>
