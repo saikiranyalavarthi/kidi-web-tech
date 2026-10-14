@@ -72,7 +72,6 @@
 //   ];
 // }
 
-
 // export default function sitemap() {
 //   const baseUrl = "https://www.kidiwebtech.com";
 
@@ -166,8 +165,6 @@
 //     ...newBlogUrls,
 //   ];
 // }
-
-
 
 export default function sitemap() {
   const baseUrl = "https://www.kidiwebtech.com";
@@ -371,6 +368,13 @@ export default function sitemap() {
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
+    },
+
+    {
+      url: `${baseUrl}/not-found`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.3,
     },
 
     // =======================================================
