@@ -269,25 +269,25 @@ export default function Home() {
                 href="/web-development"
                 className="rounded-lg bg-blue-600 px-5 py-3 font-medium text-white transition hover:bg-blue-700"
               >
-                Web Development
+               website-development-services
               </Link>
 
               <Link
                 href="/website-design"
                 className="rounded-lg border border-blue-600 px-5 py-3 font-medium text-blue-600 transition hover:bg-blue-600 hover:text-white"
               >
-                Website Design
+                web-design-company-hitech-city
               </Link>
 
               <Link
-                href="/nextjs-development"
+                href="/services/nextjs-development-services-hyderabad"
                 className="rounded-lg border border-blue-600 px-5 py-3 font-medium text-blue-600 transition hover:bg-blue-600 hover:text-white"
               >
                 Next.js Development
               </Link>
 
               <Link
-                href="/reactjs-development"
+                href="/services/react-js-development-services-hyderabad"
                 className="rounded-lg border border-blue-600 px-5 py-3 font-medium text-blue-600 transition hover:bg-blue-600 hover:text-white"
               >
                 React.js Development

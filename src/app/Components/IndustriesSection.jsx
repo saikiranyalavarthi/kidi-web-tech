@@ -1,6 +1,46 @@
 "use client";
 
+import Link from "next/link";
+
 export default function IndustriesSection() {
+  const industries = [
+    {
+      icon: "🏥",
+      title: "Healthcare & Hospitals",
+      desc: "Healthcare website development, local SEO, and digital marketing to help hospitals, clinics, and healthcare providers improve online visibility and attract patient enquiries.",
+    },
+
+    {
+      icon: "🏢",
+      title: "Real Estate & Property",
+      desc: "Real estate website development, property listing platforms, SEO, and lead-generation solutions to help builders, developers, and property consultants attract potential buyers.",
+    },
+
+    {
+      icon: "🛒",
+      title: "Ecommerce & Retail",
+      desc: "Ecommerce website development, online store design, product SEO, and digital marketing strategies to improve shopping experiences and support online sales.",
+    },
+
+    {
+      icon: "🎓",
+      title: "Education & eLearning",
+      desc: "Website design, SEO, and digital platforms for schools, colleges, coaching institutes, and online education businesses looking to reach more students.",
+    },
+
+    {
+      icon: "🍴",
+      title: "Restaurants & Hospitality",
+      desc: "Restaurant website development, local SEO, and online marketing to help restaurants, hotels, and hospitality businesses improve local discovery and customer enquiries.",
+    },
+
+    {
+      icon: "🚀",
+      title: "Startups & Small Businesses",
+      desc: "Affordable business website development, custom web applications, branding, and digital marketing solutions to help startups and small businesses grow online.",
+    },
+  ];
+
   return (
     <section className="relative py-20 md:py-24 px-6 overflow-hidden bg-gradient-to-b from-[#f8fbff] to-white">
       {/* BACKGROUND */}
@@ -39,7 +79,7 @@ export default function IndustriesSection() {
               text-[#0F172A]
             "
           >
-            Industries We Help Grow Online
+            Website Development & Digital Marketing for Every Industry
           </h2>
 
           <p
@@ -52,52 +92,20 @@ export default function IndustriesSection() {
               mx-auto
             "
           >
-            We provide SEO, website development, branding, Google Ads,
-            ecommerce, and digital marketing solutions for businesses across
-            multiple industries.
+            KidiWebTech provides industry-focused website development, search
+            engine optimization (SEO), and digital marketing services to help
+            businesses attract relevant visitors and generate qualified
+            enquiries. Based in Hyderabad, India, we support businesses across
+            India and international markets, including the USA, UK, UAE, and
+            Saudi Arabia, with digital solutions tailored to their goals,
+            audiences, and services.
           </p>
         </div>
 
         {/* GRID */}
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
-          {[
-            {
-              icon: "🏥",
-              title: "Healthcare",
-              desc: "SEO, hospital websites, and digital solutions for clinics and healthcare businesses.",
-            },
-
-            {
-              icon: "🏢",
-              title: "Real Estate",
-              desc: "Lead generation, real estate websites, and branding solutions for property businesses.",
-            },
-
-            {
-              icon: "🛒",
-              title: "Ecommerce",
-              desc: "High-converting ecommerce websites and marketing strategies to boost online sales.",
-            },
-
-            {
-              icon: "🎓",
-              title: "Education",
-              desc: "SEO and digital platforms for schools, colleges, and online learning businesses.",
-            },
-
-            {
-              icon: "🍴",
-              title: "Restaurants",
-              desc: "Restaurant websites, local SEO, and social media marketing to increase visibility.",
-            },
-
-            {
-              icon: "🚀",
-              title: "Startups",
-              desc: "Modern web solutions, branding, and growth-focused digital marketing strategies.",
-            },
-          ].map((industry, index) => (
+          {industries.map((industry, index) => (
             <div
               key={index}
               className="
@@ -193,7 +201,7 @@ export default function IndustriesSection() {
 
             <div>
               <p className="uppercase tracking-[4px] text-white/70 text-sm">
-                INDUSTRY SOLUTIONS
+                INDUSTRY-SPECIFIC DIGITAL SOLUTIONS
               </p>
 
               <h3
@@ -204,7 +212,7 @@ export default function IndustriesSection() {
                   leading-tight
                 "
               >
-                Helping Businesses Generate More Leads & Sales
+                Turn Your Website Into a Source of Business Leads
               </h3>
 
               <p
@@ -215,9 +223,29 @@ export default function IndustriesSection() {
                   text-white/90
                 "
               >
-                We build SEO, websites, branding, and digital marketing
-                strategies tailored for different industries and business goals.
+                Tell us about your industry, target audience, and business
+                goals. We can help you choose the right website, SEO, and
+                digital marketing solutions to improve online visibility and
+                attract potential customers in your target market.
               </p>
+
+              <Link
+                href="/contact"
+                className="
+                  inline-flex items-center justify-center
+                  mt-8
+                  px-8 py-4
+                  rounded-full
+                  bg-white
+                  text-[#2563EB]
+                  font-bold
+                  shadow-lg
+                  hover:scale-105
+                  transition duration-300
+                "
+              >
+                Discuss Your Project →
+              </Link>
             </div>
 
             {/* RIGHT */}
