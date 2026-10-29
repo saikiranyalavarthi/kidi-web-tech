@@ -3,6 +3,50 @@
 import Link from "next/link";
 
 export default function ServicesSection() {
+  const services = [
+    {
+      icon: "🚀",
+      title: "SEO Services",
+      desc: "Improve Google search visibility, attract relevant organic traffic, and generate qualified enquiries with technical SEO, on-page optimization, and content strategies.",
+      link: "/seo-services-hyderabad",
+    },
+
+    {
+      icon: "💻",
+      title: "Website Development",
+      desc: "Get a fast, responsive, SEO-friendly business website or custom web application built to showcase your services and convert visitors into potential customers.",
+      link: "/website-development-services",
+    },
+
+    {
+      icon: "📱",
+      title: "Mobile App Development",
+      desc: "Build Android and iOS mobile applications with intuitive experiences, reliable functionality, and scalable solutions for startups and established businesses.",
+      link: "/services/mobile-app-development-hyderabad",
+    },
+
+    {
+      icon: "📈",
+      title: "Google Ads & PPC Management",
+      desc: "Reach customers actively searching for your services through targeted Google Ads campaigns designed to increase relevant enquiries and support measurable business growth.",
+      link: "/ppc-management-services",
+    },
+
+    {
+      icon: "🎯",
+      title: "Social Media Marketing",
+      desc: "Strengthen your brand presence, connect with your target audience, and promote your products and services through strategic social media campaigns.",
+      link: "/seo-services-india",
+    },
+
+    {
+      icon: "🛒",
+      title: "Ecommerce Website Development",
+      desc: "Launch an online store with mobile-friendly shopping, product pages, streamlined checkout, and a user experience designed to support more sales.",
+      link: "/ecommerce-development-services",
+    },
+  ];
+
   return (
     <section className="relative py-20 md:py-24 px-6 overflow-hidden bg-gradient-to-b from-white to-[#f5f9ff]">
       {/* BACKGROUND */}
@@ -41,7 +85,7 @@ export default function ServicesSection() {
               text-[#0F172A]
             "
           >
-            Digital Solutions That Grow Businesses
+            Website Development, SEO & Digital Marketing That Generate Leads
           </h2>
 
           <p
@@ -54,57 +98,20 @@ export default function ServicesSection() {
               mx-auto
             "
           >
-            We help businesses grow through SEO, website development, Google
-            Ads, branding, app development, and performance marketing solutions.
+            KidiWebTech helps businesses strengthen their online presence
+            through professional website development, search engine
+            optimization, mobile app development, Google Ads, and digital
+            marketing. Based in Hyderabad, India, we work with businesses across
+            India and international markets, including the USA, UK, UAE, and
+            Saudi Arabia. Our goal is to help you attract relevant visitors,
+            generate qualified enquiries, and grow your business online.
           </p>
         </div>
 
         {/* SERVICES */}
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
-          {[
-            {
-              icon: "🚀",
-              title: "SEO Services",
-              desc: "Improve rankings, traffic, and lead generation with advanced SEO strategies.",
-              link: "/seo-services-hyderabad",
-            },
-
-            {
-              icon: "💻",
-              title: "Website Development",
-              desc: "Modern business websites and custom web applications built for growth.",
-              link: "/website-development-services",
-            },
-
-            {
-              icon: "📱",
-              title: "App Development",
-              desc: "Android, iOS, and Flutter mobile app development for startups and businesses.",
-              link: "/services/mobile-app-development-hyderabad",
-            },
-
-            {
-              icon: "📈",
-              title: "Performance Marketing",
-              desc: "ROI-focused Google Ads and paid campaigns to generate leads and sales.",
-              link: "/ppc-management-services",
-            },
-
-            {
-              icon: "🎯",
-              title: "Social Media Marketing",
-              desc: "Build your brand visibility and customer engagement across social platforms.",
-              link: "/seo-services-india",
-            },
-
-            {
-              icon: "🛒",
-              title: "Ecommerce Development",
-              desc: "High-converting ecommerce websites with modern shopping experiences.",
-              link: "/ecommerce-development-services",
-            },
-          ].map((service, index) => (
+          {services.map((service, index) => (
             <div
               key={index}
               className="
@@ -204,7 +211,7 @@ export default function ServicesSection() {
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             <div>
               <p className="uppercase tracking-[4px] text-white/70 text-sm">
-                BUSINESS GROWTH
+                GROW YOUR BUSINESS
               </p>
 
               <h3
@@ -215,7 +222,7 @@ export default function ServicesSection() {
                   leading-tight
                 "
               >
-                Ready To Grow Your Business Online?
+                Ready to Get More Customers Online?
               </h3>
 
               <p
@@ -226,9 +233,28 @@ export default function ServicesSection() {
                   text-white/90
                 "
               >
-                Let’s build powerful SEO, websites, and marketing strategies
-                that generate real business growth.
+                Tell us about your business goals. We will help you explore the
+                right website, SEO, and digital marketing solutions for your
+                target audience and budget.
               </p>
+
+              <Link
+                href="/contact"
+                className="
+                  inline-flex items-center justify-center
+                  mt-8
+                  px-8 py-4
+                  rounded-full
+                  bg-white
+                  text-[#2563EB]
+                  font-bold
+                  shadow-lg
+                  hover:scale-105
+                  transition duration-300
+                "
+              >
+                Get a Free Quote →
+              </Link>
             </div>
 
             <div className="grid grid-cols-2 gap-5">

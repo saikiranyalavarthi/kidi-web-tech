@@ -17,27 +17,44 @@ import FestivalBanner from "./Components/FestivalBanner";
 /* =========================================================
    SEO METADATA
 ========================================================= */
+
 export const metadata = {
-  title: "Web Development & SEO Company in Hyderabad",
+  title: "Website Development & SEO Agency | KidiWebTech",
 
   description:
-    "KidiWebTech is a web development and SEO company in Hyderabad, Telangana. We create fast, responsive websites and provide SEO, local SEO, Google Ads and digital marketing services to help businesses grow online.",
+    "KidiWebTech helps businesses generate qualified leads with website development, SEO and digital marketing. Based in Hyderabad, serving businesses across India and the UAE.",
 
   keywords: [
-    "web development company in Hyderabad",
-    "website development company Hyderabad",
-    "website design company Hyderabad",
-    "SEO company in Hyderabad",
-    "SEO services in Hyderabad",
-    "digital marketing company Hyderabad",
-    "Google Ads agency Hyderabad",
-    "Next.js development company Hyderabad",
-    "React.js development company Hyderabad",
-    "custom website development Hyderabad",
-    "local SEO services Hyderabad",
-    "business website development Hyderabad",
-    "website redesign Hyderabad",
     "KidiWebTech",
+    "website development company",
+    "web development company",
+    "website design company",
+    "website development services",
+    "custom website development",
+    "business website development",
+    "lead generation website design",
+    "conversion-focused website design",
+    "ecommerce website development",
+    "Next.js development company",
+    "React.js development company",
+    "SEO services",
+    "SEO agency",
+    "local SEO services",
+    "technical SEO services",
+    "digital marketing agency",
+    "Google Ads management",
+    "lead generation services",
+    "web development company in Hyderabad",
+    "website design company Hyderabad",
+    "SEO services Hyderabad",
+    "digital marketing agency Hyderabad",
+    "web development company India",
+    "website development company India",
+    "SEO services India",
+    "web development company UAE",
+    "website design company Dubai",
+    "SEO services UAE",
+    "digital marketing agency UAE",
   ],
 
   alternates: {
@@ -50,17 +67,17 @@ export const metadata = {
     url: "https://www.kidiwebtech.com/",
     siteName: "KidiWebTech",
 
-    title: "Web Development & SEO Company in Hyderabad",
+    title: "Website Development & SEO Agency | KidiWebTech",
 
     description:
-      "KidiWebTech provides web development, website design, SEO, local SEO, Google Ads and digital marketing services for businesses in Hyderabad and across Telangana.",
+      "Website development, SEO and digital marketing services designed to help businesses attract relevant visitors, generate enquiries and grow online across India and the UAE.",
 
     images: [
       {
         url: "https://www.kidiwebtech.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "KidiWebTech Web Development and SEO Company in Hyderabad",
+        alt: "KidiWebTech website development, SEO and digital marketing services",
       },
     ],
   },
@@ -68,10 +85,10 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Web Development & SEO Company in Hyderabad",
+    title: "Website Development & SEO Agency | KidiWebTech",
 
     description:
-      "Professional web development, SEO, Google Ads and digital marketing services in Hyderabad.",
+      "KidiWebTech builds business websites and provides SEO and digital marketing services focused on enquiries and lead generation across India and the UAE.",
 
     images: ["https://www.kidiwebtech.com/og-image.jpg"],
   },
@@ -96,73 +113,68 @@ export const metadata = {
 export default function Home() {
   return (
     <div className="bg-black text-white font-sans overflow-x-hidden">
-      {/* =====================================================
-          HERO VIDEO / INTRO
-      ===================================================== */}
+      {/* HERO VIDEO / INTRO */}
 
-      <Herotrain />
+      {/* <Herotrain /> */}
 
-      {/* =====================================================
-          MAIN HERO
-      ===================================================== */}
+      {/* MAIN HERO */}
       {/* <Banner /> */}
+
       <FestivalBanner />
       <Herosection />
 
       {/* =====================================================
           INTRO SEO CONTENT
-          Keep this visible on the page.
       ===================================================== */}
 
       <section aria-labelledby="about-kidiwebtech" className="w-full bg-white">
         <div className="mx-auto max-w-6xl px-6 py-16">
           <div className="max-w-4xl">
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-blue-600">
-              Web Development & SEO Company in Hyderabad
+              Website Development, SEO & Digital Marketing
             </p>
 
-            <h1
-              id="about-kidiwebwebtech"
+            <h2
+              id="about-kidiwebtech"
               className="text-3xl font-bold leading-tight text-blue-600 md:text-5xl"
             >
-              Web Development and SEO Services in Hyderabad
-            </h1>
+              Website Development, SEO & Digital Marketing That Generate Leads
+            </h2>
 
             <p className="mt-6 text-base leading-8 text-black md:text-lg">
-              KidiWebTech is a web development and SEO company based in
-              Hyderabad, Telangana. We help businesses build a stronger online
-              presence with modern website development, responsive website
-              design, search engine optimization, local SEO, Google Ads and
-              digital marketing services.
+              KidiWebTech is a website development and digital marketing company
+              based in Hyderabad, India. We help businesses attract potential
+              customers and generate enquiries through professional website
+              design, custom web development, search engine optimization (SEO),
+              local SEO, Google Ads and digital marketing services.
             </p>
 
             <p className="mt-4 text-base leading-8 text-black md:text-lg">
-              Our websites are designed with performance, mobile responsiveness,
-              user experience and search engine visibility in mind. From
-              business websites and website redesigns to Next.js and React.js
-              development, we create digital solutions based on each
-              business&apos;s goals and customers.
+              Our websites are built around clear calls to action, mobile
+              usability, fast performance and search visibility. We develop
+              business websites, eCommerce stores and custom Next.js and
+              React.js applications for companies across India and businesses
+              targeting international markets, including the UAE. Our focus is
+              to help turn relevant website visitors into calls, form
+              submissions and sales enquiries.
             </p>
           </div>
         </div>
       </section>
-      {/* =====================================================
-          TRUSTED BRANDS
-      ===================================================== */}
+
+      {/* TRUSTED BRANDS */}
 
       <TrustedBySection />
 
-      {/* =====================================================
-          SERVICES
-      ===================================================== */}
+      {/* SERVICES */}
 
       <section aria-labelledby="services-heading" id="services">
         <ServicesSection />
       </section>
 
       {/* =====================================================
-    SEO SERVICES CONTENT
-===================================================== */}
+          SEO SERVICES CONTENT
+      ===================================================== */}
 
       <section
         aria-labelledby="seo-services-heading"
@@ -174,22 +186,28 @@ export default function Home() {
               id="seo-services-heading"
               className="text-3xl font-bold leading-tight text-blue-600 md:text-4xl"
             >
-              SEO Services for Businesses in Hyderabad
+              SEO Services That Help Turn Search Traffic Into Leads
             </h2>
 
             <p className="mt-5 text-base leading-8 text-black md:text-lg">
-              Our SEO services help businesses improve their organic search
-              visibility and attract relevant visitors from Google. We work on
-              technical SEO, on-page optimization, content structure, internal
-              linking, local search optimization and other website improvements
-              that support long-term organic growth.
+              Our SEO services help businesses improve organic visibility, reach
+              people actively searching for their products or services, and
+              increase qualified enquiries. Our work can include technical SEO,
+              on-page optimization, keyword mapping, useful content, internal
+              linking, local search optimization and conversion improvements. We
+              focus on relevant traffic and business enquiries rather than
+              traffic alone.
             </p>
 
             <p className="mt-4 text-base leading-8 text-black md:text-lg">
-              For businesses targeting customers in Hyderabad and Telangana,
-              local SEO can help improve visibility for location-based searches.
-              We optimize relevant website content and local signals while
-              keeping the content useful and natural for customers.
+              For businesses serving Hyderabad and other Indian cities, local
+              SEO can help improve visibility in relevant location-based
+              searches. We can also help plan Google Ads campaigns around your
+              services, target audience, landing pages and lead goals. For
+              businesses targeting the UAE, SEO and landing-page content should
+              be tailored to the specific market and customer intent. Results
+              depend on competition, budget, website quality and campaign
+              execution.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -210,6 +228,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* =====================================================
           WEB DEVELOPMENT SEO CONTENT
       ===================================================== */}
@@ -224,22 +243,25 @@ export default function Home() {
               id="web-development-heading"
               className="text-3xl font-bold leading-tight text-blue-600 md:text-4xl"
             >
-              Website Development Company in Hyderabad
+              Website Development Designed to Convert Visitors Into Enquiries
             </h2>
 
             <p className="mt-5 text-base leading-8 text-black md:text-lg">
-              KidiWebTech develops modern business websites focused on speed,
-              responsive design, usability and search visibility. We work with
-              modern technologies including Next.js and React.js to build
-              websites that provide a strong experience across desktop, tablet
-              and mobile devices.
+              KidiWebTech builds modern business websites focused on speed,
+              responsive design, usability, search visibility and clear
+              conversion paths. We develop websites and web applications using
+              modern technologies such as Next.js and React.js, with layouts
+              designed to work across desktop, tablet and mobile devices.
+              Contact forms, click-to-call buttons, service pages and clear
+              calls to action can help visitors take the next step.
             </p>
 
             <p className="mt-4 text-base leading-8 text-black md:text-lg">
-              Whether you need a new business website, a custom web application,
-              a website redesign or improvements to an existing website, our
-              development process focuses on creating a clear structure for both
-              users and search engines.
+              Whether you need a business website, custom web application,
+              eCommerce store, website redesign or ongoing improvements, we
+              start by understanding your services, audience and business goals.
+              We then plan the page structure and enquiry journey so potential
+              customers can quickly understand your offer and contact your team.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -275,39 +297,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* =====================================================
-          INDUSTRIES
-      ===================================================== */}
+      {/* INDUSTRIES */}
 
       <IndustriesSection />
 
-      {/* =====================================================
-          CASE STUDIES
-      ===================================================== */}
+      {/* CASE STUDIES */}
 
       <CaseStudiesSection />
 
-      {/* =====================================================
-          PROCESS
-      ===================================================== */}
+      {/* PROCESS */}
 
       <ProcessSection />
 
-      {/* =====================================================
-          DELIVERED WEBSITES
-      ===================================================== */}
+      {/* DELIVERED WEBSITES */}
 
       <DeliveredWebsites />
 
-      {/* =====================================================
-          TESTIMONIALS
-      ===================================================== */}
+      {/* TESTIMONIALS */}
 
       <TestimonialsSection />
 
-      {/* =====================================================
-          FAQ
-      ===================================================== */}
+      {/* FAQ */}
 
       <section aria-labelledby="faq-heading" id="faq">
         <FAQSection />
@@ -324,30 +334,33 @@ export default function Home() {
               id="location-heading"
               className="text-3xl font-bold leading-tight text-blue-600 md:text-4xl"
             >
-              Digital Services for Businesses in Hyderabad and Telangana
+              Website Development & Digital Marketing for India and UAE
+              Businesses
             </h2>
 
             <p className="mt-5 text-base leading-8 text-black md:text-lg">
-              KidiWebTech serves businesses in Hyderabad and across Telangana
-              with website development, SEO, local SEO, digital marketing and
-              online advertising solutions. Our goal is to combine strong
-              website experiences with search-friendly content and digital
-              marketing strategies that help businesses connect with their
-              target customers.
+              Based in Hyderabad, KidiWebTech provides website development,
+              website design, SEO, local SEO, digital marketing and online
+              advertising services. We work with businesses that want to
+              strengthen their online presence, improve search visibility and
+              create a clearer path from website visits to customer enquiries
+              across relevant markets in India.
             </p>
 
             <p className="mt-4 text-base leading-8 text-black md:text-lg">
-              If you are looking for a web development company, website design
-              agency or SEO company in Hyderabad, KidiWebTech can help you plan,
-              build and improve your online presence.
+              If you are comparing website development companies, SEO agencies
+              or digital marketing partners, share your services, target
+              locations and lead goals with KidiWebTech. We can help you
+              identify suitable website improvements and digital marketing
+              options for your business. For international campaigns, we can
+              tailor the site content and landing pages to the markets you want
+              to reach, including the UAE.
             </p>
           </div>
         </div>
       </section>
 
-      {/* =====================================================
-          CONTACT / CTA
-      ===================================================== */}
+      {/* CONTACT / CTA */}
 
       <ContactPage />
     </div>
