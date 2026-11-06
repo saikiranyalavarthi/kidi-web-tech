@@ -30,7 +30,7 @@ export default function IndustriesSection() {
 
     {
       image:
-        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1000&auto=format&fit=crop",
+        "https://plus.unsplash.com/premium_photo-1661771564227-1d8484e32c8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
       icon: "🎓",
       title: "Education & eLearning",
       desc: "Website design, SEO, and digital platforms for schools, colleges, coaching institutes, and online education businesses looking to reach more students.",
