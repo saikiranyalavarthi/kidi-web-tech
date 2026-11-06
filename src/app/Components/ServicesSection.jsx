@@ -60,7 +60,7 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section className="relative py-20 md:py-24 px-6 overflow-hidden bg-gradient-to-b from-white to-[#f5f9ff]">
+    <section className="relative py-10 md:py-10 px-6 overflow-hidden bg-gradient-to-b from-white to-[#f5f9ff]">
 
       {/* BACKGROUND */}
 
