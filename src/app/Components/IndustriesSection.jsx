@@ -5,36 +5,48 @@ import Link from "next/link";
 export default function IndustriesSection() {
   const industries = [
     {
+      image:
+        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1000&auto=format&fit=crop",
       icon: "🏥",
       title: "Healthcare & Hospitals",
       desc: "Healthcare website development, local SEO, and digital marketing to help hospitals, clinics, and healthcare providers improve online visibility and attract patient enquiries.",
     },
 
     {
+      image:
+        "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1000&auto=format&fit=crop",
       icon: "🏢",
       title: "Real Estate & Property",
       desc: "Real estate website development, property listing platforms, SEO, and lead-generation solutions to help builders, developers, and property consultants attract potential buyers.",
     },
 
     {
+      image:
+        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1000&auto=format&fit=crop",
       icon: "🛒",
       title: "Ecommerce & Retail",
       desc: "Ecommerce website development, online store design, product SEO, and digital marketing strategies to improve shopping experiences and support online sales.",
     },
 
     {
+      image:
+        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1000&auto=format&fit=crop",
       icon: "🎓",
       title: "Education & eLearning",
       desc: "Website design, SEO, and digital platforms for schools, colleges, coaching institutes, and online education businesses looking to reach more students.",
     },
 
     {
+      image:
+        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1000&auto=format&fit=crop",
       icon: "🍴",
       title: "Restaurants & Hospitality",
       desc: "Restaurant website development, local SEO, and online marketing to help restaurants, hotels, and hospitality businesses improve local discovery and customer enquiries.",
     },
 
     {
+      image:
+        "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1000&auto=format&fit=crop",
       icon: "🚀",
       title: "Startups & Small Businesses",
       desc: "Affordable business website development, custom web applications, branding, and digital marketing solutions to help startups and small businesses grow online.",
@@ -42,7 +54,8 @@ export default function IndustriesSection() {
   ];
 
   return (
-    <section className="relative py-20 md:py-24 px-6 overflow-hidden bg-gradient-to-b from-[#f8fbff] to-white">
+    <section className="relative py-8 md:py-8 px-6 overflow-hidden bg-gradient-to-b from-[#f8fbff] to-white">
+
       {/* BACKGROUND */}
 
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -52,6 +65,7 @@ export default function IndustriesSection() {
       </div>
 
       <div className="relative max-w-7xl mx-auto">
+
         {/* TOP */}
 
         <div className="text-center max-w-4xl mx-auto">
@@ -122,6 +136,24 @@ export default function IndustriesSection() {
                 transition duration-500
               "
             >
+              {/* INDUSTRY IMAGE - ADDED */}
+
+              <div className="relative w-full h-48 overflow-hidden rounded-2xl mb-6">
+                <img
+                  src={industry.image}
+                  alt={`${industry.title} industry`}
+                  loading="lazy"
+                  className="
+                    w-full h-full
+                    object-cover
+                    transition-transform duration-700
+                    group-hover:scale-110
+                  "
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-[#07111F]/40 to-transparent"></div>
+              </div>
+
               {/* ICON */}
 
               <div
@@ -197,6 +229,7 @@ export default function IndustriesSection() {
           "
         >
           <div className="grid lg:grid-cols-2 gap-14 items-center">
+
             {/* LEFT */}
 
             <div>
