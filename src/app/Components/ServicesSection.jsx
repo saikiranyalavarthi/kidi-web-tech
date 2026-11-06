@@ -5,6 +5,8 @@ import Link from "next/link";
 export default function ServicesSection() {
   const services = [
     {
+      image:
+        "https://images.unsplash.com/photo-1571721795195-a2ca2d3370a9?w=900&auto=format&fit=crop",
       icon: "🚀",
       title: "SEO Services",
       desc: "Improve Google search visibility, attract relevant organic traffic, and generate qualified enquiries with technical SEO, on-page optimization, and content strategies.",
@@ -12,6 +14,8 @@ export default function ServicesSection() {
     },
 
     {
+      image:
+        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&auto=format&fit=crop",
       icon: "💻",
       title: "Website Development",
       desc: "Get a fast, responsive, SEO-friendly business website or custom web application built to showcase your services and convert visitors into potential customers.",
@@ -19,6 +23,8 @@ export default function ServicesSection() {
     },
 
     {
+      image:
+        "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9?w=900&auto=format&fit=crop",
       icon: "📱",
       title: "Mobile App Development",
       desc: "Build Android and iOS mobile applications with intuitive experiences, reliable functionality, and scalable solutions for startups and established businesses.",
@@ -26,6 +32,8 @@ export default function ServicesSection() {
     },
 
     {
+      image:
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&auto=format&fit=crop",
       icon: "📈",
       title: "Google Ads & PPC Management",
       desc: "Reach customers actively searching for your services through targeted Google Ads campaigns designed to increase relevant enquiries and support measurable business growth.",
@@ -33,6 +41,8 @@ export default function ServicesSection() {
     },
 
     {
+      image:
+        "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=900&auto=format&fit=crop",
       icon: "🎯",
       title: "Social Media Marketing",
       desc: "Strengthen your brand presence, connect with your target audience, and promote your products and services through strategic social media campaigns.",
@@ -40,6 +50,8 @@ export default function ServicesSection() {
     },
 
     {
+      image:
+        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&auto=format&fit=crop",
       icon: "🛒",
       title: "Ecommerce Website Development",
       desc: "Launch an online store with mobile-friendly shopping, product pages, streamlined checkout, and a user experience designed to support more sales.",
@@ -49,6 +61,7 @@ export default function ServicesSection() {
 
   return (
     <section className="relative py-20 md:py-24 px-6 overflow-hidden bg-gradient-to-b from-white to-[#f5f9ff]">
+
       {/* BACKGROUND */}
 
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -58,6 +71,7 @@ export default function ServicesSection() {
       </div>
 
       <div className="relative max-w-7xl mx-auto">
+
         {/* TOP */}
 
         <div className="text-center max-w-4xl mx-auto">
@@ -128,6 +142,27 @@ export default function ServicesSection() {
                 transition duration-500
               "
             >
+
+              {/* SERVICE IMAGE - ADDED */}
+
+              <div className="relative w-full h-48 overflow-hidden rounded-2xl mb-6">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  loading="lazy"
+                  className="
+                    w-full h-full
+                    object-cover
+                    transition-transform duration-700
+                    group-hover:scale-110
+                  "
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-[#07111F]/40 to-transparent"></div>
+              </div>
+
+              {/* EXISTING ICON */}
+
               <div
                 className="
                   w-16 h-16
