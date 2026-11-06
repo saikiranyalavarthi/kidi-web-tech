@@ -6,7 +6,7 @@ export default function ServicesSection() {
   const services = [
     {
       image:
-        "https://images.unsplash.com/photo-1571721795195-a2ca2d3370a9?w=900&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
       icon: "🚀",
       title: "SEO Services",
       desc: "Improve Google search visibility, attract relevant organic traffic, and generate qualified enquiries with technical SEO, on-page optimization, and content strategies.",
@@ -24,7 +24,7 @@ export default function ServicesSection() {
 
     {
       image:
-        "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9?w=900&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
       icon: "📱",
       title: "Mobile App Development",
       desc: "Build Android and iOS mobile applications with intuitive experiences, reliable functionality, and scalable solutions for startups and established businesses.",
@@ -51,7 +51,7 @@ export default function ServicesSection() {
 
     {
       image:
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1677693972403-db681288b5da?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
       icon: "🛒",
       title: "Ecommerce Website Development",
       desc: "Launch an online store with mobile-friendly shopping, product pages, streamlined checkout, and a user experience designed to support more sales.",
