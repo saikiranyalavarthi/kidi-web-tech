@@ -20,7 +20,7 @@ export default function PassionSection() {
             At <span className="gradient-text font-semibold">KIDIWEBTECH</span>,
             we live and breathe our clients’ success. We craft strategies that
             drive traffic, generate leads, and convert visitors into loyal
-            customers — whether you’re a startup or an established brand.
+            customers  whether you’re a startup or an established brand.
           </p>
 
           {/* BULLET POINTS */}
