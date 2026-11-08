@@ -567,6 +567,8 @@ const navItems = [
         name: "DevOps with Azure Training",
         href: "/corporate-training/devops-with-azure",
       },
+
+       { name: "IT Technical Certifications", href: "/corporate-training/it-technical-certifications" },
     ],
   },
   { name: "Blogs", href: "/blog" },
