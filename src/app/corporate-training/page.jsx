@@ -1,109 +1,136 @@
-
 import Link from "next/link";
 
-export default function ITAuditSOXSection() {
+const pageUrl = "https://kidiwebtech.com/corporate-training";
+
+export const metadata = {
+  title: "Corporate Training Programs | KIDIWEBTECH",
+  description:
+    "Explore KIDIWEBTECH's corporate training programs: DevOps with Azure, IT Audit & SOX, and more. Online, industry-oriented training for working professionals.",
+  alternates: { canonical: pageUrl },
+  openGraph: {
+    title: "Corporate Training Programs | KIDIWEBTECH",
+    description:
+      "Industry-oriented online corporate training for working professionals.",
+    url: pageUrl,
+    type: "website",
+  },
+};
+
+export default function CorporateTrainingPage() {
   return (
-    <section
-      id="it-audit-sox"
-      className="scroll-mt-28 py-20 px-5 bg-white"
-    >
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+    <main className="overflow-hidden bg-white pt-20">
+      {/* HERO */}
+      <section className="relative isolate overflow-hidden bg-slate-950 px-5 py-24 text-white">
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-slate-950 via-slate-950/95 to-blue-950/75" />
+        <div className="mx-auto max-w-4xl text-center">
+          <p className="text-sm font-bold uppercase tracking-[0.2em] text-cyan-300">
+            KIDIWEBTECH
+          </p>
+          <h1 className="mt-5 text-4xl font-extrabold leading-tight md:text-6xl">
+            Corporate Training Programs
+          </h1>
+          <p className="mx-auto mt-6 max-w-2xl leading-8 text-slate-300">
+            Industry-oriented online training designed for working
+            professionals. Learn from real-time experts and build job-ready
+            skills.
+          </p>
+        </div>
+      </section>
 
-        {/* IMAGE */}
-        <div className="relative">
-          <img
-            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200"
-            alt="IT Audit and SOX compliance professional training"
-            className="w-full h-[350px] md:h-[480px] object-cover rounded-3xl shadow-xl"
-            loading="lazy"
-          />
+      {/* COURSE CARDS (optional quick overview) */}
+      <section className="px-5 py-20">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="text-center text-3xl font-extrabold text-slate-900 md:text-4xl">
+            Our Training Programs
+          </h2>
+          <div className="mt-12 grid gap-8 md:grid-cols-2">
+            {/* DevOps with Azure Card */}
+            <article className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition hover:shadow-lg">
+              <h3 className="text-2xl font-extrabold text-slate-900">
+                DevOps with Microsoft Azure
+              </h3>
+              <p className="mt-3 leading-7 text-slate-600">
+                2-month online training covering DevOps fundamentals, Azure
+                cloud, Git, CI/CD, Docker, Kubernetes, Terraform and more.
+              </p>
+              <div className="mt-5 flex flex-wrap gap-3 text-sm font-semibold text-slate-700">
+                <span className="rounded-full bg-blue-50 px-3 py-1">
+                  2 Months
+                </span>
+                <span className="rounded-full bg-blue-50 px-3 py-1">
+                  Online
+                </span>
+                <span className="rounded-full bg-blue-50 px-3 py-1">
+                  ₹60,000
+                </span>
+              </div>
+              <Link
+                href="/corporate-training/devops-with-azure"
+                className="mt-6 inline-block font-bold text-blue-600 hover:underline"
+              >
+                View Course Details →
+              </Link>
+            </article>
 
-          <div className="absolute bottom-5 left-5 bg-blue-600 text-white px-6 py-4 rounded-2xl">
-            <p className="text-sm">Training Duration</p>
-            <p className="text-2xl font-extrabold">45 Days</p>
+            {/* IT Audit & SOX Card */}
+            <article className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition hover:shadow-lg">
+              <h3 className="text-2xl font-extrabold text-slate-900">
+                IT Audit & SOX Training
+              </h3>
+              <p className="mt-3 leading-7 text-slate-600">
+                45-day online training on IT Audit, SOX compliance, ITGC, risk
+                management and practical audit activities.
+              </p>
+              <div className="mt-5 flex flex-wrap gap-3 text-sm font-semibold text-slate-700">
+                <span className="rounded-full bg-blue-50 px-3 py-1">
+                  45 Days
+                </span>
+                <span className="rounded-full bg-blue-50 px-3 py-1">
+                  Online
+                </span>
+                <span className="rounded-full bg-blue-50 px-3 py-1">
+                  ₹60,000
+                </span>
+              </div>
+              <Link
+                href="/corporate-training/it-audit-sox-training"
+                className="mt-6 inline-block font-bold text-blue-600 hover:underline"
+              >
+                View Course Details →
+              </Link>
+            </article>
           </div>
         </div>
+      </section>
 
-        {/* CONTENT */}
-        <div>
-          <span className="text-blue-600 font-bold tracking-widest text-sm">
-            AUDIT & COMPLIANCE TRAINING
-          </span>
-
-          <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mt-5 leading-tight">
-            IT Audit / SOX Training Online
+      {/* CONTACT CTA */}
+      <section className="bg-slate-950 px-5 py-16 text-center text-white">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-3xl font-extrabold md:text-4xl">
+            Ready to Upskill Your Team?
           </h2>
-
-          <p className="text-slate-600 leading-8 mt-6">
-            Enhance your professional knowledge through our IT Audit
-            and SOX training program. This online training is designed
-            exclusively for working professionals interested in
-            understanding IT auditing and SOX compliance concepts.
+          <p className="mt-4 leading-8 text-slate-300">
+            Contact us to discuss custom corporate training, batch schedules and
+            group discounts.
           </p>
-
-          {/* DETAILS */}
-          <div className="grid grid-cols-2 gap-4 mt-8">
-
-            <div className="bg-slate-50 p-5 rounded-2xl">
-              <p className="text-sm text-slate-500">Duration</p>
-              <h3 className="text-xl font-bold mt-2">45 Days</h3>
-            </div>
-
-            <div className="bg-slate-50 p-5 rounded-2xl">
-              <p className="text-sm text-slate-500">Mode</p>
-              <h3 className="text-xl font-bold mt-2">Online</h3>
-            </div>
-
-            <div className="bg-slate-50 p-5 rounded-2xl">
-              <p className="text-sm text-slate-500">Eligibility</p>
-              <h3 className="text-lg font-bold mt-2">
-                Working Employees Only
-              </h3>
-            </div>
-
-            <div className="bg-slate-50 p-5 rounded-2xl">
-              <p className="text-sm text-slate-500">Course Fee</p>
-              <h3 className="text-xl font-bold text-blue-600 mt-2">
-                ₹60,000
-              </h3>
-            </div>
-
-          </div>
-
-          {/* BUTTONS */}
-          <div className="flex flex-wrap gap-4 mt-8">
-
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              href="https://wa.me/919666545670?text=Hi%2C%20I%20am%20interested%20in%20IT%20Audit%20SOX%20Training."
+              href="https://wa.me/919666545670?text=Hi%2C%20I%20am%20interested%20in%20corporate%20training%20programs."
               target="_blank"
               rel="noopener noreferrer"
-              className="px-7 py-4 rounded-xl bg-blue-600 text-white font-bold hover:bg-blue-700 transition"
+              className="rounded-xl bg-green-600 px-6 py-3.5 font-bold text-white transition hover:bg-green-700"
             >
-              Enquire Now →
+              WhatsApp Us
             </a>
-
             <a
               href="tel:+919666545670"
-              className="px-7 py-4 rounded-xl border border-slate-300 font-bold text-slate-900 hover:bg-slate-50"
+              className="rounded-xl border border-white/40 px-6 py-3.5 font-bold text-white transition hover:bg-white/10"
             >
               Call 9666545670
             </a>
-
           </div>
-
-          <p className="text-sm text-slate-500 mt-5">
-            Contact our training team for syllabus and enrolment details.
-          </p>
-
-          <Link
-            href="/corporate-training/it-audit-sox-training"
-            className="inline-block mt-5 text-blue-600 font-bold hover:underline"
-          >
-            View Full IT Audit / SOX Course Details →
-          </Link>
-
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   );
 }
