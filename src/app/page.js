@@ -120,15 +120,11 @@ export default function Home() {
       {/* MAIN HERO */}
       {/* <Banner /> */}
 
-<<<<<<< HEAD
-     
-      <Herosection />
-<FestivalBanner />
-=======
+      {/* MAIN HERO */}
       <Herosection />
 
+      {/* FESTIVAL BANNER */}
       <FestivalBanner />
->>>>>>> 684e115 (first commit)
       {/* =====================================================
           INTRO SEO CONTENT
       ===================================================== */}
