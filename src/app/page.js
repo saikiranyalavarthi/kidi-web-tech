@@ -120,9 +120,15 @@ export default function Home() {
       {/* MAIN HERO */}
       {/* <Banner /> */}
 
+<<<<<<< HEAD
      
       <Herosection />
 <FestivalBanner />
+=======
+      <Herosection />
+
+      <FestivalBanner />
+>>>>>>> 684e115 (first commit)
       {/* =====================================================
           INTRO SEO CONTENT
       ===================================================== */}
@@ -269,7 +275,7 @@ export default function Home() {
                 href="/web-development"
                 className="rounded-lg bg-blue-600 px-5 py-3 font-medium text-white transition hover:bg-blue-700"
               >
-               website-development-services
+                website-development-services
               </Link>
 
               <Link

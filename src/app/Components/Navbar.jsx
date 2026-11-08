@@ -550,6 +550,25 @@ const navItems = [
   //   name: "Case Studies",
   //   href: "/case-studies",
   // },
+
+  {
+    name: "Corporate Training",
+    href: "/corporate-training",
+    sub: [
+      {
+        name: "All Training Programs",
+        href: "/corporate-training",
+      },
+      {
+        name: "IT Audit / SOX Training",
+        href: "/corporate-training/it-audit-sox-training",
+      },
+      {
+        name: "DevOps with Azure Training",
+        href: "/corporate-training/devops-with-azure",
+      },
+    ],
+  },
   { name: "Blogs", href: "/blog" },
 
   { name: "Contact", href: "/contact" },
@@ -689,7 +708,7 @@ export default function Navbar() {
 
           {/* CTA BUTTON */}
 
-          <Link
+          {/* <Link
             href="/contact"
             className="
               ml-2
@@ -706,7 +725,7 @@ export default function Navbar() {
             "
           >
             Get Free Audit
-          </Link>
+          </Link> */}
         </div>
       </div>
 
