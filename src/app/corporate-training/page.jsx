@@ -115,7 +115,7 @@ export default function CorporateTrainingPage() {
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              href="https://wa.me/919666545670?text=Hi%2C%20I%20am%20interested%20in%20corporate%20training%20programs."
+              href="https://wa.me/919390627367?text=Hi%2C%20I%20am%20interested%20in%20corporate%20training%20programs."
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-xl bg-green-600 px-6 py-3.5 font-bold text-white transition hover:bg-green-700"
@@ -123,10 +123,10 @@ export default function CorporateTrainingPage() {
               WhatsApp Us
             </a>
             <a
-              href="tel:+919666545670"
+              href="tel:+919390627367"
               className="rounded-xl border border-white/40 px-6 py-3.5 font-bold text-white transition hover:bg-white/10"
             >
-              Call 9666545670
+              Call 9390627367
             </a>
           </div>
         </div>

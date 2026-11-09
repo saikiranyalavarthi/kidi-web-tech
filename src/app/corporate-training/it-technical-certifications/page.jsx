@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const pageUrl =
   "https://kidiwebtech.com/corporate-training/it-technical-certifications";
-const phone = "9666545670";
+const phone = "9390627367";
 const whatsappBase =
-  "https://wa.me/919666545670?text=Hi%2C%20I%20am%20interested%20in%20IT%20Technical%20Certifications.";
+  "https://wa.me/919390627367?text=Hi%2C%20I%20am%20interested%20in%20IT%20Technical%20Certifications.";
 
 export const metadata = {
   title: "IT Technical Certifications | Guidance & Training | KIDIWEBTECH",

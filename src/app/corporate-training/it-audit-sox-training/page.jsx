@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const pageUrl =
   "https://kidiwebtech.com/corporate-training/it-audit-sox-training";
-const phone = "9666545670";
+const phone = "9390627367";
 const whatsappUrl =
-  "https://wa.me/919666545670?text=Hi%2C%20I%20am%20interested%20in%20IT%20Audit%20%26%20SOX%20Training.";
+  "https://wa.me/919390627367?text=Hi%2C%20I%20am%20interested%20in%20IT%20Audit%20%26%20SOX%20Training.";
 
 export const metadata = {
   title: "IT Audit & SOX Training Online | 45-Day Course | KIDIWEBTECH",
@@ -198,7 +198,7 @@ const faqs = [
   {
     question: "How can I book a demo class?",
     answer:
-      "Contact KIDIWEBTECH by phone or WhatsApp at 9666545670 to enquire about demo-class availability and enrolment.",
+      "Contact KIDIWEBTECH by phone or WhatsApp at 9390627367 to enquire about demo-class availability and enrolment.",
   },
 ];
 

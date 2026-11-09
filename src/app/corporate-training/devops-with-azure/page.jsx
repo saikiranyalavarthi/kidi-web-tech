@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const pageUrl = "https://kidiwebtech.com/corporate-training/devops-with-azure";
-const phone = "9666545670";
+const phone = "9390627367";
 const whatsappBase =
-  "https://wa.me/919666545670?text=Hi%2C%20I%20am%20interested%20in%20DevOps%20with%20Azure%20training";
+  "https://wa.me/919390627367?text=Hi%2C%20I%20am%20interested%20in%20DevOps%20with%20Azure%20training";
 
 export const metadata = {
   title:
@@ -329,7 +329,7 @@ const faqs = [
   {
     question: "How can I book a free demo class?",
     answer:
-      "Call or WhatsApp KIDIWEBTECH at 9666545670 to ask about demo-class availability and enrolment.",
+      "Call or WhatsApp KIDIWEBTECH at 9390627367 to ask about demo-class availability and enrolment.",
   },
 ];
 
