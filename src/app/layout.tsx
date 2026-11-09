@@ -677,7 +677,7 @@ export default function RootLayout({
         <Navbar />
 
         <main>{children}</main>
-<KidiWebTechChatbot />
+{/* <KidiWebTechChatbot /> */}
         <FloatingSocialButtons />
 
         <Footer />
