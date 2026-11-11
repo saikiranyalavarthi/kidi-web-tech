@@ -1,197 +1,297 @@
-
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
+
+const videos = [
+  "/videos/kidiwebtech-video.mp4",
+  "/videos/kidiwebtech-express1.mp4",
+  "/videos/kidiwebtech-express.mp4",
+];
+
+const services = [
+  {
+    icon: "✳",
+    title: "Website Design",
+    description: "Modern, responsive and conversion-focused business websites.",
+  },
+  {
+    icon: "</>",
+    title: "Web Development",
+    description: "Custom React, Next.js and scalable web applications.",
+  },
+  {
+    icon: "⌕",
+    title: "SEO Services",
+    description: "Technical SEO, local SEO and Google search optimization.",
+  },
+  {
+    icon: "↗",
+    title: "Digital Marketing",
+    description: "Performance marketing, social media and lead generation.",
+  },
+];
 
 export default function HeroSection() {
-  const stats = [
-    { value: "100+", label: "Projects" },
-    { value: "100+", label: "Clients" },
-    { value: "10X", label: "Growth" },
-    { value: "24/7", label: "Support" },
-  ];
-
-  const services = [
-    "Website Design",
-    "Web Development",
-    "SEO Services",
-    "Digital Marketing",
-    "React Development",
-    "Next.js Development",
-  ];
+  const [currentVideo, setCurrentVideo] = useState(0);
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#f8fbff] via-white to-[#f4f9ff] pt-6 pb-6 px-6">
+    <section className="relative overflow-hidden bg-[#F8F7F2] px-5 pt-24 pb-16 sm:px-8 lg:pt-28 lg:pb-20">
+      {/* BACKGROUND GRID */}
+      <div
+        className="pointer-events-none absolute inset-0 opacity-30"
+        style={{
+          backgroundImage:
+            "linear-gradient(#e9e8e1 1px, transparent 1px), linear-gradient(90deg, #e9e8e1 1px, transparent 1px)",
+          backgroundSize: "55px 55px",
+        }}
+      />
+
       {/* BACKGROUND EFFECTS */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-[-120px] left-[-120px] w-[420px] h-[420px] bg-blue-200/40 blur-[140px] rounded-full"></div>
-        <div className="absolute bottom-[-120px] right-[-120px] w-[420px] h-[420px] bg-cyan-200/40 blur-[140px] rounded-full"></div>
-        <div className="absolute top-[40%] left-[45%] w-[300px] h-[300px] bg-purple-200/20 blur-[120px] rounded-full"></div>
-      </div>
+      <div className="pointer-events-none absolute -top-40 left-[-120px] h-[400px] w-[400px] rounded-full bg-blue-100/40 blur-[120px]" />
 
-      <div className="relative max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="pointer-events-none absolute bottom-0 right-0 h-[400px] w-[400px] rounded-full bg-cyan-100/40 blur-[130px]" />
+
+      <div className="relative mx-auto max-w-[1100px]">
+        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-14">
           {/* LEFT CONTENT */}
-          <div>
+          <div className="relative z-10">
             {/* BADGE */}
-            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white border border-blue-100 shadow-md">
-              <span className="w-2 h-2 rounded-full bg-[#2563EB]"></span>
+            <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white px-4 py-2 shadow-sm">
+              <span className="h-2 w-2 rounded-full bg-[#2563EB]" />
 
-              <span className="text-sm font-semibold text-[#2563EB]">
-                Web Development Company in Hyderabad | Serving India, USA, UK,
-                UAE & Saudi Arabia
+              <span className="text-[10px] font-bold uppercase tracking-[2px] text-[#2563EB] sm:text-xs">
+                Web · Technology · Digital Growth
               </span>
             </div>
 
             {/* HEADING */}
-            <h1 className="mt-8 text-4xl sm:text-5xl md:text-6xl font-black leading-[1.05] tracking-tight text-[#0F172A] max-w-4xl">
-              Website Development, SEO & Digital Marketing Company for Growing
-              Businesses
+            <h1 className="mt-7 max-w-[650px] text-[39px] font-extrabold leading-[1.12] tracking-tight text-[#20242D] sm:text-5xl lg:text-[53px]">
+              Build Your Digital Presence.
+              <span className="block text-[#2563EB]">Grow Your Business.</span>
+              <span className="block">Go Beyond Limits.</span>
             </h1>
 
-            {/* SUBTEXT */}
-            <p className="mt-6 text-lg md:text-xl leading-8 text-gray-600 max-w-2xl">
-              KidiWebTech is a web development and digital marketing company in
-              Hyderabad, India. We provide professional website design, custom
-              web development, React and Next.js development, SEO, and digital
-              marketing services for businesses in Hyderabad, Bengaluru, Mumbai,
-              Delhi, Chennai and Pune, and for international clients in the USA,
-              UK, UAE and Saudi Arabia. Get fast, modern, mobile-friendly,
-              SEO-ready websites built to support business growth.
+            {/* SUBHEADING */}
+            <h2 className="mt-6 max-w-[560px] text-base font-semibold leading-7 text-[#20242D] sm:text-lg">
+              Website Development, SEO & Digital Marketing Company in Hyderabad
+            </h2>
+
+            {/* DESCRIPTION */}
+            <p className="mt-4 max-w-[570px] text-sm leading-[27px] text-[#64748B] sm:text-[15px]">
+              KidiWebTech is a Hyderabad-based website development and digital
+              marketing company helping businesses across India and worldwide.
+              We provide professional website design, custom web development,
+              React and Next.js development, e-commerce websites, SEO services
+              and digital marketing solutions to build a powerful online
+              presence and generate quality business leads.
             </p>
 
-            {/* SOCIAL PROOF */}
-            <div className="flex flex-wrap gap-5 mt-8 text-sm font-medium text-gray-600">
-              <div className="flex items-center gap-2">
-                ⭐ <span>Website Development Services</span>
-              </div>
-
-              <div className="flex items-center gap-2">
-                💻 <span>Modern Web Solutions</span>
-              </div>
-
-              <div className="flex items-center gap-2">
-                📍{" "}
-                <span>
-                  Based in Hyderabad, Serving India, USA, UK, UAE & Saudi Arabia
-                </span>
-              </div>
-            </div>
-
             {/* BUTTONS */}
-            <div className="flex flex-wrap gap-5 mt-10">
+            <div className="mt-7 flex flex-wrap gap-3">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-gradient-to-r from-[#2563EB] to-[#06B6D4] text-white font-bold shadow-[0_20px_40px_rgba(37,99,235,0.25)] hover:scale-105 transition duration-300"
+                className="inline-flex items-center justify-center gap-3 rounded-xl bg-[#2563EB] px-6 py-4 text-sm font-bold text-white shadow-[0_12px_25px_rgba(37,99,235,0.22)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#1D4ED8]"
               >
                 Get Free Consultation
+                <span>↗</span>
               </Link>
 
               <Link
                 href="/projects"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-white border border-gray-200 text-[#0F172A] font-semibold hover:bg-gray-50 hover:border-blue-200 transition duration-300"
+                className="inline-flex items-center justify-center gap-3 rounded-xl border border-[#2563EB]/30 bg-white px-6 py-4 text-sm font-bold text-[#20242D] transition-all duration-300 hover:-translate-y-1 hover:border-[#2563EB] hover:bg-blue-50"
               >
                 Explore Projects
+                <span>→</span>
               </Link>
             </div>
 
-            {/* INDUSTRIES */}
-            <div className="mt-12">
-              <p className="text-sm uppercase tracking-[3px] text-gray-400 mb-5">
-                Website Solutions for Growing Businesses
+            {/* TECHNOLOGY CAPABILITIES */}
+            <div className="mt-8">
+              <p className="mb-4 text-[10px] font-bold uppercase tracking-[2.5px] text-[#64748B]">
+                Our Technology Capabilities
               </p>
 
-              <div className="flex flex-wrap items-center gap-8 opacity-70">
-                <span className="text-lg font-bold text-gray-500">
-                  Security
-                </span>
-
-                <span className="text-lg font-bold text-gray-500">
-                  Healthcare
-                </span>
-
-                <span className="text-lg font-bold text-gray-500">Pharma</span>
-
-                <span className="text-lg font-bold text-gray-500">
-                  Real Estate
-                </span>
-              </div>
-            </div>
-
-            {/* STATS */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-16">
-              {stats.map((item, index) => (
-                <div key={index}>
-                  <h3 className="text-3xl md:text-4xl font-black text-[#2563EB]">
-                    {item.value}
-                  </h3>
-
-                  <p className="mt-2 text-gray-500">{item.label}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* RIGHT CONTENT */}
-          <div className="relative">
-            {/* MAIN CARD */}
-            <div className="relative bg-white/80 backdrop-blur-2xl border border-white rounded-[40px] p-8 md:p-10 shadow-[0_30px_80px_rgba(15,23,42,0.12)]">
-              {/* TOP BOX */}
-              <div className="bg-gradient-to-r from-[#2563EB] to-[#06B6D4] rounded-[32px] p-8 text-white">
-                <p className="uppercase tracking-[4px] text-white/80 text-sm">
-                  Website Development Company
-                </p>
-
-                <h2 className="mt-5 text-4xl md:text-5xl font-black leading-tight">
-                  Design. Develop. Grow.
-                </h2>
-
-                <p className="mt-5 text-white/90 leading-8">
-                  Helping businesses in India, the USA, UK, UAE and Saudi Arabia
-                  grow online with professional website design, custom web
-                  development, SEO, and digital marketing services tailored to
-                  their goals.
-                </p>
-              </div>
-
-              {/* SERVICES */}
-              <div className="grid grid-cols-2 gap-5 mt-8">
-                {services.map((item, index) => (
-                  <div
-                    key={index}
-                    className="bg-[#f8fbff] rounded-2xl p-5 border border-gray-100 text-center font-semibold text-[#0F172A] hover:shadow-lg hover:-translate-y-1 hover:border-blue-200 transition duration-300"
+              <div className="flex flex-wrap gap-2">
+                {[
+                  "Website Design",
+                  "Web Development",
+                  "React Development",
+                  "Next.js",
+                  "E-Commerce",
+                  "SEO Services",
+                  "Digital Marketing",
+                  "Mobile Apps",
+                  "Lead Generation",
+                ].map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-full border border-[#E3E5DF] bg-white px-3 py-1.5 text-[10px] font-medium text-[#475569] transition hover:border-[#2563EB] hover:text-[#1D4ED8] sm:text-[11px]"
                   >
                     {item}
-                  </div>
+                  </span>
                 ))}
               </div>
             </div>
 
+            {/* TRUST POINTS */}
+            <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3 border-t border-[#E2E4DE] pt-5">
+              <div className="flex items-center gap-2 text-[11px] text-[#64748B]">
+                <span className="text-[#2563EB]">◎</span>
+                Serving Hyderabad & Across India
+              </div>
+
+              <div className="flex items-center gap-2 text-[11px] text-[#64748B]">
+                <span className="text-[#2563EB]">✓</span>
+                Creative & Business-Focused Solutions
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT DASHBOARD */}
+          <div className="relative mx-auto w-full max-w-[530px] lg:ml-auto">
+            {/* MAIN DASHBOARD */}
+            <div className="rounded-[25px] border border-[#E2E5DF] bg-white p-4 shadow-[0_25px_65px_rgba(20,40,35,0.10)] sm:p-5">
+              {/* HEADER */}
+              <div className="flex items-center justify-between gap-3 border-b border-[#E9ECE7] pb-4">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#20242D] text-xl font-black text-[#60A5FA]">
+                    K
+                  </div>
+
+                  <div>
+                    <h3 className="text-xs font-extrabold text-[#20242D] sm:text-sm">
+                      KidiWebTech Digital Ecosystem
+                    </h3>
+
+                    <p className="mt-1 text-[9px] text-[#64748B] sm:text-[10px]">
+                      Creative technology & growth solutions
+                    </p>
+                  </div>
+                </div>
+
+                <span className="rounded-full border border-blue-200 bg-blue-50 px-3 py-1.5 text-[8px] font-bold text-[#2563EB]">
+                  DIGITAL POWERED
+                </span>
+              </div>
+
+              {/* VIDEO */}
+              <div className="relative mt-4 h-[205px] overflow-hidden rounded-2xl bg-[#111827] sm:h-[270px]">
+                <video
+                  key={currentVideo}
+                  autoPlay
+                  muted
+                  playsInline
+                  preload="metadata"
+                  onEnded={() =>
+                    setCurrentVideo((prev) => (prev + 1) % videos.length)
+                  }
+                  onError={() =>
+                    setCurrentVideo((prev) => (prev + 1) % videos.length)
+                  }
+                  className="absolute inset-0 h-full w-full object-cover"
+                >
+                  <source src={videos[currentVideo]} type="video/mp4" />
+                </video>
+
+                {/* VIDEO OVERLAY */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
+
+                <div className="absolute bottom-4 left-4">
+                  <p className="text-[9px] font-bold uppercase tracking-[2px] text-[#60A5FA]">
+                    KIDIWEBTECH
+                  </p>
+
+                  <h3 className="mt-1 text-sm font-extrabold text-white sm:text-base">
+                    Transform Your Digital Future
+                  </h3>
+                </div>
+
+                <div className="absolute right-4 top-4 rounded-full bg-black/40 px-3 py-1.5 text-[9px] font-semibold text-white backdrop-blur">
+                  ● INNOVATION
+                </div>
+              </div>
+
+              {/* DESCRIPTION */}
+              <div className="mt-3 flex items-center gap-2 px-1">
+                <span className="text-sm text-[#2563EB]">✓</span>
+
+                <p className="text-[9px] text-[#64748B] sm:text-[10px]">
+                  Discover technology that moves your business forward
+                </p>
+              </div>
+
+              {/* SERVICE CARDS */}
+              <div className="mt-4 grid grid-cols-2 gap-2.5 sm:gap-3">
+                {services.map((service) => (
+                  <div
+                    key={service.title}
+                    className="rounded-2xl border border-[#E3E6DF] bg-[#FBFAF7] p-3 transition-all duration-300 hover:-translate-y-1 hover:border-blue-300 hover:bg-white hover:shadow-lg sm:p-4"
+                  >
+                    <div className="flex h-8 w-8 items-center justify-center rounded-xl border border-[#E9ECE6] bg-white text-sm font-bold text-[#2563EB] shadow-sm">
+                      {service.icon}
+                    </div>
+
+                    <h3 className="mt-2 text-[11px] font-bold text-[#20242D] sm:text-xs">
+                      {service.title}
+                    </h3>
+
+                    <p className="mt-2 text-[9px] leading-[17px] text-[#64748B] sm:text-[10px]">
+                      {service.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              {/* BOTTOM BAR */}
+              <Link
+                href="/services"
+                className="mt-3 flex items-center justify-between rounded-xl border border-[#E3E6DF] bg-[#FBFAF7] px-4 py-3 transition hover:border-blue-300 hover:bg-blue-50"
+              >
+                <div>
+                  <p className="text-[10px] font-bold text-[#20242D]">
+                    Complete Digital Solutions
+                  </p>
+
+                  <p className="mt-1 text-[9px] text-[#64748B]">
+                    From website creation to business growth
+                  </p>
+                </div>
+
+                <span className="text-sm text-[#2563EB]">↗</span>
+              </Link>
+            </div>
+
             {/* FLOATING CARD 1 */}
-            <div className="hidden md:flex absolute -top-6 -left-6 bg-white rounded-2xl px-5 py-3 shadow-2xl items-center gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-blue-100 flex items-center justify-center text-2xl">
-                🚀
+            <div className="absolute -right-3 top-16 hidden items-center gap-3 rounded-xl border border-[#E8EBE6] bg-white px-4 py-3 shadow-xl sm:flex lg:-right-5">
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-50 text-lg text-[#2563EB]">
+                ↗
               </div>
 
               <div>
-                <h4 className="font-bold text-[#0F172A]">SEO Services</h4>
-                <p className="text-sm text-gray-500">
-                  Rank Higher on Google Worldwide
+                <p className="text-[10px] font-bold text-[#20242D]">
+                  SEO & Growth
+                </p>
+
+                <p className="text-[9px] text-[#64748B]">
+                  Rank. Reach. Convert.
                 </p>
               </div>
             </div>
 
             {/* FLOATING CARD 2 */}
-            <div className="hidden md:flex absolute -bottom-6 right-0 bg-white rounded-2xl px-5 py-3 shadow-2xl items-center gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-cyan-100 flex items-center justify-center text-2xl">
-                💻
+            <div className="absolute -bottom-4 left-[-15px] hidden items-center gap-3 rounded-xl border border-[#E8EBE6] bg-white px-4 py-3 shadow-xl sm:flex">
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-50 text-lg text-[#2563EB]">
+                ◈
               </div>
 
               <div>
-                <h4 className="font-bold text-[#0F172A]">Web Development</h4>
+                <p className="text-[10px] font-bold text-[#20242D]">
+                  Web Development
+                </p>
 
-                <p className="text-sm text-gray-500">
-                  Responsive Business Websites
+                <p className="text-[9px] text-[#64748B]">
+                  Design to Deployment
                 </p>
               </div>
             </div>
