@@ -76,26 +76,26 @@ export default function ProjectsPage() {
         "Arka Aqua Tech website, aquaculture website development, aquaculture company website, Next JS website",
     },
 
-    {
-      title: "Gurudeep AI Academy",
-      slug: "gurudeep-ai-academy",
-      image: "/image8.jpg",
-      link: "https://www.gurudeepaiacademy.com/",
-      category: "Educational Platform",
-      tools: ["React JS", "Tailwind CSS", "Node JS"],
+    // {
+    //   title: "Gurudeep AI Academy",
+    //   slug: "gurudeep-ai-academy",
+    //   image: "/image8.jpg",
+    //   link: "https://www.gurudeepaiacademy.com/",
+    //   category: "Educational Platform",
+    //   tools: ["React JS", "Tailwind CSS", "Node JS"],
 
-      description:
-        "Modern educational platform designed for AI learning with responsive layouts, smooth animations, course-focused sections, and an engaging student experience.",
+    //   description:
+    //     "Modern educational platform designed for AI learning with responsive layouts, smooth animations, course-focused sections, and an engaging student experience.",
 
-      seoTitle:
-        "Gurudeep AI Academy Website | AI Education Platform Development",
+    //   seoTitle:
+    //     "Gurudeep AI Academy Website | AI Education Platform Development",
 
-      seoDescription:
-        "KIDIWEBTECH created a responsive AI education website for Gurudeep AI Academy using React JS, Tailwind CSS and Node JS.",
+    //   seoDescription:
+    //     "KIDIWEBTECH created a responsive AI education website for Gurudeep AI Academy using React JS, Tailwind CSS and Node JS.",
 
-      keywords:
-        "Gurudeep AI Academy website, AI education website, online education platform, React JS development",
-    },
+    //   keywords:
+    //     "Gurudeep AI Academy website, AI education website, online education platform, React JS development",
+    // },
 
     {
       title: "Epoque Group",
