@@ -217,6 +217,147 @@ export default function ProjectsPage() {
       keywords:
         "VFX Coach website, VFX training institute website, VFX academy website, Next JS development",
     },
+
+    {
+      title: "OPV AI Realty Tech",
+      slug: "opv-ai-realty-tech",
+      image: "/image15.png",
+      link: "https://www.opvairealtytech.com/",
+      category: "AI & Business Technology Company",
+      tools: [
+        "Next.js",
+        "React JS",
+        "TypeScript (TSX)",
+        "Tailwind CSS",
+        "Node.js",
+        "MongoDB",
+      ],
+      description:
+        "Modern AI and business technology platform showcasing artificial intelligence, SaaS, CRM, ERP, business automation, custom software development and digital growth solutions through a responsive and user-friendly interface.",
+      seoTitle:
+        "OPV AI Realty Tech Website Development | AI & Business Technology",
+      seoDescription:
+        "KIDIWEBTECH developed a modern business technology website for OPV AI Realty Tech featuring AI solutions, SaaS, CRM, ERP, automation and digital transformation.",
+      keywords:
+        "OPV AI Realty Tech website, AI technology website development, SaaS development, CRM ERP solutions, business automation, Next.js development, React JS development",
+    },
+
+    {
+      title: "GAIA Payscale",
+      slug: "gaia-payscale",
+      image: "/image16.png",
+      link: "https://www.gpayscale.com/",
+      category: "IT Staffing & Technology Company",
+      tools: [
+        "React JS",
+        "Next.js",
+        "TypeScript (TSX)",
+        "Tailwind CSS",
+        "Node.js",
+        "MongoDB",
+      ],
+      description:
+        "Professional corporate website showcasing technology services, IT staffing, payroll management, technical training and business solutions with a modern responsive design and user-friendly navigation.",
+      seoTitle: "GAIA Payscale Website Development | IT Staffing & Technology",
+      seoDescription:
+        "KIDIWEBTECH developed a professional technology website for GAIA Payscale featuring IT staffing, payroll management, technical training and business technology solutions.",
+      keywords:
+        "GAIA Payscale website, IT staffing website development, payroll services website, technology company website, React JS development, Next.js development",
+    },
+
+    {
+      title: "Aarna Infra Developers",
+      slug: "aarna-infra-developers",
+      image: "/image17.png",
+      link: "https://www.aarnainfradevelopers.com/",
+      category: "Real Estate & Property Development",
+      tools: [
+        "Next.js",
+        "React JS",
+        "TypeScript (TSX)",
+        "Tailwind CSS",
+        "Node.js",
+        "MongoDB",
+      ],
+      description:
+        "Professional real estate website showcasing property developments, open plots, residential projects and investment opportunities with modern layouts, responsive property sections and an engaging user experience.",
+      seoTitle:
+        "Aarna Infra Developers Website Development | Real Estate Website",
+      seoDescription:
+        "KIDIWEBTECH developed a responsive real estate website for Aarna Infra Developers featuring property projects, open plots and real estate investment opportunities.",
+      keywords:
+        "Aarna Infra Developers website, real estate website development Hyderabad, open plots website, property listing website, Next.js real estate website, React JS development",
+    },
+
+    {
+      title: "Suvira Tech",
+      slug: "suvira-tech",
+      image: "/image18.png",
+      link: "https://www.suviratech.com/",
+      category: "Enterprise IT Solutions Company",
+      tools: [
+        "React JS",
+        "Next.js",
+        "TypeScript (TSX)",
+        "Tailwind CSS",
+        "Node.js",
+        "MongoDB",
+      ],
+      description:
+        "Modern enterprise technology website presenting IT services, software development, digital solutions and business technology offerings through a professional, responsive and SEO-friendly interface.",
+      seoTitle: "Suvira Tech Website Development | Enterprise IT Solutions",
+      seoDescription:
+        "KIDIWEBTECH developed a professional corporate technology website for Suvira Tech using modern web technologies and a responsive user interface.",
+      keywords:
+        "Suvira Tech website, enterprise IT solutions website, software development company website, IT services website, React JS development, Next.js development",
+    },
+
+    {
+      title: "Jai Technologies",
+      slug: "jai-technologies",
+      image: "/image19.png",
+      link: "https://jaitechnologies.org/",
+      category: "IT Services & Technology Solutions",
+      tools: [
+        "React JS",
+        "Next.js",
+        "TypeScript (TSX)",
+        "Tailwind CSS",
+        "Node.js",
+        "MongoDB",
+      ],
+      description:
+        "Professional technology services website featuring IT solutions, computer services, business technology offerings and digital services with responsive layouts, modern UI components and easy navigation.",
+      seoTitle: "Jai Technologies Website Development | IT Services Website",
+      seoDescription:
+        "KIDIWEBTECH developed a modern responsive website for Jai Technologies showcasing IT services, technology solutions and professional business offerings.",
+      keywords:
+        "Jai Technologies website, IT services website development, technology solutions website, computer services website, React JS website development, Next.js development",
+    },
+
+    {
+      title: "Open Plots in Shadnagar",
+      slug: "open-plots-in-shadnagar",
+      image: "/image20.png",
+      link: "https://www.openplotsinshadnagar.com/",
+      category: "Real Estate & Property Listing Platform",
+      tools: [
+        "Next.js",
+        "React JS",
+        "TypeScript (TSX)",
+        "Tailwind CSS",
+        "Node.js",
+        "Supabase",
+      ],
+      description:
+        "Modern real estate property discovery platform showcasing residential open plots, commercial plots, farm lands and property projects in Shadnagar. Features dynamic property listings, location-based search, project details, pricing information, property approvals and site visit enquiries with a responsive user experience.",
+      seoTitle:
+        "Open Plots in Shadnagar Website Development | Real Estate Platform",
+      seoDescription:
+        "KIDIWEBTECH developed a modern real estate website for Open Plots in Shadnagar featuring residential plots, commercial properties, farm lands, property listings and location-based property discovery.",
+      keywords:
+        "Open Plots in Shadnagar website, real estate website development, Shadnagar property website, open plots website, residential plots website, farm lands near Shadnagar, property listing platform, Next.js development, React JS development, Supabase development",
+    },
   ];
 
   return (
