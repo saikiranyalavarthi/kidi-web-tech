@@ -195,9 +195,12 @@
 //   );
 // }
 
+
+
+
+
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 
 import {
@@ -218,7 +221,6 @@ const services = [
     title: "SEO Services",
     tag: "Organic Growth",
     icon: Search,
-
     desc: "Improve Google search visibility, attract relevant organic traffic, and generate qualified enquiries with technical SEO, on-page optimization, and content strategies.",
     link: "/seo-services-hyderabad",
   },
@@ -227,7 +229,6 @@ const services = [
     title: "Website Development",
     tag: "Web Solutions",
     icon: Code2,
-
     desc: "Get a fast, responsive, SEO-friendly business website or custom web application built to showcase your services and convert visitors into potential customers.",
     link: "/website-development-services",
   },
@@ -236,7 +237,6 @@ const services = [
     title: "Mobile App Development",
     tag: "Mobile Technology",
     icon: Smartphone,
-
     desc: "Build Android and iOS mobile applications with intuitive experiences, reliable functionality, and scalable solutions for startups and established businesses.",
     link: "/services/mobile-app-development-hyderabad",
   },
@@ -245,7 +245,6 @@ const services = [
     title: "Google Ads & PPC Management",
     tag: "Paid Advertising",
     icon: Megaphone,
-
     desc: "Reach customers actively searching for your services through targeted Google Ads campaigns designed to increase relevant enquiries and support measurable business growth.",
     link: "/ppc-management-services",
   },
@@ -254,7 +253,6 @@ const services = [
     title: "Social Media Marketing",
     tag: "Brand Engagement",
     icon: Share2,
-
     desc: "Strengthen your brand presence, connect with your target audience, and promote your products and services through strategic social media campaigns.",
     link: "/seo-services-india",
   },
@@ -263,7 +261,6 @@ const services = [
     title: "Ecommerce Website Development",
     tag: "Online Business",
     icon: ShoppingCart,
-
     desc: "Launch an online store with mobile-friendly shopping, product pages, streamlined checkout, and a user experience designed to support more sales.",
     link: "/ecommerce-development-services",
   },
@@ -281,14 +278,15 @@ const features = [
 export default function ServicesSection() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-white to-[#f5f9ff] px-4 py-12 sm:px-6 sm:py-16 md:py-20 lg:py-24">
+
       {/* BACKGROUND EFFECTS */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -left-32 -top-20 h-64 w-64 rounded-full bg-blue-200/30 blur-[100px] sm:h-[350px] sm:w-[350px]" />
-
         <div className="absolute -bottom-20 -right-32 h-64 w-64 rounded-full bg-cyan-200/30 blur-[100px] sm:h-[350px] sm:w-[350px]" />
       </div>
 
       <div className="relative mx-auto max-w-7xl">
+
         {/* SECTION HEADER */}
         <div className="mx-auto max-w-4xl text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-bold text-[#2563EB] shadow-sm sm:px-5">
@@ -311,7 +309,7 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        {/* SERVICES GRID */}
+        {/* SERVICES GRID - NO IMAGE SECTION */}
         <div className="mt-10 grid grid-cols-1 gap-5 sm:mt-14 sm:grid-cols-2 sm:gap-6 lg:mt-20 lg:grid-cols-3 lg:gap-8">
           {services.map((service) => {
             const ServiceIcon = service.icon;
@@ -319,69 +317,56 @@ export default function ServicesSection() {
             return (
               <article
                 key={service.number}
-                className="group relative flex h-full flex-col overflow-hidden rounded-[24px] border border-gray-100 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-blue-100 hover:shadow-[0_25px_70px_rgba(37,99,235,0.13)] sm:rounded-[28px] lg:rounded-[32px]"
+                className="group relative flex h-full flex-col overflow-hidden rounded-[24px] border border-gray-100 bg-white p-5 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-blue-100 hover:shadow-[0_25px_70px_rgba(37,99,235,0.13)] sm:rounded-[28px] sm:p-6 lg:rounded-[32px] lg:p-7"
               >
-                {/* IMAGE */}
-                <div className="relative h-52 w-full overflow-hidden sm:h-48 lg:h-52">
-                  {/* IMAGE OVERLAY */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#07111F]/80 via-[#07111F]/10 to-transparent" />
 
-                  {/* NUMBER */}
-                  <div className="absolute left-4 top-4 flex h-10 w-10 items-center justify-center rounded-xl border border-white/30 bg-white/15 text-sm font-black text-white shadow-lg backdrop-blur-md">
+                {/* NUMBER + SERVICE TAG */}
+                <div className="flex items-center justify-between gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-blue-100 bg-blue-50 text-sm font-black text-[#2563EB] transition-all duration-300 group-hover:bg-[#2563EB] group-hover:text-white">
                     {service.number}
                   </div>
 
-                  {/* SERVICE TAG */}
-                  <div className="absolute bottom-4 left-4">
-                    <span className="rounded-full border border-white/30 bg-white/15 px-3 py-2 text-xs font-semibold text-white backdrop-blur-md">
-                      {service.tag}
-                    </span>
-                  </div>
-
-                  {/* TOP ARROW */}
-                  <div className="absolute bottom-4 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#2563EB] shadow-lg transition-all duration-300 group-hover:rotate-45">
-                    <ArrowUpRight size={20} />
-                  </div>
+                  <span className="rounded-full border border-blue-100 bg-blue-50 px-3 py-2 text-xs font-semibold text-[#2563EB]">
+                    {service.tag}
+                  </span>
                 </div>
 
-                {/* CARD CONTENT */}
-                <div className="flex flex-1 flex-col p-5 sm:p-6 lg:p-7">
-                  {/* PREMIUM ICON */}
-                  <div className="relative mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#2563EB] to-[#06B6D4] text-white shadow-lg shadow-blue-500/20 transition-all duration-500 group-hover:-translate-y-1 group-hover:scale-110 group-hover:shadow-blue-500/30 sm:h-16 sm:w-16 sm:rounded-3xl">
-                    <ServiceIcon
-                      size={30}
-                      strokeWidth={1.8}
-                      className="transition-transform duration-500 group-hover:rotate-6 sm:h-9 sm:w-9"
-                    />
+                {/* PREMIUM ICON */}
+                <div className="relative mb-5 mt-7 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#2563EB] to-[#06B6D4] text-white shadow-lg shadow-blue-500/20 transition-all duration-500 group-hover:-translate-y-1 group-hover:scale-110 group-hover:shadow-blue-500/30 sm:h-16 sm:w-16 sm:rounded-3xl">
+                  <ServiceIcon
+                    size={30}
+                    strokeWidth={1.8}
+                    className="transition-transform duration-500 group-hover:rotate-6 sm:h-9 sm:w-9"
+                  />
 
-                    <span className="absolute -right-1 -top-1 h-3 w-3 rounded-full border-2 border-white bg-cyan-300" />
-                  </div>
-
-                  {/* TITLE */}
-                  <h3 className="text-xl font-black leading-snug text-[#0F172A] sm:text-2xl">
-                    {service.title}
-                  </h3>
-
-                  {/* DESCRIPTION */}
-                  <p className="mt-3 flex-1 text-sm leading-7 text-gray-600 sm:text-[15px] sm:leading-8">
-                    {service.desc}
-                  </p>
-
-                  {/* EXPLORE LINK */}
-                  <Link
-                    href={service.link}
-                    className="mt-5 inline-flex min-h-11 w-fit items-center gap-2 text-sm font-bold text-[#2563EB] transition-all duration-300 hover:gap-4 sm:mt-6 sm:text-base"
-                  >
-                    Explore Service
-                    <ArrowUpRight
-                      size={19}
-                      className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-                    />
-                  </Link>
-
-                  {/* BOTTOM HOVER LINE */}
-                  <div className="absolute bottom-0 left-0 h-1 w-0 rounded-full bg-gradient-to-r from-[#2563EB] to-[#06B6D4] transition-all duration-500 group-hover:w-full" />
+                  <span className="absolute -right-1 -top-1 h-3 w-3 rounded-full border-2 border-white bg-cyan-300" />
                 </div>
+
+                {/* TITLE */}
+                <h3 className="text-xl font-black leading-snug text-[#0F172A] sm:text-2xl">
+                  {service.title}
+                </h3>
+
+                {/* DESCRIPTION */}
+                <p className="mt-3 flex-1 text-sm leading-7 text-gray-600 sm:text-[15px] sm:leading-8">
+                  {service.desc}
+                </p>
+
+                {/* EXPLORE LINK */}
+                <Link
+                  href={service.link}
+                  className="mt-5 inline-flex min-h-11 w-fit items-center gap-2 text-sm font-bold text-[#2563EB] transition-all duration-300 hover:gap-4 sm:mt-6 sm:text-base"
+                >
+                  Explore Service
+                  <ArrowUpRight
+                    size={19}
+                    className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                  />
+                </Link>
+
+                {/* BOTTOM HOVER LINE */}
+                <div className="absolute bottom-0 left-0 h-1 w-0 rounded-full bg-gradient-to-r from-[#2563EB] to-[#06B6D4] transition-all duration-500 group-hover:w-full" />
+
               </article>
             );
           })}
@@ -389,10 +374,12 @@ export default function ServicesSection() {
 
         {/* CTA SECTION */}
         <div className="relative mt-12 overflow-hidden rounded-[26px] bg-gradient-to-br from-[#2563EB] to-[#06B6D4] p-6 text-white shadow-[0_25px_70px_rgba(37,99,235,0.20)] sm:mt-16 sm:rounded-[32px] sm:p-9 md:p-12 lg:mt-24 lg:rounded-[40px] lg:p-14">
+
           {/* GLOW */}
           <div className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-white/10 blur-[100px] sm:h-[320px] sm:w-[320px]" />
 
           <div className="relative z-10 grid items-center gap-8 lg:grid-cols-2 lg:gap-14">
+
             {/* LEFT CONTENT */}
             <div>
               <p className="text-xs font-bold uppercase tracking-[3px] text-white/80 sm:text-sm sm:tracking-[4px]">
@@ -430,8 +417,10 @@ export default function ServicesSection() {
                 </div>
               ))}
             </div>
+
           </div>
         </div>
+
       </div>
     </section>
   );
