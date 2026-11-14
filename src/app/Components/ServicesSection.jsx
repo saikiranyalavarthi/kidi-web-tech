@@ -218,8 +218,7 @@ const services = [
     title: "SEO Services",
     tag: "Organic Growth",
     icon: Search,
-    image:
-      "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1000&q=85",
+
     desc: "Improve Google search visibility, attract relevant organic traffic, and generate qualified enquiries with technical SEO, on-page optimization, and content strategies.",
     link: "/seo-services-hyderabad",
   },
@@ -228,8 +227,7 @@ const services = [
     title: "Website Development",
     tag: "Web Solutions",
     icon: Code2,
-    image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1000&q=85",
+
     desc: "Get a fast, responsive, SEO-friendly business website or custom web application built to showcase your services and convert visitors into potential customers.",
     link: "/website-development-services",
   },
@@ -238,8 +236,7 @@ const services = [
     title: "Mobile App Development",
     tag: "Mobile Technology",
     icon: Smartphone,
-    image:
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1000&q=85",
+
     desc: "Build Android and iOS mobile applications with intuitive experiences, reliable functionality, and scalable solutions for startups and established businesses.",
     link: "/services/mobile-app-development-hyderabad",
   },
@@ -248,8 +245,7 @@ const services = [
     title: "Google Ads & PPC Management",
     tag: "Paid Advertising",
     icon: Megaphone,
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1000&q=85",
+
     desc: "Reach customers actively searching for your services through targeted Google Ads campaigns designed to increase relevant enquiries and support measurable business growth.",
     link: "/ppc-management-services",
   },
@@ -258,8 +254,7 @@ const services = [
     title: "Social Media Marketing",
     tag: "Brand Engagement",
     icon: Share2,
-    image:
-      "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=1000&q=85",
+
     desc: "Strengthen your brand presence, connect with your target audience, and promote your products and services through strategic social media campaigns.",
     link: "/seo-services-india",
   },
@@ -268,8 +263,7 @@ const services = [
     title: "Ecommerce Website Development",
     tag: "Online Business",
     icon: ShoppingCart,
-    image:
-      "https://images.unsplash.com/photo-1677693972403-db681288b5da?w=1000&q=85",
+
     desc: "Launch an online store with mobile-friendly shopping, product pages, streamlined checkout, and a user experience designed to support more sales.",
     link: "/ecommerce-development-services",
   },
@@ -329,14 +323,6 @@ export default function ServicesSection() {
               >
                 {/* IMAGE */}
                 <div className="relative h-52 w-full overflow-hidden sm:h-48 lg:h-52">
-                  <Image
-                    src={service.image}
-                    alt={`${service.title} by KidiWebTech`}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-
                   {/* IMAGE OVERLAY */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#07111F]/80 via-[#07111F]/10 to-transparent" />
 
