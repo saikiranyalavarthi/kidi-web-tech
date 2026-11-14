@@ -6,12 +6,13 @@ import Link from "next/link";
 const services = [
   {
     image:
-      "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1551&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
     icon: "🚀",
     title: "SEO Services",
     desc: "Improve Google search visibility, attract relevant organic traffic, and generate qualified enquiries with technical SEO, on-page optimization, and content strategies.",
     link: "/seo-services-hyderabad",
   },
+
   {
     image:
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&auto=format&fit=crop",
@@ -20,14 +21,16 @@ const services = [
     desc: "Get a fast, responsive, SEO-friendly business website or custom web application built to showcase your services and convert visitors into potential customers.",
     link: "/website-development-services",
   },
+
   {
     image:
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1170&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
     icon: "📱",
     title: "Mobile App Development",
     desc: "Build Android and iOS mobile applications with intuitive experiences, reliable functionality, and scalable solutions for startups and established businesses.",
     link: "/services/mobile-app-development-hyderabad",
   },
+
   {
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&auto=format&fit=crop",
@@ -36,6 +39,7 @@ const services = [
     desc: "Reach customers actively searching for your services through targeted Google Ads campaigns designed to increase relevant enquiries and support measurable business growth.",
     link: "/ppc-management-services",
   },
+
   {
     image:
       "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=900&auto=format&fit=crop",
@@ -44,16 +48,16 @@ const services = [
     desc: "Strengthen your brand presence, connect with your target audience, and promote your products and services through strategic social media campaigns.",
     link: "/seo-services-india",
   },
+
   {
     image:
-      "https://images.unsplash.com/photo-1677693972403-db681288b5da?w=900&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1677693972403-db681288b5da?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
     icon: "🛒",
     title: "Ecommerce Website Development",
     desc: "Launch an online store with mobile-friendly shopping, product pages, streamlined checkout, and a user experience designed to support more sales.",
     link: "/ecommerce-development-services",
   },
 ];
-
 const features = [
   "SEO Optimization",
   "Website Design",
