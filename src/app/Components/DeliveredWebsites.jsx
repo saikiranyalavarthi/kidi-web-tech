@@ -184,7 +184,7 @@ export default function DeliveredWebsites() {
       : websites.filter((item) => item.category === activeCategory);
 
   return (
-    <section className="relative overflow-hidden bg-white py-20">
+    <section className="relative overflow-hidden bg-white py-8">
       {/* BACKGROUND */}
       <div className="absolute inset-0">
         <div className="absolute left-[-120px] top-[-120px] h-[300px] w-[300px] rounded-full bg-pink-100 blur-3xl" />

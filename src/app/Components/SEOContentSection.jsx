@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function SEOContentSection() {
   return (
-    <section className="relative py-24 md:py-32 px-6 overflow-hidden bg-gradient-to-b from-[#f8fbff] to-white">
+    <section className="relative py-8 md:py-8 px-6 overflow-hidden bg-gradient-to-b from-[#f8fbff] to-white">
       {/* BACKGROUND EFFECTS */}
 
       <div className="absolute inset-0 overflow-hidden">

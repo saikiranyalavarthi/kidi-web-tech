@@ -2,7 +2,7 @@
 
 export default function ProcessSection() {
   return (
-    <section className="relative py-20 md:py-24 px-6 overflow-hidden bg-white">
+    <section className="relative py-8 md:py-8 px-6 overflow-hidden bg-white">
       {/* BACKGROUND EFFECTS */}
 
       <div className="absolute inset-0 overflow-hidden pointer-events-none">

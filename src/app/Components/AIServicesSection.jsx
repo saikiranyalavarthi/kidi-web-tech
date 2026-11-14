@@ -51,7 +51,7 @@ const services = [
 
 export default function AIServicesSection() {
   return (
-    <section className="relative overflow-hidden bg-white py-20">
+    <section className="relative overflow-hidden bg-white py-8">
       {/* BACKGROUND */}
       <div className="absolute inset-0">
         <div className="absolute left-[-100px] top-[-100px] h-[280px] w-[280px] rounded-full bg-pink-100 blur-3xl" />

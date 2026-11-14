@@ -130,7 +130,7 @@ export default function Home() {
       ===================================================== */}
 
       <section aria-labelledby="about-kidiwebtech" className="w-full bg-white">
-        <div className="mx-auto max-w-6xl px-6 py-16">
+        <div className="mx-auto max-w-6xl px-6 py-6">
           <div className="max-w-4xl">
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-blue-600">
               Website Development, SEO & Digital Marketing

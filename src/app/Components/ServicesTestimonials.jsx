@@ -1,6 +1,6 @@
 export default function ServicesTestimonials() {
   return (
-    <section className="bg-black py-20 px-6 overflow-hidden">
+    <section className="bg-black py-8 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <h3 className="text-3xl font-bold text-yellow-400 text-center mb-12">

@@ -19,7 +19,7 @@ export default function TrustedBySection() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-white px-6 py-20 md:py-24">
+    <section className="relative overflow-hidden bg-white px-6 py-8 md:py-8">
       {/* Background Effects */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -left-32 -top-32 h-[350px] w-[350px] rounded-full bg-blue-100/50 blur-[120px]" />

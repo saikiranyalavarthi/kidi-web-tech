@@ -364,7 +364,7 @@ export default function ProjectsPage() {
     <div className="bg-white text-[#0F172A] overflow-hidden min-h-screen">
       {/* ================= HERO SECTION ================= */}
 
-      <section className="relative py-28 px-6 text-center overflow-hidden">
+      <section className="relative py-8 px-6 text-center overflow-hidden">
         {/* BACKGROUND */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-cyan-50"></div>
 

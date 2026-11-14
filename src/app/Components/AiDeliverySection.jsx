@@ -57,7 +57,7 @@ const features = [
 
 export default function AiDeliverySection() {
   return (
-    <section className="relative overflow-hidden bg-white py-16">
+    <section className="relative overflow-hidden bg-white py-8">
       {/* BACKGROUND */}
       <div className="absolute inset-0">
         <div className="absolute left-[-120px] top-[-120px] h-[240px] w-[240px] rounded-full bg-pink-100 blur-3xl" />

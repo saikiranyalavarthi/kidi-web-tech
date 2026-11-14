@@ -199,7 +199,7 @@ export default function CaseStudiesSection() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-white px-6 py-24">
+    <section className="relative overflow-hidden bg-white px-6 py-8">
       {/* BACKGROUND */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-1/3 top-0 h-[400px] w-[400px] bg-blue-500/10 blur-[120px]" />

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function AboutSection() {
   return (
-    <section className="relative overflow-hidden bg-[#f4f8ff] py-24 md:py-32 px-6">
+    <section className="relative overflow-hidden bg-[#f4f8ff] py-8 md:py-8 px-6">
       {/* BACKGROUND EFFECTS */}
 
       <div className="absolute inset-0 overflow-hidden">
