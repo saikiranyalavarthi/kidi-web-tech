@@ -1142,7 +1142,7 @@ export default function Navbar() {
           )}
 
           {/* BOTTOM LINK */}
-          <div className="mt-8 flex justify-end">
+          {/* <div className="mt-8 flex justify-end">
             <Link
               href={activeItem?.href || "/"}
               onClick={() => setActiveDropdown(null)}
@@ -1151,7 +1151,7 @@ export default function Navbar() {
               Explore All {activeDropdown}
               <span aria-hidden="true">→</span>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
 
