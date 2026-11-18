@@ -168,8 +168,8 @@ ${message}
       <section className="relative px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">
           {[
-            ["150+", "Projects Delivered"],
-            ["100+", "Happy Clients"],
+            ["50+", "Projects Delivered"],
+            ["30+", "Happy Clients"],
             ["24/7", "Support"],
             ["5+", "Years Experience"],
           ].map((item, i) => (

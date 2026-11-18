@@ -1,287 +1,219 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
+
+const faqs = [
+  {
+    question: "What services does KidiWebTech provide?",
+    answer:
+      "KidiWebTech provides website design, website development, custom web application development, e-commerce website development, mobile app development, SEO services, local SEO, Google Ads management, and digital marketing solutions. We help businesses build their online presence and generate more opportunities.",
+  },
+  {
+    question: "How much does website development cost in Hyderabad?",
+    answer:
+      "Website development costs depend on the design, features, number of pages, integrations, and project requirements. A basic business website generally costs less than a custom web application or e-commerce platform. Contact KidiWebTech with your requirements to receive a project estimate.",
+  },
+  {
+    question: "How long does it take to develop a website?",
+    answer:
+      "The development timeline depends on the project scope. A basic business website may take around 1–2 weeks, while larger custom websites and web applications may require several weeks or more. The timeline is confirmed after reviewing the project requirements.",
+  },
+  {
+    question: "How long does SEO take to show results on Google?",
+    answer:
+      "SEO is a long-term process. Some improvements may appear within a few weeks, but meaningful organic growth commonly takes several months. Results depend on website quality, competition, technical SEO, content, backlinks, and the consistency of optimization.",
+  },
+  {
+    question: "Does KidiWebTech provide local SEO services in Hyderabad?",
+    answer:
+      "Yes. KidiWebTech provides local SEO services to help businesses improve their visibility in location-based searches. Work may include Google Business Profile optimization, local keyword research, website optimization, local landing pages, and business listing improvements.",
+  },
+  {
+    question: "What is the difference between SEO, AEO, and GEO?",
+    answer:
+      "SEO (Search Engine Optimization) improves website visibility in search engines. AEO (Answer Engine Optimization) helps content provide clear answers to user questions. GEO (Generative Engine Optimization) focuses on making useful, trustworthy content easier for AI-powered search experiences to understand and reference.",
+  },
+  {
+    question: "Does KidiWebTech build websites using React and Next.js?",
+    answer:
+      "Yes. KidiWebTech works with modern technologies such as React.js and Next.js to develop responsive websites and web applications. The technology is selected according to your project requirements, performance needs, and business goals.",
+  },
+  {
+    question: "Can KidiWebTech develop e-commerce websites?",
+    answer:
+      "Yes. We can develop e-commerce websites with product listings, product details, shopping carts, checkout flows, payment gateway integration, and order management. Features and integrations are planned according to your business requirements.",
+  },
+  {
+    question: "Does KidiWebTech provide website maintenance and support?",
+    answer:
+      "Website maintenance and support can be discussed based on your project requirements. Support may include website updates, bug fixes, content changes, performance checks, security updates, and technical assistance.",
+  },
+  {
+    question: "How can I get started with KidiWebTech?",
+    answer:
+      "You can get started by contacting KidiWebTech through the contact page. Share your business details, project requirements, preferred features, and budget. Our team can review your requirements and discuss the next steps.",
+  },
+];
 
 export default function FAQSection() {
-  const faqs = [
-    {
-      question: "What services does KIDIWEBTECH provide?",
-      answer:
-        "We provide SEO services, website development, app development, Google Ads, branding, ecommerce solutions, and digital marketing strategies for businesses.",
-    },
+  const [activeIndex, setActiveIndex] = useState(0);
 
-    {
-      question: "Why choose KIDIWEBTECH?",
-      answer:
-        "KIDIWEBTECH focuses on result-driven SEO, modern website development, and performance marketing strategies that help businesses generate more traffic, leads, and sales.",
-    },
-
-    {
-      question: "Do you provide website development services?",
-      answer:
-        "Yes. We build responsive business websites, ecommerce platforms, landing pages, and custom web applications using modern technologies.",
-    },
-
-    {
-      question: "Do you provide app development services?",
-      answer:
-        "Yes. We develop Android, iOS, and Flutter mobile applications for startups, businesses, and enterprises.",
-    },
-
-    {
-      question: "Do you provide SEO services in Hyderabad?",
-      answer:
-        "Yes. We provide local SEO, on-page SEO, technical SEO, keyword optimization, and Google ranking strategies for businesses in Hyderabad.",
-    },
-
-    {
-      question: "How can digital marketing help my business?",
-      answer:
-        "Digital marketing helps businesses increase online visibility, improve Google rankings, generate quality leads, and grow customer engagement.",
-    },
-  ];
-
-  const [openIndex, setOpenIndex] = useState(0);
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
 
   return (
-    <section className="relative py-20 md:py-24 px-6 overflow-hidden bg-gradient-to-b from-[#f8fbff] to-white">
-      {/* BACKGROUND EFFECTS */}
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
+        }}
+      />
 
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-[-120px] left-[-120px] w-[380px] h-[380px] bg-blue-200/30 blur-[120px] rounded-full"></div>
-
-        <div className="absolute bottom-[-120px] right-[-120px] w-[380px] h-[380px] bg-cyan-200/30 blur-[120px] rounded-full"></div>
-      </div>
-
-      <div className="relative max-w-5xl mx-auto">
-        {/* TOP */}
-
-        <div className="text-center">
-          {/* BADGE */}
-
-          <div
-            className="
-              inline-flex items-center gap-2
-              px-5 py-2 rounded-full
-              bg-blue-50
-              border border-blue-100
-              text-[#2563EB]
-              font-semibold
-              shadow-sm
-            "
-          >
-            ❓ Frequently Asked Questions
-          </div>
-
-          {/* HEADING */}
-
-          <h2
-            className="
-              mt-8
-              text-4xl sm:text-5xl md:text-6xl
-              font-black
-              leading-[1.05]
-              tracking-tight
-              text-[#0F172A]
-            "
-          >
-            Everything You Need To Know
-          </h2>
-
-          {/* DESCRIPTION */}
-
-          <p
-            className="
-              mt-6
-              text-lg md:text-xl
-              leading-8
-              text-gray-600
-              max-w-3xl
-              mx-auto
-            "
-          >
-            Learn more about our SEO, website development, app development,
-            Google Ads, branding, and digital marketing services.
-          </p>
-        </div>
-
-        {/* FAQ LIST */}
-
-        <div className="mt-20 space-y-6">
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="
-                bg-white
-                border border-gray-100
-                rounded-[32px]
-                overflow-hidden
-                shadow-sm
-                hover:shadow-[0_20px_60px_rgba(37,99,235,0.08)]
-                hover:border-blue-100
-                transition duration-500
-              "
-            >
-              {/* QUESTION */}
-
-              <button
-                onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
-                className="
-                  w-full
-                  flex items-center justify-between
-                  gap-6
-                  text-left
-                  p-7 md:p-8
-                "
-              >
-                <h3
-                  className="
-                    text-lg md:text-2xl
-                    font-black
-                    leading-snug
-                    text-[#0F172A]
-                  "
-                >
-                  {faq.question}
-                </h3>
-
-                {/* ICON */}
-
-                <div
-                  className="
-                    shrink-0
-                    w-12 h-12
-                    rounded-2xl
-                    bg-gradient-to-r
-                    from-[#2563EB]
-                    to-[#06B6D4]
-                    flex items-center justify-center
-                    text-white
-                    text-2xl
-                    font-bold
-                    shadow-lg
-                  "
-                >
-                  {openIndex === index ? "−" : "+"}
-                </div>
-              </button>
-
-              {/* ANSWER */}
-
-              <div
-                className={`
-                  overflow-hidden transition-all duration-500
-                  ${
-                    openIndex === index
-                      ? "max-h-[400px] opacity-100"
-                      : "max-h-0 opacity-0"
-                  }
-                `}
-              >
-                <div className="px-7 md:px-8 pb-7 md:pb-8">
-                  <p
-                    className="
-                      text-gray-600
-                      leading-8
-                      text-base md:text-lg
-                    "
-                  >
-                    {faq.answer}
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* CTA SECTION */}
+      <section
+        className="relative w-full overflow-hidden bg-white px-4 py-16 sm:px-6 lg:px-8 lg:py-24"
+        aria-labelledby="faq-heading"
+      >
+        {/* Background decoration */}
+        <div
+          className="pointer-events-none absolute -left-40 top-20 h-72 w-72 rounded-full bg-blue-100/50 blur-3xl"
+          aria-hidden="true"
+        />
 
         <div
-          className="
-            mt-24
-            bg-gradient-to-r
-            from-[#2563EB]
-            to-[#06B6D4]
-            rounded-[40px]
-            p-10 md:p-14
-            text-center
-            text-white
-            shadow-[0_30px_80px_rgba(37,99,235,0.18)]
-            relative overflow-hidden
-          "
-        >
-          {/* GLOW */}
+          className="pointer-events-none absolute -right-40 bottom-10 h-72 w-72 rounded-full bg-indigo-100/50 blur-3xl"
+          aria-hidden="true"
+        />
 
-          <div className="absolute top-0 right-0 w-[320px] h-[320px] bg-white/10 blur-[120px] rounded-full"></div>
+        <div className="relative mx-auto max-w-7xl">
+          {/* Heading */}
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            <span className="inline-flex items-center rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-blue-700 sm:text-sm">
+              Frequently Asked Questions
+            </span>
 
-          <div className="relative z-10">
-            <p className="uppercase tracking-[4px] text-white/70 text-sm">
-              NEED HELP?
-            </p>
-
-            <h3
-              className="
-                mt-5
-                text-4xl md:text-5xl
-                font-black
-                leading-tight
-              "
+            <h2
+              id="faq-heading"
+              className="mt-5 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
             >
-              Ready To Grow Your Business Online?
-            </h3>
+              Everything You Need to Know About{" "}
+              <span className="text-blue-600">KidiWebTech</span>
+            </h2>
 
-            <p
-              className="
-                mt-6
-                text-lg md:text-xl
-                leading-8
-                text-white/90
-                max-w-3xl
-                mx-auto
-              "
-            >
-              Contact KIDIWEBTECH for SEO, websites, app development, Google
-              Ads, branding, and digital marketing solutions tailored for your
-              business growth.
+            <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-gray-600 sm:text-base">
+              Find answers to common questions about website development, SEO,
+              digital marketing, pricing, and our services in Hyderabad.
             </p>
+          </div>
 
-            {/* BUTTONS */}
+          {/* FAQ Content */}
+          <div className="mx-auto grid max-w-6xl grid-cols-1 items-start gap-10 lg:grid-cols-[0.8fr_1.5fr] lg:gap-14">
+            {/* Left Card */}
+            <div className="rounded-3xl bg-gray-950 p-7 text-white shadow-xl sm:p-9">
+              <div className="mb-7 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600 text-2xl font-bold">
+                ?
+              </div>
 
-            <div className="flex flex-wrap justify-center gap-5 mt-10">
-              <a
+              <h3 className="text-2xl font-bold leading-snug sm:text-3xl">
+                Have a question about your next project?
+              </h3>
+
+              <p className="mt-4 text-sm leading-7 text-gray-300 sm:text-base">
+                Whether you need a business website, custom web application, SEO
+                strategy, or digital marketing support, let's discuss your
+                requirements.
+              </p>
+
+              <Link
                 href="/contact"
-                className="
-                  inline-flex items-center justify-center
-                  px-8 py-4 rounded-full
-                  bg-white
-                  text-[#2563EB]
-                  font-bold
-                  hover:scale-105
-                  transition duration-300
-                  shadow-xl
-                "
+                className="mt-8 inline-flex w-full items-center justify-center gap-3 rounded-xl bg-blue-600 px-6 py-4 text-sm font-bold text-white transition-all duration-300 hover:bg-blue-500 sm:w-auto"
+                aria-label="Contact KidiWebTech about your project"
               >
-                Get Free Consultation
-              </a>
+                Talk to Our Team
+                <span aria-hidden="true">→</span>
+              </Link>
 
-              <a
-                href="/services"
-                className="
-                  inline-flex items-center justify-center
-                  px-8 py-4 rounded-full
-                  border border-white/20
-                  text-white
-                  font-semibold
-                  hover:bg-white/10
-                  transition duration-300
-                "
-              >
-                Explore Services
-              </a>
+              <div className="mt-9 border-t border-white/15 pt-6">
+                <p className="text-sm font-semibold text-white">KidiWebTech</p>
+
+                <p className="mt-2 text-sm text-gray-400">
+                  Website Development & Digital Growth Solutions
+                </p>
+
+                <p className="mt-1 text-sm text-gray-400">
+                  Hyderabad, Telangana, India
+                </p>
+              </div>
+            </div>
+
+            {/* Right Accordion */}
+            <div className="space-y-4">
+              {faqs.map((faq, index) => {
+                const isOpen = activeIndex === index;
+
+                return (
+                  <article
+                    key={faq.question}
+                    className={`overflow-hidden rounded-2xl border transition-all duration-300 ${
+                      isOpen
+                        ? "border-blue-200 bg-blue-50/50 shadow-md"
+                        : "border-gray-200 bg-white hover:border-blue-200 hover:shadow-sm"
+                    }`}
+                  >
+                    <h3>
+                      <button
+                        type="button"
+                        onClick={() => setActiveIndex(isOpen ? null : index)}
+                        className="flex w-full items-center justify-between gap-4 px-5 py-5 text-left sm:px-6"
+                        aria-expanded={isOpen}
+                        aria-controls={`faq-answer-${index}`}
+                      >
+                        <span
+                          className={`text-sm font-bold leading-6 sm:text-base ${
+                            isOpen ? "text-blue-700" : "text-gray-900"
+                          }`}
+                        >
+                          {faq.question}
+                        </span>
+
+                        <span
+                          className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-xl transition-all duration-300 ${
+                            isOpen
+                              ? "rotate-180 bg-blue-600 text-white"
+                              : "bg-gray-100 text-gray-700"
+                          }`}
+                          aria-hidden="true"
+                        >
+                          {isOpen ? "−" : "+"}
+                        </span>
+                      </button>
+                    </h3>
+
+                    <div id={`faq-answer-${index}`} hidden={!isOpen}>
+                      <div className="border-t border-blue-100 px-5 pb-5 pt-4 sm:px-6">
+                        <p className="text-sm leading-7 text-gray-600 sm:text-base">
+                          {faq.answer}
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                );
+              })}
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
