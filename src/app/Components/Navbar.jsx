@@ -822,40 +822,40 @@ const navItems = [
   },
 
   // CORPORATE TRAINING
- {
-  name: "Corporate Training",
-  href: "/corporate-training",
-  sub: [
-    {
-      name: "All Training Programs",
-      href: "/corporate-training",
-    },
-    {
-      name: "IT Audit / SOX Training",
-      href: "/corporate-training/it-audit-sox-training",
-    },
-    {
-      name: "DevOps with Azure Training",
-      href: "/corporate-training/devops-with-azure",
-    },
-    {
-      name: "IT Technical Certifications",
-      href: "/corporate-training/it-technical-certifications",
-    },
-    {
-      name: "Website Development Training",
-      href: "/corporate-training/website-development-training",
-    },
-    {
-      name: "Digital Marketing Training",
-      href: "/corporate-training/digital-marketing-training",
-    },
-    {
-      name: "CV, Resume & Interview Preparation",
-      href: "/corporate-training/cv-resume-interview-preparation",
-    },
-  ],
-},
+  {
+    name: "Corporate Training",
+    href: "/corporate-training",
+    sub: [
+      {
+        name: "All Training Programs",
+        href: "/corporate-training",
+      },
+      {
+        name: "IT Audit / SOX Training",
+        href: "/corporate-training/it-audit-sox-training",
+      },
+      {
+        name: "DevOps with Azure Training",
+        href: "/corporate-training/devops-with-azure",
+      },
+      {
+        name: "IT Technical Certifications",
+        href: "/corporate-training/it-technical-certifications",
+      },
+      {
+        name: "Website Development Training",
+        href: "/corporate-training/website-development-training",
+      },
+      {
+        name: "Digital Marketing Training",
+        href: "/corporate-training/digital-marketing-training",
+      },
+      {
+        name: "CV, Resume & Interview Preparation",
+        href: "/corporate-training/cv-resume-interview-preparation",
+      },
+    ],
+  },
   // BLOGS
   {
     name: "Blogs",
