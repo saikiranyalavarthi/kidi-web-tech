@@ -44,7 +44,7 @@ const navItems = [
 
       {
         name: "Digital Marketing",
-        href: "/digital-marketing-company-hyderabad",
+        href: "/services/digital-marketing-company-hyderabad",
         icon: Megaphone,
       },
 
