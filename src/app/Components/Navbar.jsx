@@ -32,16 +32,6 @@ const navItems = [
     href: "/digital-marketing-company",
     sub: [
       {
-        name: "Web Design",
-        href: "/services/web-development-company-hyderabad",
-        icon: Monitor,
-      },
-      {
-        name: "Web Development",
-        href: "/website-development-services",
-        icon: Code2,
-      },
-      {
         name: "Graphic Design",
         href: "/graphic-design-services",
         icon: Palette,
@@ -51,47 +41,19 @@ const navItems = [
         href: "/logo-design-services",
         icon: PenTool,
       },
-      {
-        name: "WordPress Development",
-        href: "/services/wordpress-development-company-hyderabad",
-        icon: Globe,
-      },
-      {
-        name: "Shopify Development",
-        href: "/shopify-development-services",
-        icon: ShoppingBag,
-      },
-      {
-        name: "WooCommerce Development",
-        href: "/woocommerce-development-services",
-        icon: ShoppingCart,
-      },
-      { name: "SEO Services", href: "/seo-services" },
+
       {
         name: "Digital Marketing",
         href: "/digital-marketing-services",
         icon: Megaphone,
       },
-      {
-        name: "Mobile App Development",
-        href: "/mobile-app-development-services",
-        icon: Smartphone,
-      },
-      {
-        name: "Custom Software Development",
-        href: "/custom-web-development-services",
-        icon: Settings,
-      },
+
       {
         name: "UI/UX Design",
         href: "/ui-ux-design-services",
         icon: Figma,
       },
-      {
-        name: "E-commerce Development",
-        href: "/ecommerce-development-services",
-        icon: Store,
-      },
+
       {
         name: "AI Automation",
         href: "/ai-automation",
