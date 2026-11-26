@@ -1,12 +1,18 @@
-// next.config.js
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
     remotePatterns: [
+      // Supabase Storage images
       {
         protocol: "https",
         hostname: "*.supabase.co",
+      },
+
+      // Unsplash service images
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        pathname: "/**",
       },
     ],
   },

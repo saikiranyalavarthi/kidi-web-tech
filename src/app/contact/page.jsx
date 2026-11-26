@@ -163,70 +163,13 @@ ${message}
         </div>
       </section>
 
-      {/* STATS */}
-
-      <section className="relative px-6">
-        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">
-          {[
-            ["50+", "Projects Delivered"],
-            ["30+", "Happy Clients"],
-            ["24/7", "Support"],
-            ["5+", "Years Experience"],
-          ].map((item, i) => (
-            <div
-              key={i}
-              className="
-                bg-white
-                border border-gray-100
-                rounded-[32px]
-                p-7
-                text-center
-                shadow-sm
-                hover:shadow-[0_20px_60px_rgba(37,99,235,0.08)]
-                hover:-translate-y-2
-                hover:border-blue-100
-                transition duration-500
-              "
-            >
-              <h3
-                className="
-                  text-4xl md:text-5xl
-                  font-black
-                  text-[#2563EB]
-                "
-              >
-                {item[0]}
-              </h3>
-
-              <p className="mt-3 text-gray-500">{item[1]}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* CONTACT */}
 
-      <section className="relative py-20 md:py-24 px-6">
+      <section className="relative py-4 md:py-4 px-6">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-start">
           {/* LEFT */}
 
           <div>
-            {/* BADGE */}
-
-            <div
-              className="
-                inline-flex items-center gap-2
-                px-5 py-2 rounded-full
-                bg-blue-50
-                border border-blue-100
-                text-[#2563EB]
-                font-semibold
-                shadow-sm
-              "
-            >
-              📞 Contact Our Team
-            </div>
-
             {/* HEADING */}
 
             <h2
@@ -558,24 +501,6 @@ ${message}
           </div>
         </div>
       </section>
-
-      {/* FOOTER */}
-
-      <footer className="border-t border-gray-100 py-10 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-5">
-          <div>
-            <h3 className="text-2xl font-black text-[#0F172A]">KIDIWEBTECH</h3>
-
-            <p className="text-gray-500 mt-2">SEO & Web Development Company</p>
-          </div>
-
-          <div className="flex flex-wrap justify-center gap-6 text-gray-500 text-sm">
-            <span>SEO Services</span>
-            <span>Web Development</span>
-            <span>Google Ads</span>
-          </div>
-        </div>
-      </footer>
     </main>
   );
 }

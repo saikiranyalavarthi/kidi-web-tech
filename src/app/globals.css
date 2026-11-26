@@ -127,3 +127,95 @@ body {
     animation: none;
   }
 }
+
+/* Trust section heading gradient */
+.trust-gradient-text {
+  background: linear-gradient(90deg, #2563eb, #0ea5e9, #6366f1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200% auto;
+  animation: trustGradient 6s ease infinite;
+}
+
+@keyframes trustGradient {
+  0%,
+  100% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+}
+
+/* Trust cards */
+.trust-card {
+  animation: trustReveal 0.7s ease both;
+}
+
+.trust-card:nth-child(2) {
+  animation-delay: 0.12s;
+}
+
+.trust-card:nth-child(3) {
+  animation-delay: 0.24s;
+}
+
+@keyframes trustReveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trust-gradient-text,
+  .trust-card {
+    animation: none !important;
+  }
+}
+
+/* Technology heading gradient */
+.technology-gradient-text {
+  background: linear-gradient(90deg, #2563eb, #0ea5e9, #6366f1, #2563eb);
+  background-size: 250% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: technologyGradient 7s linear infinite;
+}
+
+@keyframes technologyGradient {
+  to {
+    background-position: 250% center;
+  }
+}
+
+/* Technology cards */
+.technology-card {
+  animation: technologyReveal 0.65s ease both;
+  animation-delay: calc(var(--card-index, 0) * 60ms);
+}
+
+@keyframes technologyReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .technology-gradient-text,
+  .technology-card {
+    animation: none !important;
+  }
+}

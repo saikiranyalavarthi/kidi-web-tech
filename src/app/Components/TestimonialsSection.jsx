@@ -1,349 +1,167 @@
 "use client";
 
-export default function TestimonialsSection() {
+import "./TestimonialsSection.css";
+
+const testimonials = [
+  {
+    text: "KidiWebTech helped us create a modern website that presents our business professionally. The design and responsive experience were excellent.",
+    name: "Business Owner",
+    handle: "Website Development",
+    initials: "BO",
+    color: "#2563EB",
+  },
+  {
+    text: "The team understood our requirements and delivered a clean, user-friendly digital experience. Communication throughout the project was helpful.",
+    name: "Startup Founder",
+    handle: "Web Development",
+    initials: "SF",
+    color: "#9333EA",
+  },
+  {
+    text: "We wanted a professional online presence for our company. The website design and mobile experience were exactly what we needed.",
+    name: "Company Director",
+    handle: "Website Design",
+    initials: "CD",
+    color: "#0891B2",
+  },
+  {
+    text: "The digital marketing strategy gave us a clearer direction for our online presence. The team was supportive and professional.",
+    name: "Marketing Manager",
+    handle: "Digital Marketing",
+    initials: "MM",
+    color: "#DB2777",
+  },
+  {
+    text: "Our e-commerce website needed a better user experience. The new layout made browsing products and navigating the site much easier.",
+    name: "E-commerce Owner",
+    handle: "E-commerce Development",
+    initials: "EO",
+    color: "#16A34A",
+  },
+  {
+    text: "We appreciated the attention to detail, modern design approach and focus on creating a website that works across devices.",
+    name: "Project Manager",
+    handle: "UI/UX Design",
+    initials: "PM",
+    color: "#D97706",
+  },
+  {
+    text: "The development process was organised and our business requirements were understood clearly. A useful digital solution for our team.",
+    name: "Business Founder",
+    handle: "Custom Development",
+    initials: "BF",
+    color: "#4F46E5",
+  },
+  {
+    text: "We were looking for a better online presence and a professional website. The overall design direction was clean and modern.",
+    name: "Brand Manager",
+    handle: "Web Design",
+    initials: "BM",
+    color: "#E11D48",
+  },
+  {
+    text: "The team helped us explore automation opportunities and understand how technology could improve our business workflows.",
+    name: "Technology Lead",
+    handle: "AI & Automation",
+    initials: "TL",
+    color: "#0D9488",
+  },
+];
+
+const columns = [
+  [testimonials[0], testimonials[1], testimonials[2]],
+  [testimonials[3], testimonials[4], testimonials[5]],
+  [testimonials[6], testimonials[7], testimonials[8]],
+];
+
+function ReviewCard({ review }) {
   return (
-    <section className="relative py-8 md:py-8 px-6 overflow-hidden bg-white">
-      {/* BACKGROUND EFFECTS */}
+    <article className="ln-test-card">
+      <div className="ln-test-card-inner">
+        <p className="ln-test-text">{review.text}</p>
 
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-[-120px] left-[-120px] w-[380px] h-[380px] bg-blue-100/40 blur-[120px] rounded-full"></div>
+        <div className="ln-test-card-head">
+          <div className="ln-test-card-head-left">
+            <span
+              className="ln-test-avatar"
+              style={{ backgroundColor: review.color }}
+              aria-hidden="true"
+            >
+              {review.initials}
+            </span>
 
-        <div className="absolute bottom-[-120px] right-[-120px] w-[380px] h-[380px] bg-cyan-100/40 blur-[120px] rounded-full"></div>
-      </div>
-
-      <div className="relative max-w-7xl mx-auto">
-        {/* TOP CONTENT */}
-
-        <div className="text-center max-w-4xl mx-auto">
-          {/* BADGE */}
-
-          <div
-            className="
-              inline-flex items-center gap-2
-              px-5 py-2 rounded-full
-              bg-blue-50
-              border border-blue-100
-              text-[#2563EB]
-              font-semibold
-              shadow-sm
-            "
-          >
-            ⭐ Client Testimonials
+            <div className="ln-test-user">
+              <span className="ln-test-name">{review.name}</span>
+              <span className="ln-test-handle">{review.handle}</span>
+            </div>
           </div>
 
-          {/* HEADING */}
+          <span className="ln-test-brand">K</span>
+        </div>
+      </div>
+    </article>
+  );
+}
 
-          <h2
-            className="
-              mt-8
-              text-4xl sm:text-5xl md:text-6xl
-              font-black
-              leading-[1.05]
-              tracking-tight
-              text-[#0F172A]
-            "
-          >
-            Businesses Trust KIDIWEBTECH
-          </h2>
+function ReviewColumn({ reviews, direction = "up", duration = 35 }) {
+  const repeatedReviews = [...reviews, ...reviews, ...reviews];
 
-          {/* DESCRIPTION */}
+  return (
+    <div className="ln-test-col">
+      <div
+        className={`ln-test-col-scroll ${
+          direction === "down"
+            ? "ln-test-col-scroll--down"
+            : "ln-test-col-scroll--up"
+        }`}
+        style={{ "--scroll-duration": `${duration}s` }}
+      >
+        {[0, 1, 2].map((set) => (
+          <div className="ln-test-col-set" key={set}>
+            {repeatedReviews.map((review, index) => (
+              <ReviewCard
+                key={`${set}-${review.initials}-${index}`}
+                review={review}
+              />
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
-          <p
-            className="
-              mt-6
-              text-lg md:text-xl
-              leading-8
-              text-gray-600
-              max-w-3xl
-              mx-auto
-            "
-          >
-            We help businesses grow online through SEO, websites, Google Ads,
-            branding, app development, and digital marketing strategies that
-            generate real business results.
+export default function TestimonialsSection() {
+  return (
+    <section className="ln-test-section">
+      <div className="ln-test-inner">
+        <div className="ln-test-heading">
+          <span className="ln-test-eyebrow">CLIENT EXPERIENCES</span>
+
+          <h2 className="ln-test-title">Loved by businesses</h2>
+
+          <p className="ln-test-description">
+            Building meaningful digital experiences through design, development
+            and technology.
           </p>
         </div>
 
-        {/* TESTIMONIAL GRID */}
+        <div className="ln-test-grid">
+          <ReviewColumn reviews={columns[0]} direction="up" duration={35} />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
-          {[
-            {
-              name: "Rahul Sharma",
-              role: "Startup Founder",
-              review:
-                "KIDIWEBTECH helped us improve our Google rankings and generate more business leads through SEO and website development.",
-            },
+          <ReviewColumn reviews={columns[1]} direction="down" duration={42} />
 
-            {
-              name: "Priya Reddy",
-              role: "Business Owner",
-              review:
-                "Professional digital marketing team with strong Google Ads and branding strategies that helped our business grow faster.",
-            },
-
-            {
-              name: "Arjun Verma",
-              role: "Ecommerce Brand",
-              review:
-                "Their ecommerce website development and SEO services improved our online sales and customer engagement.",
-            },
-
-            {
-              name: "Sneha Kapoor",
-              role: "Healthcare Company",
-              review:
-                "Modern website design and SEO optimization helped our healthcare business increase online visibility.",
-            },
-
-            {
-              name: "Karthik Rao",
-              role: "Restaurant Owner",
-              review:
-                "Excellent local SEO and social media marketing services that increased our restaurant visibility and orders.",
-            },
-
-            {
-              name: "Amit Singh",
-              role: "Tech Startup",
-              review:
-                "Amazing app development and branding services with excellent support and modern UI/UX design.",
-            },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="
-                group
-                relative
-                bg-white
-                border border-gray-100
-                rounded-[36px]
-                p-8
-                shadow-sm
-                hover:shadow-[0_25px_70px_rgba(37,99,235,0.10)]
-                hover:-translate-y-2
-                hover:border-blue-100
-                transition duration-500
-              "
-            >
-              {/* STARS */}
-
-              <div className="flex items-center gap-1 text-xl">
-                ⭐ ⭐ ⭐ ⭐ ⭐
-              </div>
-
-              {/* REVIEW */}
-
-              <p
-                className="
-                  mt-7
-                  text-gray-600
-                  leading-8
-                  text-base
-                "
-              >
-                “{item.review}”
-              </p>
-
-              {/* USER */}
-
-              <div className="flex items-center gap-4 mt-10">
-                {/* AVATAR */}
-
-                <div
-                  className="
-                    w-16 h-16
-                    rounded-full
-                    bg-gradient-to-r
-                    from-[#2563EB]
-                    to-[#06B6D4]
-                    flex items-center justify-center
-                    text-white
-                    text-2xl
-                    font-black
-                    shadow-lg
-                  "
-                >
-                  {item.name.charAt(0)}
-                </div>
-
-                {/* INFO */}
-
-                <div>
-                  <h4
-                    className="
-                      text-xl
-                      font-black
-                      text-[#0F172A]
-                    "
-                  >
-                    {item.name}
-                  </h4>
-
-                  <p className="text-gray-500">{item.role}</p>
-                </div>
-              </div>
-
-              {/* HOVER LINE */}
-
-              <div
-                className="
-                  absolute bottom-0 left-0
-                  w-0 group-hover:w-full
-                  h-1
-                  rounded-full
-                  bg-gradient-to-r
-                  from-[#2563EB]
-                  to-[#06B6D4]
-                  transition-all duration-500
-                "
-              ></div>
-            </div>
-          ))}
+          <ReviewColumn reviews={columns[2]} direction="up" duration={38} />
         </div>
 
-        {/* STATS */}
-
-        <div className="grid md:grid-cols-3 gap-8 mt-20">
-          {[
-            {
-              value: "100+",
-              label: "Happy Clients",
-            },
-
-            {
-              value: "150+",
-              label: "Projects Delivered",
-            },
-
-            {
-              value: "98%",
-              label: "Client Satisfaction",
-            },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="
-                bg-gradient-to-b
-                from-[#f8fbff]
-                to-white
-                border border-gray-100
-                rounded-[36px]
-                p-10
-                text-center
-                shadow-sm
-                hover:shadow-[0_25px_70px_rgba(37,99,235,0.08)]
-                hover:-translate-y-2
-                hover:border-blue-100
-                transition duration-500
-              "
-            >
-              <h3
-                className="
-                  text-5xl md:text-6xl
-                  font-black
-                  text-[#2563EB]
-                "
-              >
-                {item.value}
-              </h3>
-
-              <p
-                className="
-                  mt-4
-                  text-lg
-                  text-gray-600
-                "
-              >
-                {item.label}
-              </p>
-            </div>
-          ))}
-        </div>
-
-        {/* CTA SECTION */}
-
-        <div
-          className="
-            mt-24
-            bg-gradient-to-r
-            from-[#2563EB]
-            to-[#06B6D4]
-            rounded-[40px]
-            p-10 md:p-14
-            text-white
-            shadow-[0_30px_80px_rgba(37,99,235,0.18)]
-            relative overflow-hidden
-          "
-        >
-          {/* GLOW */}
-
-          <div className="absolute top-0 right-0 w-[320px] h-[320px] bg-white/10 blur-[120px] rounded-full"></div>
-
-          <div className="relative z-10 grid lg:grid-cols-2 gap-14 items-center">
-            {/* LEFT */}
-
-            <div>
-              <p className="uppercase tracking-[4px] text-white/70 text-sm">
-                BUSINESS GROWTH
-              </p>
-
-              <h3
-                className="
-                  mt-5
-                  text-4xl md:text-5xl
-                  font-black
-                  leading-tight
-                "
-              >
-                Ready To Grow Your Business Online?
-              </h3>
-
-              <p
-                className="
-                  mt-6
-                  text-lg
-                  leading-8
-                  text-white/90
-                  max-w-2xl
-                "
-              >
-                We create SEO, websites, Google Ads, and digital marketing
-                strategies designed to generate more traffic, leads, and sales.
-              </p>
-            </div>
-
-            {/* RIGHT */}
-
-            <div className="grid grid-cols-2 gap-5">
-              {[
-                "SEO Services",
-                "Web Development",
-                "App Development",
-                "Google Ads",
-                "Branding",
-                "Lead Generation",
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className="
-                    bg-white/10
-                    backdrop-blur-xl
-                    rounded-2xl
-                    px-5 py-5
-                    border border-white/10
-                    text-center
-                    font-semibold
-                    hover:bg-white/20
-                    hover:-translate-y-1
-                    transition duration-300
-                  "
-                >
-                  {item}
-                </div>
-              ))}
-            </div>
-          </div>
+        <div className="ln-test-footer">
+          <span>WEB DEVELOPMENT</span>
+          <span>✦</span>
+          <span>UI/UX DESIGN</span>
+          <span>✦</span>
+          <span>DIGITAL MARKETING</span>
+          <span>✦</span>
+          <span>AI AUTOMATION</span>
         </div>
       </div>
     </section>

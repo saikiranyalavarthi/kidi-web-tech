@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { ArrowUpRight, ExternalLink, Sparkles } from "lucide-react";
 
 const categories = [
   "All",
@@ -14,7 +15,6 @@ const categories = [
 ];
 
 const websites = [
-  // ================= BUSINESS (5) =================
   {
     title: "Business Website",
     category: "Business",
@@ -45,8 +45,6 @@ const websites = [
     image:
       "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop",
   },
-
-  // ================= E-COMMERCE (5) =================
   {
     title: "E-Commerce Website",
     category: "E-Commerce",
@@ -77,8 +75,6 @@ const websites = [
     image:
       "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=1200&auto=format&fit=crop",
   },
-
-  // ================= EDUCATION (5) =================
   {
     title: "Education Website",
     category: "Education",
@@ -109,8 +105,6 @@ const websites = [
     image:
       "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200&auto=format&fit=crop",
   },
-
-  // ================= HEALTHCARE (5) =================
   {
     title: "Healthcare Website",
     category: "Healthcare",
@@ -141,8 +135,6 @@ const websites = [
     image:
       "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1200&auto=format&fit=crop",
   },
-
-  // ================= PORTFOLIO (5) =================
   {
     title: "Portfolio Website",
     category: "Portfolio",
@@ -175,55 +167,137 @@ const websites = [
   },
 ];
 
+function WebsiteCard({ item }) {
+  return (
+    <motion.article
+      whileHover={{ y: -5, scale: 1.015 }}
+      transition={{ duration: 0.3 }}
+      className="group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-[0_8px_30px_rgba(0,0,0,0.045)]"
+    >
+      <div className="relative h-[190px] overflow-hidden sm:h-[210px]">
+        <img
+          src={item.image}
+          alt={item.title}
+          loading="lazy"
+          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-70" />
+
+        <span className="absolute left-3 top-3 rounded-full border border-white/30 bg-white/90 px-3 py-1.5 text-[10px] font-semibold text-gray-900 backdrop-blur-md">
+          {item.category}
+        </span>
+
+        <div className="absolute bottom-3 right-3 flex h-9 w-9 translate-y-3 items-center justify-center rounded-full bg-white text-black opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+          <ExternalLink size={15} />
+        </div>
+      </div>
+
+      <div className="flex items-center justify-between gap-3 p-4">
+        <div>
+          <h3 className="text-sm font-bold text-gray-900">{item.title}</h3>
+          <p className="mt-1 text-[11px] text-gray-500">
+            Responsive website design
+          </p>
+        </div>
+
+        <ArrowUpRight
+          size={17}
+          className="shrink-0 text-gray-400 transition-all group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-blue-600"
+        />
+      </div>
+    </motion.article>
+  );
+}
+
+function ScrollColumn({ items, direction = "up", duration = 35 }) {
+  const repeated = [...items, ...items];
+
+  return (
+    <div className="relative h-[530px] overflow-hidden">
+      <motion.div
+        animate={{
+          y: direction === "down" ? ["-50%", "0%"] : ["0%", "-50%"],
+        }}
+        transition={{
+          duration,
+          repeat: Infinity,
+          ease: "linear",
+        }}
+        className="flex flex-col gap-5"
+      >
+        {repeated.map((item, index) => (
+          <WebsiteCard key={`${item.title}-${index}`} item={item} />
+        ))}
+      </motion.div>
+    </div>
+  );
+}
+
 export default function DeliveredWebsites() {
   const [activeCategory, setActiveCategory] = useState("All");
 
-  const filteredWebsites =
-    activeCategory === "All"
-      ? websites
-      : websites.filter((item) => item.category === activeCategory);
+  const filteredWebsites = useMemo(
+    () =>
+      activeCategory === "All"
+        ? websites
+        : websites.filter((item) => item.category === activeCategory),
+    [activeCategory],
+  );
+
+  const columns = useMemo(
+    () =>
+      [
+        filteredWebsites.filter((_, i) => i % 3 === 0),
+        filteredWebsites.filter((_, i) => i % 3 === 1),
+        filteredWebsites.filter((_, i) => i % 3 === 2),
+      ].map((items) => (items.length ? items : filteredWebsites)),
+    [filteredWebsites],
+  );
 
   return (
-    <section className="relative overflow-hidden bg-white py-8">
+    <section className="relative overflow-hidden bg-white px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
       {/* BACKGROUND */}
-      <div className="absolute inset-0">
-        <div className="absolute left-[-120px] top-[-120px] h-[300px] w-[300px] rounded-full bg-pink-100 blur-3xl" />
+      <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-blue-100/70 blur-[120px]" />
+      <div className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-purple-100/60 blur-[120px]" />
 
-        <div className="absolute bottom-[-120px] right-[-120px] h-[300px] w-[300px] rounded-full bg-purple-100 blur-3xl" />
-      </div>
-
-      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-10">
-        {/* HEADING */}
+      <div className="relative mx-auto max-w-7xl">
+        {/* HEADER */}
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="text-center"
+          transition={{ duration: 0.7 }}
+          className="mb-10 text-center"
         >
-          <h2 className="text-4xl font-black text-gray-900 md:text-5xl">
-            Websites We Have{" "}
-            <span className="bg-blue-500 bg-clip-text text-transparent">
+          <span className="inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-xs font-bold text-blue-600">
+            <Sparkles size={14} />
+            OUR CREATIVE WORK
+          </span>
+
+          <h2 className="mt-5 text-4xl font-black tracking-tight text-gray-950 sm:text-5xl lg:text-6xl">
+            Websites We Have
+            <span className="block bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
               Delivered
             </span>
           </h2>
 
-          <p className="mx-auto mt-5 max-w-2xl text-lg text-gray-600">
-            Explore our modern AI-powered websites crafted for businesses,
-            eCommerce brands, healthcare, education, and portfolios.
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-gray-500 sm:text-base">
+            Explore website design concepts for businesses, online stores,
+            education, healthcare and creative portfolios.
           </p>
         </motion.div>
 
-        {/* FILTER BUTTONS */}
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-          {categories.map((category, index) => (
+        {/* CATEGORY FILTERS */}
+        <div className="mb-12 flex flex-wrap justify-center gap-2">
+          {categories.map((category) => (
             <button
-              key={index}
+              key={category}
               onClick={() => setActiveCategory(category)}
-              className={`rounded-full px-6 py-3 text-sm font-semibold transition-all duration-300 ${
+              className={`rounded-full border px-5 py-2.5 text-xs font-semibold transition-all duration-300 ${
                 activeCategory === category
-                  ? "bg-blue-500 text-white shadow-lg"
-                  : "bg-gray-100 text-gray-700 hover:bg-purple-100"
+                  ? "border-blue-600 bg-blue-600 text-white shadow-lg shadow-blue-600/20"
+                  : "border-gray-200 bg-white text-gray-600 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-600"
               }`}
             >
               {category}
@@ -231,77 +305,43 @@ export default function DeliveredWebsites() {
           ))}
         </div>
 
-        {/* WEBSITES GRID */}
-        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-          {filteredWebsites.map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 70 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.6,
-                delay: index * 0.1,
-              }}
-              viewport={{ once: true }}
-              className="group overflow-hidden rounded-[28px] border border-gray-100 bg-white shadow-[0_10px_40px_rgba(0,0,0,0.05)] transition-all duration-500 hover:-translate-y-4 hover:shadow-[0_20px_60px_rgba(124,58,237,0.18)]"
-            >
-              {/* IMAGE */}
-              <div className="relative overflow-hidden">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="h-[240px] w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
+        {/* SCROLLING WEBSITE COLUMNS */}
+        <div
+          className="relative grid grid-cols-1 gap-5 overflow-hidden sm:grid-cols-2 lg:grid-cols-3"
+          onMouseEnter={(e) => {
+            e.currentTarget
+              .querySelectorAll(".website-scroll")
+              .forEach((element) => {
+                element.style.animationPlayState = "paused";
+              });
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget
+              .querySelectorAll(".website-scroll")
+              .forEach((element) => {
+                element.style.animationPlayState = "running";
+              });
+          }}
+        >
+          {/* TOP FADE */}
+          <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-24 bg-gradient-to-b from-white to-transparent" />
 
-                {/* OVERLAY */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+          {/* BOTTOM FADE */}
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-24 bg-gradient-to-t from-white to-transparent" />
 
-                {/* LIVE TAG */}
-                <div className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-purple-600 backdrop-blur-md">
-                  AI Website
-                </div>
-              </div>
-
-              {/* CONTENT */}
-              <div className="p-5 text-center">
-                <h3 className="text-lg font-bold text-gray-900">
-                  {item.title}
-                </h3>
-
-                <p className="mt-2 text-sm text-gray-500">
-                  Modern responsive UI with SEO optimization and premium design.
-                </p>
-
-                {/* BUTTON */}
-              </div>
-            </motion.div>
+          {columns.map((items, index) => (
+            <div key={`${activeCategory}-${index}`}>
+              <ScrollColumn
+                items={items}
+                direction={index === 1 ? "down" : "up"}
+                duration={index === 1 ? 42 : 35 + index * 4}
+              />
+            </div>
           ))}
         </div>
 
-        {/* BOTTOM CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-          className="mt-20 rounded-[40px] bg-blue-500 p-10 text-center text-white shadow-[0_20px_80px_rgba(76,29,149,0.3)]"
-        >
-          <h2 className="text-3xl font-black md:text-4xl">
-            Want A Premium Website Like This?
-          </h2>
-
-          <p className="mx-auto mt-5 max-w-2xl text-lg text-gray-300">
-            We build AI-powered websites with modern UI/UX, SEO optimization,
-            mobile responsiveness, and lightning-fast performance.
-          </p>
-
-          <Link
-            href="/contact"
-            className="mt-8 inline-block rounded-2xl bg-white px-8 py-4 font-semibold text-black shadow-[0_10px_40px_rgba(168,85,247,0.35)] transition-all duration-300 hover:scale-105"
-          >
-            Start Your Website
-          </Link>
-        </motion.div>
+     
+       
       </div>
     </section>
   );

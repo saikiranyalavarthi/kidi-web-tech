@@ -1,219 +1,220 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import { ChevronDown, Mail } from "lucide-react";
 
 const faqs = [
   {
+    category: "Web Development",
     question: "What services does KidiWebTech provide?",
     answer:
-      "KidiWebTech provides website design, website development, custom web application development, e-commerce website development, mobile app development, SEO services, local SEO, Google Ads management, and digital marketing solutions. We help businesses build their online presence and generate more opportunities.",
+      "KidiWebTech is a digital solutions agency offering website design and development, React and Next.js development, WordPress development, eCommerce websites, mobile app development, UI/UX design, SEO services, digital marketing and AI automation for businesses.",
   },
   {
+    category: "Web Development",
+    question: "Which is the best website development company in Hyderabad?",
+    answer:
+      "When choosing a website development company in Hyderabad, compare its portfolio, development technologies, mobile responsiveness, SEO capabilities, pricing and ongoing support. KidiWebTech provides custom website design and development solutions for startups, small businesses and established companies.",
+  },
+  {
+    category: "Web Development",
+    question: "Do you develop SEO-friendly websites?",
+    answer:
+      "Yes. KidiWebTech builds SEO-friendly websites with responsive layouts, optimized page structure, semantic HTML, metadata, clean URLs, internal linking, image optimization, sitemap configuration and structured data where appropriate.",
+  },
+  {
+    category: "Web Development",
+    question: "Which technologies do you use for website development?",
+    answer:
+      "Our website development technology stack includes React.js, Next.js, JavaScript, TypeScript, Tailwind CSS, Node.js, Express.js, MongoDB and WordPress. The technology selection depends on the project's requirements, performance needs and scalability.",
+  },
+  {
+    category: "SEO",
+    question: "What SEO services do you offer in Hyderabad?",
+    answer:
+      "KidiWebTech offers SEO services including technical SEO, on-page SEO, off-page SEO, local SEO, keyword research, content optimization, website audits, internal linking, Google Business Profile optimization and SEO performance monitoring.",
+  },
+  {
+    category: "SEO",
+    question: "How can SEO help my business get more Google traffic?",
+    answer:
+      "SEO helps businesses improve their visibility in relevant Google search results. A strong SEO strategy combines keyword research, useful content, technical improvements, local search optimization and quality backlinks to attract relevant visitors and potential customers.",
+  },
+  {
+    category: "AEO",
+    question: "What is Answer Engine Optimization (AEO)?",
+    answer:
+      "Answer Engine Optimization, or AEO, is the process of organizing and optimizing website content so answer engines can understand and use it to respond to user questions. It includes clear answers, descriptive headings, structured content, relevant FAQs and accurate information.",
+  },
+  {
+    category: "GEO",
+    question: "What is Generative Engine Optimization (GEO)?",
+    answer:
+      "Generative Engine Optimization, or GEO, focuses on improving how a business and its content are understood, referenced and potentially cited by AI-powered search experiences. It involves helpful content, clear entity information, trustworthy sources, consistent business details and structured website data.",
+  },
+  {
+    category: "AEO & GEO",
+    question:
+      "Can my website appear in ChatGPT, Google AI Overviews and other AI search results?",
+    answer:
+      "Your website can be optimized to improve its eligibility for discovery in AI-powered search experiences. This includes publishing useful and original content, implementing relevant structured data, building topical authority and maintaining accurate business information. However, no agency can guarantee inclusion or citations in AI-generated answers.",
+  },
+  {
+    category: "Local SEO",
+    question: "Do you provide local SEO services for businesses in Hyderabad?",
+    answer:
+      "Yes. Local SEO strategies can include Google Business Profile optimization, location-specific landing pages, local keyword research, business information consistency, local content and review management guidance to improve visibility for relevant searches in Hyderabad.",
+  },
+  {
+    category: "Pricing",
     question: "How much does website development cost in Hyderabad?",
     answer:
-      "Website development costs depend on the design, features, number of pages, integrations, and project requirements. A basic business website generally costs less than a custom web application or e-commerce platform. Contact KidiWebTech with your requirements to receive a project estimate.",
+      "Website development costs depend on the design, number of pages, functionality, integrations and technology requirements. KidiWebTech provides project-based quotations after understanding your business goals and website requirements.",
   },
   {
-    question: "How long does it take to develop a website?",
+    category: "Support",
+    question: "How can I contact KidiWebTech for a website or SEO project?",
     answer:
-      "The development timeline depends on the project scope. A basic business website may take around 1–2 weeks, while larger custom websites and web applications may require several weeks or more. The timeline is confirmed after reviewing the project requirements.",
-  },
-  {
-    question: "How long does SEO take to show results on Google?",
-    answer:
-      "SEO is a long-term process. Some improvements may appear within a few weeks, but meaningful organic growth commonly takes several months. Results depend on website quality, competition, technical SEO, content, backlinks, and the consistency of optimization.",
-  },
-  {
-    question: "Does KidiWebTech provide local SEO services in Hyderabad?",
-    answer:
-      "Yes. KidiWebTech provides local SEO services to help businesses improve their visibility in location-based searches. Work may include Google Business Profile optimization, local keyword research, website optimization, local landing pages, and business listing improvements.",
-  },
-  {
-    question: "What is the difference between SEO, AEO, and GEO?",
-    answer:
-      "SEO (Search Engine Optimization) improves website visibility in search engines. AEO (Answer Engine Optimization) helps content provide clear answers to user questions. GEO (Generative Engine Optimization) focuses on making useful, trustworthy content easier for AI-powered search experiences to understand and reference.",
-  },
-  {
-    question: "Does KidiWebTech build websites using React and Next.js?",
-    answer:
-      "Yes. KidiWebTech works with modern technologies such as React.js and Next.js to develop responsive websites and web applications. The technology is selected according to your project requirements, performance needs, and business goals.",
-  },
-  {
-    question: "Can KidiWebTech develop e-commerce websites?",
-    answer:
-      "Yes. We can develop e-commerce websites with product listings, product details, shopping carts, checkout flows, payment gateway integration, and order management. Features and integrations are planned according to your business requirements.",
-  },
-  {
-    question: "Does KidiWebTech provide website maintenance and support?",
-    answer:
-      "Website maintenance and support can be discussed based on your project requirements. Support may include website updates, bug fixes, content changes, performance checks, security updates, and technical assistance.",
-  },
-  {
-    question: "How can I get started with KidiWebTech?",
-    answer:
-      "You can get started by contacting KidiWebTech through the contact page. Share your business details, project requirements, preferred features, and budget. Our team can review your requirements and discuss the next steps.",
+      "You can contact KidiWebTech through the website contact page to discuss website development, mobile applications, SEO, digital marketing or AI automation requirements. Share your project details so the team can understand your needs and discuss the next steps.",
   },
 ];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
 
 export default function FAQSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  };
-
   return (
-    <>
+    <section
+      className="bg-white px-5 py-24 sm:px-8 lg:px-12 lg:py-28"
+      aria-labelledby="faq-heading"
+    >
+      {/* FAQ Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
+          __html: JSON.stringify(faqSchema),
         }}
       />
 
-      <section
-        className="relative w-full overflow-hidden bg-white px-4 py-16 sm:px-6 lg:px-8 lg:py-24"
-        aria-labelledby="faq-heading"
-      >
-        {/* Background decoration */}
-        <div
-          className="pointer-events-none absolute -left-40 top-20 h-72 w-72 rounded-full bg-blue-100/50 blur-3xl"
-          aria-hidden="true"
-        />
+      <div className="mx-auto max-w-4xl">
+        {/* Heading */}
+        <div className="mb-12 text-center">
+          <span className="inline-flex items-center rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-blue-700">
+            Frequently Asked Questions
+          </span>
 
-        <div
-          className="pointer-events-none absolute -right-40 bottom-10 h-72 w-72 rounded-full bg-indigo-100/50 blur-3xl"
-          aria-hidden="true"
-        />
+          <h2
+            id="faq-heading"
+            className="mt-5 text-3xl font-bold tracking-tight text-gray-950 sm:text-4xl lg:text-5xl"
+          >
+            Frequently asked questions
+          </h2>
 
-        <div className="relative mx-auto max-w-7xl">
-          {/* Heading */}
-          <div className="mx-auto mb-12 max-w-3xl text-center">
-            <span className="inline-flex items-center rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-blue-700 sm:text-sm">
-              Frequently Asked Questions
-            </span>
-
-            <h2
-              id="faq-heading"
-              className="mt-5 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
+          <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-gray-500 sm:text-base">
+            Find answers about website development, SEO, digital marketing, AEO
+            and AI search optimization. Have another question?{" "}
+            <a
+              href="/contact"
+              className="font-medium text-blue-600 underline underline-offset-4 hover:text-blue-700"
             >
-              Everything You Need to Know About{" "}
-              <span className="text-blue-600">KidiWebTech</span>
-            </h2>
+              Contact our team
+            </a>
+            .
+          </p>
+        </div>
 
-            <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-gray-600 sm:text-base">
-              Find answers to common questions about website development, SEO,
-              digital marketing, pricing, and our services in Hyderabad.
-            </p>
-          </div>
+        {/* FAQ Accordion */}
+        <div className="space-y-4">
+          {faqs.map((faq, index) => {
+            const isOpen = activeIndex === index;
 
-          {/* FAQ Content */}
-          <div className="mx-auto grid max-w-6xl grid-cols-1 items-start gap-10 lg:grid-cols-[0.8fr_1.5fr] lg:gap-14">
-            {/* Left Card */}
-            <div className="rounded-3xl bg-gray-950 p-7 text-white shadow-xl sm:p-9">
-              <div className="mb-7 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600 text-2xl font-bold">
-                ?
-              </div>
-
-              <h3 className="text-2xl font-bold leading-snug sm:text-3xl">
-                Have a question about your next project?
-              </h3>
-
-              <p className="mt-4 text-sm leading-7 text-gray-300 sm:text-base">
-                Whether you need a business website, custom web application, SEO
-                strategy, or digital marketing support, let's discuss your
-                requirements.
-              </p>
-
-              <Link
-                href="/contact"
-                className="mt-8 inline-flex w-full items-center justify-center gap-3 rounded-xl bg-blue-600 px-6 py-4 text-sm font-bold text-white transition-all duration-300 hover:bg-blue-500 sm:w-auto"
-                aria-label="Contact KidiWebTech about your project"
+            return (
+              <div
+                key={faq.question}
+                className={`overflow-hidden rounded-xl border transition-all duration-300 ${
+                  isOpen
+                    ? "border-blue-200 bg-blue-50/30 shadow-sm"
+                    : "border-gray-200 bg-white hover:border-gray-300"
+                }`}
               >
-                Talk to Our Team
-                <span aria-hidden="true">→</span>
-              </Link>
+                <button
+                  type="button"
+                  onClick={() => setActiveIndex(isOpen ? -1 : index)}
+                  aria-expanded={isOpen}
+                  aria-controls={`faq-answer-${index}`}
+                  className="flex w-full items-center justify-between gap-5 px-5 py-5 text-left sm:px-6"
+                >
+                  <span className="flex-1">
+                    <span className="mb-1 block text-[10px] font-semibold uppercase tracking-wider text-blue-600">
+                      {faq.category}
+                    </span>
 
-              <div className="mt-9 border-t border-white/15 pt-6">
-                <p className="text-sm font-semibold text-white">KidiWebTech</p>
+                    <span className="text-sm font-semibold leading-6 text-gray-900 sm:text-base">
+                      {faq.question}
+                    </span>
+                  </span>
 
-                <p className="mt-2 text-sm text-gray-400">
-                  Website Development & Digital Growth Solutions
-                </p>
-
-                <p className="mt-1 text-sm text-gray-400">
-                  Hyderabad, Telangana, India
-                </p>
-              </div>
-            </div>
-
-            {/* Right Accordion */}
-            <div className="space-y-4">
-              {faqs.map((faq, index) => {
-                const isOpen = activeIndex === index;
-
-                return (
-                  <article
-                    key={faq.question}
-                    className={`overflow-hidden rounded-2xl border transition-all duration-300 ${
+                  <span
+                    className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full transition-all duration-300 ${
                       isOpen
-                        ? "border-blue-200 bg-blue-50/50 shadow-md"
-                        : "border-gray-200 bg-white hover:border-blue-200 hover:shadow-sm"
+                        ? "rotate-180 bg-blue-600 text-white"
+                        : "bg-gray-100 text-gray-700"
                     }`}
                   >
-                    <h3>
-                      <button
-                        type="button"
-                        onClick={() => setActiveIndex(isOpen ? null : index)}
-                        className="flex w-full items-center justify-between gap-4 px-5 py-5 text-left sm:px-6"
-                        aria-expanded={isOpen}
-                        aria-controls={`faq-answer-${index}`}
-                      >
-                        <span
-                          className={`text-sm font-bold leading-6 sm:text-base ${
-                            isOpen ? "text-blue-700" : "text-gray-900"
-                          }`}
-                        >
-                          {faq.question}
-                        </span>
+                    <ChevronDown size={17} />
+                  </span>
+                </button>
 
-                        <span
-                          className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-xl transition-all duration-300 ${
-                            isOpen
-                              ? "rotate-180 bg-blue-600 text-white"
-                              : "bg-gray-100 text-gray-700"
-                          }`}
-                          aria-hidden="true"
-                        >
-                          {isOpen ? "−" : "+"}
-                        </span>
-                      </button>
-                    </h3>
-
-                    <div id={`faq-answer-${index}`} hidden={!isOpen}>
-                      <div className="border-t border-blue-100 px-5 pb-5 pt-4 sm:px-6">
-                        <p className="text-sm leading-7 text-gray-600 sm:text-base">
-                          {faq.answer}
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                );
-              })}
-            </div>
-          </div>
+                <div
+                  id={`faq-answer-${index}`}
+                  hidden={!isOpen}
+                  className="border-t border-gray-100"
+                >
+                  <div className="px-5 py-5 sm:px-6">
+                    <p className="text-sm leading-7 text-gray-600">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
-      </section>
-    </>
+
+        {/* Contact CTA */}
+        <div className="mt-12 rounded-2xl border border-gray-200 bg-gray-50 p-7 text-center sm:p-9">
+          <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
+            <Mail size={21} />
+          </div>
+
+          <h3 className="mt-4 text-xl font-bold text-gray-950">
+            Still have questions?
+          </h3>
+
+          <p className="mt-2 text-sm leading-7 text-gray-500">
+            Let's discuss your website, SEO or digital growth requirements.
+          </p>
+
+          <a
+            href="/contact"
+            className="mt-6 inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
+          >
+            Contact KidiWebTech
+          </a>
+        </div>
+      </div>
+    </section>
   );
 }

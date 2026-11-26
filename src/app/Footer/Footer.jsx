@@ -39,92 +39,33 @@ export default function Footer() {
       <div className="relative max-w-7xl mx-auto px-6 pt-20 pb-10">
         {/* TOP CTA */}
 
-        <div
-          className="
-            mb-20
-            bg-gradient-to-r
-            from-[#2563EB]
-            to-[#06B6D4]
-            rounded-[40px]
-            p-10 md:p-14
-            text-white
-            shadow-[0_30px_80px_rgba(37,99,235,0.18)]
-            relative overflow-hidden
-          "
-        >
-          <div className="absolute top-0 right-0 w-[320px] h-[320px] bg-white/10 blur-[120px] rounded-full"></div>
+       
+<div className="mb-20 flex flex-col items-center justify-between gap-5 rounded-2xl bg-gradient-to-r from-[#2563EB] to-[#06B6D4] px-7 py-7 text-white shadow-lg shadow-blue-500/15 sm:flex-row md:px-10">
 
-          <div className="relative z-10 grid lg:grid-cols-2 gap-14 items-center">
-            {/* LEFT */}
+  <h2 className="text-lg font-bold sm:text-xl">
+    Ready to grow your business with KidiWebTech?
+  </h2>
 
-            <div>
-              <p className="uppercase tracking-[4px] text-white/70 text-sm">
-                DIGITAL GROWTH
-              </p>
+  <div className="flex shrink-0 flex-wrap gap-3">
+    <Link
+      href="/contact"
+      className="rounded-full bg-white px-6 py-3 text-sm font-bold text-blue-600 transition hover:scale-105"
+    >
+      Get Free Consultation →
+    </Link>
 
-              <h2
-                className="
-                  mt-5
-                  text-4xl md:text-5xl
-                  font-black
-                  leading-tight
-                "
-              >
-                Ready To Grow Your Business Online?
-              </h2>
+    <a
+      href="https://wa.me/919390627367"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="rounded-full border border-white/50 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/15"
+    >
+      WhatsApp Us
+    </a>
+  </div>
 
-              <p
-                className="
-                  mt-6
-                  text-lg
-                  leading-8
-                  text-white/90
-                  max-w-2xl
-                "
-              >
-                Let’s build SEO, websites, branding, and digital marketing
-                strategies that generate real business growth.
-              </p>
-            </div>
+</div>
 
-            {/* RIGHT */}
-
-            <div className="flex flex-wrap gap-4">
-              <Link
-                href="/contact"
-                className="
-                  px-7 py-4
-                  rounded-full
-                  bg-white
-                  text-[#2563EB]
-                  font-bold
-                  hover:scale-105
-                  transition duration-300
-                  shadow-xl
-                "
-              >
-                Get Free Consultation
-              </Link>
-
-              <a
-                href="https://wa.me/919390627367"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-                  px-7 py-4
-                  rounded-full
-                  bg-[#25D366]
-                  text-black
-                  font-bold
-                  hover:scale-105
-                  transition duration-300
-                "
-              >
-                WhatsApp Chat
-              </a>
-            </div>
-          </div>
-        </div>
 
         {/* MAIN GRID */}
 
@@ -308,7 +249,7 @@ export default function Footer() {
                     href="mailto:info@kidiwebtech.com"
                     className="text-gray-700 hover:text-[#2563EB]"
                   >
-                info@kidiwebtech.com
+                    info@kidiwebtech.com
                   </a>
                 </div>
               </div>
@@ -354,7 +295,11 @@ export default function Footer() {
                 <div>
                   <p className="text-sm text-gray-400">Location</p>
 
-                  <p className="text-gray-700">  Kakatiya Hills, Guttala_Begumpet, Madhapur, Hyderabad, Telangana 500081</p>
+                  <p className="text-gray-700">
+                    {" "}
+                    Kakatiya Hills, Guttala_Begumpet, Madhapur, Hyderabad,
+                    Telangana 500081
+                  </p>
                 </div>
               </div>
             </div>
