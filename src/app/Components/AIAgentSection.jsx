@@ -5,7 +5,7 @@ import { ArrowUpRight, Bot, Code2, Sparkles, Zap } from "lucide-react";
 
 // Colourful official-style technology brand icons
 const technologies = [
-  { name: "OpenAI", slug: "openai", color: "10A37F" },
+ 
   { name: "React", slug: "react", color: "61DAFB" },
   { name: "Next.js", slug: "nextdotjs", color: "000000" },
   { name: "Google", slug: "google", color: "4285F4" },
