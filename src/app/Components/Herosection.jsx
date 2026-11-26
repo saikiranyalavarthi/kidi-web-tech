@@ -90,7 +90,7 @@ export default function HeroSection() {
             </Link>
 
             <Link
-              href="/portfolio"
+              href="/projects"
               className="inline-flex items-center gap-3 rounded-xl border border-gray-300 bg-white px-7 py-4 font-semibold text-gray-900 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-400 hover:text-blue-600"
             >
               Explore Our Work
