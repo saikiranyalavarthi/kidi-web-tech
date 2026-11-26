@@ -112,7 +112,7 @@ function LandingPageItem({ page, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.15 }}
       transition={{ duration: 0.65, delay: index * 0.08 }}
-      className="grid grid-cols-1 items-center gap-8 border-b border-gray-100 py-10 first:pt-5 last:border-0 lg:grid-cols-12 lg:gap-12 lg:py-14"
+      className="grid grid-cols-1 items-center gap-8 border-b border-gray-100 py-10 first:pt-5 last:border-0 lg:grid-cols-12 lg:gap-12 lg:py-4"
     >
       {/* LEFT CONTENT */}
       <div className="flex flex-col lg:col-span-5">

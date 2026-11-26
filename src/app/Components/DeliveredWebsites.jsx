@@ -256,7 +256,7 @@ export default function DeliveredWebsites() {
   );
 
   return (
-    <section className="relative overflow-hidden bg-white px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
+    <section className="relative overflow-hidden bg-white px-5 py-20 sm:px-8 lg:px-12 lg:py-4">
       {/* BACKGROUND */}
       <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-blue-100/70 blur-[120px]" />
       <div className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-purple-100/60 blur-[120px]" />
@@ -339,9 +339,6 @@ export default function DeliveredWebsites() {
             </div>
           ))}
         </div>
-
-     
-       
       </div>
     </section>
   );

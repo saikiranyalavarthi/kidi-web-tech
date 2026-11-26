@@ -97,7 +97,7 @@ export default function FAQSection() {
 
   return (
     <section
-      className="bg-white px-5 py-24 sm:px-8 lg:px-12 lg:py-28"
+      className="bg-white px-5 py-4 sm:px-8 lg:px-12 lg:py-4"
       aria-labelledby="faq-heading"
     >
       {/* FAQ Structured Data */}

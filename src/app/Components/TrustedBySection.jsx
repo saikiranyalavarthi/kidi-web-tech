@@ -81,7 +81,7 @@ const technologies = [
 
 export default function TrustedBySection() {
   return (
-    <section className="relative isolate overflow-hidden bg-white px-4 py-14 sm:px-6 md:py-20">
+    <section className="relative isolate overflow-hidden bg-white px-4 py-4 sm:px-6 md:py-4">
       {/* Background Effects */}
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute -left-32 top-0 h-[350px] w-[350px] rounded-full bg-blue-100/40 blur-[120px]" />
@@ -142,7 +142,7 @@ export default function TrustedBySection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.7 }}
-          className="mt-20 border-t border-gray-100 pt-14 md:mt-24 md:pt-16"
+          className="mt-20 border-t border-gray-100 pt-14 md:mt-4 md:pt-4"
         >
           {/* Heading */}
           <div className="mb-12 text-center">

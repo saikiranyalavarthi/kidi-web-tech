@@ -108,7 +108,7 @@ const item = {
 
 export default function ServicesSection() {
   return (
-    <section className="relative overflow-hidden bg-white px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
+    <section className="relative overflow-hidden bg-white px-5 py-4 sm:px-8 lg:px-12 lg:py-4">
       <div className="mx-auto max-w-7xl">
         {/* Section Heading */}
         <motion.div
