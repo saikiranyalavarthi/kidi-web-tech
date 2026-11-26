@@ -443,7 +443,7 @@ ${message}
                 <div className="space-y-4 pt-2">
                   {/* WHATSAPP */}
 
-                  <button
+                  {/* <button
                     type="button"
                     onClick={handleWhatsApp}
                     className="
@@ -466,7 +466,7 @@ ${message}
                       size={18}
                       className="group-hover:translate-x-1 transition-all"
                     />
-                  </button>
+                  </button> */}
 
                   {/* EMAIL */}
 

@@ -23,7 +23,7 @@ const features = [
     size: "large",
     accent: "from-blue-500/30",
     icon: Code2,
-    href: "/web-development-company",
+    href: "/website-development-services",
   },
   {
     number: "02",
@@ -49,7 +49,7 @@ const features = [
     size: "small",
     accent: "from-cyan-500/30",
     icon: Layers3,
-    href: "/ui-ux-design",
+    href: "/ui-ux-design-services",
   },
   {
     number: "04",
@@ -62,7 +62,7 @@ const features = [
     size: "small",
     accent: "from-orange-500/30",
     icon: ShoppingBag,
-    href: "/ecommerce-development",
+    href: "/ecommerce-development-services",
   },
   {
     number: "05",
